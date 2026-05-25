@@ -1,0 +1,137 @@
+<ClientEventAdapterEntityData Guid="be4f88f6-f904-4cd3-b1d5-db99e30bba3d">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+</ClientEventAdapterEntityData>
+<ReferenceObjectData Guid="b93d59ef-493e-4182-9362-c1cf317407e1">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/worldobjects/_objects/lights/common/streetlighta [d4fb9310-d30a-e8b2-a313-e7950896dd90]</Blueprint>
+    <ObjectVariation>[Ebx] _c4/worldobjects/_objects/lights/lakeshore/streetlighta_lakeshore [faf1d918-47ba-67dc-8273-346d2f63000c]</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<ReferenceObjectData Guid="85f3a17d-0a76-48d5-8d64-330ff95f633e">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0,4996816</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0,5</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0,01784107</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>10,65031</x>
+                    <y>3,954159</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/_LightEffects/LightConeWithCap_60 [0b761fda-3a35-8573-1130-c084dba8219d]</Blueprint>
+    <ObjectVariation>[Ebx] _c4/effects/_lighteffects/lightconewithcap_60_lakeshore [b9264f66-44ad-ba84-7fc3-100b44aa74ab]</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<SpatialPrefabBlueprint Guid="857524de-7376-46f7-8abf-67bedd8fafdd">
+    <Name>_c4/WorldObjects/_Objects/Lights/Lakeshore/Traffic_Street_LightA_lighting_background</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="2">
+        <member Index="0">
+            <EventConnection>
+                <Source>[ReferenceObjectData] b93d59ef-493e-4182-9362-c1cf317407e1</Source>
+                <Target>[ClientEventAdapterEntityData] be4f88f6-f904-4cd3-b1d5-db99e30bba3d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x8654c5fe</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Client [A23A0E7C]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[ClientEventAdapterEntityData] be4f88f6-f904-4cd3-b1d5-db99e30bba3d</Source>
+                <Target>[ReferenceObjectData] 85f3a17d-0a76-48d5-8d64-330ff95f633e</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>nullptr</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="3">
+        <member Index="0">[ReferenceObjectData] b93d59ef-493e-4182-9362-c1cf317407e1</member>
+        <member Index="1">[ReferenceObjectData] 85f3a17d-0a76-48d5-8d64-330ff95f633e</member>
+        <member Index="2">[ClientEventAdapterEntityData] be4f88f6-f904-4cd3-b1d5-db99e30bba3d</member>
+    </Objects>
+</SpatialPrefabBlueprint>

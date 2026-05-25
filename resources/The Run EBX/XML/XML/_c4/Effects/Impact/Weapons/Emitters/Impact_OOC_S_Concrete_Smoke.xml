@@ -1,0 +1,724 @@
+<AirResistanceData Guid="f1c19e09-c55b-4010-b3b8-290e54b7dbc0">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[GravityData] 33f4c4c4-2d19-4d31-bcaf-414612883e09</NextProcessor>
+    <Pre>[PolynomialData] 02f9ebe3-d514-4f24-a129-5390d2595828</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <DragFactor>3</DragFactor>
+</AirResistanceData>
+<EmitterDocument Guid="409929ed-d522-4101-b91a-69a7e65b3060">
+    <Name>_c4/Effects/Impact/Weapons/Emitters/Impact_OOC_S_Concrete_Smoke</Name>
+    <RootProcessor>[UpdateAgeData] bbd8a894-cb89-4cc6-8324-225943229bdd</RootProcessor>
+    <TemplateData>[EmitterTemplateData] 55c073db-f67e-40bd-afe8-26a015137609</TemplateData>
+</EmitterDocument>
+<EmitterTemplateData Guid="55c073db-f67e-40bd-afe8-26a015137609">
+    <PointLightIntensity>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>1</w>
+        </Vec4>
+    </PointLightIntensity>
+    <PointLightPivot>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </PointLightPivot>
+    <PointLightColor>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </PointLightColor>
+    <MaxCount>0x00000005</MaxCount>
+    <Name>_c4/Effects/Impact/Weapons/Emitters/Impact_OOC_S_Concrete_Smoke</Name>
+    <TimeScale>1</TimeScale>
+    <Lifetime>0,2</Lifetime>
+    <LifetimeFrameCount>0x00000000</LifetimeFrameCount>
+    <RootProcessor>[UpdateAgeData] bbd8a894-cb89-4cc6-8324-225943229bdd</RootProcessor>
+    <GlobalLocalNormalBlendFactor>0</GlobalLocalNormalBlendFactor>
+    <VisibleAfterDistance>0</VisibleAfterDistance>
+    <ZOcclusionLookup Count="0"></ZOcclusionLookup>
+    <EmittableType>ScreenAlignedQuad</EmittableType>
+    <Mesh>nullptr</Mesh>
+    <DistanceScaleNearValue>1</DistanceScaleNearValue>
+    <DistanceScaleFarValue>1</DistanceScaleFarValue>
+    <MeshCullingDistance>0</MeshCullingDistance>
+    <DistanceScaleLength>0</DistanceScaleLength>
+    <MaxSpawnDistance>0</MaxSpawnDistance>
+    <MinScreenArea>1</MinScreenArea>
+    <PointLightMaxClamp>1</PointLightMaxClamp>
+    <VertexPixelLightingBlendFactor>0</VertexPixelLightingBlendFactor>
+    <ParticleCullingFactor>1</ParticleCullingFactor>
+    <SoftParticlesFadeDistanceMultiplier>0</SoftParticlesFadeDistanceMultiplier>
+    <LightWrapAroundFactor>0</LightWrapAroundFactor>
+    <LightMultiplier>1</LightMultiplier>
+    <PointLightRandomIntensityMin>1</PointLightRandomIntensityMin>
+    <PointLightMinClamp>0</PointLightMinClamp>
+    <PointLightRadius>20</PointLightRadius>
+    <PointLightRandomIntensityMax>1</PointLightRandomIntensityMax>
+    <ForceNiceSorting>False</ForceNiceSorting>
+    <Emissive>False</Emissive>
+    <RepeatParticleSpawning>False</RepeatParticleSpawning>
+    <UseMeshColor>False</UseMeshColor>
+    <KillParticlesWithEmitter>False</KillParticlesWithEmitter>
+    <KeepEmitterWithParticles>False</KeepEmitterWithParticles>
+    <FollowSpawnSource>False</FollowSpawnSource>
+    <Fog>False</Fog>
+    <Reflection>False</Reflection>
+    <Opaque>False</Opaque>
+    <WarpBuffer>False</WarpBuffer>
+    <NoLighting>False</NoLighting>
+    <ActAsPointLight>False</ActAsPointLight>
+    <UpdateParametersEveryFrame>False</UpdateParametersEveryFrame>
+    <TransparencySunShadowEnable>False</TransparencySunShadowEnable>
+    <LocalSpace>False</LocalSpace>
+</EmitterTemplateData>
+<GravityData Guid="33f4c4c4-2d19-4d31-bcaf-414612883e09">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[LocalForceData] fc62f577-0db6-415f-9fe7-000d7a5613fc</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Gravity>2</Gravity>
+</GravityData>
+<LocalForceData Guid="fc62f577-0db6-415f-9fe7-000d7a5613fc">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateAlphaLevelScaleData] 1ef6b540-b440-4222-b030-5fae845a80e1</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <LocalForce>
+        <Vec3>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </LocalForce>
+    <Min>1</Min>
+    <ImpactScale>1</ImpactScale>
+    <Max>1</Max>
+    <UseImpactForce>False</UseImpactForce>
+</LocalForceData>
+<PolynomialColorInterpData Guid="92d78ea0-0f6e-41b9-9097-496ac642b527">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Color0>
+        <Vec3>
+            <x>2</x>
+            <y>1,866</y>
+            <z>1,61</z>
+        </Vec3>
+    </Color0>
+    <Color1>
+        <Vec3>
+            <x>2</x>
+            <y>1,842</y>
+            <z>1,562</z>
+        </Vec3>
+    </Color1>
+    <Coefficients>
+        <Vec4>
+            <x>0</x>
+            <y>0,9996238</y>
+            <z>-2,025711</z>
+            <w>1,025157</w>
+        </Vec4>
+    </Coefficients>
+</PolynomialColorInterpData>
+<PolynomialData Guid="a735d429-aad1-4dc9-8cb1-116596d7a5f4">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Coefficients>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>-5,416671</z>
+            <w>1,061251</w>
+        </Vec4>
+    </Coefficients>
+    <ScaleValue>1</ScaleValue>
+    <MinClamp>0,2</MinClamp>
+    <MaxClamp>1</MaxClamp>
+</PolynomialData>
+<PolynomialData Guid="02f9ebe3-d514-4f24-a129-5390d2595828">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Coefficients>
+        <Vec4>
+            <x>0</x>
+            <y>-79,83548</y>
+            <z>20,46917</z>
+            <w>-0,3040764</w>
+        </Vec4>
+    </Coefficients>
+    <ScaleValue>1</ScaleValue>
+    <MinClamp>0,75</MinClamp>
+    <MaxClamp>1</MaxClamp>
+</PolynomialData>
+<PolynomialData Guid="4d83b938-c00e-4901-84de-b7503b1d2909">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Coefficients>
+        <Vec4>
+            <x>1,003483</x>
+            <y>-0,09852656</y>
+            <z>0,009127071</z>
+            <w>0,09995659</w>
+        </Vec4>
+    </Coefficients>
+    <ScaleValue>1</ScaleValue>
+    <MinClamp>0</MinClamp>
+    <MaxClamp>1</MaxClamp>
+</PolynomialData>
+<PolynomialData Guid="b00ab690-7ac1-4069-856f-288292b1965f">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Coefficients>
+        <Vec4>
+            <x>0</x>
+            <y>0,9745649</y>
+            <z>-1,964766</z>
+            <w>0,9902549</w>
+        </Vec4>
+    </Coefficients>
+    <ScaleValue>0,5</ScaleValue>
+    <MinClamp>0</MinClamp>
+    <MaxClamp>1</MaxClamp>
+</PolynomialData>
+<PolynomialData Guid="06873bc0-3110-4c88-bf04-5f3a1a8c0e25">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Coefficients>
+        <Vec4>
+            <x>0</x>
+            <y>-0,4743125</y>
+            <z>1,083638</z>
+            <w>0,4013613</w>
+        </Vec4>
+    </Coefficients>
+    <ScaleValue>0,5</ScaleValue>
+    <MinClamp>0</MinClamp>
+    <MaxClamp>1</MaxClamp>
+</PolynomialData>
+<RandomEvaluatorData Guid="a4063795-5973-47c1-a3ee-338a9d7e72ed">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>1</Max>
+    <Min>-1</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="67781b1b-c020-4a3c-81a6-c6100b65f43d">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>1</Max>
+    <Min>-1</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="cf916201-2f27-4f28-82c5-ef33d52e8a15">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>25</Max>
+    <Min>0</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="a90484fc-402a-4057-9d5b-02d78d9c21fb">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>1</Max>
+    <Min>0,25</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="3f2e8010-7544-4c2e-95db-6b8239665805">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>1</Max>
+    <Min>0,4</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="4bf2ff28-5939-4527-88e4-914293d4e7b3">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>1</Max>
+    <Min>1</Min>
+</RandomEvaluatorData>
+<RandomXYZEvaluatorData Guid="485d6345-c213-4454-a604-5f99814d1fb3">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <MaxX>0,25</MaxX>
+    <MinX>-0,25</MinX>
+    <MaxY>1</MaxY>
+    <MinY>-0,2</MinY>
+    <MaxZ>0,25</MaxZ>
+    <MinZ>-0,25</MinZ>
+</RandomXYZEvaluatorData>
+<RandomXYZEvaluatorData Guid="6da7f368-474c-4044-830f-a460a171dc2d">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <MaxX>0,2</MaxX>
+    <MinX>-0,2</MinX>
+    <MaxY>0,25</MaxY>
+    <MinY>0,1</MinY>
+    <MaxZ>0,2</MaxZ>
+    <MinZ>-0,2</MinZ>
+</RandomXYZEvaluatorData>
+<SpawnAnimationData Guid="e6484b39-7d1b-4943-91a6-8671d0a36642">
+    <DefaultValues>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateTextureCoordsData] 5723e81c-e401-49a7-ab91-3e10c334bb8b</NextProcessor>
+    <Pre>[RandomEvaluatorData] a90484fc-402a-4057-9d5b-02d78d9c21fb</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <AnimationSpeed>10</AnimationSpeed>
+</SpawnAnimationData>
+<SpawnAnimationFrameData Guid="82185428-083d-4b86-847b-dedf06308118">
+    <DefaultValues>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnAnimationData] e6484b39-7d1b-4943-91a6-8671d0a36642</NextProcessor>
+    <Pre>[RandomEvaluatorData] cf916201-2f27-4f28-82c5-ef33d52e8a15</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <AnimationFrame>0x00000001</AnimationFrame>
+</SpawnAnimationFrameData>
+<SpawnDirectionData Guid="831d4779-7356-43bd-b1e7-2a9159c808b2">
+    <DefaultValues>
+        <Vec4>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateRotationData] 1730d66b-9774-41e8-b387-597f9f08c555</NextProcessor>
+    <Pre>[RandomXYZEvaluatorData] 485d6345-c213-4454-a604-5f99814d1fb3</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <DirectionFromEmitterOrigin>0</DirectionFromEmitterOrigin>
+    <InheritSpeedScaleAmount>1</InheritSpeedScaleAmount>
+    <InheritSpeedAndDirectionFromEmitter>False</InheritSpeedAndDirectionFromEmitter>
+    <UseProcessorForSpeedScale>False</UseProcessorForSpeedScale>
+</SpawnDirectionData>
+<SpawnPositionData Guid="d3978881-47cb-4039-adee-033ad12519ff">
+    <DefaultValues>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnSizeData] 33fb73cf-da73-4cf8-b06d-67383e957933</NextProcessor>
+    <Pre>[RandomXYZEvaluatorData] 6da7f368-474c-4044-830f-a460a171dc2d</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+</SpawnPositionData>
+<SpawnRateData Guid="014be16e-2bf2-4df6-bbc3-9eaa0b1c6325">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnDirectionData] 831d4779-7356-43bd-b1e7-2a9159c808b2</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <SpawnRate>400</SpawnRate>
+    <TrailSegmentLength>5</TrailSegmentLength>
+    <DistributeOverTime>True</DistributeOverTime>
+    <DistributeOverDistance>False</DistributeOverDistance>
+</SpawnRateData>
+<SpawnRotationData Guid="a5d5f96d-d041-4f7e-bb8e-b8c88722f1aa">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnRotationSpeedData] fada0224-da8e-4199-aa74-60a86edf7d0d</NextProcessor>
+    <Pre>[RandomEvaluatorData] a4063795-5973-47c1-a3ee-338a9d7e72ed</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Rotation>1</Rotation>
+</SpawnRotationData>
+<SpawnRotationSpeedData Guid="fada0224-da8e-4199-aa74-60a86edf7d0d">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateSizeData] 2296a6e8-ff61-41bb-9925-b6e5c4c37cda</NextProcessor>
+    <Pre>[RandomEvaluatorData] 67781b1b-c020-4a3c-81a6-c6100b65f43d</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <RotationSpeed>0,1</RotationSpeed>
+</SpawnRotationSpeedData>
+<SpawnSizeData Guid="33fb73cf-da73-4cf8-b06d-67383e957933">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnSpeedData] 6e6ee55f-3bf8-4d58-983d-8031e5f01e7c</NextProcessor>
+    <Pre>[RandomEvaluatorData] 3f2e8010-7544-4c2e-95db-6b8239665805</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Size>1,3</Size>
+</SpawnSizeData>
+<SpawnSpeedData Guid="6e6ee55f-3bf8-4d58-983d-8031e5f01e7c">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateOrientationData] f0b15efd-2f90-30f7-84f6-07842e2c7a98</NextProcessor>
+    <Pre>[RandomEvaluatorData] 4bf2ff28-5939-4527-88e4-914293d4e7b3</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Speed>2</Speed>
+</SpawnSpeedData>
+<UpdateAgeData Guid="bbd8a894-cb89-4cc6-8324-225943229bdd">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnRateData] 014be16e-2bf2-4df6-bbc3-9eaa0b1c6325</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Lifetime>1,5</Lifetime>
+</UpdateAgeData>
+<UpdateAlphaLevelScaleData Guid="1ef6b540-b440-4222-b030-5fae845a80e1">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateColorData] 446872d2-cff9-4e1d-ad5f-09ab5904bc7f</NextProcessor>
+    <Pre>[PolynomialData] 4d83b938-c00e-4901-84de-b7503b1d2909</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Exponent>10</Exponent>
+</UpdateAlphaLevelScaleData>
+<UpdateClipScaleData Guid="b743f248-4072-6b63-5923-f7a0dc018aef">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateLinearVelocityData] 60c9af72-5340-2c42-02fd-e8ba79eac0a4</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Lookup Count="132">
+        <member Index="0">32767</member>
+        <member Index="1">32767</member>
+        <member Index="2">32767</member>
+        <member Index="3">32767</member>
+        <member Index="4">20238</member>
+        <member Index="5">22165</member>
+        <member Index="6">32767</member>
+        <member Index="7">32445</member>
+        <member Index="8">20238</member>
+        <member Index="9">22165</member>
+        <member Index="10">32767</member>
+        <member Index="11">32445</member>
+        <member Index="12">20238</member>
+        <member Index="13">22165</member>
+        <member Index="14">32767</member>
+        <member Index="15">32445</member>
+        <member Index="16">20238</member>
+        <member Index="17">22165</member>
+        <member Index="18">32767</member>
+        <member Index="19">32445</member>
+        <member Index="20">20238</member>
+        <member Index="21">22165</member>
+        <member Index="22">32767</member>
+        <member Index="23">32445</member>
+        <member Index="24">20238</member>
+        <member Index="25">22165</member>
+        <member Index="26">32767</member>
+        <member Index="27">32445</member>
+        <member Index="28">20238</member>
+        <member Index="29">22165</member>
+        <member Index="30">32767</member>
+        <member Index="31">32445</member>
+        <member Index="32">20238</member>
+        <member Index="33">22165</member>
+        <member Index="34">32767</member>
+        <member Index="35">32445</member>
+        <member Index="36">20238</member>
+        <member Index="37">22165</member>
+        <member Index="38">32767</member>
+        <member Index="39">32445</member>
+        <member Index="40">20238</member>
+        <member Index="41">22165</member>
+        <member Index="42">32767</member>
+        <member Index="43">32445</member>
+        <member Index="44">20238</member>
+        <member Index="45">22165</member>
+        <member Index="46">32767</member>
+        <member Index="47">32445</member>
+        <member Index="48">20238</member>
+        <member Index="49">22165</member>
+        <member Index="50">32767</member>
+        <member Index="51">32445</member>
+        <member Index="52">20238</member>
+        <member Index="53">21844</member>
+        <member Index="54">32124</member>
+        <member Index="55">32124</member>
+        <member Index="56">20238</member>
+        <member Index="57">21523</member>
+        <member Index="58">31803</member>
+        <member Index="59">32124</member>
+        <member Index="60">20238</member>
+        <member Index="61">21523</member>
+        <member Index="62">31803</member>
+        <member Index="63">32124</member>
+        <member Index="64">20238</member>
+        <member Index="65">21202</member>
+        <member Index="66">31803</member>
+        <member Index="67">31803</member>
+        <member Index="68">19917</member>
+        <member Index="69">21202</member>
+        <member Index="70">31803</member>
+        <member Index="71">31803</member>
+        <member Index="72">19917</member>
+        <member Index="73">21202</member>
+        <member Index="74">31482</member>
+        <member Index="75">31803</member>
+        <member Index="76">19595</member>
+        <member Index="77">20880</member>
+        <member Index="78">31160</member>
+        <member Index="79">31482</member>
+        <member Index="80">19274</member>
+        <member Index="81">20880</member>
+        <member Index="82">30839</member>
+        <member Index="83">30197</member>
+        <member Index="84">18953</member>
+        <member Index="85">20559</member>
+        <member Index="86">30518</member>
+        <member Index="87">29875</member>
+        <member Index="88">18632</member>
+        <member Index="89">20238</member>
+        <member Index="90">30197</member>
+        <member Index="91">29875</member>
+        <member Index="92">18632</member>
+        <member Index="93">19917</member>
+        <member Index="94">30197</member>
+        <member Index="95">29554</member>
+        <member Index="96">17989</member>
+        <member Index="97">19274</member>
+        <member Index="98">29875</member>
+        <member Index="99">28912</member>
+        <member Index="100">17989</member>
+        <member Index="101">18310</member>
+        <member Index="102">27627</member>
+        <member Index="103">27948</member>
+        <member Index="104">17668</member>
+        <member Index="105">17668</member>
+        <member Index="106">26984</member>
+        <member Index="107">27948</member>
+        <member Index="108">17347</member>
+        <member Index="109">17347</member>
+        <member Index="110">26663</member>
+        <member Index="111">27627</member>
+        <member Index="112">17025</member>
+        <member Index="113">16704</member>
+        <member Index="114">26020</member>
+        <member Index="115">27305</member>
+        <member Index="116">16383</member>
+        <member Index="117">15741</member>
+        <member Index="118">25378</member>
+        <member Index="119">26984</member>
+        <member Index="120">14777</member>
+        <member Index="121">15419</member>
+        <member Index="122">25057</member>
+        <member Index="123">26663</member>
+        <member Index="124">13492</member>
+        <member Index="125">14777</member>
+        <member Index="126">24093</member>
+        <member Index="127">26020</member>
+        <member Index="128">12849</member>
+        <member Index="129">14456</member>
+        <member Index="130">22487</member>
+        <member Index="131">24414</member>
+    </Lookup>
+</UpdateClipScaleData>
+<UpdateColorData Guid="446872d2-cff9-4e1d-ad5f-09ab5904bc7f">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnAnimationFrameData] 82185428-083d-4b86-847b-dedf06308118</NextProcessor>
+    <Pre>[PolynomialColorInterpData] 92d78ea0-0f6e-41b9-9097-496ac642b527</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Color>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </Color>
+</UpdateColorData>
+<UpdateLinearVelocityData Guid="60c9af72-5340-2c42-02fd-e8ba79eac0a4">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>nullptr</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+</UpdateLinearVelocityData>
+<UpdateOrientationData Guid="f0b15efd-2f90-30f7-84f6-07842e2c7a98">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateClipScaleData] b743f248-4072-6b63-5923-f7a0dc018aef</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+</UpdateOrientationData>
+<UpdateRotationData Guid="1730d66b-9774-41e8-b387-597f9f08c555">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnRotationData] a5d5f96d-d041-4f7e-bb8e-b8c88722f1aa</NextProcessor>
+    <Pre>[PolynomialData] a735d429-aad1-4dc9-8cb1-116596d7a5f4</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+</UpdateRotationData>
+<UpdateSizeData Guid="2296a6e8-ff61-41bb-9925-b6e5c4c37cda">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[AirResistanceData] f1c19e09-c55b-4010-b3b8-290e54b7dbc0</NextProcessor>
+    <Pre>[PolynomialData] 06873bc0-3110-4c88-bf04-5f3a1a8c0e25</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Pivot>
+        <Vec2>
+            <x>0</x>
+            <y>0</y>
+        </Vec2>
+    </Pivot>
+</UpdateSizeData>
+<UpdateTextureCoordsData Guid="5723e81c-e401-49a7-ab91-3e10c334bb8b">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateTransparencyData] 81aa543c-cc8c-4f63-87f3-f503e73ad0c9</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <TextureInfo1>
+        <EmitterTextureInfo>
+            <TextureName>_c4/Effects/_Textures/Smoke/SmokeBillowing_5x5</TextureName>
+            <NormalmapName>Systems/Emitter/DefaultNormalmap</NormalmapName>
+            <AnimationFrameCount>25</AnimationFrameCount>
+            <AnimationFrameColumnCount>5</AnimationFrameColumnCount>
+            <EnableAnimation>True</EnableAnimation>
+        </EmitterTextureInfo>
+    </TextureInfo1>
+    <TextureBlendValue>1</TextureBlendValue>
+</UpdateTextureCoordsData>
+<UpdateTransparencyData Guid="81aa543c-cc8c-4f63-87f3-f503e73ad0c9">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnPositionData] d3978881-47cb-4039-adee-033ad12519ff</NextProcessor>
+    <Pre>[PolynomialData] b00ab690-7ac1-4069-856f-288292b1965f</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <CullThreshold>0,2</CullThreshold>
+</UpdateTransparencyData>

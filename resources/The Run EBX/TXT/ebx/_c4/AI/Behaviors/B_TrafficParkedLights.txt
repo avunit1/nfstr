@@ -1,0 +1,59 @@
+BTSequenceNode c3000b3b-0c1e-47f4-9310-d3409296db80
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) 37ab8b62-4e33-49a1-8460-34c4fb8c840f
+			member(1) bb83227c-5a1a-4cb6-8b0c-49e4d4cad24c
+			member(2) 69c54043-96b4-418e-929f-da41a194bd36
+BTTaskNode 37ab8b62-4e33-49a1-8460-34c4fb8c840f
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task d62f42e0-71ba-4f14-8934-f541d93b29d4
+BTTaskNode bb83227c-5a1a-4cb6-8b0c-49e4d4cad24c
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 99016c9a-f81f-4b0b-ae75-04f1c1ff3e42
+BTTaskNode 69c54043-96b4-418e-929f-da41a194bd36
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 3e40f7bf-f686-468c-99d3-907c48353153
+BT_DoMoveStyle d62f42e0-71ba-4f14-8934-f541d93b29d4
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Stop
+BT_DoOverrideLocomotion 3e40f7bf-f686-468c-99d3-907c48353153
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Handbrake
+	OverrideValue 1.0
+BT_DoWriteFloatToBB 99016c9a-f81f-4b0b-ae75-04f1c1ff3e42
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	NameHash 3431329396
+	Value 0.0
+	Scope BlackboardScope_Entity
+BehaviourTreeData d3fa2078-2155-409f-760d-26a8bb47e6a0 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_TrafficParkedLights
+	Root c3000b3b-0c1e-47f4-9310-d3409296db80
+	Description 

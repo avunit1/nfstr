@@ -1,0 +1,159 @@
+BBField 8c3b2176-b59e-4cc1-ade3-3bce6edd437e
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name LocalPlayerSpeed
+	Scope BlackboardScope_Level
+BBMapToCurve d874c16a-a46f-41cd-b6aa-5f554c411cb7
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.341707319021225
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 50.426124572753906
+					y 7.97271728515625
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 9.897353172302246
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectBlueprint 92af8f17-0324-4a3b-8159-c5ee7a6421a1 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Ambient/Generic/AMB_Snow_Light_Cell_Streak
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object fb6781ec-9079-4cb4-9cca-31a512cf4f78
+EffectEntityData fb6781ec-9079-4cb4-9cca-31a512cf4f78
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) 86a190d0-c09e-4ddb-90e8-d0aef8dc3504
+		member(1) e108b44d-17c7-497a-843b-2d3c1a812d69
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) 8fd373c9-c1fa-4c35-b7c0-66e4f536cdb7
+EmitterEntityData e108b44d-17c7-497a-843b-2d3c1a812d69
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Ambient/Generic/emitters/AMB_Snow_Light_Cell_Main/1c56708e-dfa0-46c3-978e-6d813fd3e98f
+	SpawnProbability 1.0
+EmitterEntityData 86a190d0-c09e-4ddb-90e8-d0aef8dc3504
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Ambient/Generic/emitters/AMB_Snow_Light_Cell_BG/4cb9fcae-ddd5-4382-a027-bd5cc7a58a74
+	SpawnProbability 1.0
+ParameterBlackboardAssociation 8fd373c9-c1fa-4c35-b7c0-66e4f536cdb7
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 8c3b2176-b59e-4cc1-ade3-3bce6edd437e
+	BlackboardField2 *nullGuid*
+	BlackboardMapping d874c16a-a46f-41cd-b6aa-5f554c411cb7

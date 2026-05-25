@@ -1,0 +1,84 @@
+MusicDataAsset 35925f1e-535a-42ed-9838-8f9214180aa8
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name E3Bootflow_Head
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/FE/NFSTR_E3_BCD_Success_Head/f0e252a6-25c0-1032-47aa-2aa79f3b2fa9
+MusicDataAsset 39cbf902-644a-4a01-a371-a287312a5cae
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name E3BootflowLoop
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/FE/NFSTR_E3_BCD_Success_Loop/66c121f1-4ac8-f0e1-84a9-2920eb828c78
+MusicPhraseAsset b8c5923e-168a-4fc2-8b07-ff6418e50dee
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name AB_E3BootflowPhrase
+			Loop 2
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 35925f1e-535a-42ed-9838-8f9214180aa8
+		member(1) 39cbf902-644a-4a01-a371-a287312a5cae
+MusicSelectorAsset b3208c01-499a-4d9b-b1fa-c5e4d38597dc
+	$::DataContainer
+	Event _c4/Sound/Music/FE/MX_E3CompletedScreenOutro_Interface/983070ea-a031-474f-85af-e43120618f4a
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable b8c5923e-168a-4fc2-8b07-ff6418e50dee
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset 5ac4342c-cb47-4fe6-bd0b-a5fbc433e2b2 #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/FE/MX_E3CompletedScreenOutro_SongAsset
+	SongInterface _c4/Sound/Music/FE/MX_E3CompletedScreenOutro_Interface/1d406d55-3496-493a-8786-f3369fddde29
+	NameHash 2863331569
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) b8c5923e-168a-4fc2-8b07-ff6418e50dee
+	Overlays *nullArray*
+	Selectors::array
+		member(0) b3208c01-499a-4d9b-b1fa-c5e4d38597dc
+	GenericTransitions *nullArray*
+	ChannelCount 6
+	OverlayChannelCount 0

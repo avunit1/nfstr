@@ -1,0 +1,108 @@
+<DelayEntityData Guid="1f6b6fba-f5d1-45c0-8a72-d20ae2660a17">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,25</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<FadeEntityData Guid="8a61a6f0-6efb-4655-bddd-1f9e47578816">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>1</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<InterfaceDescriptorData Guid="e53838c9-0b0b-4248-98ed-2d00af4cc64f">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xd8d04f65</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<SpatialPrefabBlueprint Guid="90a4891c-1ccd-475f-bf49-bc7819a17c23">
+    <Name>_c4/Gameplay/Flow/ResetTreatment_PostBreadcrumb_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="3">
+        <member Index="0">
+            <EventConnection>
+                <Source>[FadeEntityData] 8a61a6f0-6efb-4655-bddd-1f9e47578816</Source>
+                <Target>[InterfaceDescriptorData] e53838c9-0b0b-4248-98ed-2d00af4cc64f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e53838c9-0b0b-4248-98ed-2d00af4cc64f</Source>
+                <Target>[DelayEntityData] 1f6b6fba-f5d1-45c0-8a72-d20ae2660a17</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[DelayEntityData] 1f6b6fba-f5d1-45c0-8a72-d20ae2660a17</Source>
+                <Target>[FadeEntityData] 8a61a6f0-6efb-4655-bddd-1f9e47578816</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] e53838c9-0b0b-4248-98ed-2d00af4cc64f</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[FadeEntityData] 8a61a6f0-6efb-4655-bddd-1f9e47578816</member>
+        <member Index="1">[DelayEntityData] 1f6b6fba-f5d1-45c0-8a72-d20ae2660a17</member>
+    </Objects>
+</SpatialPrefabBlueprint>

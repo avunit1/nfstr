@@ -1,0 +1,217 @@
+BasicControllerData e8944a98-0c90-4046-9b7b-f4c6e3f79cfd
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer c018c869-9627-49b7-8bc0-8119e90a9d04
+	Composer b617fc9d-0077-467a-a535-bf075b1d42f4
+	TimeScale 1.0
+BasicControllerData e973487a-3715-4754-a962-cffb8f1526d7
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer d6112070-a28c-4618-89a0-ed87c550bc6c
+	Composer c5b292f4-3326-4eed-ac99-e9d0827338d0
+	TimeScale 1.0
+BasicControllerData 3cfb7f95-6d50-41ac-a401-184e4324935a
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer e17672c6-1290-4eaf-aa3a-a8fe1e97038b
+	Composer 05872667-05f9-4375-8c83-ea63da3c9d26
+	TimeScale 1.0
+CinebotConditionData 61001e9d-8f25-48c6-955d-342100914b5c
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_CAMERASLIP
+	BlackBoardVarName 
+	ConditionMin 0.0
+	ConditionMax 0.0
+CinebotControllerRigAsset 657922b6-e9e4-c543-515d-59d7470ab28b #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Core_Drive/Custom_Intros/Altamont/Rigs/Altamont_Intro
+	Controllers::array
+		member(0) 3cfb7f95-6d50-41ac-a401-184e4324935a
+		member(1) 0f36be7c-df2e-4aa4-934b-e29269163a8d
+		member(2) cae6a2e3-f488-4e14-8224-e99661307218
+	ForceAllInputTypesEnabled False
+CinebotTransitionData 183da2db-a8cb-40ad-a05e-843922762efb
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 0.0
+		Time 6.0
+		EaseInControl 0.0
+		EaseOutControl 0.0
+	Blend CINEBOT_BLEND_EULER
+	Clean False
+CinebotTransitionInterruptData f943a82d-bce1-4949-83e7-9f11d7560b63
+	$::CinebotInterruptibleTransitionData
+		$::CinebotTransitionData
+			$::CinebotBlendData
+				$::CameraTransition
+					$::DataContainer
+				TimeToDelay 0.0
+				Time 0.0
+				EaseInControl 0.0
+				EaseOutControl 0.0
+			Blend CINEBOT_BLEND_EULER
+			Clean False
+		Interupt *nullGuid*
+	Mode *nullGuid*
+CinebotTransitionInterruptData 12f365eb-a8c7-49a1-b0a9-204a19ac9fc1
+	$::CinebotInterruptibleTransitionData
+		$::CinebotTransitionData
+			$::CinebotBlendData
+				$::CameraTransition
+					$::DataContainer
+				TimeToDelay 0.0
+				Time 3.0
+				EaseInControl 0.0
+				EaseOutControl 0.0
+			Blend CINEBOT_BLEND_EULER
+			Clean False
+		Interupt c48f1653-ceb4-4226-8c1f-91dc6e72b4ae
+	Mode _c4/cameras/Core_Drive/Custom_Intros/Altamont/Modes/Altamont_Intro_2_Mode/c1598154-370d-0ec3-c0ca-a541a5edd269
+CinebotTransitionInterruptData c48f1653-ceb4-4226-8c1f-91dc6e72b4ae
+	$::CinebotInterruptibleTransitionData
+		$::CinebotTransitionData
+			$::CinebotBlendData
+				$::CameraTransition
+					$::DataContainer
+				TimeToDelay 0.0
+				Time 0.0
+				EaseInControl 0.0
+				EaseOutControl 0.0
+			Blend CINEBOT_BLEND_EULER
+			Clean False
+		Interupt *nullGuid*
+	Mode *nullGuid*
+CurveData 57f907e9-5d2d-412e-8772-d3e9599dcb29
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_NUM
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions::array
+		member(0) 61001e9d-8f25-48c6-955d-342100914b5c
+	XOR_Conditions False
+	ReactionCurve *nullArray*
+CurveData 818cab9b-212e-4c05-8096-a31d6334c707
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_CAMERASLIP
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve *nullArray*
+LocatorComposerData b617fc9d-0077-467a-a535-bf075b1d42f4
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	CinebotLocatorName Altamont_Locator_1
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 10.0
+	FOV 45.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+LocatorComposerData c5b292f4-3326-4eed-ac99-e9d0827338d0
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	CinebotLocatorName Altamont_Locator_4
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	FOV 20.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+LocatorComposerData 05872667-05f9-4375-8c83-ea63da3c9d26
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	CinebotLocatorName Altamont_Locator_1
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 10.0
+	FOV 30.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+LocatorTransposerData c018c869-9627-49b7-8bc0-8119e90a9d04
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName Altamont_Locator_1
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+LocatorTransposerData d6112070-a28c-4618-89a0-ed87c550bc6c
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName Altamont_Locator_3
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+LocatorTransposerData e17672c6-1290-4eaf-aa3a-a8fe1e97038b
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName Altamont_Locator_1
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+NoiseControllerData 0f36be7c-df2e-4aa4-934b-e29269163a8d
+	$::CinebotControllerData
+		$::DataContainer
+	Parameter CINEBOT_NOISE_PARAM_TARGET
+	Magnitude::Vec3
+		x 0.05000000074505806
+		y 0.05000000074505806
+		z 0.05000000074505806
+	Frequency 15.0
+	Roughness 1.0
+	Octaves 4
+	Delay 6.0
+	RampIn 0.0
+	Duration -1.0
+	RampOut 0.0
+	CurveParams *nullGuid*
+	CurveDampingTime 0.0
+	ConditionGoesFalseBehavior CinebotConditionGoesFalseBehavior_RampOff
+NoiseControllerData cae6a2e3-f488-4e14-8224-e99661307218
+	$::CinebotControllerData
+		$::DataContainer
+	Parameter CINEBOT_NOISE_PARAM_POSITION
+	Magnitude::Vec3
+		x 0.004999999888241291
+		y 0.004999999888241291
+		z 0.004999999888241291
+	Frequency 5.0
+	Roughness 0.0
+	Octaves 2
+	Delay 0.0
+	RampIn 0.0
+	Duration 6.0
+	RampOut 0.0
+	CurveParams *nullGuid*
+	CurveDampingTime 0.0
+	ConditionGoesFalseBehavior CinebotConditionGoesFalseBehavior_RampOff

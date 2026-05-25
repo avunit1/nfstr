@@ -1,0 +1,865 @@
+<AudioGraphAssetParameter Guid="d28f1759-3715-4311-8378-b1c52b79bf8f">
+    <DefaultValue>0</DefaultValue>
+    <NameHash>0x9808707e</NameHash>
+    <ValueIndex>0007</ValueIndex>
+</AudioGraphAssetParameter>
+<AudioGraphEvent Guid="b01e3f81-ad97-4a02-ab92-4938a77e2001">
+    <DefaultValue>0</DefaultValue>
+    <NameHash>Start [0DC0EFA5]</NameHash>
+    <ValueIndex>0005</ValueIndex>
+</AudioGraphEvent>
+<AudioGraphEvent Guid="c2ccfd1b-4068-4aa7-a773-75b52cf7c2dc">
+    <DefaultValue>0</DefaultValue>
+    <NameHash>Stop [7C89BB7D]</NameHash>
+    <ValueIndex>0006</ValueIndex>
+</AudioGraphEvent>
+<AudioGraphParameter Guid="5f1ea86d-36ea-4222-9252-645859d404cc">
+    <DefaultValue>0</DefaultValue>
+    <NameHash>0xf4c51873</NameHash>
+    <ValueIndex>0001</ValueIndex>
+</AudioGraphParameter>
+<AudioGraphParameter Guid="1ca0a30f-defb-49dd-a2d0-73762b51585c">
+    <DefaultValue>0</DefaultValue>
+    <NameHash>0x936bc98c</NameHash>
+    <ValueIndex>0002</ValueIndex>
+</AudioGraphParameter>
+<AudioGraphParameter Guid="61e2944c-b4ec-48bb-b6d5-dace6ce398c9">
+    <DefaultValue>0</DefaultValue>
+    <NameHash>0x9294f7df</NameHash>
+    <ValueIndex>0003</ValueIndex>
+</AudioGraphParameter>
+<AudioGraphParameter Guid="4065e9c5-6480-41c0-a5f9-54f0790cbd1f">
+    <DefaultValue>0</DefaultValue>
+    <NameHash>0x0dc4d198</NameHash>
+    <ValueIndex>0004</ValueIndex>
+</AudioGraphParameter>
+<ConditionGroup Guid="e25628b8-c8ae-4a93-b0bf-e9426dafa58e">
+    <X>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0009</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </X>
+    <Y>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Y>
+    <True>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000D</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </True>
+    <Condition>ConditionType_Greater</Condition>
+</ConditionGroup>
+<ConditionNodeData Guid="7eef5b3e-2cba-44f4-b32e-93b8a6108772">
+    <Conditions Count="1">
+        <member Index="0">[ConditionGroup] e25628b8-c8ae-4a93-b0bf-e9426dafa58e</member>
+    </Conditions>
+</ConditionNodeData>
+<DirectOutputNodeData Guid="c52e9df5-283e-4ef3-a4b5-5f756eddd4b4">
+    <In>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </In>
+    <BypassHeadroom>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </BypassHeadroom>
+    <LowPassFreq>
+        <AudioGraphNodePort>
+            <UnconnectedValue>24000</UnconnectedValue>
+            <ValueIndex>0013</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </LowPassFreq>
+    <MinDistance>1000</MinDistance>
+    <AttenuationCurve>
+        <AudioCurve>
+            <Points Count="2">
+                <member Index="0">
+                    <AudioCurvePoint>
+                        <X>0,007952951</X>
+                        <Y>-0,02335546</Y>
+                        <K>2,609029E-05</K>
+                    </AudioCurvePoint>
+                </member>
+                <member Index="1">
+                    <AudioCurvePoint>
+                        <X>630,2054</X>
+                        <Y>-0,006913423</Y>
+                        <K>0</K>
+                    </AudioCurvePoint>
+                </member>
+            </Points>
+            <CurveType>AudioCurveType_Spline</CurveType>
+        </AudioCurve>
+    </AttenuationCurve>
+    <HFDampingOcclusion>0</HFDampingOcclusion>
+    <HFDampingDistance>0</HFDampingDistance>
+    <HFDampingObstruction>0</HFDampingObstruction>
+    <MainSendPlugin>
+        <SoundGraphPluginRef>
+            <IsValid>True</IsValid>
+            <VoiceIndex>0</VoiceIndex>
+            <PluginIndex>7</PluginIndex>
+        </SoundGraphPluginRef>
+    </MainSendPlugin>
+    <Gain>-3</Gain>
+    <MainSend>[Ebx] BadRef 57b3e2f8-f193-41fe-92ad-37e46cb06ec7/7fe5ec07-3e3c-468d-97d2-d447191f746e</MainSend>
+    <OutputName>Direct</OutputName>
+    <TransformSource>OutputTransformSource_Sound</TransformSource>
+    <OutputNameHash>Direct [9AF13988]</OutputNameHash>
+    <LowPassPlugin>
+        <SoundGraphPluginRef>
+            <IsValid>True</IsValid>
+            <VoiceIndex>0</VoiceIndex>
+            <PluginIndex>5</PluginIndex>
+        </SoundGraphPluginRef>
+    </LowPassPlugin>
+    <VuPlugin>
+        <SoundGraphPluginRef>
+            <IsValid>True</IsValid>
+            <VoiceIndex>0</VoiceIndex>
+            <PluginIndex>6</PluginIndex>
+        </SoundGraphPluginRef>
+    </VuPlugin>
+    <Solo>False</Solo>
+    <EnableHdr>False</EnableHdr>
+</DirectOutputNodeData>
+<Pan2D1NodeData Guid="6cf9764e-da02-4a99-aaf1-c607f031a51c">
+    <In>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </In>
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Plugin>
+        <SoundGraphPluginRef>
+            <IsValid>True</IsValid>
+            <VoiceIndex>0</VoiceIndex>
+            <PluginIndex>4</PluginIndex>
+        </SoundGraphPluginRef>
+    </Plugin>
+    <OutputChannelCount>Six</OutputChannelCount>
+    <PanAngle>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000E</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </PanAngle>
+    <PanDistance>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1000</UnconnectedValue>
+            <ValueIndex>000F</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </PanDistance>
+    <PanSize>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>0011</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </PanSize>
+    <PanTwist>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </PanTwist>
+    <CenterLevel>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>0011</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </CenterLevel>
+    <LfeLevel>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </LfeLevel>
+</Pan2D1NodeData>
+<ReceiveEntry Guid="fccbcf33-962c-480b-8c4a-ffac8e2473df">
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0008</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Source>[AudioGraphAssetParameter] d28f1759-3715-4311-8378-b1c52b79bf8f</Source>
+    <Parameter>0</Parameter>
+    <SavedValue>0</SavedValue>
+</ReceiveEntry>
+<ReceiveEntry Guid="61bf5845-533f-4c51-92c4-99303040a66a">
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0009</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Source>[AudioGraphParameter] 5f1ea86d-36ea-4222-9252-645859d404cc</Source>
+    <Parameter>0</Parameter>
+    <SavedValue>0</SavedValue>
+</ReceiveEntry>
+<ReceiveEntry Guid="d6b98797-8972-4578-89c4-65b00ab4014c">
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000A</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Source>[AudioGraphParameter] 1ca0a30f-defb-49dd-a2d0-73762b51585c</Source>
+    <Parameter>0</Parameter>
+    <SavedValue>0</SavedValue>
+</ReceiveEntry>
+<ReceiveEntry Guid="161cc097-37e2-4271-80f6-9c4c034ee54c">
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000B</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Source>[AudioGraphParameter] 61e2944c-b4ec-48bb-b6d5-dace6ce398c9</Source>
+    <Parameter>0</Parameter>
+    <SavedValue>0</SavedValue>
+</ReceiveEntry>
+<ReceiveEntry Guid="df794fc6-6582-4bc0-80b2-1e55d57a9a66">
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000C</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Source>[AudioGraphEvent] c2ccfd1b-4068-4aa7-a773-75b52cf7c2dc</Source>
+    <Parameter>0</Parameter>
+    <SavedValue>0</SavedValue>
+</ReceiveEntry>
+<ReceiveEntry Guid="b4003dca-3842-4d60-9340-a6ce7b468501">
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000E</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Source>[AudioGraphParameter] 4065e9c5-6480-41c0-a5f9-54f0790cbd1f</Source>
+    <Parameter>0</Parameter>
+    <SavedValue>0</SavedValue>
+</ReceiveEntry>
+<ReceiveNodeData Guid="ae5abbc4-a004-4ec6-8ec9-0c1e817e7a06">
+    <Entries Count="6">
+        <member Index="0">[ReceiveEntry] fccbcf33-962c-480b-8c4a-ffac8e2473df</member>
+        <member Index="1">[ReceiveEntry] 61bf5845-533f-4c51-92c4-99303040a66a</member>
+        <member Index="2">[ReceiveEntry] d6b98797-8972-4578-89c4-65b00ab4014c</member>
+        <member Index="3">[ReceiveEntry] 161cc097-37e2-4271-80f6-9c4c034ee54c</member>
+        <member Index="4">[ReceiveEntry] df794fc6-6582-4bc0-80b2-1e55d57a9a66</member>
+        <member Index="5">[ReceiveEntry] b4003dca-3842-4d60-9340-a6ce7b468501</member>
+    </Entries>
+</ReceiveNodeData>
+<SamplerNodeData Guid="901a07aa-7a6a-4820-8479-649ab6af598a">
+    <ExternalWave>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0008</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </ExternalWave>
+    <Variation>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Variation>
+    <Offset>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Offset>
+    <Delay>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000B</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Delay>
+    <Pitch>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>000A</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Pitch>
+    <Amplitude>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>0009</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Amplitude>
+    <EnableStep>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </EnableStep>
+    <Buffer>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Buffer>
+    <Trigger>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000D</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Trigger>
+    <Release>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000C</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Release>
+    <Step>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Step>
+    <Output>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Output>
+    <Finished>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Finished>
+    <Position>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Position>
+    <Buffered>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Buffered>
+    <Wave>nullptr</Wave>
+    <BasePitch>1</BasePitch>
+    <Loop>LtNone</Loop>
+    <PitchSlewFrames>0x00000001</PitchSlewFrames>
+    <Plugins Count="1">
+        <member Index="0">
+            <SamplerPlugins>
+                <SndPlayer>
+                    <SoundGraphPluginRef>
+                        <IsValid>True</IsValid>
+                        <VoiceIndex>0</VoiceIndex>
+                        <PluginIndex>0</PluginIndex>
+                    </SoundGraphPluginRef>
+                </SndPlayer>
+                <Resample>
+                    <SoundGraphPluginRef>
+                        <IsValid>True</IsValid>
+                        <VoiceIndex>0</VoiceIndex>
+                        <PluginIndex>1</PluginIndex>
+                    </SoundGraphPluginRef>
+                </Resample>
+                <Pause>
+                    <SoundGraphPluginRef>
+                        <IsValid>True</IsValid>
+                        <VoiceIndex>0</VoiceIndex>
+                        <PluginIndex>2</PluginIndex>
+                    </SoundGraphPluginRef>
+                </Pause>
+                <Gain>
+                    <SoundGraphPluginRef>
+                        <IsValid>True</IsValid>
+                        <VoiceIndex>0</VoiceIndex>
+                        <PluginIndex>3</PluginIndex>
+                    </SoundGraphPluginRef>
+                </Gain>
+            </SamplerPlugins>
+        </member>
+    </Plugins>
+    <StopSubtitleOnRelease>False</StopSubtitleOnRelease>
+    <ShuffleSegments>True</ShuffleSegments>
+</SamplerNodeData>
+<SerialConditionEntry Guid="a9fe869c-55b7-45f8-864c-cb493d7b3df6">
+    <Operation>SerialConditionOp_NotEqual</Operation>
+    <SourceX>SerialConditionSource_Value</SourceX>
+    <X>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>000E</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </X>
+    <SourceY>SerialConditionSource_Value</SourceY>
+    <Y>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Y>
+    <Z>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0000</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Z>
+</SerialConditionEntry>
+<SerialConditionEntry Guid="6a67f642-06a3-46a0-a848-729a606746a7">
+    <Operation>SerialConditionOp_Multiply</Operation>
+    <SourceX>SerialConditionSource_Result</SourceX>
+    <X>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0010</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </X>
+    <SourceY>SerialConditionSource_Value</SourceY>
+    <Y>
+        <AudioGraphNodePort>
+            <UnconnectedValue>100</UnconnectedValue>
+            <ValueIndex>0012</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Y>
+    <Z>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>000F</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Z>
+</SerialConditionEntry>
+<SerialConditionNodeData Guid="3b18ab86-2a67-474a-ae13-1161c9cae1bc">
+    <Sections Count="2">
+        <member Index="0">[SerialConditionEntry] a9fe869c-55b7-45f8-864c-cb493d7b3df6</member>
+        <member Index="1">[SerialConditionEntry] 6a67f642-06a3-46a0-a848-729a606746a7</member>
+    </Sections>
+</SerialConditionNodeData>
+<SoundGraphData Guid="41b0cebc-c133-40a2-a365-0e52be42ce5d">
+    <Nodes Count="6">
+        <member Index="0">[ReceiveNodeData] ae5abbc4-a004-4ec6-8ec9-0c1e817e7a06</member>
+        <member Index="1">[ConditionNodeData] 7eef5b3e-2cba-44f4-b32e-93b8a6108772</member>
+        <member Index="2">[SamplerNodeData] 901a07aa-7a6a-4820-8479-649ab6af598a</member>
+        <member Index="3">[SerialConditionNodeData] 3b18ab86-2a67-474a-ae13-1161c9cae1bc</member>
+        <member Index="4">[Pan2D1NodeData] 6cf9764e-da02-4a99-aaf1-c607f031a51c</member>
+        <member Index="5">[DirectOutputNodeData] c52e9df5-283e-4ef3-a4b5-5f756eddd4b4</member>
+    </Nodes>
+    <PublicParameters Count="5">
+        <member Index="0">[AudioGraphParameter] 5f1ea86d-36ea-4222-9252-645859d404cc</member>
+        <member Index="1">[AudioGraphParameter] 1ca0a30f-defb-49dd-a2d0-73762b51585c</member>
+        <member Index="2">[AudioGraphParameter] 4065e9c5-6480-41c0-a5f9-54f0790cbd1f</member>
+        <member Index="3">nullptr</member>
+        <member Index="4">[AudioGraphParameter] 61e2944c-b4ec-48bb-b6d5-dace6ce398c9</member>
+    </PublicParameters>
+    <PublicEvents Count="3">
+        <member Index="0">[AudioGraphEvent] b01e3f81-ad97-4a02-ab92-4938a77e2001</member>
+        <member Index="1">[AudioGraphEvent] c2ccfd1b-4068-4aa7-a773-75b52cf7c2dc</member>
+        <member Index="2">nullptr</member>
+    </PublicEvents>
+    <PublicAssetParameters Count="2">
+        <member Index="0">[AudioGraphAssetParameter] d28f1759-3715-4311-8378-b1c52b79bf8f</member>
+        <member Index="1">nullptr</member>
+    </PublicAssetParameters>
+    <BlackboardSends Count="0"></BlackboardSends>
+    <BlackboardReceives Count="0"></BlackboardReceives>
+    <UnconnectedValues Count="4">
+        <member Index="0">0</member>
+        <member Index="1">1</member>
+        <member Index="2">100</member>
+        <member Index="3">24000</member>
+    </UnconnectedValues>
+    <ValueCount>0014</ValueCount>
+    <PublicValueCount>0008</PublicValueCount>
+    <Info>
+        <SoundGraphInfo>
+            <Voices Count="1">
+                <member Index="0">
+                    <SoundGraphVoiceInfo>
+                        <Plugins Count="8">
+                            <member Index="0">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x536e5031</Id>
+                                    <ConstructParams Count="0"></ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Unconnected</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>nullptr</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000007</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>0</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                            <member Index="1">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x52737030</Id>
+                                    <ConstructParams Count="0"></ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Unconnected</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>nullptr</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000000</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>0</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                            <member Index="2">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x50617530</Id>
+                                    <ConstructParams Count="0"></ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Unconnected</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>nullptr</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000000</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>0</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                            <member Index="3">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x47616930</Id>
+                                    <ConstructParams Count="0"></ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Unconnected</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>nullptr</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000000</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>0</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                            <member Index="4">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x506e3231</Id>
+                                    <ConstructParams Count="3">
+                                        <member Index="0">
+                                            <SoundGraphPluginConstructParam>
+                                                <Value>45</Value>
+                                                <Index>0</Index>
+                                            </SoundGraphPluginConstructParam>
+                                        </member>
+                                        <member Index="1">
+                                            <SoundGraphPluginConstructParam>
+                                                <Value>135</Value>
+                                                <Index>1</Index>
+                                            </SoundGraphPluginConstructParam>
+                                        </member>
+                                        <member Index="2">
+                                            <SoundGraphPluginConstructParam>
+                                                <Value>2</Value>
+                                                <Index>2</Index>
+                                            </SoundGraphPluginConstructParam>
+                                        </member>
+                                    </ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Unconnected</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>nullptr</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000000</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>6</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                            <member Index="5">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x4c493230</Id>
+                                    <ConstructParams Count="0"></ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Unconnected</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>nullptr</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000000</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>6</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                            <member Index="6">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x56754d30</Id>
+                                    <ConstructParams Count="0"></ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Unconnected</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>nullptr</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000fc0</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>6</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                            <member Index="7">
+                                <SoundGraphPluginInfo>
+                                    <Id>0x53656e30</Id>
+                                    <ConstructParams Count="0"></ConstructParams>
+                                    <Connection>
+                                        <SoundGraphPluginConnection>
+                                            <ConnectionType>SoundGraphPluginConnectionType_Bus</ConnectionType>
+                                            <Parameters Count="0"></Parameters>
+                                            <Bus>[Ebx] BadRef 57b3e2f8-f193-41fe-92ad-37e46cb06ec7/7fe5ec07-3e3c-468d-97d2-d447191f746e</Bus>
+                                            <VoiceIndex>0</VoiceIndex>
+                                        </SoundGraphPluginConnection>
+                                    </Connection>
+                                    <EnableAttributeReadMask>0x00000000</EnableAttributeReadMask>
+                                    <ExposedSubmixId>0xffffffff</ExposedSubmixId>
+                                    <OutputChannelCount>6</OutputChannelCount>
+                                </SoundGraphPluginInfo>
+                            </member>
+                        </Plugins>
+                        <ProcessingStage>0</ProcessingStage>
+                    </SoundGraphVoiceInfo>
+                </member>
+            </Voices>
+            <LinkedPluginAttributes Count="6">
+                <member Index="0">
+                    <SoundGraphLinkedPluginAttribute>
+                        <Plugin>
+                            <SoundGraphPluginRef>
+                                <IsValid>True</IsValid>
+                                <VoiceIndex>0</VoiceIndex>
+                                <PluginIndex>4</PluginIndex>
+                            </SoundGraphPluginRef>
+                        </Plugin>
+                        <Node>[Pan2D1NodeData] 6cf9764e-da02-4a99-aaf1-c607f031a51c</Node>
+                        <Port>
+                            <AudioGraphNodePort>
+                                <UnconnectedValue>0</UnconnectedValue>
+                                <ValueIndex>000E</ValueIndex>
+                                <IsConnected>True</IsConnected>
+                            </AudioGraphNodePort>
+                        </Port>
+                        <AttributeIndex>0</AttributeIndex>
+                        <AllowExtremeValues>True</AllowExtremeValues>
+                    </SoundGraphLinkedPluginAttribute>
+                </member>
+                <member Index="1">
+                    <SoundGraphLinkedPluginAttribute>
+                        <Plugin>
+                            <SoundGraphPluginRef>
+                                <IsValid>True</IsValid>
+                                <VoiceIndex>0</VoiceIndex>
+                                <PluginIndex>4</PluginIndex>
+                            </SoundGraphPluginRef>
+                        </Plugin>
+                        <Node>[Pan2D1NodeData] 6cf9764e-da02-4a99-aaf1-c607f031a51c</Node>
+                        <Port>
+                            <AudioGraphNodePort>
+                                <UnconnectedValue>1000</UnconnectedValue>
+                                <ValueIndex>000F</ValueIndex>
+                                <IsConnected>True</IsConnected>
+                            </AudioGraphNodePort>
+                        </Port>
+                        <AttributeIndex>1</AttributeIndex>
+                        <AllowExtremeValues>True</AllowExtremeValues>
+                    </SoundGraphLinkedPluginAttribute>
+                </member>
+                <member Index="2">
+                    <SoundGraphLinkedPluginAttribute>
+                        <Plugin>
+                            <SoundGraphPluginRef>
+                                <IsValid>True</IsValid>
+                                <VoiceIndex>0</VoiceIndex>
+                                <PluginIndex>4</PluginIndex>
+                            </SoundGraphPluginRef>
+                        </Plugin>
+                        <Node>[Pan2D1NodeData] 6cf9764e-da02-4a99-aaf1-c607f031a51c</Node>
+                        <Port>
+                            <AudioGraphNodePort>
+                                <UnconnectedValue>1</UnconnectedValue>
+                                <ValueIndex>0011</ValueIndex>
+                                <IsConnected>False</IsConnected>
+                            </AudioGraphNodePort>
+                        </Port>
+                        <AttributeIndex>2</AttributeIndex>
+                        <AllowExtremeValues>True</AllowExtremeValues>
+                    </SoundGraphLinkedPluginAttribute>
+                </member>
+                <member Index="3">
+                    <SoundGraphLinkedPluginAttribute>
+                        <Plugin>
+                            <SoundGraphPluginRef>
+                                <IsValid>True</IsValid>
+                                <VoiceIndex>0</VoiceIndex>
+                                <PluginIndex>4</PluginIndex>
+                            </SoundGraphPluginRef>
+                        </Plugin>
+                        <Node>[Pan2D1NodeData] 6cf9764e-da02-4a99-aaf1-c607f031a51c</Node>
+                        <Port>
+                            <AudioGraphNodePort>
+                                <UnconnectedValue>0</UnconnectedValue>
+                                <ValueIndex>0010</ValueIndex>
+                                <IsConnected>False</IsConnected>
+                            </AudioGraphNodePort>
+                        </Port>
+                        <AttributeIndex>3</AttributeIndex>
+                        <AllowExtremeValues>True</AllowExtremeValues>
+                    </SoundGraphLinkedPluginAttribute>
+                </member>
+                <member Index="4">
+                    <SoundGraphLinkedPluginAttribute>
+                        <Plugin>
+                            <SoundGraphPluginRef>
+                                <IsValid>True</IsValid>
+                                <VoiceIndex>0</VoiceIndex>
+                                <PluginIndex>4</PluginIndex>
+                            </SoundGraphPluginRef>
+                        </Plugin>
+                        <Node>[Pan2D1NodeData] 6cf9764e-da02-4a99-aaf1-c607f031a51c</Node>
+                        <Port>
+                            <AudioGraphNodePort>
+                                <UnconnectedValue>1</UnconnectedValue>
+                                <ValueIndex>0011</ValueIndex>
+                                <IsConnected>False</IsConnected>
+                            </AudioGraphNodePort>
+                        </Port>
+                        <AttributeIndex>4</AttributeIndex>
+                        <AllowExtremeValues>True</AllowExtremeValues>
+                    </SoundGraphLinkedPluginAttribute>
+                </member>
+                <member Index="5">
+                    <SoundGraphLinkedPluginAttribute>
+                        <Plugin>
+                            <SoundGraphPluginRef>
+                                <IsValid>True</IsValid>
+                                <VoiceIndex>0</VoiceIndex>
+                                <PluginIndex>4</PluginIndex>
+                            </SoundGraphPluginRef>
+                        </Plugin>
+                        <Node>[Pan2D1NodeData] 6cf9764e-da02-4a99-aaf1-c607f031a51c</Node>
+                        <Port>
+                            <AudioGraphNodePort>
+                                <UnconnectedValue>0</UnconnectedValue>
+                                <ValueIndex>0010</ValueIndex>
+                                <IsConnected>False</IsConnected>
+                            </AudioGraphNodePort>
+                        </Port>
+                        <AttributeIndex>6</AttributeIndex>
+                        <AllowExtremeValues>True</AllowExtremeValues>
+                    </SoundGraphLinkedPluginAttribute>
+                </member>
+            </LinkedPluginAttributes>
+            <PluginsParamCount>0x00000034</PluginsParamCount>
+            <PluginCount>0x00000008</PluginCount>
+            <ExposedSubmixCount>0000</ExposedSubmixCount>
+        </SoundGraphInfo>
+    </Info>
+    <InputParameters Count="5">
+        <member Index="0">[AudioGraphAssetParameter] d28f1759-3715-4311-8378-b1c52b79bf8f</member>
+        <member Index="1">[AudioGraphParameter] 1ca0a30f-defb-49dd-a2d0-73762b51585c</member>
+        <member Index="2">[AudioGraphParameter] 5f1ea86d-36ea-4222-9252-645859d404cc</member>
+        <member Index="3">[AudioGraphParameter] 61e2944c-b4ec-48bb-b6d5-dace6ce398c9</member>
+        <member Index="4">[AudioGraphParameter] 4065e9c5-6480-41c0-a5f9-54f0790cbd1f</member>
+    </InputParameters>
+    <OutputParameters Count="0"></OutputParameters>
+    <InputEvents Count="1">
+        <member Index="0">[AudioGraphEvent] c2ccfd1b-4068-4aa7-a773-75b52cf7c2dc</member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+</SoundGraphData>
+<SoundPatchAsset Guid="921c3004-6027-466f-a5f2-4c6ed3c52955">
+    <Name>_c4/Sound/Sfx_UI/UI_Patch_Hud</Name>
+    <SharingFlags>0</SharingFlags>
+    <MemoryCategory>[Ebx] _c4/sound/audiosystem_c4 [1aad2225-acb8-49e8-b0bf-01be74499737]</MemoryCategory>
+    <Scope>nullptr</Scope>
+    <DataAssets Count="0"></DataAssets>
+    <IsLooping>False</IsLooping>
+    <Graph>[SoundGraphData] 41b0cebc-c133-40a2-a365-0e52be42ce5d</Graph>
+    <Mixer>nullptr</Mixer>
+    <OutputNodes Count="1">
+        <member Index="0">[DirectOutputNodeData] c52e9df5-283e-4ef3-a4b5-5f756eddd4b4</member>
+    </OutputNodes>
+    <DopplerFactor>0</DopplerFactor>
+    <MasterPitch>1</MasterPitch>
+    <Loudness>80</Loudness>
+    <AILoudness>-1</AILoudness>
+    <Radius>0,5</Radius>
+    <MixGroup>[Ebx] _c4/sound/mixersystem_c4 [419de529-ddc3-44c8-8f3b-c6cdc2d04f7c]</MixGroup>
+    <DefaultStartEvent>[AudioGraphEvent] b01e3f81-ad97-4a02-ab92-4938a77e2001</DefaultStartEvent>
+    <DefaultStopEvent>[AudioGraphEvent] c2ccfd1b-4068-4aa7-a773-75b52cf7c2dc</DefaultStopEvent>
+    <DefaultEnterScopeEvent>[AudioGraphEvent] b01e3f81-ad97-4a02-ab92-4938a77e2001</DefaultEnterScopeEvent>
+    <IsPersistent>False</IsPersistent>
+    <IsPermanent>False</IsPermanent>
+    <IsPausable>False</IsPausable>
+</SoundPatchAsset>

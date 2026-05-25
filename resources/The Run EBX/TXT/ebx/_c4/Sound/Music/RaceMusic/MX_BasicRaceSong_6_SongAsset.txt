@@ -1,0 +1,73 @@
+FadeAsset f4d9d801-d3e4-4e05-a4bc-91793633c1af
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset a0464929-817a-43b7-b7bf-33067c51cc79
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongData
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_RivalSons_SaveMe2/550b30bc-6a9c-1bef-ed98-de350e886202
+MusicPhraseAsset d4051c39-8855-4cbc-b918-0cfcc9085865
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) a0464929-817a-43b7-b7bf-33067c51cc79
+MusicSelectorAsset 81ea3cf2-1d5a-464d-88e9-f3fd0fd83b17
+	$::DataContainer
+	Event _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/62c35696-fcb8-4884-b326-8ea80c9b2192
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable d4051c39-8855-4cbc-b918-0cfcc9085865
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset 2ebfb5fa-def5-4bc2-9f48-db49d0553956 #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/RaceMusic/MX_BasicRaceSong_6_SongAsset
+	SongInterface _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/63946f3b-890a-0efc-d248-833ecffb5e41
+	NameHash 830635334
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) d4051c39-8855-4cbc-b918-0cfcc9085865
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 81ea3cf2-1d5a-464d-88e9-f3fd0fd83b17
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

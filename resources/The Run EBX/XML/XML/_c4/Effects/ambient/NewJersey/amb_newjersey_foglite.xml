@@ -1,0 +1,148 @@
+<BBField Guid="6fa8fe6f-9df1-4c60-b413-945adcb994c7">
+    <Name>Fog_Opacity</Name>
+    <Scope>BlackboardScope_Level</Scope>
+</BBField>
+<BBMapToCurve Guid="bf001c2f-3856-4d88-b5e9-bf363b40bec1">
+    <NumInputsRequired>0x00000001</NumInputsRequired>
+    <Curve>
+        <MultiPointLine>
+            <Points Count="2">
+                <member Index="0">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>0</x>
+                                <y>1,236531E-08</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+                <member Index="1">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>1</x>
+                                <y>1</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+            </Points>
+        </MultiPointLine>
+    </Curve>
+    <ClampOutputMax>1</ClampOutputMax>
+    <ClampOutputMin>0</ClampOutputMin>
+    <OutputIsXTimesY>False</OutputIsXTimesY>
+    <ClampOutput>False</ClampOutput>
+</BBMapToCurve>
+<EffectBlueprint Guid="22640541-2326-468b-a517-16a0f7acf127">
+    <Name>_c4/Effects/Ambient/NewJersey/AMB_NewJersey_FogLite</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="0"></EventConnections>
+    <Descriptor>nullptr</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Object>[EffectEntityData] 0b6b104c-fc2c-479e-9f6a-c958490d9559</Object>
+</EffectBlueprint>
+<EffectEntityData Guid="0b6b104c-fc2c-479e-9f6a-c958490d9559">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>2,802597E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="1">
+        <member Index="0">[EmitterEntityData] 85ef0df4-926b-4623-95da-b6a9d63624f0</member>
+    </Components>
+    <MaxInstanceCount>0x00000001</MaxInstanceCount>
+    <CullDistance>0</CullDistance>
+    <StartDelay>0</StartDelay>
+    <BlackboardAssociations Count="1">
+        <member Index="0">[ParameterBlackboardAssociation] 204c7248-3fa4-4256-a9eb-a6f47fa21024</member>
+    </BlackboardAssociations>
+    <ResetInstanceWhenStarted>True</ResetInstanceWhenStarted>
+</EffectEntityData>
+<EmitterEntityData Guid="85ef0df4-926b-4623-95da-b6a9d63624f0">
+    <IndexInBlueprint>FFFF</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <MaxInstanceCount>0x00000001</MaxInstanceCount>
+    <CullDistance>0</CullDistance>
+    <StartDelay>0</StartDelay>
+    <ResetInstanceWhenStarted>True</ResetInstanceWhenStarted>
+    <BlackboardAssociations Count="0"></BlackboardAssociations>
+    <Emitter>[Ebx] _c4/Effects/Ambient/NewJersey/emitters/AMB_NewJersey_FogLite_Clouds [6e010086-cc1c-4117-9c02-f5b926847156]</Emitter>
+    <SpawnProbability>1</SpawnProbability>
+</EmitterEntityData>
+<ParameterBlackboardAssociation Guid="204c7248-3fa4-4256-a9eb-a6f47fa21024">
+    <EmitterParameter>EmitterParameter1</EmitterParameter>
+    <BlackboardField1>[BBField] 6fa8fe6f-9df1-4c60-b413-945adcb994c7</BlackboardField1>
+    <BlackboardField2>nullptr</BlackboardField2>
+    <BlackboardMapping>[BBMapToCurve] bf001c2f-3856-4d88-b5e9-bf363b40bec1</BlackboardMapping>
+</ParameterBlackboardAssociation>

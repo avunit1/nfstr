@@ -1,0 +1,169 @@
+AdsrNodeData 61b1c093-51ff-4072-81cd-4cf1a7ed362e
+	$::AudioGraphNodeData
+		$::DataContainer
+	Trigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 3
+		IsConnected True
+	Release::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	A::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 7
+		IsConnected False
+	D::AudioGraphNodePort
+		UnconnectedValue 0.25
+		ValueIndex 8
+		IsConnected False
+	S::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 9
+		IsConnected False
+	R::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 7
+		IsConnected False
+	Value::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 4
+		IsConnected True
+	Finished::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+AudioGraphParameter ee852160-cfa4-4a1b-b61c-baf6dde03847
+	$::DataContainer
+	DefaultValue 0.0
+	NameHash 4046285058
+	ValueIndex 5
+ConditionGroup ce20085b-4130-48d7-8e90-aad946b28089
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 9
+		IsConnected False
+	True::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 3
+		IsConnected True
+	Condition ConditionType_Equal
+ConditionNodeData 34c72aea-782c-4c1a-812b-8890894342b4
+	$::AudioGraphNodeData
+		$::DataContainer
+	Conditions::array
+		member(0) ce20085b-4130-48d7-8e90-aad946b28089
+MixerAsset e6e08f6b-3c83-4123-ba85-b7b5ff7251ab #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Sound/Mixing/Moments/13_41_NewYork/MIX_13_41_SubwayWhooshDucker
+	Graph 640ee23f-cf06-4ab6-be62-73fef76f0262
+	Presets::array
+		member(0) 18fde70e-55b9-4840-9924-b1bef5f349a5
+	DefaultPreset 18fde70e-55b9-4840-9924-b1bef5f349a5
+MixerGraphData 640ee23f-cf06-4ab6-be62-73fef76f0262
+	$::AudioGraphData
+		$::DataContainer
+		Nodes::array
+			member(0) 983272e2-9f50-4dfd-9543-aecac45e3917
+			member(1) 34c72aea-782c-4c1a-812b-8890894342b4
+			member(2) 61b1c093-51ff-4072-81cd-4cf1a7ed362e
+			member(3) ecbd1886-8d3d-4f99-83a8-68779d6c129b
+			member(4) 03515d88-93fd-4e92-a6e0-0a88567e1a33
+		PublicParameters *nullArray*
+		PublicEvents *nullArray*
+		PublicAssetParameters *nullArray*
+		BlackboardSends *nullArray*
+		BlackboardReceives *nullArray*
+		PublicValueCount 1
+		ValueCount 10
+		UnconnectedValues::array
+			member(0) -4.0
+			member(1) 0.0
+			member(2) 0.25
+			member(3) 1.0
+	Inputs::array
+		member(0) ee852160-cfa4-4a1b-b61c-baf6dde03847
+	Outputs *nullArray*
+MixerInputEntry ead04cd1-2ff7-4a0f-b7bb-0e6912477a67
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+	Source ee852160-cfa4-4a1b-b61c-baf6dde03847
+MixerInputNodeData 983272e2-9f50-4dfd-9543-aecac45e3917
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) ead04cd1-2ff7-4a0f-b7bb-0e6912477a67
+MixerPreset 18fde70e-55b9-4840-9924-b1bef5f349a5
+	$::DataContainer
+	NameHash 0
+	Groups::array
+		member(0)::MixerPresetGroupData
+			Group _c4/Sound/MixerSystem_C4/4a13554e-b7f6-42eb-8d34-a3edb71d948d
+			State MixGroupState_Normal
+			AttackTime 0.10000000149011612
+			ReleaseTime 0.20000000298023224
+			IsDominant False
+			IsOffset False
+			Priority 1
+			Properties::array
+				member(0)::MixGroupPropertyValue
+					Property 0
+					Value 0.0
+					Controlled True
+					AttackTime 0.10000000149011612
+					ReleaseTime 0.20000000298023224
+	Nodes *nullArray*
+MixerSetPropertyEntry 460c1503-ea05-4d0e-9adf-cebf982e0e86
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	Target 0
+	Group _c4/Sound/MixerSystem_C4/4a13554e-b7f6-42eb-8d34-a3edb71d948d
+	AttackTime 0.10000000149011612
+	ReleaseTime 0.25
+MixerSetPropertyNodeData 03515d88-93fd-4e92-a6e0-0a88567e1a33
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 460c1503-ea05-4d0e-9adf-cebf982e0e86
+ScaleClampNodeData ecbd1886-8d3d-4f99-83a8-68779d6c129b
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 4
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 7
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 9
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 7
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue -4.0
+		ValueIndex 6
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True

@@ -1,0 +1,58 @@
+CinebotConditionData d710e5f9-2cfb-4bce-abbf-4285aaa9b1bb
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_BLACKBOARD
+	BlackBoardVarName Exploded
+	ConditionMin 0.0
+	ConditionMax 1.0
+CinebotControllerRigAsset 61805b34-3a89-4b91-b975-35b151cd339d #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Core_Drive/Crashes/rigs/deathstate_bulletdeath_exploded_noise
+	Controllers::array
+		member(0) 20e8d6f5-3506-4fce-be5e-c745cedb166e
+	ForceAllInputTypesEnabled False
+CurveData bb8c4ece-5224-4911-914b-9c0035a89878
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions::array
+		member(0) d710e5f9-2cfb-4bce-abbf-4285aaa9b1bb
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 1.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		member(3)::Vec3
+			x 1.0
+			y 1.0
+			z 0.0
+NoiseControllerData 20e8d6f5-3506-4fce-be5e-c745cedb166e
+	$::CinebotControllerData
+		$::DataContainer
+	Parameter CINEBOT_NOISE_PARAM_TARGET
+	Magnitude::Vec3
+		x 0.0
+		y 0.30000001192092896
+		z 0.0
+	Frequency 3.0
+	Roughness 0.5
+	Octaves 3
+	Delay 0.0
+	RampIn 0.10000000149011612
+	Duration 0.4000000059604645
+	RampOut 0.4000000059604645
+	CurveParams bb8c4ece-5224-4911-914b-9c0035a89878
+	CurveDampingTime 0.0
+	ConditionGoesFalseBehavior CinebotConditionGoesFalseBehavior_Ignore

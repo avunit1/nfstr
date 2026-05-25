@@ -1,0 +1,154 @@
+BTIfNode 3a27ebb1-d959-4bb9-99f9-b86d40af094f
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 12a2b5cd-4fba-47be-8551-40a75d4d891b
+	Eval 7cc838a7-e2ac-4803-a80e-0f73d8e2c423
+BTIfNode 8e3538e5-d8b0-4896-b2bf-a5f962346435
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 15c125f3-9c92-44cc-976b-f2f68cda84e6
+	Eval e90c7085-8d9c-4f80-8365-fdb5e4a1ece1
+BTSelectorNode 616ceb58-0761-402b-ae3f-8fc21d814a3c
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 3a27ebb1-d959-4bb9-99f9-b86d40af094f
+			member(1) 8e3538e5-d8b0-4896-b2bf-a5f962346435
+			member(2) 97df261b-59dc-47c1-a922-c0604f4dc782
+BTSequenceNode dae8bbca-e9b9-44b8-a68a-89657932ffc0
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) a21ddc2b-f531-4386-b786-a2d23f069093
+			member(1) d971ddcf-c6c2-4001-88a6-4d86722282bf
+			member(2) 7f6712a6-e27f-4cad-9d5a-42658e633bcf
+			member(3) 616ceb58-0761-402b-ae3f-8fc21d814a3c
+BTTaskNode a21ddc2b-f531-4386-b786-a2d23f069093
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 3a773225-c3a2-4059-b58a-51806a2a37b7
+BTTaskNode d971ddcf-c6c2-4001-88a6-4d86722282bf
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 64d21c6a-6401-4574-9e85-78186a253dc3
+BTTaskNode 15c125f3-9c92-44cc-976b-f2f68cda84e6
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 77d916d6-f4e4-42c3-8830-c86855eb5f2b
+BTTaskNode 12a2b5cd-4fba-47be-8551-40a75d4d891b
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task c3ef695a-67fa-4245-a5ad-b35f3d99e34b
+BTTaskNode 7f6712a6-e27f-4cad-9d5a-42658e633bcf
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 8437d7d6-da9d-4ee8-88b5-c9cbadc58f7e
+BTTaskNode 97df261b-59dc-47c1-a922-c0604f4dc782
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task d49b013a-4bef-487a-be1c-15eab6d82321
+BT_DoDriveStyle 64d21c6a-6401-4574-9e85-78186a253dc3
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	DriveStyle EDrive_FixedSpeed
+BT_DoMoveStyle 3a773225-c3a2-4059-b58a-51806a2a37b7
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Drive
+BT_DoOverrideLocomotion 77d916d6-f4e4-42c3-8830-c86855eb5f2b
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Brake
+	OverrideValue 0.699999988079071
+BT_DoOverrideLocomotion 8437d7d6-da9d-4ee8-88b5-c9cbadc58f7e
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Throttle
+	OverrideValue 0.0
+BT_DoOverrideLocomotion d49b013a-4bef-487a-be1c-15eab6d82321
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Brake
+	OverrideValue 0.5
+BT_DoVarModify c3ef695a-67fa-4245-a5ad-b35f3d99e34b
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Variable EModifiable_Speed
+	Modifier EModifier_Set
+	Value 0.0
+BT_IsVar 7cc838a7-e2ac-4803-a80e-0f73d8e2c423
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_Speed
+	Context EContext_Self
+	Comparator Compare_LessThan
+	Value 25.0
+BT_IsVar e90c7085-8d9c-4f80-8365-fdb5e4a1ece1
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_Speed
+	Context EContext_Self
+	Comparator Compare_LessThan
+	Value 45.0
+BehaviourTreeData 11fe1f40-4098-475d-b6d7-f7220dbf9faf #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_BattleModeOppenentLost
+	Root dae8bbca-e9b9-44b8-a68a-89657932ffc0
+	Description 

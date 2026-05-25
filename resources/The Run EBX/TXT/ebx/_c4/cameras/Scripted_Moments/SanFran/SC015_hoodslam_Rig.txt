@@ -1,0 +1,637 @@
+BasicControllerData 31a0ea19-bc71-49f3-b22e-9d671bd28060
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer 322365b4-751c-41c0-8036-7d19b97a06ee
+	Composer a1699bec-4cfe-452e-bc88-dbf3b691f5b7
+	TimeScale 1.0
+BasicControllerData fa5436c4-4e2e-42ae-8d03-56925a4b4263
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer 8114d0e3-041c-4abb-8c6d-940e8972e94a
+	Composer e43e1a41-f310-41c6-bd33-bf82d8a89308
+	TimeScale 1.0
+BlendControllerData 1d4aeaa5-d0c6-4bfe-86f6-80cc130dd8ca
+	$::CinebotControllerData
+		$::DataContainer
+	FromController 31a0ea19-bc71-49f3-b22e-9d671bd28060
+	ToController fa5436c4-4e2e-42ae-8d03-56925a4b4263
+	Transition b51fcfdb-2cb5-484c-8ad0-78439fc5017f
+	AdditionalBlendToControllers *nullArray*
+	BlackBoardVarName 
+CinebotConditionData f45cc8b1-b8d1-489e-9090-29e85a51f301
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_SPEED
+	BlackBoardVarName 
+	ConditionMin 0.0
+	ConditionMax 10.0
+CinebotConditionData 25390fe7-8460-420b-9b19-dd681a574a5f
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_SPEED
+	BlackBoardVarName 
+	ConditionMin 0.10000000149011612
+	ConditionMax 14.0
+CinebotConditionData 0da634d1-6486-441a-84da-dd5818f8e8b3
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_ACCEL
+	BlackBoardVarName 
+	ConditionMin 0.0
+	ConditionMax 25.0
+CinebotConditionData f926f45c-8348-4c75-9aef-96b1af20e222
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_JERK
+	BlackBoardVarName 
+	ConditionMin 0.0
+	ConditionMax 100.0
+CinebotConditionData 665577db-add3-4c74-834c-4e02c1224ecb
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_BRAKE
+	BlackBoardVarName 
+	ConditionMin 1.0
+	ConditionMax 1.0
+CinebotConditionData ec796d9e-6a68-40a5-ad04-47e115661152
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_SPEED
+	BlackBoardVarName 
+	ConditionMin 0.10000000149011612
+	ConditionMax 10.0
+CinebotConditionData c7684ce1-4b8f-459c-9109-559df9f87694
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_SPEED
+	BlackBoardVarName 
+	ConditionMin 0.0
+	ConditionMax 1000.0
+CinebotConditionData 10458bb2-276c-4fea-a76d-df6ef93d05b2
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_SPEED
+	BlackBoardVarName 
+	ConditionMin 0.0
+	ConditionMax 10.0
+CinebotConditionData 138b21c0-4132-4823-8a24-217c0e10ad37
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_SPEED
+	BlackBoardVarName 
+	ConditionMin 8.0
+	ConditionMax 1000.0
+CinebotControllerRigAsset b2751bfa-9c40-49dd-bbc1-1e3b9b97f5e6 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Scripted_Moments/SanFran/SC015_hoodslam_Rig
+	Controllers::array
+		member(0) 1d4aeaa5-d0c6-4bfe-86f6-80cc130dd8ca
+		member(1) b4d2d8e9-09c5-4d5d-8b0d-731257a60e6f
+	ForceAllInputTypesEnabled False
+CinebotTransitionData b51fcfdb-2cb5-484c-8ad0-78439fc5017f
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 1000000.0
+		Time 5.0
+		EaseInControl 0.4000000059604645
+		EaseOutControl 0.699999988079071
+	Blend CINEBOT_BLEND_EULER
+	Clean False
+CurveData 6f455d64-71b2-4c3a-968d-0294d9865d93
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 80.0
+			y 2.0
+			z 4.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z 0.2720029354095459
+		member(3)::Vec3
+			x 0.3816666603088379
+			y 0.08500000089406967
+			z 2.9570717811584473
+		member(4)::Vec3
+			x 0.7083333134651184
+			y 0.5016666650772095
+			z 6.195359230041504
+		member(5)::Vec3
+			x 1.0
+			y 1.0
+			z -20.671554565429688
+CurveData 9f9d4c8a-fbed-4147-b007-c9305d0f1f35
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 80.0
+			y 0.1599999964237213
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -1.9503004550933838
+		member(3)::Vec3
+			x 0.8966666460037231
+			y 0.75
+			z 9.497538566589355
+		member(4)::Vec3
+			x 1.0
+			y 1.0
+			z -74.98807525634766
+CurveData 76552d8c-461d-4615-b807-d8a728054f3a
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 80.0
+			y 1.0
+			z 5.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -1.0434972047805786
+		member(3)::Vec3
+			x 0.6399999856948853
+			y 0.02666666731238365
+			z 2.4776194095611572
+		member(4)::Vec3
+			x 0.7366666793823242
+			y 0.1550000011920929
+			z 48.96198654174805
+		member(5)::Vec3
+			x 0.8500000238418579
+			y 0.6483333110809326
+			z -23.39482879638672
+		member(6)::Vec3
+			x 1.0
+			y 1.0
+			z -35.19149398803711
+CurveData ec027894-417e-4161-9123-db98fa936f5a
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_CAMERASLIP
+	BlackBoardVarName 
+	OutputScale -1.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 1.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z 6.0
+		member(3)::Vec3
+			x 1.0
+			y 1.0
+			z -6.0
+CurveData 26dfedf6-de4a-482e-8e2a-01eede7e144e
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_ACCEL
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale -1.0
+	MirrorInput False
+	Conditions::array
+		member(0) 665577db-add3-4c74-834c-4e02c1224ecb
+		member(1) ec796d9e-6a68-40a5-ad04-47e115661152
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 15.0
+			y 1.0
+			z 5.0
+		member(2)::Vec3
+			x -67.40666198730469
+			y 0.2800000011920929
+			z 0.002980753080919385
+		member(3)::Vec3
+			x 0.0
+			y 0.0
+			z -0.00633125239983201
+		member(4)::Vec3
+			x 0.1733333319425583
+			y 0.03333333507180214
+			z 10.578398704528809
+		member(5)::Vec3
+			x 0.5833333134651184
+			y 0.7633333206176758
+			z -6.856795787811279
+		member(6)::Vec3
+			x 1.0
+			y 1.0
+			z -0.6612017750740051
+CurveData 6ba8cd2d-f490-4260-a163-964cb59d32a1
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions::array
+		member(0) f45cc8b1-b8d1-489e-9090-29e85a51f301
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 1.0
+			y 10.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z 6.0
+		member(3)::Vec3
+			x 1.0
+			y 1.0
+			z -6.0
+CurveData 52d5fedb-57d7-4fd3-889e-16e6e94ef0f4
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_ACCEL
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions::array
+		member(0) 25390fe7-8460-420b-9b19-dd681a574a5f
+		member(1) 0da634d1-6486-441a-84da-dd5818f8e8b3
+		member(2) f926f45c-8348-4c75-9aef-96b1af20e222
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 9.0
+			y 1.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -0.6991596221923828
+		member(3)::Vec3
+			x 0.4399999976158142
+			y 0.16833330690860748
+			z 6.615260601043701
+		member(4)::Vec3
+			x 1.0
+			y 1.0
+			z -11.263625144958496
+CurveData 6a3157f7-7798-4e41-b750-294180094f0e
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 97.0
+			y 1.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -3.6554970741271973
+		member(3)::Vec3
+			x 0.9750000238418579
+			y 0.92166668176651
+			z 13.128219604492188
+		member(4)::Vec3
+			x 1.0
+			y 1.0
+			z -382.56475830078125
+CurveData 075a8445-c642-45ca-a0f1-9824db220301
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_ACCEL
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions::array
+		member(0) 10458bb2-276c-4fea-a76d-df6ef93d05b2
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 8.0
+			y 1.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -0.9252488613128662
+		member(3)::Vec3
+			x 0.8550000190734863
+			y 0.6983333230018616
+			z 7.5821757316589355
+		member(4)::Vec3
+			x 1.0
+			y 1.0
+			z -46.8350944519043
+CurveData d9ea04ee-d0a0-4889-b7b8-2138dbf28ce1
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_RPM
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 1.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z 6.0
+		member(3)::Vec3
+			x 1.0
+			y 1.0
+			z -6.0
+CurveData 19047b91-f3e2-4764-8f03-b9afea318912
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_WORLD_COLLISION
+	BlackBoardVarName 
+	OutputScale 0.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 10.0
+			y 1.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -3.045685291290283
+		member(3)::Vec3
+			x 0.014999999664723873
+			y 0.0
+			z 6.091370582580566
+		member(4)::Vec3
+			x 1.0
+			y 1.0
+			z -6.137751579284668
+CurveData e4ea7b32-9630-41b1-960d-01d4ebdb80d0
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_CAMERASLIP
+	BlackBoardVarName 
+	OutputScale 0.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 0.10000000149011612
+			y 1.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -1.8223762512207031
+		member(3)::Vec3
+			x 0.8500000238418579
+			y 0.6566666960716248
+			z 9.098039627075195
+		member(4)::Vec3
+			x 1.0
+			y 1.0
+			z -50.32680892944336
+CurveData 09b1ca98-2d44-4944-be55-8936f895354b
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_CONTROLLER
+	BlackBoardVarName 
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions::array
+		member(0) *nullGuid*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+LocatorComposerData e43e1a41-f310-41c6-bd33-bf82d8a89308
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	CinebotLocatorName CarSelect_Target_Establish_End
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	FOV 17.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+LocatorTransposerData 8114d0e3-041c-4abb-8c6d-940e8972e94a
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName CarSelect_Locator_Establish
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+ReactionControllerData b4d2d8e9-09c5-4d5d-8b0d-731257a60e6f
+	$::CinebotControllerData
+		$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	ReactionOutput CINEBOT_REACTION_OUTPUT_SHIFT_Y
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	XMirrorInput False
+	UseAngleInterpolation False
+	DampTime 0.0
+	Conditions *nullArray*
+	XOR_Conditions False
+	ConditionsDampTime 0.0
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 1.0
+			y 0.18000000715255737
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.5566666722297668
+			z -0.039999961853027344
+		member(3)::Vec3
+			x 1.0
+			y 0.550000011920929
+			z 0.039999961853027344
+	ControllerInput EIANoInput
+	ControllerInputRaw *nullGuid*
+	Pivot 0.0
+	Delay 0.0
+	IsAdditive False
+ScreenSpaceComposerData a1699bec-4cfe-452e-bc88-dbf3b691f5b7
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	TargetPart 
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.0
+		y 0.4000000059604645
+		z 1.0
+	MarkerType CAMERA_HOOD
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.5
+	SoftBottom 0.5
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 0.0
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.5
+	SoftRight 0.5
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 0.0
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 38.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene False
+	UseUpDamping False
+	UpDampingBlendTime 0.20000000298023224
+TorusTransposerData 322365b4-751c-41c0-8036-7d19b97a06ee
+	$::CinebotTransposerData
+		$::DataContainer
+	AnchorPart 
+	MarkerType CAMERA_HOOD
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	OffsetScale *nullGuid*
+	OffsetDampTime::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusHard 0.0
+	InnerRadiusSoft 0.20000000298023224
+	OuterRadiusSoft 0.20000000298023224
+	OuterRadiusHard 0.30000001192092896
+	RadiusBlendTime 0.0
+	LowerHeightHard -1.0
+	LowerHeightSoft -0.2800000011920929
+	UpperHeightSoft -0.2800000011920929
+	UpperHeightHard 0.0
+	HeightBlendTime 0.0
+	LowerHeadingHard -180.0
+	LowerHeadingSoft 0.0
+	UpperHeadingSoft 0.0
+	UpperHeadingHard 180.0
+	HeadingBlendTime 0.0
+	HeadingBlendTimeCurve *nullGuid*
+	UseWorldHeading False
+	WorldHeading 0.0
+	UseVelocityBasedDirection False
+	UseFilteredVelocityBasedDirection False
+	VelocityBasedDirectionOffset 0.0
+	MakeVelocityBasedDirectionHorizontal False
+	CacheFirstFrameHeading False
+	UseSimpleHeadingDamping False
+	SimpleHeadingOffset 0.0
+	FollowTarget False

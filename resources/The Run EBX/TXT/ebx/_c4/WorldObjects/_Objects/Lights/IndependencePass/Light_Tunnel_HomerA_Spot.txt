@@ -1,0 +1,300 @@
+EffectReferenceObjectData 1659d47b-8776-4cbd-973f-670923779c5d
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.09229111671447754
+				z 0.0
+		Blueprint _c4/Effects/Ambient/IndependencePass/AMB_TunnelLight/b7d304b5-8851-b770-c4a4-94093ac15e68
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart True
+FloatHubEntityData 262ce002-ce31-439f-b1f5-73759cdedb97
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 3
+	Realm Realm_Client
+	InputCount 2
+	InputSelect 0
+FloatPropertyTrackData 91f52edd-4ef3-447a-80c1-6f6a2128176e
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id -458572566
+			Times::array
+				member(0) 0
+				member(1) 350
+		InterpolationType InterpolationType_CatmullRom
+	Values::array
+		member(0) 0.0
+		member(1) 60.0
+FloatPropertyTrackData 8f0cc155-1680-404b-a464-6490e53203b5
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id -458572566
+			Times::array
+				member(0) 0
+				member(1) 600
+		InterpolationType InterpolationType_CatmullRom
+	Values::array
+		member(0) 60.0
+		member(1) 0.0
+InterfaceDescriptorData 156212a8-fe84-4946-9488-49579cc9c607
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 984373978
+		member(1)::DynamicEvent
+			Id -1875397260
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+ReferenceObjectData fb1482e9-f591-498d-8b02-a76102bbaca3
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 3
+		IsPropertyConnectionTarget 3
+		IndexInBlueprint 0
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 2.830699920654297
+			y 2.27237361571841e-40
+			z 3.1699566420561965e-21
+		up::Vec3
+			x 2.7831656649433185e-32
+			y 2.830699920654297
+			z -2.4853043234518424e-11
+		forward::Vec3
+			x -3.1699566420561965e-21
+			y 2.4853043234518424e-11
+			z 2.830699920654297
+		trans::Vec3
+			x 0.0
+			y 0.07264330238103867
+			z 0.0
+	Blueprint _c4/WorldObjects/_Objects/Tunnel/IndependencePass/Tunnel_HomerA_LightA/d1b4f350-73e0-31f1-6228-c8025c6f21c5
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	Excluded False
+SequenceEntityData 91d08c7e-c420-4791-9856-4de77d787239
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 350
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) 91f52edd-4ef3-447a-80c1-6f6a2128176e
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+SequenceEntityData e981c884-a343-4142-b748-0caff12d61a9
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 600
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) 8f0cc155-1680-404b-a464-6490e53203b5
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+SpatialPrefabBlueprint e37642f9-b0fa-d24d-a4e6-4e9f272ede01 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/WorldObjects/_Objects/Lights/IndependencePass/Light_Tunnel_HomerA_Spot
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 262ce002-ce31-439f-b1f5-73759cdedb97
+							Target edfaba97-889b-495b-997f-3cdd8fa2fd34
+							SourceFieldId 193453899
+							TargetFieldId -458572566
+						member(1)::PropertyConnection
+							Source 91d08c7e-c420-4791-9856-4de77d787239
+							Target 262ce002-ce31-439f-b1f5-73759cdedb97
+							SourceFieldId -458572566
+							TargetFieldId 193450866
+						member(2)::PropertyConnection
+							Source e981c884-a343-4142-b748-0caff12d61a9
+							Target 262ce002-ce31-439f-b1f5-73759cdedb97
+							SourceFieldId -458572566
+							TargetFieldId 193450867
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 156212a8-fe84-4946-9488-49579cc9c607
+						Target 91d08c7e-c420-4791-9856-4de77d787239
+						SourceEvent::EventSpec
+							Id 984373978
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 156212a8-fe84-4946-9488-49579cc9c607
+						Target 91d08c7e-c420-4791-9856-4de77d787239
+						SourceEvent::EventSpec
+							Id 984373978
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 156212a8-fe84-4946-9488-49579cc9c607
+						Target e981c884-a343-4142-b748-0caff12d61a9
+						SourceEvent::EventSpec
+							Id -1875397260
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 156212a8-fe84-4946-9488-49579cc9c607
+						Target e981c884-a343-4142-b748-0caff12d61a9
+						SourceEvent::EventSpec
+							Id -1875397260
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 156212a8-fe84-4946-9488-49579cc9c607
+						Target 1659d47b-8776-4cbd-973f-670923779c5d
+						SourceEvent::EventSpec
+							Id -1875397260
+						TargetEvent::EventSpec
+							Id 229946160
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 156212a8-fe84-4946-9488-49579cc9c607
+						Target 1659d47b-8776-4cbd-973f-670923779c5d
+						SourceEvent::EventSpec
+							Id -1875397260
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 156212a8-fe84-4946-9488-49579cc9c607
+						Target 1659d47b-8776-4cbd-973f-670923779c5d
+						SourceEvent::EventSpec
+							Id 984373978
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor 156212a8-fe84-4946-9488-49579cc9c607
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) fb1482e9-f591-498d-8b02-a76102bbaca3
+			member(1) edfaba97-889b-495b-997f-3cdd8fa2fd34
+			member(2) 91d08c7e-c420-4791-9856-4de77d787239
+			member(3) 262ce002-ce31-439f-b1f5-73759cdedb97
+			member(4) e981c884-a343-4142-b748-0caff12d61a9
+			member(5) 1659d47b-8776-4cbd-973f-670923779c5d
+SpotLightEntityData edfaba97-889b-495b-997f-3cdd8fa2fd34
+	$::LocalLightEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 0
+					IndexInBlueprint 1
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 5.96046660916727e-08
+					z -0.9999999403953552
+				forward::Vec3
+					x 0.0
+					y 0.9999999403953552
+					z 5.96046660916727e-08
+				trans::Vec3
+					x -0.03249311447143555
+					y -0.9803717136383057
+					z -0.03806114196777344
+		Color::Vec3
+			x 0.9909999966621399
+			y 0.27799999713897705
+			z 0.004999999888241291
+		Radius 30.0
+		Intensity 60.0
+		AttenuationOffset 0.009999999776482582
+		Visible True
+		VisibleAtDay True
+		VisibleAtNight True
+		VisibleAtSunset True
+		ArtOptimized True
+		SpecularEnable True
+		EnlightenEnable False
+		EnlightenColorScale::Vec3
+			x 0.05000000074505806
+			y 0.05000000074505806
+			z 0.05000000074505806
+		ParticleColorScale::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+	Shape SpotLightShape_Cone
+	ConeInnerAngle 106.73300170898438
+	ConeOuterAngle 164.82200622558594
+	FrustumFov 40.0
+	FrustumAspect 1.0
+	OrthoWidth 5.0
+	OrthoHeight 5.0
+	Texture *nullGuid*
+	CastShadowsEnable False
+	ShadowBias 0.0
+	NearPlane 0.10000000149011612

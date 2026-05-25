@@ -1,0 +1,137 @@
+AudioGraphParameter 9968f3d4-2ac6-4d5a-b345-fb9a9b690f93
+	$::DataContainer
+	DefaultValue 0.0
+	NameHash 2437412131
+	ValueIndex 3
+MixerAsset f4528121-e2ba-c8a7-f8ff-46f34d312392 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Sound/Mixing/CarMixing/MIX_SirenMixer
+	Graph aebe211a-ba54-eceb-6cec-777ce74d9a53
+	Presets::array
+		member(0) 04b7341d-b4f2-e934-5103-90e518133c5b
+	DefaultPreset 04b7341d-b4f2-e934-5103-90e518133c5b
+MixerGraphData aebe211a-ba54-eceb-6cec-777ce74d9a53
+	$::AudioGraphData
+		$::DataContainer
+		Nodes::array
+			member(0) 0a29fef5-d70b-4c82-a6f2-e83f2ea3ad03
+			member(1) 42c6ba49-9575-45c3-a760-29d3a26750a9
+			member(2) 01cc1ce8-9252-4e5a-ba95-5f9e9b19556b
+		PublicParameters *nullArray*
+		PublicEvents *nullArray*
+		PublicAssetParameters *nullArray*
+		BlackboardSends *nullArray*
+		BlackboardReceives *nullArray*
+		PublicValueCount 1
+		ValueCount 7
+		UnconnectedValues::array
+			member(0) -4.0
+			member(1) 0.0
+			member(2) 3.0
+	Inputs::array
+		member(0) 9968f3d4-2ac6-4d5a-b345-fb9a9b690f93
+	Outputs *nullArray*
+MixerInputEntry f10a9b4c-1b02-4dc7-8f18-341da2de5ea3
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	Source 9968f3d4-2ac6-4d5a-b345-fb9a9b690f93
+MixerInputNodeData 0a29fef5-d70b-4c82-a6f2-e83f2ea3ad03
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) f10a9b4c-1b02-4dc7-8f18-341da2de5ea3
+MixerPreset 04b7341d-b4f2-e934-5103-90e518133c5b
+	$::DataContainer
+	NameHash 0
+	Groups::array
+		member(0)::MixerPresetGroupData
+			Group _c4/Sound/MixerSystem_C4/2854c325-eec3-49e1-a719-e663881625cf
+			State MixGroupState_Normal
+			AttackTime 0.10000000149011612
+			ReleaseTime 0.20000000298023224
+			IsDominant False
+			IsOffset True
+			Priority 1
+			Properties::array
+				member(0)::MixGroupPropertyValue
+					Property 0
+					Value 0.0
+					Controlled True
+					AttackTime 0.10000000149011612
+					ReleaseTime 0.20000000298023224
+		member(1)::MixerPresetGroupData
+			Group _c4/Sound/MixerSystem_C4/b36947ce-80bf-4fd7-826f-fcf45bb7478a
+			State MixGroupState_Normal
+			AttackTime 0.10000000149011612
+			ReleaseTime 0.20000000298023224
+			IsDominant False
+			IsOffset True
+			Priority 1
+			Properties::array
+				member(0)::MixGroupPropertyValue
+					Property 0
+					Value 0.0
+					Controlled True
+					AttackTime 0.10000000149011612
+					ReleaseTime 0.20000000298023224
+	Nodes *nullArray*
+MixerSetPropertyEntry 5fbf8d98-3121-4e6c-8372-e5044c628501
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+	Target 0
+	Group _c4/Sound/MixerSystem_C4/2854c325-eec3-49e1-a719-e663881625cf
+	AttackTime 0.10000000149011612
+	ReleaseTime 0.20000000298023224
+MixerSetPropertyEntry 577535b8-1eb7-40ae-ba91-a759d358ec30
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+	Target 0
+	Group _c4/Sound/MixerSystem_C4/b36947ce-80bf-4fd7-826f-fcf45bb7478a
+	AttackTime 0.10000000149011612
+	ReleaseTime 0.20000000298023224
+MixerSetPropertyNodeData 01cc1ce8-9252-4e5a-ba95-5f9e9b19556b
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 5fbf8d98-3121-4e6c-8372-e5044c628501
+		member(1) 577535b8-1eb7-40ae-ba91-a759d358ec30
+ScaleClampNodeData 42c6ba49-9575-45c3-a760-29d3a26750a9
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 5
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 3.0
+		ValueIndex 6
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 5
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue -4.0
+		ValueIndex 4
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True

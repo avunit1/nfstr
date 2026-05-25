@@ -1,0 +1,246 @@
+<BoolEntityData Guid="8dd85ebb-574f-4dff-9162-642efe3e65bc">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <DefaultValue>False</DefaultValue>
+</BoolEntityData>
+<DelayEntityData Guid="eae71919-62a0-42c6-b7c2-1468dd0b6cc3">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<EffectReferenceObjectData Guid="c8448a90-32e5-49c6-a757-f76de8323d9f">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Gameplay/Checkpoint_Marker_Smoke [e685a42c-23b3-e884-c281-7eb5e83a9b1e]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>False</AutoStart>
+</EffectReferenceObjectData>
+<InterfaceDescriptorData Guid="84a893d0-3209-4e3d-8b91-e12cfd38033c">
+    <Fields Count="1">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0x6e22fcd9</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x82b90c1c</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xb9284ac4</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<PrefabBlueprint Guid="8fe810a0-00d1-4240-bda4-f608e8ae3915">
+    <Name>_c4/Gameplay/CheckpointMarker_FX</Name>
+    <PropertyConnections Count="2">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 84a893d0-3209-4e3d-8b91-e12cfd38033c</Source>
+                <Target>[EffectReferenceObjectData] c8448a90-32e5-49c6-a757-f76de8323d9f</Target>
+                <SourceFieldId>0x6e22fcd9</SourceFieldId>
+                <TargetFieldId>BlueprintTransform [E790F446]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[BoolEntityData] 8dd85ebb-574f-4dff-9162-642efe3e65bc</Source>
+                <Target>[ReferenceObjectData] b1d06ec8-5b29-47cb-95dd-00a59a81554f</Target>
+                <SourceFieldId>Value [0D6EF36E]</SourceFieldId>
+                <TargetFieldId>Visible [35BC69AB]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="5">
+        <member Index="0">
+            <EventConnection>
+                <Source>[DelayEntityData] eae71919-62a0-42c6-b7c2-1468dd0b6cc3</Source>
+                <Target>[BoolEntityData] 8dd85ebb-574f-4dff-9162-642efe3e65bc</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SetFalse [27D4023A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 84a893d0-3209-4e3d-8b91-e12cfd38033c</Source>
+                <Target>[EffectReferenceObjectData] c8448a90-32e5-49c6-a757-f76de8323d9f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb9284ac4</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 84a893d0-3209-4e3d-8b91-e12cfd38033c</Source>
+                <Target>[BoolEntityData] 8dd85ebb-574f-4dff-9162-642efe3e65bc</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb9284ac4</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SetTrue [A4253151]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 84a893d0-3209-4e3d-8b91-e12cfd38033c</Source>
+                <Target>[EffectReferenceObjectData] c8448a90-32e5-49c6-a757-f76de8323d9f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x82b90c1c</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 84a893d0-3209-4e3d-8b91-e12cfd38033c</Source>
+                <Target>[BoolEntityData] 8dd85ebb-574f-4dff-9162-642efe3e65bc</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x82b90c1c</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SetFalse [27D4023A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 84a893d0-3209-4e3d-8b91-e12cfd38033c</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[EffectReferenceObjectData] c8448a90-32e5-49c6-a757-f76de8323d9f</member>
+        <member Index="1">[ReferenceObjectData] b1d06ec8-5b29-47cb-95dd-00a59a81554f</member>
+        <member Index="2">[BoolEntityData] 8dd85ebb-574f-4dff-9162-642efe3e65bc</member>
+        <member Index="3">[DelayEntityData] eae71919-62a0-42c6-b7c2-1468dd0b6cc3</member>
+    </Objects>
+</PrefabBlueprint>
+<ReferenceObjectData Guid="b1d06ec8-5b29-47cb-95dd-00a59a81554f">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/_Meshes/CheckpointSmoke_Stick [95bae37f-2a28-974e-2e2f-c7cd26c83fb5]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>

@@ -1,0 +1,47 @@
+<AdaptivePidSteeringData Guid="60483e0d-8057-45b9-a872-900c1ec3ca3b">
+    <IntegralClamp>0,5</IntegralClamp>
+    <DerivativeClamp>10</DerivativeClamp>
+    <MinValueForTermToTuneCoefficient>0,01</MinValueForTermToTuneCoefficient>
+    <AdaptiveMRACSlice>0,1</AdaptiveMRACSlice>
+    <AdaptationGainP>1E-05</AdaptationGainP>
+    <AdaptationGainI>1E-05</AdaptationGainI>
+    <AdaptationGainD>1E-05</AdaptationGainD>
+    <MaxPCoefficient>1</MaxPCoefficient>
+    <MinPCoefficient>0,4</MinPCoefficient>
+    <MaxICoefficient>0,1</MaxICoefficient>
+    <MinICoefficient>0,01</MinICoefficient>
+    <MaxDCoefficient>0,4</MaxDCoefficient>
+    <MinDCoefficient>0,1</MinDCoefficient>
+    <MinSpeedForAdaptation>10</MinSpeedForAdaptation>
+</AdaptivePidSteeringData>
+<AdaptivePidThrottleData Guid="9d017b67-b5bc-41da-ad65-9f00f943cb79">
+    <PsychoThrottleBrakeMinSpeedForAdaptation>10</PsychoThrottleBrakeMinSpeedForAdaptation>
+    <PsychoThottleBrakePSeed>-1</PsychoThottleBrakePSeed>
+    <PsychoThottleBrakeISeed>0</PsychoThottleBrakeISeed>
+    <PsychoThottleBrakeDSeed>0</PsychoThottleBrakeDSeed>
+    <AdaptiveMRACSlice>0,1</AdaptiveMRACSlice>
+    <MinValueForTermToTuneCoefficient>0,01</MinValueForTermToTuneCoefficient>
+    <AdaptationGainP>5E-06</AdaptationGainP>
+    <AdaptationGainI>5E-06</AdaptationGainI>
+    <AdaptationGainD>5E-06</AdaptationGainD>
+    <MaxPCoefficient>0</MaxPCoefficient>
+    <MinPCoefficient>-0,4</MinPCoefficient>
+    <MaxICoefficient>0</MaxICoefficient>
+    <MinICoefficient>-0,01</MinICoefficient>
+    <MaxDCoefficient>0</MaxDCoefficient>
+    <MinDCoefficient>-0,6</MinDCoefficient>
+</AdaptivePidThrottleData>
+<BasicPidThrottleData Guid="8ad41aab-94e8-48fd-993b-4c662b0a4c2b">
+    <ThrottleP>0,4</ThrottleP>
+    <ThrottleI>0,01</ThrottleI>
+    <ThrottleD>0,1</ThrottleD>
+    <IntegralClamp>5</IntegralClamp>
+    <DerivativeClamp>10</DerivativeClamp>
+</BasicPidThrottleData>
+<VehiclePidData Guid="b8c776a1-2f3d-85a7-b666-20690b6c4e4f">
+    <Name>_c4/AI/Locomotion/DefaultRacerPid</Name>
+    <BasicPidThrottle>[BasicPidThrottleData] 8ad41aab-94e8-48fd-993b-4c662b0a4c2b</BasicPidThrottle>
+    <AdaptivePidSteering>[AdaptivePidSteeringData] 60483e0d-8057-45b9-a872-900c1ec3ca3b</AdaptivePidSteering>
+    <AdaptivePidThrottle>[AdaptivePidThrottleData] 9d017b67-b5bc-41da-ad65-9f00f943cb79</AdaptivePidThrottle>
+    <AdaptiveGasBrake>True</AdaptiveGasBrake>
+</VehiclePidData>

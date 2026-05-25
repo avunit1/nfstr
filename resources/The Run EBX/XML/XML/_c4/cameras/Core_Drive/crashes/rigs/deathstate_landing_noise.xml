@@ -1,0 +1,278 @@
+<CinebotConditionData Guid="7e2abcfc-f84b-4dc5-93d2-2a379dd54240">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>CollisionMagnitude</BlackBoardVarName>
+    <ConditionMin>1</ConditionMin>
+    <ConditionMax>1000</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="22f39297-33a7-45fd-9ca1-8c43906e2fec">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>CollisionMagnitude</BlackBoardVarName>
+    <ConditionMin>3</ConditionMin>
+    <ConditionMax>8</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="05afa3af-45a7-4674-8340-357bf8636f24">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>CollisionMagnitude</BlackBoardVarName>
+    <ConditionMin>5</ConditionMin>
+    <ConditionMax>50</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="dd862358-d95e-4b26-936f-3fa62bfffd47">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>CollisionMagnitude</BlackBoardVarName>
+    <ConditionMin>0,1</ConditionMin>
+    <ConditionMax>1</ConditionMax>
+</CinebotConditionData>
+<CinebotControllerRigAsset Guid="0605ce1d-9dc0-47b3-906b-83547fd88dae">
+    <Name>_c4/cameras/Core_Drive/Crashes/rigs/Deathstate_landing_noise</Name>
+    <Controllers Count="4">
+        <member Index="0">[NoiseControllerData] 9943ff44-600b-4e5c-b338-37479b7db498</member>
+        <member Index="1">[NoiseControllerData] 8b90145b-71fb-47b3-9442-223350725067</member>
+        <member Index="2">[NoiseControllerData] 773d4a2d-a74a-4382-85fe-cf65e8e6398f</member>
+        <member Index="3">[NoiseControllerData] 43c99aa8-46a9-484a-bada-1ee6084d5eb5</member>
+    </Controllers>
+    <ForceAllInputTypesEnabled>False</ForceAllInputTypesEnabled>
+</CinebotControllerRigAsset>
+<CurveData Guid="881a6c1e-cbb0-4293-81f4-6602deef75a8">
+    <ReactionInput>CINEBOT_REACTION_INPUT_BLACKBOARD</ReactionInput>
+    <BlackBoardVarName>LocalPlayerDistFromCamera</BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] 7e2abcfc-f84b-4dc5-93d2-2a379dd54240</member>
+    </Conditions>
+    <ReactionCurve Count="4">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>1</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>15</x>
+                <y>1</y>
+                <z>2</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,1466667</y>
+                <z>4,79</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>1</x>
+                <y>0,945</y>
+                <z>-4,79</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="097a0f3d-ccfa-42b9-a217-f3c4e4436b5d">
+    <ReactionInput>CINEBOT_REACTION_INPUT_BLACKBOARD</ReactionInput>
+    <BlackBoardVarName>LocalPlayerDistFromCamera</BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] dd862358-d95e-4b26-936f-3fa62bfffd47</member>
+    </Conditions>
+    <ReactionCurve Count="4">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>1</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>15</x>
+                <y>1</y>
+                <z>2</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,1466667</y>
+                <z>4,79</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>1</x>
+                <y>0,945</y>
+                <z>-4,79</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="596ed49f-e272-4671-9032-376a086768e6">
+    <ReactionInput>CINEBOT_REACTION_INPUT_SPEED</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <OutputScale>0</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] 22f39297-33a7-45fd-9ca1-8c43906e2fec</member>
+    </Conditions>
+    <ReactionCurve Count="4">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>1</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>2</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>1</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="8036b8fc-9fb6-4052-afa6-f91f9aef6209">
+    <ReactionInput>CINEBOT_REACTION_INPUT_SPEED</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <OutputScale>0</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] 05afa3af-45a7-4674-8340-357bf8636f24</member>
+    </Conditions>
+    <ReactionCurve Count="4">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>1</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>2</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>1</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<NoiseControllerData Guid="9943ff44-600b-4e5c-b338-37479b7db498">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>5</y>
+            <z>1</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>5</Frequency>
+    <Roughness>1</Roughness>
+    <Octaves>0x00000001</Octaves>
+    <Delay>0,005</Delay>
+    <RampIn>0,1</RampIn>
+    <Duration>0,2</Duration>
+    <RampOut>0,2</RampOut>
+    <CurveParams>[CurveData] 881a6c1e-cbb0-4293-81f4-6602deef75a8</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_Ignore</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="8b90145b-71fb-47b3-9442-223350725067">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>5</y>
+            <z>1</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>5</Frequency>
+    <Roughness>1</Roughness>
+    <Octaves>0x00000001</Octaves>
+    <Delay>0,005</Delay>
+    <RampIn>0,1</RampIn>
+    <Duration>0,2</Duration>
+    <RampOut>0,2</RampOut>
+    <CurveParams>[CurveData] 097a0f3d-ccfa-42b9-a217-f3c4e4436b5d</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_Ignore</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="773d4a2d-a74a-4382-85fe-cf65e8e6398f">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>5</y>
+            <z>0,5</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>5</Frequency>
+    <Roughness>0,5</Roughness>
+    <Octaves>0x00000002</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>0,23</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] 596ed49f-e272-4671-9032-376a086768e6</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="43c99aa8-46a9-484a-bada-1ee6084d5eb5">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>4</y>
+            <z>0,5</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>4</Frequency>
+    <Roughness>0,5</Roughness>
+    <Octaves>0x00000002</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>0,4</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] 8036b8fc-9fb6-4052-afa6-f91f9aef6209</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>

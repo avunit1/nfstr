@@ -1,0 +1,113 @@
+<FadeEntityData Guid="699bbb7a-02e5-4136-81b9-77bafeb3fff7">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,25</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<InterfaceDescriptorData Guid="98933f03-5937-40f1-99f6-213b77a50b32">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xd8d04f65</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<PrintDebugTextEntityData Guid="ef595dc4-e03a-4bb1-954f-8d66a835b318">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <TextColor>
+        <Vec3>
+            <x>0,957</x>
+            <y>0</y>
+            <z>1,401298E-45</z>
+        </Vec3>
+    </TextColor>
+    <Realm>Realm_Client</Realm>
+    <Text>Breadcrumb Reset</Text>
+    <Enabled>True</Enabled>
+</PrintDebugTextEntityData>
+<SpatialPrefabBlueprint Guid="fbc59a48-09b8-7657-4fe5-a762eddaaf53">
+    <Name>_c4/Gameplay/Flow/ResetTreatment_PreBreadcrumb_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="3">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 98933f03-5937-40f1-99f6-213b77a50b32</Source>
+                <Target>[PrintDebugTextEntityData] ef595dc4-e03a-4bb1-954f-8d66a835b318</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Print [0DD32774]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 98933f03-5937-40f1-99f6-213b77a50b32</Source>
+                <Target>[FadeEntityData] 699bbb7a-02e5-4136-81b9-77bafeb3fff7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[FadeEntityData] 699bbb7a-02e5-4136-81b9-77bafeb3fff7</Source>
+                <Target>[InterfaceDescriptorData] 98933f03-5937-40f1-99f6-213b77a50b32</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 98933f03-5937-40f1-99f6-213b77a50b32</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[PrintDebugTextEntityData] ef595dc4-e03a-4bb1-954f-8d66a835b318</member>
+        <member Index="1">[FadeEntityData] 699bbb7a-02e5-4136-81b9-77bafeb3fff7</member>
+    </Objects>
+</SpatialPrefabBlueprint>

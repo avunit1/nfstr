@@ -1,0 +1,127 @@
+BBField 371ed608-5a1a-43dd-8032-7cbca8904bf6
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name Velocity
+	Scope BlackboardScope_Entity
+BBMapToCurve e5dfdb33-8849-4648-a633-2dc1acb9a307
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.010534858331084251
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 2.7508227825164795
+					y 0.01728796400129795
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 49.79326629638672
+					y 0.6081847548484802
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 0.9660993814468384
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectBlueprint c2988c19-939f-3906-a35e-7dd03eb849c5 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Vehicle/Collision/DRV_BottomOut
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object a20d8f08-b490-cc8f-69d2-106e9bf041dd
+EffectEntityData a20d8f08-b490-cc8f-69d2-106e9bf041dd
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) e9718c75-0bd7-4ac1-88d4-94b7045350bf
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) 6b077f02-2ff6-4009-a55e-803f7dc8d9a1
+EmitterEntityData e9718c75-0bd7-4ac1-88d4-94b7045350bf
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Vehicle/Collision/emitters/DRV_BottomOut_Sparks/c89c16bd-c4fe-4465-a9b6-d68e898dd3d3
+	SpawnProbability 1.0
+ParameterBlackboardAssociation 6b077f02-2ff6-4009-a55e-803f7dc8d9a1
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 371ed608-5a1a-43dd-8032-7cbca8904bf6
+	BlackboardField2 *nullGuid*
+	BlackboardMapping e5dfdb33-8849-4648-a633-2dc1acb9a307

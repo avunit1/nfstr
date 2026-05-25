@@ -1,0 +1,148 @@
+<BBField Guid="960e0ce9-6bd5-42b3-af16-917e3fdd741e">
+    <Name>Fog_Opacity</Name>
+    <Scope>BlackboardScope_Level</Scope>
+</BBField>
+<BBMapToCurve Guid="97e11e7b-34ee-4689-bbff-de46d364ad96">
+    <NumInputsRequired>0x00000001</NumInputsRequired>
+    <Curve>
+        <MultiPointLine>
+            <Points Count="2">
+                <member Index="0">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>0</x>
+                                <y>1,236531E-08</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+                <member Index="1">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>1</x>
+                                <y>1</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+            </Points>
+        </MultiPointLine>
+    </Curve>
+    <ClampOutputMax>1</ClampOutputMax>
+    <ClampOutputMin>0</ClampOutputMin>
+    <OutputIsXTimesY>False</OutputIsXTimesY>
+    <ClampOutput>False</ClampOutput>
+</BBMapToCurve>
+<EffectBlueprint Guid="4ad92fad-80df-4f0d-9fb7-14a3e6bfdd9a">
+    <Name>_c4/Effects/Ambient/SanFrancisco/AMB_SanFrancisco_FogBank</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="0"></EventConnections>
+    <Descriptor>nullptr</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Object>[EffectEntityData] 93bbad6d-1080-44af-8e09-d33712939f84</Object>
+</EffectBlueprint>
+<EffectEntityData Guid="93bbad6d-1080-44af-8e09-d33712939f84">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>2,802597E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="1">
+        <member Index="0">[EmitterEntityData] 253257da-450a-465c-828f-644a736bb2a6</member>
+    </Components>
+    <MaxInstanceCount>0x00000001</MaxInstanceCount>
+    <CullDistance>0</CullDistance>
+    <StartDelay>0</StartDelay>
+    <BlackboardAssociations Count="1">
+        <member Index="0">[ParameterBlackboardAssociation] a7ef98b0-1c42-49fc-a8e6-860786eecd7c</member>
+    </BlackboardAssociations>
+    <ResetInstanceWhenStarted>True</ResetInstanceWhenStarted>
+</EffectEntityData>
+<EmitterEntityData Guid="253257da-450a-465c-828f-644a736bb2a6">
+    <IndexInBlueprint>FFFF</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <MaxInstanceCount>0x00000001</MaxInstanceCount>
+    <CullDistance>0</CullDistance>
+    <StartDelay>0</StartDelay>
+    <ResetInstanceWhenStarted>True</ResetInstanceWhenStarted>
+    <BlackboardAssociations Count="0"></BlackboardAssociations>
+    <Emitter>[Ebx] _c4/Effects/Ambient/SanFrancisco/emitters/AMB_SanFrancisco_FogBank_Clouds [9d8d14fd-9777-4827-aa9b-f0edb39c94e0]</Emitter>
+    <SpawnProbability>1</SpawnProbability>
+</EmitterEntityData>
+<ParameterBlackboardAssociation Guid="a7ef98b0-1c42-49fc-a8e6-860786eecd7c">
+    <EmitterParameter>EmitterParameter1</EmitterParameter>
+    <BlackboardField1>[BBField] 960e0ce9-6bd5-42b3-af16-917e3fdd741e</BlackboardField1>
+    <BlackboardField2>nullptr</BlackboardField2>
+    <BlackboardMapping>[BBMapToCurve] 97e11e7b-34ee-4689-bbff-de46d364ad96</BlackboardMapping>
+</ParameterBlackboardAssociation>

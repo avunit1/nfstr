@@ -1,0 +1,47 @@
+<AdaptivePidSteeringData Guid="d7ed3ad4-df28-4753-a8ac-77c26da1072b">
+    <IntegralClamp>0,5</IntegralClamp>
+    <DerivativeClamp>10</DerivativeClamp>
+    <MinValueForTermToTuneCoefficient>0,01</MinValueForTermToTuneCoefficient>
+    <AdaptiveMRACSlice>0,1</AdaptiveMRACSlice>
+    <AdaptationGainP>1E-05</AdaptationGainP>
+    <AdaptationGainI>1E-05</AdaptationGainI>
+    <AdaptationGainD>1E-05</AdaptationGainD>
+    <MaxPCoefficient>1</MaxPCoefficient>
+    <MinPCoefficient>0,4</MinPCoefficient>
+    <MaxICoefficient>0,1</MaxICoefficient>
+    <MinICoefficient>0,01</MinICoefficient>
+    <MaxDCoefficient>0,4</MaxDCoefficient>
+    <MinDCoefficient>0,1</MinDCoefficient>
+    <MinSpeedForAdaptation>10</MinSpeedForAdaptation>
+</AdaptivePidSteeringData>
+<AdaptivePidThrottleData Guid="b7cd3133-137f-4614-be96-1e247a19e11a">
+    <PsychoThrottleBrakeMinSpeedForAdaptation>10</PsychoThrottleBrakeMinSpeedForAdaptation>
+    <PsychoThottleBrakePSeed>-1</PsychoThottleBrakePSeed>
+    <PsychoThottleBrakeISeed>0</PsychoThottleBrakeISeed>
+    <PsychoThottleBrakeDSeed>0</PsychoThottleBrakeDSeed>
+    <AdaptiveMRACSlice>0,1</AdaptiveMRACSlice>
+    <MinValueForTermToTuneCoefficient>0,01</MinValueForTermToTuneCoefficient>
+    <AdaptationGainP>5E-06</AdaptationGainP>
+    <AdaptationGainI>5E-06</AdaptationGainI>
+    <AdaptationGainD>5E-06</AdaptationGainD>
+    <MaxPCoefficient>0</MaxPCoefficient>
+    <MinPCoefficient>-0,4</MinPCoefficient>
+    <MaxICoefficient>0</MaxICoefficient>
+    <MinICoefficient>-0,01</MinICoefficient>
+    <MaxDCoefficient>0</MaxDCoefficient>
+    <MinDCoefficient>-0,6</MinDCoefficient>
+</AdaptivePidThrottleData>
+<BasicPidThrottleData Guid="1c71f34f-da35-4a3e-b2db-aef710d74776">
+    <ThrottleP>0,4</ThrottleP>
+    <ThrottleI>0,01</ThrottleI>
+    <ThrottleD>0,1</ThrottleD>
+    <IntegralClamp>5</IntegralClamp>
+    <DerivativeClamp>10</DerivativeClamp>
+</BasicPidThrottleData>
+<VehiclePidData Guid="db421bbf-69df-c402-456f-a70c689d605c">
+    <Name>_c4/ai/Locomotion/DefaultTrafficPid</Name>
+    <BasicPidThrottle>[BasicPidThrottleData] 1c71f34f-da35-4a3e-b2db-aef710d74776</BasicPidThrottle>
+    <AdaptivePidSteering>[AdaptivePidSteeringData] d7ed3ad4-df28-4753-a8ac-77c26da1072b</AdaptivePidSteering>
+    <AdaptivePidThrottle>[AdaptivePidThrottleData] b7cd3133-137f-4614-be96-1e247a19e11a</AdaptivePidThrottle>
+    <AdaptiveGasBrake>True</AdaptiveGasBrake>
+</VehiclePidData>

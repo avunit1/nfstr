@@ -1,0 +1,117 @@
+BBField 6fa8fe6f-9df1-4c60-b413-945adcb994c7
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name Fog_Opacity
+	Scope BlackboardScope_Level
+BBMapToCurve bf001c2f-3856-4d88-b5e9-bf363b40bec1
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 1.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectBlueprint 22640541-2326-468b-a517-16a0f7acf127 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Ambient/NewJersey/AMB_NewJersey_FogLite
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object 0b6b104c-fc2c-479e-9f6a-c958490d9559
+EffectEntityData 0b6b104c-fc2c-479e-9f6a-c958490d9559
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) 85ef0df4-926b-4623-95da-b6a9d63624f0
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) 204c7248-3fa4-4256-a9eb-a6f47fa21024
+EmitterEntityData 85ef0df4-926b-4623-95da-b6a9d63624f0
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Ambient/NewJersey/emitters/AMB_NewJersey_FogLite_Clouds/6e010086-cc1c-4117-9c02-f5b926847156
+	SpawnProbability 1.0
+ParameterBlackboardAssociation 204c7248-3fa4-4256-a9eb-a6f47fa21024
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 6fa8fe6f-9df1-4c60-b413-945adcb994c7
+	BlackboardField2 *nullGuid*
+	BlackboardMapping bf001c2f-3856-4d88-b5e9-bf363b40bec1

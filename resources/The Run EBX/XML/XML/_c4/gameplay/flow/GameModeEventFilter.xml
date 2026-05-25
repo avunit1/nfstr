@@ -1,0 +1,171 @@
+<InterfaceDescriptorData Guid="45b42741-4cbd-40f7-a9f8-1acb387fbf56">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>In [00597302]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>SinglePlayer [291784AC]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x616bac3f</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="4b28852d-a7bf-4745-c076-6f66f8918df9">
+    <Name>_c4/Gameplay/Flow/GameModeEventFilter</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="6">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 45b42741-4cbd-40f7-a9f8-1acb387fbf56</Source>
+                <Target>[SelectEventEntityData] 664f19f1-a5d0-4b6f-b458-534da7f30863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] d58d6711-3ae1-42fb-8157-e29ab43cce70</Source>
+                <Target>[SelectEventEntityData] 664f19f1-a5d0-4b6f-b458-534da7f30863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x70508784</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] 73f22aea-9e1d-4068-ab8f-38fffcaf03ff</Source>
+                <Target>[SelectEventEntityData] 664f19f1-a5d0-4b6f-b458-534da7f30863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x90b2b157</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 664f19f1-a5d0-4b6f-b458-534da7f30863</Source>
+                <Target>[InterfaceDescriptorData] 45b42741-4cbd-40f7-a9f8-1acb387fbf56</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>SinglePlayer [291784AC]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SinglePlayer [291784AC]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 664f19f1-a5d0-4b6f-b458-534da7f30863</Source>
+                <Target>[InterfaceDescriptorData] 45b42741-4cbd-40f7-a9f8-1acb387fbf56</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x616bac3f</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x616bac3f</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] c2e083cf-1654-416a-aee0-fb3def545cce</Source>
+                <Target>[SelectEventEntityData] 664f19f1-a5d0-4b6f-b458-534da7f30863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x70508784</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 45b42741-4cbd-40f7-a9f8-1acb387fbf56</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[NFSGameModeToEventEntityData] d58d6711-3ae1-42fb-8157-e29ab43cce70</member>
+        <member Index="1">[SelectEventEntityData] 664f19f1-a5d0-4b6f-b458-534da7f30863</member>
+        <member Index="2">[NFSGameModeToEventEntityData] 73f22aea-9e1d-4068-ab8f-38fffcaf03ff</member>
+        <member Index="3">[NFSGameModeToEventEntityData] c2e083cf-1654-416a-aee0-fb3def545cce</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<NFSGameModeToEventEntityData Guid="d58d6711-3ae1-42fb-8157-e29ab43cce70">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <gameplayMode>GameModeCopy_StoryMode</gameplayMode>
+</NFSGameModeToEventEntityData>
+<NFSGameModeToEventEntityData Guid="73f22aea-9e1d-4068-ab8f-38fffcaf03ff">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <gameplayMode>GameModeCopy_CareerMode</gameplayMode>
+</NFSGameModeToEventEntityData>
+<NFSGameModeToEventEntityData Guid="c2e083cf-1654-416a-aee0-fb3def545cce">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <gameplayMode>GameModeCopy_ChallengeMode</gameplayMode>
+</NFSGameModeToEventEntityData>
+<SelectEventEntityData Guid="664f19f1-a5d0-4b6f-b458-534da7f30863">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="2">
+        <member Index="0">SinglePlayer</member>
+        <member Index="1">MultiPlayer</member>
+    </Events>
+</SelectEventEntityData>

@@ -1,0 +1,122 @@
+BBField c3b273e0-1247-41b7-8841-791e4a91f8b6
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name LocalPlayerSpeed
+	Scope BlackboardScope_Level
+BBMapToCurve 13692019-1418-486f-a547-ade6ef4bff76
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.341707319021225
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 50.426124572753906
+					y 7.97271728515625
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 9.897353172302246
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectBlueprint deb8c05b-82df-468e-9814-a392334e6e0e #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Cutscenes/SC063AAVALANCHE/SC063A_AMB_Snow_Medium
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object 5ae4e728-b1c8-45f2-b712-0bba724f425e
+EffectEntityData 5ae4e728-b1c8-45f2-b712-0bba724f425e
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) a5ac14e6-9bb8-4b3b-8f63-57ab71326947
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) bb02d2b7-822d-4ada-9d51-6f8292f0faca
+EmitterEntityData a5ac14e6-9bb8-4b3b-8f63-57ab71326947
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Cutscenes/SC063AAVALANCHE/emitters/SC063A_AMB_Snow_Flakes/a6eb42a9-9dfc-4d54-9442-f55d4c5fc755
+	SpawnProbability 1.0
+ParameterBlackboardAssociation bb02d2b7-822d-4ada-9d51-6f8292f0faca
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 c3b273e0-1247-41b7-8841-791e4a91f8b6
+	BlackboardField2 *nullGuid*
+	BlackboardMapping 13692019-1418-486f-a547-ade6ef4bff76

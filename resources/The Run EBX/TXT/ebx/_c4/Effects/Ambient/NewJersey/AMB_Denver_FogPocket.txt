@@ -1,0 +1,117 @@
+BBField 268daa62-9f0d-474e-a023-31f1f329a1f2
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name Fog_Opacity
+	Scope BlackboardScope_Level
+BBMapToCurve 965c8df2-9e97-4f46-8136-fa6105dfc5f3
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 1.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectBlueprint ace12bc3-ab83-467b-928a-88d7da6fb941 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Ambient/NewJersey/AMB_Denver_FogPocket
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object 81af770c-1c4f-451e-9229-823312a92a87
+EffectEntityData 81af770c-1c4f-451e-9229-823312a92a87
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) 959162ed-f221-485f-bcff-637b47600a97
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) 388a83fa-c96a-4894-8ff5-7d91c99b0928
+EmitterEntityData 959162ed-f221-485f-bcff-637b47600a97
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Ambient/NewJersey/emitters/AMB_Denver_FogPocket_Clouds/41ccd26e-3fd4-4a47-99db-25fd2f8a1b23
+	SpawnProbability 1.0
+ParameterBlackboardAssociation 388a83fa-c96a-4894-8ff5-7d91c99b0928
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 268daa62-9f0d-474e-a023-31f1f329a1f2
+	BlackboardField2 *nullGuid*
+	BlackboardMapping 965c8df2-9e97-4f46-8136-fa6105dfc5f3

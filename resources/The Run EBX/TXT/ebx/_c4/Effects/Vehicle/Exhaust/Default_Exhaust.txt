@@ -1,0 +1,165 @@
+BBField 034cacb4-d069-46b8-978a-b4c236555b27
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name Velocity
+	Scope BlackboardScope_Entity
+BBField f86ed68a-990e-4dfb-97cf-c0527e9bd01b
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name Velocity
+	Scope BlackboardScope_Entity
+BBMapToCurve 85b2eecc-cd54-4ff1-beb9-1f28ed6e4243
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 1.2741540670394897
+					y 1.0
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve c0093884-b6de-4066-b5f4-43c9011fd284
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 9.29035472869873
+					y 1.0
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 40.08944320678711
+					y 1.0
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 1.2365307000550274e-08
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectAsset c9580c74-670a-4ba3-8099-6c586d19823b #primary instance
+	$::EffectBlueprint
+		$::ObjectBlueprint
+			$::Blueprint
+				$::EntityBusData
+					$::DataBusData
+						$::Asset
+							$::DataContainer
+							Name _c4/Effects/Vehicle/Exhaust/Default_Exhaust
+						PropertyConnections *nullArray*
+						LinkConnections *nullArray*
+					EventConnections *nullArray*
+					Descriptor *nullGuid*
+					NeedNetworkId False
+					InterfaceHasConnections False
+					ForceCreateAsFull False
+			Object 954a4fe8-3e99-42a6-95ce-298fc36b6330
+EffectEntityData 954a4fe8-3e99-42a6-95ce-298fc36b6330
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) 9006b2bc-cd1e-4e5c-bc0a-35e5003ddd54
+	MaxInstanceCount 10
+	CullDistance 30.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) 6790233d-52dc-43b0-b68b-d69ce5356490
+		member(1) 4fae3ea3-1ab7-4365-85e5-1ec27339f939
+EmitterEntityData 9006b2bc-cd1e-4e5c-bc0a-35e5003ddd54
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y -4.371138828673793e-08
+					z -1.0
+				forward::Vec3
+					x 0.0
+					y 1.0
+					z -4.371138828673793e-08
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Vehicle/Exhaust/Emitters/Default_Exhaust_Smoke_01/3651f4de-5a3e-4c6c-abdb-dedab64affa2
+	SpawnProbability 1.0
+ParameterBlackboardAssociation 6790233d-52dc-43b0-b68b-d69ce5356490
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 034cacb4-d069-46b8-978a-b4c236555b27
+	BlackboardField2 *nullGuid*
+	BlackboardMapping 85b2eecc-cd54-4ff1-beb9-1f28ed6e4243
+ParameterBlackboardAssociation 4fae3ea3-1ab7-4365-85e5-1ec27339f939
+	$::DataContainer
+	EmitterParameter EmitterParameter2
+	BlackboardField1 f86ed68a-990e-4dfb-97cf-c0527e9bd01b
+	BlackboardField2 *nullGuid*
+	BlackboardMapping c0093884-b6de-4066-b5f4-43c9011fd284

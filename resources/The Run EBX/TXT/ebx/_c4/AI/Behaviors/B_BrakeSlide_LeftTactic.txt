@@ -1,0 +1,153 @@
+BTIfNode f21ccd6d-7e7d-4404-9b07-95bbbc8e93c9
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) fcea828f-11a0-48e4-8df2-90874de054a7
+	Eval b95bcf53-2643-4e60-b1fd-40cf6204879e
+BTIfNode 5e666995-53cf-432d-bc1c-d8ec6c2e1ed5
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 0024e85d-c93b-4a56-8fde-53e2ea39af2e
+	Eval 4a43398d-390c-4707-8df0-278c0ebdd69c
+BTSelectorNode 4049dcb9-8002-4554-91ca-09fa606aaad2
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 5e666995-53cf-432d-bc1c-d8ec6c2e1ed5
+			member(1) f21ccd6d-7e7d-4404-9b07-95bbbc8e93c9
+			member(2) 3f791b08-9054-4446-ab95-05bee131661f
+BTSequenceNode 3f791b08-9054-4446-ab95-05bee131661f
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) 976c5fb1-14e3-49ee-965a-c9e6a9177430
+			member(1) 767e4531-78c0-4a80-8121-dcb53d43d0d6
+			member(2) c33b3971-d4a5-4d6b-b50e-09ac5d246731
+			member(3) 3ff8283d-d316-4b19-9111-b104dae0bcc9
+BTTaskNode c33b3971-d4a5-4d6b-b50e-09ac5d246731
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 6069a4cf-3315-4e18-a10a-b0997a23963c
+BTTaskNode 3ff8283d-d316-4b19-9111-b104dae0bcc9
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task d5bcc33b-27b5-4c3f-93a8-bd51150a40df
+BTTaskNode 976c5fb1-14e3-49ee-965a-c9e6a9177430
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task cd9a6f39-08a1-4a3e-8503-65f94e77e9b0
+BTTaskNode 767e4531-78c0-4a80-8121-dcb53d43d0d6
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 042680c3-3d2b-46fc-bc7e-b988ad16d62f
+BTTaskNode fcea828f-11a0-48e4-8df2-90874de054a7
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 715171fb-757d-4a05-9026-52308ebaf0d3
+BTTaskNode 0024e85d-c93b-4a56-8fde-53e2ea39af2e
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task c0e2c5f6-2de4-4cb9-aefb-1e3a6c46a0e8
+BT_DoDynamicSubBehavior c0e2c5f6-2de4-4cb9-aefb-1e3a6c46a0e8
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Behavior *nullGuid*
+BT_DoMoveStyle 715171fb-757d-4a05-9026-52308ebaf0d3
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Stop
+BT_DoOverrideLocomotion 6069a4cf-3315-4e18-a10a-b0997a23963c
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Handbrake
+	OverrideValue 1.0
+BT_DoOverrideLocomotion d5bcc33b-27b5-4c3f-93a8-bd51150a40df
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Steering
+	OverrideValue -1.0
+BT_DoOverrideLocomotion cd9a6f39-08a1-4a3e-8503-65f94e77e9b0
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Throttle
+	OverrideValue 0.0
+BT_DoOverrideLocomotion 042680c3-3d2b-46fc-bc7e-b988ad16d62f
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Brake
+	OverrideValue 1.0
+BT_IsVar b95bcf53-2643-4e60-b1fd-40cf6204879e
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute True
+	Variable EVar_Speed
+	Context EContext_Self
+	Comparator Compare_LessThan
+	Value 1.0
+BT_IsVar 4a43398d-390c-4707-8df0-278c0ebdd69c
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_TacticTime
+	Context EContext_Self
+	Comparator Compare_MoreThan
+	Value 3.0
+BehaviourTreeData 8af27e42-bf80-42a7-8b21-9ff23a915959 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_BrakeSlide_LeftTactic
+	Root 4049dcb9-8002-4554-91ca-09fa606aaad2
+	Description 

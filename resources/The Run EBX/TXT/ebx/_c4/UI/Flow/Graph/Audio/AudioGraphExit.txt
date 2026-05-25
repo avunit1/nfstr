@@ -1,0 +1,179 @@
+ActionNode 37550e15-38ee-4068-a4b0-b3df8218985a
+	$::UINodeData
+		$::DataContainer
+		Name Timer
+		IsRootNode False
+		ParentGraph 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24
+		ParentIsScreen False
+	ActionKey 805340509
+	Params::array
+		member(0) 1.25
+		member(1) OnAudioFadeOut
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 198393e8-74c8-48b9-bf52-4207d92ad01a
+	DataInputs *nullArray*
+	Out 5f4a2098-cd03-46a3-8a79-081bbef9b548
+EventNode e56fdf9d-6206-4fe4-96c2-ae91e3139a95
+	$::UINodeData
+		$::DataContainer
+		Name FadeOut
+		IsRootNode False
+		ParentGraph 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24
+		ParentIsScreen False
+	In 87303e29-d4db-48cf-a58b-c73a3885e34b
+	Out eb5eef4e-80e8-4ef1-9e25-bc4c80e4d117
+	Id 1422740397
+	DestroyGraph False
+InstanceInputNode 33431683-a1a2-412e-898d-d9f057778323
+	$::UINodeData
+		$::DataContainer
+		Name In
+		IsRootNode True
+		ParentGraph 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24
+		ParentIsScreen False
+	Out de3339ac-dc2e-4d98-8ee2-24afc400af87
+InstanceOutputNode e163206e-bf0a-486a-ad89-9b584335ecfc
+	$::UINodeData
+		$::DataContainer
+		Name out
+		IsRootNode False
+		ParentGraph 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24
+		ParentIsScreen False
+	In 487b6a0c-7ca1-4f24-bf11-db3fd05e8e8a
+	Id 193421099
+StateNode 569a8df5-5ae5-4454-89ec-2fdffebd7526
+	$::UINodeData
+		$::DataContainer
+		Name Wait...
+		IsRootNode False
+		ParentGraph 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24
+		ParentIsScreen False
+	Screen *nullGuid*
+	In 54ee68d0-258c-4b17-bed5-c51ee97f1f5d
+	Inputs *nullArray*
+	Outputs::array
+		member(0) e9b4c20d-9e76-4add-82fa-a11197ecc5b6
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+UIGraphAsset 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/Audio/AudioGraphExit
+	Nodes::array
+		member(0) 33431683-a1a2-412e-898d-d9f057778323
+		member(1) e56fdf9d-6206-4fe4-96c2-ae91e3139a95
+		member(2) 37550e15-38ee-4068-a4b0-b3df8218985a
+		member(3) 569a8df5-5ae5-4454-89ec-2fdffebd7526
+		member(4) e163206e-bf0a-486a-ad89-9b584335ecfc
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) 4bcca855-e43c-4d85-ad51-75b83dab97f9
+		member(1) a2d377c2-28d3-4d05-bd49-385195bf37e9
+		member(2) 0ebe719e-0565-4644-bb21-0d3c21c4050e
+		member(3) f709c3f5-799b-4f5b-ae76-113eefca2837
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/Audio/AudioGraphExit_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList::array
+		member(0) _c4/UI/Flow/Event/TimerEvents/b18007be-0a4e-dc52-6b61-86a08a9f4719
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading True
+UINodeConnection 4bcca855-e43c-4d85-ad51-75b83dab97f9
+	$::DataContainer
+	SourceNode 33431683-a1a2-412e-898d-d9f057778323
+	TargetNode e56fdf9d-6206-4fe4-96c2-ae91e3139a95
+	SourcePort de3339ac-dc2e-4d98-8ee2-24afc400af87
+	TargetPort 87303e29-d4db-48cf-a58b-c73a3885e34b
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection a2d377c2-28d3-4d05-bd49-385195bf37e9
+	$::DataContainer
+	SourceNode e56fdf9d-6206-4fe4-96c2-ae91e3139a95
+	TargetNode 37550e15-38ee-4068-a4b0-b3df8218985a
+	SourcePort eb5eef4e-80e8-4ef1-9e25-bc4c80e4d117
+	TargetPort 198393e8-74c8-48b9-bf52-4207d92ad01a
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 0ebe719e-0565-4644-bb21-0d3c21c4050e
+	$::DataContainer
+	SourceNode 37550e15-38ee-4068-a4b0-b3df8218985a
+	TargetNode 569a8df5-5ae5-4454-89ec-2fdffebd7526
+	SourcePort 5f4a2098-cd03-46a3-8a79-081bbef9b548
+	TargetPort 54ee68d0-258c-4b17-bed5-c51ee97f1f5d
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection f709c3f5-799b-4f5b-ae76-113eefca2837
+	$::DataContainer
+	SourceNode 569a8df5-5ae5-4454-89ec-2fdffebd7526
+	TargetNode e163206e-bf0a-486a-ad89-9b584335ecfc
+	SourcePort e9b4c20d-9e76-4add-82fa-a11197ecc5b6
+	TargetPort 487b6a0c-7ca1-4f24-bf11-db3fd05e8e8a
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort de3339ac-dc2e-4d98-8ee2-24afc400af87
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 87303e29-d4db-48cf-a58b-c73a3885e34b
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort eb5eef4e-80e8-4ef1-9e25-bc4c80e4d117
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 198393e8-74c8-48b9-bf52-4207d92ad01a
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 5f4a2098-cd03-46a3-8a79-081bbef9b548
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 54ee68d0-258c-4b17-bed5-c51ee97f1f5d
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort e9b4c20d-9e76-4add-82fa-a11197ecc5b6
+	$::DataContainer
+	Name OnAudioFadeOut[Timer]
+	InstanceName OnAudioFadeOut
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort 487b6a0c-7ca1-4f24-bf11-db3fd05e8e8a
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True

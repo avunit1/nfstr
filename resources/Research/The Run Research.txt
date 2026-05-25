@@ -1,0 +1,1311 @@
+/** ACCESS TO HIDDEN CARS IN SINGLE PLAYER & MULTIPLAYER [Car Changer]
+
+
+1. First Scan >> Scan type: Exact value >> Value type: Array of Bytes >> Value: 1D ED 2C 8C
+
+2. Select a non static address (not green) >> Right click >> Change value to a car that exists normally in the game
+
+3. Once in VIEW CARS >> Swap car tiers >> See if the new car appeared >> If it didn’t back to 2.
+
+4. Once you found it >> Select it >> Click the red arrow >> Ctrl+S >> Save the CT since it’s static
+
+*The address you need to modify exists in the F3 memory region
+
+
+
+/** LOCK A CERTAIN CAR FOR EVERY RACE IN SINGLE PLAYER & MULTIPLAYER [Car Locker]
+
+
+1. Go to a challenge in Challenge Series that has the Camaro ZL1 NFS Edition as an option >> Start the race
+
+2. Once you are in the race >> First Scan >> Scan type: Exact value >> Value type: Array of Bytes >> Value: 8D 0F C1 88
+
+3. Go to a challenge that has a different car from 1. >> Start the race >> See which values changed >> One address has the right value
+
+4. Check if the values that changed in 3. have the value of the car you selected before the race >> If there are more than one >> Check which is the correct one
+
+5. Once you found that address >> Load Car Changer.CT (if you want a hidden car) >> Change its value to the desired one
+
+6. Freeze address obtained at 4. by ticking the active box
+
+*Step 1. can be done with any other car.
+*The correct address has by default the following value: 5B 94 2C 95
+*If you don’t wanna freeze a hidden car, you can ommit 5. 
+*Keep in mind that searching for the addresses before starting a race is meaningless and won’t give the correct address
+*If you freezed the address once you don’t have to unfreeze and freeze every time you change the value
+
+
+
+/** SPAWN ANY CAR IN A SINGLE PLAYER RACE [Car Object]
+
+
+1. Pick a challenge in Challenge series >> Select a car >> Start the race
+
+2. Once you are in the race >> Search for its ID in CE
+
+3. Quit the race >> Pick a challenge >> Select a different car from 1. >> Start the race
+
+4. See which addresses changed their values >> Search for their ID in the excel table >> If it’s the car you are driving >> That’s the correct address
+
+*It doesn’t work in Multiplayer
+
+
+
+/** LOCK A CERTAIN CAR FOR EVERY MULTIPLAYER PLAYLIST
+
+
+1. Load both Car Locker & Car Changer cheat tables
+
+2. If you want to lock a car that is hidden you need to first load it into memory by changing the value of the Car Changer address
+   to the one you desire
+
+3. Change the value of the Car Locker address to the car you want to lock (if you did 2. it has to coincide)
+
+4. Freeze the Car Locker address by ticking the active box on the left
+
+
+
+/** FREEZE A CERTAIN CAR THAT IS UNOBTAINABLE THROUGH THE CAR LOT
+
+
+1. Go to a challenge in Challenge Series that has the Camaro ZL1 NFS Edition as an option >> Start the race
+
+2. Once you are in the race >> First Scan >> Scan type: Exact value >> Value type: Array of Bytes >> Value: 8D 0F C1 88
+
+3. Go to a challenge that has a different car from 1. >> Start the race >> See which values changed
+
+4. Check if the values that changed in 3. has a value of the car you selected before the race >> If it is >> You found them
+
+5. Select them all >> Tick the red arrow >> One address has the right value
+
+6. Change the value of one at the time >> Freeze it >> Restart the race
+
+7. Do 6. until you find the address that points to the object which is the car
+
+
+
+/** LOCK A CERTAIN OBJECT CAR FOR EVERY MULTIPLAYER PLAYLIST
+
+
+1. You have to have both Car Changer & Car Locker cheat tables loaded
+
+2. First replace the value of the car in Car Changer with the desired one
+
+3. Then replace the value of the car in Car Locker and freeze it
+
+*Object cars may not have previews nor you can select them in the CAR LOT, nonetheless they are playable once the timer is out
+
+
+
+/** FREE ROAM IN ANY MAP
+
+
+1. Right click the .exe >> Properties >> Destiny: >> Add this >> -level "_c4/Levels/NameOfTheLevelHere/NameOfTheLevelHere
+
+2. Allow changes >> Apply >> Accept
+
+*Should look like >> "C:\Program Files (x86)\Origin Games\Need for Speed The Run\Need For Speed The Run.exe" -level "_c4/Levels/Level_1300_IndependencePass/Level_1300_IndependencePass
+*The space in between the path and the rest is important
+
+** Names of the maps **
+
+# Level_0100_SanFrancisco
+# Level_0200_AltamontPass
+# Level_0250_YosemiteApproach
+# Level_0300_YosemiteSouth
+# Level_0400_SierraPass
+# Level_0500_DesertHills
+# Level_0600_DesertValley
+# Level_0800_LasVegasEast
+# Level_1100_MillionDollar
+# Level_1300_IndependencePass
+# Level_1700_MountainInterstate
+# Level_2300_BuffaloGap
+# Level_2400_PlainsInterstate
+# Level_2500_RuralFarms
+# Level_2600_RuralHighway
+# Level_2800_ChicagoInterstate
+# Level_3000_ChicagoDowntown
+# Level_3050_LakeShore
+# Level_3100_ChicagoIndustrial
+# Level_3500_SmokyMountains
+# Level_4000_NewJersey
+# Level_4050_NewYorkApproach
+# Level_4100_NewYork
+
+
+
+/** CUSTOMIZE VEHICLES WITH INDIVIDUAL PARTS
+
+1. Search for AOB composed by CarID + CarClassID >> For instance >> 74 C0 91 1F 56 4F CC 99
+
+2. Select the correct address >> Right click >> Browse this memory region
+
+3. Take a look at Car Tuning Memory Viewer and Car Tuning when customizing cars
+
+*If you get 4 or more results, the second to last one is the one you have to modify
+*If you get 3 or less, it’s probably the last or second to last one
+*DO NOT CHANGE MAKE CHANGES BEFORE RESTARTING A RACE ON THE CAR YOU ARE DRIVING
+*CHANGING BYTES TO 00 00 00 00 WILL REPLACE THE PARTS TO STOCK
+*REPLACE ONLY PARTS WITHIN THE SAME CAR MODEL TO AVOID GAME SOFTLOCKS UNLESS THEY ARE UNIVERSAL
+*THE GARAGE PREVIEW MIGHT NOT SHOW THE LIVERY/COLOR BUT IT WILL BE VISIBLE ONCE YOU ENTER A RACE
+
+
+
+/** SWAP ANY CAR IN THE GARAGE USING STRINGS
+
+
+1. Go into the garage >> Select VIEW CARS
+
+2. Once you are there >> Search for the car you want to replace
+
+3. Replace _c4/VEHICLES/NFS/*CAR*/KITS/*CAR*_KIT00 && _c4/Blueprint/VehicleBundles/BB_*CAR*
+
+4. Select the car you want or race it
+
+*It’s important that you are in the garage before you search and replace anything
+*You can change the car to any other by finding its name in AllVehicles_BlueprintMDB.sb
+*Names that start with "BB_" are blueprints
+*The cars you replace have to have the same length
+*It doesn’t work in Multiplayer. It crashes the game before the race starts
+
+
+
+/** CHANGE CAR FOR FREE ROAM MODE
+
+
+1. Open CE >> Open the game >> Pause the game with a hotkey
+
+2. Search and replace the strings as in SWAP ANY CAR IN THE GARAGE USING STRINGS
+
+3. Unpause the game 
+
+
+
+/** CHANGE PARTS OF A CAR USING STRINGS
+
+
+1. Select the strings you want to replace & change
+
+2. Once in CE >> Search for the strings you want to replace >> Replace all the results’ values with the new one
+
+*When making changes keep in mind this order: BodyKitBlueprints before VehicleBundles | VinylBlueprints before VinylBundles | LIVERIES before LiveryBundles
+
+
+
+/** OPEN EMPTY MULTIPLAYER LOBBIES
+
+
+1. Select a playlist that has no current players in it.
+
+2. Once you selected it >> Press Enter multiple times and Esc >> Do this three or four times until the server puts you automatically in a lobby
+
+*This could work with lobbies occupied but might require doing the Enter-Esc cicle more times than usual
+
+
+
+/** MUTE ALL PLAYERS IN MULTIPLAYER
+
+
+1. Go to Sound Control Panel >> Select a device that you don’t use >> Set it as Main Communication Device >> Apply changes
+
+
+
+/** DUMP GAME FILES AND TRANSLATE THEM INTO TEXT
+
+
+1. Download and Install a 64-bit version of Python 3
+
+2. Go to Frostbite-Scripts-master >> Right click dumper.py >> Open with IDLE
+
+3. Declare where you want the game to be dumped and execute it
+
+4. Open ebxtotext.py >> Select the directory of the dump >> Execute it
+
+*In gameDirectory must be declared the actual game directory path of the game otherwise it will not dump
+*Is recommended to put all dumped folders into a single one and then convert all files of that folder into .txt that way these won’t be merged with the .ebx files
+
+
+
+/** DUMP GAME FILES AND TRANSLATE THEM TO TEXT [OLD METHOD]
+
+
+1. Download and Install 2 versions of Python: 2.7.1 in 32-bit and the latest one in 64-bit
+
+2. Once you installed both >> Go to the directory of the 2.7.1 version and paste both .dll from the Dumper folder
+
+3. To dump files >> Right click dumper.py and select Open with IDLE (the first one, not the one from the lastest version)
+
+4. Select the input folder and the output folder in the script and run it
+
+5. Once it finished dumping >> We have to convert them from .ebx to .txt >> Go to Frostbite-Scripts-master >> Right click ebxtotxt.py >> Open with IDLE (latest version)
+
+6. Before running the script paste guidTable.bin in the dumping folder next to the folder LiveryBundles
+
+7. After setting up all paths >> Run the script
+
+
+
+/** UNLOCK THE CONSUMER DEMO
+
+
+1. Open RunAsDate >> Select the game’s .exe >> Put under the command line >> -NfsGame.IsDemo 1
+
+2. Set the date to 01/06/2010
+
+*The game runs at 30fps
+*Works with either 1.0.0.0 or 1.1.0.0 executables
+*It softlocks if you try to pause the game
+*It goes into an endless black screen once you finished the second race
+
+
+
+/** LAUNCH THE GAME WITH 1.0.0.0 EXECUTABLE
+
+
+1. Rename the Update folder inside the game directory to Update2
+
+
+
+/** FRAMERATE LOCK FOR GARAGE AND CUTSCENES
+
+
+1. Launch the game with the following commands: -GameTime.VariableSimTickTimeEnable 1 -GameTime.MaxVariableFps 60
+
+*The higher the framerate lock is, the stiffer the far cam will be
+
+
+
+/** ENTER STORY MODE CHALLENGES AS CHALLENGE SERIES EVENTS
+
+
+1. Replace an existing challenge series event from any of the arrays with the story mode one
+
+2. Write a Game.Level string reference to the address that is located to the right and two down of B4 6C 5A 02
+
+3. The string must follow this structure: _c4/Levels/NameOfTheLevelHere/NameOfTheLevelHere and it has to end with 00
+
+*The Game.Level string has to match the level the event takes place on
+*All Story Mode challenges can be found under _c4/Gameplay/TheRun/Challenges
+*You can take that string reference from Challenge Series events too
+*Make sure you don’t replace the same array index more than once. If you swapped all, go for another array
+
+
+
+/** INSTANCE UNUSED BUNDLE ASSETS
+
+1. Search the AOB of the SubWorldReferenceObjectData inside the main ebx blueprint
+
+1. Catch the moment before the ebx blueprint values get read by stopping the process with CE
+
+2. Replace the memory address regarding BundleName of a sequence or route with the unused one
+
+3. Unpause the process to let the game run
+
+*Do not replace NIS BundleName references or else is gonna softlock the game while loading the event
+*The main ebx blueprint is the one that has the codename of the event and nothing else
+*There is an alternative method of instancing unused assets. Change either the Source or the Target
+memory reference to the SubWorldReferenceObjectData of the first entry of a sequence or route. For instance, if you
+were to instance the unused cop sequence popup messages on SM_3_3 you would change the first memory reference of 
+a260-5293252576c3 [member(0)::EventConnection] with 959f-957d263f8c07 [member(67)::EventConnection]
+
+
+
+/** CHANGE TIME OF DAY SETTINGS FOR DEBUG FREE ROAM
+
+
+1. Launch the Game.Level from executable parameters or debug menu
+
+2. Search for the GUID of the time of day bundle at: _c4/Levels/LevelNameHere/LevelNameHere.txt::SubWorldReferenceObjectData::BundleName
+
+3. Pause the process once you found results. The value you need to swap is located six places below B0 3B 3E 02
+
+
+
+/** LOAD A TIME OF DAY SETTING FROM A GAME LEVEL INTO ANOTHER
+
+
+1. Go into an event where the time of day setting is from
+
+2. Restart the event and quit to menu
+
+3. Search for the corresponding string from inside Time of Day Lighting Presets and pause the process
+
+4. Replace the first result with the new string and unpause the process
+
+*This enables some leftover debug setting that shows on-screen red squares whenever your camera faces a world light source
+*It tends to crash a lot at the loading screen
+
+
+
+/** LOAD AI TUNED-COP-TEST-PLACEHOLDER VEHICLES INSIDE THE MAIN MENU GARAGE
+
+
+1. Replace the value inside Car Changer and Car Locker to the new Vehicle ID
+
+2. Enable Car Garage Render script and freeze the default garage camera to the garage photomode camera
+
+3. Go into a challenge series event that has only one car to pick from
+
+*If the car doesn’t appear on screen, go one step back and enter the event car roster again
+*If it still doesn’t spawn, freeze the Vehicle ID into Car Object and enter an event then quit and do the process all over again
+
+
+
+/** SWAP VEHICLES BY STRING REFERENCE
+
+
+# FOR THE VEHICLE SWAPPED TO BE SHOWN ONLY IN THE GARAGE JUST REPLACE _c4/Blueprint/VehicleBundles/BB_*CAR*
+# FOR THE VEHICLE SWAPPED TO BE USED IN RACES AND THEREFORE AVOID A GAME CRASH REPLACE BOTH
+# THIS METHOD CAN ALSO BE USED FOR OTHER VEHICLE PARTS OR ASSET REFERENCES
+
+REPLACE BOTH MEMORY REFERENCES INSTEAD OF THE RAW STRINGS FOR LESS CHANCES OF THE GAME CRASHING:
+
+_c4/Blueprint/VehicleBundles/BB_*CAR*
+_c4/VEHICLES/NFS/*CAR*/KITS/*CAR*_KIT00
+
+VEHICLE STRINGS:
+
+FOR_POL_INT_11
+TEST_PAINT_CAR
+TEST_SPHERE_CAR
+
+FOR_RTR_X_69_KIT00
+GUM_APO_S_11_KIT00
+KOE_AGE_R_11_KIT00
+MIT_EVO_X_08_KIT00
+NIS_370_Z_09_KIT00
+NIS_GTR_V_10_KIT00
+NIS_S14_A_97_KIT00
+POR_991_S_12_KIT00
+VOL_SCI_R_10_KIT00
+
+TRF_GEN_RV_00_KIT00
+LAM_GAL_VB_10_KIT00
+FOR_GT_STK_06_KIT00
+FOR_FOC_RS_10_KIT00
+LAM_COU_QV_85_KIT00
+BMW_Z4_GT3_11_KIT00
+BMW_1M_COU_11_KIT00
+BMW_M3_GTS_10_KIT00
+AUD_R8_V10_10_KIT00
+AUD_UR_QUA_91_KIT00
+BMW_M3_E30_90_KIT00
+HEN_VEN_GT_11_KIT00
+CHE_EL_CAM_70_KIT00
+CHE_CAM_SS_67_KIT00
+BUG_VEY_SS_10_KIT00
+AST_ONE_77_10_KIT00
+LAM_MIU_SV_71_KIT00
+MAZ_RX7_RZ_98_KIT00
+MCL_F1_STK_94_KIT00
+NIS_240_ZG_71_KIT00
+POR_CAR_GT_08_KIT00
+POR_GT3_RS_10_KIT00
+REN_MEG_RS_10_KIT00
+TRF_AUD_A4_05_KIT00
+
+LAM_AVE_700_12_KIT00
+FOR_MUS_BOS_12_KIT00
+AST_VAN_V12_10_KIT00
+TRF_GEN_MUS_08_KIT00
+MCL_MP4_12C_12_KIT00
+MER_SLS_AMG_10_KIT00
+FOR_MUS_302_69_KIT00
+DOD_CHA_STK_71_KIT00
+DOD_CHA_SRT_08_KIT00
+COP_SUV_CAY_08_KIT00
+COP_CAR_R35_08_KIT00
+COP_CAR_INT_11_KIT00
+COP_CAR_GAL_10_KIT00
+COP_CAR_CHR_07_KIT00
+CHE_VET_CBN_10_KIT00
+CHE_CAM_ZL1_13_KIT00
+LAM_SES_ELE_11_KIT00
+LEX_LFA_STK_10_KIT00
+LOT_EVO_STK_10_KIT00
+LOT_EXI_260_10_KIT00
+MAZ_MX5_RHT_09_KIT00
+NIS_240_S30_71_KIT00
+NIS_GTR_R32_91_KIT00
+NIS_GTR_R35_08_KIT00
+NIS_GTR_STK_73_KIT00
+PAG_HUA_STK_11_KIT00
+PAG_ZON_CIN_10_KIT00
+PON_FIR_STK_78_KIT00
+POR_911_C4S_11_KIT00
+POR_918_RSR_11_KIT00
+POR_993_GT2_96_KIT00
+POR_993_RWB_96_KIT00
+SHE_DAY_COU_65_KIT00
+SHE_MUS_SNK_12_KIT00
+SUB_WRX_STI_09_KIT00
+TOY_COR_STK_86_KIT00
+TOY_SUP_RAD_98_KIT00
+TOY_SUP_STK_98_KIT00
+TRF_BUS_HWY_10_KIT00
+TRF_CAD_CTS_03_KIT00
+TRF_CHE_COB_06_KIT00
+TRF_DOD_CAL_07_KIT00
+TRF_DOD_CHR_07_KIT00
+TRF_DOD_CVN_08_KIT00
+TRF_DOD_MAG_08_KIT00
+TRF_DOD_RAM_10_KIT00
+TRF_FOR_VIC_05_KIT00
+TRF_GEN_TRA_00_KIT00
+TRF_GMC_TOP_10_KIT00
+TRF_GMC_VAN_05_KIT00
+TRF_INF_G35_03_KIT00
+TRF_NIS_FRO_10_KIT00
+TRF_NIS_VER_10_KIT00
+TRF_POR_CAY_08_KIT00
+TRF_TAX_CHR_07_KIT00
+TRF_TRK_BOX_95_KIT00
+TRF_TRK_FLA_10_KIT00
+TRF_TRK_TAN_10_KIT00
+VOL_GTI_MK1_76_KIT00
+FOR_MUS_RTR_12_KIT00
+AUD_RS4_STK_08_KIT00
+
+FOR_POL_INT_11_ESCAPE
+
+
+
+/** COLOR ASSET MODDING
+
+
+# VALUES START AT THE SECOND ROW
+# TO SEE THE VALUES CHANGE FROM BYTE TO FLOAT ONCE IN MEMORY VIEWER
+# COORDINATES ARE x(R),y(G),z(B)
+
+FROM INSIDE TO OUTSIDE, FROM TOP TO BOTTOM:
+
+NOS Filler > NOS Flame Core Color > NOS Flame
+Checkpoint Flames > Checkpoint Smoke Core > Checkpoint Smoke
+
+EXHAUST:
+
+Exhaust Nos Filler GUID >> b95b-df81869723c5 >> 0.06,1.35,1.50
+Exhaust Nos Flame Core Color GUID >> 8c8c-20217fe24ee5 >> 2.00,1.50,0.00
+Exhaust Nos Flame Color GUID >> 82c7-439a930001cc >> 0.08 1.81 2.00
+
+CHECKPOINT:
+
+Checkpoint Flames PolynomialColorInterpData GUID >> 8248-ca8026422552 >> 53.12,53.12,53.12 >> 2.00,0.47,0.00 >> 0.00,0.00,-2.41,1.31
+Checkpoint Smoke Core GUID >> 9cb4-8e272849a80e >> 0.75,0.05,0.00
+Checkpoint Smoke Core PolynomialData GUID >> 80ee-e650a94fefd5 >> 0.00,0.00,1.14,0.087
+Checkpoint Smoke GUID >> aa16-157f65fedaec >> 0.75,0.05,0.00
+Checkpoint Smoke PolynomialData >> 85c4-c0c5e0a2c640 >> 0.00,0.00,1.12,0.02
+
+
+
+/** EVENTS TIME OF DAY
+
+
+# TIME OF DAY VALUES CORRESPOND TO LevelLayerInclusion DAY SETTINGS
+# IF YOU SELECT A TIME OF DAY SETTING THAT IS NOT FULLY IMPLEMENTED INTO THE GAME YOU WILL HAVE NO SHADER AT ALL
+# THERE ARE TIME OF DAY SETTINGS IN THE GAMEFILES THAT ARE NOT FULLY IMPLEMENTED
+# SETTINGS LIKE DAWN OR DUSK ARE IMPLEMENTED AS SUNSET
+# CHALLENGES S10_1 & S12_1 HAVE THEIR FILES SWAPPED, THEY ARE CORRECTED NOW
+# ONCE A RACE IN A CERTAIN LEVEL IS LOADING, IT LOADS ALL ASSETS FROM OTHER RACES IN THAT PARTICULAR LEVEL TOO
+# DIFFERENT TIMES OF DAY MAY CHANGE THE ASSETS OF THE MAP ASWELL SO HAVING OOB DISABLING SCRIPT ENABLED IS RECOMMENDED
+# FOR STORY MODE CHALLENGE 1.2 SELECT 08 INSTEAD OF 01 SINCE IT HAS THE SHORTCUT OPEN
+# FOR STORY MODE CHALLENGE 5.1 SELECT 07 INSTEAD OF 00 SINCE IT HAS THE SHORTCUT OPEN AND DOESN’T CRASH THE GAME
+
+AVAILABLE VALUES:
+
+00 >> Day
+01 >> Day2
+02 >> Day3
+03 >> Sunset
+04 >> Night
+05 >> Night2
+06 >> Story
+07 >> Online_Primary
+08 >> Online_Secondary
+
+LEVEL IMPLEMENTED TIME OF DAY:
+
+San Francisco                 >> Day, Sunset
+Altamont Pass                 >> Day, Day2, Night
+Yosemite Approach             >> Day, Day2, Night, Sunset
+Yosemite South                >> Day, Night, Sunset
+Sierra Pass                   >> Day, Day2, Night
+Desert Hills                  >> Day, Night, Sunset
+Desert Valley                 >> Day, Night, Sunset
+Las Vegas                     >> Day, Night, Night2, Sunset
+Million Dollar Highway        >> Day, Day2, Night, Sunset
+Independence Pass             >> Day, Day2, Day3, Night
+Mountain Interstate           >> Day, Day2, Night, Sunset
+Buffalo Gap                   >> Day, Day2, Day3, Night, Sunset
+Plains Interstate             >> Day, Day2, Sunset, Night
+Rural Farms                   >> Day, Night, Sunset
+Rural Highway                 >> Day, Night, Sunset
+Chicago Interstate            >> Day, Sunset, Night
+Chicago Downtown              >> Day, Night
+Lake Shore                    >> Day, Night, Sunset
+Chicago Industrial            >> Day, Night, Night2
+Smoky Mountains               >> Day, Day2, Day3, Night
+New Jersey                    >> Day, Day2, Day3, Night
+New York Approach             >> Day, Night
+New York                      >> Day, Night
+
+COASTAL RUSH:
+
+9516-e5d91c5499ec >> S01_1 >> What a Rush
+8018-858cce65c8e8 >> S01_2 >> Urban Muscle
+97b7-d330c367559e >> S01_4 >> The Pretenders
+adf9-64e9b4e8aeac >> S01_6 >> Time Hunter
+af2f-d23a034eaeb9 >> S02_5 >> Midnight Rush
+9211-d9ee38f25bb6 >> S01_5 >> Don’t Drive Junk [Hidden] [Night unplayable]
+
+NATIONAL PARK:
+
+9814-5360f3d11e69 >> S02_1 >> Mountain Men
+a880-9eb6176a5609 >> S02_7 >> Offroad Mayhem
+9a8c-77adae5897e4 >> S02_4 >> Ford Challenge
+8627-4ad1e4c1ec3f >> S02_6 >> Tioga Run
+80ef-7891993c3d7f >> S02_3 >> King Of The Road
+
+NEVADA DREAMS:
+
+bc5b-fa52232ac48b >> S03_1 >> Dry Heat
+8b52-c412b1bf1e07 >> S03_2 >> Outrun
+9881-cb2cd914d658 >> S03_3 >> Vegas Velocity
+9642-426d2c139282 >> S03_4 >> Sin City Street Race
+9f94-8ff3ab751f3f >> S05_4 >> Lotus Battle
+
+DESERT VALLEY:
+
+87cb-0c15d2f12e85 >> S03_5 >> Feel the Heat
+91b8-6ac1750bb9db >> S05_2 >> Hell On Wheels
+8b43-a52e17d713ea >> S05_3 >> The Edge
+802a-c431a96cd039 >> S05_1 >> Rally Challenge
+890a-7728126bb69c >> S05_5 >> Dust In My Eye
+
+INDEPENDENCE PASS:
+
+a95f-bf591638f66a >> S06_2 >> Snow Battle
+aecc-766aa4c880df >> S06_3 >> Ascension
+bd4b-aaf974406cf8 >> S06_4 >> Double Black Diamond
+9136-ea4c5603e0fd >> S06_5 >> Black Mountain
+8cca-1a433c63b459 >> S06_1 >> Just Drive
+
+PLAINS INTERSTATE:
+
+8a6b-c7bd89c292ce >> S09_1 >> Dirty Drifter
+8604-bd62b283cc64 >> S09_3 >> Road Runner
+8b2f-f16619271613 >> S09_4 >> The Gap
+8488-e8c973344029 >> S09_5 >> NFS Edition Showdown
+bba6-5b4581d085b8 >> S09_2 >> Locals Only
+
+WINDY CITY:
+
+bdde-6dfa3aa242a2 >> S10_1 >> Hard Action
+91b7-abccb615f650 >> S10_2 >> Oncoming
+9612-33363a70f3c7 >> S10_4 >> Lower the Wacker
+b78a-5beb9b926e52 >> S10_5 >> GT-R SpecV Showdown
+8f7a-579990e40c17 >> S10_3 >> Street Legal
+
+INDUSTRIAL RUN:
+
+9afe-5ee6bfc6f146 >> S11_1 >> Lakeshore Battle
+974d-535747830071 >> S11_2 >> Interstate Loop
+bf93-e7870bfddca8 >> S11_3 >> Industrial Run
+ab66-4426f5080736 >> S11_4 >> Tunnels and Trains
+b43e-fd8a76582207 >> S11_5 >> Industrial Strength
+
+RURAL TRACK ATTACK:
+
+b385-50958bb6ab27 >> S12_1 >> Hazard County
+849e-53564c208f93 >> S12_2 >> Traffic Jam
+b7d8-986cdb6287d9 >> S12_3 >> Porsche Attack
+99ec-2a27544141b9 >> S12_4 >> Lost Serpent Pass
+b235-730c9a56a383 >> S12_5 >> Panic Attack
+
+EAST COAST EXPRESS:
+
+9da7-f1932fceccc8 >> S13_3 >> The Jersey Double Back
+ad76-9f957b3b781e >> S13_4 >> The Situation
+a34b-e7e5ffd92ed9 >> S13_5 >> Drive Hard
+bdd0-2717692acce9 >> S13_2 >> Drive Hard with a Vengeance
+acc7-e2e2d9b823df >> S13_1 >> Live Free or Drive Hard
+8692-215ab1b2579f >> S13_7 >> The Final Event
+947d-f9eb02d5ac3c >> S13_6 >> Drive Harder [Hidden]
+
+AEM CHALLENGE:
+
+bf0b-dac7c2a97fe6 >> SAE_1 >> Streets of San Francisco
+9098-df7f68d89deb >> SAE_2 >> The Gauntlet
+b97e-43c0acbe3b8f >> SAE_3 >> Raw Power
+
+K&N CHALLENGE:
+
+89d0-4824df6afd40 >> SKN_1 >> Filtered for Success
+b538-e3d8a3d05d83 >> SKN_2 >> Death Valley Run
+926e-d464c552e7a3 >> SKN_3 >> Battle in the Desert
+
+UNDERGROUND:
+
+af5e-7decbfe35f82 >> SUG_1 >> Race of Races
+b7a3-3e3711354d60 >> SUG_2 >> Live the Underground
+853f-e6d60611e740 >> SUG_3 >> Fast Eddie
+
+MOST WANTED:
+
+8a50-81bb5c0ea354 >> SMW_1 >> The Most Wanted
+975a-10e0b6c70056 >> SMW_2 >> Unstoppable Force
+9bdf-0fb7499c9152 >> SMW_3 >> Razor’s Edge
+
+OLD SPICE:
+
+8e09-8d17660c1269 >> SOS_1 >> I’m On A Horse
+9a8d-6cffe40bc52f >> SOS_2 >> Champion
+a449-728801c036bd >> SOS_3 >> Swagger
+
+CARBON:
+
+8ea8-7fbefcd85c50 >> SCA_1 >> The Return of Cross
+8e19-8b1e970268e7 >> SCA_2 >> Very Cross
+a2ab-2d91045607ab >> SCA_3 >> Cross Strikes Back
+
+LIMITED EDITION:
+
+85a8-88245ccc3cbd >> SLE_1 >> Make Tracks
+b3df-d935bd42d50d >> SLE_2 >> The Duel
+8414-a14f6c53c8b3 >> SLE_3 >> Porsche Run 
+bb95-8fa11280d716 >> SLE_4 >> San Francisco Challenge
+bd83-3a63669b7d3c >> SLE_5 >> Supercar Descent
+
+STORY MODE:
+
+87b9-173ca72a3f9f >> 1.10 >> Car Crusher [Night2 available]
+b15c-d48d86dfbf0a >> 1.20 >> New Jersey Junkward [Day2 unplayable]
+872f-a4ab00c327d5 >> 1.2S >> San Francisco Bar [No visual changes]
+8494-085964222ef7 >> 1.30 >> San Francisco Car Selection [Not working]
+9773-69615ba2d18a >> 1.50 >> [Unknown]
+9a52-8299e0b712a1 >> 1.51 >> Get Outta San Francisco
+
+8619-ecdbb2f7c845 >> 2.20 >> Altamont Pass
+b308-a85ae2689e2c >> 2.10 >> Altamont Pass Reverse
+a036-9f3f7c45613b >> 2.3A >> Yosemite Approach A
+8e4c-e5b6a4394a92 >> 2.3B >> Yosemite Approach Reverse B
+9a22-da9df63475f4 >> 2.40 >> Yosemite South A
+ab37-3d0ab573585f >> 2.50 >> Yosemite South B - Marcus First Appearance
+8fec-37f0cd6df61f >> 2.60 >> Sierra Pass B - Marcus Ram
+
+a8e7-a56ea256736d >> 3.10 >> Desert Hills
+848e-c5e356da03d9 >> 3.20 >> Death Valley A
+bb73-8e4a81aa38c5 >> 3.30 >> Death Valley B
+88c2-95948cceb494 >> 3.41 >> Las Vegas East A - Nikki & Mila Battle
+b3de-0c4d5fbb250b >> 3.50 >> Las Vegas East B
+bd33-78ccfb111ba6 >> 3.51 >> Las Vegas East Mini
+ad79-745c2c75aa2a >> 3.52 >> Foot Chase [Not working]
+a5bf-9b0ce6b462aa >> 3.53 >> Las Vegas Car Select
+
+aae6-61a2ff531099 >> 4.3A >> Desert Hills Rev A
+a938-d4802aecc8dd >> 4.10 >> Death Valley Reverse - Marcus Brakecheck
+
+a2d7-119701f6c340 >> 5.10 >> Desert Hills Rev B [Day crashes]
+bbd3-32156996a1d2 >> 5.20 >> Million Dollar HWY A
+9215-fe9bf5dd2199 >> 5.30 >> Million Dollar HWY B
+
+9817-99960a3a0276 >> 6.10 >> Mountain Interstate Rev
+a3f3-d4f7bc818c1a >> 6.20 >> Independence Pass B
+b7cf-8ff0b163475e >> 6.21 >> Montain Interstate - DeLeon Crew Battle
+86e8-082a7f35d5c6 >> 6.22 >> Independence Pass A
+9fa2-db5caec2b298 >> 6.30 >> Indepenence Pass C - Avalanche Survival
+
+a115-dfb57385d184 >> 9.00 >> New Jersey Ind Rev
+9fc6-9c9a68bfdb08 >> 9.10 >> Plains Interstate
+9d7d-cb2e4ec18ec1 >> 9.21 >> Buffalo Gap
+a1e1-0eaf8188aa5e >> 9.22 >> Buffalo Gap Rev
+808a-5bf50601ab9f >> 9.30 >> Plains Interstate Rev - Calvin Garret Battle
+
+8543-e3bf6a0f98cc >> 10.1 >> Rural Farms
+801d-b5ea3593d69b >> 10.2 >> Rural Highway
+a427-b8fe2f48f63b >> 10.3 >> Chicago Interstate - Marcus Gun Shot
+8e30-efa5664f6443 >> 10.31 >> Chicago Downtown Mini - Marcus Faceoff
+b434-436763701370 >> 10.4 >> Roof to Alley
+ac6a-607812636c9d >> 10.5 >> Chicago Downtown Heli Chase
+8339-6726ef75f40e >> 10.6 >> Trapped with Train
+
+a9f7-1f7124d8e692 >> 11.C >> Car Select Chicago Downtown
+856e-3748d2b6a978 >> 11.0 >> Chicago Downtown After Car Select
+82f3-53a05fdc2a31 >> 11.1 >> [Unknown]
+887f-b0e3a997bd51 >> 11.11 >> Chicago Lake Shore B
+bc9b-272c28c2bc72 >> 11.2 >> Chicago Interstate Rev
+805a-021e467c54a3 >> 11.3 >> Chicago Lake Shore A - Mob Chase
+9e9e-b6a916c91322 >> 11.4 >> Chicago Industrial Action Level - Helicopter Takedown
+
+9215-3c3f228cad90 >> 12.C >> Uri Car Shop [No visual changes]
+a208-7b42200428d6 >> 12.1 >> Rural Farms Rev
+83b4-eafce9bc2cc5 >> 12.2 >> Rural Highway Rev
+bce1-054e5acae7d0 >> 12.31 >> Smoky Mountain Rev A - Mila Belova Faceoff
+ad51-6df82ff5d823 >> 12.32 >> Smoky Mountain Rev B
+
+97bc-c4ca17d138ab >> 13.1 >> Smoky Mountain A - Eddie Cooke Faceoff
+a8ea-0e680091edcf >> 13.2 >> Chicago Interstate
+9e3f-9c61f1546e40 >> 13.3 >> New Jersey
+bdb4-465de0ddbedd >> 13.31 >> New Jersey Rev - Cesar DeLeon Faceoff
+b124-04ae8b837ade >> 13.4 >> New York A - Calvin Garret Faceoff
+9f4c-bbe764ab3246 >> 13.41 >> New York B - Final Race
+
+
+
+/** TIME OF DAY LIGHTING PRESETS
+
+
+# TO MAKE THE GAME LOAD THE DESIRED TOD SETTING IN OTHER LEVELS YOU MUST INSTANCE THE LEVEL IS FROM AT LEAST TWICE, I.E, ENTER AN EVENT, RESTART IT AND THEN LEAVE
+# DEPENDING ON THE EVENT SETUP IT CRASHES THE GAME AT LOADING
+# IT ALSO TRIGGERS SOME KIND OF DEBUG SETTING THAT PRINTS RED SQUARES ON THE SCREEN WHERE THE SOURCE LIGHT COMES FROM
+# USING THIS METHOD YOU CAN GET ACCESS TO THE HIDDEN NEW YORK DAY TIME SETTING MEANT FOR MULTIPLAYER TRACKS
+
+FUNCTIONAL LIGHTING SETTINGS:
+
+_c4/Levels/Level_0100_SanFrancisco/TOD_Sunset
+_c4/Levels/Level_0100_SanFrancisco/TOD_Day
+_c4/Levels/Level_0200_AltamontPass/TOD_Day
+_c4/Levels/Level_0200_AltamontPass/TOD_Day2
+_c4/Levels/Level_0200_AltamontPass/TOD_Night
+_c4/Levels/Level_0250_YosemiteApproach/TOD_Day
+_c4/Levels/Level_0250_YosemiteApproach/TOD_Day2
+_c4/Levels/Level_0250_YosemiteApproach/TOD_Night
+_c4/Levels/Level_0250_YosemiteApproach/TOD_Sunset
+_c4/Levels/Level_0300_YosemiteSouth/TOD_Day
+_c4/Levels/Level_0300_YosemiteSouth/TOD_Night
+_c4/Levels/Level_0300_YosemiteSouth/TOD_Sunset
+_c4/Levels/Level_0400_SierraPass/TOD_Day
+_c4/Levels/Level_0400_SierraPass/TOD_Day2
+_c4/Levels/Level_0400_SierraPass/TOD_Night
+_c4/Levels/Level_0500_DesertHills/TOD_Day
+_c4/Levels/Level_0500_DesertHills/TOD_Night
+_c4/Levels/Level_0500_DesertHills/TOD_Sunset
+_c4/Levels/Level_0600_DesertValley/TOD_Day
+_c4/Levels/Level_0600_DesertValley/TOD_Sunset
+_c4/Levels/Level_0600_DesertValley/TOD_Night
+_c4/Levels/Level_0800_LasVegasEast/TOD_Day
+_c4/Levels/Level_0800_LasVegasEast/TOD_Night
+_c4/Levels/Level_0800_LasVegasEast/TOD_Sunset
+_c4/Levels/Level_0800_LasVegasEast/TOD_Night2
+_c4/Levels/Level_1100_MillionDollar/TOD_Day
+_c4/Levels/Level_1100_MillionDollar/TOD_Day2
+_c4/Levels/Level_1100_MillionDollar/TOD_Dawn
+_c4/Levels/Level_1100_MillionDollar/TOD_Night
+_c4/Levels/Level_1300_IndependencePass/TOD_Day
+_c4/Levels/Level_1300_IndependencePass/TOD_Day2
+_c4/Levels/Level_1300_IndependencePass/TOD_Night
+_c4/Levels/Level_1300_IndependencePass/TOD_Day3
+_c4/Levels/Level_1700_MountainInterstate/TOD_Day
+_c4/Levels/Level_1700_MountainInterstate/TOD_Day2
+_c4/Levels/Level_1700_MountainInterstate/TOD_Night
+_c4/Levels/Level_1700_MountainInterstate/TOD_Sunset
+_c4/Levels/Level_2300_BuffaloGap/TOD_Day
+_c4/Levels/Level_2300_BuffaloGap/TOD_Night
+_c4/Levels/Level_2300_BuffaloGap/TOD_Sunset
+_c4/Levels/Level_2300_BuffaloGap/TOD_Day2
+_c4/Levels/Level_2300_BuffaloGap/TOD_Day3
+_c4/Levels/Level_2400_PlainsInterstate/TOD_Day
+_c4/Levels/Level_2400_PlainsInterstate/TOD_Day2
+_c4/Levels/Level_2400_PlainsInterstate/TOD_Night
+_c4/Levels/Level_2400_PlainsInterstate/TOD_Sunset
+_c4/Levels/Level_2500_RuralFarms/TOD_Day
+_c4/Levels/Level_2500_RuralFarms/TOD_Dawn
+_c4/Levels/Level_2500_RuralFarms/TOD_Night
+_c4/Levels/Level_2600_RuralHighway/TOD_Day
+_c4/Levels/Level_2600_RuralHighway/TOD_Dawn
+_c4/Levels/Level_2600_RuralHighway/TOD_Night
+_c4/Levels/Level_2800_ChicagoInterstate/TOD_Dusk
+_c4/Levels/Level_2800_ChicagoInterstate/TOD_Night
+_c4/Levels/Level_2800_ChicagoInterstate/TOD_Day
+_c4/Levels/Level_3000_ChicagoDowntown/ChicagoDowtown_TOD_DAY
+_c4/Levels/Level_3000_ChicagoDowntown/ChicagoDowtown_TOD_Night
+_c4/Levels/Level_3050_LakeShore/TOD_Sunset
+_c4/Levels/Level_3050_LakeShore/TOD_Day
+_c4/Levels/Level_3050_LakeShore/TOD_Night
+_c4/Levels/Level_3050_LakeShore/TOD_Night2
+_c4/Levels/Level_3100_ChicagoIndustrial/TOD_Night
+_c4/Levels/Level_3100_ChicagoIndustrial/TOD_Night2
+_c4/Levels/Level_3100_ChicagoIndustrial/TOD_Day
+_c4/Levels/Level_3500_SmokyMountains/TOD_Day
+_c4/Levels/Level_3500_SmokyMountains/TOD_Day2
+_c4/Levels/Level_3500_SmokyMountains/TOD_Day3
+_c4/Levels/Level_3500_SmokyMountains/TOD_Night
+_c4/Levels/Level_4000_NewJersey/Lighting_TOD_Day
+_c4/Levels/Level_4000_NewJersey/Lighting_TOD_Day2
+_c4/Levels/Level_4000_NewJersey/Lighting_TOD_Night
+_c4/Levels/Level_4000_NewJersey/Lighting_TOD_Day3
+_c4/Levels/Level_4050_NewYorkApproach/TOD_Night
+_c4/Levels/Level_4050_NewYorkApproach/TOD_Sunset
+_c4/Levels/Level_4100_NewYork/TOD_Sunset
+_c4/Levels/Level_4100_NewYork/TOD_Day
+_c4/Levels/Level_4100_NewYork/TOD_Night2
+
+EMPTY TEMPLATE LIGHTING SETTINGS:
+
+_c4/Levels/Level_0100_SanFrancisco/TOD_Day2
+_c4/Levels/Level_0250_YosemiteApproach/TOD_Shared_Day
+_c4/Levels/Level_0300_YosemiteSouth/TOD_Day2
+_c4/Levels/Level_0300_YosemiteSouth/TOD_Dawn
+_c4/Levels/Level_0500_DesertHills/TOD_Dawn
+_c4/Levels/Level_0600_DesertValley/TOD_Day2
+_c4/Levels/Level_1100_MillionDollar/TOD_Day_Shared
+_c4/Levels/Level_1300_IndependencePass/TOD_Night_EnlightenShared
+_c4/Levels/Level_2300_BuffaloGap/TOD_Day_Shared
+_c4/Levels/Level_3000_ChicagoDowntown/ChicagoDowtown_TOD_Sunset
+_c4/Levels/Level_3050_LakeShore/TOD_Night_Shared
+_c4/Levels/Level_3100_ChicagoIndustrial/TOD_Night_Enlighten_Shared
+_c4/Levels/Level_4000_NewJersey/Lighting_TOD_DayShared
+_c4/Levels/Level_4000_NewJersey/Lighting_TOD_Night22
+_c4/Levels/Level_4050_NewYorkApproach/TOD_Day
+
+
+
+/** VEHICLE IDs
+
+
+SUPERCAR PACK:
+
+8A FC 10 79 >> Lamborghini Countach 5000           	 
+33 CB 0D 4A >> Lexus LFA                       		  
+36 B6 41 81 >> Porsche Carrera GT              		   
+32 EA 08 FA >> Gumpert Apollo S                		   
+2B 66 43 53 >> Bugatti Veyron 16.4 Super Sport 		   
+16 9E EE 37 >> Koenigsegg Agera R              		   
+8C 6B A2 70 >> Hennessey Venom GT              		  		  
+
+SPECIAL:
+
+8A 96 3A 36 >> Porsche 911 GT2 - E3 Edition 	
+C5 03 A8 D7 >> Porsche 911 GT2 - Stock Black - RWB 		  
+9A 65 E3 66 >> Porsche 911 Carrera S - Demo - Tier 4		 			  
+0A 92 03 CE >> McLaren MP4-12C - E3 Start Screen
+DE C7 BA 70 >> Lamborghini Miura SV - Hidden Rival
+85 C8 E0 5E >> Ford Focus RS - NFS Edition - Tier 4
+44 F7 F1 46 >> Nissan 240ZG - NFS Edition - Tier 1
+29 D2 CE 60 >> Nissan 240ZG - Coeur de Valerie - Tier 1
+18 A0 CA 29 >> Toyota Supra - Chris Rado - Tier 2
+BE 01 8A 22 >> Porsche 911 Carrera 4S
+
+COP:
+
+D8 FF BC 87 >> Lamborghini Gallardo VB - Federal Police        
+81 7F E6 92 >> Nissan GT-R (R35) - Federal Police		  
+8E 8E DB 0E >> Porsche Cayenne Turbo - Federal Police 	   
+5E E3 BF 29 >> Dodge Charger SRT-8 - Federal Police (Slow) 		
+37 40 29 A5 >> Dodge Charger SRT-8 - Federal Police (Fast) 		   
+C2 30 71 9E >> Ford Police Interceptor - Undercover 		 
+3A A1 4B EB >> Ford Police Interceptor - State Police (Slow)   
+F8 1E 05 81 >> Ford Police Interceptor - State Police (Fast)	  
+8E 25 E9 5C >> Ford Police Interceptor - Federal Police 
+     	  
+DR PEPPER:
+
+07 60 D6 5E >> Porsche GT2 					  
+B6 EE F8 CC >> Chevrolet Corvette Z06 			  
+9C 25 95 84 >> Ford GT 					  
+
+OLD SPICE:
+
+91 0B 05 10 >> Ford Mustang Boss ’69  			  
+72 73 0C 7B >> Nissan 200SX 					  
+
+UNDERGROUND:
+
+9C 08 57 6E >> Nissan Skyline R32 				
+
+CARBON:
+
+0D 9E 48 57 >> Chevrolet Corvette Z06 			 
+
+STOCK:
+
+36 FA 6A 59 >> Ford Mustang Boss 302 ’69                     
+B4 9E BE 5A >> Chevrolet Camaro SS ’67                       
+7C 86 39 27 >> Dodge Challenger R/T
+4B 68 80 66 >> BMW M3 Sport Evolution
+
+D6 73 70 47 >> Mazda RX-7 RZ                               
+75 52 98 C0 >> Nissan 370Z                                  
+F2 36 B4 DB >> Nissan Skyline GT-R (R32)
+3D D3 1D DD >> Subaru Impreza WRX STi
+32 1F 4E 6A >> Toyota Supra
+D1 A3 C1 5E >> BMW 1 Series M Coupé 
+
+98 1E 8B 35 >> Porsche 911 Carrera S
+29 7C 0C B3 >> Lamborghini Miura
+ED E0 00 CF >> Chevrolet Camaro ZL1 
+
+71 88 7E 3D >> Porsche 911 GT2
+6A 92 49 DA >> Porsche 911 GT3 RS 4.0
+37 65 D7 15 >> Lamborghini Gallardo LP 550-2 Valentino Balboni
+81 ED 93 0D >> Audi R8 V10
+3E 3E 59 AA >> Aston Martin V12 Vantage
+9A 39 BD AC >> Chevrolet Corvette Z06
+18 2E 56 8E >> Mercedes-Benz SLS AMG
+FB 9F 5F 4B >> Nissan GT-R R35
+9F 6C D5 13 >> Nissan GT-R R35 SpecV
+44 25 C5 CF >> Ford GT
+9E 7F F1 28 >> BMW M3 GTS
+
+D1 71 6D C8 >> Porsche 918 RSR
+3F 96 10 B5 >> Lamborghini Sesto Elemento
+DC 7F 36 19 >> Lamborghini Murciélago LP 670-4 SV 		 
+AC 64 99 0D >> Lamborghini Aventador LP 700-4 
+1D ED 2C 8C >> Aston Martin One-77
+49 42 52 CD >> Pagani Zonda Cinque
+23 DD CA 2F >> Pagani Huayra
+F7 F8 73 9E >> McLaren MP4-12C
+
+FB E1 BC B7 >> McLaren F1
+
+PERFECT COLORS:
+
+46 40 E1 B9 >> Pagani Zonda Cinque - Special Gray
+0B 8A 9D 4C >> Pagani Zonda Cinque - Electric Blue
+D9 4C B9 32 >> Porsche Carrera GT - Special Gray
+67 12 C7 A7 >> Porsche Carrera GT - Red
+C3 2F C0 C3 >> McLaren F1 - Yellow
+7D 66 19 F2 >> McLaren F1 - Green
+31 33 68 D6 >> McLaren F1 - Gray
+0B 20 37 77 >> McLaren MP4-12C - Green
+E9 B5 3A C0 >> McLaren MP4-12C - Blue
+FC 34 27 5F >> McLaren MP4-12C - Gray
+7A BD 7F 3C >> Ford GT - Yellow Black Stripes
+7C AF EE 40 >> Ford GT - Blue White Stripes
+C5 44 9C 6E >> BMW M3 GTS - Electric Blue
+10 7D 35 C6 >> Aston Martin V12 Vantage - Gray
+00 A0 B3 31 >> Nissan GT-R R35 - Red
+
+TUNED:
+
+CD DD EF FE >> Porsche 911 GT2 RWB
+94 0D 0B 3A >> BMW 1 Series M Coupé - NFS Edition				  
+52 7F 68 29 >> Ford Shelby GT500 Super Snake - NFS Edition 
+
+B5 8B 7A C3 >> Porsche 911 Carrera S - Snowflake Edition	
+1C 9D B6 B9 >> Lamborghini Gallardo VB - NFS Edition          
+01 2E 4B 64 >> BMW 1 Series M Coupé - Signature Edition 	 
+C8 D0 4E 8A >> BMW M3 Sport Evolution - Signature Edition     
+C0 22 F6 6E >> Renault Sport Mégane RS - Signature Edition
+74 42 E5 48 >> Toyota Supra Chris Rado
+E2 F5 4E 93 >> Volkswagen Scirocco R - Signature Edition
+7D A8 AC 29 >> Ford Focus RS - Alpinestars			  
+A2 C0 FF D5 >> Subaru Impreza WRX STI - Signature Edition	 
+44 9B 34 FB >> Ford Mustang Boss 302 - Signature Edition 
+9F 5E 62 2F >> Nissan 370Z - Signature Edition		  
+5F E0 36 76 >> Chevrolet Camaro ZL1 - Signature Edition
+AA AF 39 A0 >> Mazda RX7 RZ - Signature Edition 
+
+0D 36 44 40 >> Audi R8 V10 - NFS Edition 			 
+6B AC 5E F7 >> Nissan Fairlady 240ZG - Signature Edition      
+74 C0 91 1F >> Mazda RX7 RZ - NFS Edition                  
+
+CUSTOM AI PERFORMANCE:
+
+E4 F4 A9 DB >> Mazda RX7 - Stock White Gold Rims 		  
+FF E4 DD 52 >> Mazda RX7 - Modified Yellow    		  
+57 28 CA A2 >> Mazda RX7 - Battle Machine    		  
+94 5C 10 68 >> Mazda RX7 - Hankook 	 			   
+9D 35 C9 5D >> Mazda RX7 - Modified Black     		 
+
+10 F7 C2 4C >> Toyota AE86 - Modified White - ProStreet   	  
+23 43 DD 7E >> Toyota AE86 - Modified White 			   
+C6 8B 82 AE >> Toyota AE86 - Stock Light Blue 		   
+
+C2 BA 50 67 >> Renault Sport Mégane RS - Modified Blue         
+3C B7 48 A8 >> Renault Sport Mégane RS - Modified Green        
+
+E4 C1 DA 57 >> Nissan Skyline 2000GT-R - Royal Purple          
+A4 EB 99 5C >> Nissan Skyline 2000GT-R - Modified Red          
+9A 98 47 9A >> Nissan Skyline 2000GT-R - Modified Blue          
+
+56 5F EC 9B >> Lamborghini Miura SV - Stock Gray               
+22 AE AC 0E >> Lamborghini Miura SV - Stock Yellow    	  
+65 D9 FA E8 >> Lamborghini Miura SV - Modified White  	   
+D8 BF 06 C7 >> Lamborghini Miura SV - Modified Blue	  
+
+BF 7C C9 CB >> Audi Quattro 20V - Modified Blue      	   
+14 9E AE 8C >> Audi Quattro 20V - Modified Red       	  
+
+1F B7 0F FA >> BMW 1 Series M Coupé - Modified Gray   	  
+68 02 84 9D >> BMW 1 Series M Coupé - Modified White   	  
+6E 01 F4 29 >> BMW 1 Series M Coupé - BBS     	           
+8C 03 EC 91 >> BMW 1 Series M Coupé - Hankook  		 
+
+3D D4 55 EC >> BMW M3 Sport Evolution - Modified Red  	  
+A5 CA DA B2 >> BMW M3 Sport Evolution - Modified White         
+CD B7 FA 2D >> BMW M3 Sport Evolution - Modified Gray 	   
+0A 60 83 E6 >> BMW M3 Sport Evolution - Bimmerworld  	 
+
+CB E4 ED C3 >> Mitsubishi Lancer EVO X - Modified Blue 	   
+0F 66 2C 27 >> Mitsubishi Lancer EVO X - Modified White        
+0C 59 74 71 >> Mitsubishi Lancer EVO X - Modified Blue         
+7C B8 A8 57 >> Mitsubishi Lancer EVO X - Modified Green         
+
+C0 F9 B0 EE >> Nissan Fairlady 240ZG - Modified Blue           
+9D 96 E6 58 >> Nissan Fairlady 240ZG - Modified Gray           
+
+FA BA E6 46 >> Nissan 370Z - Modified Red     		  
+CC CB 26 F1 >> Nissan 370Z - MILA - Tier 5			   
+
+D2 BE 15 8E >> Nissan Skyline R32 - Stock Gray  	         
+23 10 8D BF >> Nissan Skyline R32 - Stock Blue  		   
+91 98 9E 4F >> Nissan Skyline R32 - Sparco   		   
+4D 1B A1 EA >> Nissan Skyline R32 - Modified Yellow  	 
+63 EE 1E A2 >> Nissan Skyline R32 - Modified Blue     	  
+59 C0 2A 63 >> Nissan Skyline R32 - Modified White             
+
+CD CB C5 A7 >> Nissan 200SX - Endless 	 		 
+22 B9 8F B2 >> Nissan 200SX - Modified Orange  	         
+2E F1 F4 4C >> Nissan 200SX - Modified Gray  		  
+FB 77 8F 95 >> Nissan 200SX - Modified Blue  		 
+
+36 8A F9 CA >> Subaru Impreza WRX STI - Stock Blue   	  
+5C 5D 55 E1 >> Subaru Impreza WRX STI - Pearl White   	  
+33 A4 2F 98 >> Subaru Impreza WRX STI - Modified Yellow        
+74 0B 93 FC >> Subaru Impreza WRX STI - Modified White        
+97 0F 60 BE >> Subaru Impreza WRX STI - Modified Black  	  
+1E 24 C3 05 >> Subaru Impreza WRX STI - Modified White          
+
+C6 C5 F0 5B >> Toyota Supra - Stock Blue	          	  
+2F BF A5 40 >> Toyota Supra - Modified White 		  
+
+06 AE CF E5 >> Volkswagen Scirocco R - Modified White 	
+3B 16 BC 88 >> Volkswagen Scirocco R - Modified White 	 
+6D 7C 25 69 >> Volkswagen Scirocco R - Modified Green 	 
+
+E0 F9 FF F1 >> Mazda MX-5 - Stock Blue  			 
+F7 34 A3 F1 >> Mazda MX-5 - Modified White    		  
+54 7A D5 DB >> Mazda MX-5 - Modified Blue     		 
+
+E3 90 28 05 >> Ford Mustang RTR - Stock White		  
+78 C4 98 97 >> Ford Mustang RTR - Stock Blue
+
+73 AD 1B D6 >> Ford Mustang Boss 302 ’69 - Modified White 	  
+95 9B B3 01 >> Ford Mustang Boss 302 ’69 - Modified Dark Green 
+
+59 94 A9 A0 >> Chevrolet Camaro SS ’67 - Stock Grey 		  
+4A 34 03 45 >> Chevrolet Camaro SS ’67 - Modified Red 	  
+
+DE C6 00 41 >> Ford Focus RS - Modified White 		  
+
+39 55 6D 3C >> Dodge Challenger R/T - Stock Blue 		 
+84 FA E4 07 >> Dodge Challenger R/T - Stock Green		  
+
+4C E2 D7 C5 >> Audi R8 - Stock - Technik Livery 		  
+
+48 3B 44 54 >> Chevrolet Camaro ZL1 - Modified Green 	
+A2 4A 7A 3C >> Chevrolet Camaro ZL1 - Stock Blue 		  
+B6 1B F2 6C >> Chevrolet Camaro ZL1 - Modified Light Gray     
+
+9A 8F 1A C8 >> Shelby Cobra Daytona Coupé - Stock Blue	  
+35 02 D9 0D >> Shelby Cobra Daytona Coupé - Stock White 	  
+52 7E 9D 47 >> Shelby Cobra Daytona Coupé - Modified Blue 	 
+
+1C 71 F1 1C >> Lotus Evora - Stock Dark Green		  
+15 3A 8B 0C >> Lotus Evora - Stock Dark Red			   
+54 41 08 99 >> Lotus Evora - Modified Dark Green		  
+
+EB D5 99 9F >> Lotus Exige Cup 260 - Modified Dark Green	 
+37 27 76 CB >> Lotus Exige Cup 260 - Alpinestars - Tier 5	  
+
+52 96 24 CC >> Ford Shelby GT500 Super Snake - Stock Red        
+
+FE 6F D7 4F >> Wolkswagen Golf GTI MKI - Modified Red	  
+
+20 E5 62 7A >> Chevrolet El Camino SS - Modified Yellow 	 
+3F A6 4B CA >> Chevrolet El Camino SS - Modified Black	   
+
+93 FE E1 3E >> Pontiac Firebird Formula - Stock Red		  	  
+
+3F 39 1A 27 >> Chevrolet Corvette Z06 - Stock White - Tier 5    
+
+
+
+/** RESEARCH ANNEX
+
+
+Car Changer >> F3D313CC (Address of One-77)
+
+Car Locker >> F94C692C (Address of Car lot)
+
+Car Compatibility >> Replacing all results with the desired car ID >> Spawns the car and/or merges it with the original car
+
+# Lamborghini Countach 5000 (Full) >> Aston Martin One-77 (Stock)
+# Lexus LFA (Full) >> Lamborghini Aventador (Stock)
+# Koenigsegg Agera R (Full) >> Aston Martin One-77 (Stock)
+# Bugatti Veyron 16.4 Super Sport (Loaner) >> McLaren F1 (Stock)
+# Porsche Carrera GT (Half) >> Porsche Carrera S (NFS Edition)
+
+Vehicle names & blueprints start with _c4/Blueprint/VehicleBundles/BB_AST_ONE_77_10_KIT00
+
+UI/HUD Stuff >> 01 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 FF FF FF FF
+
+-Game.Level _c4/Levels/Level_3050_LakeShore/Level_3050_LakeShore -Game.DefaultLayerInclusion StartupMode=Game;GameMode=StoryMode
+
+*Command -level isn’t compatible with other commands
+*GameMode=ChallengeMode, GameMode=StoryMode, GameMode=CareerMode, GameMode=DevMode
+*CareerMode softlocks the game and DevMode is the same as leaving it on black
+*The order of the commands doesn’t matter provided that all arguments are correct. This has the same effect as the one above:
+-Game.DefaultLayerInclusion StartupMode=Game;GameMode=StoryMode -Game.Level _c4/Levels/Level_3050_LakeShore/Level_3050_LakeShore
+*If one command fails it doesn’t affect others
+
+Prelude Debug Menu:
+
+*It can be accessed once you enter the game if you enable both Fast Boot and Prelude Debug Menu scripts
+*To find the correct address is recommended to use the debug script to select shorter races or cutscenes so you can go back to the main menu faster
+*If the game doesn’t let you pause the game then it’s a good sign
+*The Run & Options are both broken and will softlock the game
+*Multiplayer does search & find lobbies
+
+** Launch a story mode race through the above command and search for this AOB >> Then replace all values’ 5th 0 byte with a 1 >> Finish the race >> QUIT TO MENU
+00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00 >> ENABLES PS3 INTRO >> AROUND 120 RESULTS >> MOST OF THEM DO HIDDEN FUNCTIONS
+
+**Those 4 bytes in front are actually IDs >> The only bytes that change from .exe version 1.1.0.0 to 1.0.0.0 are D8 9F 86 02 D8 9F 86 02 D9 9F 86 02
+
+23 70 49 AF 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00 >> ENABLES FAST BOOT
+
+2A 48 29 FB 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00 >> INVITE FRIENDS IN RACE PAUSE MENU
+
+93 C4 6C FF 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00 >> ENABLES THE PRELUDE DEBUG MENU
+
+64 AD 81 3D 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00 >> START SCREEN WITH NO POSSIBILITY TO ENTER
+
+
+
+** To unlock the PS3 Intro and launch into the game change all these 10 AOB’s 5th 0 byte to 1 once you lauched the game through that story mode command:
+The ones marked with * gives the PS3 Intro but the after that the game will launch normally. You must change both at once to trigger it.
+
+70 8F 25 93 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+7E 8C 48 A6 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+*4C B3 87 B5 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+8B 4E 44 5F 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00 >> UNLOCKS THE ADITIONAL CONTENT MENU
+
+FA E7 5D D8 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+61 A9 13 10 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+*D5 BA F4 93 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+AE B9 B7 EF 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+23 70 49 AF 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+7B 71 1E 00 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 00 00 00 00
+
+
+** Direct access to the last slot of One-77 which is C2 FF C4 20 in AOB: * * * F3 C2 FF C4 20 * * * * E8
+
+C5 ED F2 21 00 00 00 00 00 00 00 00 00 00 00 00 D8 9F 86 02 D8 9F 86 02 D9 9F 86 02 00 00 00 00 02 00 00 00 >> 5th 00 byte >> 00 textures 01 render gas station 02 render garage
+
+The image textures of the multiplayer playlists are compatible with any textures or assets no matter where they are from
+
+** -DebugRender.Enable doesn’t work alone, -Render.DebugRedererEnable 1 is necessary for it to show on screen
+** -level " doesn’t work with these commands
+** -Client.IsSpectator seems to do the same as -Game.DefaultLayerInclusion and it only works with -Game.Level
+-Game.Level _c4/Levels/Level_0200_AltamontPass/Level_0200_AltamontPass -Render.DebugRendererEnable 1 -DebugRender.Enable 1 -Render.PerfOverlayVisible 1
+
+** This command will let you play any multiplayer playlist alone. Just select the desired playlist and wait for 15sec. Other players can still join your session.
+-NfsOnline.AllowSinglePlayerOnline 1
+
+** This command enters a running lobby immediately once you enter the Multiplayer
+-NfsOnline.MatchmakeImmediately 1
+
+** To search for the GUIDs in CE >> Copy the last 2 packs of bytes since they are not endian swapped once loaded in memory >> The other 3 packs (on the left) are endian swapped
+
+** The class starts right after the GUID so if you want to obtain the pointer to a certain class >> Select the byte after the GUID >> Add this address to the list >> Endian swap the address >> Convert it into AOB
+
+** To change the boot/menu background movies search for the GUID of the movie in ebx/_c4/Movies >> Select the result which address begins with FF >> Browse this memory region >> Obtain the pointer taking into account the above explanation
+
+** The variables that come in every StageMontage movie are not in order once in memory >> 00 01 00 01 >> 01 is false & 00 is true >> first byte corresponds to StreamMovieFile & second/third byte corresponds to HasMusic/HasLocalizedAudioTracks
+
+** START SCREEN WITH NO POSSIBILITY TO ENTER can be used to watch in full screen all movies when booting up the game >> Pause the game seconds after it boots >> Search and replace in CE
+
+** Commands under WindowSettings in Settings_Win32.txt do work
+
+** How to change TimeOfDay settings for challenge series events:
+
+Search for the the Gameflow_Schematic text file corresponding to the challenge you wanna play e.g CS_S10_3_Gameflow_Schematic.txt
+
+Copy the GUID of ChallengeEntityData e.g 8f7a-579990e40c17 >> Search for it in CE once the challenge is loading >> It won’t appear quickly >> Search for it until it appears and pause the process
+
+Once found go to its memory region >> The value is in between 90 68 1C F4 and 01 00 00 00 01 01 01 00
+
+Its value is directly related to the TimeOfDay settings inside LevelLayerInclusion.txt
+
+Once a race in a certain level is loading, it loads all assets from other levels too >> You can change the TOD from 10.31 to 10.6 at once for example
+
+** By manipulating RaceData_Schematic of the correspondent event you can increase the number of AI racers, your starting position and more
+
+In the RaceInfo or CheckpointRaceInfo section you have the variables that you have to change
+
+MaxPlayers holds up to 12 >> 11 AI Racers + Player + Amount of Cops [Around 15 Cars]
+
+Some races break if you increase the amount of AI
+
+These are some challenges where the increase of AI doesn’t have a negative effect on the gameplay
+
+a27c-1bc9fcbcfe60 >> CS_S03_4
+9171-7726c8a78620 >> CS_S09_2
+b8b8-b3792bc1df11 >> CS_S09_3
+b6cf-3913ded89883 >> CS_S12_5
+8f12-5605b113f400 >> CS_SMW_1
+b099-16924757cecd >> CS_SMW_2
+a12b-47f7d4329f78 >> SM_4_1
+8821-d1db1fb43f37 >> SM_6_22 [10 Max]
+9bba-6ae945486959 >> SM_2_3B
+ae1b-2fb6058d8d5c >> CS_SLE_1
+a26a-e0dcaa1a5182 >> CS_S02_4
+8313-19c1935cfae8 >> CS_S01_6
+b7dc-2330115cbafb >> CS_S02_3
+a6ab-02a3f3f0e0c8 >> CS_S01_5
+bb22-33539b330d55 >> CS_S06_1
+a6a5-a63ef5ef0591 >> CS_S12_2
+a211-895e4ffabbbf >> CS_S12_3 [Reset at start]
+
+** By changing the starting position of a Race or a NIS you can change the car of the AI with Car Object. It works in Las Vegas 3.41 NIS
+
+** Inside _c4/Gameplay/TheRun/CarLists/OpponentCars there are the sets of cars than can be changed weather is a Race or a NIS. It’s fully functional in Las Vegas 3.41 NIS
+They do use the performance of the swapped car so they are faster according its tier
+
+** San Francisco Car Select 1.3 garage cars are in Gameflow_Schematic >> 8058-65d99fa0269e
+
+** Chicago Downtown Car Select 11.C >> b636-21d328e94858
+
+** Las Vegas Car Select 3.53 >> 868e-d562c94d5a9e
+
+** Chicago Industrial Yuri Car Select 12C >> b00d-5238bb936ced
+
+** You can convert the Ford Police Interceptor into Undercover in both 10.4 and 10.5 by searching for this AOB: 0a76-25cc7f0fd6c5 and replacing the bytes above 2A 03 E1 F1 with 00 00 00 00
+
+** If you want to trigger the same NIS cutscene more then once without restarting the game just load a different race and go back to it after
+
+** To replace cars in the garage you have to change their ID in the memory region related to the Garage where there are all cars and its string are located
+
+** If you open the CE debugger with the cracked .exe it will close the game. This will not happen with the original .exe
+
+** To find the TOD pointers for events it’s a good setup to use:
+Max offsets per node >> 4
+Pointers must end with specific offsets >> 64
+Maximum offset value >> 2048
+Max level >> 5 [Static pointers seem to have 3 or 5 offsets and rarely 2]
+
+** Lua module to launch programs through the shell console:
+shellExecute([[C:\Program Files (x86)\Origin Games\Need for Speed The Run\Need For Speed The Run.exe]],[[-Game.Level _c4/Levels/Level_3050_LakeShore/Level_3050_LakeShore]])
+
+** AOB of Vehicle Parts Memory Region: * * * * * * * * * * * * 0D 00 00 00 * * * * * * * * * * * * 60 55 84 02 * * * * * * * * * * * * 04 00 00 00 * * * * * * * * * * * * 60 55 84 02
+3 rows above there’s an address (pointer) which has a value of XX XX XX FF. Write the address that holds that value in AOB form and search for it in CE. There will be lots of results
+All results are gathered into a struct which holds the coordinates of each movable vehicle part
+Above each result there are 3 float values. Put all of them to 1.2 in order to enable the manual openness control. Above the 3 floats row there’s the actual openness value of each part
+It only works with all cars that has either active spoiler or popup headlights. Also works with the rest of the cars in certain cutscenes like Las Vegas Gas Station
+
+** Instancing a Cop/Test/Placeholder/Hidden Car in the Main Menu Garage [OLD METHOD]:
+008848FC Crashes the game when swapping a car [from 2nd to last vehicle in the garage array] with a non obtaniable car. It can be bypassed by nopping it
+00F11920 Crashes when doing the above. It can be bypassed by writing at the opcode the value 0
+00F11931 Crashes when doing the above. It can be sort of bypassed by changing je to jb at 00F11939 but that results in an allocated memory opcode crash
+Vehicle Vlt Data Region?: 88 15 55 02
+AOB Related to Vehicle Vlt Data?: * * * FF * * * * * * * FF * * * FF * * * FF 60 55 84 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 * * * * 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

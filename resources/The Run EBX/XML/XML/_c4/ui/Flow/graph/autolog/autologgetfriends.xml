@@ -1,0 +1,592 @@
+<ActionNode Guid="065b0e95-c078-41f9-896b-dcaad340ace7">
+    <Name>GetFriends</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <ActionKey>0x06135979</ActionKey>
+    <Params Count="0"></Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] 98124ca9-89d8-41bc-9ae7-6d9460e12337</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] 3ceb8cfd-4c80-4d12-943b-31321b6ef049</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<ActionNode Guid="b5d902d1-b508-4cb8-bc35-c523f3013e52">
+    <Name>Loading Notification</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <ActionKey>0xe7201c4b</ActionKey>
+    <Params Count="1">
+        <member Index="0">ID_COMMON_LOADING</member>
+    </Params>
+    <ActionAsset>[Ebx] _c4/UI/Assets/AutologLoadingNotificationAsset [f81a07f3-09ae-4ae7-4a3f-94fd77d7ee39]</ActionAsset>
+    <In>[UINodePort] dd31aa5f-f35f-4576-bd4f-184ee37b04a8</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] d3d2b6df-c5da-4b6f-ba80-f5c197329b0d</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<ActionNode Guid="f9595f29-42ce-41c6-9b41-5c8381215673">
+    <Name>GetFriends</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <ActionKey>0x06135979</ActionKey>
+    <Params Count="0"></Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] d45494ab-73f5-49bf-9d57-6dc7f726986b</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] 9ffa6e65-d567-4869-93d8-a243de71346d</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<ActionNode Guid="5625cc04-8c8a-4bc6-9af6-4f0bc50564f5">
+    <Name>Dismiss Notification</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <ActionKey>0xe2bc8af2</ActionKey>
+    <Params Count="0"></Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] 887bc3a0-7368-444d-b1c4-a90a250819d0</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] 6530a5ad-f619-4501-aaea-e359b5a910c3</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<BinaryLogicNode Guid="5fbac311-1f81-4463-b782-bf304c71ccc8">
+    <Name>Is Friends List Ready?</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 43316853-5656-4b80-a14d-0e9be6c19e21</In>
+    <True>[UINodePort] 7d80b0f4-87a4-4623-83f5-cbfaac20c16e</True>
+    <False>[UINodePort] d975f28c-bd87-40c4-8cb2-40bf3ae5a67c</False>
+    <DataSourceInfo>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIFriendComp [e75233cc-4e31-749d-c3ec-55216341e33b]</DataCategory>
+            <DataKey>0x76dc046f</DataKey>
+        </UIDataSourceInfo>
+    </DataSourceInfo>
+</BinaryLogicNode>
+<BinaryLogicNode Guid="63865eb5-d288-4f22-ad04-dbfc903256f2">
+    <Name>Is Populating Friends List?</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] dca6ee36-ec2f-4c8a-9cf3-bdef42411627</In>
+    <True>[UINodePort] af990867-6dfa-4d6c-a680-81add7b6922d</True>
+    <False>[UINodePort] 287aa474-b487-4634-a55a-c0c3c31a5ff9</False>
+    <DataSourceInfo>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIFriendComp [e75233cc-4e31-749d-c3ec-55216341e33b]</DataCategory>
+            <DataKey>0xd7f9c1e7</DataKey>
+        </UIDataSourceInfo>
+    </DataSourceInfo>
+</BinaryLogicNode>
+<BinaryLogicNode Guid="c398b220-e3a1-43e7-b111-6382b5c8f347">
+    <Name>Is Friends List Ready?</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 63becfcc-6dae-4c4d-9ea9-6be3424e3e20</In>
+    <True>[UINodePort] c97ed72e-a217-4234-a428-fd798ac28e5e</True>
+    <False>[UINodePort] 8cbf97a6-7cd6-40a8-a6e4-2c61b4853f96</False>
+    <DataSourceInfo>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIFriendComp [e75233cc-4e31-749d-c3ec-55216341e33b]</DataCategory>
+            <DataKey>0x76dc046f</DataKey>
+        </UIDataSourceInfo>
+    </DataSourceInfo>
+</BinaryLogicNode>
+<BinaryLogicNode Guid="ce27b1d4-b884-4a8a-a396-430b89f4939b">
+    <Name>Is Populating Friends List?</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 8a9434fe-65c8-4b2e-b6f2-b4370e213b18</In>
+    <True>[UINodePort] 2b0ba60e-9e94-4f93-91c3-1559c87810bb</True>
+    <False>[UINodePort] af13d2f1-f0ed-4e8c-8955-e3fa2fe3f8a4</False>
+    <DataSourceInfo>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIFriendComp [e75233cc-4e31-749d-c3ec-55216341e33b]</DataCategory>
+            <DataKey>0xd7f9c1e7</DataKey>
+        </UIDataSourceInfo>
+    </DataSourceInfo>
+</BinaryLogicNode>
+<InstanceInputNode Guid="19af2a8c-fc72-40d8-8c75-d69ada94dc93">
+    <Name>In</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Out>[UINodePort] f20f4f24-ccb9-43aa-8385-c697c54db92b</Out>
+</InstanceInputNode>
+<InstanceInputNode Guid="ca3a6c42-9358-4ba3-8652-da2ca4e437e4">
+    <Name>Show Load Icon</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Out>[UINodePort] 0ebb9c5f-ed4d-42ee-9c69-e25ef62c2865</Out>
+</InstanceInputNode>
+<InstanceOutputNode Guid="149d65e6-32fe-4c63-8c98-822b260909f3">
+    <Name>Out</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 7a891bb8-2913-4b75-b22c-5e029fdb9e29</In>
+    <Id>Out [0B87DF4B]</Id>
+</InstanceOutputNode>
+<JumpNode Guid="b2828c30-0607-4f20-ab8b-006dff3ed8fd">
+    <Name>JumpNode</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 5b361e27-4b81-41e2-b1b2-29768e9649bf</In>
+    <TargetNode>[InstanceOutputNode] 149d65e6-32fe-4c63-8c98-822b260909f3</TargetNode>
+    <TargetPort>[UINodePort] 7a891bb8-2913-4b75-b22c-5e029fdb9e29</TargetPort>
+</JumpNode>
+<StateNode Guid="f21bf6c1-ad8c-40e9-9f0c-8be47a173875">
+    <Name>Wait for Friends List</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>nullptr</Screen>
+    <In>[UINodePort] 112f9947-d990-40d3-934c-b3bfe05fb7c6</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] ecad1458-46da-4c96-a55a-4d19d117f5f9</member>
+    </Outputs>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<StateNode Guid="4ba7cf45-f8e3-4c5a-8350-875030d49a88">
+    <Name>Wait for Friends List</Name>
+    <ParentGraph>[UIGraphAsset] a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>nullptr</Screen>
+    <In>[UINodePort] 96773b8c-1cda-4206-bafc-0639b2f5bf9c</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] ffaeb775-d3dd-4540-86de-35abf41b0837</member>
+    </Outputs>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<UIGraphAsset Guid="a3bea95d-4c9a-96fe-c5e4-f8b7410d1cac">
+    <Name>_c4/UI/Flow/Graph/Autolog/AutologGetFriends</Name>
+    <Nodes Count="14">
+        <member Index="0">[InstanceInputNode] 19af2a8c-fc72-40d8-8c75-d69ada94dc93</member>
+        <member Index="1">[InstanceOutputNode] 149d65e6-32fe-4c63-8c98-822b260909f3</member>
+        <member Index="2">[BinaryLogicNode] 5fbac311-1f81-4463-b782-bf304c71ccc8</member>
+        <member Index="3">[ActionNode] 065b0e95-c078-41f9-896b-dcaad340ace7</member>
+        <member Index="4">[StateNode] f21bf6c1-ad8c-40e9-9f0c-8be47a173875</member>
+        <member Index="5">[BinaryLogicNode] 63865eb5-d288-4f22-ad04-dbfc903256f2</member>
+        <member Index="6">[InstanceInputNode] ca3a6c42-9358-4ba3-8652-da2ca4e437e4</member>
+        <member Index="7">[ActionNode] b5d902d1-b508-4cb8-bc35-c523f3013e52</member>
+        <member Index="8">[BinaryLogicNode] c398b220-e3a1-43e7-b111-6382b5c8f347</member>
+        <member Index="9">[BinaryLogicNode] ce27b1d4-b884-4a8a-a396-430b89f4939b</member>
+        <member Index="10">[ActionNode] f9595f29-42ce-41c6-9b41-5c8381215673</member>
+        <member Index="11">[StateNode] 4ba7cf45-f8e3-4c5a-8350-875030d49a88</member>
+        <member Index="12">[ActionNode] 5625cc04-8c8a-4bc6-9af6-4f0bc50564f5</member>
+        <member Index="13">[JumpNode] b2828c30-0607-4f20-ab8b-006dff3ed8fd</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="16">
+        <member Index="0">[UINodeConnection] 49da6f76-731d-436d-b16e-37d1397351e8</member>
+        <member Index="1">[UINodeConnection] 2de4cedc-b9e8-4cff-bd84-270b89d641fb</member>
+        <member Index="2">[UINodeConnection] 0b555f0c-50fe-4620-9f95-cb44057a502e</member>
+        <member Index="3">[UINodeConnection] a69c3c99-16a3-4fac-ab37-d29e0eaaa6eb</member>
+        <member Index="4">[UINodeConnection] c25c7e00-06a3-4ea3-9e8f-6044b71965a3</member>
+        <member Index="5">[UINodeConnection] cf19cec2-3fa9-40e6-9433-99be66548d26</member>
+        <member Index="6">[UINodeConnection] ce0385df-fba2-472b-80f1-828700c3f95b</member>
+        <member Index="7">[UINodeConnection] 1cfab539-9203-43f3-b8ec-73aa64a37258</member>
+        <member Index="8">[UINodeConnection] 5ef08897-bdfb-4a13-a400-3bc8c199e8b4</member>
+        <member Index="9">[UINodeConnection] 44fa9d20-2c6d-4c04-8895-960aba733d0b</member>
+        <member Index="10">[UINodeConnection] b129fc91-d172-49e8-a25f-f414ee882b21</member>
+        <member Index="11">[UINodeConnection] 5ee6627a-5064-4110-9cf9-9233b231af1a</member>
+        <member Index="12">[UINodeConnection] 31ea85d1-2ad3-40ea-a659-213874e61a0e</member>
+        <member Index="13">[UINodeConnection] 0a137053-6369-4830-9771-cff481c4c0d3</member>
+        <member Index="14">[UINodeConnection] 258144e2-ccdc-47d0-b86b-a12348ffef2a</member>
+        <member Index="15">[UINodeConnection] ae0cd558-1405-46ca-962a-b2eac36b9e5c</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Graph/Autolog/AutologGetFriends_ResourceBundle</BundleAssetName>
+    <AssetList Count="0"></AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="1">
+        <member Index="0">[Ebx] BadRef d598e6f2-45c2-11e0-8480-af7e1182afac/55d85a89-626c-9634-99b1-01f502a03807</member>
+    </EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>False</SkipBundleLoading>
+</UIGraphAsset>
+<UINodeConnection Guid="49da6f76-731d-436d-b16e-37d1397351e8">
+    <SourceNode>[BinaryLogicNode] 5fbac311-1f81-4463-b782-bf304c71ccc8</SourceNode>
+    <TargetNode>[InstanceOutputNode] 149d65e6-32fe-4c63-8c98-822b260909f3</TargetNode>
+    <SourcePort>[UINodePort] 7d80b0f4-87a4-4623-83f5-cbfaac20c16e</SourcePort>
+    <TargetPort>[UINodePort] 7a891bb8-2913-4b75-b22c-5e029fdb9e29</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="2de4cedc-b9e8-4cff-bd84-270b89d641fb">
+    <SourceNode>[ActionNode] 065b0e95-c078-41f9-896b-dcaad340ace7</SourceNode>
+    <TargetNode>[StateNode] f21bf6c1-ad8c-40e9-9f0c-8be47a173875</TargetNode>
+    <SourcePort>[UINodePort] 3ceb8cfd-4c80-4d12-943b-31321b6ef049</SourcePort>
+    <TargetPort>[UINodePort] 112f9947-d990-40d3-934c-b3bfe05fb7c6</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="0b555f0c-50fe-4620-9f95-cb44057a502e">
+    <SourceNode>[InstanceInputNode] 19af2a8c-fc72-40d8-8c75-d69ada94dc93</SourceNode>
+    <TargetNode>[BinaryLogicNode] 5fbac311-1f81-4463-b782-bf304c71ccc8</TargetNode>
+    <SourcePort>[UINodePort] f20f4f24-ccb9-43aa-8385-c697c54db92b</SourcePort>
+    <TargetPort>[UINodePort] 43316853-5656-4b80-a14d-0e9be6c19e21</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="a69c3c99-16a3-4fac-ab37-d29e0eaaa6eb">
+    <SourceNode>[StateNode] f21bf6c1-ad8c-40e9-9f0c-8be47a173875</SourceNode>
+    <TargetNode>[InstanceOutputNode] 149d65e6-32fe-4c63-8c98-822b260909f3</TargetNode>
+    <SourcePort>[UINodePort] ecad1458-46da-4c96-a55a-4d19d117f5f9</SourcePort>
+    <TargetPort>[UINodePort] 7a891bb8-2913-4b75-b22c-5e029fdb9e29</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="c25c7e00-06a3-4ea3-9e8f-6044b71965a3">
+    <SourceNode>[BinaryLogicNode] 5fbac311-1f81-4463-b782-bf304c71ccc8</SourceNode>
+    <TargetNode>[BinaryLogicNode] 63865eb5-d288-4f22-ad04-dbfc903256f2</TargetNode>
+    <SourcePort>[UINodePort] d975f28c-bd87-40c4-8cb2-40bf3ae5a67c</SourcePort>
+    <TargetPort>[UINodePort] dca6ee36-ec2f-4c8a-9cf3-bdef42411627</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="cf19cec2-3fa9-40e6-9433-99be66548d26">
+    <SourceNode>[BinaryLogicNode] 63865eb5-d288-4f22-ad04-dbfc903256f2</SourceNode>
+    <TargetNode>[ActionNode] 065b0e95-c078-41f9-896b-dcaad340ace7</TargetNode>
+    <SourcePort>[UINodePort] 287aa474-b487-4634-a55a-c0c3c31a5ff9</SourcePort>
+    <TargetPort>[UINodePort] 98124ca9-89d8-41bc-9ae7-6d9460e12337</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="ce0385df-fba2-472b-80f1-828700c3f95b">
+    <SourceNode>[BinaryLogicNode] 63865eb5-d288-4f22-ad04-dbfc903256f2</SourceNode>
+    <TargetNode>[StateNode] f21bf6c1-ad8c-40e9-9f0c-8be47a173875</TargetNode>
+    <SourcePort>[UINodePort] af990867-6dfa-4d6c-a680-81add7b6922d</SourcePort>
+    <TargetPort>[UINodePort] 112f9947-d990-40d3-934c-b3bfe05fb7c6</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="1cfab539-9203-43f3-b8ec-73aa64a37258">
+    <SourceNode>[InstanceInputNode] ca3a6c42-9358-4ba3-8652-da2ca4e437e4</SourceNode>
+    <TargetNode>[BinaryLogicNode] c398b220-e3a1-43e7-b111-6382b5c8f347</TargetNode>
+    <SourcePort>[UINodePort] 0ebb9c5f-ed4d-42ee-9c69-e25ef62c2865</SourcePort>
+    <TargetPort>[UINodePort] 63becfcc-6dae-4c4d-9ea9-6be3424e3e20</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="5ef08897-bdfb-4a13-a400-3bc8c199e8b4">
+    <SourceNode>[BinaryLogicNode] c398b220-e3a1-43e7-b111-6382b5c8f347</SourceNode>
+    <TargetNode>[ActionNode] b5d902d1-b508-4cb8-bc35-c523f3013e52</TargetNode>
+    <SourcePort>[UINodePort] 8cbf97a6-7cd6-40a8-a6e4-2c61b4853f96</SourcePort>
+    <TargetPort>[UINodePort] dd31aa5f-f35f-4576-bd4f-184ee37b04a8</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="44fa9d20-2c6d-4c04-8895-960aba733d0b">
+    <SourceNode>[ActionNode] b5d902d1-b508-4cb8-bc35-c523f3013e52</SourceNode>
+    <TargetNode>[BinaryLogicNode] ce27b1d4-b884-4a8a-a396-430b89f4939b</TargetNode>
+    <SourcePort>[UINodePort] d3d2b6df-c5da-4b6f-ba80-f5c197329b0d</SourcePort>
+    <TargetPort>[UINodePort] 8a9434fe-65c8-4b2e-b6f2-b4370e213b18</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="b129fc91-d172-49e8-a25f-f414ee882b21">
+    <SourceNode>[BinaryLogicNode] ce27b1d4-b884-4a8a-a396-430b89f4939b</SourceNode>
+    <TargetNode>[ActionNode] f9595f29-42ce-41c6-9b41-5c8381215673</TargetNode>
+    <SourcePort>[UINodePort] af13d2f1-f0ed-4e8c-8955-e3fa2fe3f8a4</SourcePort>
+    <TargetPort>[UINodePort] d45494ab-73f5-49bf-9d57-6dc7f726986b</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="5ee6627a-5064-4110-9cf9-9233b231af1a">
+    <SourceNode>[ActionNode] f9595f29-42ce-41c6-9b41-5c8381215673</SourceNode>
+    <TargetNode>[StateNode] 4ba7cf45-f8e3-4c5a-8350-875030d49a88</TargetNode>
+    <SourcePort>[UINodePort] 9ffa6e65-d567-4869-93d8-a243de71346d</SourcePort>
+    <TargetPort>[UINodePort] 96773b8c-1cda-4206-bafc-0639b2f5bf9c</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="31ea85d1-2ad3-40ea-a659-213874e61a0e">
+    <SourceNode>[StateNode] 4ba7cf45-f8e3-4c5a-8350-875030d49a88</SourceNode>
+    <TargetNode>[ActionNode] 5625cc04-8c8a-4bc6-9af6-4f0bc50564f5</TargetNode>
+    <SourcePort>[UINodePort] ffaeb775-d3dd-4540-86de-35abf41b0837</SourcePort>
+    <TargetPort>[UINodePort] 887bc3a0-7368-444d-b1c4-a90a250819d0</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="0a137053-6369-4830-9771-cff481c4c0d3">
+    <SourceNode>[BinaryLogicNode] ce27b1d4-b884-4a8a-a396-430b89f4939b</SourceNode>
+    <TargetNode>[StateNode] 4ba7cf45-f8e3-4c5a-8350-875030d49a88</TargetNode>
+    <SourcePort>[UINodePort] 2b0ba60e-9e94-4f93-91c3-1559c87810bb</SourcePort>
+    <TargetPort>[UINodePort] 96773b8c-1cda-4206-bafc-0639b2f5bf9c</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="258144e2-ccdc-47d0-b86b-a12348ffef2a">
+    <SourceNode>[BinaryLogicNode] c398b220-e3a1-43e7-b111-6382b5c8f347</SourceNode>
+    <TargetNode>[JumpNode] b2828c30-0607-4f20-ab8b-006dff3ed8fd</TargetNode>
+    <SourcePort>[UINodePort] c97ed72e-a217-4234-a428-fd798ac28e5e</SourcePort>
+    <TargetPort>[UINodePort] 5b361e27-4b81-41e2-b1b2-29768e9649bf</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="ae0cd558-1405-46ca-962a-b2eac36b9e5c">
+    <SourceNode>[ActionNode] 5625cc04-8c8a-4bc6-9af6-4f0bc50564f5</SourceNode>
+    <TargetNode>[JumpNode] b2828c30-0607-4f20-ab8b-006dff3ed8fd</TargetNode>
+    <SourcePort>[UINodePort] 6530a5ad-f619-4501-aaea-e359b5a910c3</SourcePort>
+    <TargetPort>[UINodePort] 5b361e27-4b81-41e2-b1b2-29768e9649bf</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="f20f4f24-ccb9-43aa-8385-c697c54db92b">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="7a891bb8-2913-4b75-b22c-5e029fdb9e29">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="43316853-5656-4b80-a14d-0e9be6c19e21">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="7d80b0f4-87a4-4623-83f5-cbfaac20c16e">
+    <Name>True</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="d975f28c-bd87-40c4-8cb2-40bf3ae5a67c">
+    <Name>False</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="98124ca9-89d8-41bc-9ae7-6d9460e12337">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="3ceb8cfd-4c80-4d12-943b-31321b6ef049">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="112f9947-d990-40d3-934c-b3bfe05fb7c6">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="ecad1458-46da-4c96-a55a-4d19d117f5f9">
+    <Name>OnAutologFriendsComplete[Autolog]</Name>
+    <InstanceName>OnAutologFriendsComplete</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="dca6ee36-ec2f-4c8a-9cf3-bdef42411627">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="af990867-6dfa-4d6c-a680-81add7b6922d">
+    <Name>True</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="287aa474-b487-4634-a55a-c0c3c31a5ff9">
+    <Name>False</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="0ebb9c5f-ed4d-42ee-9c69-e25ef62c2865">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="dd31aa5f-f35f-4576-bd4f-184ee37b04a8">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="d3d2b6df-c5da-4b6f-ba80-f5c197329b0d">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="63becfcc-6dae-4c4d-9ea9-6be3424e3e20">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="c97ed72e-a217-4234-a428-fd798ac28e5e">
+    <Name>True</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="8cbf97a6-7cd6-40a8-a6e4-2c61b4853f96">
+    <Name>False</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="8a9434fe-65c8-4b2e-b6f2-b4370e213b18">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="2b0ba60e-9e94-4f93-91c3-1559c87810bb">
+    <Name>True</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="af13d2f1-f0ed-4e8c-8955-e3fa2fe3f8a4">
+    <Name>False</Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="d45494ab-73f5-49bf-9d57-6dc7f726986b">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="9ffa6e65-d567-4869-93d8-a243de71346d">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="96773b8c-1cda-4206-bafc-0639b2f5bf9c">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="ffaeb775-d3dd-4540-86de-35abf41b0837">
+    <Name>OnAutologFriendsComplete[Autolog]</Name>
+    <InstanceName>OnAutologFriendsComplete</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="887bc3a0-7368-444d-b1c4-a90a250819d0">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="6530a5ad-f619-4501-aaea-e359b5a910c3">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="98bf9d7d-6bcf-402e-8875-66d370ec408b">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="5b361e27-4b81-41e2-b1b2-29768e9649bf">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>

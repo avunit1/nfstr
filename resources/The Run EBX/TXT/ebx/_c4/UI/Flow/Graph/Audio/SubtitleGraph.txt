@@ -1,0 +1,132 @@
+GlobalNode 72686fe8-33aa-4657-a352-ef578c0be310
+	$::UINodeData
+		$::DataContainer
+		Name GlobalNode
+		IsRootNode False
+		ParentGraph 176aa434-3e60-ac23-ffa6-985a74bbc675
+		ParentIsScreen False
+	Outputs::array
+		member(0) ad5c26ba-acb9-427e-a556-66fa62b2291f
+InstanceInputNode 321839da-702e-4095-8e2f-3823e4276641
+	$::UINodeData
+		$::DataContainer
+		Name in
+		IsRootNode True
+		ParentGraph 176aa434-3e60-ac23-ffa6-985a74bbc675
+		ParentIsScreen False
+	Out ddbe8468-4efb-4553-a041-69e4859a0c73
+StateNode 3b051a9f-d1b9-4706-ba61-19a527f63be8
+	$::UINodeData
+		$::DataContainer
+		Name SubtitleScreen
+		IsRootNode False
+		ParentGraph 176aa434-3e60-ac23-ffa6-985a74bbc675
+		ParentIsScreen False
+	Screen _c4/UI/Flow/Screen/Audio/SubtitleScreen/7cdd9584-e57d-6c70-b12c-7a70e7061d3b
+	In 6ae27dbb-41bb-40fb-a04e-1df3b7e29f98
+	Inputs *nullArray*
+	Outputs::array
+		member(0) 770e76cb-fa22-40b8-9b0b-a203818507af
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_AboveNormal
+StateNode 7ffc293e-b91e-4435-9f2d-14069717606f
+	$::UINodeData
+		$::DataContainer
+		Name Empty
+		IsRootNode False
+		ParentGraph 176aa434-3e60-ac23-ffa6-985a74bbc675
+		ParentIsScreen False
+	Screen *nullGuid*
+	In 8752c490-cdbd-4822-945e-17aee3fa149a
+	Inputs *nullArray*
+	Outputs *nullArray*
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+UIGraphAsset 176aa434-3e60-ac23-ffa6-985a74bbc675 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/Audio/SubtitleGraph
+	Nodes::array
+		member(0) 321839da-702e-4095-8e2f-3823e4276641
+		member(1) 3b051a9f-d1b9-4706-ba61-19a527f63be8
+		member(2) 7ffc293e-b91e-4435-9f2d-14069717606f
+		member(3) 72686fe8-33aa-4657-a352-ef578c0be310
+	GlobalNode 72686fe8-33aa-4657-a352-ef578c0be310
+	Connections::array
+		member(0) 60abc1e0-055c-4483-9ba8-ed73892d9dee
+		member(1) 62944093-1dc7-45be-b6bb-ecb83b0adf01
+		member(2) 461f6a74-6db3-4125-81b9-d3b20d3c2ded
+	AudioEventMappings _c4/UI/Assets/DefaultUIAudioEventMappings/14c8ed54-0f20-1a09-0a36-55c34e6fe2cf
+	BundleAssetName _c4/UI/Flow/Graph/Audio/SubtitleGraph_ResourceBundle
+	AssetList::array
+		member(0) _c4/UI/Assets/SubtitleScreen
+	TextureList *nullArray*
+	EventList::array
+		member(0) _c4/UI/Flow/Event/LoadingEvents/3c582433-3d1e-ac3e-c363-953d1e9d5655
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading True
+UINodeConnection 60abc1e0-055c-4483-9ba8-ed73892d9dee
+	$::DataContainer
+	SourceNode 321839da-702e-4095-8e2f-3823e4276641
+	TargetNode 3b051a9f-d1b9-4706-ba61-19a527f63be8
+	SourcePort ddbe8468-4efb-4553-a041-69e4859a0c73
+	TargetPort 6ae27dbb-41bb-40fb-a04e-1df3b7e29f98
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 62944093-1dc7-45be-b6bb-ecb83b0adf01
+	$::DataContainer
+	SourceNode 3b051a9f-d1b9-4706-ba61-19a527f63be8
+	TargetNode 7ffc293e-b91e-4435-9f2d-14069717606f
+	SourcePort 770e76cb-fa22-40b8-9b0b-a203818507af
+	TargetPort 8752c490-cdbd-4822-945e-17aee3fa149a
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 461f6a74-6db3-4125-81b9-d3b20d3c2ded
+	$::DataContainer
+	SourceNode 72686fe8-33aa-4657-a352-ef578c0be310
+	TargetNode 3b051a9f-d1b9-4706-ba61-19a527f63be8
+	SourcePort ad5c26ba-acb9-427e-a556-66fa62b2291f
+	TargetPort 6ae27dbb-41bb-40fb-a04e-1df3b7e29f98
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort ddbe8468-4efb-4553-a041-69e4859a0c73
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 6ae27dbb-41bb-40fb-a04e-1df3b7e29f98
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 770e76cb-fa22-40b8-9b0b-a203818507af
+	$::DataContainer
+	Name ScreenInitialized [Screen]
+	InstanceName ScreenInitialized
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort 8752c490-cdbd-4822-945e-17aee3fa149a
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort ad5c26ba-acb9-427e-a556-66fa62b2291f
+	$::DataContainer
+	Name OnScaleformInitialized[Loading]
+	InstanceName OnScaleformInitialized
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True

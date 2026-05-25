@@ -1,0 +1,216 @@
+BBField 13b92940-472c-4185-9590-076e08a93cec
+	$::BlackboardFieldRef
+		$::DataContainer
+	Name Velocity
+	Scope BlackboardScope_Entity
+BBMapToCurve 5a8cbc3f-b518-4c06-aa28-7c76ea332cbe
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 1.9070119857788086
+					y 0.0004051987489219755
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 20.048940658569336
+					y 0.49675852060317993
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 70.67758178710938
+					y 1.0
+				LineType Linear
+			member(4)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve b4ca56ad-1cfa-4cc9-a4c0-da6fd88e5316
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.29754188656806946
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 19.837987899780273
+					y 0.39883846044540405
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 70.67758178710938
+					y 1.0
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve a5e5d1ff-6e8e-47ef-9532-2d78057bd65c
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 9.712260246276855
+					y 0.0375472828745842
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 49.79326629638672
+					y 0.9019448757171631
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 0.9019448757171631
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectBlueprint 3ef74b10-722c-44b6-bfc3-3f6b0c747d15 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Vehicle/KickUp/DRV_KickUp_Gravel_AI
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object 17d34f2e-af01-4421-80b9-9874587f800c
+EffectEntityData 17d34f2e-af01-4421-80b9-9874587f800c
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) c6ad954c-89ac-45c3-8dce-2a47d9905ae2
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) a4ce72f4-7ed1-4572-a29f-553fdf4d18ef
+		member(1) fa5d5624-665d-4547-a2a3-d47f67ff03b3
+		member(2) 903dffdf-a973-4e91-b353-4f19ee936591
+EmitterEntityData c6ad954c-89ac-45c3-8dce-2a47d9905ae2
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 0.9068102240562439
+					z -0.4215390682220459
+				forward::Vec3
+					x 0.0
+					y 0.4215390682220459
+					z 0.9068102240562439
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Vehicle/KickUp/Emitters/DRV_KickUp_Gravel_Dust/0b191fd7-e530-47e1-9a1f-0e658ec4852e
+	SpawnProbability 1.0
+ParameterBlackboardAssociation a4ce72f4-7ed1-4572-a29f-553fdf4d18ef
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 1461fd96-f429-46ba-8107-5b4f23e1a214
+	BlackboardField2 *nullGuid*
+	BlackboardMapping 5a8cbc3f-b518-4c06-aa28-7c76ea332cbe
+ParameterBlackboardAssociation fa5d5624-665d-4547-a2a3-d47f67ff03b3
+	$::DataContainer
+	EmitterParameter EmitterParameter2
+	BlackboardField1 29679784-3002-4c8d-8f21-95eb0e1b287f
+	BlackboardField2 *nullGuid*
+	BlackboardMapping b4ca56ad-1cfa-4cc9-a4c0-da6fd88e5316
+ParameterBlackboardAssociation 903dffdf-a973-4e91-b353-4f19ee936591
+	$::DataContainer
+	EmitterParameter EmitterParameter3
+	BlackboardField1 13b92940-472c-4185-9590-076e08a93cec
+	BlackboardField2 *nullGuid*
+	BlackboardMapping a5e5d1ff-6e8e-47ef-9532-2d78057bd65c
+WheelRelativeBBField 1461fd96-f429-46ba-8107-5b4f23e1a214
+	$::RelativeBBField
+		$::BlackboardFieldRef
+			$::DataContainer
+	WheelBB WheelBB_RotationalVelocity
+WheelRelativeBBField 29679784-3002-4c8d-8f21-95eb0e1b287f
+	$::RelativeBBField
+		$::BlackboardFieldRef
+			$::DataContainer
+	WheelBB WheelBB_RotationalVelocity

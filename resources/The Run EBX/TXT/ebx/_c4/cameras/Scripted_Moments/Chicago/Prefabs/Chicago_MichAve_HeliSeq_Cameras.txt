@@ -1,0 +1,104 @@
+CinebotStateLogicEntityData e566805c-62a0-4ca3-9348-28a5c83dbcf2
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Mode _c4/cameras/Prototypes/modes/AE_Camera_HelicopterIntro_MichAve_1_Mode/eec75f14-c887-437c-9ddd-c94ff6a360e4
+	PriorityOverride 0.0
+	EnablePriorityOverride False
+InterfaceDescriptorData 8235926a-1896-4c51-b5cb-17a1a6c61420
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 230748069
+		member(1)::DynamicEvent
+			Id 2089401213
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+PrefabBlueprint 24781fba-2245-4f9d-b765-b198f78d9d97 #primary instance
+	$::Blueprint
+		$::EntityBusData
+			$::DataBusData
+				$::Asset
+					$::DataContainer
+					Name _c4/cameras/Scripted_Moments/Chicago/Prefabs/Chicago_MichAve_HeliSeq_Cameras
+				PropertyConnections *nullArray*
+				LinkConnections *nullArray*
+			EventConnections::array
+				member(0)::EventConnection
+					Source 8235926a-1896-4c51-b5cb-17a1a6c61420
+					Target ce3b374e-a972-4df3-9ea9-981c8c5590c7
+					SourceEvent::EventSpec
+						Id 230748069
+					TargetEvent::EventSpec
+						Id 230748069
+					TargetType EventConnectionTargetType_NetworkedClient
+				member(1)::EventConnection
+					Source 8235926a-1896-4c51-b5cb-17a1a6c61420
+					Target ce3b374e-a972-4df3-9ea9-981c8c5590c7
+					SourceEvent::EventSpec
+						Id 2089401213
+					TargetEvent::EventSpec
+						Id 2089401213
+					TargetType EventConnectionTargetType_NetworkedClient
+				member(2)::EventConnection
+					Source ce3b374e-a972-4df3-9ea9-981c8c5590c7
+					Target e566805c-62a0-4ca3-9348-28a5c83dbcf2
+					SourceEvent::EventSpec
+						Id -24983964
+					TargetEvent::EventSpec
+						Id 210993314
+					TargetType EventConnectionTargetType_Client
+				member(3)::EventConnection
+					Source ce3b374e-a972-4df3-9ea9-981c8c5590c7
+					Target e566805c-62a0-4ca3-9348-28a5c83dbcf2
+					SourceEvent::EventSpec
+						Id 650265526
+					TargetEvent::EventSpec
+						Id 193438506
+					TargetType EventConnectionTargetType_Client
+				member(4)::EventConnection
+					Source 8235926a-1896-4c51-b5cb-17a1a6c61420
+					Target e566805c-62a0-4ca3-9348-28a5c83dbcf2
+					SourceEvent::EventSpec
+						Id 2089401213
+					TargetEvent::EventSpec
+						Id 193438506
+					TargetType EventConnectionTargetType_NetworkedClient
+			Descriptor 8235926a-1896-4c51-b5cb-17a1a6c61420
+			NeedNetworkId True
+			InterfaceHasConnections True
+			ForceCreateAsFull False
+	Objects::array
+		member(0) ce3b374e-a972-4df3-9ea9-981c8c5590c7
+		member(1) e566805c-62a0-4ca3-9348-28a5c83dbcf2
+SequenceEntityData ce3b374e-a972-4df3-9ea9-981c8c5590c7
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id -24983964
+			Time 0
+	SequenceStartTime 0
+	SequenceLength 3500
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks *nullArray*
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0

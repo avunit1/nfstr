@@ -1,0 +1,121 @@
+BTFilterNode b99de728-b2ad-467e-8d57-35ca8e62dc71
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) bcf5871d-1774-48bb-80af-0db36d5530bf
+	Eval 2076e60f-2bf8-48ec-88be-353037e03cf0
+BTFilterNode bcf5871d-1774-48bb-80af-0db36d5530bf
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 72caf287-2f6a-48a7-8cdd-96fc8913c4c7
+	Eval 6110500f-50a1-4c1f-964c-0f9ba39f5104
+BTFilterNode 72caf287-2f6a-48a7-8cdd-96fc8913c4c7
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 3a067cc6-06ab-4293-8d5e-155d2a347a9b
+	Eval 4d07bd0a-4c63-402c-a40c-654091cf02d7
+BTSelectorNode 70feb487-e885-49ac-a914-b1808cb4e72c
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) b99de728-b2ad-467e-8d57-35ca8e62dc71
+BTTaskNode 3a067cc6-06ab-4293-8d5e-155d2a347a9b
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task e601741b-a26e-49f8-acb1-ff1ded5ba5f3
+BehaviourTreeData 14ab6d50-d38c-4f16-b0fc-8fd4fec2fadb #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Playlist/Restrictions/CarFilter_Tier_3
+	Root 70feb487-e885-49ac-a914-b1808cb4e72c
+	Description 
+VQ_Do e601741b-a26e-49f8-acb1-ff1ded5ba5f3
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 2076e60f-2bf8-48ec-88be-353037e03cf0
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 1025780852
+			AttribType EBTAttribType_Int
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 3
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0
+zVehicleFilter 6110500f-50a1-4c1f-964c-0f9ba39f5104
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_NotEqual
+		RValueInt 0
+		RValueFloat 0.0
+		RValueBool False
+		RValueString for_pol_int_11
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0
+zVehicleFilter 4d07bd0a-4c63-402c-a40c-654091cf02d7
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_NotEqual
+		RValueInt 0
+		RValueFloat 0.0
+		RValueBool False
+		RValueString trf_por_cay_08_mob_user
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

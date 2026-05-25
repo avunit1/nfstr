@@ -1,0 +1,256 @@
+<AIFormationEntityData Guid="d1c23766-df31-44fd-9373-c5d9a71272bb">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Formation>[Ebx] _c4/AI/Formations/TrailingLine [9b132e82-7879-4ad1-b43c-19af954740a5]</Formation>
+    <AutoSet>False</AutoSet>
+</AIFormationEntityData>
+<AIFormationEntityData Guid="b53a3978-7274-439d-8a7a-5fa48c4ebdbb">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Formation>[Ebx] _c4/AI/Formations/TrailingBlock [e4d04a53-adab-4bfd-b2d8-6bb996dfb100]</Formation>
+    <AutoSet>False</AutoSet>
+</AIFormationEntityData>
+<AIFormationEntityData Guid="3c9478fb-f75f-4def-8fc6-6f00b012fa20">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Formation>[Ebx] _c4/AI/Formations/Wing [613e13b1-6485-4625-b6c4-8d2ccffc4fbb]</Formation>
+    <AutoSet>False</AutoSet>
+</AIFormationEntityData>
+<AIFormationEntityData Guid="8726591d-e853-47ab-9c5b-0df4b3562a37">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Formation>[Ebx] _c4/AI/Formations/Wing_Close [f41f098e-31bb-4527-a43e-2ec31464a746]</Formation>
+    <AutoSet>False</AutoSet>
+</AIFormationEntityData>
+<AIFormationEntityData Guid="638ffee6-1522-43a9-9dee-f699339960b0">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Formation>[Ebx] _c4/AI/Formations/Delta [4fc26cd5-9318-89a0-8a37-d442dcb03ec1]</Formation>
+    <AutoSet>False</AutoSet>
+</AIFormationEntityData>
+<AIFormationEntityData Guid="3a2055f2-6650-4939-b78e-de5263e504a1">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Formation>[Ebx] _c4/AI/Formations/Solo [b7d2c549-1230-426e-b4ba-3ec701ea5241]</Formation>
+    <AutoSet>False</AutoSet>
+</AIFormationEntityData>
+<InterfaceDescriptorData Guid="24787771-55a1-4a78-9bc6-405c31179a50">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="6">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xfc3e3340</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x84f5ae87</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x0783e354</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="3">
+            <DynamicEvent>
+                <Id>0x3e55037b</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="4">
+            <DynamicEvent>
+                <Id>0x954de86d</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="5">
+            <DynamicEvent>
+                <Id>0x3e572bb3</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>Pursuit [BB46F889]</Id>
+            </DynamicLink>
+        </member>
+    </OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="ab2e52db-b7d1-e977-1b81-92d89f82d254">
+    <Name>_c4/ActionElements/_Common/Cops/Cop_DynamicTarget_Formations_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="6">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[AIFormationEntityData] 8726591d-e853-47ab-9c5b-0df4b3562a37</Source>
+                <Target>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Target>
+                <SourceFieldId>Pursuit [BB46F889]</SourceFieldId>
+                <TargetFieldId>Pursuit [BB46F889]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="1">
+            <LinkConnection>
+                <Source>[AIFormationEntityData] 3c9478fb-f75f-4def-8fc6-6f00b012fa20</Source>
+                <Target>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Target>
+                <SourceFieldId>Pursuit [BB46F889]</SourceFieldId>
+                <TargetFieldId>Pursuit [BB46F889]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="2">
+            <LinkConnection>
+                <Source>[AIFormationEntityData] 638ffee6-1522-43a9-9dee-f699339960b0</Source>
+                <Target>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Target>
+                <SourceFieldId>Pursuit [BB46F889]</SourceFieldId>
+                <TargetFieldId>Pursuit [BB46F889]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="3">
+            <LinkConnection>
+                <Source>[AIFormationEntityData] b53a3978-7274-439d-8a7a-5fa48c4ebdbb</Source>
+                <Target>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Target>
+                <SourceFieldId>Pursuit [BB46F889]</SourceFieldId>
+                <TargetFieldId>Pursuit [BB46F889]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="4">
+            <LinkConnection>
+                <Source>[AIFormationEntityData] d1c23766-df31-44fd-9373-c5d9a71272bb</Source>
+                <Target>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Target>
+                <SourceFieldId>Pursuit [BB46F889]</SourceFieldId>
+                <TargetFieldId>Pursuit [BB46F889]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="5">
+            <LinkConnection>
+                <Source>[AIFormationEntityData] 3a2055f2-6650-4939-b78e-de5263e504a1</Source>
+                <Target>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Target>
+                <SourceFieldId>Pursuit [BB46F889]</SourceFieldId>
+                <TargetFieldId>Pursuit [BB46F889]</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="6">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Source>
+                <Target>[AIFormationEntityData] 8726591d-e853-47ab-9c5b-0df4b3562a37</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x954de86d</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>P@2 [0B880F47]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Source>
+                <Target>[AIFormationEntityData] 3c9478fb-f75f-4def-8fc6-6f00b012fa20</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3e55037b</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>P@2 [0B880F47]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Source>
+                <Target>[AIFormationEntityData] 638ffee6-1522-43a9-9dee-f699339960b0</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0783e354</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>P@2 [0B880F47]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Source>
+                <Target>[AIFormationEntityData] b53a3978-7274-439d-8a7a-5fa48c4ebdbb</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x84f5ae87</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>P@2 [0B880F47]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Source>
+                <Target>[AIFormationEntityData] d1c23766-df31-44fd-9373-c5d9a71272bb</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xfc3e3340</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>P@2 [0B880F47]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Source>
+                <Target>[AIFormationEntityData] 3a2055f2-6650-4939-b78e-de5263e504a1</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3e572bb3</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>P@2 [0B880F47]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 24787771-55a1-4a78-9bc6-405c31179a50</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[AIFormationEntityData] d1c23766-df31-44fd-9373-c5d9a71272bb</member>
+        <member Index="1">[AIFormationEntityData] b53a3978-7274-439d-8a7a-5fa48c4ebdbb</member>
+        <member Index="2">[AIFormationEntityData] 3c9478fb-f75f-4def-8fc6-6f00b012fa20</member>
+        <member Index="3">[AIFormationEntityData] 8726591d-e853-47ab-9c5b-0df4b3562a37</member>
+        <member Index="4">[AIFormationEntityData] 638ffee6-1522-43a9-9dee-f699339960b0</member>
+        <member Index="5">[AIFormationEntityData] 3a2055f2-6650-4939-b78e-de5263e504a1</member>
+    </Objects>
+</LogicPrefabBlueprint>

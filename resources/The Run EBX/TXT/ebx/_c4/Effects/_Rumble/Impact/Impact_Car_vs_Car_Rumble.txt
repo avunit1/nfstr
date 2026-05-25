@@ -1,0 +1,69 @@
+BBMapToCurve f1b0a994-4ec7-45c9-9c89-6e3c3b331f5e
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.0
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 4.705088138580322
+					y 1.0
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 10.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+LevelBlackboardMap 9f4cbc1a-5498-4fa7-8b81-d05e9b62de4a
+	$::DataContainer
+	BlackboardField1 LocalPlayerCollisionMagnitude
+	BlackboardField2 
+	BlackboardMapping f1b0a994-4ec7-45c9-9c89-6e3c3b331f5e
+RumbleAsset 74671639-57a9-7086-648f-c520bf10dad6 #primary instance
+	$::ControllerEffectAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Effects/_Rumble/Impact/Impact_Car_vs_Car_Rumble
+	LowActuator::array
+		member(0)::RumbleData
+			Amplitude 1.0
+			Frequency 1.0
+			Offset 0.0
+			Base 0.0
+			WaveKind RWK_Constant
+			Blend RBK_None
+			Invert False
+			Delay 0.0
+			Duration 0.25
+			Enabled True
+	HighActuator::array
+		member(0)::RumbleData
+			Amplitude 1.0
+			Frequency 1.0
+			Offset 0.0
+			Base 0.0
+			WaveKind RWK_Constant
+			Blend RBK_None
+			Invert False
+			Delay 0.0
+			Duration 0.25
+			Enabled True
+	GlobalScalar 9f4cbc1a-5498-4fa7-8b81-d05e9b62de4a
+	HighAmplitudeScalar *nullGuid*
+	HighFrequencyScalar *nullGuid*
+	LowAmplitudeScalar *nullGuid*
+	LowFrequencyScalar *nullGuid*

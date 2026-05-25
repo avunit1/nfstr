@@ -1,0 +1,217 @@
+<DelayEntityData Guid="7d504db0-5bc7-4417-8701-31e9ac6965ed">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>1</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,034</Delay>
+    <Realm>Realm_Server</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<InterfaceDescriptorData Guid="5f672d32-814d-42d9-a0b1-3cce7bf87e0b">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>In [00597302]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x008c13f1</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xc9fafa34</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<NISEventSwitchEntityData Guid="21c56749-29be-466c-96fd-7dd410657dff">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>1</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>1,401298E-45</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Realm>Realm_Server</Realm>
+</NISEventSwitchEntityData>
+<ReferenceObjectData Guid="a5353c8e-cd20-49cc-b665-3a4edbf6a600">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>-0,03409666</y>
+                    <z>-5,960464E-08</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/gameplay/flow/deathstatetreatment_checkpointrestore_prefab [138e7d24-9e9c-420c-523b-27b545f0d81c]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<SpatialPrefabBlueprint Guid="1352737c-153a-57e7-bb83-2d188bc000b5">
+    <Name>_c4/Gameplay/Flow/IntroNIS_SwitchAndTreatment</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="5">
+        <member Index="0">
+            <EventConnection>
+                <Source>[NISEventSwitchEntityData] 21c56749-29be-466c-96fd-7dd410657dff</Source>
+                <Target>[DelayEntityData] 7d504db0-5bc7-4417-8701-31e9ac6965ed</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb2a4d8d0</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[NISEventSwitchEntityData] 21c56749-29be-466c-96fd-7dd410657dff</Source>
+                <Target>[InterfaceDescriptorData] 5f672d32-814d-42d9-a0b1-3cce7bf87e0b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x01ad9195</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xc9fafa34</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[DelayEntityData] 7d504db0-5bc7-4417-8701-31e9ac6965ed</Source>
+                <Target>[InterfaceDescriptorData] 5f672d32-814d-42d9-a0b1-3cce7bf87e0b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x008c13f1</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5f672d32-814d-42d9-a0b1-3cce7bf87e0b</Source>
+                <Target>[NISEventSwitchEntityData] 21c56749-29be-466c-96fd-7dd410657dff</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[NISEventSwitchEntityData] 21c56749-29be-466c-96fd-7dd410657dff</Source>
+                <Target>[ReferenceObjectData] a5353c8e-cd20-49cc-b665-3a4edbf6a600</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb2a4d8d0</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x58b35101</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 5f672d32-814d-42d9-a0b1-3cce7bf87e0b</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="3">
+        <member Index="0">[NISEventSwitchEntityData] 21c56749-29be-466c-96fd-7dd410657dff</member>
+        <member Index="1">[DelayEntityData] 7d504db0-5bc7-4417-8701-31e9ac6965ed</member>
+        <member Index="2">[ReferenceObjectData] a5353c8e-cd20-49cc-b665-3a4edbf6a600</member>
+    </Objects>
+</SpatialPrefabBlueprint>

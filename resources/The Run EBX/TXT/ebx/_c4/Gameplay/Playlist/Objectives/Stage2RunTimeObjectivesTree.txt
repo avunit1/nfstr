@@ -1,0 +1,64 @@
+BTFilterNode 32a6171a-4edb-47e0-914d-cb148762bf38
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) d524d4d3-94e0-458e-816b-29971e41e5a2
+	Eval ad16d74e-1040-4516-8c2a-d728a7434e1e
+BTFilterNode d524d4d3-94e0-458e-816b-29971e41e5a2
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 2486213c-2aed-4c83-99ff-8f39e50fc78b
+	Eval 6d1313dd-76df-4eca-9219-3b5285e5ebc4
+BTSelectorNode eabe85db-7162-4a97-ad93-e7bb75ee2f8e
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 32a6171a-4edb-47e0-914d-cb148762bf38
+BTTaskNode 2486213c-2aed-4c83-99ff-8f39e50fc78b
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 83aa97be-5128-4c2e-887a-33c78b366a33
+BehaviourTreeData c876e8c8-e917-4868-b3d4-21e80d8c61f0 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Playlist/Objectives/Stage2RunTimeObjectivesTree
+	Root eabe85db-7162-4a97-ad93-e7bb75ee2f8e
+	Description 
+SE_CompleteObjective 83aa97be-5128-4c2e-887a-33c78b366a33
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+SE_GeneralRunTimeEval 6d1313dd-76df-4eca-9219-3b5285e5ebc4
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Objective EStatEvalRunTimeObj_PassedRacerThisFrame
+	X 2
+	Y 0
+SE_ObjectiveStateEval ad16d74e-1040-4516-8c2a-d728a7434e1e
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	ObjectiveAsset _c4/Gameplay/Playlist/Objectives/Debug/RunTimeTest/87ed336f-98a5-49b2-9474-bbd2caf14bfa
+	IsInState GameplayObjectiveState_Active

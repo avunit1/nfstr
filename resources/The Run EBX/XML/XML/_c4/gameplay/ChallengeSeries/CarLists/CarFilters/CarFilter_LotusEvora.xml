@@ -1,0 +1,95 @@
+<BTFilterNode Guid="f52601a7-e966-46ed-9852-95d20feb699a">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] 745b60c9-a10a-4184-96d6-fd16c7f95e13</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] fcb365f4-8303-4749-80de-eb48afd583a8</Eval>
+</BTFilterNode>
+<BTFilterNode Guid="745b60c9-a10a-4184-96d6-fd16c7f95e13">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 414cd7a6-16ae-4692-af7d-5e3f32760714</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] dc0db624-5909-42a4-9484-bf83e7f27610</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="8d5c8352-6592-43ce-9ae4-0af978f5ff4d">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] f52601a7-e966-46ed-9852-95d20feb699a</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="414cd7a6-16ae-4692-af7d-5e3f32760714">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[VQ_Do] bca3189c-bdbb-4c6c-8793-5e516056919f</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="1edf576b-c22d-440b-8198-272c42a3c8e9">
+    <Name>_c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_LotusEvora</Name>
+    <Root>[BTSelectorNode] 8d5c8352-6592-43ce-9ae4-0af978f5ff4d</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<VQ_Do Guid="bca3189c-bdbb-4c6c-8793-5e516056919f">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</VQ_Do>
+<zVehicleFilter Guid="fcb365f4-8303-4749-80de-eb48afd583a8">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0xb892d8e0</AttribKey>
+            <AttribType>EBTAttribType_Text</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000002</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString>Evora</RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000002</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>
+<zVehicleFilter Guid="dc0db624-5909-42a4-9484-bf83e7f27610">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x3379cf7f</AttribKey>
+            <AttribType>EBTAttribType_Int</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000003</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString></RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000000</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>

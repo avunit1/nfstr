@@ -1,0 +1,59 @@
+BTFilterNode 778161bf-b651-468c-8d12-f5e73ed6e6fd
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 3e4bc20a-2a61-4c4c-9ce3-bffb264d4ddd
+	Eval 59092647-0611-4f5e-b9f2-d26e10198c89
+BTSelectorNode 484781b3-e131-4044-9b41-f93665b83a87
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 778161bf-b651-468c-8d12-f5e73ed6e6fd
+BTTaskNode 3e4bc20a-2a61-4c4c-9ce3-bffb264d4ddd
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task dcf99b40-3782-49b4-a21b-3effa718f831
+BehaviourTreeData 968b75c7-d6ac-4520-aad8-606c125e0488 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_SCOUNDREL
+	Root 484781b3-e131-4044-9b41-f93665b83a87
+	Description 
+VQ_Do dcf99b40-3782-49b4-a21b-3effa718f831
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 59092647-0611-4f5e-b9f2-d26e10198c89
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 3
+		RValueFloat 0.0
+		RValueBool False
+		RValueString sub_wrx_sti_09_pp_rare_1
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 1464376845

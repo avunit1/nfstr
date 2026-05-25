@@ -1,0 +1,164 @@
+<DelayEntityData Guid="92b7e189-880b-4302-9b8f-59b2c2f7b25e">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>1</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Delay>20</Delay>
+    <Realm>Realm_Server</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<EventGateEntityData Guid="647663b8-ae1c-49ad-a868-830b80fb9ef2">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>1</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Server</Realm>
+    <Default>False</Default>
+</EventGateEntityData>
+<FadeEntityData Guid="72a24e21-541e-48cb-aa41-35469bfa3688">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,5</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<FadeEntityData Guid="79fbc749-7142-4f40-bfc2-4da76ffc3e6d">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,5</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<InterfaceDescriptorData Guid="76a97e0e-e957-4634-8427-5c07de591683">
+    <Fields Count="1">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0x8032b7cc</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Activate [DEAA09DC]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Deactivate [72F6CC1D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="2e9fe5df-43b3-5b54-a340-afb272c93782">
+    <Name>_c4/Gameplay/Flow/OutroLoop</Name>
+    <PropertyConnections Count="1">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 76a97e0e-e957-4634-8427-5c07de591683</Source>
+                <Target>[DelayEntityData] 92b7e189-880b-4302-9b8f-59b2c2f7b25e</Target>
+                <SourceFieldId>0x8032b7cc</SourceFieldId>
+                <TargetFieldId>Delay [0C718D70]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[DelayEntityData] 92b7e189-880b-4302-9b8f-59b2c2f7b25e</Source>
+                <Target>[EventGateEntityData] 647663b8-ae1c-49ad-a868-830b80fb9ef2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[EventGateEntityData] 647663b8-ae1c-49ad-a868-830b80fb9ef2</Source>
+                <Target>[DelayEntityData] 92b7e189-880b-4302-9b8f-59b2c2f7b25e</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Restart [4DB654D2]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[EventGateEntityData] 647663b8-ae1c-49ad-a868-830b80fb9ef2</Source>
+                <Target>[FadeEntityData] 72a24e21-541e-48cb-aa41-35469bfa3688</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[FadeEntityData] 72a24e21-541e-48cb-aa41-35469bfa3688</Source>
+                <Target>[FadeEntityData] 79fbc749-7142-4f40-bfc2-4da76ffc3e6d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 76a97e0e-e957-4634-8427-5c07de591683</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[EventGateEntityData] 647663b8-ae1c-49ad-a868-830b80fb9ef2</member>
+        <member Index="1">[DelayEntityData] 92b7e189-880b-4302-9b8f-59b2c2f7b25e</member>
+        <member Index="2">[FadeEntityData] 72a24e21-541e-48cb-aa41-35469bfa3688</member>
+        <member Index="3">[FadeEntityData] 79fbc749-7142-4f40-bfc2-4da76ffc3e6d</member>
+    </Objects>
+</LogicPrefabBlueprint>

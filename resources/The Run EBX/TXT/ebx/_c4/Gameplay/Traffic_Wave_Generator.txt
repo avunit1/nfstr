@@ -1,0 +1,149 @@
+CurveTransformEntityData f04f5ecb-b83a-430c-a84c-39e2cc73f864
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 2
+	Realm Realm_ClientAndServer
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		member(1)::Vec3
+			x 30.0
+			y 1.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.699999988079071
+			z 11.277559280395508
+		member(3)::Vec3
+			x 0.3733333349227905
+			y 1.0
+			z -9.640578269958496
+		member(4)::Vec3
+			x 1.0
+			y 0.49666666984558105
+			z 8.66535472869873
+	In 0.0
+InterfaceDescriptorData 850cb051-bd10-4c64-adf9-09a958afc54c
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -872612336
+				AccessType FieldAccessType_Source
+			member(1)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -955782892
+				AccessType FieldAccessType_Target
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicPrefabBlueprint 8b92176a-e280-23a0-470f-5f0dfcb1217c #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/Traffic_Wave_Generator
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 18e5a841-6e4b-4034-894a-af889312eb52
+							Target f04f5ecb-b83a-430c-a84c-39e2cc73f864
+							SourceFieldId -1527071975
+							TargetFieldId 5862146
+						member(1)::PropertyConnection
+							Source f04f5ecb-b83a-430c-a84c-39e2cc73f864
+							Target 59ed2c7e-9c94-43af-82ff-e9a05feec2a7
+							SourceFieldId 193453899
+							TargetFieldId 193450866
+						member(2)::PropertyConnection
+							Source 59ed2c7e-9c94-43af-82ff-e9a05feec2a7
+							Target 850cb051-bd10-4c64-adf9-09a958afc54c
+							SourceFieldId 193453899
+							TargetFieldId -872612336
+						member(3)::PropertyConnection
+							Source 850cb051-bd10-4c64-adf9-09a958afc54c
+							Target 59ed2c7e-9c94-43af-82ff-e9a05feec2a7
+							SourceFieldId -955782892
+							TargetFieldId 193450867
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 18e5a841-6e4b-4034-894a-af889312eb52
+						Target 31b39b82-acdc-4e0c-b6a6-861da4683877
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(1)::EventConnection
+						Source 31b39b82-acdc-4e0c-b6a6-861da4683877
+						Target 18e5a841-6e4b-4034-894a-af889312eb52
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_ClientAndServer
+				Descriptor 850cb051-bd10-4c64-adf9-09a958afc54c
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 18e5a841-6e4b-4034-894a-af889312eb52
+			member(1) 31b39b82-acdc-4e0c-b6a6-861da4683877
+			member(2) f04f5ecb-b83a-430c-a84c-39e2cc73f864
+			member(3) 59ed2c7e-9c94-43af-82ff-e9a05feec2a7
+MathOpEntityData 59ed2c7e-9c94-43af-82ff-e9a05feec2a7
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 3
+	Realm Realm_ClientAndServer
+	Operators::array
+		member(0) *nullEnum*
+RandomDelayEntityData 31b39b82-acdc-4e0c-b6a6-861da4683877
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	MinDelay 5.0
+	MaxDelay 10.0
+	Realm Realm_ClientAndServer
+	AutoStart False
+	RunOnce False
+SequenceEntityData 18e5a841-6e4b-4034-894a-af889312eb52
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 30000
+	Looping False
+	AutoStart True
+	AutoPlayFirstFrame False
+	Realm Realm_ClientAndServer
+	PropertyTracks *nullArray*
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0

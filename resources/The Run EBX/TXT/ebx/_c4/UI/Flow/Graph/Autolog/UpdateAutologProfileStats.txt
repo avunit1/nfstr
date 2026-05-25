@@ -1,0 +1,223 @@
+ActionNode 13058fe4-9d07-49b4-85ee-ca8606181367
+	$::UINodeData
+		$::DataContainer
+		Name GetAutologProfile
+		IsRootNode False
+		ParentGraph 908af639-e7b7-1884-9c17-65d9d423f4b7
+		ParentIsScreen False
+	ActionKey -415062381
+	Params *nullArray*
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 348e4801-42c4-4359-880a-237549a94aeb
+	DataInputs *nullArray*
+	Out 984490c0-f387-4d01-8c67-1caa10caa7f0
+ActionNode ff2db292-73d8-4ebc-9da9-c2e41771472b
+	$::UINodeData
+		$::DataContainer
+		Name UpdateLocalSpeedwallStats
+		IsRootNode False
+		ParentGraph 908af639-e7b7-1884-9c17-65d9d423f4b7
+		ParentIsScreen False
+	ActionKey 1504471454
+	Params *nullArray*
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 287456b6-6598-4652-abd8-6ae359b7ac91
+	DataInputs *nullArray*
+	Out 76fef122-81a2-468c-b48a-7dbedc49806a
+InstanceInputNode 63708b55-25a0-461a-b97f-64dcd6121725
+	$::UINodeData
+		$::DataContainer
+		Name In
+		IsRootNode False
+		ParentGraph 908af639-e7b7-1884-9c17-65d9d423f4b7
+		ParentIsScreen False
+	Out 2b12c280-81e3-4a47-bff6-dd625bfd34cd
+InstanceOutputNode 013772aa-5eaf-40e6-9a91-df488c8449c1
+	$::UINodeData
+		$::DataContainer
+		Name out
+		IsRootNode False
+		ParentGraph 908af639-e7b7-1884-9c17-65d9d423f4b7
+		ParentIsScreen False
+	In 068be503-05e9-4aac-9650-bb3b3174b0e0
+	Id 193421099
+StateNode d3cf0e44-ed25-4810-9817-bd4e91150cf7
+	$::UINodeData
+		$::DataContainer
+		Name Wait for autolog profile...
+		IsRootNode False
+		ParentGraph 908af639-e7b7-1884-9c17-65d9d423f4b7
+		ParentIsScreen False
+	Screen *nullGuid*
+	In 1b57e7d5-f4fd-4717-93e6-06d326fdf9cd
+	Inputs *nullArray*
+	Outputs::array
+		member(0) 9e4be36a-e49f-46f5-90f1-86c32a30b213
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+StateNode 87c2ca2f-8762-4bbd-a25b-bccd3d2226d4
+	$::UINodeData
+		$::DataContainer
+		Name Wiat for updating local speedwall stats...
+		IsRootNode False
+		ParentGraph 908af639-e7b7-1884-9c17-65d9d423f4b7
+		ParentIsScreen False
+	Screen *nullGuid*
+	In 5b1e4ea6-c9f6-4e69-9b37-b8af8f81e4de
+	Inputs *nullArray*
+	Outputs::array
+		member(0) 2e8eaf3b-2073-4bd8-8498-4ac2033cec27
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+UIGraphAsset 908af639-e7b7-1884-9c17-65d9d423f4b7 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/Autolog/UpdateAutologProfileStats
+	Nodes::array
+		member(0) 63708b55-25a0-461a-b97f-64dcd6121725
+		member(1) 13058fe4-9d07-49b4-85ee-ca8606181367
+		member(2) d3cf0e44-ed25-4810-9817-bd4e91150cf7
+		member(3) 013772aa-5eaf-40e6-9a91-df488c8449c1
+		member(4) ff2db292-73d8-4ebc-9da9-c2e41771472b
+		member(5) 87c2ca2f-8762-4bbd-a25b-bccd3d2226d4
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) 96e5178f-53b2-4f09-be94-bb112087d180
+		member(1) 2c2fad66-d6f5-4a2e-8e54-7612e47983c3
+		member(2) a62e351a-89ba-41d9-b975-a9e933cd5405
+		member(3) 23cc7197-faab-4b1c-abc2-6e3c3d0eb331
+		member(4) 74de972a-ce91-4db0-b798-2944bd80501c
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/Autolog/UpdateAutologProfileStats_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList::array
+		member(0) _c4/UI/Flow/Event/AutologEvents/55d85a89-626c-9634-99b1-01f502a03807
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading False
+UINodeConnection 96e5178f-53b2-4f09-be94-bb112087d180
+	$::DataContainer
+	SourceNode 13058fe4-9d07-49b4-85ee-ca8606181367
+	TargetNode d3cf0e44-ed25-4810-9817-bd4e91150cf7
+	SourcePort 984490c0-f387-4d01-8c67-1caa10caa7f0
+	TargetPort 1b57e7d5-f4fd-4717-93e6-06d326fdf9cd
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 2c2fad66-d6f5-4a2e-8e54-7612e47983c3
+	$::DataContainer
+	SourceNode ff2db292-73d8-4ebc-9da9-c2e41771472b
+	TargetNode 87c2ca2f-8762-4bbd-a25b-bccd3d2226d4
+	SourcePort 76fef122-81a2-468c-b48a-7dbedc49806a
+	TargetPort 5b1e4ea6-c9f6-4e69-9b37-b8af8f81e4de
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection a62e351a-89ba-41d9-b975-a9e933cd5405
+	$::DataContainer
+	SourceNode 63708b55-25a0-461a-b97f-64dcd6121725
+	TargetNode ff2db292-73d8-4ebc-9da9-c2e41771472b
+	SourcePort 2b12c280-81e3-4a47-bff6-dd625bfd34cd
+	TargetPort 287456b6-6598-4652-abd8-6ae359b7ac91
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 23cc7197-faab-4b1c-abc2-6e3c3d0eb331
+	$::DataContainer
+	SourceNode 87c2ca2f-8762-4bbd-a25b-bccd3d2226d4
+	TargetNode 13058fe4-9d07-49b4-85ee-ca8606181367
+	SourcePort 2e8eaf3b-2073-4bd8-8498-4ac2033cec27
+	TargetPort 348e4801-42c4-4359-880a-237549a94aeb
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 74de972a-ce91-4db0-b798-2944bd80501c
+	$::DataContainer
+	SourceNode d3cf0e44-ed25-4810-9817-bd4e91150cf7
+	TargetNode 013772aa-5eaf-40e6-9a91-df488c8449c1
+	SourcePort 9e4be36a-e49f-46f5-90f1-86c32a30b213
+	TargetPort 068be503-05e9-4aac-9650-bb3b3174b0e0
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort 2b12c280-81e3-4a47-bff6-dd625bfd34cd
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 348e4801-42c4-4359-880a-237549a94aeb
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 984490c0-f387-4d01-8c67-1caa10caa7f0
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 1b57e7d5-f4fd-4717-93e6-06d326fdf9cd
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 068be503-05e9-4aac-9650-bb3b3174b0e0
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 9e4be36a-e49f-46f5-90f1-86c32a30b213
+	$::DataContainer
+	Name OnAutologProfileComplete[Autolog]
+	InstanceName OnAutologProfileComplete
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort 287456b6-6598-4652-abd8-6ae359b7ac91
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 76fef122-81a2-468c-b48a-7dbedc49806a
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 5b1e4ea6-c9f6-4e69-9b37-b8af8f81e4de
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 2e8eaf3b-2073-4bd8-8498-4ac2033cec27
+	$::DataContainer
+	Name OnUpdateLocalSpeedwallStatsComplete[Autolog]
+	InstanceName OnUpdateLocalSpeedwallStatsComplete
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True

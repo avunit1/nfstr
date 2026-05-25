@@ -1,0 +1,59 @@
+BTFilterNode 6e0d2645-8c46-4616-aaeb-6cbf5c584bd5
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 98ea1af6-7e73-43b5-9b92-b583e6b4c6d0
+	Eval 89f432ad-0eb2-4222-97f0-82c068af9a69
+BTSelectorNode 93cd7a25-84ed-485c-8615-7bb249372244
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 6e0d2645-8c46-4616-aaeb-6cbf5c584bd5
+BTTaskNode 98ea1af6-7e73-43b5-9b92-b583e6b4c6d0
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 36165302-0dc7-4b8e-9f24-08bf59bb5883
+BehaviourTreeData 38c2cff1-1d8c-452c-8c28-93c7518fc90c #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_KN_DodgeChallenger08
+	Root 93cd7a25-84ed-485c-8615-7bb249372244
+	Description 
+VQ_Do 36165302-0dc7-4b8e-9f24-08bf59bb5883
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 89f432ad-0eb2-4222-97f0-82c068af9a69
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 2
+		RValueFloat 0.0
+		RValueBool False
+		RValueString dod_cha_srt_08_adsales_1
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

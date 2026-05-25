@@ -1,0 +1,389 @@
+BasicControllerData a74745f1-d32b-4d83-a63d-97c46bb73bb3
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer 23e54904-8913-40fd-a62c-299282a5f890
+	Composer 879b57e7-8154-4b41-9eff-0d7e1ba12a8a
+	TimeScale 1.0
+BasicControllerData 2768968f-c982-4f49-a947-c8f4bfa5a650
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer 4891174e-34bb-4f04-849c-f0061f145805
+	Composer 960c1903-39c0-43c7-a025-59c778a7c5a2
+	TimeScale 1.0
+BlendControllerData 090dec32-bfc5-4ffb-822b-593df7281c57
+	$::CinebotControllerData
+		$::DataContainer
+	FromController a74745f1-d32b-4d83-a63d-97c46bb73bb3
+	ToController 2768968f-c982-4f49-a947-c8f4bfa5a650
+	Transition 0adfd849-42b7-437b-b5b4-331b6f4a28b4
+	AdditionalBlendToControllers *nullArray*
+	BlackBoardVarName 
+CinebotConditionData 4b6b7f20-d060-436e-b651-36820e7ef317
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_BLACKBOARD
+	BlackBoardVarName LocalPlayerDistFromCamera
+	ConditionMin 0.0
+	ConditionMax 8.0
+CinebotControllerRigAsset b7a3dd1e-a4db-4e42-833f-94db5e54eff4 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Core_Drive/Crashes/rigs/Deathstate_Fate_B_rig
+	Controllers::array
+		member(0) 090dec32-bfc5-4ffb-822b-593df7281c57
+		member(1) d9c8b376-646e-492e-a8bf-ee447409fabc
+		member(2) ac5abbb3-16e4-4bfc-b779-7c94ab8dbddc
+		member(3) a257bfcc-ccce-4ad1-b1d3-4fa8122618d2
+		member(4) 309ffb4c-8351-4e8e-ace2-b04de45af011
+	ForceAllInputTypesEnabled False
+CinebotTransitionData 0adfd849-42b7-437b-b5b4-331b6f4a28b4
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 999.0
+		Time 0.6000000238418579
+		EaseInControl 0.5
+		EaseOutControl 0.30000001192092896
+	Blend CINEBOT_BLEND_EULER
+	Clean False
+DampingControllerData ac5abbb3-16e4-4bfc-b779-7c94ab8dbddc
+	$::CinebotControllerData
+		$::DataContainer
+	DampingFactor 0.0
+EventControllerData a257bfcc-ccce-4ad1-b1d3-4fa8122618d2
+	$::CinebotControllerData
+		$::DataContainer
+	Conditions *nullArray*
+	XOR_Conditions False
+	CinebotEventName FateIsOccluded
+	TestForOcclusion False
+	TestCollisionWithCamera True
+	TestVehicleIsOnTerrain False
+	CollisionRayLength 0.0
+	FramesToDelay 0
+HeightAdjustmentControllerData d9c8b376-646e-492e-a8bf-ee447409fabc
+	$::CinebotControllerData
+		$::DataContainer
+	Height 0.75
+	RaycastHalfLength 50.0
+	OnlyRaycastDown False
+ReactionControllerData 309ffb4c-8351-4e8e-ace2-b04de45af011
+	$::CinebotControllerData
+		$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_BLACKBOARD
+	BlackBoardVarName LocalPlayerDistFromCamera
+	ReactionOutput CINEBOT_REACTION_OUTPUT_FOV
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	XMirrorInput False
+	UseAngleInterpolation False
+	DampTime 10.0
+	Conditions::array
+		member(0) 4b6b7f20-d060-436e-b651-36820e7ef317
+	XOR_Conditions False
+	ConditionsDampTime 10.0
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		member(1)::Vec3
+			x 30.0
+			y 20.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 1.0
+			z 718.5620727539062
+		member(3)::Vec3
+			x 0.2633333206176758
+			y 1.0
+			z -1437.1241455078125
+		member(4)::Vec3
+			x 0.2783333361148834
+			y 0.0
+			z 14051.8681640625
+	ControllerInput EIANoInput
+	ControllerInputRaw *nullGuid*
+	Pivot 0.0
+	Delay 0.10000000149011612
+	IsAdditive False
+ScreenSpaceComposerData c1031015-3960-4ad2-8eff-b4428c9455c3
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	TargetPart 
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	MarkerType MARKER_UNKNOWN
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.44999998807907104
+	SoftBottom 0.550000011920929
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 0.30000001192092896
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.4000000059604645
+	SoftRight 0.6000000238418579
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 0.30000001192092896
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 45.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene False
+	UseUpDamping False
+	UpDampingBlendTime 0.20000000298023224
+ScreenSpaceComposerData 879b57e7-8154-4b41-9eff-0d7e1ba12a8a
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 3.5
+		MinimumNearBlur 0.0
+	TargetPart 
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.0
+		y -0.30000001192092896
+		z -1.5
+	MarkerType CAMERA_HOOD
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.5
+	SoftBottom 0.5
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 1.0
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.5
+	SoftRight 0.5
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 1.0
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 10.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene False
+	UseUpDamping False
+	UpDampingBlendTime 0.20000000298023224
+ScreenSpaceComposerData 960c1903-39c0-43c7-a025-59c778a7c5a2
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	TargetPart 
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.0
+		y 0.4000000059604645
+		z 0.0
+	MarkerType CAMERA_CHASE
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.30000001192092896
+	SoftBottom 0.699999988079071
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 0.0
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.20000000298023224
+	SoftRight 0.800000011920929
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 0.0
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 10.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene False
+	UseUpDamping False
+	UpDampingBlendTime 0.20000000298023224
+TorusTransposerData c38c2aaa-cff4-4b41-8309-6986b0069c1d
+	$::CinebotTransposerData
+		$::DataContainer
+	AnchorPart 
+	MarkerType MARKER_UNKNOWN
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	OffsetScale *nullGuid*
+	OffsetDampTime::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusHard 4.0
+	InnerRadiusSoft 5.0
+	OuterRadiusSoft 5.0
+	OuterRadiusHard 6.0
+	RadiusBlendTime 1.0
+	LowerHeightHard -5.0
+	LowerHeightSoft 0.0
+	UpperHeightSoft 0.0
+	UpperHeightHard 5.0
+	HeightBlendTime 1.0
+	LowerHeadingHard -180.0
+	LowerHeadingSoft 0.0
+	UpperHeadingSoft 0.0
+	UpperHeadingHard 180.0
+	HeadingBlendTime 0.20000000298023224
+	HeadingBlendTimeCurve *nullGuid*
+	UseWorldHeading False
+	WorldHeading 0.0
+	UseVelocityBasedDirection False
+	UseFilteredVelocityBasedDirection False
+	VelocityBasedDirectionOffset 0.0
+	MakeVelocityBasedDirectionHorizontal False
+	CacheFirstFrameHeading False
+	UseSimpleHeadingDamping False
+	SimpleHeadingOffset 0.0
+	FollowTarget False
+TorusTransposerData 23e54904-8913-40fd-a62c-299282a5f890
+	$::CinebotTransposerData
+		$::DataContainer
+	AnchorPart 
+	MarkerType CAMERA_CHASE
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	OffsetScale *nullGuid*
+	OffsetDampTime::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusHard 13.0
+	InnerRadiusSoft 13.0
+	OuterRadiusSoft 13.0
+	OuterRadiusHard 13.0
+	RadiusBlendTime 0.0
+	LowerHeightHard 0.0
+	LowerHeightSoft 0.0
+	UpperHeightSoft 0.0
+	UpperHeightHard 0.0
+	HeightBlendTime 0.0
+	LowerHeadingHard -180.0
+	LowerHeadingSoft 0.0
+	UpperHeadingSoft 0.0
+	UpperHeadingHard 180.0
+	HeadingBlendTime 0.0
+	HeadingBlendTimeCurve *nullGuid*
+	UseWorldHeading False
+	WorldHeading 0.0
+	UseVelocityBasedDirection False
+	UseFilteredVelocityBasedDirection True
+	VelocityBasedDirectionOffset -20.0
+	MakeVelocityBasedDirectionHorizontal True
+	CacheFirstFrameHeading True
+	UseSimpleHeadingDamping False
+	SimpleHeadingOffset 0.0
+	FollowTarget False
+TorusTransposerData 4891174e-34bb-4f04-849c-f0061f145805
+	$::CinebotTransposerData
+		$::DataContainer
+	AnchorPart 
+	MarkerType CAMERA_CHASE
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	OffsetScale *nullGuid*
+	OffsetDampTime::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusHard 8.0
+	InnerRadiusSoft 8.0
+	OuterRadiusSoft 8.0
+	OuterRadiusHard 8.0
+	RadiusBlendTime 0.0
+	LowerHeightHard 0.0
+	LowerHeightSoft 0.0
+	UpperHeightSoft 0.0
+	UpperHeightHard 0.0
+	HeightBlendTime 0.0
+	LowerHeadingHard -180.0
+	LowerHeadingSoft 0.0
+	UpperHeadingSoft 0.0
+	UpperHeadingHard 180.0
+	HeadingBlendTime 0.0
+	HeadingBlendTimeCurve *nullGuid*
+	UseWorldHeading False
+	WorldHeading 0.0
+	UseVelocityBasedDirection False
+	UseFilteredVelocityBasedDirection True
+	VelocityBasedDirectionOffset 30.0
+	MakeVelocityBasedDirectionHorizontal True
+	CacheFirstFrameHeading True
+	UseSimpleHeadingDamping False
+	SimpleHeadingOffset 0.0
+	FollowTarget False

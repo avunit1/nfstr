@@ -1,0 +1,226 @@
+ConvertToPlayerEventEntityData bb68e907-f613-417f-9509-8d57b1d18e09
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 1
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Realm Realm_ClientAndServer
+ConvertToPlayerEventEntityData 1bb63458-b453-43a4-bc91-8e95a7595cfb
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 1
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 2
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Realm Realm_ClientAndServer
+DelayEntityData 7f63b40a-d95f-4f64-95ec-7d6984df633a
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	Delay 0.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+InterfaceDescriptorData fe793890-d00e-4214-b017-151aac69e7e9
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -428524956
+		member(1)::DynamicEvent
+			Id -1959363455
+		member(2)::DynamicEvent
+			Id -1046221896
+		member(3)::DynamicEvent
+			Id -176115035
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -378894003
+		member(1)::DynamicEvent
+			Id 1842480616
+		member(2)::DynamicEvent
+			Id -1012553967
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+PlayerFilterEntityData 11ac28ba-cce4-4ed5-a591-bfe2fabb1f8c
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Realm Realm_Server
+	InvertFilter False
+PlayerFilterEntityData 439f44f0-a8c0-419b-8e2b-2b439f0e2c27
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Realm Realm_Server
+	InvertFilter False
+SpatialPrefabBlueprint 841b297d-83f7-9fe5-878f-0697cf40e000 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/Flow/PassThrough
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source fe793890-d00e-4214-b017-151aac69e7e9
+						Target fe793890-d00e-4214-b017-151aac69e7e9
+						SourceEvent::EventSpec
+							Id -428524956
+						TargetEvent::EventSpec
+							Id -378894003
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source fe793890-d00e-4214-b017-151aac69e7e9
+						Target fe793890-d00e-4214-b017-151aac69e7e9
+						SourceEvent::EventSpec
+							Id -1959363455
+						TargetEvent::EventSpec
+							Id 1842480616
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(2)::EventConnection
+						Source fe793890-d00e-4214-b017-151aac69e7e9
+						Target fe793890-d00e-4214-b017-151aac69e7e9
+						SourceEvent::EventSpec
+							Id -176115035
+						TargetEvent::EventSpec
+							Id -378894003
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source bb68e907-f613-417f-9509-8d57b1d18e09
+						Target 11ac28ba-cce4-4ed5-a591-bfe2fabb1f8c
+						SourceEvent::EventSpec
+							Id 668442611
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source 11ac28ba-cce4-4ed5-a591-bfe2fabb1f8c
+						Target fe793890-d00e-4214-b017-151aac69e7e9
+						SourceEvent::EventSpec
+							Id -1864525248
+						TargetEvent::EventSpec
+							Id 1842480616
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(5)::EventConnection
+						Source fe793890-d00e-4214-b017-151aac69e7e9
+						Target bb68e907-f613-417f-9509-8d57b1d18e09
+						SourceEvent::EventSpec
+							Id -176115035
+						TargetEvent::EventSpec
+							Id 99215627
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 11ac28ba-cce4-4ed5-a591-bfe2fabb1f8c
+						Target fe793890-d00e-4214-b017-151aac69e7e9
+						SourceEvent::EventSpec
+							Id -1864525248
+						TargetEvent::EventSpec
+							Id -1012553967
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source 1bb63458-b453-43a4-bc91-8e95a7595cfb
+						Target 439f44f0-a8c0-419b-8e2b-2b439f0e2c27
+						SourceEvent::EventSpec
+							Id 668442611
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source fe793890-d00e-4214-b017-151aac69e7e9
+						Target 1bb63458-b453-43a4-bc91-8e95a7595cfb
+						SourceEvent::EventSpec
+							Id -1046221896
+						TargetEvent::EventSpec
+							Id -640574190
+						TargetType EventConnectionTargetType_Server
+					member(9)::EventConnection
+						Source 439f44f0-a8c0-419b-8e2b-2b439f0e2c27
+						Target fe793890-d00e-4214-b017-151aac69e7e9
+						SourceEvent::EventSpec
+							Id -1864525248
+						TargetEvent::EventSpec
+							Id -1012553967
+						TargetType EventConnectionTargetType_Server
+					member(10)::EventConnection
+						Source 11ac28ba-cce4-4ed5-a591-bfe2fabb1f8c
+						Target 7f63b40a-d95f-4f64-95ec-7d6984df633a
+						SourceEvent::EventSpec
+							Id -1864525248
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_NetworkedClient
+				Descriptor fe793890-d00e-4214-b017-151aac69e7e9
+				NeedNetworkId True
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 11ac28ba-cce4-4ed5-a591-bfe2fabb1f8c
+			member(1) bb68e907-f613-417f-9509-8d57b1d18e09
+			member(2) 1bb63458-b453-43a4-bc91-8e95a7595cfb
+			member(3) 439f44f0-a8c0-419b-8e2b-2b439f0e2c27
+			member(4) 7f63b40a-d95f-4f64-95ec-7d6984df633a

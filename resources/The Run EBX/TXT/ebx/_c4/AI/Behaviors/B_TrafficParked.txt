@@ -1,0 +1,59 @@
+BTSequenceNode fbd1b610-81fb-4dd1-8886-c2ab8d966c16
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) 8d02d634-100a-4011-ba80-109c718a3d0b
+			member(1) 5a1a0423-e000-41e8-8f11-e06b0843ea6c
+			member(2) 6045d50b-3b65-4c49-83f8-cccba11968ec
+BTTaskNode 8d02d634-100a-4011-ba80-109c718a3d0b
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 6377f944-383d-4607-9738-2764f839b5f1
+BTTaskNode 5a1a0423-e000-41e8-8f11-e06b0843ea6c
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task f9862d61-913d-4054-b206-296ad8a876f8
+BTTaskNode 6045d50b-3b65-4c49-83f8-cccba11968ec
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 76504e2a-518b-438b-9c96-81c8cc9f4279
+BT_DoMoveStyle 6377f944-383d-4607-9738-2764f839b5f1
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Stop
+BT_DoOverrideLocomotion 76504e2a-518b-438b-9c96-81c8cc9f4279
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Handbrake
+	OverrideValue 1.0
+BT_DoWriteFloatToBB f9862d61-913d-4054-b206-296ad8a876f8
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	NameHash 3431329396
+	Value 1.0
+	Scope BlackboardScope_Entity
+BehaviourTreeData 29b32f16-d7c4-45cc-a88e-0d0bef294987 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_TrafficParked
+	Root fbd1b610-81fb-4dd1-8886-c2ab8d966c16
+	Description 

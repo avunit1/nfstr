@@ -1,0 +1,107 @@
+<InstanceInputNode Guid="6683e92c-70ea-4781-b12b-22e4311629ee">
+    <Name>In</Name>
+    <ParentGraph>[UIGraphAsset] 4b6d14ba-0394-a44a-e85e-40c295971de5</ParentGraph>
+    <IsRootNode>True</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Out>[UINodePort] 07fe08d7-633f-4f6e-97e1-0607f1e67ea3</Out>
+</InstanceInputNode>
+<InstanceOutputNode Guid="a1bbb9eb-e376-4d92-9a73-c2ce5cd09541">
+    <Name>Out</Name>
+    <ParentGraph>[UIGraphAsset] 4b6d14ba-0394-a44a-e85e-40c295971de5</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 03136ea1-fb41-45e7-899f-063dba49fb82</In>
+    <Id>Out [0B87DF4B]</Id>
+</InstanceOutputNode>
+<StateNode Guid="7c3bac6d-c460-4876-9d43-68c4d573bdaf">
+    <Name>CCTV Text</Name>
+    <ParentGraph>[UIGraphAsset] 4b6d14ba-0394-a44a-e85e-40c295971de5</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>[Ebx] _c4/UI/Flow/Screen/EndOfRun/SwordfishCCTV [ddbff6af-9878-0586-4209-fa19b4ce5da3]</Screen>
+    <In>[UINodePort] b1174c78-1356-4c8b-b728-fd592288578c</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] 3d3d7c5a-8356-47df-9079-656ca8f3648c</member>
+    </Outputs>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<UIGraphAsset Guid="4b6d14ba-0394-a44a-e85e-40c295971de5">
+    <Name>_c4/UI/Flow/Graph/EndOfRun/SwordfishGraph</Name>
+    <Nodes Count="3">
+        <member Index="0">[InstanceInputNode] 6683e92c-70ea-4781-b12b-22e4311629ee</member>
+        <member Index="1">[StateNode] 7c3bac6d-c460-4876-9d43-68c4d573bdaf</member>
+        <member Index="2">[InstanceOutputNode] a1bbb9eb-e376-4d92-9a73-c2ce5cd09541</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="2">
+        <member Index="0">[UINodeConnection] a53b6d18-2bc3-4462-8a0e-ff4d4d1d3615</member>
+        <member Index="1">[UINodeConnection] 4c7fb443-0ebe-4641-80d1-16a644a9ace7</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Graph/EndOfRun/SwordfishGraph_ResourceBundle</BundleAssetName>
+    <AssetList Count="6">
+        <member Index="0">_c4/UI/Assets/SwordfishCCTV</member>
+        <member Index="1">_c4/UI/Assets/Widget_cctv</member>
+        <member Index="2">_c4/UI/Assets/Widget_cctv/widget_cctv_i1.tga</member>
+        <member Index="3">_c4/UI/Assets/Widget_cctv/widget_cctv_i18.tga</member>
+        <member Index="4">_c4/UI/Assets/Widget_cctv/widget_cctv_i1d.tga</member>
+        <member Index="5">_c4/UI/Assets/Widget_cctv/widget_cctv_i4.tga</member>
+    </AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="1">
+        <member Index="0">[Ebx] _c4/UI/Flow/Event/GeneralEvents [4c447c69-9521-7658-0f0e-4cfdd387ac4a]</member>
+    </EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>False</SkipBundleLoading>
+</UIGraphAsset>
+<UINodeConnection Guid="a53b6d18-2bc3-4462-8a0e-ff4d4d1d3615">
+    <SourceNode>[InstanceInputNode] 6683e92c-70ea-4781-b12b-22e4311629ee</SourceNode>
+    <TargetNode>[StateNode] 7c3bac6d-c460-4876-9d43-68c4d573bdaf</TargetNode>
+    <SourcePort>[UINodePort] 07fe08d7-633f-4f6e-97e1-0607f1e67ea3</SourcePort>
+    <TargetPort>[UINodePort] b1174c78-1356-4c8b-b728-fd592288578c</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="4c7fb443-0ebe-4641-80d1-16a644a9ace7">
+    <SourceNode>[StateNode] 7c3bac6d-c460-4876-9d43-68c4d573bdaf</SourceNode>
+    <TargetNode>[InstanceOutputNode] a1bbb9eb-e376-4d92-9a73-c2ce5cd09541</TargetNode>
+    <SourcePort>[UINodePort] 3d3d7c5a-8356-47df-9079-656ca8f3648c</SourcePort>
+    <TargetPort>[UINodePort] 03136ea1-fb41-45e7-899f-063dba49fb82</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="1">
+        <member Index="0">[Ebx] _c4/UI/Flow/Screen/EndOfRun/SwordfishCCTV [ddbff6af-9878-0586-4209-fa19b4ce5da3]</member>
+    </RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="07fe08d7-633f-4f6e-97e1-0607f1e67ea3">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="b1174c78-1356-4c8b-b728-fd592288578c">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="3d3d7c5a-8356-47df-9079-656ca8f3648c">
+    <Name>GraphExiting[General]</Name>
+    <InstanceName>GraphExiting</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="03136ea1-fb41-45e7-899f-063dba49fb82">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>

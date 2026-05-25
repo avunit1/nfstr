@@ -1,0 +1,178 @@
+CinebotConditionData 697b17a0-fec9-4031-a033-fd53ec693d33
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_SPEED
+	BlackBoardVarName Velocity
+	ConditionMin 3.0
+	ConditionMax 10000.0
+CinebotConditionData 66913996-80ca-4340-8fb9-7e7dc00aab46
+	$::DataContainer
+	ConditionInput CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE
+	BlackBoardVarName CollisionMagnitude
+	ConditionMin 0.0
+	ConditionMax 0.0
+CinebotControllerRigAsset 78593419-e07c-4df6-9298-9f65d049087f #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Noise/Template/handheld_forcrashes
+	Controllers::array
+		member(0) 5a856da5-9178-44f6-acf7-7898d4216478
+		member(1) f5056e23-5685-4e25-87f5-7dea822ce56f
+		member(2) 06a41d16-ca17-4442-abc2-ae1cd96f08e0
+		member(3) c20f6683-dd8a-47bb-bad7-a5016eb28209
+	ForceAllInputTypesEnabled False
+CurveData b125e6fe-6572-49fe-8531-014e7ff407a5
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_BLACKBOARD
+	BlackBoardVarName LocalPlayerDistFromCamera
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		member(1)::Vec3
+			x 22.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.008333333767950535
+			z 5.550000190734863
+		member(3)::Vec3
+			x 1.0
+			y 0.9333333373069763
+			z -5.550000190734863
+CurveData 74395fa0-62a5-4550-9674-a12813dcf57a
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_BLACKBOARD
+	BlackBoardVarName LocalPlayerDistFromCamera
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		member(1)::Vec3
+			x 22.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.008333333767950535
+			z 5.550000190734863
+		member(3)::Vec3
+			x 1.0
+			y 0.9333333373069763
+			z -5.550000190734863
+CurveData e520d8d4-7521-4625-bba1-62421964d444
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_BLACKBOARD
+	BlackBoardVarName LocalPlayerDistFromCamera
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions::array
+		member(0) 697b17a0-fec9-4031-a033-fd53ec693d33
+		member(1) 66913996-80ca-4340-8fb9-7e7dc00aab46
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 15.0
+			y 1.0
+			z 3.0
+		member(2)::Vec3
+			x 0.0
+			y 0.3449999988079071
+			z 9.707645416259766
+		member(3)::Vec3
+			x 0.33500000834465027
+			y 0.6600000262260437
+			z -2.574122428894043
+		member(4)::Vec3
+			x 1.0
+			y 1.0
+			z -1.0194568634033203
+NoiseControllerData 5a856da5-9178-44f6-acf7-7898d4216478
+	$::CinebotControllerData
+		$::DataContainer
+	Parameter CINEBOT_NOISE_PARAM_ROLL
+	Magnitude::Vec3
+		x 4.0
+		y 0.0
+		z 0.0
+	Frequency 0.5
+	Roughness 0.0
+	Octaves 1
+	Delay 0.0
+	RampIn 1.0
+	Duration -1.0
+	RampOut 0.0
+	CurveParams *nullGuid*
+	CurveDampingTime 0.0
+	ConditionGoesFalseBehavior CinebotConditionGoesFalseBehavior_RampOff
+NoiseControllerData f5056e23-5685-4e25-87f5-7dea822ce56f
+	$::CinebotControllerData
+		$::DataContainer
+	Parameter CINEBOT_NOISE_PARAM_POSITION
+	Magnitude::Vec3
+		x 0.30000001192092896
+		y 0.20000000298023224
+		z 0.0
+	Frequency 0.5
+	Roughness 0.0
+	Octaves 1
+	Delay 0.0
+	RampIn 1.0
+	Duration -1.0
+	RampOut 4.0
+	CurveParams b125e6fe-6572-49fe-8531-014e7ff407a5
+	CurveDampingTime 0.0
+	ConditionGoesFalseBehavior CinebotConditionGoesFalseBehavior_RampOff
+NoiseControllerData 06a41d16-ca17-4442-abc2-ae1cd96f08e0
+	$::CinebotControllerData
+		$::DataContainer
+	Parameter CINEBOT_NOISE_PARAM_TARGET
+	Magnitude::Vec3
+		x 2.5999999046325684
+		y 0.800000011920929
+		z 0.0
+	Frequency 0.5
+	Roughness 0.0
+	Octaves 1
+	Delay 0.0
+	RampIn 1.0
+	Duration 0.20000000298023224
+	RampOut 3.0
+	CurveParams 74395fa0-62a5-4550-9674-a12813dcf57a
+	CurveDampingTime 0.0
+	ConditionGoesFalseBehavior CinebotConditionGoesFalseBehavior_RampOff
+NoiseControllerData c20f6683-dd8a-47bb-bad7-a5016eb28209
+	$::CinebotControllerData
+		$::DataContainer
+	Parameter CINEBOT_NOISE_PARAM_TARGET
+	Magnitude::Vec3
+		x 0.009999999776482582
+		y 0.20000000298023224
+		z 0.0
+	Frequency 5.0
+	Roughness 0.5
+	Octaves 2
+	Delay 0.0
+	RampIn 1.0
+	Duration -1.0
+	RampOut 0.800000011920929
+	CurveParams e520d8d4-7521-4625-bba1-62421964d444
+	CurveDampingTime 0.0
+	ConditionGoesFalseBehavior CinebotConditionGoesFalseBehavior_RampOff

@@ -1,0 +1,810 @@
+<DelayEntityData Guid="6f9f40ce-03f3-4c9c-8412-ce847364d387">
+    <IndexInBlueprint>000B</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<InterfaceDescriptorData Guid="bfeefada-d784-4054-9945-3846874b5ba7">
+    <Fields Count="1">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0x38632727</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x3fb0daeb</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x94306011</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xf5a2c144</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="dff09000-c870-f45f-3bec-bcc0b9b2ae02">
+    <Name>_c4/ActionElements/ChicagoIndustrial/LogicPrefabs/MobExplosion_Prefab</Name>
+    <PropertyConnections Count="1">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceFieldId>0x38632727</SourceFieldId>
+                <TargetFieldId>0x38632727</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="3">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[VehicleImpulseEntityData] 755b5740-d266-42c3-8488-a755ed3d3d85</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceFieldId>0xf5a34f6f</SourceFieldId>
+                <TargetFieldId>0x00000000</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="1">
+            <LinkConnection>
+                <Source>[VehicleImpulseEntityData] b0515361-4a51-4dd4-b8f7-db833d1d0bb8</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceFieldId>0xf5a34f6f</SourceFieldId>
+                <TargetFieldId>0x00000000</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="2">
+            <LinkConnection>
+                <Source>[VehicleImpulseEntityData] 7504131e-6698-4b2f-ab1b-fe11ca4afeec</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceFieldId>0xf5a34f6f</SourceFieldId>
+                <TargetFieldId>0x00000000</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="22">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SequenceEntityData] f5047374-3b04-4d94-8ed3-1a0be2a9aaef</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x891570fb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xc6efe58b</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Source>
+                <Target>[SelectEventEntityData] c8b1aabd-60e0-4668-ad12-b91936da121d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x1eb5e6eb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x12466f9c</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Source>
+                <Target>[SelectEventEntityData] c8b1aabd-60e0-4668-ad12-b91936da121d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x1eb5e6eb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SelectEventEntityData] c8b1aabd-60e0-4668-ad12-b91936da121d</Source>
+                <Target>[SequenceEntityData] f5047374-3b04-4d94-8ed3-1a0be2a9aaef</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xbe182734</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[SelectEventEntityData] c8b1aabd-60e0-4668-ad12-b91936da121d</Source>
+                <Target>[SequenceEntityData] f5047374-3b04-4d94-8ed3-1a0be2a9aaef</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x9a98cc4c</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[SequenceEntityData] f5047374-3b04-4d94-8ed3-1a0be2a9aaef</Source>
+                <Target>[SequenceEntityData] f5047374-3b04-4d94-8ed3-1a0be2a9aaef</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x891570fb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[RandomMultiEventEntityData] d3fbd594-4691-44b7-8fe4-e05f57cd3c6e</Source>
+                <Target>[VehicleImpulseEntityData] 755b5740-d266-42c3-8488-a755ed3d3d85</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out0 [7C83C89B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[RandomMultiEventEntityData] d3fbd594-4691-44b7-8fe4-e05f57cd3c6e</Source>
+                <Target>[VehicleImpulseEntityData] b0515361-4a51-4dd4-b8f7-db833d1d0bb8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out1 [7C83C89A]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[RandomMultiEventEntityData] d3fbd594-4691-44b7-8fe4-e05f57cd3c6e</Source>
+                <Target>[VehicleImpulseEntityData] 7504131e-6698-4b2f-ab1b-fe11ca4afeec</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out2 [7C83C899]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Source>
+                <Target>[RandomMultiEventEntityData] d3fbd594-4691-44b7-8fe4-e05f57cd3c6e</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xf5a2c144</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xf5a2c144</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Source>
+                <Target>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xf5a2c144</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xf5a2c144</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Source>
+                <Target>[SelectEventEntityData] c8b1aabd-60e0-4668-ad12-b91936da121d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3fb0daeb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x75ad24e4</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="13">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Source>
+                <Target>[SelectEventEntityData] c8b1aabd-60e0-4668-ad12-b91936da121d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3fb0daeb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="14">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Source>
+                <Target>[PrintDebugTextEntityData] 097c2b47-ad07-4642-94c2-20d23f562c5a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3fb0daeb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Print [0DD32774]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="15">
+            <EventConnection>
+                <Source>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Source>
+                <Target>[PrintDebugTextEntityData] dbfea0f0-b52a-4ebb-b572-47b3158fd947</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xf5a2c144</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Print [0DD32774]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="16">
+            <EventConnection>
+                <Source>[SequenceEntityData] f5047374-3b04-4d94-8ed3-1a0be2a9aaef</Source>
+                <Target>[PrintDebugTextEntityData] 7549f701-d7e0-4fd9-b98d-49bccbe66b14</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x891570fb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Print [0DD32774]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="17">
+            <EventConnection>
+                <Source>[DelayEntityData] 6f9f40ce-03f3-4c9c-8412-ce847364d387</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="18">
+            <EventConnection>
+                <Source>[DelayEntityData] 6f9f40ce-03f3-4c9c-8412-ce847364d387</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="19">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Source>
+                <Target>[DelayEntityData] 6f9f40ce-03f3-4c9c-8412-ce847364d387</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3fb0daeb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="20">
+            <EventConnection>
+                <Source>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Source>
+                <Target>[PrintDebugTextEntityData] 8630dd22-f6a9-4763-929b-febc6473119f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x1eb5e6eb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Print [0DD32774]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="21">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Source>
+                <Target>[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x94306011</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] bfeefada-d784-4054-9945-3846874b5ba7</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="12">
+        <member Index="0">[SequenceEntityData] f5047374-3b04-4d94-8ed3-1a0be2a9aaef</member>
+        <member Index="1">[SelectEventEntityData] c8b1aabd-60e0-4668-ad12-b91936da121d</member>
+        <member Index="2">[VehicleFinderEntityData] 3a510019-6eb0-45c2-9392-26fe1ff6aaf9</member>
+        <member Index="3">[RandomMultiEventEntityData] d3fbd594-4691-44b7-8fe4-e05f57cd3c6e</member>
+        <member Index="4">[VehicleImpulseEntityData] 755b5740-d266-42c3-8488-a755ed3d3d85</member>
+        <member Index="5">[VehicleImpulseEntityData] b0515361-4a51-4dd4-b8f7-db833d1d0bb8</member>
+        <member Index="6">[VehicleImpulseEntityData] 7504131e-6698-4b2f-ab1b-fe11ca4afeec</member>
+        <member Index="7">[PrintDebugTextEntityData] 8630dd22-f6a9-4763-929b-febc6473119f</member>
+        <member Index="8">[PrintDebugTextEntityData] 097c2b47-ad07-4642-94c2-20d23f562c5a</member>
+        <member Index="9">[PrintDebugTextEntityData] dbfea0f0-b52a-4ebb-b572-47b3158fd947</member>
+        <member Index="10">[PrintDebugTextEntityData] 7549f701-d7e0-4fd9-b98d-49bccbe66b14</member>
+        <member Index="11">[DelayEntityData] 6f9f40ce-03f3-4c9c-8412-ce847364d387</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<PrintDebugTextEntityData Guid="8630dd22-f6a9-4763-929b-febc6473119f">
+    <IndexInBlueprint>0007</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <TextColor>
+        <Vec3>
+            <x>0,5</x>
+            <y>0</y>
+            <z>1,401298E-45</z>
+        </Vec3>
+    </TextColor>
+    <Realm>Realm_Client</Realm>
+    <Text>FOUND</Text>
+    <Enabled>True</Enabled>
+</PrintDebugTextEntityData>
+<PrintDebugTextEntityData Guid="097c2b47-ad07-4642-94c2-20d23f562c5a">
+    <IndexInBlueprint>0008</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <TextColor>
+        <Vec3>
+            <x>1</x>
+            <y>0</y>
+            <z>1,401298E-45</z>
+        </Vec3>
+    </TextColor>
+    <Realm>Realm_Client</Realm>
+    <Text>START</Text>
+    <Enabled>True</Enabled>
+</PrintDebugTextEntityData>
+<PrintDebugTextEntityData Guid="dbfea0f0-b52a-4ebb-b572-47b3158fd947">
+    <IndexInBlueprint>0009</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <TextColor>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>1,401298E-45</z>
+        </Vec3>
+    </TextColor>
+    <Realm>Realm_Client</Realm>
+    <Text>MOB BOOM!</Text>
+    <Enabled>True</Enabled>
+</PrintDebugTextEntityData>
+<PrintDebugTextEntityData Guid="7549f701-d7e0-4fd9-b98d-49bccbe66b14">
+    <IndexInBlueprint>000A</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <TextColor>
+        <Vec3>
+            <x>0,1</x>
+            <y>0</y>
+            <z>1,401298E-45</z>
+        </Vec3>
+    </TextColor>
+    <Realm>Realm_Client</Realm>
+    <Text>Searching...</Text>
+    <Enabled>True</Enabled>
+</PrintDebugTextEntityData>
+<RandomMultiEventEntityData Guid="d3fbd594-4691-44b7-8fe4-e05f57cd3c6e">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <RandomEventWeight Count="3">
+        <member Index="0">0</member>
+        <member Index="1">0</member>
+        <member Index="2">0</member>
+    </RandomEventWeight>
+    <UniformDistribution>True</UniformDistribution>
+    <ResetOutputsWhenAllHasTriggered>True</ResetOutputsWhenAllHasTriggered>
+    <DisableOutputOnTrigger>False</DisableOutputOnTrigger>
+</RandomMultiEventEntityData>
+<SelectEventEntityData Guid="c8b1aabd-60e0-4668-ad12-b91936da121d">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="2">
+        <member Index="0">Vehicle_Search</member>
+        <member Index="1">Vehicle_Found</member>
+    </Events>
+</SelectEventEntityData>
+<SequenceEntityData Guid="f5047374-3b04-4d94-8ed3-1a0be2a9aaef">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="1">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>0x891570fb</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000060</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x000000fa</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PreSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<VehicleFinderEntityData Guid="3a510019-6eb0-45c2-9392-26fe1ff6aaf9">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>False</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <SearchTransform>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </Vec3>
+    </SearchTransform>
+    <Realm>Realm_Client</Realm>
+    <SearchRadius>1</SearchRadius>
+    <ConstantlySearching>False</ConstantlySearching>
+    <OnlyFindVehicleOnce>True</OnlyFindVehicleOnce>
+</VehicleFinderEntityData>
+<VehicleImpulseEntityData Guid="755b5740-d266-42c3-8488-a755ed3d3d85">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <ImpulseDirection>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>3,5</z>
+        </Vec3>
+    </ImpulseDirection>
+    <ImpulsePosition>
+        <Vec3>
+            <x>2</x>
+            <y>0</y>
+            <z>0,5</z>
+        </Vec3>
+    </ImpulsePosition>
+    <ImpulseMagnitude>3,5</ImpulseMagnitude>
+    <TotalVehicle>True</TotalVehicle>
+    <IsExplosion>False</IsExplosion>
+</VehicleImpulseEntityData>
+<VehicleImpulseEntityData Guid="b0515361-4a51-4dd4-b8f7-db833d1d0bb8">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <ImpulseDirection>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>3,5</z>
+        </Vec3>
+    </ImpulseDirection>
+    <ImpulsePosition>
+        <Vec3>
+            <x>2</x>
+            <y>0</y>
+            <z>-0,5</z>
+        </Vec3>
+    </ImpulsePosition>
+    <ImpulseMagnitude>3,5</ImpulseMagnitude>
+    <TotalVehicle>True</TotalVehicle>
+    <IsExplosion>False</IsExplosion>
+</VehicleImpulseEntityData>
+<VehicleImpulseEntityData Guid="7504131e-6698-4b2f-ab1b-fe11ca4afeec">
+    <IndexInBlueprint>0006</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <ImpulseDirection>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>3,5</z>
+        </Vec3>
+    </ImpulseDirection>
+    <ImpulsePosition>
+        <Vec3>
+            <x>2</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </ImpulsePosition>
+    <ImpulseMagnitude>3,5</ImpulseMagnitude>
+    <TotalVehicle>True</TotalVehicle>
+    <IsExplosion>False</IsExplosion>
+</VehicleImpulseEntityData>

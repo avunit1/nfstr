@@ -1,0 +1,402 @@
+<AirResistanceData Guid="f4a0fc8b-7a40-8e1a-49bf-e74c8e3b527c">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[CollisionPlaneData] 067572dc-425b-fbc3-1247-3abc6cb0cae2</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <DragFactor>0</DragFactor>
+</AirResistanceData>
+<BaseEmitterData Guid="93ac3d20-74a4-48d8-b261-36d627f571e6">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>nullptr</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>False</Enable>
+    <EmitterAsset>[Ebx] _c4/Effects/Destruction/Props/Planter/DST_Planter_Mesh_Chunks [190335e4-8fc7-494e-9d4b-9030327a7c71]</EmitterAsset>
+</BaseEmitterData>
+<CollisionPlaneData Guid="067572dc-425b-fbc3-1247-3abc6cb0cae2">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[LocalForceData] 6ea36003-fa7b-90b3-0ea5-35ee93a46ee4</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Restitution>0,3</Restitution>
+    <Friction>0</Friction>
+    <DistanceFromEmitter>0,5</DistanceFromEmitter>
+    <UseUpFromEmitter>False</UseUpFromEmitter>
+    <UseDistanceFromEmitter>True</UseDistanceFromEmitter>
+</CollisionPlaneData>
+<EmitterDocument Guid="ee997d68-cb3e-4c9d-8fd5-66a048eed120">
+    <Name>_c4/Effects/Destruction/Props/Planter/DST_Planter_Mesh_Chunks_2</Name>
+    <RootProcessor>[BaseEmitterData] 93ac3d20-74a4-48d8-b261-36d627f571e6</RootProcessor>
+    <TemplateData>[EmitterTemplateData] 27d7224b-eeea-41f6-ab64-57d32b350d50</TemplateData>
+</EmitterDocument>
+<EmitterTemplateData Guid="27d7224b-eeea-41f6-ab64-57d32b350d50">
+    <PointLightIntensity>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>1</w>
+        </Vec4>
+    </PointLightIntensity>
+    <PointLightPivot>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </PointLightPivot>
+    <PointLightColor>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </PointLightColor>
+    <MaxCount>0x00000007</MaxCount>
+    <Name>_c4/Effects/Destruction/Props/Planter/DST_Planter_Mesh_Chunks_2</Name>
+    <TimeScale>1</TimeScale>
+    <Lifetime>0,1</Lifetime>
+    <LifetimeFrameCount>0x00000000</LifetimeFrameCount>
+    <RootProcessor>[UpdateAgeData] 81c19d42-94a0-6b91-cb13-5759a6b07224</RootProcessor>
+    <GlobalLocalNormalBlendFactor>0</GlobalLocalNormalBlendFactor>
+    <VisibleAfterDistance>0</VisibleAfterDistance>
+    <ZOcclusionLookup Count="0"></ZOcclusionLookup>
+    <EmittableType>ParticleMesh</EmittableType>
+    <Mesh>[Ebx] _c4/effects/_meshparticles/planter/planter_fragment_02_mp_mesh [09b0c109-0699-5e9f-ee49-4330b1dc2514]</Mesh>
+    <DistanceScaleNearValue>1</DistanceScaleNearValue>
+    <DistanceScaleFarValue>1</DistanceScaleFarValue>
+    <MeshCullingDistance>0</MeshCullingDistance>
+    <DistanceScaleLength>0</DistanceScaleLength>
+    <MaxSpawnDistance>0</MaxSpawnDistance>
+    <MinScreenArea>1</MinScreenArea>
+    <PointLightMaxClamp>1</PointLightMaxClamp>
+    <VertexPixelLightingBlendFactor>0,7</VertexPixelLightingBlendFactor>
+    <ParticleCullingFactor>0,8</ParticleCullingFactor>
+    <SoftParticlesFadeDistanceMultiplier>0</SoftParticlesFadeDistanceMultiplier>
+    <LightWrapAroundFactor>0,5</LightWrapAroundFactor>
+    <LightMultiplier>1</LightMultiplier>
+    <PointLightRandomIntensityMin>1</PointLightRandomIntensityMin>
+    <PointLightMinClamp>0</PointLightMinClamp>
+    <PointLightRadius>20</PointLightRadius>
+    <PointLightRandomIntensityMax>1</PointLightRandomIntensityMax>
+    <ForceNiceSorting>False</ForceNiceSorting>
+    <Emissive>False</Emissive>
+    <RepeatParticleSpawning>False</RepeatParticleSpawning>
+    <UseMeshColor>False</UseMeshColor>
+    <KillParticlesWithEmitter>False</KillParticlesWithEmitter>
+    <KeepEmitterWithParticles>False</KeepEmitterWithParticles>
+    <FollowSpawnSource>False</FollowSpawnSource>
+    <Fog>False</Fog>
+    <Reflection>False</Reflection>
+    <Opaque>True</Opaque>
+    <WarpBuffer>False</WarpBuffer>
+    <NoLighting>False</NoLighting>
+    <ActAsPointLight>False</ActAsPointLight>
+    <UpdateParametersEveryFrame>False</UpdateParametersEveryFrame>
+    <TransparencySunShadowEnable>False</TransparencySunShadowEnable>
+    <LocalSpace>False</LocalSpace>
+</EmitterTemplateData>
+<GravityData Guid="dafb56be-f659-4869-7893-9e4c6c6ad06b">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnSizeData] 2c85a468-b359-2338-33b6-f1fea82ee4d3</NextProcessor>
+    <Pre>[RandomEvaluatorData] 7a531c48-1e83-8f0b-14c7-3ec4f2506c5e</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Gravity>80</Gravity>
+</GravityData>
+<LocalForceData Guid="6ea36003-fa7b-90b3-0ea5-35ee93a46ee4">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateLinearVelocityData] 530a10f7-ff45-1304-bc79-c7c092cb6056</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <LocalForce>
+        <Vec3>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </LocalForce>
+    <Min>0,2</Min>
+    <ImpactScale>2</ImpactScale>
+    <Max>1</Max>
+    <UseImpactForce>True</UseImpactForce>
+</LocalForceData>
+<PolynomialData Guid="faa0a006-351a-9095-efe0-a72607452d93">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Coefficients>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>-0,4171124</z>
+            <w>0,6307535</w>
+        </Vec4>
+    </Coefficients>
+    <ScaleValue>2</ScaleValue>
+    <MinClamp>0</MinClamp>
+    <MaxClamp>1</MaxClamp>
+</PolynomialData>
+<RandomEvaluatorData Guid="0c2bbe4f-f29e-9622-d04d-062e65ca3d3f">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>18</Max>
+    <Min>12</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="62590852-da74-9057-153d-dd88c7f73363">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>1</Max>
+    <Min>-1</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="7a531c48-1e83-8f0b-14c7-3ec4f2506c5e">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>2</Max>
+    <Min>1</Min>
+</RandomEvaluatorData>
+<RandomEvaluatorData Guid="8acc9619-c06f-3436-6a09-2ce8be9cb779">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Max>3</Max>
+    <Min>1,5</Min>
+</RandomEvaluatorData>
+<RandomXYZEvaluatorData Guid="0fec0fcc-06ee-8759-58b9-d0a8b7e16211">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <MaxX>180</MaxX>
+    <MinX>-180</MinX>
+    <MaxY>180</MaxY>
+    <MinY>-180</MinY>
+    <MaxZ>180</MaxZ>
+    <MinZ>-180</MinZ>
+</RandomXYZEvaluatorData>
+<SpawnDirectionData Guid="9b56997d-fde7-724e-655c-e64fccf598d0">
+    <DefaultValues>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>0,881</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnSpeedData] 7b59ef82-f8cf-5022-7e20-a2b35fcf385a</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <DirectionFromEmitterOrigin>0,881</DirectionFromEmitterOrigin>
+    <InheritSpeedScaleAmount>1</InheritSpeedScaleAmount>
+    <InheritSpeedAndDirectionFromEmitter>False</InheritSpeedAndDirectionFromEmitter>
+    <UseProcessorForSpeedScale>False</UseProcessorForSpeedScale>
+</SpawnDirectionData>
+<SpawnPositionData Guid="1a40c002-b9f0-32cc-0f75-d2d4e4f67747">
+    <DefaultValues>
+        <Vec4>
+            <x>0</x>
+            <y>1</y>
+            <z>0,001466259</z>
+            <w>3208893</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[AirResistanceData] f4a0fc8b-7a40-8e1a-49bf-e74c8e3b527c</NextProcessor>
+    <Pre>[SphereEvaluatorData] 84e63b04-f34f-f0f0-faff-f758f7de6e0a</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+</SpawnPositionData>
+<SpawnRateData Guid="3ac02f7a-daf2-4a43-60ef-910cf3d97425">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>65</z>
+            <w>5</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnDirectionData] 9b56997d-fde7-724e-655c-e64fccf598d0</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <SpawnRate>65</SpawnRate>
+    <TrailSegmentLength>5</TrailSegmentLength>
+    <DistributeOverTime>True</DistributeOverTime>
+    <DistributeOverDistance>False</DistributeOverDistance>
+</SpawnRateData>
+<SpawnRotationData Guid="7c8bd480-2373-24a8-17d8-5e457b5bf223">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>180</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnRotationSpeedData] 1653e2c7-2839-0d71-1a06-48a09da3e1c7</NextProcessor>
+    <Pre>[RandomXYZEvaluatorData] 0fec0fcc-06ee-8759-58b9-d0a8b7e16211</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Rotation>180</Rotation>
+</SpawnRotationData>
+<SpawnRotationSpeedData Guid="1653e2c7-2839-0d71-1a06-48a09da3e1c7">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[GravityData] dafb56be-f659-4869-7893-9e4c6c6ad06b</NextProcessor>
+    <Pre>[RandomEvaluatorData] 62590852-da74-9057-153d-dd88c7f73363</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <RotationSpeed>1</RotationSpeed>
+</SpawnRotationSpeedData>
+<SpawnSizeData Guid="2c85a468-b359-2338-33b6-f1fea82ee4d3">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateSizeData] c63425ed-fcae-d332-89b4-486699ac38eb</NextProcessor>
+    <Pre>[RandomEvaluatorData] 8acc9619-c06f-3436-6a09-2ce8be9cb779</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Size>1</Size>
+</SpawnSizeData>
+<SpawnSpeedData Guid="7b59ef82-f8cf-5022-7e20-a2b35fcf385a">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[UpdateRotationData] aa346e67-49aa-7dca-0939-f33a16a1e438</NextProcessor>
+    <Pre>[RandomEvaluatorData] 0c2bbe4f-f29e-9622-d04d-062e65ca3d3f</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Speed>1</Speed>
+</SpawnSpeedData>
+<SphereEvaluatorData Guid="84e63b04-f34f-f0f0-faff-f758f7de6e0a">
+    <EmitterParameter>EmitterParameterNone</EmitterParameter>
+    <EmitterParameterMax>1</EmitterParameterMax>
+    <Scale>
+        <Vec3>
+            <x>1</x>
+            <y>0</y>
+            <z>0,7</z>
+        </Vec3>
+    </Scale>
+    <Pivot>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>-7,112266E-38</z>
+        </Vec3>
+    </Pivot>
+    <Radius>0,7</Radius>
+</SphereEvaluatorData>
+<UpdateAgeData Guid="81c19d42-94a0-6b91-cb13-5759a6b07224">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnRateData] 3ac02f7a-daf2-4a43-60ef-910cf3d97425</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Lifetime>1</Lifetime>
+</UpdateAgeData>
+<UpdateLinearVelocityData Guid="530a10f7-ff45-1304-bc79-c7c092cb6056">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>-1,602552E-13</z>
+            <w>3,361082E+37</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>nullptr</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+</UpdateLinearVelocityData>
+<UpdateRotationData Guid="aa346e67-49aa-7dca-0939-f33a16a1e438">
+    <DefaultValues>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>-11529,48</z>
+            <w>-7,687434E+11</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnRotationData] 7c8bd480-2373-24a8-17d8-5e457b5bf223</NextProcessor>
+    <Pre>[PolynomialData] faa0a006-351a-9095-efe0-a72607452d93</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+</UpdateRotationData>
+<UpdateSizeData Guid="c63425ed-fcae-d332-89b4-486699ac38eb">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>0</z>
+            <w>0</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnPositionData] 1a40c002-b9f0-32cc-0f75-d2d4e4f67747</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Pivot>
+        <Vec2>
+            <x>0</x>
+            <y>0</y>
+        </Vec2>
+    </Pivot>
+</UpdateSizeData>

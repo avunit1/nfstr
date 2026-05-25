@@ -1,0 +1,106 @@
+<AIPerformanceDifficultySettingsData Guid="3f892a1c-b480-4203-9296-19714ecacfb7">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Easy>
+        <PerformanceDifficultyProperties>
+            <SkillRange>
+                <FloatInterval>
+                    <Min>0,3</Min>
+                    <Max>0,75</Max>
+                </FloatInterval>
+            </SkillRange>
+            <GlueRange>
+                <FloatInterval>
+                    <Min>-1</Min>
+                    <Max>0,5</Max>
+                </FloatInterval>
+            </GlueRange>
+        </PerformanceDifficultyProperties>
+    </Easy>
+    <Normal>
+        <PerformanceDifficultyProperties>
+            <SkillRange>
+                <FloatInterval>
+                    <Min>0,4</Min>
+                    <Max>0,85</Max>
+                </FloatInterval>
+            </SkillRange>
+            <GlueRange>
+                <FloatInterval>
+                    <Min>-0,9</Min>
+                    <Max>1</Max>
+                </FloatInterval>
+            </GlueRange>
+        </PerformanceDifficultyProperties>
+    </Normal>
+    <Hard>
+        <PerformanceDifficultyProperties>
+            <SkillRange>
+                <FloatInterval>
+                    <Min>0,55</Min>
+                    <Max>0,95</Max>
+                </FloatInterval>
+            </SkillRange>
+            <GlueRange>
+                <FloatInterval>
+                    <Min>-0,85</Min>
+                    <Max>1</Max>
+                </FloatInterval>
+            </GlueRange>
+        </PerformanceDifficultyProperties>
+    </Hard>
+    <Expert>
+        <PerformanceDifficultyProperties>
+            <SkillRange>
+                <FloatInterval>
+                    <Min>0,65</Min>
+                    <Max>1,1</Max>
+                </FloatInterval>
+            </SkillRange>
+            <GlueRange>
+                <FloatInterval>
+                    <Min>-0,75</Min>
+                    <Max>1</Max>
+                </FloatInterval>
+            </GlueRange>
+        </PerformanceDifficultyProperties>
+    </Expert>
+    <ScaleGlueToSkill>True</ScaleGlueToSkill>
+    <ClampToSkillRange>False</ClampToSkillRange>
+</AIPerformanceDifficultySettingsData>
+<InterfaceDescriptorData Guid="030b2c6a-ed27-466a-a93c-d073ffcaaaaf">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="0"></InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>DifficultySettings [4A2CC2B3]</Id>
+            </DynamicLink>
+        </member>
+    </InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="23de160e-83ad-4d84-b15f-444bd72dbe98">
+    <Name>_c4/Gameplay/DifficultySelect_Normal</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="1">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[InterfaceDescriptorData] 030b2c6a-ed27-466a-a93c-d073ffcaaaaf</Source>
+                <Target>[AIPerformanceDifficultySettingsData] 3f892a1c-b480-4203-9296-19714ecacfb7</Target>
+                <SourceFieldId>DifficultySettings [4A2CC2B3]</SourceFieldId>
+                <TargetFieldId>0x00000000</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="0"></EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 030b2c6a-ed27-466a-a93c-d073ffcaaaaf</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="1">
+        <member Index="0">[AIPerformanceDifficultySettingsData] 3f892a1c-b480-4203-9296-19714ecacfb7</member>
+    </Objects>
+</LogicPrefabBlueprint>

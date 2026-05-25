@@ -1,0 +1,120 @@
+<EmitterDocument Guid="749b3222-c3e5-40ee-8046-34ad931fa343">
+    <Name>_c4/Effects/Destruction/Avalanche/Emitters/Avalanche_RocketExplosion_RTL</Name>
+    <RootProcessor>[UpdateAgeData] c4503a1f-1cfd-472f-839c-9eb99c64116c</RootProcessor>
+    <TemplateData>[EmitterTemplateData] 822f5936-54cb-45a2-a489-c7aa500fba7d</TemplateData>
+</EmitterDocument>
+<EmitterTemplateData Guid="822f5936-54cb-45a2-a489-c7aa500fba7d">
+    <PointLightIntensity>
+        <Vec4>
+            <x>0</x>
+            <y>-1,043561</y>
+            <z>0,0413451</z>
+            <w>0,9552327</w>
+        </Vec4>
+    </PointLightIntensity>
+    <PointLightPivot>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </PointLightPivot>
+    <PointLightColor>
+        <Vec3>
+            <x>1</x>
+            <y>0,191</y>
+            <z>0</z>
+        </Vec3>
+    </PointLightColor>
+    <MaxCount>0x00000001</MaxCount>
+    <Name>_c4/Effects/Destruction/Avalanche/Emitters/Avalanche_RocketExplosion_RTL</Name>
+    <TimeScale>1</TimeScale>
+    <Lifetime>1</Lifetime>
+    <LifetimeFrameCount>0x00000000</LifetimeFrameCount>
+    <RootProcessor>[UpdateAgeData] c4503a1f-1cfd-472f-839c-9eb99c64116c</RootProcessor>
+    <GlobalLocalNormalBlendFactor>0</GlobalLocalNormalBlendFactor>
+    <VisibleAfterDistance>0</VisibleAfterDistance>
+    <ZOcclusionLookup Count="0"></ZOcclusionLookup>
+    <EmittableType>ParticleMesh</EmittableType>
+    <Mesh>[Ebx] _c4/effects/_meshparticles/snowchunk_mp_01_mesh [558ae9ab-20fd-4dc3-8c95-75fae2534541]</Mesh>
+    <DistanceScaleNearValue>1</DistanceScaleNearValue>
+    <DistanceScaleFarValue>1</DistanceScaleFarValue>
+    <MeshCullingDistance>0</MeshCullingDistance>
+    <DistanceScaleLength>0</DistanceScaleLength>
+    <MaxSpawnDistance>0</MaxSpawnDistance>
+    <MinScreenArea>1</MinScreenArea>
+    <PointLightMaxClamp>1</PointLightMaxClamp>
+    <VertexPixelLightingBlendFactor>0</VertexPixelLightingBlendFactor>
+    <ParticleCullingFactor>0,8</ParticleCullingFactor>
+    <SoftParticlesFadeDistanceMultiplier>0</SoftParticlesFadeDistanceMultiplier>
+    <LightWrapAroundFactor>0,5</LightWrapAroundFactor>
+    <LightMultiplier>1</LightMultiplier>
+    <PointLightRandomIntensityMin>1</PointLightRandomIntensityMin>
+    <PointLightMinClamp>0</PointLightMinClamp>
+    <PointLightRadius>500</PointLightRadius>
+    <PointLightRandomIntensityMax>1,35</PointLightRandomIntensityMax>
+    <ForceNiceSorting>False</ForceNiceSorting>
+    <Emissive>False</Emissive>
+    <RepeatParticleSpawning>False</RepeatParticleSpawning>
+    <UseMeshColor>False</UseMeshColor>
+    <KillParticlesWithEmitter>False</KillParticlesWithEmitter>
+    <KeepEmitterWithParticles>False</KeepEmitterWithParticles>
+    <FollowSpawnSource>False</FollowSpawnSource>
+    <Fog>False</Fog>
+    <Reflection>False</Reflection>
+    <Opaque>False</Opaque>
+    <WarpBuffer>False</WarpBuffer>
+    <NoLighting>False</NoLighting>
+    <ActAsPointLight>True</ActAsPointLight>
+    <UpdateParametersEveryFrame>False</UpdateParametersEveryFrame>
+    <TransparencySunShadowEnable>False</TransparencySunShadowEnable>
+    <LocalSpace>False</LocalSpace>
+</EmitterTemplateData>
+<SpawnRateData Guid="5e91cf46-c3c7-409c-b462-079bad5a6b04">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnSizeData] 6576cc6e-eaca-464b-a9f7-aaea436e16d0</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <SpawnRate>10</SpawnRate>
+    <TrailSegmentLength>5</TrailSegmentLength>
+    <DistributeOverTime>False</DistributeOverTime>
+    <DistributeOverDistance>False</DistributeOverDistance>
+</SpawnRateData>
+<SpawnSizeData Guid="6576cc6e-eaca-464b-a9f7-aaea436e16d0">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>nullptr</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfOne</EvaluatorInput>
+    <Enable>True</Enable>
+    <Size>0</Size>
+</SpawnSizeData>
+<UpdateAgeData Guid="c4503a1f-1cfd-472f-839c-9eb99c64116c">
+    <DefaultValues>
+        <Vec4>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+            <w>1</w>
+        </Vec4>
+    </DefaultValues>
+    <NextProcessor>[SpawnRateData] 5e91cf46-c3c7-409c-b462-079bad5a6b04</NextProcessor>
+    <Pre>nullptr</Pre>
+    <EvaluatorInput>EfNormTime</EvaluatorInput>
+    <Enable>True</Enable>
+    <Lifetime>1</Lifetime>
+</UpdateAgeData>

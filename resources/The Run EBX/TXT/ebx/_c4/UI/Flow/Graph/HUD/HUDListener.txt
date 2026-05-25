@@ -1,0 +1,129 @@
+GlobalNode fc0f3882-0068-4e33-9732-3a1048d35ad8
+	$::UINodeData
+		$::DataContainer
+		Name GlobalNode
+		IsRootNode False
+		ParentGraph aa624b25-dbd7-fb1a-6a0a-3249b1f7dad2
+		ParentIsScreen False
+	Outputs::array
+		member(0) 44d23553-abd5-4c66-b3c2-51db24ed0731
+InstanceInputNode c0708da6-dee6-4ae7-b502-bfa7664a2966
+	$::UINodeData
+		$::DataContainer
+		Name in
+		IsRootNode True
+		ParentGraph aa624b25-dbd7-fb1a-6a0a-3249b1f7dad2
+		ParentIsScreen False
+	Out 7182a29b-51f0-46d9-a1f9-7a61530caaad
+InstanceNode b26fec0a-cec1-4176-9404-9aaf2a8197d7
+	$::UINodeData
+		$::DataContainer
+		Name HUD
+		IsRootNode False
+		ParentGraph aa624b25-dbd7-fb1a-6a0a-3249b1f7dad2
+		ParentIsScreen False
+	UIGraph _c4/UI/Flow/Graph/HUD/HUDGraph/12c1dfbe-8f6b-3ecf-f003-e367ec0c63f0
+	Inputs::array
+		member(0) b48a4fb5-7328-403d-9ab2-372232456a4c
+	Outputs::array
+		member(0) b2a8f2eb-fab0-4ca7-9cec-04bba458815f
+	BundleWithParent False
+StateNode f6b7ec0a-181e-4e0c-a8d7-58ca29bc288e
+	$::UINodeData
+		$::DataContainer
+		Name Listening...
+		IsRootNode False
+		ParentGraph aa624b25-dbd7-fb1a-6a0a-3249b1f7dad2
+		ParentIsScreen False
+	Screen *nullGuid*
+	In 2d36eabf-490e-4511-b1d6-f06ec1e639aa
+	Inputs *nullArray*
+	Outputs *nullArray*
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+UIGraphAsset aa624b25-dbd7-fb1a-6a0a-3249b1f7dad2 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/HUD/HUDListener
+	Nodes::array
+		member(0) c0708da6-dee6-4ae7-b502-bfa7664a2966
+		member(1) f6b7ec0a-181e-4e0c-a8d7-58ca29bc288e
+		member(2) fc0f3882-0068-4e33-9732-3a1048d35ad8
+		member(3) b26fec0a-cec1-4176-9404-9aaf2a8197d7
+	GlobalNode fc0f3882-0068-4e33-9732-3a1048d35ad8
+	Connections::array
+		member(0) 4210bad7-4730-485d-930a-7d2cd5dc08ba
+		member(1) f64db8f9-43cf-4fe9-b03d-78ddee4796af
+		member(2) dc49b5dd-008e-42bf-bcc0-5eb34fd52f01
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/HUD/HUDListener_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList::array
+		member(0) _c4/UI/Flow/Event/HUDEvents/0cd5597c-ef20-7ccf-cf60-a4e172128e92
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading True
+UINodeConnection 4210bad7-4730-485d-930a-7d2cd5dc08ba
+	$::DataContainer
+	SourceNode c0708da6-dee6-4ae7-b502-bfa7664a2966
+	TargetNode f6b7ec0a-181e-4e0c-a8d7-58ca29bc288e
+	SourcePort 7182a29b-51f0-46d9-a1f9-7a61530caaad
+	TargetPort 2d36eabf-490e-4511-b1d6-f06ec1e639aa
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection f64db8f9-43cf-4fe9-b03d-78ddee4796af
+	$::DataContainer
+	SourceNode fc0f3882-0068-4e33-9732-3a1048d35ad8
+	TargetNode b26fec0a-cec1-4176-9404-9aaf2a8197d7
+	SourcePort 44d23553-abd5-4c66-b3c2-51db24ed0731
+	TargetPort b48a4fb5-7328-403d-9ab2-372232456a4c
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection dc49b5dd-008e-42bf-bcc0-5eb34fd52f01
+	$::DataContainer
+	SourceNode b26fec0a-cec1-4176-9404-9aaf2a8197d7
+	TargetNode f6b7ec0a-181e-4e0c-a8d7-58ca29bc288e
+	SourcePort b2a8f2eb-fab0-4ca7-9cec-04bba458815f
+	TargetPort 2d36eabf-490e-4511-b1d6-f06ec1e639aa
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort 7182a29b-51f0-46d9-a1f9-7a61530caaad
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 2d36eabf-490e-4511-b1d6-f06ec1e639aa
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 44d23553-abd5-4c66-b3c2-51db24ed0731
+	$::DataContainer
+	Name OnLoadHUD[HUD]
+	InstanceName OnLoadHUD
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort b48a4fb5-7328-403d-9ab2-372232456a4c
+	$::DataContainer
+	Name in
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort b2a8f2eb-fab0-4ca7-9cec-04bba458815f
+	$::DataContainer
+	Name out
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True

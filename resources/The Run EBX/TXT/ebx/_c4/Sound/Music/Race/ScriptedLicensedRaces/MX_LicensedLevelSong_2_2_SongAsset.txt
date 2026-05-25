@@ -1,0 +1,92 @@
+FadeAsset f9231a3a-c1af-4982-baa5-ce60c9e30d98
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset 5ca0a173-dc76-4489-9835-03462824c541
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Gary_Clark_Getting_toVegas_head
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_GaryClarkJr_DOYAT_SC021A_Get_To_Vegas_start_1a_Head_wave/c1985578-9267-38d8-24e6-7567a8352a41
+MusicDataAsset 45867934-6102-4f2b-9e3e-95a24ddb9b3e
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Gary_Clark_Body
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_GaryClarkJr_DontOweYouAThing_1b_body_loop_wave/d07df9a3-cf89-3b3f-4663-c165c91cf22c
+MusicPhraseAsset de4c8ed6-775a-4b32-b04c-a42bcda9bdf3
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 2
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 5ca0a173-dc76-4489-9835-03462824c541
+		member(1) 45867934-6102-4f2b-9e3e-95a24ddb9b3e
+MusicSelectorAsset ac9f7215-b7b3-4be9-8136-2e6af5550a71
+	$::DataContainer
+	Event _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/c916b4d2-5986-4158-b826-4db9ae5094de
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable de4c8ed6-775a-4b32-b04c-a42bcda9bdf3
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset e8a61033-e673-4d7c-8eb5-ff5091946b6c #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_2_2_SongAsset
+	SongInterface _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/b7fb68ad-70c0-42f2-9dbb-9a776659602e
+	NameHash 148694025
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) de4c8ed6-775a-4b32-b04c-a42bcda9bdf3
+	Overlays *nullArray*
+	Selectors::array
+		member(0) ac9f7215-b7b3-4be9-8136-2e6af5550a71
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

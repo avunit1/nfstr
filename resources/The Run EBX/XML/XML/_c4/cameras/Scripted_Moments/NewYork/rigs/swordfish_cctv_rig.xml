@@ -1,0 +1,238 @@
+<BasicControllerData Guid="e28b959f-0ab4-469e-b9ec-af90c41f5ba1">
+    <Transposer>[LocatorTransposerData] 67b633fc-0a91-4338-b2a0-3f02a61ab42c</Transposer>
+    <Composer>[ScreenSpaceComposerData] b0e205d9-9fe0-490f-8be1-0373872f1644</Composer>
+    <TimeScale>1</TimeScale>
+</BasicControllerData>
+<BasicControllerData Guid="189e8ab8-edc2-4913-841d-20c5ca807959">
+    <Transposer>[LocatorTransposerData] 80249a3e-81af-45f3-bd90-475273c32ab2</Transposer>
+    <Composer>[ScreenSpaceComposerData] 90a4fe56-55ff-4c54-be5d-f887ab9c22e9</Composer>
+    <TimeScale>1</TimeScale>
+</BasicControllerData>
+<BlendControllerData Guid="ba9f3d5f-d2e9-40d8-8b66-1cf4cb5d77bb">
+    <FromController>[BasicControllerData] e28b959f-0ab4-469e-b9ec-af90c41f5ba1</FromController>
+    <ToController>[BasicControllerData] 189e8ab8-edc2-4913-841d-20c5ca807959</ToController>
+    <Transition>[CinebotTransitionData] d0647904-7da9-4c62-bbb0-548cec37cec9</Transition>
+    <AdditionalBlendToControllers Count="0"></AdditionalBlendToControllers>
+    <BlackBoardVarName></BlackBoardVarName>
+</BlendControllerData>
+<CinebotControllerRigAsset Guid="f9ceeb9f-8049-4c74-8fe2-2989462644ae">
+    <Name>_c4/cameras/Scripted_Moments/NewYork/rigs/Swordfish_CCTV_Rig</Name>
+    <Controllers Count="2">
+        <member Index="0">[BlendControllerData] ba9f3d5f-d2e9-40d8-8b66-1cf4cb5d77bb</member>
+        <member Index="1">[ReactionControllerData] 211f1d34-3de3-430d-a4a2-0bdaaa91ce04</member>
+    </Controllers>
+    <ForceAllInputTypesEnabled>False</ForceAllInputTypesEnabled>
+</CinebotControllerRigAsset>
+<CinebotTransitionData Guid="d0647904-7da9-4c62-bbb0-548cec37cec9">
+    <TimeToDelay>0,1</TimeToDelay>
+    <Time>0,5</Time>
+    <EaseInControl>0,5</EaseInControl>
+    <EaseOutControl>0,5</EaseOutControl>
+    <Blend>CINEBOT_BLEND_EULER</Blend>
+    <Clean>False</Clean>
+</CinebotTransitionData>
+<LocatorTransposerData Guid="67b633fc-0a91-4338-b2a0-3f02a61ab42c">
+    <Offset>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <CinebotLocatorIdentifier>nullptr</CinebotLocatorIdentifier>
+    <CinebotLocatorName>Swordfish_CCTV_end</CinebotLocatorName>
+</LocatorTransposerData>
+<LocatorTransposerData Guid="80249a3e-81af-45f3-bd90-475273c32ab2">
+    <Offset>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <CinebotLocatorIdentifier>nullptr</CinebotLocatorIdentifier>
+    <CinebotLocatorName>Swordfish_CCTV_end</CinebotLocatorName>
+</LocatorTransposerData>
+<ReactionControllerData Guid="211f1d34-3de3-430d-a4a2-0bdaaa91ce04">
+    <ReactionInput>CINEBOT_REACTION_INPUT_SPEED</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <ReactionOutput>CINEBOT_REACTION_OUTPUT_SHIFT_Y</ReactionOutput>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <DampTime>0</DampTime>
+    <ConditionsDampTime>0</ConditionsDampTime>
+    <Pivot>0</Pivot>
+    <Delay>0</Delay>
+    <Conditions Count="0"></Conditions>
+    <ControllerInput>EIAUndefined</ControllerInput>
+    <ControllerInputRaw>nullptr</ControllerInputRaw>
+    <ReactionCurve Count="4">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>2</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,2633333</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>1</x>
+                <y>0,2633333</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <UseAngleInterpolation>False</UseAngleInterpolation>
+    <MirrorInput>False</MirrorInput>
+    <XOR_Conditions>False</XOR_Conditions>
+    <XMirrorInput>False</XMirrorInput>
+    <IsAdditive>False</IsAdditive>
+</ReactionControllerData>
+<ScreenSpaceComposerData Guid="90a4fe56-55ff-4c54-be5d-f887ab9c22e9">
+    <FocalPlaneOffset>0</FocalPlaneOffset>
+    <FStop>5</FStop>
+    <MinimumNearBlur>0,3</MinimumNearBlur>
+    <Offset>
+        <Vec3>
+            <x>0</x>
+            <y>1,667545E-43</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <Secondary>
+        <ScreenSpaceComposerTarget>
+            <Offset>
+                <Vec3>
+                    <x>0</x>
+                    <y>45</y>
+                    <z>90</z>
+                </Vec3>
+            </Offset>
+            <TargetPart></TargetPart>
+            <MaxAngleHard>0</MaxAngleHard>
+            <MaxAngleSoft>0</MaxAngleSoft>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerTarget>
+    </Secondary>
+    <TargetPart></TargetPart>
+    <MarkerType>CAMERA_DRIVER</MarkerType>
+    <OffsetScale>nullptr</OffsetScale>
+    <HardTop>0,1</HardTop>
+    <SoftTop>0,25</SoftTop>
+    <SoftBottom>0,25</SoftBottom>
+    <HardBottom>0,9</HardBottom>
+    <VerticalBlendTime>1</VerticalBlendTime>
+    <VerticalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </VerticalBlendControl>
+    <HardLeft>0,1</HardLeft>
+    <SoftLeft>0,5</SoftLeft>
+    <SoftRight>0,5</SoftRight>
+    <HardRight>0,9</HardRight>
+    <HorizontalBlendTime>2</HorizontalBlendTime>
+    <HorizontalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </HorizontalBlendControl>
+    <FOV>35</FOV>
+    <Roll>0</Roll>
+    <NearPlane>-1</NearPlane>
+    <FarPlane>-1</FarPlane>
+    <UpDampingBlendTime>0,2</UpDampingBlendTime>
+    <UseUpDamping>False</UseUpDamping>
+    <UseUpFromScene>False</UseUpFromScene>
+</ScreenSpaceComposerData>
+<ScreenSpaceComposerData Guid="b0e205d9-9fe0-490f-8be1-0373872f1644">
+    <FocalPlaneOffset>0</FocalPlaneOffset>
+    <FStop>5</FStop>
+    <MinimumNearBlur>0,3</MinimumNearBlur>
+    <Offset>
+        <Vec3>
+            <x>0</x>
+            <y>1,667545E-43</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <Secondary>
+        <ScreenSpaceComposerTarget>
+            <Offset>
+                <Vec3>
+                    <x>0</x>
+                    <y>45</y>
+                    <z>90</z>
+                </Vec3>
+            </Offset>
+            <TargetPart></TargetPart>
+            <MaxAngleHard>0</MaxAngleHard>
+            <MaxAngleSoft>0</MaxAngleSoft>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerTarget>
+    </Secondary>
+    <TargetPart></TargetPart>
+    <MarkerType>CAMERA_DRIVER</MarkerType>
+    <OffsetScale>nullptr</OffsetScale>
+    <HardTop>0,1</HardTop>
+    <SoftTop>0,5</SoftTop>
+    <SoftBottom>0,5</SoftBottom>
+    <HardBottom>0,9</HardBottom>
+    <VerticalBlendTime>0</VerticalBlendTime>
+    <VerticalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </VerticalBlendControl>
+    <HardLeft>0,1</HardLeft>
+    <SoftLeft>0,5</SoftLeft>
+    <SoftRight>0,5</SoftRight>
+    <HardRight>0,9</HardRight>
+    <HorizontalBlendTime>0</HorizontalBlendTime>
+    <HorizontalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </HorizontalBlendControl>
+    <FOV>35</FOV>
+    <Roll>0</Roll>
+    <NearPlane>-1</NearPlane>
+    <FarPlane>-1</FarPlane>
+    <UpDampingBlendTime>0,2</UpDampingBlendTime>
+    <UseUpDamping>False</UseUpDamping>
+    <UseUpFromScene>False</UseUpFromScene>
+</ScreenSpaceComposerData>

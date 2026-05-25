@@ -1,0 +1,169 @@
+<FadeEntityData Guid="d30854dc-c17d-4fbd-993e-9914cf71bfcc">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<InterfaceDescriptorData Guid="eb7b070c-d383-4531-ae59-684ddb37eb83">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xd8d04f65</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<PrintDebugTextEntityData Guid="06581284-af42-45ee-b06d-6c23a7817739">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <TextColor>
+        <Vec3>
+            <x>0,957</x>
+            <y>0</y>
+            <z>1,401298E-45</z>
+        </Vec3>
+    </TextColor>
+    <Realm>Realm_Client</Realm>
+    <Text>Playing ManualRewind</Text>
+    <Enabled>True</Enabled>
+</PrintDebugTextEntityData>
+<SequenceEntityData Guid="4068303f-4b5e-4fb7-b5aa-e27ed01aceae">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="2">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>Fade [7C7E76A3]</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000001</Time>
+            </SequenceEventData>
+        </member>
+        <member Index="1">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>0x11f5aa3b</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000007</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00000064</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SpatialPrefabBlueprint Guid="7714b38c-95df-425c-8124-8b615bec2a22">
+    <Name>_c4/Gameplay/Flow/DeathstateTreatment_UserReset_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SequenceEntityData] 4068303f-4b5e-4fb7-b5aa-e27ed01aceae</Source>
+                <Target>[InterfaceDescriptorData] eb7b070c-d383-4531-ae59-684ddb37eb83</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x11f5aa3b</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[SequenceEntityData] 4068303f-4b5e-4fb7-b5aa-e27ed01aceae</Source>
+                <Target>[FadeEntityData] d30854dc-c17d-4fbd-993e-9914cf71bfcc</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Fade [7C7E76A3]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] eb7b070c-d383-4531-ae59-684ddb37eb83</Source>
+                <Target>[SequenceEntityData] 4068303f-4b5e-4fb7-b5aa-e27ed01aceae</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] eb7b070c-d383-4531-ae59-684ddb37eb83</Source>
+                <Target>[PrintDebugTextEntityData] 06581284-af42-45ee-b06d-6c23a7817739</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Print [0DD32774]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] eb7b070c-d383-4531-ae59-684ddb37eb83</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="3">
+        <member Index="0">[SequenceEntityData] 4068303f-4b5e-4fb7-b5aa-e27ed01aceae</member>
+        <member Index="1">[FadeEntityData] d30854dc-c17d-4fbd-993e-9914cf71bfcc</member>
+        <member Index="2">[PrintDebugTextEntityData] 06581284-af42-45ee-b06d-6c23a7817739</member>
+    </Objects>
+</SpatialPrefabBlueprint>

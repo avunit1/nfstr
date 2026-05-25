@@ -1,0 +1,173 @@
+BBMapToCurve 3ee9d81a-b4b3-4d59-a6ff-4286a1366205
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 1.9070119857788086
+					y 0.0004051987489219755
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 20.048940658569336
+					y 0.49675852060317993
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 70.67758178710938
+					y 1.0
+				LineType Linear
+			member(4)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve 02bfd42a-116f-4446-9579-a18d824ee5b4
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.29754188656806946
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 19.837987899780273
+					y 0.39883846044540405
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 70.67758178710938
+					y 1.0
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+ControllerEffectEntityData 1cd55246-e2e8-4631-95a5-e883ff7ae085
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	Asset _c4/Effects/_Rumble/Surfaces/Dirt_Grip_Rumble/c81edc27-953f-0ed6-2419-49ab2fa830b7
+	IsGlobalEffect False
+EffectBlueprint 7dab8d07-5fcf-4d9f-af40-16f769d717a8 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Vehicle/KickUp/DRV_KickUp_RumbleStrip
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object 667a6adc-e445-415e-80bb-203b91804623
+EffectEntityData 667a6adc-e445-415e-80bb-203b91804623
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) 1cd55246-e2e8-4631-95a5-e883ff7ae085
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) 939b19d9-1673-4f61-b240-c7f2c473e674
+		member(1) a24a95bf-56ff-43d3-a32b-5de49486d5da
+ParameterBlackboardAssociation 939b19d9-1673-4f61-b240-c7f2c473e674
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 23cb3666-0a66-42f4-8117-dc969565ef3f
+	BlackboardField2 *nullGuid*
+	BlackboardMapping 3ee9d81a-b4b3-4d59-a6ff-4286a1366205
+ParameterBlackboardAssociation a24a95bf-56ff-43d3-a32b-5de49486d5da
+	$::DataContainer
+	EmitterParameter EmitterParameter2
+	BlackboardField1 cbd0f175-96b2-4c1b-a629-16d9421d75d7
+	BlackboardField2 *nullGuid*
+	BlackboardMapping 02bfd42a-116f-4446-9579-a18d824ee5b4
+WheelRelativeBBField 23cb3666-0a66-42f4-8117-dc969565ef3f
+	$::RelativeBBField
+		$::BlackboardFieldRef
+			$::DataContainer
+	WheelBB WheelBB_RotationalVelocity
+WheelRelativeBBField cbd0f175-96b2-4c1b-a629-16d9421d75d7
+	$::RelativeBBField
+		$::BlackboardFieldRef
+			$::DataContainer
+	WheelBB WheelBB_RotationalVelocity

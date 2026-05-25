@@ -1,0 +1,65 @@
+MusicDataAsset 7c626a95-e0d3-4d5b-b760-7fc30599927e
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Select_Car_Temp_Licensed_Music
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Car_Select/MX_BT_car_select_12_c_uri_garage_loop_bpm120_wave/0a8e9050-a34d-3603-f597-e7d668eec815
+MusicPhraseAsset c845ffb7-3d4a-4171-bc4b-4927825e5426
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Select_Car
+			Loop 1
+			BPM 130
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable 7c626a95-e0d3-4d5b-b760-7fc30599927e
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 7c626a95-e0d3-4d5b-b760-7fc30599927e
+MusicSelectorAsset ca3569f7-346a-433d-ac49-afe30bfc1569
+	$::DataContainer
+	Event _c4/Sound/Music/ChicagoIndustrial/MX_ChicagoIndustrial_12_C_SongInterface/bfe813f4-a912-4765-9ba4-36a8eafb02c5
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable c845ffb7-3d4a-4171-bc4b-4927825e5426
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset 35b05e44-0155-4daa-b2c1-460f9178d8dd #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/ChicagoIndustrial/MX_ChicagoIndustrial_12_C_SongAsset
+	SongInterface _c4/Sound/Music/ChicagoIndustrial/MX_ChicagoIndustrial_12_C_SongInterface/3347bb16-3c95-418f-b97c-54218db462f1
+	NameHash 2244128666
+	BPM 130
+	BeatsPerBar 4
+	Collection::array
+		member(0) c845ffb7-3d4a-4171-bc4b-4927825e5426
+	Overlays *nullArray*
+	Selectors::array
+		member(0) ca3569f7-346a-433d-ac49-afe30bfc1569
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

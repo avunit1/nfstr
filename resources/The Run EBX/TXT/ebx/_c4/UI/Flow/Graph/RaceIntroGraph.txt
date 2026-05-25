@@ -1,0 +1,210 @@
+ActionNode 02b78639-0685-422e-aec0-f9eb535308c2
+	$::UINodeData
+		$::DataContainer
+		Name Show Objective Text
+		IsRootNode False
+		ParentGraph 6ad60ec3-5217-eac2-0ac2-f7ff7c7d7d45
+		ParentIsScreen False
+	ActionKey -145750962
+	Params *nullArray*
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 56e0e079-ed01-4731-b3a3-c4055f833ff0
+	DataInputs *nullArray*
+	Out ce94d3e7-bc47-49e7-b14a-836a7418e9c4
+BinaryLogicNode c10227cc-b513-4617-bf90-d06ef53e2c21
+	$::UINodeData
+		$::DataContainer
+		Name IsStoryMode
+		IsRootNode False
+		ParentGraph 6ad60ec3-5217-eac2-0ac2-f7ff7c7d7d45
+		ParentIsScreen False
+	In 97e80d75-b13c-41a6-a50f-2a568de62fdd
+	True 4f1eeaa5-f5c2-4fec-bac9-f19540d0e04a
+	False 249d4f7e-e3d4-4c32-bb1d-c130a8b7653a
+	DataSourceInfo::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIStoryComp/1b449255-be61-b750-7244-a2e856d8ee23
+		DataKey 115593727
+BinaryLogicNode 8990aca9-8f78-4e5f-a4a9-83aa6a6b5122
+	$::UINodeData
+		$::DataContainer
+		Name IsChallengeMode
+		IsRootNode False
+		ParentGraph 6ad60ec3-5217-eac2-0ac2-f7ff7c7d7d45
+		ParentIsScreen False
+	In b558ee21-a5f4-4e48-afed-efd9866e9657
+	True 033ec1d2-f047-481e-9557-effbeb14010c
+	False a0574c1e-c228-45af-b151-a180e6d471f3
+	DataSourceInfo::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIChallengeModeComp/4a63329e-87f7-c2e5-50d5-f6080b29622b
+		DataKey -1552238407
+InstanceInputNode dd614669-25b2-4c02-8ebe-c8320acf0fb2
+	$::UINodeData
+		$::DataContainer
+		Name In
+		IsRootNode True
+		ParentGraph 6ad60ec3-5217-eac2-0ac2-f7ff7c7d7d45
+		ParentIsScreen False
+	Out a957afbe-6260-459c-8672-fa80b5fefb82
+InstanceOutputNode 8f4cc855-447d-4b5e-8843-f40a64d4badf
+	$::UINodeData
+		$::DataContainer
+		Name Out
+		IsRootNode False
+		ParentGraph 6ad60ec3-5217-eac2-0ac2-f7ff7c7d7d45
+		ParentIsScreen False
+	In 7e66f65e-a447-4a12-a3e4-cf6232a9f6bc
+	Id 193453899
+UIGraphAsset 6ad60ec3-5217-eac2-0ac2-f7ff7c7d7d45 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/RaceIntroGraph
+	Nodes::array
+		member(0) dd614669-25b2-4c02-8ebe-c8320acf0fb2
+		member(1) 8f4cc855-447d-4b5e-8843-f40a64d4badf
+		member(2) c10227cc-b513-4617-bf90-d06ef53e2c21
+		member(3) 02b78639-0685-422e-aec0-f9eb535308c2
+		member(4) 8990aca9-8f78-4e5f-a4a9-83aa6a6b5122
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) 5d7076af-d48b-4451-8138-82633c646961
+		member(1) 577ea0a4-8fd9-488a-9cbe-42622f1e00ab
+		member(2) 20a648a3-5639-4ca0-8daf-edd58a6f3499
+		member(3) e4a353ea-0e50-4369-9c2b-aa71ca2db6bf
+		member(4) 1d022f37-0894-4e39-bccf-211fc31c2ddd
+		member(5) 373bb5ae-af46-487b-be65-92e825bff75e
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/RaceIntroGraph_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList *nullArray*
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading True
+UINodeConnection 5d7076af-d48b-4451-8138-82633c646961
+	$::DataContainer
+	SourceNode dd614669-25b2-4c02-8ebe-c8320acf0fb2
+	TargetNode c10227cc-b513-4617-bf90-d06ef53e2c21
+	SourcePort a957afbe-6260-459c-8672-fa80b5fefb82
+	TargetPort 97e80d75-b13c-41a6-a50f-2a568de62fdd
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 577ea0a4-8fd9-488a-9cbe-42622f1e00ab
+	$::DataContainer
+	SourceNode c10227cc-b513-4617-bf90-d06ef53e2c21
+	TargetNode 02b78639-0685-422e-aec0-f9eb535308c2
+	SourcePort 4f1eeaa5-f5c2-4fec-bac9-f19540d0e04a
+	TargetPort 56e0e079-ed01-4731-b3a3-c4055f833ff0
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 20a648a3-5639-4ca0-8daf-edd58a6f3499
+	$::DataContainer
+	SourceNode 02b78639-0685-422e-aec0-f9eb535308c2
+	TargetNode 8f4cc855-447d-4b5e-8843-f40a64d4badf
+	SourcePort ce94d3e7-bc47-49e7-b14a-836a7418e9c4
+	TargetPort 7e66f65e-a447-4a12-a3e4-cf6232a9f6bc
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection e4a353ea-0e50-4369-9c2b-aa71ca2db6bf
+	$::DataContainer
+	SourceNode c10227cc-b513-4617-bf90-d06ef53e2c21
+	TargetNode 8990aca9-8f78-4e5f-a4a9-83aa6a6b5122
+	SourcePort 249d4f7e-e3d4-4c32-bb1d-c130a8b7653a
+	TargetPort b558ee21-a5f4-4e48-afed-efd9866e9657
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 1d022f37-0894-4e39-bccf-211fc31c2ddd
+	$::DataContainer
+	SourceNode 8990aca9-8f78-4e5f-a4a9-83aa6a6b5122
+	TargetNode 02b78639-0685-422e-aec0-f9eb535308c2
+	SourcePort 033ec1d2-f047-481e-9557-effbeb14010c
+	TargetPort 56e0e079-ed01-4731-b3a3-c4055f833ff0
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 373bb5ae-af46-487b-be65-92e825bff75e
+	$::DataContainer
+	SourceNode 8990aca9-8f78-4e5f-a4a9-83aa6a6b5122
+	TargetNode 8f4cc855-447d-4b5e-8843-f40a64d4badf
+	SourcePort a0574c1e-c228-45af-b151-a180e6d471f3
+	TargetPort 7e66f65e-a447-4a12-a3e4-cf6232a9f6bc
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort a957afbe-6260-459c-8672-fa80b5fefb82
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 7e66f65e-a447-4a12-a3e4-cf6232a9f6bc
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 97e80d75-b13c-41a6-a50f-2a568de62fdd
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 4f1eeaa5-f5c2-4fec-bac9-f19540d0e04a
+	$::DataContainer
+	Name True
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 249d4f7e-e3d4-4c32-bb1d-c130a8b7653a
+	$::DataContainer
+	Name False
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 56e0e079-ed01-4731-b3a3-c4055f833ff0
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort ce94d3e7-bc47-49e7-b14a-836a7418e9c4
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort b558ee21-a5f4-4e48-afed-efd9866e9657
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 033ec1d2-f047-481e-9557-effbeb14010c
+	$::DataContainer
+	Name True
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort a0574c1e-c228-45af-b151-a180e6d471f3
+	$::DataContainer
+	Name False
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True

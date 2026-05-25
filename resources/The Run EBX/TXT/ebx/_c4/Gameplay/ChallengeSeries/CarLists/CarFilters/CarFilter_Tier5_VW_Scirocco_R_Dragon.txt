@@ -1,0 +1,59 @@
+BTFilterNode 9607e9a9-419c-4354-827b-a9de5da812e1
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 9928eb6b-03bd-4e7b-9701-f9b71ac9519e
+	Eval 942be43e-e786-4753-94fe-a07964f17716
+BTSelectorNode 1f6d103e-0e78-49da-94f1-76ba91a57b8a
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 9607e9a9-419c-4354-827b-a9de5da812e1
+BTTaskNode 9928eb6b-03bd-4e7b-9701-f9b71ac9519e
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task eb7b1304-57e9-4a1e-9156-94f27b1a8094
+BehaviourTreeData d199cac0-18ae-4273-a653-cca2da0daccc #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_Tier5_VW_Scirocco_R_Dragon
+	Root 1f6d103e-0e78-49da-94f1-76ba91a57b8a
+	Description 
+VQ_Do eb7b1304-57e9-4a1e-9156-94f27b1a8094
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 942be43e-e786-4753-94fe-a07964f17716
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 5
+		RValueFloat 0.0
+		RValueBool False
+		RValueString vol_sci_r_10_pp_rare_1
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 1464376845

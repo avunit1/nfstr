@@ -1,0 +1,141 @@
+BBMapToCurve bcd4e618-6402-459b-a892-e5ecc9001597
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.0
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 5.0
+					y 0.4000000059604645
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 60.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput True
+	ClampOutputMin 0.0
+	ClampOutputMax 0.4000000059604645
+BBMapToCurve a995c2ee-ffb2-4ad7-b600-a1f16593e3a0
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.0
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 60.0
+					y 3.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve 3fc039cf-8877-46e5-b800-9138741083e8
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.0
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 2.0
+					y 0.0
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 60.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput True
+	ClampOutputMin 0.0
+	ClampOutputMax 0.4000000059604645
+LevelBlackboardMap 8e5ad0e7-339b-4da9-b952-7271537576b7
+	$::DataContainer
+	BlackboardField1 LocalPlayerSpeed
+	BlackboardField2 
+	BlackboardMapping bcd4e618-6402-459b-a892-e5ecc9001597
+LevelBlackboardMap 414fd3d0-e80d-44e9-b80d-05ebfb55a886
+	$::DataContainer
+	BlackboardField1 LocalPlayerSpeed
+	BlackboardField2 
+	BlackboardMapping 3fc039cf-8877-46e5-b800-9138741083e8
+LevelBlackboardMap 223cf417-722c-462a-a2ab-d55c6164d946
+	$::DataContainer
+	BlackboardField1 LocalPlayerSpeed
+	BlackboardField2 
+	BlackboardMapping a995c2ee-ffb2-4ad7-b600-a1f16593e3a0
+RumbleAsset c81edc27-953f-0ed6-2419-49ab2fa830b7 #primary instance
+	$::ControllerEffectAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Effects/_Rumble/Surfaces/Dirt_Grip_Rumble
+	LowActuator::array
+		member(0)::RumbleData
+			Amplitude 1.0
+			Frequency 6.207054138183594
+			Offset 0.0
+			Base -0.10289391875267029
+			WaveKind RWK_Square
+			Blend RBK_None
+			Invert False
+			Delay 0.0
+			Duration 0.0
+			Enabled True
+		member(1)::RumbleData
+			Amplitude 1.0
+			Frequency 3.1033575534820557
+			Offset 0.0
+			Base -0.10289391875267029
+			WaveKind RWK_Square
+			Blend RBK_Multiply
+			Invert True
+			Delay 0.0
+			Duration 0.0
+			Enabled True
+		member(2)::RumbleData
+			Amplitude 1.0
+			Frequency 2.0699639320373535
+			Offset 0.0
+			Base -0.10289391875267029
+			WaveKind RWK_Square
+			Blend RBK_Multiply
+			Invert True
+			Delay 0.32695651054382324
+			Duration 0.0
+			Enabled True
+	HighActuator::array
+		member(0)::RumbleData
+			Amplitude 1.0
+			Frequency 8.202359199523926
+			Offset 0.0
+			Base -0.003215402364730835
+			WaveKind RWK_PerlinNoise
+			Blend RBK_None
+			Invert False
+			Delay 0.0
+			Duration 0.0
+			Enabled True
+	GlobalScalar *nullGuid*
+	HighAmplitudeScalar 414fd3d0-e80d-44e9-b80d-05ebfb55a886
+	HighFrequencyScalar *nullGuid*
+	LowAmplitudeScalar 8e5ad0e7-339b-4da9-b952-7271537576b7
+	LowFrequencyScalar 223cf417-722c-462a-a2ab-d55c6164d946

@@ -1,0 +1,766 @@
+<CinebotConditionData Guid="2028dd02-64cb-4452-9e61-29298d82d933">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_ROLL</ConditionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <ConditionMin>45</ConditionMin>
+    <ConditionMax>180</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="caeb4200-3520-4d70-96d8-9183e19d8e57">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_ACCEL</ConditionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <ConditionMin>0,1</ConditionMin>
+    <ConditionMax>1000</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="9b0a9930-834e-427a-89e4-f2962ebb831f">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_FALL_DISTANCE</ConditionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <ConditionMin>0,001</ConditionMin>
+    <ConditionMax>0,05</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="af6e4f97-0181-4b24-8d74-ba949ea4bb95">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <ConditionMin>0,6</ConditionMin>
+    <ConditionMax>50</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="e58614fa-4e38-4f7e-9379-5fdc779cae67">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <ConditionMin>0,6</ConditionMin>
+    <ConditionMax>50</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="c31a6178-25cb-4ba2-9dee-ff6e5849c641">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <ConditionMin>0</ConditionMin>
+    <ConditionMax>0</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="9520a613-b5e2-43be-a73e-c3b22d315d82">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <ConditionMin>0</ConditionMin>
+    <ConditionMax>0</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="a061cc33-8410-4105-b718-c75d710ccd4e">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <ConditionMin>0</ConditionMin>
+    <ConditionMax>0</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="7661da43-1b49-49cf-bf5c-fb7620d7b64f">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <ConditionMin>1,5</ConditionMin>
+    <ConditionMax>50</ConditionMax>
+</CinebotConditionData>
+<CinebotConditionData Guid="72531e2e-f542-4fad-9202-cbafbe988677">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD_VEHICLE</ConditionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <ConditionMin>0,3</ConditionMin>
+    <ConditionMax>50</ConditionMax>
+</CinebotConditionData>
+<CinebotControllerRigAsset Guid="d6fe8afd-63b7-4b89-aef0-d31a48b79454">
+    <Name>_c4/cameras/Noise/Template/collisions_chase</Name>
+    <Controllers Count="7">
+        <member Index="0">[NoiseControllerData] 3613e998-d487-451a-b701-05d7d73032ff</member>
+        <member Index="1">[NoiseControllerData] c7be3e92-9123-4e5e-a748-1a1549f36d1b</member>
+        <member Index="2">[NoiseControllerData] e4b74edf-c788-4d7e-802c-7b4290227d89</member>
+        <member Index="3">[NoiseControllerData] e664131a-acec-4613-876c-77269ec25e6f</member>
+        <member Index="4">[NoiseControllerData] 9beaf4ff-119d-47a3-83e3-514971b734cc</member>
+        <member Index="5">[NoiseControllerData] d2dab009-412e-4f07-a66a-60e39579cd94</member>
+        <member Index="6">[NoiseControllerData] 9ffb341c-e707-4c51-ad1d-b8d4070a96d2</member>
+    </Controllers>
+    <ForceAllInputTypesEnabled>False</ForceAllInputTypesEnabled>
+</CinebotControllerRigAsset>
+<CurveData Guid="770692a5-9024-4a22-97b5-a11f2f6dbe87">
+    <ReactionInput>CINEBOT_REACTION_INPUT_WORLD_COLLISION</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] 9520a613-b5e2-43be-a73e-c3b22d315d82</member>
+    </Conditions>
+    <ReactionCurve Count="5">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>25</x>
+                <y>1</y>
+                <z>3</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>-4,675324</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,3583333</x>
+                <y>0</y>
+                <z>9,350649</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>-11,96154</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="b8f95cf4-0afd-4c22-88d2-6e61f6ca8340">
+    <ReactionInput>CINEBOT_REACTION_INPUT_WORLD_COLLISION</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] c31a6178-25cb-4ba2-9dee-ff6e5849c641</member>
+    </Conditions>
+    <ReactionCurve Count="6">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>5</x>
+                <y>1</y>
+                <z>4</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>406,1604</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,01166667</x>
+                <y>0,01833333</y>
+                <z>-4,15762</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>0,4366667</x>
+                <y>0,7066666</y>
+                <z>-1,925821</z>
+            </Vec3>
+        </member>
+        <member Index="5">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>-1,810102</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="0eafaa1c-7ee0-48eb-a138-82a969393ad1">
+    <ReactionInput>CINEBOT_REACTION_INPUT_SPEED</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] 9b0a9930-834e-427a-89e4-f2962ebb831f</member>
+    </Conditions>
+    <ReactionCurve Count="5">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>10</x>
+                <y>1</y>
+                <z>3</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>111,4548</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,03</x>
+                <y>0,03333334</y>
+                <z>-0,6872858</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>-2,738513</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="6d340bd5-ea15-4af7-812e-93f1ac82ebcd">
+    <ReactionInput>CINEBOT_REACTION_INPUT_WORLD_COLLISION</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] a061cc33-8410-4105-b718-c75d710ccd4e</member>
+    </Conditions>
+    <ReactionCurve Count="7">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>5</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>1373,904</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,015</x>
+                <y>0,09666666</y>
+                <z>-170,0296</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>0,07333333</x>
+                <y>0,4183333</y>
+                <z>-21,45993</z>
+            </Vec3>
+        </member>
+        <member Index="5">
+            <Vec3>
+                <x>0,2883333</x>
+                <y>0,8083333</y>
+                <z>-2,568247</z>
+            </Vec3>
+        </member>
+        <member Index="6">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>0,1488133</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="dc944b90-00c6-4e18-8b2e-0f1f5335edca">
+    <ReactionInput>CINEBOT_REACTION_INPUT_BLACKBOARD_VEHICLE</ReactionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] af6e4f97-0181-4b24-8d74-ba949ea4bb95</member>
+    </Conditions>
+    <ReactionCurve Count="6">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>10</x>
+                <y>1</y>
+                <z>4</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,09333333</y>
+                <z>-0,9686184</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,385</x>
+                <y>0,3516667</y>
+                <z>12,39431</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>0,44</x>
+                <y>0,4816667</y>
+                <z>-6,876996</z>
+            </Vec3>
+        </member>
+        <member Index="5">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>-1,520048</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="07ed8fa6-72bc-4706-a7d0-6b6157dfd470">
+    <ReactionInput>CINEBOT_REACTION_INPUT_BLACKBOARD_VEHICLE</ReactionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] e58614fa-4e38-4f7e-9379-5fdc779cae67</member>
+    </Conditions>
+    <ReactionCurve Count="6">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>10</x>
+                <y>1</y>
+                <z>4</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,2216667</y>
+                <z>-1,417951</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,4216667</x>
+                <y>0,32</y>
+                <z>6,154186</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>0,655</x>
+                <y>0,655</y>
+                <z>-1,067159</z>
+            </Vec3>
+        </member>
+        <member Index="5">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>-8,162071</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="73077ed0-591f-4de0-a576-5e07014a5e97">
+    <ReactionInput>CINEBOT_REACTION_INPUT_BLACKBOARD_VEHICLE</ReactionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <OutputScale>0,4</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] 7661da43-1b49-49cf-bf5c-fb7620d7b64f</member>
+    </Conditions>
+    <ReactionCurve Count="6">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>10</x>
+                <y>1</y>
+                <z>4</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,006666667</y>
+                <z>-0,2018304</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,3916667</x>
+                <y>0,2516667</y>
+                <z>9,986277</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>0,555</x>
+                <y>0,62</y>
+                <z>-7,520178</z>
+            </Vec3>
+        </member>
+        <member Index="5">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>-1,99676</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<CurveData Guid="8c814313-217a-4c03-a83e-cd05da323ce2">
+    <ReactionInput>CINEBOT_REACTION_INPUT_BLACKBOARD_VEHICLE</ReactionInput>
+    <BlackBoardVarName>LandingSpeed</BlackBoardVarName>
+    <OutputScale>0,4</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] 72531e2e-f542-4fad-9202-cbafbe988677</member>
+    </Conditions>
+    <ReactionCurve Count="6">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>20</x>
+                <y>1</y>
+                <z>4</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,006666667</y>
+                <z>1,048565</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,4583333</x>
+                <y>0,3416667</y>
+                <z>7,471134</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>0,6233333</x>
+                <y>0,6966667</y>
+                <z>-7,702839</z>
+            </Vec3>
+        </member>
+        <member Index="5">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>-2,562552</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<ImpulseControllerResponse Guid="e7ddedc6-4e84-4d82-8e80-a9e5eac42e79">
+    <Filters>
+        <ImpulseControllerResponseFilters>
+            <Keys Count="1">
+                <member Index="0">WorldImpact</member>
+            </Keys>
+        </ImpulseControllerResponseFilters>
+    </Filters>
+    <X>
+        <ImpulseControllerChannel>
+            <Speed>100</Speed>
+            <Reactions Count="1">
+                <member Index="0">
+                    <ImpulseControllerReaction>
+                        <Impulse>
+                            <ImpulseControllerPair>
+                                <Min>0</Min>
+                                <Max>0</Max>
+                            </ImpulseControllerPair>
+                        </Impulse>
+                        <DelayTime>
+                            <ImpulseControllerPair>
+                                <Min>0</Min>
+                                <Max>0</Max>
+                            </ImpulseControllerPair>
+                        </DelayTime>
+                        <RampTime>
+                            <ImpulseControllerPair>
+                                <Min>0</Min>
+                                <Max>0</Max>
+                            </ImpulseControllerPair>
+                        </RampTime>
+                        <Duration>
+                            <ImpulseControllerPair>
+                                <Min>0</Min>
+                                <Max>0</Max>
+                            </ImpulseControllerPair>
+                        </Duration>
+                        <FadeTime>
+                            <ImpulseControllerPair>
+                                <Min>0</Min>
+                                <Max>0</Max>
+                            </ImpulseControllerPair>
+                        </FadeTime>
+                        <Compression>
+                            <ImpulseControllerPair>
+                                <Min>0</Min>
+                                <Max>0</Max>
+                            </ImpulseControllerPair>
+                        </Compression>
+                        <Wave>
+                            <ImpulseControllerWavePair>
+                                <Min>
+                                    <CinebotWaveformData>
+                                        <Amplitude>1</Amplitude>
+                                        <Base>0</Base>
+                                        <Offset>0</Offset>
+                                        <Frequency>4</Frequency>
+                                        <Function>CWF_Sine</Function>
+                                        <LPF>-1</LPF>
+                                        <HPF>1</HPF>
+                                        <Invert>False</Invert>
+                                    </CinebotWaveformData>
+                                </Min>
+                                <Max>
+                                    <CinebotWaveformData>
+                                        <Amplitude>1</Amplitude>
+                                        <Base>0</Base>
+                                        <Offset>0</Offset>
+                                        <Frequency>4</Frequency>
+                                        <Function>CWF_Sine</Function>
+                                        <LPF>-1</LPF>
+                                        <HPF>1</HPF>
+                                        <Invert>False</Invert>
+                                    </CinebotWaveformData>
+                                </Max>
+                            </ImpulseControllerWavePair>
+                        </Wave>
+                    </ImpulseControllerReaction>
+                </member>
+            </Reactions>
+        </ImpulseControllerChannel>
+    </X>
+    <Y>
+        <ImpulseControllerChannel>
+            <Speed>5</Speed>
+            <Reactions Count="0"></Reactions>
+        </ImpulseControllerChannel>
+    </Y>
+    <Z>
+        <ImpulseControllerChannel>
+            <Speed>5</Speed>
+            <Reactions Count="0"></Reactions>
+        </ImpulseControllerChannel>
+    </Z>
+    <Pitch>
+        <ImpulseControllerChannel>
+            <Speed>5</Speed>
+            <Reactions Count="0"></Reactions>
+        </ImpulseControllerChannel>
+    </Pitch>
+    <Roll>
+        <ImpulseControllerChannel>
+            <Speed>5</Speed>
+            <Reactions Count="0"></Reactions>
+        </ImpulseControllerChannel>
+    </Roll>
+    <Yaw>
+        <ImpulseControllerChannel>
+            <Speed>5</Speed>
+            <Reactions Count="0"></Reactions>
+        </ImpulseControllerChannel>
+    </Yaw>
+    <FOV>
+        <ImpulseControllerChannel>
+            <Speed>5</Speed>
+            <Reactions Count="0"></Reactions>
+        </ImpulseControllerChannel>
+    </FOV>
+</ImpulseControllerResponse>
+<NoiseControllerData Guid="3613e998-d487-451a-b701-05d7d73032ff">
+    <Magnitude>
+        <Vec3>
+            <x>0,3</x>
+            <y>0</y>
+            <z>8</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>8</Frequency>
+    <Roughness>0,9</Roughness>
+    <Octaves>0x00000001</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>-1</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] b8f95cf4-0afd-4c22-88d2-6e61f6ca8340</CurveParams>
+    <CurveDampingTime>5</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="c7be3e92-9123-4e5e-a748-1a1549f36d1b">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>7</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_ROLL</Parameter>
+    <Frequency>7</Frequency>
+    <Roughness>1</Roughness>
+    <Octaves>0x00000001</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>-1</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] 770692a5-9024-4a22-97b5-a11f2f6dbe87</CurveParams>
+    <CurveDampingTime>5</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="e4b74edf-c788-4d7e-802c-7b4290227d89">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>5</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>5</Frequency>
+    <Roughness>1</Roughness>
+    <Octaves>0x00000003</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>-1</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] 6d340bd5-ea15-4af7-812e-93f1ac82ebcd</CurveParams>
+    <CurveDampingTime>5</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="e664131a-acec-4613-876c-77269ec25e6f">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>8</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>8</Frequency>
+    <Roughness>0,54</Roughness>
+    <Octaves>0x00000004</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>0,45</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] dc944b90-00c6-4e18-8b2e-0f1f5335edca</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="9beaf4ff-119d-47a3-83e3-514971b734cc">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>6</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>6</Frequency>
+    <Roughness>1</Roughness>
+    <Octaves>0x00000002</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>0,3</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] 07ed8fa6-72bc-4706-a7d0-6b6157dfd470</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="d2dab009-412e-4f07-a66a-60e39579cd94">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>5</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_ROLL</Parameter>
+    <Frequency>5</Frequency>
+    <Roughness>1</Roughness>
+    <Octaves>0x00000002</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>0,3</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] 73077ed0-591f-4de0-a576-5e07014a5e97</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>
+<NoiseControllerData Guid="9ffb341c-e707-4c51-ad1d-b8d4070a96d2">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>8</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_ROLL</Parameter>
+    <Frequency>8</Frequency>
+    <Roughness>1</Roughness>
+    <Octaves>0x00000003</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0</RampIn>
+    <Duration>0,7</Duration>
+    <RampOut>0</RampOut>
+    <CurveParams>[CurveData] 8c814313-217a-4c03-a83e-cd05da323ce2</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_RampOff</ConditionGoesFalseBehavior>
+</NoiseControllerData>

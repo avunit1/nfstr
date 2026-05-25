@@ -1,0 +1,165 @@
+<ClientAreaTriggerEntityData Guid="9b9b7d44-4967-41db-bc5c-a263beb8ec0b">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <GeometryScale>
+        <Vec3>
+            <x>250</x>
+            <y>250</y>
+            <z>250</z>
+        </Vec3>
+    </GeometryScale>
+    <GeometryType>SimpleAreaTriggerGeometryType_Sphere</GeometryType>
+</ClientAreaTriggerEntityData>
+<EffectReferenceObjectData Guid="d39a62d8-1d06-466e-84eb-b9f429bce83a">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Ambient/IndependencePass/AMB_SnowFalling_Branch [2b5be075-cd13-4162-9020-2f4ee6429fe7]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>False</AutoStart>
+</EffectReferenceObjectData>
+<EffectReferenceObjectData Guid="30af2cae-7ef9-4aea-8427-a7ddba3f98cd">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0,4969788</x>
+                    <y>0</y>
+                    <z>-0,5489285</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Gameplay/Checkpoint_Marker_Smoke [e685a42c-23b3-e884-c281-7eb5e83a9b1e]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>False</AutoStart>
+</EffectReferenceObjectData>
+<SpatialPrefabBlueprint Guid="cc54d487-872e-5a78-5e63-372e1e9fd0d9">
+    <Name>_c4/Effects/Ambient/IndependencePass/AMB_SnowFalling_Branch_Triggered</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="1">
+        <member Index="0">
+            <EventConnection>
+                <Source>[ClientAreaTriggerEntityData] 9b9b7d44-4967-41db-bc5c-a263beb8ec0b</Source>
+                <Target>[EffectReferenceObjectData] d39a62d8-1d06-466e-84eb-b9f429bce83a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnEnter [FB35AD6C]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>nullptr</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="3">
+        <member Index="0">[EffectReferenceObjectData] d39a62d8-1d06-466e-84eb-b9f429bce83a</member>
+        <member Index="1">[EffectReferenceObjectData] 30af2cae-7ef9-4aea-8427-a7ddba3f98cd</member>
+        <member Index="2">[ClientAreaTriggerEntityData] 9b9b7d44-4967-41db-bc5c-a263beb8ec0b</member>
+    </Objects>
+</SpatialPrefabBlueprint>

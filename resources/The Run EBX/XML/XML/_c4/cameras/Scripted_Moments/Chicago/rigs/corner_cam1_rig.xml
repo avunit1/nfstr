@@ -1,0 +1,188 @@
+<BasicControllerData Guid="dcd32d13-8b25-4dd6-b4c7-af9cc1b17c3d">
+    <Transposer>[LocatorTransposerData] f1679d6c-35b4-4bf9-b822-4d8dcefc8776</Transposer>
+    <Composer>[ScreenSpaceComposerData] 0b586a36-eb5f-4764-ba18-bcdb55e9ff8c</Composer>
+    <TimeScale>0,7</TimeScale>
+</BasicControllerData>
+<BasicControllerData Guid="b46afb70-c6cf-4441-809a-2fe0de0a1a9c">
+    <Transposer>[LocatorTransposerData] 2c76e6af-3425-4cbb-9d11-6a7fe37b92b3</Transposer>
+    <Composer>[ScreenSpaceComposerData] 2d67acff-deb8-4513-ba01-02a64d8b5458</Composer>
+    <TimeScale>1</TimeScale>
+</BasicControllerData>
+<BlendControllerData Guid="17aa9335-38f1-4c01-a88d-759da07fe98e">
+    <FromController>[BasicControllerData] dcd32d13-8b25-4dd6-b4c7-af9cc1b17c3d</FromController>
+    <ToController>[BasicControllerData] b46afb70-c6cf-4441-809a-2fe0de0a1a9c</ToController>
+    <Transition>[CinebotTransitionData] cacddbcb-950b-4706-b532-e7877790c2a5</Transition>
+    <AdditionalBlendToControllers Count="0"></AdditionalBlendToControllers>
+    <BlackBoardVarName></BlackBoardVarName>
+</BlendControllerData>
+<CinebotControllerRigAsset Guid="7ce9bd22-49cc-d19c-d4b0-50528fade888">
+    <Name>_c4/cameras/Scripted_Moments/Chicago/rigs/Corner_Cam1_Rig</Name>
+    <Controllers Count="1">
+        <member Index="0">[BlendControllerData] 17aa9335-38f1-4c01-a88d-759da07fe98e</member>
+    </Controllers>
+    <ForceAllInputTypesEnabled>False</ForceAllInputTypesEnabled>
+</CinebotControllerRigAsset>
+<CinebotTransitionData Guid="cacddbcb-950b-4706-b532-e7877790c2a5">
+    <TimeToDelay>0,75</TimeToDelay>
+    <Time>0,6</Time>
+    <EaseInControl>0,3</EaseInControl>
+    <EaseOutControl>0,5</EaseOutControl>
+    <Blend>CINEBOT_BLEND_EULER</Blend>
+    <Clean>False</Clean>
+</CinebotTransitionData>
+<LocatorTransposerData Guid="2c76e6af-3425-4cbb-9d11-6a7fe37b92b3">
+    <Offset>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <CinebotLocatorIdentifier>nullptr</CinebotLocatorIdentifier>
+    <CinebotLocatorName>CornerCam_Locator</CinebotLocatorName>
+</LocatorTransposerData>
+<LocatorTransposerData Guid="f1679d6c-35b4-4bf9-b822-4d8dcefc8776">
+    <Offset>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <CinebotLocatorIdentifier>nullptr</CinebotLocatorIdentifier>
+    <CinebotLocatorName>CornerCam_Locator</CinebotLocatorName>
+</LocatorTransposerData>
+<ScreenSpaceComposerData Guid="2d67acff-deb8-4513-ba01-02a64d8b5458">
+    <FocalPlaneOffset>0</FocalPlaneOffset>
+    <FStop>100</FStop>
+    <MinimumNearBlur>0,3</MinimumNearBlur>
+    <Offset>
+        <Vec3>
+            <x>0,2</x>
+            <y>0,8</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <Secondary>
+        <ScreenSpaceComposerTarget>
+            <Offset>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </Offset>
+            <TargetPart></TargetPart>
+            <MaxAngleHard>0</MaxAngleHard>
+            <MaxAngleSoft>90</MaxAngleSoft>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerTarget>
+    </Secondary>
+    <TargetPart></TargetPart>
+    <MarkerType>MARKER_UNKNOWN</MarkerType>
+    <OffsetScale>nullptr</OffsetScale>
+    <HardTop>0,1</HardTop>
+    <SoftTop>0,65</SoftTop>
+    <SoftBottom>0,65</SoftBottom>
+    <HardBottom>0,9</HardBottom>
+    <VerticalBlendTime>0,3</VerticalBlendTime>
+    <VerticalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </VerticalBlendControl>
+    <HardLeft>0,1</HardLeft>
+    <SoftLeft>0,6</SoftLeft>
+    <SoftRight>0,6</SoftRight>
+    <HardRight>0,9</HardRight>
+    <HorizontalBlendTime>0,3</HorizontalBlendTime>
+    <HorizontalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </HorizontalBlendControl>
+    <FOV>12</FOV>
+    <Roll>0</Roll>
+    <NearPlane>-1</NearPlane>
+    <FarPlane>-1</FarPlane>
+    <UpDampingBlendTime>0,2</UpDampingBlendTime>
+    <UseUpDamping>False</UseUpDamping>
+    <UseUpFromScene>False</UseUpFromScene>
+</ScreenSpaceComposerData>
+<ScreenSpaceComposerData Guid="0b586a36-eb5f-4764-ba18-bcdb55e9ff8c">
+    <FocalPlaneOffset>0</FocalPlaneOffset>
+    <FStop>100</FStop>
+    <MinimumNearBlur>0,3</MinimumNearBlur>
+    <Offset>
+        <Vec3>
+            <x>0,8</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <Secondary>
+        <ScreenSpaceComposerTarget>
+            <Offset>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </Offset>
+            <TargetPart></TargetPart>
+            <MaxAngleHard>0</MaxAngleHard>
+            <MaxAngleSoft>90</MaxAngleSoft>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerTarget>
+    </Secondary>
+    <TargetPart></TargetPart>
+    <MarkerType>MARKER_UNKNOWN</MarkerType>
+    <OffsetScale>nullptr</OffsetScale>
+    <HardTop>0,1</HardTop>
+    <SoftTop>0,5</SoftTop>
+    <SoftBottom>0,5</SoftBottom>
+    <HardBottom>0,9</HardBottom>
+    <VerticalBlendTime>0,3</VerticalBlendTime>
+    <VerticalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </VerticalBlendControl>
+    <HardLeft>0,1</HardLeft>
+    <SoftLeft>0,7</SoftLeft>
+    <SoftRight>0,7</SoftRight>
+    <HardRight>0,9</HardRight>
+    <HorizontalBlendTime>0,2</HorizontalBlendTime>
+    <HorizontalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </HorizontalBlendControl>
+    <FOV>8</FOV>
+    <Roll>0</Roll>
+    <NearPlane>-1</NearPlane>
+    <FarPlane>-1</FarPlane>
+    <UpDampingBlendTime>0,2</UpDampingBlendTime>
+    <UseUpDamping>False</UseUpDamping>
+    <UseUpFromScene>False</UseUpFromScene>
+</ScreenSpaceComposerData>

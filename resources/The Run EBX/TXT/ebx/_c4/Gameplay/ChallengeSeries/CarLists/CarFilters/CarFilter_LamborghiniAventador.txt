@@ -1,0 +1,59 @@
+BTFilterNode 7b5ee610-96b1-462e-ab42-ea6ecc06aa42
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) ee604360-193d-454e-b220-50a388d40763
+	Eval 07747b88-e1cd-470d-97ff-e2430d2d3d6a
+BTSelectorNode e286468a-2e7f-4dd0-8e68-1cd0ffc8bf70
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 7b5ee610-96b1-462e-ab42-ea6ecc06aa42
+BTTaskNode ee604360-193d-454e-b220-50a388d40763
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task a0213d65-03e9-44b7-96b8-9dde36f7e351
+BehaviourTreeData d8040ca9-e2c8-4d8f-a090-49ca0196fcc9 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_LamborghiniAventador
+	Root e286468a-2e7f-4dd0-8e68-1cd0ffc8bf70
+	Description 
+VQ_Do a0213d65-03e9-44b7-96b8-9dde36f7e351
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 07747b88-e1cd-470d-97ff-e2430d2d3d6a
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 2
+		RValueFloat 0.0
+		RValueBool False
+		RValueString lam_ave_700_12_pp_stock_1
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

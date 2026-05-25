@@ -1,0 +1,204 @@
+DelayEntityData 0bc58320-c339-4183-bb25-367076a2b848
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+	Delay 0.032999999821186066
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents False
+EventGateEntityData 59a5b68e-9c79-47b4-89cb-2f071485ebf0
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Default True
+	Realm Realm_Client
+EventGateEntityData 37a467a3-070d-425f-815f-4e46210ac3b6
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Default True
+	Realm Realm_Client
+FloatTriggerEntityData f0a53803-231c-4657-b4d4-b2a49c57ff13
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 1
+	Realm Realm_Client
+	ExitOffset 0.0
+	CheckOnEnable True
+	UseClampedValue False
+	ClampedValue 0.0
+	Enable True
+	Min 0.0
+	Max 50.0
+	In 0.0
+FloatTriggerEntityData 6243a605-8d5d-49e7-991d-2fc2d93b1a74
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 4
+	Realm Realm_Client
+	ExitOffset 0.0
+	CheckOnEnable True
+	UseClampedValue False
+	ClampedValue 0.0
+	Enable True
+	Min 0.0
+	Max 100.0
+	In 0.0
+InterfaceDescriptorData 27894dbe-027b-4421-940c-3429d65d2c55
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -1231086613
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -1481638456
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1317643812
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 193448857
+LogicPrefabBlueprint d4fd49f3-231d-48ec-9cdc-25f10a6b20b1 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Sound/Dialogue/Logic/Unscripted/VO_1-51_WrongWay_Prefab
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 27894dbe-027b-4421-940c-3429d65d2c55
+							Target 6243a605-8d5d-49e7-991d-2fc2d93b1a74
+							SourceFieldId -1231086613
+							TargetFieldId 5862146
+						member(1)::PropertyConnection
+							Source 27894dbe-027b-4421-940c-3429d65d2c55
+							Target f0a53803-231c-4657-b4d4-b2a49c57ff13
+							SourceFieldId -1481638456
+							TargetFieldId 5862146
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source 9a2baef2-f843-45ac-bb21-1ddda6bba0c1
+							Target 27894dbe-027b-4421-940c-3429d65d2c55
+							SourceFieldId -1967212354
+							TargetFieldId 193448857
+				EventConnections::array
+					member(0)::EventConnection
+						Source f0a53803-231c-4657-b4d4-b2a49c57ff13
+						Target 59a5b68e-9c79-47b4-89cb-2f071485ebf0
+						SourceEvent::EventSpec
+							Id 1694376471
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source f0a53803-231c-4657-b4d4-b2a49c57ff13
+						Target 59a5b68e-9c79-47b4-89cb-2f071485ebf0
+						SourceEvent::EventSpec
+							Id 481804407
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 59a5b68e-9c79-47b4-89cb-2f071485ebf0
+						Target 37a467a3-070d-425f-815f-4e46210ac3b6
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 6243a605-8d5d-49e7-991d-2fc2d93b1a74
+						Target 37a467a3-070d-425f-815f-4e46210ac3b6
+						SourceEvent::EventSpec
+							Id 1694376471
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 6243a605-8d5d-49e7-991d-2fc2d93b1a74
+						Target 37a467a3-070d-425f-815f-4e46210ac3b6
+						SourceEvent::EventSpec
+							Id 481804407
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 37a467a3-070d-425f-815f-4e46210ac3b6
+						Target 0bc58320-c339-4183-bb25-367076a2b848
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 0bc58320-c339-4183-bb25-367076a2b848
+						Target 9a2baef2-f843-45ac-bb21-1ddda6bba0c1
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1688613187
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source 27894dbe-027b-4421-940c-3429d65d2c55
+						Target 59a5b68e-9c79-47b4-89cb-2f071485ebf0
+						SourceEvent::EventSpec
+							Id -1317643812
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+				Descriptor 27894dbe-027b-4421-940c-3429d65d2c55
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 9a2baef2-f843-45ac-bb21-1ddda6bba0c1
+			member(1) f0a53803-231c-4657-b4d4-b2a49c57ff13
+			member(2) 59a5b68e-9c79-47b4-89cb-2f071485ebf0
+			member(3) 37a467a3-070d-425f-815f-4e46210ac3b6
+			member(4) 6243a605-8d5d-49e7-991d-2fc2d93b1a74
+			member(5) 0bc58320-c339-4183-bb25-367076a2b848
+VoiceOverEventEntityData 9a2baef2-f843-45ac-bb21-1ddda6bba0c1
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	VoEvent _c4/Sound/Dialogue/Logic/Unscripted/VO_1-51_Wrong_Logic/667f7f3f-4c2e-487d-86a8-520b32ee2f51
+	EventPlayer *nullGuid*
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False

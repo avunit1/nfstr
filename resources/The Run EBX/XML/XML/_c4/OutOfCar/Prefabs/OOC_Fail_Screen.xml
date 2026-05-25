@@ -1,0 +1,935 @@
+<CountDownEntityData Guid="04b81d39-0cf6-4f71-8c84-ee68f8a546d5">
+    <IndexInBlueprint>0007</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <StartValue>0x0000000e</StartValue>
+    <Realm>Realm_Client</Realm>
+    <RunOnce>True</RunOnce>
+</CountDownEntityData>
+<DelayEntityData Guid="3fc8e8de-a0d3-4639-8b93-2e522e626aae">
+    <IndexInBlueprint>000A</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<FadeEntityData Guid="84b64dbb-48f0-492f-a005-4b0b0bd5cc9a">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,1</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<FadeEntityData Guid="c4934685-4090-4109-8bbe-b333631ece1e">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,5</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<InterfaceDescriptorData Guid="e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="7">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x03044754</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xf8e67a86</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x2ff249cc</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="3">
+            <DynamicEvent>
+                <Id>0xb4f5ce1e</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="4">
+            <DynamicEvent>
+                <Id>0x0d127270</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="5">
+            <DynamicEvent>
+                <Id>0xc618a822</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="6">
+            <DynamicEvent>
+                <Id>0x0db4c1cd</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnComplete [25B1196D]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>OnStart [FC689444]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="8794f1fb-3d9e-3a3c-f843-aa765e27d2b4">
+    <Name>_c4/OutOfCar/Prefabs/OOC_Fail_Screen</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="33">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</Source>
+                <Target>[UIGraphEntityData] 0d139bcd-52e7-475b-99c6-8938e9cf6863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9b97b3b5</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</Source>
+                <Target>[UIGraphEntityData] 4a0b37c9-60f7-46c8-a30c-718798a73aad</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9b97b3b5</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</Source>
+                <Target>[FadeEntityData] 84b64dbb-48f0-492f-a005-4b0b0bd5cc9a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</Source>
+                <Target>[UIGraphEntityData] 4a0b37c9-60f7-46c8-a30c-718798a73aad</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9b97b3b5</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</Source>
+                <Target>[UIGraphEntityData] 0d139bcd-52e7-475b-99c6-8938e9cf6863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9b97b3b5</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</Source>
+                <Target>[FadeEntityData] 84b64dbb-48f0-492f-a005-4b0b0bd5cc9a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</Source>
+                <Target>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnStart [FC689444]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</Source>
+                <Target>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnStart [FC689444]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x03044754</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xf8e67a86</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x2ff249cc</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb4f5ce1e</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[UIGraphEntityData] 4a0b37c9-60f7-46c8-a30c-718798a73aad</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x2ff249cc</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Busted [A01A5574]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="13">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[UIGraphEntityData] 4a0b37c9-60f7-46c8-a30c-718798a73aad</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x03044754</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Busted [A01A5574]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="14">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[UIGraphEntityData] 0d139bcd-52e7-475b-99c6-8938e9cf6863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb4f5ce1e</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xbdd85715</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="15">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[UIGraphEntityData] 0d139bcd-52e7-475b-99c6-8938e9cf6863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xf8e67a86</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xbdd85715</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="16">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[SequenceEntityData] 65c4c009-fe88-4f5d-b4aa-154611177cf9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0d127270</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="17">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[SequenceEntityData] 65c4c009-fe88-4f5d-b4aa-154611177cf9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xc618a822</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="18">
+            <EventConnection>
+                <Source>[SequenceEntityData] 65c4c009-fe88-4f5d-b4aa-154611177cf9</Source>
+                <Target>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnStart [FC689444]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="19">
+            <EventConnection>
+                <Source>[SequenceEntityData] 65c4c009-fe88-4f5d-b4aa-154611177cf9</Source>
+                <Target>[UIGraphEntityData] 0d139bcd-52e7-475b-99c6-8938e9cf6863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9b97b3b5</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="20">
+            <EventConnection>
+                <Source>[SequenceEntityData] 65c4c009-fe88-4f5d-b4aa-154611177cf9</Source>
+                <Target>[UIGraphEntityData] 4a0b37c9-60f7-46c8-a30c-718798a73aad</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9b97b3b5</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="21">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[UIGraphEntityData] 0d139bcd-52e7-475b-99c6-8938e9cf6863</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0d127270</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xbdd85715</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="22">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[UIGraphEntityData] 4a0b37c9-60f7-46c8-a30c-718798a73aad</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xc618a822</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Busted [A01A5574]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="23">
+            <EventConnection>
+                <Source>[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</Source>
+                <Target>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="24">
+            <EventConnection>
+                <Source>[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</Source>
+                <Target>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="25">
+            <EventConnection>
+                <Source>[SequenceEntityData] 65c4c009-fe88-4f5d-b4aa-154611177cf9</Source>
+                <Target>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="26">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Source>
+                <Target>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Restart [4DB654D2]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnComplete [25B1196D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="27">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Source>
+                <Target>[CountDownEntityData] 04b81d39-0cf6-4f71-8c84-ee68f8a546d5</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Restart [4DB654D2]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x6ddf1cd0</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="28">
+            <EventConnection>
+                <Source>[CountDownEntityData] 04b81d39-0cf6-4f71-8c84-ee68f8a546d5</Source>
+                <Target>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnReachedZero [F588929A]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x7c12cb77</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="29">
+            <EventConnection>
+                <Source>[DelayEntityData] 3fc8e8de-a0d3-4639-8b93-2e522e626aae</Source>
+                <Target>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x1b6c9a3a</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="30">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Source>
+                <Target>[UIGraphEntityData] f86cfb3a-3c29-4173-8e03-2f45eceb62be</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x7a8832df</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xde11e65d</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="31">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Source>
+                <Target>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0db4c1cd</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="32">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</Source>
+                <Target>[FadeEntityData] c4934685-4090-4109-8bbe-b333631ece1e</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Restart [4DB654D2]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] e8dcbc80-15d4-4caf-aaf0-1bc5cb8f2555</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="11">
+        <member Index="0">[FadeEntityData] 84b64dbb-48f0-492f-a005-4b0b0bd5cc9a</member>
+        <member Index="1">[FadeEntityData] c4934685-4090-4109-8bbe-b333631ece1e</member>
+        <member Index="2">[UIGraphEntityData] 4a0b37c9-60f7-46c8-a30c-718798a73aad</member>
+        <member Index="3">[UIGraphEntityData] 0d139bcd-52e7-475b-99c6-8938e9cf6863</member>
+        <member Index="4">[SequenceEntityData] 77beaf41-7236-4c46-9c85-e8835a0e9096</member>
+        <member Index="5">[SequenceEntityData] 36f022ae-f1d2-40e7-a020-75135919e27f</member>
+        <member Index="6">[SequenceEntityData] 65c4c009-fe88-4f5d-b4aa-154611177cf9</member>
+        <member Index="7">[CountDownEntityData] 04b81d39-0cf6-4f71-8c84-ee68f8a546d5</member>
+        <member Index="8">[UIGraphEntityData] f86cfb3a-3c29-4173-8e03-2f45eceb62be</member>
+        <member Index="9">[SelectEventEntityData] 940430f1-040d-4880-822b-b6951d649b79</member>
+        <member Index="10">[DelayEntityData] 3fc8e8de-a0d3-4639-8b93-2e522e626aae</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<SelectEventEntityData Guid="940430f1-040d-4880-822b-b6951d649b79">
+    <IndexInBlueprint>0009</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="2">
+        <member Index="0">Restart</member>
+        <member Index="1">RetryFlow</member>
+    </Events>
+</SelectEventEntityData>
+<SequenceEntityData Guid="77beaf41-7236-4c46-9c85-e8835a0e9096">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="2">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000dae</Time>
+            </SequenceEventData>
+        </member>
+        <member Index="1">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000fa0</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00000fa0</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SequenceEntityData Guid="36f022ae-f1d2-40e7-a020-75135919e27f">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="2">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000000</Time>
+            </SequenceEventData>
+        </member>
+        <member Index="1">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000fa0</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00000fa0</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SequenceEntityData Guid="65c4c009-fe88-4f5d-b4aa-154611177cf9">
+    <IndexInBlueprint>0006</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="1">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000fa0</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00000fa0</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<UIGraphEntityData Guid="4a0b37c9-60f7-46c8-a30c-718798a73aad">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Events Count="0"></Events>
+    <GraphAsset>[Ebx] _c4/ui/flow/graph/stampgraph [5c87afda-6c97-0814-e1d1-5a65c513e941]</GraphAsset>
+    <InputNodeName></InputNodeName>
+    <GraphPriority>UIGraphPriority_Normal</GraphPriority>
+    <State>UIState_Playing</State>
+    <PopPreviousGraph>True</PopPreviousGraph>
+</UIGraphEntityData>
+<UIGraphEntityData Guid="0d139bcd-52e7-475b-99c6-8938e9cf6863">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Events Count="0"></Events>
+    <GraphAsset>[Ebx] _c4/ui/flow/graph/stampgraph [5c87afda-6c97-0814-e1d1-5a65c513e941]</GraphAsset>
+    <InputNodeName></InputNodeName>
+    <GraphPriority>UIGraphPriority_Normal</GraphPriority>
+    <State>UIState_Playing</State>
+    <PopPreviousGraph>True</PopPreviousGraph>
+</UIGraphEntityData>
+<UIGraphEntityData Guid="f86cfb3a-3c29-4173-8e03-2f45eceb62be">
+    <IndexInBlueprint>0008</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Events Count="0"></Events>
+    <GraphAsset>[Ebx] _c4/ui/flow/graph/retrygraphooc [22c03b16-0eb0-4cf8-8edf-9baaf45c652c]</GraphAsset>
+    <InputNodeName></InputNodeName>
+    <GraphPriority>UIGraphPriority_Normal</GraphPriority>
+    <State>UIState_Playing</State>
+    <PopPreviousGraph>True</PopPreviousGraph>
+</UIGraphEntityData>

@@ -1,0 +1,128 @@
+AudioGraphParameter b909a5e4-f295-46a0-a38e-33b147294392
+	$::DataContainer
+	DefaultValue 100.0
+	NameHash 3792273529
+	ValueIndex 3
+BasicMultiplyTransformNodeData 5c52669f-4510-4e38-a64c-08d66b662eb7
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 6
+		IsConnected False
+	Y::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 6
+		IsConnected False
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 5
+		IsConnected False
+MixerAsset 2be2831d-f350-b85e-695e-b1883b6b31ef #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Sound/Mixing/Moments/13_41_NewYork/MIX_13_41_SubwayVehicleDucker
+	Graph e60502db-466a-cba9-4f6d-2e2d17908c7d
+	Presets::array
+		member(0) a9e44a7a-15a9-9a73-647f-69dff8f5ab1c
+	DefaultPreset a9e44a7a-15a9-9a73-647f-69dff8f5ab1c
+MixerGraphData e60502db-466a-cba9-4f6d-2e2d17908c7d
+	$::AudioGraphData
+		$::DataContainer
+		Nodes::array
+			member(0) bd97372f-8df0-4c27-b78d-4dd520a02074
+			member(1) e1bc75a6-18c8-4d93-975c-384ac7f5501e
+			member(2) 5c52669f-4510-4e38-a64c-08d66b662eb7
+			member(3) caeb003d-a543-40e5-b943-b3e6a65b7134
+		PublicParameters *nullArray*
+		PublicEvents *nullArray*
+		PublicAssetParameters *nullArray*
+		BlackboardSends *nullArray*
+		BlackboardReceives *nullArray*
+		PublicValueCount 1
+		ValueCount 9
+		UnconnectedValues::array
+			member(0) -5.0
+			member(1) 0.0
+			member(2) 1.0
+			member(3) 15.0
+			member(4) 60.0
+	Inputs::array
+		member(0) b909a5e4-f295-46a0-a38e-33b147294392
+	Outputs *nullArray*
+MixerInputEntry fe508801-1fb3-4242-ba41-360b41423ba2
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	Source b909a5e4-f295-46a0-a38e-33b147294392
+MixerInputNodeData bd97372f-8df0-4c27-b78d-4dd520a02074
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) fe508801-1fb3-4242-ba41-360b41423ba2
+MixerPreset a9e44a7a-15a9-9a73-647f-69dff8f5ab1c
+	$::DataContainer
+	NameHash 0
+	Groups::array
+		member(0)::MixerPresetGroupData
+			Group _c4/Sound/MixerSystem_C4/2854c325-eec3-49e1-a719-e663881625cf
+			State MixGroupState_Normal
+			AttackTime 0.10000000149011612
+			ReleaseTime 0.20000000298023224
+			IsDominant False
+			IsOffset False
+			Priority 1
+			Properties::array
+				member(0)::MixGroupPropertyValue
+					Property 0
+					Value 0.0
+					Controlled True
+					AttackTime 0.10000000149011612
+					ReleaseTime 0.20000000298023224
+	Nodes *nullArray*
+MixerSetPropertyEntry 8302624d-99ca-4e77-9fff-e0e0f066aa49
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+	Target 0
+	Group _c4/Sound/MixerSystem_C4/2854c325-eec3-49e1-a719-e663881625cf
+	AttackTime 0.25
+	ReleaseTime 0.10000000149011612
+MixerSetPropertyNodeData caeb003d-a543-40e5-b943-b3e6a65b7134
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 8302624d-99ca-4e77-9fff-e0e0f066aa49
+ScaleClampNodeData e1bc75a6-18c8-4d93-975c-384ac7f5501e
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 15.0
+		ValueIndex 7
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 60.0
+		ValueIndex 8
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue -5.0
+		ValueIndex 4
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 5
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True

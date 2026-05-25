@@ -1,0 +1,92 @@
+<BTIfNode Guid="5c4f2653-efa3-4409-bf64-7ef44a85c28a">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTTaskNode] 21cf5b55-68cb-4608-bcfb-2de976e87ccb</member>
+        <member Index="1">[BTIfNode] 5c41159a-1419-4e2f-994e-599b375610a5</member>
+    </Nodes>
+    <Eval>[BT_IsVar] a5376a6c-cce1-4c66-b0a7-d018b0c883a7</Eval>
+</BTIfNode>
+<BTIfNode Guid="5c41159a-1419-4e2f-994e-599b375610a5">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 0ea6c21b-0fd3-4680-8c6c-6b7e54016ee7</member>
+    </Nodes>
+    <Eval>[BT_IsVar] a6bac2b2-5029-4f0a-af2c-3c1ec5b11a22</Eval>
+</BTIfNode>
+<BTSelectorNode Guid="a5800e48-d2fa-42cb-bb97-822df902bddb">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>True</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTTaskNode] ab2e4d50-6250-4b87-85cf-3802fa533173</member>
+        <member Index="1">[BTIfNode] 5c4f2653-efa3-4409-bf64-7ef44a85c28a</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="21cf5b55-68cb-4608-bcfb-2de976e87ccb">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoSideRam] 687b4a97-cf3b-41e7-b0b6-4f2ddf6c3974</Task>
+</BTTaskNode>
+<BTTaskNode Guid="ab2e4d50-6250-4b87-85cf-3802fa533173">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoDynamicSubBehavior] 32a4ef66-74b1-411d-9d7a-bf8ff605c83e</Task>
+</BTTaskNode>
+<BTTaskNode Guid="0ea6c21b-0fd3-4680-8c6c-6b7e54016ee7">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoTriggerTacticVO] b709a039-4d5e-45e0-82f0-a493d9474bc3</Task>
+</BTTaskNode>
+<BTWrapperNode Guid="313c9580-04b0-46b0-85a2-062f2b2bf624">
+    <NodeType>ENodeType_Wrapper</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTSelectorNode] a5800e48-d2fa-42cb-bb97-822df902bddb</member>
+    </Nodes>
+    <ReturnTrue>False</ReturnTrue>
+</BTWrapperNode>
+<BT_DoDynamicSubBehavior Guid="32a4ef66-74b1-411d-9d7a-bf8ff605c83e">
+    <FuncType>EFuncType_Task</FuncType>
+    <Behavior>nullptr</Behavior>
+</BT_DoDynamicSubBehavior>
+<BT_DoSideRam Guid="687b4a97-cf3b-41e7-b0b6-4f2ddf6c3974">
+    <FuncType>EFuncType_Task</FuncType>
+    <OutTime>0,3</OutTime>
+    <OutDistance>3</OutDistance>
+    <InTime>0,5</InTime>
+    <InDistance>10</InDistance>
+</BT_DoSideRam>
+<BT_DoTriggerTacticVO Guid="b709a039-4d5e-45e0-82f0-a493d9474bc3">
+    <FuncType>EFuncType_Task</FuncType>
+</BT_DoTriggerTacticVO>
+<BT_IsVar Guid="a5376a6c-cce1-4c66-b0a7-d018b0c883a7">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <Variable>EVar_TacticTime</Variable>
+    <Value>1</Value>
+    <Comparator>Compare_LessThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BT_IsVar Guid="a6bac2b2-5029-4f0a-af2c-3c1ec5b11a22">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <Variable>EVar_TacticTime</Variable>
+    <Value>0,3</Value>
+    <Comparator>Compare_MoreThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BehaviourTreeData Guid="b0ee556b-0131-4deb-a0b6-dc9ef87ac962">
+    <Name>_c4/AI/Behaviors/B_SideRam_Fast</Name>
+    <Root>[BTWrapperNode] 313c9580-04b0-46b0-85a2-062f2b2bf624</Root>
+    <Description></Description>
+</BehaviourTreeData>

@@ -1,0 +1,207 @@
+<BasicControllerData Guid="20e0a7bc-f764-4007-840a-5b4f34cdc59d">
+    <Transposer>[TorusTransposerData] efadc7ed-20e3-42cc-9534-0853b7049a64</Transposer>
+    <Composer>[ScreenSpaceComposerData] 53756c96-ed78-4f2c-a928-1dc604c8f2ff</Composer>
+    <TimeScale>1</TimeScale>
+</BasicControllerData>
+<BasicControllerData Guid="e1af4899-27af-4d37-8d13-db3bad584838">
+    <Transposer>[TorusTransposerData] 48933e0a-144f-4822-b373-c1bc9a25c924</Transposer>
+    <Composer>[LocatorComposerData] 5d2d4a18-ea49-4e75-a969-87d12912b390</Composer>
+    <TimeScale>1</TimeScale>
+</BasicControllerData>
+<BlendControllerData Guid="850d3610-eda6-444c-b2e5-1148463520a0">
+    <FromController>[BasicControllerData] 20e0a7bc-f764-4007-840a-5b4f34cdc59d</FromController>
+    <ToController>[BasicControllerData] e1af4899-27af-4d37-8d13-db3bad584838</ToController>
+    <Transition>[CinebotTransitionData] 1c9866d2-eb38-4163-9254-e43df4193101</Transition>
+    <AdditionalBlendToControllers Count="0"></AdditionalBlendToControllers>
+    <BlackBoardVarName></BlackBoardVarName>
+</BlendControllerData>
+<CinebotControllerRigAsset Guid="996125b2-4aea-a39b-633d-9eb350237798">
+    <Name>_c4/cameras/OOC/SM_10_6_TrainEscape/rigs/FirstPeekabooTrain_Rig</Name>
+    <Controllers Count="1">
+        <member Index="0">[BlendControllerData] 850d3610-eda6-444c-b2e5-1148463520a0</member>
+    </Controllers>
+    <ForceAllInputTypesEnabled>False</ForceAllInputTypesEnabled>
+</CinebotControllerRigAsset>
+<CinebotTransitionData Guid="1c9866d2-eb38-4163-9254-e43df4193101">
+    <TimeToDelay>4,7</TimeToDelay>
+    <Time>0,7</Time>
+    <EaseInControl>0,5</EaseInControl>
+    <EaseOutControl>0,5</EaseOutControl>
+    <Blend>CINEBOT_BLEND_EULER</Blend>
+    <Clean>False</Clean>
+</CinebotTransitionData>
+<LocatorComposerData Guid="5d2d4a18-ea49-4e75-a969-87d12912b390">
+    <FocalPlaneOffset>1,5</FocalPlaneOffset>
+    <FStop>7</FStop>
+    <MinimumNearBlur>0,3</MinimumNearBlur>
+    <Offset>
+        <Vec3>
+            <x>0,7</x>
+            <y>2</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <CinebotLocatorIdentifier>nullptr</CinebotLocatorIdentifier>
+    <CinebotLocatorName>BreakOutTarget_Locator</CinebotLocatorName>
+    <FOV>23</FOV>
+    <Roll>-3</Roll>
+    <NearPlane>0,15</NearPlane>
+    <FarPlane>-1</FarPlane>
+</LocatorComposerData>
+<ScreenSpaceComposerData Guid="53756c96-ed78-4f2c-a928-1dc604c8f2ff">
+    <FocalPlaneOffset>0</FocalPlaneOffset>
+    <FStop>8</FStop>
+    <MinimumNearBlur>0,3</MinimumNearBlur>
+    <Offset>
+        <Vec3>
+            <x>0,1</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <Secondary>
+        <ScreenSpaceComposerTarget>
+            <Offset>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </Offset>
+            <TargetPart></TargetPart>
+            <MaxAngleHard>0</MaxAngleHard>
+            <MaxAngleSoft>90</MaxAngleSoft>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerTarget>
+    </Secondary>
+    <TargetPart>NOSE</TargetPart>
+    <MarkerType>MARKER_UNKNOWN</MarkerType>
+    <OffsetScale>nullptr</OffsetScale>
+    <HardTop>0,1</HardTop>
+    <SoftTop>0,2</SoftTop>
+    <SoftBottom>0,2</SoftBottom>
+    <HardBottom>0,9</HardBottom>
+    <VerticalBlendTime>4</VerticalBlendTime>
+    <VerticalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </VerticalBlendControl>
+    <HardLeft>0,1</HardLeft>
+    <SoftLeft>0,3</SoftLeft>
+    <SoftRight>0,3</SoftRight>
+    <HardRight>0,9</HardRight>
+    <HorizontalBlendTime>4</HorizontalBlendTime>
+    <HorizontalBlendControl>
+        <ScreenSpaceComposerBlendControl>
+            <InputThreshold>0</InputThreshold>
+            <Scale>1</Scale>
+            <RateOut>0</RateOut>
+            <Delay>0</Delay>
+            <RateIn>0</RateIn>
+            <Enabled>False</Enabled>
+        </ScreenSpaceComposerBlendControl>
+    </HorizontalBlendControl>
+    <FOV>23</FOV>
+    <Roll>0</Roll>
+    <NearPlane>0,22</NearPlane>
+    <FarPlane>-1</FarPlane>
+    <UpDampingBlendTime>0,2</UpDampingBlendTime>
+    <UseUpDamping>False</UseUpDamping>
+    <UseUpFromScene>False</UseUpFromScene>
+</ScreenSpaceComposerData>
+<TorusTransposerData Guid="efadc7ed-20e3-42cc-9534-0853b7049a64">
+    <OffsetDampTime>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </OffsetDampTime>
+    <Offset>
+        <Vec3>
+            <x>-0,2</x>
+            <y>0,1</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <MarkerType>MARKER_UNKNOWN</MarkerType>
+    <AnchorPart>Neck</AnchorPart>
+    <OffsetScale>nullptr</OffsetScale>
+    <InnerRadiusHard>0,1</InnerRadiusHard>
+    <InnerRadiusSoft>0,8</InnerRadiusSoft>
+    <OuterRadiusSoft>0,8</OuterRadiusSoft>
+    <OuterRadiusHard>1</OuterRadiusHard>
+    <RadiusBlendTime>2</RadiusBlendTime>
+    <LowerHeightHard>-5</LowerHeightHard>
+    <LowerHeightSoft>0</LowerHeightSoft>
+    <UpperHeightSoft>0</UpperHeightSoft>
+    <UpperHeightHard>5</UpperHeightHard>
+    <HeightBlendTime>2</HeightBlendTime>
+    <LowerHeadingHard>-180</LowerHeadingHard>
+    <LowerHeadingSoft>0</LowerHeadingSoft>
+    <UpperHeadingSoft>0</UpperHeadingSoft>
+    <UpperHeadingHard>180</UpperHeadingHard>
+    <HeadingBlendTime>0,1</HeadingBlendTime>
+    <HeadingBlendTimeCurve>nullptr</HeadingBlendTimeCurve>
+    <WorldHeading>0</WorldHeading>
+    <VelocityBasedDirectionOffset>0</VelocityBasedDirectionOffset>
+    <SimpleHeadingOffset>40</SimpleHeadingOffset>
+    <UseFilteredVelocityBasedDirection>False</UseFilteredVelocityBasedDirection>
+    <UseWorldHeading>False</UseWorldHeading>
+    <MakeVelocityBasedDirectionHorizontal>False</MakeVelocityBasedDirectionHorizontal>
+    <CacheFirstFrameHeading>False</CacheFirstFrameHeading>
+    <UseSimpleHeadingDamping>True</UseSimpleHeadingDamping>
+    <UseVelocityBasedDirection>False</UseVelocityBasedDirection>
+    <FollowTarget>False</FollowTarget>
+</TorusTransposerData>
+<TorusTransposerData Guid="48933e0a-144f-4822-b373-c1bc9a25c924">
+    <OffsetDampTime>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </OffsetDampTime>
+    <Offset>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Offset>
+    <MarkerType>MARKER_UNKNOWN</MarkerType>
+    <AnchorPart>Neck</AnchorPart>
+    <OffsetScale>nullptr</OffsetScale>
+    <InnerRadiusHard>0,1</InnerRadiusHard>
+    <InnerRadiusSoft>0,45</InnerRadiusSoft>
+    <OuterRadiusSoft>0,45</OuterRadiusSoft>
+    <OuterRadiusHard>1</OuterRadiusHard>
+    <RadiusBlendTime>3</RadiusBlendTime>
+    <LowerHeightHard>-5</LowerHeightHard>
+    <LowerHeightSoft>0,04</LowerHeightSoft>
+    <UpperHeightSoft>0,04</UpperHeightSoft>
+    <UpperHeightHard>5</UpperHeightHard>
+    <HeightBlendTime>8</HeightBlendTime>
+    <LowerHeadingHard>-180</LowerHeadingHard>
+    <LowerHeadingSoft>0</LowerHeadingSoft>
+    <UpperHeadingSoft>0</UpperHeadingSoft>
+    <UpperHeadingHard>180</UpperHeadingHard>
+    <HeadingBlendTime>0,1</HeadingBlendTime>
+    <HeadingBlendTimeCurve>nullptr</HeadingBlendTimeCurve>
+    <WorldHeading>0</WorldHeading>
+    <VelocityBasedDirectionOffset>0</VelocityBasedDirectionOffset>
+    <SimpleHeadingOffset>0</SimpleHeadingOffset>
+    <UseFilteredVelocityBasedDirection>False</UseFilteredVelocityBasedDirection>
+    <UseWorldHeading>False</UseWorldHeading>
+    <MakeVelocityBasedDirectionHorizontal>False</MakeVelocityBasedDirectionHorizontal>
+    <CacheFirstFrameHeading>False</CacheFirstFrameHeading>
+    <UseSimpleHeadingDamping>False</UseSimpleHeadingDamping>
+    <UseVelocityBasedDirection>False</UseVelocityBasedDirection>
+    <FollowTarget>False</FollowTarget>
+</TorusTransposerData>

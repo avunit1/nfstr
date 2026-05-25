@@ -1,0 +1,59 @@
+BTFilterNode cfc31a26-6cf9-44ac-8653-0e014e9b9559
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) a587fadf-8ced-49e4-ae9b-d426220ad203
+	Eval 35ec01b8-3fe3-4b57-bf71-dbbdd630dad4
+BTSelectorNode 3af1230b-660e-44cc-96c2-1c4026c09b52
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) cfc31a26-6cf9-44ac-8653-0e014e9b9559
+BTTaskNode a587fadf-8ced-49e4-ae9b-d426220ad203
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 511cb2e0-1d8e-4e06-a4d4-50be397f0fee
+BehaviourTreeData e48a3d5d-1c3a-46db-96e9-da4d03e13617 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Playlist/Restrictions/CarFilter_Make_Lamborghini
+	Root 3af1230b-660e-44cc-96c2-1c4026c09b52
+	Description 
+VQ_Do 511cb2e0-1d8e-4e06-a4d4-50be397f0fee
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 35ec01b8-3fe3-4b57-bf71-dbbdd630dad4
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 519166315
+			AttribType EBTAttribType_Enum
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 1
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 3532688564
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

@@ -1,0 +1,92 @@
+FadeAsset 5b023f91-dd79-4684-b610-a97578ede052
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset 590a351b-c862-43f7-ad79-9d7a4500fd1c
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Canned_Heat_Head
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_CannedHeat_OnTheRoadAgain_SC091_1a_head_wave/ff1f829f-af7c-44e3-68bd-cb75f48a98d4
+MusicDataAsset f9c7239f-daad-40d9-822e-a8ce7cf1370d
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Canned_Heat_Body_Loop
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_CannedHeat_OnTheRoadAgain_1b_body_loop_wave/b2df34fe-9c86-9894-9c08-3e3da8b698cd
+MusicPhraseAsset e4182564-392f-489e-b1a8-22d60f8c7ac8
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 2
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 590a351b-c862-43f7-ad79-9d7a4500fd1c
+		member(1) f9c7239f-daad-40d9-822e-a8ce7cf1370d
+MusicSelectorAsset 69aa3a21-609d-4123-9657-fce7d759029e
+	$::DataContainer
+	Event _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/c916b4d2-5986-4158-b826-4db9ae5094de
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable e4182564-392f-489e-b1a8-22d60f8c7ac8
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset 33bcb1d9-18ef-42e6-b327-091511b1342d #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_9_1_SongAsset
+	SongInterface _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/b7fb68ad-70c0-42f2-9dbb-9a776659602e
+	NameHash 1684482433
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) e4182564-392f-489e-b1a8-22d60f8c7ac8
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 69aa3a21-609d-4123-9657-fce7d759029e
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

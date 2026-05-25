@@ -1,0 +1,310 @@
+<FloatEntityData Guid="23e92dd0-719c-4af8-b9ee-52bbd36f990f">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <DefaultValue>0,021</DefaultValue>
+    <IncDecValue>1</IncDecValue>
+</FloatEntityData>
+<InterfaceDescriptorData Guid="7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd">
+    <Fields Count="3">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xd19df676</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+        <member Index="1">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0x9aca23a8</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="2">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>ExternalTime [80E7D9ED]</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Stop [7C89BB7D]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Start [0DC0EFA5]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnStarted [B8DEB0A5]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="7272e69a-80d9-ff61-2504-4143ee7469c6">
+    <Name>_c4/AI/Behaviors/SubwayTrainAnimation_1</Name>
+    <PropertyConnections Count="6">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Source>
+                <Target>[MathOpEntityData] e33a688e-00f7-4299-bf94-03f40f2219ee</Target>
+                <SourceFieldId>0x9aca23a8</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] e33a688e-00f7-4299-bf94-03f40f2219ee</Source>
+                <Target>[MathOpEntityData] 8c2d8f19-2833-4eb6-bff5-6af7f6886a55</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Source>
+                <Target>[MathOpEntityData] 8c2d8f19-2833-4eb6-bff5-6af7f6886a55</Target>
+                <SourceFieldId>ExternalTime [80E7D9ED]</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[FloatEntityData] 23e92dd0-719c-4af8-b9ee-52bbd36f990f</Source>
+                <Target>[MathOpEntityData] e33a688e-00f7-4299-bf94-03f40f2219ee</Target>
+                <SourceFieldId>Value [0D6EF36E]</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="4">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] 8c2d8f19-2833-4eb6-bff5-6af7f6886a55</Source>
+                <Target>[SequenceEntityData] 127675fe-1575-4ed2-bb84-1e6c287b7279</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>ExternalTime [80E7D9ED]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="5">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] 127675fe-1575-4ed2-bb84-1e6c287b7279</Source>
+                <Target>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Target>
+                <SourceFieldId>0xb194ff53</SourceFieldId>
+                <TargetFieldId>0xd19df676</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Source>
+                <Target>[SequenceEntityData] 127675fe-1575-4ed2-bb84-1e6c287b7279</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Source>
+                <Target>[SequenceEntityData] 127675fe-1575-4ed2-bb84-1e6c287b7279</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[SequenceEntityData] 127675fe-1575-4ed2-bb84-1e6c287b7279</Source>
+                <Target>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SequenceEntityData] 127675fe-1575-4ed2-bb84-1e6c287b7279</Source>
+                <Target>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 7b1b3df5-5ea5-4144-82d8-670d5ae3f5bd</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[MathOpEntityData] 8c2d8f19-2833-4eb6-bff5-6af7f6886a55</member>
+        <member Index="1">[MathOpEntityData] e33a688e-00f7-4299-bf94-03f40f2219ee</member>
+        <member Index="2">[FloatEntityData] 23e92dd0-719c-4af8-b9ee-52bbd36f990f</member>
+        <member Index="3">[SequenceEntityData] 127675fe-1575-4ed2-bb84-1e6c287b7279</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<MathOpEntityData Guid="8c2d8f19-2833-4eb6-bff5-6af7f6886a55">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Subtract</member>
+    </Operators>
+</MathOpEntityData>
+<MathOpEntityData Guid="e33a688e-00f7-4299-bf94-03f40f2219ee">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Multiply</member>
+    </Operators>
+</MathOpEntityData>
+<SequenceEntityData Guid="127675fe-1575-4ed2-bb84-1e6c287b7279">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x000003e8</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="6">
+        <member Index="0">[TransformPartPropertyTrackData] ac32d546-52aa-49a8-b85c-856da23b4fed</member>
+        <member Index="1">[TransformPartPropertyTrackData] 8ba799ca-592c-476d-a022-01a6db5ddee9</member>
+        <member Index="2">[TransformPartPropertyTrackData] 73d3073c-5a72-4cc1-a79f-ad334d6afcae</member>
+        <member Index="3">[TransformPartPropertyTrackData] 4cf7678e-c8b9-4833-9966-5eb7e55babeb</member>
+        <member Index="4">[TransformPartPropertyTrackData] ae45b918-50d5-4616-9853-d35ec2fca74d</member>
+        <member Index="5">[TransformPartPropertyTrackData] c835c842-5057-41aa-bfc6-42b4c70f1986</member>
+    </PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<TransformPartPropertyTrackData Guid="ac32d546-52aa-49a8-b85c-856da23b4fed">
+    <Id>0xb194ff53</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationX</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/AI/Behaviors/AnimTrackData/127675FE-1575-4ED2-BB84-1E6C287B7279_NYC_TRAIN_CAR2</ResourceName>
+    <KeyStartIndex>0x00000000</KeyStartIndex>
+    <KeyCount>0x0000007b</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="8ba799ca-592c-476d-a022-01a6db5ddee9">
+    <Id>0xb194ff53</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationY</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/AI/Behaviors/AnimTrackData/127675FE-1575-4ED2-BB84-1E6C287B7279_NYC_TRAIN_CAR2</ResourceName>
+    <KeyStartIndex>0x0000007b</KeyStartIndex>
+    <KeyCount>0x000000e7</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="73d3073c-5a72-4cc1-a79f-ad334d6afcae">
+    <Id>0xb194ff53</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationZ</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/AI/Behaviors/AnimTrackData/127675FE-1575-4ED2-BB84-1E6C287B7279_NYC_TRAIN_CAR2</ResourceName>
+    <KeyStartIndex>0x00000162</KeyStartIndex>
+    <KeyCount>0x0000007f</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="4cf7678e-c8b9-4833-9966-5eb7e55babeb">
+    <Id>0xb194ff53</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationX</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/AI/Behaviors/AnimTrackData/127675FE-1575-4ED2-BB84-1E6C287B7279_NYC_TRAIN_CAR2</ResourceName>
+    <KeyStartIndex>0x000001e1</KeyStartIndex>
+    <KeyCount>0x000000b8</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="ae45b918-50d5-4616-9853-d35ec2fca74d">
+    <Id>0xb194ff53</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationY</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/AI/Behaviors/AnimTrackData/127675FE-1575-4ED2-BB84-1E6C287B7279_NYC_TRAIN_CAR2</ResourceName>
+    <KeyStartIndex>0x00000299</KeyStartIndex>
+    <KeyCount>0x000000f5</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="c835c842-5057-41aa-bfc6-42b4c70f1986">
+    <Id>0xb194ff53</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationZ</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/AI/Behaviors/AnimTrackData/127675FE-1575-4ED2-BB84-1E6C287B7279_NYC_TRAIN_CAR2</ResourceName>
+    <KeyStartIndex>0x0000038e</KeyStartIndex>
+    <KeyCount>0x00000082</KeyCount>
+    <IsStatic>True</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>

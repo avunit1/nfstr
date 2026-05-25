@@ -1,0 +1,149 @@
+BTIfNode e547ad9e-a29c-4d06-8fd4-262c4e587ad8
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes *nullArray*
+	Eval 0cbc620a-55a2-42f1-ba96-ab9d71871a82
+BTIfNode 9044db55-375d-43f9-a032-831693001bb9
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) eb2cb714-6783-4229-9e10-95ecb3869d42
+	Eval bcd96911-4280-453c-b787-22cd5e486b1e
+BTIfNode 832cd1b0-734d-48c6-a3f7-6611c8fb2a54
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes *nullArray*
+	Eval 05f7ef25-f2a7-4cf7-9616-ae7bdcb94873
+BTSelectorNode 085e60f0-6ab1-452a-b35e-ed862ea81722
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 9044db55-375d-43f9-a032-831693001bb9
+			member(1) b1aa35b6-9075-43ff-853b-900347819e66
+BTSequenceNode fe7685ce-aa17-480e-ad5a-48c33ffcd5a6
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) e547ad9e-a29c-4d06-8fd4-262c4e587ad8
+			member(1) 832cd1b0-734d-48c6-a3f7-6611c8fb2a54
+			member(2) 085e60f0-6ab1-452a-b35e-ed862ea81722
+BTSequenceNode b1aa35b6-9075-43ff-853b-900347819e66
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) 9423ad1d-9d68-48b9-800d-89ff8c02c26d
+			member(1) 637b5f8b-6726-4f7c-9b8a-d0081c797709
+			member(2) 26d5a809-5ce7-4550-8c89-b5b53f125293
+BTTaskNode 26d5a809-5ce7-4550-8c89-b5b53f125293
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 45c6314e-bbdf-4193-80d2-c57b8fa9233d
+BTTaskNode 9423ad1d-9d68-48b9-800d-89ff8c02c26d
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 88a4d1ed-bdcc-4f6b-a982-3f6330ad8ca3
+BTTaskNode 637b5f8b-6726-4f7c-9b8a-d0081c797709
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task ed87769e-f6c2-44eb-9e3b-95f81285cf81
+BTTaskNode eb2cb714-6783-4229-9e10-95ecb3869d42
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task e8a77c48-ac00-4bd8-a567-be16a871fa05
+BT_DoDriveStyle 45c6314e-bbdf-4193-80d2-c57b8fa9233d
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	DriveStyle EDrive_RacingSpeed
+BT_DoMoveStyle 88a4d1ed-bdcc-4f6b-a982-3f6330ad8ca3
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Drive
+BT_DoMoveStyle e8a77c48-ac00-4bd8-a567-be16a871fa05
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Stop
+BT_DoStrategy ed87769e-f6c2-44eb-9e3b-95f81285cf81
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Strategy EStrategy_Approach
+	Context EContext_Blocked
+BT_IsNavState 0cbc620a-55a2-42f1-ba96-ab9d71871a82
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	State ENav_Blocked
+BT_IsVar bcd96911-4280-453c-b787-22cd5e486b1e
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_InterceptTime
+	Context EContext_Blocked
+	Comparator Compare_LessThan
+	Value 0.30000001192092896
+BT_IsVarRange 05f7ef25-f2a7-4cf7-9616-ae7bdcb94873
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_InterceptTime
+	Context EContext_Blocked
+	Comparator ECompare_Inside
+	ValueMin 0.0
+	ValueMax 1.5
+BehaviourTreeData ee3311a7-ddb9-41d7-a98f-b76d25e8546f #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_RaceBlocked
+	Root fe7685ce-aa17-480e-ad5a-48c33ffcd5a6
+	Description 

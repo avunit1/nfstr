@@ -1,0 +1,29 @@
+BTTaskNode 64de56a0-dee2-424f-ba24-6e0781605eef
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task cee329c1-3232-43af-a631-ae19ceb83592
+BTWrapperNode 1e402306-4c75-4ea0-94cd-28297dc8e326
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Wrapper
+		Nodes::array
+			member(0) 64de56a0-dee2-424f-ba24-6e0781605eef
+	ReturnTrue False
+BT_DoDynamicSubBehavior cee329c1-3232-43af-a631-ae19ceb83592
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Behavior *nullGuid*
+BehaviourTreeData 1960f02c-8520-49d5-abf1-2fe12da721e4 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_Shoot
+	Root 1e402306-4c75-4ea0-94cd-28297dc8e326
+	Description 

@@ -1,0 +1,150 @@
+<EffectReferenceObjectData Guid="969860ee-2f4d-4f70-bd79-d052dea45fe5">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>-0,2946258</x>
+                    <y>0,7930028</y>
+                    <z>-2,041482</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Ambient/RuralFarms/AMB_Tractor_Dust [c770d617-f3af-4135-99bd-8edfceba20a9]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>False</AutoStart>
+</EffectReferenceObjectData>
+<InterfaceDescriptorData Guid="e5c08901-0c37-41a7-8d25-009c37a4bc39">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xd42f28fe</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x8b6f9e86</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<ReferenceObjectData Guid="e76f9f22-9b24-4edb-b046-b211f04af4c8">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>-5,960464E-08</x>
+                    <y>0,4520925</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/worldobjects/_objects/misc/altamont/tractor_farmbluea [e0712df3-51d2-6efb-e68c-73cded1c3ade]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<SpatialPrefabBlueprint Guid="ca7530a6-1c39-0c41-82f1-50a2ea30f999">
+    <Name>_c4/WorldObjects/_Objects/Misc/Common/Tractor_WithDust</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="2">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e5c08901-0c37-41a7-8d25-009c37a4bc39</Source>
+                <Target>[EffectReferenceObjectData] 969860ee-2f4d-4f70-bd79-d052dea45fe5</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd42f28fe</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] e5c08901-0c37-41a7-8d25-009c37a4bc39</Source>
+                <Target>[EffectReferenceObjectData] 969860ee-2f4d-4f70-bd79-d052dea45fe5</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x8b6f9e86</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] e5c08901-0c37-41a7-8d25-009c37a4bc39</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[ReferenceObjectData] e76f9f22-9b24-4edb-b046-b211f04af4c8</member>
+        <member Index="1">[EffectReferenceObjectData] 969860ee-2f4d-4f70-bd79-d052dea45fe5</member>
+    </Objects>
+</SpatialPrefabBlueprint>

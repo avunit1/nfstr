@@ -1,0 +1,222 @@
+<BTDynamicRefTreeNode Guid="0bd6a3cc-114e-4403-8d99-486cc7a1e8ff">
+    <NodeType>ENodeType_DynamicReference</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+</BTDynamicRefTreeNode>
+<BTIfNode Guid="bbf319ff-aba8-4ed6-ae8a-b0a2075c2683">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 5190e74a-c09f-4b9a-945c-19687cbd029f</member>
+    </Nodes>
+    <Eval>[BT_IsNavMethod] 5fb25fbe-efa8-4e68-8809-e15ce2be074a</Eval>
+</BTIfNode>
+<BTIfNode Guid="cb0af343-1c42-452d-b219-73ecbe03a7fe">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="0"></Nodes>
+    <Eval>[BT_IsVar] 50b50acf-cd45-44ab-82f0-c532a63802da</Eval>
+</BTIfNode>
+<BTIfNode Guid="c0d96a16-af6d-493d-8f0b-ebf88f36c9ed">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="0"></Nodes>
+    <Eval>[BT_IsVar] 24cfb0c8-983b-4273-9c95-941b6adf6194</Eval>
+</BTIfNode>
+<BTIfNode Guid="3cad88ee-e4bb-4c21-b4c7-6a78e2271c6e">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] ce118e4b-0e95-417b-b0c2-6d25f7d05fbd</member>
+    </Nodes>
+    <Eval>[BT_IsVar] 3c50eee7-14e0-42b6-87b9-f16c20edb44f</Eval>
+</BTIfNode>
+<BTRefTreeNode Guid="d0ed8351-f718-4461-b553-5eb5ee25fe82">
+    <NodeType>ENodeType_Reference</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <SubTree>[Ebx] _c4/AI/Behaviors/B_RaceBlocked [ee3311a7-ddb9-41d7-a98f-b76d25e8546f]</SubTree>
+</BTRefTreeNode>
+<BTRefTreeNode Guid="ab6cc46c-df40-4aba-bc14-0788a8848af4">
+    <NodeType>ENodeType_Reference</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <SubTree>[Ebx] _c4/AI/Behaviors/B_ValidateNav [835b6f04-03b9-431a-8981-a841717eb8ac]</SubTree>
+</BTRefTreeNode>
+<BTSelectorNode Guid="3771cef1-7c86-4e13-958d-f69a46035163">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="6">
+        <member Index="0">[BTRefTreeNode] ab6cc46c-df40-4aba-bc14-0788a8848af4</member>
+        <member Index="1">[BTIfNode] bbf319ff-aba8-4ed6-ae8a-b0a2075c2683</member>
+        <member Index="2">[BTDynamicRefTreeNode] 0bd6a3cc-114e-4403-8d99-486cc7a1e8ff</member>
+        <member Index="3">[BTRefTreeNode] d0ed8351-f718-4461-b553-5eb5ee25fe82</member>
+        <member Index="4">[BTSequenceNode] d3db2778-fad5-4952-95ea-2245763b948a</member>
+        <member Index="5">[BTSequenceNode] 271d6ba8-35ba-4159-9ecf-589f466ac657</member>
+    </Nodes>
+</BTSelectorNode>
+<BTSequenceNode Guid="d3db2778-fad5-4952-95ea-2245763b948a">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="4">
+        <member Index="0">[BTIfNode] cb0af343-1c42-452d-b219-73ecbe03a7fe</member>
+        <member Index="1">[BTIfNode] c0d96a16-af6d-493d-8f0b-ebf88f36c9ed</member>
+        <member Index="2">[BTTaskNode] 7082eec2-1bf5-4455-aa92-3e1e26d9bbac</member>
+        <member Index="3">[BTTaskNode] 7cf9dea1-3721-408f-ab0d-4205e7372a0f</member>
+    </Nodes>
+</BTSequenceNode>
+<BTSequenceNode Guid="271d6ba8-35ba-4159-9ecf-589f466ac657">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="3">
+        <member Index="0">[BTTaskNode] f1d85b0c-a5a7-4960-b77e-b4724d0cf39b</member>
+        <member Index="1">[BTTaskNode] e0f9d8e3-0be6-405c-a487-7fdc64710aa4</member>
+        <member Index="2">[BTIfNode] 3cad88ee-e4bb-4c21-b4c7-6a78e2271c6e</member>
+    </Nodes>
+</BTSequenceNode>
+<BTTaskNode Guid="f1d85b0c-a5a7-4960-b77e-b4724d0cf39b">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 18b3c857-9709-45d9-818f-37ce83ffca03</Task>
+</BTTaskNode>
+<BTTaskNode Guid="e0f9d8e3-0be6-405c-a487-7fdc64710aa4">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoDriveStyle] 3060db31-3f1c-44db-a4ef-7bf45d239a53</Task>
+</BTTaskNode>
+<BTTaskNode Guid="5190e74a-c09f-4b9a-945c-19687cbd029f">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoNavigate] d88eb08a-521e-4bdc-a47a-1d2addd7dca1</Task>
+</BTTaskNode>
+<BTTaskNode Guid="ce118e4b-0e95-417b-b0c2-6d25f7d05fbd">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoStrategy] 62bdf9c0-477c-4f44-97dc-11cc4a82f85d</Task>
+</BTTaskNode>
+<BTTaskNode Guid="7082eec2-1bf5-4455-aa92-3e1e26d9bbac">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] c8c60a91-870f-4cbc-a8c9-baced091ab26</Task>
+</BTTaskNode>
+<BTTaskNode Guid="7cf9dea1-3721-408f-ab0d-4205e7372a0f">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoVarModify] 3a36ac8f-9e35-4bb0-87d8-8345bc1aeb3b</Task>
+</BTTaskNode>
+<BT_DoDriveStyle Guid="3060db31-3f1c-44db-a4ef-7bf45d239a53">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_RacingSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoMoveStyle Guid="18b3c857-9709-45d9-818f-37ce83ffca03">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Drive</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="c8c60a91-870f-4cbc-a8c9-baced091ab26">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Reverse</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoNavigate Guid="d88eb08a-521e-4bdc-a47a-1d2addd7dca1">
+    <FuncType>EFuncType_Task</FuncType>
+    <Order>
+        <NavOrder>
+            <Init>False</Init>
+            <Reset>False</Reset>
+        </NavOrder>
+    </Order>
+    <Method>ENav_Route</Method>
+    <Filter>
+        <NavLaneFilter>
+            <LaneDirection>Any</LaneDirection>
+            <Road>True</Road>
+            <Verge>False</Verge>
+            <Traffic>True</Traffic>
+            <Parking>False</Parking>
+            <Barrier>False</Barrier>
+            <Shoulder>False</Shoulder>
+            <Sidewalk>False</Sidewalk>
+            <DriveThru>False</DriveThru>
+            <MedianFlat>False</MedianFlat>
+            <MedianRaised>False</MedianRaised>
+            <Curb>False</Curb>
+        </NavLaneFilter>
+    </Filter>
+    <Properties>
+        <NavProperties>
+            <NavigationAvoidRange>30</NavigationAvoidRange>
+            <OffTrailResetTime>0,2</OffTrailResetTime>
+            <NavigationRange>40</NavigationRange>
+            <RacingLine>True</RacingLine>
+            <MultipleLane>True</MultipleLane>
+            <Avoidance>True</Avoidance>
+            <Prediction>False</Prediction>
+            <ObeyIntersection>False</ObeyIntersection>
+            <TargetTrailCenter>False</TargetTrailCenter>
+            <MovementStuckReset>True</MovementStuckReset>
+            <OffTrailReset>False</OffTrailReset>
+            <RacingCurvature>True</RacingCurvature>
+            <Cookies>True</Cookies>
+        </NavProperties>
+    </Properties>
+</BT_DoNavigate>
+<BT_DoStrategy Guid="62bdf9c0-477c-4f44-97dc-11cc4a82f85d">
+    <FuncType>EFuncType_Task</FuncType>
+    <Strategy>EStrategy_Approach</Strategy>
+    <Context>EContext_ActionTarget</Context>
+</BT_DoStrategy>
+<BT_DoVarModify Guid="3a36ac8f-9e35-4bb0-87d8-8345bc1aeb3b">
+    <FuncType>EFuncType_Task</FuncType>
+    <Variable>EModifiable_Speed</Variable>
+    <Modifier>EModifier_Set</Modifier>
+    <Value>40</Value>
+</BT_DoVarModify>
+<BT_IsNavMethod Guid="5fb25fbe-efa8-4e68-8809-e15ce2be074a">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>True</Inverted>
+    <Method>ENav_Route</Method>
+</BT_IsNavMethod>
+<BT_IsVar Guid="50b50acf-cd45-44ab-82f0-c532a63802da">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_ActionTarget</Context>
+    <Variable>EVar_Speed</Variable>
+    <Value>5</Value>
+    <Comparator>Compare_LessThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BT_IsVar Guid="24cfb0c8-983b-4273-9c95-941b6adf6194">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_ActionTarget</Context>
+    <Variable>EVar_SignedDistance</Variable>
+    <Value>-10</Value>
+    <Comparator>Compare_LessThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BT_IsVar Guid="3c50eee7-14e0-42b6-87b9-f16c20edb44f">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_ActionTarget</Context>
+    <Variable>EVar_SignedDistance</Variable>
+    <Value>40</Value>
+    <Comparator>Compare_LessThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BehaviourTreeData Guid="a6932616-3cd8-4f8f-639c-bdf9cb957d0c">
+    <Name>_c4/AI/Behaviors/B_Pursuit</Name>
+    <Root>[BTSelectorNode] 3771cef1-7c86-4e13-958d-f69a46035163</Root>
+    <Description></Description>
+</BehaviourTreeData>

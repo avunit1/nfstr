@@ -1,0 +1,193 @@
+EffectReferenceObjectData 5d7fcb46-7497-4d7b-9609-d22155fd14a5
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 1
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x -0.048754990100860596
+				y 0.0
+				z -0.05634331703186035
+		Blueprint _c4/Effects/Cutscenes/Genaric/Footstep_Wet/19f94a45-ba60-4ed0-9d14-c30a77143d4e
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+EffectReferenceObjectData 4a983d3d-b46c-4487-8588-bf4fef44c638
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 2
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.6279304027557373
+				y 0.0
+				z -0.07842016220092773
+		Blueprint _c4/Effects/Cutscenes/Genaric/Footstep_Wet/19f94a45-ba60-4ed0-9d14-c30a77143d4e
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+InterfaceDescriptorData 3312c379-67ae-4b89-9957-b68bab08030e
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 475842092
+				AccessType FieldAccessType_Source
+			member(1)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 21763159
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -2086546847
+		member(1)::DynamicEvent
+			Id -2145637073
+		member(2)::DynamicEvent
+			Id 475842092
+		member(3)::DynamicEvent
+			Id 21763159
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 1854990716
+LogicReferenceObjectData d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint _c4/Effects/Cutscenes/Genaric/Footstep_Trackers/c5d47778-4dde-a1b4-6ee1-a987c906f4e4
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+SpatialPrefabBlueprint f246a372-e928-1c87-6013-ce841e209649 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Cutscenes/Genaric/Footstep_Wet_Prefab
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+							Target 5d7fcb46-7497-4d7b-9609-d22155fd14a5
+							SourceFieldId 475842092
+							TargetFieldId -409930682
+						member(1)::PropertyConnection
+							Source d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+							Target 4a983d3d-b46c-4487-8588-bf4fef44c638
+							SourceFieldId 21763159
+							TargetFieldId -409930682
+						member(2)::PropertyConnection
+							Source d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+							Target 3312c379-67ae-4b89-9957-b68bab08030e
+							SourceFieldId 475842092
+							TargetFieldId 475842092
+						member(3)::PropertyConnection
+							Source d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+							Target 3312c379-67ae-4b89-9957-b68bab08030e
+							SourceFieldId 21763159
+							TargetFieldId 21763159
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+							Target 3312c379-67ae-4b89-9957-b68bab08030e
+							SourceFieldId 1854990716
+							TargetFieldId 1854990716
+				EventConnections::array
+					member(0)::EventConnection
+						Source 3312c379-67ae-4b89-9957-b68bab08030e
+						Target d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+						SourceEvent::EventSpec
+							Id -2086546847
+						TargetEvent::EventSpec
+							Id -2086546847
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 3312c379-67ae-4b89-9957-b68bab08030e
+						Target d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+						SourceEvent::EventSpec
+							Id -2145637073
+						TargetEvent::EventSpec
+							Id -2145637073
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 3312c379-67ae-4b89-9957-b68bab08030e
+						Target 4a983d3d-b46c-4487-8588-bf4fef44c638
+						SourceEvent::EventSpec
+							Id 21763159
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 3312c379-67ae-4b89-9957-b68bab08030e
+						Target 5d7fcb46-7497-4d7b-9609-d22155fd14a5
+						SourceEvent::EventSpec
+							Id 475842092
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor 3312c379-67ae-4b89-9957-b68bab08030e
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) d63e484d-bc0f-4ffb-9621-45c9a6d3a139
+			member(1) 5d7fcb46-7497-4d7b-9609-d22155fd14a5
+			member(2) 4a983d3d-b46c-4487-8588-bf4fef44c638

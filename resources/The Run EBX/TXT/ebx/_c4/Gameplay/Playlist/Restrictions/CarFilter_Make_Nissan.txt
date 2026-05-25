@@ -1,0 +1,59 @@
+BTFilterNode fb12d239-78eb-4fa6-8d09-807058866404
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 26c3b027-eada-486d-8c5a-22bad01372b6
+	Eval a76879b2-29ec-472a-a11f-fac1b664807b
+BTSelectorNode e0c8a680-3c5c-4ad1-b814-02a9d5b59be4
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) fb12d239-78eb-4fa6-8d09-807058866404
+BTTaskNode 26c3b027-eada-486d-8c5a-22bad01372b6
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 7a6feb34-90a4-45cd-94a1-d82963e4801d
+BehaviourTreeData f1ff45ac-c14a-4577-af49-7d68ba14c3eb #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Playlist/Restrictions/CarFilter_Make_Nissan
+	Root e0c8a680-3c5c-4ad1-b814-02a9d5b59be4
+	Description 
+VQ_Do 7a6feb34-90a4-45cd-94a1-d82963e4801d
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter a76879b2-29ec-472a-a11f-fac1b664807b
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 519166315
+			AttribType EBTAttribType_Enum
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 1
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 1888800865
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

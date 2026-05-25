@@ -1,0 +1,54 @@
+<BTFilterNode Guid="39ed1160-8d45-4d98-b0db-6ffcd9285951">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTRefTreeNode] debcbc08-0623-40bf-82d5-e3010290b2fa</member>
+    </Nodes>
+    <Eval>[SE_IsPostRaceEval] 2ffac166-d91c-4a2b-ba47-3e369da517ea</Eval>
+</BTFilterNode>
+<BTFilterNode Guid="2be59fee-7fa0-47a2-84cc-096ae177e79b">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTRefTreeNode] 5444f8cd-1405-4b16-90f6-51b48d692f43</member>
+    </Nodes>
+    <Eval>[SE_IsPostRaceEval] 4d6dda78-b552-44fb-bc80-815407c05712</Eval>
+</BTFilterNode>
+<BTRefTreeNode Guid="debcbc08-0623-40bf-82d5-e3010290b2fa">
+    <NodeType>ENodeType_Reference</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <SubTree>[Ebx] _c4/Gameplay/Playlist/Objectives/Stage2PostRaceObjectivesTree [cd7fe377-94d7-4e1d-a283-d1d3d26ff803]</SubTree>
+</BTRefTreeNode>
+<BTRefTreeNode Guid="5444f8cd-1405-4b16-90f6-51b48d692f43">
+    <NodeType>ENodeType_Reference</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <SubTree>[Ebx] _c4/Gameplay/Playlist/Objectives/Stage2RunTimeObjectivesTree [c876e8c8-e917-4868-b3d4-21e80d8c61f0]</SubTree>
+</BTRefTreeNode>
+<BTSelectorNode Guid="05acdf5a-d853-4f93-b2ba-982bac6c8429">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTFilterNode] 39ed1160-8d45-4d98-b0db-6ffcd9285951</member>
+        <member Index="1">[BTFilterNode] 2be59fee-7fa0-47a2-84cc-096ae177e79b</member>
+    </Nodes>
+</BTSelectorNode>
+<BehaviourTreeData Guid="4e526bf8-51a1-4f62-9078-fec853b80608">
+    <Name>_c4/Gameplay/Playlist/Objectives/Stage2ObjectivesTree</Name>
+    <Root>[BTSelectorNode] 05acdf5a-d853-4f93-b2ba-982bac6c8429</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<SE_IsPostRaceEval Guid="2ffac166-d91c-4a2b-ba47-3e369da517ea">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <IsPostRace>True</IsPostRace>
+</SE_IsPostRaceEval>
+<SE_IsPostRaceEval Guid="4d6dda78-b552-44fb-bc80-815407c05712">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <IsPostRace>False</IsPostRace>
+</SE_IsPostRaceEval>

@@ -1,0 +1,59 @@
+BTFilterNode 19afa7d2-8b7e-4323-b972-ae426782fa50
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) f8341da7-2535-4792-a06c-7fa744cc6827
+	Eval 54fb1266-28e6-4712-8878-b38cb8bb0d15
+BTSelectorNode 9f984f42-640e-403c-ab77-ffb1d4211b5c
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 19afa7d2-8b7e-4323-b972-ae426782fa50
+BTTaskNode f8341da7-2535-4792-a06c-7fa744cc6827
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 2cc347d5-0a32-4642-83bc-12c23a927d54
+BehaviourTreeData 055a23ac-43b7-4d57-95e4-5d88212e3cfb #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_Tier5_Lambo_Murcielago_LP670-4
+	Root 9f984f42-640e-403c-ab77-ffb1d4211b5c
+	Description 
+VQ_Do 2cc347d5-0a32-4642-83bc-12c23a927d54
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 54fb1266-28e6-4712-8878-b38cb8bb0d15
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 5
+		RValueFloat 0.0
+		RValueBool False
+		RValueString lam_mur_sv_10_pp_stock_1
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 1464376845

@@ -1,0 +1,258 @@
+<ClientAreaTriggerEntityData Guid="aaac097c-36ff-4b78-8bb8-e3f2d0fde1a9">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>-0,2655449</x>
+                    <y>0,2851477</y>
+                    <z>0,1284733</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <GeometryScale>
+        <Vec3>
+            <x>700</x>
+            <y>700</y>
+            <z>700</z>
+        </Vec3>
+    </GeometryScale>
+    <GeometryType>SimpleAreaTriggerGeometryType_Sphere</GeometryType>
+</ClientAreaTriggerEntityData>
+<EffectReferenceObjectData Guid="11118887-80e4-496b-b2de-11e9827b428a">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0,065835</x>
+                    <y>0,01239288</y>
+                    <z>0,04582453</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Ambient/DesertHills/AMB_Vultures_Startled [49306f9c-b1cb-48ec-9e99-45ef9a60fe92]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>False</AutoStart>
+</EffectReferenceObjectData>
+<EventGateEntityData Guid="9e4e6c86-6bd3-4daa-928f-0f3e493b17f7">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Default>True</Default>
+</EventGateEntityData>
+<EventSplitterEntityData Guid="af7115df-da5d-4993-9c51-f3f9cbb32a5d">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <RunOnce>False</RunOnce>
+</EventSplitterEntityData>
+<InterfaceDescriptorData Guid="2a04efc9-38ee-4779-aaee-50618567309c">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Reset [0DB4B330]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xb9288ec8</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<SpatialPrefabBlueprint Guid="a2f8437a-b144-4fbe-841e-025da450b1f5">
+    <Name>_c4/Effects/Ambient/DesertHills/AMB_Vultures_Triggerable</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="7">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2a04efc9-38ee-4779-aaee-50618567309c</Source>
+                <Target>[EventGateEntityData] 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[EventSplitterEntityData] af7115df-da5d-4993-9c51-f3f9cbb32a5d</Source>
+                <Target>[EventGateEntityData] 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnImpulse [F7CE107F]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[EventSplitterEntityData] af7115df-da5d-4993-9c51-f3f9cbb32a5d</Source>
+                <Target>[EventGateEntityData] 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnImpulse [F7CE107F]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2a04efc9-38ee-4779-aaee-50618567309c</Source>
+                <Target>[EventSplitterEntityData] af7115df-da5d-4993-9c51-f3f9cbb32a5d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb9288ec8</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Impulse [66B8ED9E]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2a04efc9-38ee-4779-aaee-50618567309c</Source>
+                <Target>[EffectReferenceObjectData] 11118887-80e4-496b-b2de-11e9827b428a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[ClientAreaTriggerEntityData] aaac097c-36ff-4b78-8bb8-e3f2d0fde1a9</Source>
+                <Target>[EventSplitterEntityData] af7115df-da5d-4993-9c51-f3f9cbb32a5d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnEnter [FB35AD6C]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Impulse [66B8ED9E]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[EventGateEntityData] 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7</Source>
+                <Target>[EffectReferenceObjectData] 11118887-80e4-496b-b2de-11e9827b428a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 2a04efc9-38ee-4779-aaee-50618567309c</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[EventGateEntityData] 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7</member>
+        <member Index="1">[EventSplitterEntityData] af7115df-da5d-4993-9c51-f3f9cbb32a5d</member>
+        <member Index="2">[EffectReferenceObjectData] 11118887-80e4-496b-b2de-11e9827b428a</member>
+        <member Index="3">[ClientAreaTriggerEntityData] aaac097c-36ff-4b78-8bb8-e3f2d0fde1a9</member>
+    </Objects>
+</SpatialPrefabBlueprint>

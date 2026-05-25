@@ -1,0 +1,395 @@
+<BoolEntityData Guid="4e4f7ae3-dcaa-4149-88cd-b18c2d587fda">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_ClientAndServer</Realm>
+    <DefaultValue>False</DefaultValue>
+</BoolEntityData>
+<BoolToEventEntityData Guid="609eeda1-9ce3-49e3-b233-eba253b7e585">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Server</Realm>
+    <Value>False</Value>
+    <InitalEvent>False</InitalEvent>
+</BoolToEventEntityData>
+<EventIfSwitchEntityData Guid="b99436bb-6e5f-49b4-839c-3d8fbfef0823">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>1</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <RunOnce>False</RunOnce>
+    <StartState>False</StartState>
+</EventIfSwitchEntityData>
+<EventSyncEntityData Guid="ee05edf0-a224-4a76-8f8b-8565ddbb4028">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+</EventSyncEntityData>
+<EventSyncEntityData Guid="f408c205-6826-4c2f-ba46-48e68840fe62">
+    <IndexInBlueprint>0006</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+</EventSyncEntityData>
+<FadeEntityData Guid="8a971b92-a8eb-42a1-8631-51b8f81906e2">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,25</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<InterfaceDescriptorData Guid="2ff0d145-c0b4-451c-88a4-992cf113b6a2">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Activate [DEAA09DC]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x750c4f3e</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Continue [13E59F84]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Restart [4DB654D2]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="9eacd77e-b805-c832-b8c2-9a257d5c35aa">
+    <Name>_c4/OutOfCar/Prefabs/OOC_Debug_Restart</Name>
+    <PropertyConnections Count="3">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[BoolEntityData] 4e4f7ae3-dcaa-4149-88cd-b18c2d587fda</Source>
+                <Target>[BoolToEventEntityData] 609eeda1-9ce3-49e3-b233-eba253b7e585</Target>
+                <SourceFieldId>Value [0D6EF36E]</SourceFieldId>
+                <TargetFieldId>Value [0D6EF36E]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[BoolEntityData] 4e4f7ae3-dcaa-4149-88cd-b18c2d587fda</Source>
+                <Target>[PropertyDebugEntityData] b1bd17ac-962d-4d55-9ef0-84640c4f2e8d</Target>
+                <SourceFieldId>Value [0D6EF36E]</SourceFieldId>
+                <TargetFieldId>BoolValue [0A7E28E0]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[BoolEntityData] 4e4f7ae3-dcaa-4149-88cd-b18c2d587fda</Source>
+                <Target>[PropertyDebugEntityData] b1bd17ac-962d-4d55-9ef0-84640c4f2e8d</Target>
+                <SourceFieldId>Value [0D6EF36E]</SourceFieldId>
+                <TargetFieldId>Enabled [0028A000]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="9">
+        <member Index="0">
+            <EventConnection>
+                <Source>[EventSyncEntityData] f408c205-6826-4c2f-ba46-48e68840fe62</Source>
+                <Target>[PlayerInputTriggerEntityData] b277a059-5232-4888-852e-40c081046291</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] 609eeda1-9ce3-49e3-b233-eba253b7e585</Source>
+                <Target>[EventIfSwitchEntityData] b99436bb-6e5f-49b4-839c-3d8fbfef0823</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Switch [C5690097]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[EventSyncEntityData] ee05edf0-a224-4a76-8f8b-8565ddbb4028</Source>
+                <Target>[EventIfSwitchEntityData] b99436bb-6e5f-49b4-839c-3d8fbfef0823</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Impulse [66B8ED9E]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[EventIfSwitchEntityData] b99436bb-6e5f-49b4-839c-3d8fbfef0823</Source>
+                <Target>[FadeEntityData] 8a971b92-a8eb-42a1-8631-51b8f81906e2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x41612c66</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2ff0d145-c0b4-451c-88a4-992cf113b6a2</Source>
+                <Target>[EventSyncEntityData] ee05edf0-a224-4a76-8f8b-8565ddbb4028</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x750c4f3e</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Client [A23A0E7C]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[EventIfSwitchEntityData] b99436bb-6e5f-49b4-839c-3d8fbfef0823</Source>
+                <Target>[InterfaceDescriptorData] 2ff0d145-c0b4-451c-88a4-992cf113b6a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x41612c66</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Restart [4DB654D2]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[EventIfSwitchEntityData] b99436bb-6e5f-49b4-839c-3d8fbfef0823</Source>
+                <Target>[InterfaceDescriptorData] 2ff0d145-c0b4-451c-88a4-992cf113b6a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x6f0ab72d</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Continue [13E59F84]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[PlayerInputTriggerEntityData] b277a059-5232-4888-852e-40c081046291</Source>
+                <Target>[BoolEntityData] 4e4f7ae3-dcaa-4149-88cd-b18c2d587fda</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrigger [75C0D0DC]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Toggle [C0E8C897]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] 609eeda1-9ce3-49e3-b233-eba253b7e585</Source>
+                <Target>[EventIfSwitchEntityData] b99436bb-6e5f-49b4-839c-3d8fbfef0823</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFalse [FB1E95D9]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Switch [C5690097]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 2ff0d145-c0b4-451c-88a4-992cf113b6a2</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="8">
+        <member Index="0">[FadeEntityData] 8a971b92-a8eb-42a1-8631-51b8f81906e2</member>
+        <member Index="1">[EventSyncEntityData] ee05edf0-a224-4a76-8f8b-8565ddbb4028</member>
+        <member Index="2">[BoolToEventEntityData] 609eeda1-9ce3-49e3-b233-eba253b7e585</member>
+        <member Index="3">[BoolEntityData] 4e4f7ae3-dcaa-4149-88cd-b18c2d587fda</member>
+        <member Index="4">[PlayerInputTriggerEntityData] b277a059-5232-4888-852e-40c081046291</member>
+        <member Index="5">[EventIfSwitchEntityData] b99436bb-6e5f-49b4-839c-3d8fbfef0823</member>
+        <member Index="6">[EventSyncEntityData] f408c205-6826-4c2f-ba46-48e68840fe62</member>
+        <member Index="7">[PropertyDebugEntityData] b1bd17ac-962d-4d55-9ef0-84640c4f2e8d</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<PlayerInputTriggerEntityData Guid="b277a059-5232-4888-852e-40c081046291">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_ClientAndServer</Realm>
+    <EntryInputActions>EIAFire</EntryInputActions>
+    <ValueModifier>1</ValueModifier>
+    <TrailingValueAtStart>0</TrailingValueAtStart>
+    <AccumulatedValueAtStart>0</AccumulatedValueAtStart>
+    <SendTriggerEvents>True</SendTriggerEvents>
+    <EnabledFromStart>False</EnabledFromStart>
+</PlayerInputTriggerEntityData>
+<PropertyDebugEntityData Guid="b1bd17ac-962d-4d55-9ef0-84640c4f2e8d">
+    <IndexInBlueprint>0007</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <TransformValue>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </TransformValue>
+    <TextColor>
+        <Vec3>
+            <x>0,045</x>
+            <y>0,051</y>
+            <z>0,752</z>
+        </Vec3>
+    </TextColor>
+    <ScreenPosition>
+        <Vec2>
+            <x>100</x>
+            <y>120</y>
+        </Vec2>
+    </ScreenPosition>
+    <Vec2Value>
+        <Vec2>
+            <x>0</x>
+            <y>0</y>
+        </Vec2>
+    </Vec2Value>
+    <Vec3Value>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Vec3Value>
+    <DecimalPlaces>0x00000004</DecimalPlaces>
+    <ValuePrefix>OOC Looping Mode</ValuePrefix>
+    <Realm>Realm_Client</Realm>
+    <TextScale>1</TextScale>
+    <Scope></Scope>
+    <FloatValue>0</FloatValue>
+    <IntValue>0x00000000</IntValue>
+    <StringValue></StringValue>
+    <Enabled>True</Enabled>
+    <Multiline>True</Multiline>
+    <BoolValue>False</BoolValue>
+    <DefaultVisible>True</DefaultVisible>
+</PropertyDebugEntityData>

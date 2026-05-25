@@ -1,0 +1,220 @@
+ClientAreaTriggerEntityData ce2c3668-af56-42ba-8827-d400c3063a4c
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 4
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	GeometryType SimpleAreaTriggerGeometryType_Sphere
+	GeometryScale::Vec3
+		x 225.0
+		y 225.0
+		z 225.0
+EffectReferenceObjectData 6f2aef16-c8dd-4c6a-b7d6-73a4006303d1
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint _c4/Effects/Ambient/RuralFarms/AMB_Birds_OnPowerline/c6ec2d1d-bfb0-8cea-6313-13664959a25a
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart True
+EffectReferenceObjectData 782e3534-1436-4760-8a85-af97aeb0b45e
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint _c4/Effects/Ambient/RuralFarms/AMB_Birds_Startled_Powerline/4685cff7-13be-40b4-9320-0ab1bb5bc56c
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+EventGateEntityData 12ad7613-9bce-407f-8e91-cc1fd75e0512
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Default True
+	Realm Realm_Client
+EventSplitterEntityData c5c19854-35b2-4ba5-b3a3-7181267ba56d
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	RunOnce False
+	Realm Realm_Client
+InterfaceDescriptorData f1c375c4-8b15-4868-8b22-abfe9808ef45
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 229946160
+		member(1)::DynamicEvent
+			Id -1188524344
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+SpatialPrefabBlueprint d64b9194-0c1e-9038-276a-ff9849d574a4 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Ambient/RuralFarms/AMB_Birds_Powerline_Triggerable
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source f1c375c4-8b15-4868-8b22-abfe9808ef45
+						Target 6f2aef16-c8dd-4c6a-b7d6-73a4006303d1
+						SourceEvent::EventSpec
+							Id 229946160
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source f1c375c4-8b15-4868-8b22-abfe9808ef45
+						Target 782e3534-1436-4760-8a85-af97aeb0b45e
+						SourceEvent::EventSpec
+							Id 229946160
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source f1c375c4-8b15-4868-8b22-abfe9808ef45
+						Target 12ad7613-9bce-407f-8e91-cc1fd75e0512
+						SourceEvent::EventSpec
+							Id 229946160
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 12ad7613-9bce-407f-8e91-cc1fd75e0512
+						Target 782e3534-1436-4760-8a85-af97aeb0b45e
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source c5c19854-35b2-4ba5-b3a3-7181267ba56d
+						Target 12ad7613-9bce-407f-8e91-cc1fd75e0512
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source c5c19854-35b2-4ba5-b3a3-7181267ba56d
+						Target 12ad7613-9bce-407f-8e91-cc1fd75e0512
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source c5c19854-35b2-4ba5-b3a3-7181267ba56d
+						Target 6f2aef16-c8dd-4c6a-b7d6-73a4006303d1
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source f1c375c4-8b15-4868-8b22-abfe9808ef45
+						Target c5c19854-35b2-4ba5-b3a3-7181267ba56d
+						SourceEvent::EventSpec
+							Id -1188524344
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source ce2c3668-af56-42ba-8827-d400c3063a4c
+						Target c5c19854-35b2-4ba5-b3a3-7181267ba56d
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Client
+				Descriptor f1c375c4-8b15-4868-8b22-abfe9808ef45
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 6f2aef16-c8dd-4c6a-b7d6-73a4006303d1
+			member(1) 782e3534-1436-4760-8a85-af97aeb0b45e
+			member(2) 12ad7613-9bce-407f-8e91-cc1fd75e0512
+			member(3) c5c19854-35b2-4ba5-b3a3-7181267ba56d
+			member(4) ce2c3668-af56-42ba-8827-d400c3063a4c

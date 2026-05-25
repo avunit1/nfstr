@@ -1,0 +1,111 @@
+ActionNode 3816571e-d9c3-46c4-9334-38a7d2ccaed0
+	$::UINodeData
+		$::DataContainer
+		Name Show Keyboard
+		IsRootNode False
+		ParentGraph 3cd66a4b-b3ed-6210-e4f9-630697d1aa1e
+		ParentIsScreen True
+	ActionKey -1012908821
+	Params::array
+		member(0) 5
+		member(1) 16
+		member(2) ID_OPTIONS_EXTRAS_ENTER_CHEAT_CODE_PROMPT
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIGeneralComp/edf562da-dce2-967c-3bdb-33f7f06d4c74
+		DataKey -695323056
+	In 7f537e08-e045-4ffc-8493-8b7db494cdc5
+	DataInputs *nullArray*
+	Out b7054c83-cd05-4f07-aa19-c2491e14a8a6
+UINodeConnection 58f3fb8a-fa93-4637-af0d-ed72e1c6c8ab
+	$::DataContainer
+	SourceNode c6a9f1cd-84ef-47ab-a648-3d3c156af121
+	TargetNode 3816571e-d9c3-46c4-9334-38a7d2ccaed0
+	SourcePort 220ad7d5-de30-42e6-b90f-9f3355a38287
+	TargetPort 7f537e08-e045-4ffc-8493-8b7db494cdc5
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort 7f537e08-e045-4ffc-8493-8b7db494cdc5
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort b7054c83-cd05-4f07-aa19-c2491e14a8a6
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 220ad7d5-de30-42e6-b90f-9f3355a38287
+	$::DataContainer
+	Name CheatCodeSelected [Widget_Settings_cheatCode_01]
+	InstanceName Widget_Settings_cheatCode_01
+	Query UIWidgetEventID_OnItemSelected
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UIScreenAsset 3cd66a4b-b3ed-6210-e4f9-630697d1aa1e #primary instance
+	$::UIGraphAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/UI/Flow/Screen/Options/CheatCode
+		Nodes::array
+			member(0) c6a9f1cd-84ef-47ab-a648-3d3c156af121
+			member(1) 3816571e-d9c3-46c4-9334-38a7d2ccaed0
+		GlobalNode *nullGuid*
+		Connections::array
+			member(0) 58f3fb8a-fa93-4637-af0d-ed72e1c6c8ab
+		AudioEventMappings *nullGuid*
+		BundleAssetName _c4/UI/Flow/Screen/Options/CheatCode_ResourceBundle
+		AssetList *nullArray*
+		TextureList *nullArray*
+		EventList *nullArray*
+		HighPriority False
+		AdditionalAssets *nullArray*
+		SkipBundleLoading False
+	FocusChange::UIFocusChange
+		IncreaseFocusAction UIInputAction_NavigateUp
+		DecreaseFocusAction UIInputAction_NavigateDown
+	Visibility::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	DefaultVisibility True
+	ExclusiveInput True
+UISettingsCheatCodeDataBinding dcfc95d9-070e-4c13-a38d-d915057b384f
+	$::UIDataBinding
+		$::DataContainer
+	CheatCode::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIGeneralComp/edf562da-dce2-967c-3bdb-33f7f06d4c74
+		DataKey -695323056
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+WidgetNode c6a9f1cd-84ef-47ab-a648-3d3c156af121
+	$::UINodeData
+		$::DataContainer
+		Name WidgetNode
+		IsRootNode False
+		ParentGraph 3cd66a4b-b3ed-6210-e4f9-630697d1aa1e
+		ParentIsScreen True
+	WidgetAsset _c4/UI/Assets/Widget_Settings_cheatCode/581009f2-f6ad-b3d4-00c1-42eb0247828b
+	FocusIndex 0
+	AlwaysInFocus False
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding dcfc95d9-070e-4c13-a38d-d915057b384f
+	InstanceName Widget_Settings_cheatCode_01
+	Visibility::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	DefaultVisibility True
+	WidgetProperties *nullArray*
+	MoviePath Widget/Widget_Settings_cheatCode.fla
+	PrevWidgetAsset _c4/UI/Assets/Widget_Settings_cheatCode/581009f2-f6ad-b3d4-00c1-42eb0247828b
+	Outputs::array
+		member(0) 220ad7d5-de30-42e6-b90f-9f3355a38287
+	Inputs *nullArray*

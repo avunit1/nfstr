@@ -1,0 +1,205 @@
+<ActiveChapterGateEntityData Guid="be77aaf7-da4c-48b5-86d8-b7122ca2f9c4">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Chapters Count="1">
+        <member Index="0">[Ebx] _c4/Gameplay/TheRun/Chapters/Demo/E3_OnStage [59930034-de7e-4688-a356-93659f098eed]</member>
+    </Chapters>
+</ActiveChapterGateEntityData>
+<DelayEntityData Guid="c0066b0b-fb38-4e04-ac5c-169cf38575fb">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0</Delay>
+    <Realm>Realm_ClientAndServer</Realm>
+    <AutoStart>True</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<InterfaceDescriptorData Guid="06de6c34-c032-45d5-a78b-42e7c095f33b">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>In [00597302]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xc0fac643</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x9c33c342</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="d98bcdae-9efc-4b5d-88d2-bb27ea76c225">
+    <Name>_c4/Gameplay/Flow/E3_OnStageSwitch</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="6">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 54d9b9d4-cd10-4658-9315-71710b3e5ee1</Source>
+                <Target>[InterfaceDescriptorData] 06de6c34-c032-45d5-a78b-42e7c095f33b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xc0fac643</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xc0fac643</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 54d9b9d4-cd10-4658-9315-71710b3e5ee1</Source>
+                <Target>[InterfaceDescriptorData] 06de6c34-c032-45d5-a78b-42e7c095f33b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x9c33c342</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9c33c342</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 06de6c34-c032-45d5-a78b-42e7c095f33b</Source>
+                <Target>[SelectEventEntityData] 54d9b9d4-cd10-4658-9315-71710b3e5ee1</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[DelayEntityData] c0066b0b-fb38-4e04-ac5c-169cf38575fb</Source>
+                <Target>[ActiveChapterGateEntityData] be77aaf7-da4c-48b5-86d8-b7122ca2f9c4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xddd3e6db</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[ActiveChapterGateEntityData] be77aaf7-da4c-48b5-86d8-b7122ca2f9c4</Source>
+                <Target>[SelectEventEntityData] 54d9b9d4-cd10-4658-9315-71710b3e5ee1</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xde3f78a9</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x61ba532a</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[DelayEntityData] c0066b0b-fb38-4e04-ac5c-169cf38575fb</Source>
+                <Target>[ActiveChapterGateEntityData] be77aaf7-da4c-48b5-86d8-b7122ca2f9c4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x0a8fb587</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 06de6c34-c032-45d5-a78b-42e7c095f33b</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="3">
+        <member Index="0">[SelectEventEntityData] 54d9b9d4-cd10-4658-9315-71710b3e5ee1</member>
+        <member Index="1">[ActiveChapterGateEntityData] be77aaf7-da4c-48b5-86d8-b7122ca2f9c4</member>
+        <member Index="2">[DelayEntityData] c0066b0b-fb38-4e04-ac5c-169cf38575fb</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<SelectEventEntityData Guid="54d9b9d4-cd10-4658-9315-71710b3e5ee1">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_ClientAndServer</Realm>
+    <Events Count="2">
+        <member Index="0">NormalRace</member>
+        <member Index="1">E3_Stage_Race</member>
+    </Events>
+</SelectEventEntityData>

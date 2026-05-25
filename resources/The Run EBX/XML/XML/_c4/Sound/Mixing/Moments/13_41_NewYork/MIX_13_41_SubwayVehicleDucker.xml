@@ -1,0 +1,167 @@
+<AudioGraphParameter Guid="b909a5e4-f295-46a0-a38e-33b147294392">
+    <DefaultValue>100</DefaultValue>
+    <NameHash>0xe2098079</NameHash>
+    <ValueIndex>0003</ValueIndex>
+</AudioGraphParameter>
+<BasicMultiplyTransformNodeData Guid="5c52669f-4510-4e38-a64c-08d66b662eb7">
+    <X>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>0006</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </X>
+    <Y>
+        <AudioGraphNodePort>
+            <UnconnectedValue>1</UnconnectedValue>
+            <ValueIndex>0006</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Y>
+    <Z>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0005</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </Z>
+</BasicMultiplyTransformNodeData>
+<MixerAsset Guid="2be2831d-f350-b85e-695e-b1883b6b31ef">
+    <Name>_c4/Sound/Mixing/Moments/13_41_NewYork/MIX_13_41_SubwayVehicleDucker</Name>
+    <Graph>[MixerGraphData] e60502db-466a-cba9-4f6d-2e2d17908c7d</Graph>
+    <Presets Count="1">
+        <member Index="0">[MixerPreset] a9e44a7a-15a9-9a73-647f-69dff8f5ab1c</member>
+    </Presets>
+    <DefaultPreset>[MixerPreset] a9e44a7a-15a9-9a73-647f-69dff8f5ab1c</DefaultPreset>
+</MixerAsset>
+<MixerGraphData Guid="e60502db-466a-cba9-4f6d-2e2d17908c7d">
+    <Nodes Count="4">
+        <member Index="0">[MixerInputNodeData] bd97372f-8df0-4c27-b78d-4dd520a02074</member>
+        <member Index="1">[ScaleClampNodeData] e1bc75a6-18c8-4d93-975c-384ac7f5501e</member>
+        <member Index="2">[BasicMultiplyTransformNodeData] 5c52669f-4510-4e38-a64c-08d66b662eb7</member>
+        <member Index="3">[MixerSetPropertyNodeData] caeb003d-a543-40e5-b943-b3e6a65b7134</member>
+    </Nodes>
+    <PublicParameters Count="0"></PublicParameters>
+    <PublicEvents Count="0"></PublicEvents>
+    <PublicAssetParameters Count="0"></PublicAssetParameters>
+    <BlackboardSends Count="0"></BlackboardSends>
+    <BlackboardReceives Count="0"></BlackboardReceives>
+    <UnconnectedValues Count="5">
+        <member Index="0">-5</member>
+        <member Index="1">0</member>
+        <member Index="2">1</member>
+        <member Index="3">15</member>
+        <member Index="4">60</member>
+    </UnconnectedValues>
+    <ValueCount>0009</ValueCount>
+    <PublicValueCount>0001</PublicValueCount>
+    <Inputs Count="1">
+        <member Index="0">[AudioGraphParameter] b909a5e4-f295-46a0-a38e-33b147294392</member>
+    </Inputs>
+    <Outputs Count="0"></Outputs>
+</MixerGraphData>
+<MixerInputEntry Guid="fe508801-1fb3-4242-ba41-360b41423ba2">
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0001</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+    <Source>[AudioGraphParameter] b909a5e4-f295-46a0-a38e-33b147294392</Source>
+</MixerInputEntry>
+<MixerInputNodeData Guid="bd97372f-8df0-4c27-b78d-4dd520a02074">
+    <Entries Count="1">
+        <member Index="0">[MixerInputEntry] fe508801-1fb3-4242-ba41-360b41423ba2</member>
+    </Entries>
+</MixerInputNodeData>
+<MixerPreset Guid="a9e44a7a-15a9-9a73-647f-69dff8f5ab1c">
+    <NameHash>0x00000000</NameHash>
+    <Groups Count="1">
+        <member Index="0">
+            <MixerPresetGroupData>
+                <Group>[Ebx] _c4/sound/mixersystem_c4 [2854c325-eec3-49e1-a719-e663881625cf]</Group>
+                <State>MixGroupState_Normal</State>
+                <AttackTime>0,1</AttackTime>
+                <ReleaseTime>0,2</ReleaseTime>
+                <Properties Count="1">
+                    <member Index="0">
+                        <MixGroupPropertyValue>
+                            <Property>0x00000000</Property>
+                            <Value>0</Value>
+                            <ReleaseTime>0,2</ReleaseTime>
+                            <AttackTime>0,1</AttackTime>
+                            <Controlled>True</Controlled>
+                        </MixGroupPropertyValue>
+                    </member>
+                </Properties>
+                <Priority>0x00000001</Priority>
+                <IsOffset>False</IsOffset>
+                <IsDominant>False</IsDominant>
+            </MixerPresetGroupData>
+        </member>
+    </Groups>
+    <Nodes Count="0"></Nodes>
+</MixerPreset>
+<MixerSetPropertyEntry Guid="8302624d-99ca-4e77-9fff-e0e0f066aa49">
+    <In>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0002</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </In>
+    <Target>0x00000000</Target>
+    <Group>[Ebx] _c4/sound/mixersystem_c4 [2854c325-eec3-49e1-a719-e663881625cf]</Group>
+    <AttackTime>0,25</AttackTime>
+    <ReleaseTime>0,1</ReleaseTime>
+</MixerSetPropertyEntry>
+<MixerSetPropertyNodeData Guid="caeb003d-a543-40e5-b943-b3e6a65b7134">
+    <Entries Count="1">
+        <member Index="0">[MixerSetPropertyEntry] 8302624d-99ca-4e77-9fff-e0e0f066aa49</member>
+    </Entries>
+</MixerSetPropertyNodeData>
+<ScaleClampNodeData Guid="e1bc75a6-18c8-4d93-975c-384ac7f5501e">
+    <In>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0001</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </In>
+    <InMin>
+        <AudioGraphNodePort>
+            <UnconnectedValue>15</UnconnectedValue>
+            <ValueIndex>0007</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </InMin>
+    <InMax>
+        <AudioGraphNodePort>
+            <UnconnectedValue>60</UnconnectedValue>
+            <ValueIndex>0008</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </InMax>
+    <OutMin>
+        <AudioGraphNodePort>
+            <UnconnectedValue>-5</UnconnectedValue>
+            <ValueIndex>0004</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </OutMin>
+    <OutMax>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0005</ValueIndex>
+            <IsConnected>False</IsConnected>
+        </AudioGraphNodePort>
+    </OutMax>
+    <Out>
+        <AudioGraphNodePort>
+            <UnconnectedValue>0</UnconnectedValue>
+            <ValueIndex>0002</ValueIndex>
+            <IsConnected>True</IsConnected>
+        </AudioGraphNodePort>
+    </Out>
+</ScaleClampNodeData>

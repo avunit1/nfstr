@@ -1,0 +1,138 @@
+ActiveChapterGateEntityData be77aaf7-da4c-48b5-86d8-b7122ca2f9c4
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 2
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 1
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Chapters::array
+		member(0) _c4/Gameplay/TheRun/Chapters/Demo/E3_OnStage/59930034-de7e-4688-a356-93659f098eed
+DelayEntityData c0066b0b-fb38-4e04-ac5c-169cf38575fb
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Delay 0.0
+	Realm Realm_ClientAndServer
+	AutoStart True
+	RunOnce False
+	RemoveDuplicateEvents True
+InterfaceDescriptorData 06de6c34-c032-45d5-a78b-42e7c095f33b
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 5862146
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1057307069
+		member(1)::DynamicEvent
+			Id -1674329278
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicPrefabBlueprint d98bcdae-9efc-4b5d-88d2-bb27ea76c225 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/Flow/E3_OnStageSwitch
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 54d9b9d4-cd10-4658-9315-71710b3e5ee1
+						Target 06de6c34-c032-45d5-a78b-42e7c095f33b
+						SourceEvent::EventSpec
+							Id -1057307069
+						TargetEvent::EventSpec
+							Id -1057307069
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(1)::EventConnection
+						Source 54d9b9d4-cd10-4658-9315-71710b3e5ee1
+						Target 06de6c34-c032-45d5-a78b-42e7c095f33b
+						SourceEvent::EventSpec
+							Id -1674329278
+						TargetEvent::EventSpec
+							Id -1674329278
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(2)::EventConnection
+						Source 06de6c34-c032-45d5-a78b-42e7c095f33b
+						Target 54d9b9d4-cd10-4658-9315-71710b3e5ee1
+						SourceEvent::EventSpec
+							Id 5862146
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(3)::EventConnection
+						Source c0066b0b-fb38-4e04-ac5c-169cf38575fb
+						Target be77aaf7-da4c-48b5-86d8-b7122ca2f9c4
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -573315365
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source be77aaf7-da4c-48b5-86d8-b7122ca2f9c4
+						Target 54d9b9d4-cd10-4658-9315-71710b3e5ee1
+						SourceEvent::EventSpec
+							Id -566265687
+						TargetEvent::EventSpec
+							Id 1639600938
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(5)::EventConnection
+						Source c0066b0b-fb38-4e04-ac5c-169cf38575fb
+						Target be77aaf7-da4c-48b5-86d8-b7122ca2f9c4
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 177190279
+						TargetType EventConnectionTargetType_Client
+				Descriptor 06de6c34-c032-45d5-a78b-42e7c095f33b
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 54d9b9d4-cd10-4658-9315-71710b3e5ee1
+			member(1) be77aaf7-da4c-48b5-86d8-b7122ca2f9c4
+			member(2) c0066b0b-fb38-4e04-ac5c-169cf38575fb
+SelectEventEntityData 54d9b9d4-cd10-4658-9315-71710b3e5ee1
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Realm Realm_ClientAndServer
+	Events::array
+		member(0) NormalRace
+		member(1) E3_Stage_Race

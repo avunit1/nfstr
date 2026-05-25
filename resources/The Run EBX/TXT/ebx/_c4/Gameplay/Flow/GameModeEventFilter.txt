@@ -1,0 +1,121 @@
+InterfaceDescriptorData 45b42741-4cbd-40f7-a9f8-1acb387fbf56
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 5862146
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 689407148
+		member(1)::DynamicEvent
+			Id 1634446399
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicPrefabBlueprint 4b28852d-a7bf-4745-c076-6f66f8918df9 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/Flow/GameModeEventFilter
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 45b42741-4cbd-40f7-a9f8-1acb387fbf56
+						Target 664f19f1-a5d0-4b6f-b458-534da7f30863
+						SourceEvent::EventSpec
+							Id 5862146
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source d58d6711-3ae1-42fb-8157-e29ab43cce70
+						Target 664f19f1-a5d0-4b6f-b458-534da7f30863
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id 1884325764
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 73f22aea-9e1d-4068-ab8f-38fffcaf03ff
+						Target 664f19f1-a5d0-4b6f-b458-534da7f30863
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id -1867337385
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 664f19f1-a5d0-4b6f-b458-534da7f30863
+						Target 45b42741-4cbd-40f7-a9f8-1acb387fbf56
+						SourceEvent::EventSpec
+							Id 689407148
+						TargetEvent::EventSpec
+							Id 689407148
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 664f19f1-a5d0-4b6f-b458-534da7f30863
+						Target 45b42741-4cbd-40f7-a9f8-1acb387fbf56
+						SourceEvent::EventSpec
+							Id 1634446399
+						TargetEvent::EventSpec
+							Id 1634446399
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source c2e083cf-1654-416a-aee0-fb3def545cce
+						Target 664f19f1-a5d0-4b6f-b458-534da7f30863
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id 1884325764
+						TargetType EventConnectionTargetType_Client
+				Descriptor 45b42741-4cbd-40f7-a9f8-1acb387fbf56
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) d58d6711-3ae1-42fb-8157-e29ab43cce70
+			member(1) 664f19f1-a5d0-4b6f-b458-534da7f30863
+			member(2) 73f22aea-9e1d-4068-ab8f-38fffcaf03ff
+			member(3) c2e083cf-1654-416a-aee0-fb3def545cce
+NFSGameModeToEventEntityData d58d6711-3ae1-42fb-8157-e29ab43cce70
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	gameplayMode GameModeCopy_StoryMode
+NFSGameModeToEventEntityData 73f22aea-9e1d-4068-ab8f-38fffcaf03ff
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	gameplayMode GameModeCopy_CareerMode
+NFSGameModeToEventEntityData c2e083cf-1654-416a-aee0-fb3def545cce
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	gameplayMode GameModeCopy_ChallengeMode
+SelectEventEntityData 664f19f1-a5d0-4b6f-b458-534da7f30863
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Realm Realm_Client
+	Events::array
+		member(0) SinglePlayer
+		member(1) MultiPlayer

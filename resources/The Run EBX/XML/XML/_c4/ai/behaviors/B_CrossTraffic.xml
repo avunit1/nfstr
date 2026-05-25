@@ -1,0 +1,296 @@
+<BTIfNode Guid="ead8b90d-46e3-41ea-a402-8750e67d6f70">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTSelectorNode] 0bb5804f-2c25-4538-97e1-be07774d00e3</member>
+    </Nodes>
+    <Eval>[BT_IsNavState] 50aed427-96c3-4971-8a1c-d443a5491e19</Eval>
+</BTIfNode>
+<BTIfNode Guid="188b4621-4d12-4f82-9e32-1a12b847515f">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTTaskNode] a5421298-0d61-441f-a6d2-aecf94b71652</member>
+        <member Index="1">[BTTaskNode] d22d11c0-1de5-41c6-b067-5f4ad755e1fd</member>
+    </Nodes>
+    <Eval>[BT_IsVar] be56bd40-b0aa-451c-a94e-7d44c4a4d117</Eval>
+</BTIfNode>
+<BTIfNode Guid="a2402b74-0f2a-427f-8d84-a17e10f897b9">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 75d4b5ec-0679-4269-b47a-dafa04d6c8f8</member>
+    </Nodes>
+    <Eval>[BT_IsNavState] 4b7f75a9-8c1f-4853-837e-69a4eadf5d03</Eval>
+</BTIfNode>
+<BTRefTreeNode Guid="374a9cb5-ac18-4f59-b56c-8e823d2da3e9">
+    <NodeType>ENodeType_Reference</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <SubTree>[Ebx] _c4/AI/Behaviors/B_ValidateNav [835b6f04-03b9-431a-8981-a841717eb8ac]</SubTree>
+</BTRefTreeNode>
+<BTSelectorNode Guid="e755df27-2abf-4ba8-a6ef-debaad1666e8">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="3">
+        <member Index="0">[BTRefTreeNode] 374a9cb5-ac18-4f59-b56c-8e823d2da3e9</member>
+        <member Index="1">[BTSelectorNode] b8b913b4-cb3c-47dc-a924-3faec3c33bbb</member>
+        <member Index="2">[BTSequenceNode] eaf7ef94-7a7d-48af-8cb4-95bcecc598d3</member>
+    </Nodes>
+</BTSelectorNode>
+<BTSelectorNode Guid="0bb5804f-2c25-4538-97e1-be07774d00e3">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTIfNode] 188b4621-4d12-4f82-9e32-1a12b847515f</member>
+        <member Index="1">[BTSequenceNode] 214bd5d5-1b60-462d-b7f4-1a915d77184a</member>
+    </Nodes>
+</BTSelectorNode>
+<BTSelectorNode Guid="b8b913b4-cb3c-47dc-a924-3faec3c33bbb">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTIfNode] a2402b74-0f2a-427f-8d84-a17e10f897b9</member>
+        <member Index="1">[BTIfNode] ead8b90d-46e3-41ea-a402-8750e67d6f70</member>
+    </Nodes>
+</BTSelectorNode>
+<BTSequenceNode Guid="eaf7ef94-7a7d-48af-8cb4-95bcecc598d3">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTTaskNode] 2e7b0e58-a94c-4540-8c7e-b5d72b6313df</member>
+        <member Index="1">[BTTaskNode] dcaf5bdc-bc44-4260-af1a-61475fac73cc</member>
+    </Nodes>
+</BTSequenceNode>
+<BTSequenceNode Guid="214bd5d5-1b60-462d-b7f4-1a915d77184a">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="3">
+        <member Index="0">[BTTaskNode] 27229e25-f725-4081-a459-5742503706f6</member>
+        <member Index="1">[BTTaskNode] 38989224-b4b6-4b21-a4f9-9964fcdb0925</member>
+        <member Index="2">[BTTaskNode] 52a9c0fc-2dae-4246-b66a-9651abecf76e</member>
+    </Nodes>
+</BTSequenceNode>
+<BTTaskNode Guid="2e7b0e58-a94c-4540-8c7e-b5d72b6313df">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 1b341656-c2b5-4e8d-b7c0-135b3c830902</Task>
+</BTTaskNode>
+<BTTaskNode Guid="dcaf5bdc-bc44-4260-af1a-61475fac73cc">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoDriveStyle] dce9bc38-3df5-4af6-9173-55a96f98c042</Task>
+</BTTaskNode>
+<BTTaskNode Guid="75d4b5ec-0679-4269-b47a-dafa04d6c8f8">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 5fda6187-6cd5-44fb-b247-223a5788d8b8</Task>
+</BTTaskNode>
+<BTTaskNode Guid="52a9c0fc-2dae-4246-b66a-9651abecf76e">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoDriveStyle] 4b83ae5c-84de-41de-8495-c711306c37bc</Task>
+</BTTaskNode>
+<BTTaskNode Guid="27229e25-f725-4081-a459-5742503706f6">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 2387cc32-965b-40f2-890c-c18ae20da83a</Task>
+</BTTaskNode>
+<BTTaskNode Guid="a5421298-0d61-441f-a6d2-aecf94b71652">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoSuicide] dbc4185d-9202-49e6-8ee3-3c4fb37f4d8b</Task>
+</BTTaskNode>
+<BTTaskNode Guid="38989224-b4b6-4b21-a4f9-9964fcdb0925">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoStrategy] 47e766f1-275f-44bd-bafe-d5526ea73370</Task>
+</BTTaskNode>
+<BTTaskNode Guid="d22d11c0-1de5-41c6-b067-5f4ad755e1fd">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 46cbd4d0-3c31-4c93-af11-ff83f236ecee</Task>
+</BTTaskNode>
+<BT_Do Guid="c0fb363d-b80e-41e2-9823-96f5462f3b8f">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</BT_Do>
+<BT_Do Guid="15538813-00d4-4982-b5f8-0f26a83b12a1">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</BT_Do>
+<BT_DoDriveStyle Guid="dce9bc38-3df5-4af6-9173-55a96f98c042">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_TrafficSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoDriveStyle Guid="e13f24ff-ee26-4d72-ad03-25c2db8e6ad5">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_RacingSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoDriveStyle Guid="f330af72-737f-4609-bbef-676dc0cf57ff">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_RacingSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoDriveStyle Guid="a1732871-403b-4d4b-992e-3f7e5c7d91bc">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_RacingSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoDriveStyle Guid="1c8b61d8-c3fe-4c56-a5a1-29e09f8ef1ba">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_RacingSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoDriveStyle Guid="4b83ae5c-84de-41de-8495-c711306c37bc">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_TrafficSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoMoveStyle Guid="38860fdb-870f-4613-9c6a-d2a2ecaa624e">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="1b341656-c2b5-4e8d-b7c0-135b3c830902">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Drive</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="221aa9fb-2828-4742-8b6e-ac3f145dc3c5">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="6709477e-fad5-490d-b4e7-c38797119d32">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="33023f0c-270f-46e6-ab28-aa9dd68e4ff9">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="5fda6187-6cd5-44fb-b247-223a5788d8b8">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="2387cc32-965b-40f2-890c-c18ae20da83a">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Drive</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="46cbd4d0-3c31-4c93-af11-ff83f236ecee">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoStrategy Guid="47e766f1-275f-44bd-bafe-d5526ea73370">
+    <FuncType>EFuncType_Task</FuncType>
+    <Strategy>EStrategy_Approach</Strategy>
+    <Context>EContext_Obstacle</Context>
+</BT_DoStrategy>
+<BT_DoSuicide Guid="dbc4185d-9202-49e6-8ee3-3c4fb37f4d8b">
+    <FuncType>EFuncType_Task</FuncType>
+</BT_DoSuicide>
+<BT_Is Guid="973b7cf5-808f-410d-9e4d-9bbf963bb37f">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Result>True</Result>
+</BT_Is>
+<BT_IsActorType Guid="4298a838-8965-4866-a45f-35f144789695">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <ActorType>EActorType_Racer</ActorType>
+</BT_IsActorType>
+<BT_IsActorType Guid="4d6d8ce8-5e23-47d6-b819-01417d4e81ce">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <ActorType>EActorType_Racer</ActorType>
+</BT_IsActorType>
+<BT_IsActorType Guid="0c60034f-bb6c-44cc-b411-c729d45e7d6b">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <ActorType>EActorType_Racer</ActorType>
+</BT_IsActorType>
+<BT_IsAheadDuration Guid="bb2aa2b1-42b8-4e18-904a-18d698818951">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Comparator>Compare_Equal</Comparator>
+    <Duration>0</Duration>
+</BT_IsAheadDuration>
+<BT_IsAheadDuration Guid="91ed2379-b733-4a23-a566-7bd4955fb79e">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Comparator>Compare_Equal</Comparator>
+    <Duration>0</Duration>
+</BT_IsAheadDuration>
+<BT_IsAheadDuration Guid="aec16d51-44c2-4851-abea-a659c5944ee6">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Comparator>Compare_Equal</Comparator>
+    <Duration>0</Duration>
+</BT_IsAheadDuration>
+<BT_IsNavState Guid="4b7f75a9-8c1f-4853-837e-69a4eadf5d03">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <State>ENav_WaitingForPermission</State>
+</BT_IsNavState>
+<BT_IsNavState Guid="50aed427-96c3-4971-8a1c-d443a5491e19">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <State>ENav_DeadEnd</State>
+</BT_IsNavState>
+<BT_IsVar Guid="be56bd40-b0aa-451c-a94e-7d44c4a4d117">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_NavigationTarget</Context>
+    <Variable>EVar_Distance</Variable>
+    <Value>2</Value>
+    <Comparator>Compare_LessThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BT_IsVar Guid="22d1dd99-535b-4523-bd16-ab5dc1998fd6">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <Variable>EVar_Speed</Variable>
+    <Value>0</Value>
+    <Comparator>Compare_Equal</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BT_IsVar Guid="19a88246-2a8b-4701-8afc-c5a4d27c719b">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <Variable>EVar_Speed</Variable>
+    <Value>0</Value>
+    <Comparator>Compare_Equal</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BT_IsVarCompare Guid="ac23e5b9-7f6f-40dd-afe4-4ac1eb0ebd8b">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Delta>0</Delta>
+    <Variable1>EVar_Speed</Variable1>
+    <Context1>EContext_Self</Context1>
+    <Comparator>Compare_Equal</Comparator>
+    <Variable2>EVar_Speed</Variable2>
+    <Context2>EContext_Self</Context2>
+    <Absolute2>False</Absolute2>
+    <Absolute1>False</Absolute1>
+</BT_IsVarCompare>
+<BehaviourTreeData Guid="14432aa9-873b-479a-a615-7b21334f0575">
+    <Name>_c4/AI/Behaviors/B_CrossTraffic</Name>
+    <Root>[BTSelectorNode] e755df27-2abf-4ba8-a6ef-debaad1666e8</Root>
+    <Description></Description>
+</BehaviourTreeData>

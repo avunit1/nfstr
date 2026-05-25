@@ -1,0 +1,200 @@
+EffectReferenceObjectData 34fec706-a07b-460f-9407-3a6e544f4ff6
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 14.0
+				z 1.5794105529785156
+		Blueprint _c4/Effects/Destruction/Avalanche/Avalanche_Overhead_Focused/c59fe1a4-6869-4091-b690-ab1860322ec1
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+EffectReferenceObjectData c7ac713d-79c4-470c-a785-cd9d0fa12171
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 2
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 14.946073532104492
+				y 15.69626235961914
+				z -9.26030158996582
+		Blueprint _c4/Effects/Destruction/Avalanche/Avalanche_SnowDebris_DC_Spawner/5a75bd31-07f7-1583-b394-2b0e7321bbd4
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+InterfaceDescriptorData 641d42f8-cdd3-41f2-a700-457140a81b2d
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -1421519546
+				AccessType FieldAccessType_Source
+			member(1)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -1146044636
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -574888814
+		member(1)::DynamicEvent
+			Id -355244182
+		member(2)::DynamicEvent
+			Id 732937998
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 205342668
+		member(1)::DynamicEvent
+			Id -355244182
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LocatorEntityData bf49c3b8-b335-4196-b180-8bd473b0ad75
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 3
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 1
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x -0.12871170043945312
+				y 14.143915176391602
+				z -0.21008920669555664
+	Realm Realm_Client
+SpatialPrefabBlueprint 5e624d13-8992-46ff-ae87-ee310f82a44b #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/ActionElements/IndependencePass/Avalanche_Overhead_Focused
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source bf49c3b8-b335-4196-b180-8bd473b0ad75
+							Target 641d42f8-cdd3-41f2-a700-457140a81b2d
+							SourceFieldId 1925266716
+							TargetFieldId -1421519546
+						member(1)::PropertyConnection
+							Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+							Target c7ac713d-79c4-470c-a785-cd9d0fa12171
+							SourceFieldId -1146044636
+							TargetFieldId -409930682
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+						Target 34fec706-a07b-460f-9407-3a6e544f4ff6
+						SourceEvent::EventSpec
+							Id -574888814
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+						Target 641d42f8-cdd3-41f2-a700-457140a81b2d
+						SourceEvent::EventSpec
+							Id -574888814
+						TargetEvent::EventSpec
+							Id 205342668
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+						Target 641d42f8-cdd3-41f2-a700-457140a81b2d
+						SourceEvent::EventSpec
+							Id -355244182
+						TargetEvent::EventSpec
+							Id -355244182
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+						Target 34fec706-a07b-460f-9407-3a6e544f4ff6
+						SourceEvent::EventSpec
+							Id -355244182
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+						Target c7ac713d-79c4-470c-a785-cd9d0fa12171
+						SourceEvent::EventSpec
+							Id -355244182
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+						Target c7ac713d-79c4-470c-a785-cd9d0fa12171
+						SourceEvent::EventSpec
+							Id -574888814
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 641d42f8-cdd3-41f2-a700-457140a81b2d
+						Target c7ac713d-79c4-470c-a785-cd9d0fa12171
+						SourceEvent::EventSpec
+							Id 732937998
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor 641d42f8-cdd3-41f2-a700-457140a81b2d
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 34fec706-a07b-460f-9407-3a6e544f4ff6
+			member(1) bf49c3b8-b335-4196-b180-8bd473b0ad75
+			member(2) c7ac713d-79c4-470c-a785-cd9d0fa12171

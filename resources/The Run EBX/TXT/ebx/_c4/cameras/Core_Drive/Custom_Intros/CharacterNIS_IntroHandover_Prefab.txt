@@ -1,0 +1,209 @@
+CameraModeEventSplitterEntityData 93577b4f-fa51-468f-ab22-a9b39713b41d
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 3
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+CinebotStateLogicEntityData 44bd6205-8754-40e0-ad71-c24d16f6aaee
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Mode _c4/cameras/Core_Drive/Custom_Intros/Cinematics_IntroHandover_ToBumper_mode/c148f5c0-5d12-4c91-9a51-002e50f29442
+	PriorityOverride 6.0
+	EnablePriorityOverride True
+CinebotStateLogicEntityData 85601624-9f9c-47f3-9a47-3a495cd8f557
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Mode _c4/cameras/Core_Drive/Custom_Intros/Cinematics_IntroHandover_ToHood_mode/169b0469-4706-4792-8d1f-f538dce404b9
+	PriorityOverride 6.0
+	EnablePriorityOverride True
+CinebotStateLogicEntityData 2ede8350-e569-4038-ba32-f3c8a9893f40
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Mode _c4/cameras/Core_Drive/Core/Modes/chaseMode/2adf7160-72ee-419f-87e9-f6c98ed8614f
+	PriorityOverride 5.0
+	EnablePriorityOverride True
+DelayEntityData 539330a3-3283-4134-a212-288d15412fba
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	Delay 0.30000001192092896
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+DelayEntityData 60e55fb9-0977-4d42-8d40-f9cbb78021ed
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+	Delay 0.30000001192092896
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+DelayEntityData 3c5dc36a-f469-4a43-853c-a7483e1bdcb0
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 6
+	Delay 0.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+InterfaceDescriptorData 7f3ca29d-a45f-4788-8b25-1aaeb8d7a2d4
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1099865411
+		member(1)::DynamicEvent
+			Id 209769175
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+SpatialPrefabBlueprint 231a4c4e-480d-4777-8d7c-f08a85c8e8b7 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/cameras/Core_Drive/Custom_Intros/CharacterNIS_IntroHandover_Prefab
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 93577b4f-fa51-468f-ab22-a9b39713b41d
+						Target 85601624-9f9c-47f3-9a47-3a495cd8f557
+						SourceEvent::EventSpec
+							Id 977851576
+						TargetEvent::EventSpec
+							Id 210993314
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 93577b4f-fa51-468f-ab22-a9b39713b41d
+						Target 44bd6205-8754-40e0-ad71-c24d16f6aaee
+						SourceEvent::EventSpec
+							Id -674502263
+						TargetEvent::EventSpec
+							Id 210993314
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 93577b4f-fa51-468f-ab22-a9b39713b41d
+						Target 539330a3-3283-4134-a212-288d15412fba
+						SourceEvent::EventSpec
+							Id -674502263
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 539330a3-3283-4134-a212-288d15412fba
+						Target 44bd6205-8754-40e0-ad71-c24d16f6aaee
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 193438506
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 93577b4f-fa51-468f-ab22-a9b39713b41d
+						Target 60e55fb9-0977-4d42-8d40-f9cbb78021ed
+						SourceEvent::EventSpec
+							Id 977851576
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 60e55fb9-0977-4d42-8d40-f9cbb78021ed
+						Target 85601624-9f9c-47f3-9a47-3a495cd8f557
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 193438506
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 7f3ca29d-a45f-4788-8b25-1aaeb8d7a2d4
+						Target 2ede8350-e569-4038-ba32-f3c8a9893f40
+						SourceEvent::EventSpec
+							Id -1099865411
+						TargetEvent::EventSpec
+							Id 210993314
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source 3c5dc36a-f469-4a43-853c-a7483e1bdcb0
+						Target 93577b4f-fa51-468f-ab22-a9b39713b41d
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source 7f3ca29d-a45f-4788-8b25-1aaeb8d7a2d4
+						Target 3c5dc36a-f469-4a43-853c-a7483e1bdcb0
+						SourceEvent::EventSpec
+							Id 209769175
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+				Descriptor 7f3ca29d-a45f-4788-8b25-1aaeb8d7a2d4
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 44bd6205-8754-40e0-ad71-c24d16f6aaee
+			member(1) 85601624-9f9c-47f3-9a47-3a495cd8f557
+			member(2) 2ede8350-e569-4038-ba32-f3c8a9893f40
+			member(3) 93577b4f-fa51-468f-ab22-a9b39713b41d
+			member(4) 539330a3-3283-4134-a212-288d15412fba
+			member(5) 60e55fb9-0977-4d42-8d40-f9cbb78021ed
+			member(6) 3c5dc36a-f469-4a43-853c-a7483e1bdcb0

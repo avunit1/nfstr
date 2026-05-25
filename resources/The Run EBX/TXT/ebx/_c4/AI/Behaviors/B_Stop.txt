@@ -1,0 +1,81 @@
+BTIfNode 98d250c8-31c0-4a8d-9958-3c8376b9f132
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) e37a73d1-bf45-4c29-88d9-07cd13c8eb5c
+	Eval 02de8e7a-7271-48d8-b4c1-04db7badd72d
+BTSequenceNode f3346188-2240-47c8-a886-d411768fb869
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) 5f9178a3-f52b-40df-a5e9-fd4d3def89c5
+			member(1) c952465d-5ebd-43ee-a06a-a61985775d74
+			member(2) 98d250c8-31c0-4a8d-9958-3c8376b9f132
+BTTaskNode c952465d-5ebd-43ee-a06a-a61985775d74
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 4faf824a-666f-47b3-8fcb-4bf7a27e987d
+BTTaskNode e37a73d1-bf45-4c29-88d9-07cd13c8eb5c
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 02fe66c0-f7bc-4d7b-976c-f91610b80120
+BTTaskNode 5f9178a3-f52b-40df-a5e9-fd4d3def89c5
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 2399f244-b739-47a9-82aa-70d08861c104
+BT_DoBehavior 4baf5dcd-a457-48f4-a24a-a678c689dbbe
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Behavior _c4/AI/Behaviors/B_Traffic/869f0aa8-1a44-43ca-8887-47d5b648d455
+BT_DoMoveStyle 4faf824a-666f-47b3-8fcb-4bf7a27e987d
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Stop
+BT_DoNavigateRestore 2399f244-b739-47a9-82aa-70d08861c104
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+BT_DoWriteFloatToBB 02fe66c0-f7bc-4d7b-976c-f91610b80120
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	NameHash 2463711654
+	Value 0.0
+	Scope BlackboardScope_Level
+BT_IsActorType 02de8e7a-7271-48d8-b4c1-04db7badd72d
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Context EContext_Self
+	ActorType EActorType_Cop
+BehaviourTreeData 59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_Stop
+	Root f3346188-2240-47c8-a886-d411768fb869
+	Description 

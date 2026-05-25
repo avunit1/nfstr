@@ -1,0 +1,205 @@
+<VoiceOverCompareNode Guid="b5711638-f6ef-4de1-bf7b-b48f2d929476">
+    <A>[VoiceOverValueConnection] 2a953384-20f5-466f-9a97-6939b87c92dc</A>
+    <B>[VoiceOverValueConnection] ae7f04c2-1084-4e45-845f-bcf72318f87a</B>
+    <False>[VoiceOverValue] 55b9cef7-7ad5-4237-a552-f465a6f79ec7</False>
+    <True>[VoiceOverValue] 03a7d786-0d1e-4e8c-9d12-d59780e411a6</True>
+    <Operation>VoiceOverCompareExpressionType_Equals</Operation>
+</VoiceOverCompareNode>
+<VoiceOverConstantIntegerValue Guid="064d019d-2cd4-41be-8028-cd4ae52ea2cb">
+    <Value>0x0000001e</Value>
+</VoiceOverConstantIntegerValue>
+<VoiceOverConstantIntegerValue Guid="1d11f157-f57a-4993-80f2-f1392c50c35f">
+    <Value>0x00000001</Value>
+</VoiceOverConstantIntegerValue>
+<VoiceOverConstantNode Guid="3cf63921-e7cf-4291-b71b-277fa8f0077d">
+    <Value>[VoiceOverValue] 776c9f10-1cd8-435d-bc9f-ef5cccea53e6</Value>
+    <Source>[VoiceOverConstantIntegerValue] 064d019d-2cd4-41be-8028-cd4ae52ea2cb</Source>
+</VoiceOverConstantNode>
+<VoiceOverConstantNode Guid="10f3cc70-8587-4b2c-bbdc-8e9c925e53c8">
+    <Value>[VoiceOverValue] 6522354b-aa72-473b-a56d-557d01b80745</Value>
+    <Source>[VoiceOverConstantIntegerValue] 1d11f157-f57a-4993-80f2-f1392c50c35f</Source>
+</VoiceOverConstantNode>
+<VoiceOverConversationNode Guid="8eb181a0-835b-41e2-9b81-74fafe19b267">
+    <FlowMode>VoiceOverLogicFlowMode_One</FlowMode>
+    <Groups Count="1">
+        <member Index="0">[VoiceOverDialogGroup] 18daef0e-549f-4ad3-b84a-0ebcbb3b8731</member>
+    </Groups>
+    <Condition Count="2">
+        <member Index="0">[VoiceOverValueConnection] a3184c8f-622f-4d96-9fa4-401432040f92</member>
+        <member Index="1">[VoiceOverValueConnection] 21cd6be0-28f3-454c-b199-1258f058a914</member>
+    </Condition>
+    <Interval>[VoiceOverIntervalNode] 721ac860-7b92-4311-9d72-6cf29fbe0291</Interval>
+    <FinishedRelationship Count="0"></FinishedRelationship>
+    <BlockedRelationship Count="0"></BlockedRelationship>
+    <ConditionMode>VoiceOverContainerConditionMode_All</ConditionMode>
+    <Probability>100</Probability>
+    <Pronunciation>nullptr</Pronunciation>
+    <InterruptMode>VoiceOverConversationInterruptMode_Allow</InterruptMode>
+    <InterrupterMode>VoiceOverConversationInterrupterMode_Disallow</InterrupterMode>
+    <Priority>0x00000032</Priority>
+    <QueueMode>VoiceOverConversationQueueMode_Always</QueueMode>
+    <Relevancy>0,5</Relevancy>
+    <DeadAirRequired>1</DeadAirRequired>
+    <DeadAirEnforce>0</DeadAirEnforce>
+    <IgnoreDeadAir>False</IgnoreDeadAir>
+    <TrackCount>1</TrackCount>
+    <LastSequenceIndex>0</LastSequenceIndex>
+</VoiceOverConversationNode>
+<VoiceOverDialogClip Guid="9760716e-6176-422a-87cc-713f788b1a5d">
+    <Offset>0</Offset>
+    <Takes Count="1">
+        <member Index="0">
+            <VoiceOverDialogTake>
+                <Wave>[Ebx] _c4/Sound/Dialogue/ENGLISH/Unscripted/Cops/WrongWay/WrongWay_CopA [6b0ed313-0eed-74c4-2333-2c63d597abe5]</Wave>
+            </VoiceOverDialogTake>
+        </member>
+    </Takes>
+    <OffsetReferences Count="0"></OffsetReferences>
+    <Events>nullptr</Events>
+    <SequenceIndex>0</SequenceIndex>
+</VoiceOverDialogClip>
+<VoiceOverDialogGroup Guid="18daef0e-549f-4ad3-b84a-0ebcbb3b8731">
+    <Sound>[Ebx] BadRef 002cb282-30ab-11e0-8077-f7c01fb2035a/31a3362f-c13e-120f-bd78-11c1395d1f4f</Sound>
+    <Tracks Count="1">
+        <member Index="0">[VoiceOverDialogTrack] 5ae739f3-72fb-4338-8e18-9b1a7156c0b8</member>
+    </Tracks>
+</VoiceOverDialogGroup>
+<VoiceOverDialogTrack Guid="5ae739f3-72fb-4338-8e18-9b1a7156c0b8">
+    <Source>nullptr</Source>
+    <TakeControl>nullptr</TakeControl>
+    <TakeIndexMapping Count="0"></TakeIndexMapping>
+    <TakeSwitching>VoiceOverDialogTakeBehavior_Start</TakeSwitching>
+    <Clips Count="1">
+        <member Index="0">[VoiceOverDialogClip] 9760716e-6176-422a-87cc-713f788b1a5d</member>
+    </Clips>
+    <SamplerNode>[Ebx] BadRef 002cb282-30ab-11e0-8077-f7c01fb2035a/89507893-b4c2-465a-8e66-bbd4f22d8c90</SamplerNode>
+    <Output>nullptr</Output>
+    <QueueGroup>[Ebx] _c4/sound/dialogue/logic/vo_system [603f0fb5-7835-4280-a702-d631219df3bb]</QueueGroup>
+    <ParentTrackIndex>0</ParentTrackIndex>
+    <TakeSwitchingOnResume>False</TakeSwitchingOnResume>
+</VoiceOverDialogTrack>
+<VoiceOverEvent Guid="667f7f3f-4c2e-487d-86a8-520b32ee2f51">
+    <Name>1-51_WrongWay</Name>
+    <Parameters Count="1">
+        <member Index="0">[VoiceOverNamedValue] 5cfc0c05-9590-42db-8b0c-d47f48ad080c</member>
+    </Parameters>
+    <Owner>[VoiceOverLogicAsset] 0a0ff752-894e-4818-9e87-8cccc93eafb3</Owner>
+</VoiceOverEvent>
+<VoiceOverEventNode Guid="6f7f3302-a58d-4b88-bb37-caabd9e2a953">
+    <FlowMode>VoiceOverLogicFlowMode_All</FlowMode>
+    <Interval>nullptr</Interval>
+    <Relationship Count="1">
+        <member Index="0">[VoiceOverConversationNode] 8eb181a0-835b-41e2-9b81-74fafe19b267</member>
+    </Relationship>
+    <Redirects Count="1">
+        <member Index="0">[VoiceOverValueRedirect] 68e17ea9-75f5-4491-ae5e-745dff15224a</member>
+    </Redirects>
+    <Event>[VoiceOverEvent] 667f7f3f-4c2e-487d-86a8-520b32ee2f51</Event>
+</VoiceOverEventNode>
+<VoiceOverGroup Guid="01c912f4-d28a-403d-b26a-3ab3322f35c1">
+    <Name>Default</Name>
+    <Priority>0x00000000</Priority>
+</VoiceOverGroup>
+<VoiceOverInfoNode Guid="f9fbf997-a9bb-435c-ab08-236b20c1a339">
+    <Object>[VoiceOverValueConnection] 05f1b3fe-14f0-4632-bdf4-575797158697</Object>
+    <Value>[VoiceOverValue] 0559a98a-96da-4f7f-8bfa-06826512567e</Value>
+    <Field>[Ebx] _c4/sound/dialogue/logic/vo_system [0fe1cb90-e9d0-4b47-8a2e-9c0825de401a]</Field>
+    <ExpectedType>[Ebx] _c4/sound/dialogue/logic/vo_system [d72477a4-aabc-4ae6-bdcb-ee6344b1a8dc]</ExpectedType>
+</VoiceOverInfoNode>
+<VoiceOverIntervalNode Guid="721ac860-7b92-4311-9d72-6cf29fbe0291">
+    <Threshold>[VoiceOverValueConnection] cffbf11a-d2a6-485c-bed6-d5a4029e7ad8</Threshold>
+    <Time>[VoiceOverValue] e62f1814-6de1-4fee-8086-af45da75b6f9</Time>
+    <False>[VoiceOverValue] 8ed503fa-0ef4-48db-8549-5bd378caf428</False>
+    <True>[VoiceOverValue] f98bc884-de02-4e8c-a5ba-22fae84905e5</True>
+    <Interval>[Ebx] _c4/sound/dialogue/logic/vo_system [80609bae-4c8f-4dd7-ad85-7f0616dca354]</Interval>
+</VoiceOverIntervalNode>
+<VoiceOverLogicAsset Guid="0a0ff752-894e-4818-9e87-8cccc93eafb3">
+    <Name>_c4/Sound/Dialogue/Logic/Unscripted/VO_1-51_Wrong_Logic</Name>
+    <Events Count="1">
+        <member Index="0">[VoiceOverEvent] 667f7f3f-4c2e-487d-86a8-520b32ee2f51</member>
+    </Events>
+    <Groups Count="1">
+        <member Index="0">[VoiceOverGroup] 01c912f4-d28a-403d-b26a-3ab3322f35c1</member>
+    </Groups>
+    <Flows Count="1">
+        <member Index="0">[VoiceOverLogicFlow] 866eb2f8-9f6b-45f0-bfb8-1cc6a97ac526</member>
+    </Flows>
+    <System>[Ebx] _c4/sound/dialogue/logic/vo_system [53c4df8a-9a3f-81e0-cb02-90e064b6baf7]</System>
+</VoiceOverLogicAsset>
+<VoiceOverLogicFlow Guid="866eb2f8-9f6b-45f0-bfb8-1cc6a97ac526">
+    <Name>WrongWay</Name>
+    <Group>[VoiceOverGroup] 01c912f4-d28a-403d-b26a-3ab3322f35c1</Group>
+    <Locals Count="1">
+        <member Index="0">[VoiceOverNamedValue] 64ec386a-f3d0-4dd0-95cd-da220668b0ce</member>
+    </Locals>
+    <Roots Count="1">
+        <member Index="0">[VoiceOverEventNode] 6f7f3302-a58d-4b88-bb37-caabd9e2a953</member>
+    </Roots>
+</VoiceOverLogicFlow>
+<VoiceOverNamedValue Guid="5cfc0c05-9590-42db-8b0c-d47f48ad080c">
+    <ValueType>VoiceOverValueType_Object</ValueType>
+    <Name>Speaker</Name>
+</VoiceOverNamedValue>
+<VoiceOverNamedValue Guid="64ec386a-f3d0-4dd0-95cd-da220668b0ce">
+    <ValueType>VoiceOverValueType_Object</ValueType>
+    <Name>Speaker_Map</Name>
+</VoiceOverNamedValue>
+<VoiceOverValue Guid="776c9f10-1cd8-435d-bc9f-ef5cccea53e6">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="3633775c-c589-4e94-9b53-99a245bc42ef">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="e62f1814-6de1-4fee-8086-af45da75b6f9">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="8ed503fa-0ef4-48db-8549-5bd378caf428">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="f98bc884-de02-4e8c-a5ba-22fae84905e5">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="55b9cef7-7ad5-4237-a552-f465a6f79ec7">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="03a7d786-0d1e-4e8c-9d12-d59780e411a6">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="6522354b-aa72-473b-a56d-557d01b80745">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="0559a98a-96da-4f7f-8bfa-06826512567e">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValueConnection Guid="cffbf11a-d2a6-485c-bed6-d5a4029e7ad8">
+    <TargetNode>[VoiceOverConstantNode] 3cf63921-e7cf-4291-b71b-277fa8f0077d</TargetNode>
+    <TargetValue>[VoiceOverValue] 776c9f10-1cd8-435d-bc9f-ef5cccea53e6</TargetValue>
+</VoiceOverValueConnection>
+<VoiceOverValueConnection Guid="a3184c8f-622f-4d96-9fa4-401432040f92">
+    <TargetNode>[VoiceOverIntervalNode] 721ac860-7b92-4311-9d72-6cf29fbe0291</TargetNode>
+    <TargetValue>[VoiceOverValue] f98bc884-de02-4e8c-a5ba-22fae84905e5</TargetValue>
+</VoiceOverValueConnection>
+<VoiceOverValueConnection Guid="2a953384-20f5-466f-9a97-6939b87c92dc">
+    <TargetNode>[VoiceOverInfoNode] f9fbf997-a9bb-435c-ab08-236b20c1a339</TargetNode>
+    <TargetValue>[VoiceOverValue] 0559a98a-96da-4f7f-8bfa-06826512567e</TargetValue>
+</VoiceOverValueConnection>
+<VoiceOverValueConnection Guid="ae7f04c2-1084-4e45-845f-bcf72318f87a">
+    <TargetNode>[VoiceOverConstantNode] 10f3cc70-8587-4b2c-bbdc-8e9c925e53c8</TargetNode>
+    <TargetValue>[VoiceOverValue] 6522354b-aa72-473b-a56d-557d01b80745</TargetValue>
+</VoiceOverValueConnection>
+<VoiceOverValueConnection Guid="05f1b3fe-14f0-4632-bdf4-575797158697">
+    <TargetNode>[VoiceOverVariableNode] 6fa54b7e-22f4-4449-8c5f-90767b9aacff</TargetNode>
+    <TargetValue>[VoiceOverValue] 3633775c-c589-4e94-9b53-99a245bc42ef</TargetValue>
+</VoiceOverValueConnection>
+<VoiceOverValueConnection Guid="21cd6be0-28f3-454c-b199-1258f058a914">
+    <TargetNode>[VoiceOverCompareNode] b5711638-f6ef-4de1-bf7b-b48f2d929476</TargetNode>
+    <TargetValue>[VoiceOverValue] 03a7d786-0d1e-4e8c-9d12-d59780e411a6</TargetValue>
+</VoiceOverValueConnection>
+<VoiceOverValueRedirect Guid="68e17ea9-75f5-4491-ae5e-745dff15224a">
+    <Source>[VoiceOverNamedValue] 5cfc0c05-9590-42db-8b0c-d47f48ad080c</Source>
+    <Target>[VoiceOverNamedValue] 64ec386a-f3d0-4dd0-95cd-da220668b0ce</Target>
+</VoiceOverValueRedirect>
+<VoiceOverVariableNode Guid="6fa54b7e-22f4-4449-8c5f-90767b9aacff">
+    <Value>[VoiceOverValue] 3633775c-c589-4e94-9b53-99a245bc42ef</Value>
+    <Source>[VoiceOverNamedValue] 64ec386a-f3d0-4dd0-95cd-da220668b0ce</Source>
+</VoiceOverVariableNode>

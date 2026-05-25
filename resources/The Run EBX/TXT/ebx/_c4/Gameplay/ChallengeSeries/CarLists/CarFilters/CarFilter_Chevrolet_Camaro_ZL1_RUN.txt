@@ -1,0 +1,59 @@
+BTFilterNode 91ac0699-7d0b-41d2-bb29-832af7a7bfb5
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 1d624ad7-e1ba-4125-b8ea-f9eb8308929e
+	Eval d57c2462-6793-4cfc-a162-82e4f583ab11
+BTSelectorNode 03c6d19d-4d27-43c7-9e37-358597ffc9e4
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 91ac0699-7d0b-41d2-bb29-832af7a7bfb5
+BTTaskNode 1d624ad7-e1ba-4125-b8ea-f9eb8308929e
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task aeac0bf7-8aca-4498-913b-f79d2b023516
+BehaviourTreeData 6439ba56-c8e3-48d9-9c5d-588261a81a1f #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_Chevrolet_Camaro_ZL1_RUN
+	Root 03c6d19d-4d27-43c7-9e37-358597ffc9e4
+	Description 
+VQ_Do aeac0bf7-8aca-4498-913b-f79d2b023516
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter d57c2462-6793-4cfc-a162-82e4f583ab11
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 2
+		RValueFloat 0.0
+		RValueBool False
+		RValueString che_cam_zl1_13_pp_run
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

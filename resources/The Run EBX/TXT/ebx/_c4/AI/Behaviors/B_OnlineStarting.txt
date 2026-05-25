@@ -1,0 +1,187 @@
+BTIfNode 79a9db62-b961-473f-a503-88c8dec0e057
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 8cc5e32f-3be0-4007-a310-1d512b7d035f
+			member(1) 8f9ddbaa-9b9a-4aaa-81b1-fcfe37f54fab
+	Eval f3fadf2c-0195-4d00-9901-cdad228ca31c
+BTIfNode 350e83ac-877d-4f25-9c3d-66aafb4a210c
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) b39e4555-e17d-44b6-a85e-b108dca66603
+	Eval e34e31f8-81ed-4e83-a41b-2a898776fa51
+BTSelectorNode a6f8a21d-ef84-401f-92f7-b9c6132f6451
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 93d1aa5f-7cff-4492-b149-d232a545250e
+			member(1) f388c4e1-6562-4b1c-a76c-cce5f75924a8
+			member(2) 350e83ac-877d-4f25-9c3d-66aafb4a210c
+			member(3) 73cfb582-44d4-4c0b-82ee-369122dcec55
+BTTaskNode 18367d01-4fdb-4911-b1f7-af8ed4f2b465
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 6635b074-d3cc-492d-b22d-7cacd1559854
+BTTaskNode fe31ac46-927b-4d3f-8ee7-4232a76297e5
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 0322f220-d562-4711-b458-60772ee44a8f
+BTTaskNode 8f9ddbaa-9b9a-4aaa-81b1-fcfe37f54fab
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 4874d859-1050-45a2-9601-e696f4227178
+BTTaskNode 73cfb582-44d4-4c0b-82ee-369122dcec55
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 353d8eb7-cbf3-4c6c-8f52-d87402cbb070
+BTTaskNode 8cc5e32f-3be0-4007-a310-1d512b7d035f
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task aabdad89-9531-4aff-aed9-4dbcbf1a8bc2
+BTTaskNode b39e4555-e17d-44b6-a85e-b108dca66603
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task b57b8cb8-36c3-41ff-8e44-7168a9bd39e2
+BTWrapperNode 93d1aa5f-7cff-4492-b149-d232a545250e
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Wrapper
+		Nodes::array
+			member(0) 79a9db62-b961-473f-a503-88c8dec0e057
+	ReturnTrue False
+BTWrapperNode f388c4e1-6562-4b1c-a76c-cce5f75924a8
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Wrapper
+		Nodes::array
+			member(0) 18367d01-4fdb-4911-b1f7-af8ed4f2b465
+			member(1) fe31ac46-927b-4d3f-8ee7-4232a76297e5
+	ReturnTrue False
+BT_DoDriveStyle 0322f220-d562-4711-b458-60772ee44a8f
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	DriveStyle EDrive_RacingSpeed
+BT_DoMoveStyle 6635b074-d3cc-492d-b22d-7cacd1559854
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Drive
+BT_DoNavigate 4874d859-1050-45a2-9601-e696f4227178
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Order::NavOrder
+		Init True
+		Reset True
+	Method ENav_Trail
+	Filter::NavLaneFilter
+		Curb False
+		Road True
+		Verge False
+		Traffic True
+		Parking False
+		Barrier False
+		Shoulder False
+		Sidewalk False
+		DriveThru False
+		MedianFlat False
+		MedianRaised False
+		LaneDirection Any
+	Properties::NavProperties
+		Cookies True
+		Avoidance True
+		Prediction False
+		RacingLine False
+		MultipleLane False
+		OffTrailReset False
+		RacingCurvature False
+		ObeyIntersection False
+		TargetTrailCenter True
+		MovementStuckReset True
+		OffTrailResetTime 0.20000000298023224
+		NavigationRange 40.0
+		NavigationAvoidRange 30.0
+BT_DoNavigateSave aabdad89-9531-4aff-aed9-4dbcbf1a8bc2
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+BT_DoStrategy b57b8cb8-36c3-41ff-8e44-7168a9bd39e2
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Strategy EStrategy_Match
+	Context EContext_Obstacle
+BT_DoVarModify 353d8eb7-cbf3-4c6c-8f52-d87402cbb070
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Variable EModifiable_Speed
+	Modifier EModifier_Set
+	Value 50.0
+BT_IsNavSaved f3fadf2c-0195-4d00-9901-cdad228ca31c
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted True
+BT_IsVar e34e31f8-81ed-4e83-a41b-2a898776fa51
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_Distance
+	Context EContext_Obstacle
+	Comparator Compare_LessThan
+	Value 60.0
+BehaviourTreeData 98d53202-7546-4b20-8760-9ca9b35cad86 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_OnlineStarting
+	Root a6f8a21d-ef84-401f-92f7-b9c6132f6451
+	Description 

@@ -1,0 +1,241 @@
+FloatPropertyTrackData 634b8447-282d-4d32-948e-9d6c63ac01f6
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id 169511528
+			Times::array
+				member(0) 0
+				member(1) 300
+				member(2) 500
+		InterpolationType InterpolationType_Linear
+	Values::array
+		member(0) 1.0
+		member(1) 0.05000000074505806
+		member(2) 1.0
+InterfaceDescriptorData f91fffdf-9d9e-4f81-b5fc-6abf3d8cf3ed
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1284338284
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 650265526
+		member(1)::DynamicEvent
+			Id -1193365339
+		member(2)::DynamicEvent
+			Id -1847112270
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+MixerEntityData 781360d0-3b49-4b18-b985-a802b59a04c3
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	ActivateOnCreation False
+	Mixer _c4/Sound/Mixing/Moments/TimeDilation/MIX_TutorialTimeDilation/1a8461aa-ae01-a5f3-1176-71b19389f421
+	MixerScalar 1.0
+SequenceEntityData 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id 232316407
+			Time 300
+	SequenceStartTime 0
+	SequenceLength 600
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) 634b8447-282d-4d32-948e-9d6c63ac01f6
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+SoundEntityData dc744eeb-42a5-465e-9bb2-5cdcb9018963
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Sound _c4/Sound/Sfx_Moments/NIS_Transitions/NIS_GenericTransitions/SIS_TimeDilationSweetener_Patch/fb3f5455-f1af-41ce-92df-7f62bf421e3e
+	PlayOnCreation False
+	EnabledOnCreation True
+SpatialPrefabBlueprint f6aa6de5-08ec-48a9-afac-00bc5f656446 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/Flow/GasStationTip_Treatment
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+							Target 87bef047-457e-40af-ba8f-76929628f565
+							SourceFieldId 169511528
+							TargetFieldId -85542097
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target 87bef047-457e-40af-ba8f-76929628f565
+						SourceEvent::EventSpec
+							Id -1193365339
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target 87bef047-457e-40af-ba8f-76929628f565
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target f91fffdf-9d9e-4f81-b5fc-6abf3d8cf3ed
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id 650265526
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target f91fffdf-9d9e-4f81-b5fc-6abf3d8cf3ed
+						SourceEvent::EventSpec
+							Id -1193365339
+						TargetEvent::EventSpec
+							Id -1193365339
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target dc744eeb-42a5-465e-9bb2-5cdcb9018963
+						SourceEvent::EventSpec
+							Id -1193365339
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target dc744eeb-42a5-465e-9bb2-5cdcb9018963
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target 781360d0-3b49-4b18-b985-a802b59a04c3
+						SourceEvent::EventSpec
+							Id -1193365339
+						TargetEvent::EventSpec
+							Id -559281700
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target 781360d0-3b49-4b18-b985-a802b59a04c3
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id 1928776733
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source f91fffdf-9d9e-4f81-b5fc-6abf3d8cf3ed
+						Target 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						SourceEvent::EventSpec
+							Id 1284338284
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(9)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target f91fffdf-9d9e-4f81-b5fc-6abf3d8cf3ed
+						SourceEvent::EventSpec
+							Id -1847112270
+						TargetEvent::EventSpec
+							Id -1847112270
+						TargetType EventConnectionTargetType_Client
+					member(10)::EventConnection
+						Source 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						Target 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+						SourceEvent::EventSpec
+							Id 232316407
+						TargetEvent::EventSpec
+							Id 232316407
+						TargetType EventConnectionTargetType_Client
+				Descriptor f91fffdf-9d9e-4f81-b5fc-6abf3d8cf3ed
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 87bef047-457e-40af-ba8f-76929628f565
+			member(1) 67fafe9e-5e73-46e1-9dfa-15039ac1fb41
+			member(2) dc744eeb-42a5-465e-9bb2-5cdcb9018963
+			member(3) 781360d0-3b49-4b18-b985-a802b59a04c3
+TimeDilationData 87bef047-457e-40af-ba8f-76929628f565
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 0
+					IndexInBlueprint 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Autostart False
+	TimeScaleMax 2.0
+	TimeScaleMin 0.05000000074505806
+	TimeScaleIn 0.0

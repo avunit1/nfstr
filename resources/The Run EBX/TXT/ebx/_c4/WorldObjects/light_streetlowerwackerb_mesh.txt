@@ -1,0 +1,42 @@
+MeshMaterial cce15544-e76d-4d5e-de28-66f5fd54d161
+	$::DataContainer
+	ShaderInstance *nullGuid*
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader _c4/WorldObjects/__BaseShaders/object_Simple/f2f60966-f7ed-4a0d-95c5-1041eff5b210
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+MeshMaterial f69931eb-2321-4f51-af98-742c913ba964
+	$::DataContainer
+	ShaderInstance *nullGuid*
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader _c4/WorldObjects/__BaseShaders/object_Emissive/911e8c68-48f6-4301-b8f7-c056811f3f16
+		BoolParameters *nullArray*
+		VectorParameters::array
+			member(0)::VectorShaderParameter
+				ParameterName Emissive_Scale
+				ParameterType ShaderParameterType_Scalar
+				Value::Vec4
+					x 10.0
+					y 0.0
+					z 0.0
+					w 0.0
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+RigidMeshAsset 735b9f98-f9d0-34ca-8022-08fb6be80fe9 #primary instance
+	$::MeshAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/worldobjects/light_streetlowerwackerb_mesh
+		LodGroup _c4/WorldObjects/__LodSettings/Light/57a2d7f4-c6be-ad96-338e-d7b84a5363e3
+		LodScale 1.0
+		CullScale 1.0
+		StreamingEnable True
+		OccluderMeshEnable False
+		OccluderHighPriority False
+		EnlightenType EnlightenType_LightProbe
+		Materials::array
+			member(0) cce15544-e76d-4d5e-de28-66f5fd54d161
+			member(1) f69931eb-2321-4f51-af98-742c913ba964
+		NameHash 2429797765

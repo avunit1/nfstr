@@ -1,0 +1,95 @@
+<BTFilterNode Guid="23864e71-5df1-4e41-9225-ae4d8e4b82e6">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] 4fa64be1-b385-488d-a551-17d114b481c5</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] 4f86672d-0177-4774-8c14-e0ae30b03d90</Eval>
+</BTFilterNode>
+<BTFilterNode Guid="4fa64be1-b385-488d-a551-17d114b481c5">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] a42ef417-49c6-4fcd-921f-74bff2b6b427</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] 40a1578d-0d35-48ae-8332-76a652ec21e0</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="7bfd29df-691e-4030-b53a-40bb028ab302">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] 23864e71-5df1-4e41-9225-ae4d8e4b82e6</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="a42ef417-49c6-4fcd-921f-74bff2b6b427">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[VQ_Do] 8174721d-bbe7-410a-b031-d23129257f73</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="0de18ef7-90a0-41ea-b363-20ccf85ebb17">
+    <Name>_c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_Tier3_Exotic</Name>
+    <Root>[BTSelectorNode] 7bfd29df-691e-4030-b53a-40bb028ab302</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<VQ_Do Guid="8174721d-bbe7-410a-b031-d23129257f73">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</VQ_Do>
+<zVehicleFilter Guid="4f86672d-0177-4774-8c14-e0ae30b03d90">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x3d242c74</AttribKey>
+            <AttribType>EBTAttribType_Int</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000003</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString>One 77</RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x99cc4f56</ClassKey>
+            <CollectionKey>0x57489e0d</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000002</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>
+<zVehicleFilter Guid="40a1578d-0d35-48ae-8332-76a652ec21e0">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x60c256c9</AttribKey>
+            <AttribType>EBTAttribType_Enum</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000000</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString></RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x707186a7</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>

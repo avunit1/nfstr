@@ -1,0 +1,73 @@
+FadeAsset a2359c85-cbb4-4d06-94bd-3ae9944f0b35
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset fe53abde-d446-4744-9d25-bb2ce0846457
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name TEMPMUSIC_PUT_BLACKKEYS_HERE
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_TheLondonSouls_TheSound_wave/357cecdc-ee4b-3a79-3691-a7aa8ca9aa80
+MusicPhraseAsset e2540b14-8824-49ae-8047-0444a1d06a0d
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) fe53abde-d446-4744-9d25-bb2ce0846457
+MusicSelectorAsset b3eadc47-8d30-4da6-acff-eb07104633df
+	$::DataContainer
+	Event _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/62c35696-fcb8-4884-b326-8ea80c9b2192
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable e2540b14-8824-49ae-8047-0444a1d06a0d
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset dd3c3a26-109c-4994-9d0c-4806ae91882f #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/RaceMusic/MX_BasicRaceSong_25_SongAsset
+	SongInterface _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/63946f3b-890a-0efc-d248-833ecffb5e41
+	NameHash 1054279479
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) e2540b14-8824-49ae-8047-0444a1d06a0d
+	Overlays *nullArray*
+	Selectors::array
+		member(0) b3eadc47-8d30-4da6-acff-eb07104633df
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

@@ -1,0 +1,110 @@
+BTIfNode 5c4f2653-efa3-4409-bf64-7ef44a85c28a
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 21cf5b55-68cb-4608-bcfb-2de976e87ccb
+			member(1) 5c41159a-1419-4e2f-994e-599b375610a5
+	Eval a5376a6c-cce1-4c66-b0a7-d018b0c883a7
+BTIfNode 5c41159a-1419-4e2f-994e-599b375610a5
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 0ea6c21b-0fd3-4680-8c6c-6b7e54016ee7
+	Eval a6bac2b2-5029-4f0a-af2c-3c1ec5b11a22
+BTSelectorNode a5800e48-d2fa-42cb-bb97-822df902bddb
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult True
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) ab2e4d50-6250-4b87-85cf-3802fa533173
+			member(1) 5c4f2653-efa3-4409-bf64-7ef44a85c28a
+BTTaskNode 21cf5b55-68cb-4608-bcfb-2de976e87ccb
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 687b4a97-cf3b-41e7-b0b6-4f2ddf6c3974
+BTTaskNode ab2e4d50-6250-4b87-85cf-3802fa533173
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 32a4ef66-74b1-411d-9d7a-bf8ff605c83e
+BTTaskNode 0ea6c21b-0fd3-4680-8c6c-6b7e54016ee7
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task b709a039-4d5e-45e0-82f0-a493d9474bc3
+BTWrapperNode 313c9580-04b0-46b0-85a2-062f2b2bf624
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Wrapper
+		Nodes::array
+			member(0) a5800e48-d2fa-42cb-bb97-822df902bddb
+	ReturnTrue False
+BT_DoDynamicSubBehavior 32a4ef66-74b1-411d-9d7a-bf8ff605c83e
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Behavior *nullGuid*
+BT_DoSideRam 687b4a97-cf3b-41e7-b0b6-4f2ddf6c3974
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	OutTime 0.30000001192092896
+	OutDistance 3.0
+	InTime 0.5
+	InDistance 10.0
+BT_DoTriggerTacticVO b709a039-4d5e-45e0-82f0-a493d9474bc3
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+BT_IsVar a5376a6c-cce1-4c66-b0a7-d018b0c883a7
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_TacticTime
+	Context EContext_Self
+	Comparator Compare_LessThan
+	Value 1.0
+BT_IsVar a6bac2b2-5029-4f0a-af2c-3c1ec5b11a22
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_TacticTime
+	Context EContext_Self
+	Comparator Compare_MoreThan
+	Value 0.30000001192092896
+BehaviourTreeData b0ee556b-0131-4deb-a0b6-dc9ef87ac962 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_SideRam_Fast
+	Root 313c9580-04b0-46b0-85a2-062f2b2bf624
+	Description 

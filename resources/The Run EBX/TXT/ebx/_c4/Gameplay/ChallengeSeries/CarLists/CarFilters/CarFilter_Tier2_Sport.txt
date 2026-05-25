@@ -1,0 +1,90 @@
+BTFilterNode 3196a3d8-3de9-4815-8979-749af3bd5d64
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) b1125888-c24a-41e0-82e5-af3b854c320b
+	Eval 893e744b-11cc-49b6-938f-dd25fcae2d61
+BTFilterNode b1125888-c24a-41e0-82e5-af3b854c320b
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 3325bd6a-dcf0-4284-9fe1-1e198d8ecb08
+	Eval 0b7df100-8d15-4331-983b-4ac4847d70f6
+BTSelectorNode 73e97808-8b04-4859-a6c5-7de43cfe64a1
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 3196a3d8-3de9-4815-8979-749af3bd5d64
+BTTaskNode 3325bd6a-dcf0-4284-9fe1-1e198d8ecb08
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 12c176da-3353-44eb-b7b4-f092edec2310
+BehaviourTreeData c50c396e-4688-4e36-84dc-b9ba02daca31 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_Tier2_Sport
+	Root 73e97808-8b04-4859-a6c5-7de43cfe64a1
+	Description 
+VQ_Do 12c176da-3353-44eb-b7b4-f092edec2310
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 893e744b-11cc-49b6-938f-dd25fcae2d61
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 1025780852
+			AttribType EBTAttribType_Int
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 2
+		RValueFloat 0.0
+		RValueBool False
+		RValueString One 77
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 1464376845
+zVehicleFilter 0b7df100-8d15-4331-983b-4ac4847d70f6
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 1623348937
+			AttribType EBTAttribType_Enum
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 0
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 3817602228
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

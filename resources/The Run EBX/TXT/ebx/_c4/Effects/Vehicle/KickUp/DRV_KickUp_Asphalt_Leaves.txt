@@ -1,0 +1,206 @@
+BBMapToCurve dd8c0935-ec8f-4618-a839-d4e2337d5371
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 0.29963716864585876
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 0.29963716864585876
+					y 0.500135064125061
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 0.8607712388038635
+					y 0.6993517279624939
+				LineType Linear
+			member(4)::MultiPointLinePoint
+				Point::Vec2
+					x 1.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve 38f47f6d-dc88-4a44-891b-2a0feab265e1
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x -5.0
+					y 0.8999999761581421
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 0.0
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 5.0
+					y 0.8999999761581421
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve bf162233-59c9-4b35-b09e-50ebb742147f
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x 0.0
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x 41.56611251831055
+					y 1.0
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 100.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput True
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+EffectBlueprint e5745d9e-5fff-48cd-9967-eda9ce54e322 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Vehicle/KickUp/DRV_KickUp_Asphalt_Leaves
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object 4d7be436-bc8c-4c09-aecd-26201811abf2
+EffectEntityData 4d7be436-bc8c-4c09-aecd-26201811abf2
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 0
+				IsPropertyConnectionTarget 0
+				IndexInBlueprint 0
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Components::array
+		member(0) e3d9fe0c-81e3-4fca-991a-361fd639c3ef
+	MaxInstanceCount 1
+	CullDistance 0.0
+	StartDelay 0.0
+	ResetInstanceWhenStarted True
+	BlackboardAssociations::array
+		member(0) f82b07c4-0b48-434c-8805-68369b016d30
+		member(1) ef998a09-9c65-483b-8a57-4e6ebb06867b
+		member(2) f2c63348-7b6e-4523-8dab-ba4096e19f44
+EmitterEntityData e3d9fe0c-81e3-4fca-991a-361fd639c3ef
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 0.7071067690849304
+					z -0.7071067690849304
+				forward::Vec3
+					x 0.0
+					y 0.7071067690849304
+					z 0.7071067690849304
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		BlackboardAssociations *nullArray*
+	BlackboardAssociations *nullArray*
+	Emitter _c4/Effects/Vehicle/KickUp/Emitters/DRV_Kickup_Leaves/a5076842-d5b2-4c6d-bd44-b13cadd03270
+	SpawnProbability 1.0
+ParameterBlackboardAssociation f82b07c4-0b48-434c-8805-68369b016d30
+	$::DataContainer
+	EmitterParameter EmitterParameter1
+	BlackboardField1 bf255967-2da2-42f5-9fb4-bfa9da9a5feb
+	BlackboardField2 *nullGuid*
+	BlackboardMapping dd8c0935-ec8f-4618-a839-d4e2337d5371
+ParameterBlackboardAssociation ef998a09-9c65-483b-8a57-4e6ebb06867b
+	$::DataContainer
+	EmitterParameter EmitterParameter3
+	BlackboardField1 5c90559f-01e9-419e-8d31-2bc65e1f5926
+	BlackboardField2 *nullGuid*
+	BlackboardMapping 38f47f6d-dc88-4a44-891b-2a0feab265e1
+ParameterBlackboardAssociation f2c63348-7b6e-4523-8dab-ba4096e19f44
+	$::DataContainer
+	EmitterParameter EmitterParameter2
+	BlackboardField1 a5069662-f569-403c-b04e-679c2f4a5994
+	BlackboardField2 *nullGuid*
+	BlackboardMapping bf162233-59c9-4b35-b09e-50ebb742147f
+WheelRelativeBBField bf255967-2da2-42f5-9fb4-bfa9da9a5feb
+	$::RelativeBBField
+		$::BlackboardFieldRef
+			$::DataContainer
+	WheelBB WheelBB_LatSlip
+WheelRelativeBBField 5c90559f-01e9-419e-8d31-2bc65e1f5926
+	$::RelativeBBField
+		$::BlackboardFieldRef
+			$::DataContainer
+	WheelBB WheelBB_LongSlip
+WheelRelativeBBField a5069662-f569-403c-b04e-679c2f4a5994
+	$::RelativeBBField
+		$::BlackboardFieldRef
+			$::DataContainer
+	WheelBB WheelBB_RotationalVelocity

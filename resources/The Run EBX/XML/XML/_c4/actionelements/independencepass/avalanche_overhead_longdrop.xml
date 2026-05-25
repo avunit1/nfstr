@@ -1,0 +1,210 @@
+<EffectReferenceObjectData Guid="d1feedb9-7f0b-49b5-b564-71a9f8a9171f">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>27,04535</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Destruction/Avalanche/Avalanche_Overhead_LongDrop [e6445035-01a8-4e8d-8878-4141ab7964bb]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>False</AutoStart>
+</EffectReferenceObjectData>
+<InterfaceDescriptorData Guid="2f5d3a05-a284-48b7-90ab-27718ac59966">
+    <Fields Count="1">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xd222bc88</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x04b939c4</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x2470b1fc</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xc39f38fb</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xa02a8c03</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LocatorEntityData Guid="d9b94c06-3725-48eb-9fa1-4f78d7c47bae">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>27,18926</x>
+                    <y>-0,2100892</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Realm>Realm_Client</Realm>
+</LocatorEntityData>
+<SpatialPrefabBlueprint Guid="287ce559-4ff7-48cc-8f96-5c58e4168386">
+    <Name>_c4/ActionElements/IndependencePass/Avalanche_Overhead_LongDrop</Name>
+    <PropertyConnections Count="1">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[LocatorEntityData] d9b94c06-3725-48eb-9fa1-4f78d7c47bae</Source>
+                <Target>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Target>
+                <SourceFieldId>DynamicTransform [72C13D1C]</SourceFieldId>
+                <TargetFieldId>0xd222bc88</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Source>
+                <Target>[EffectReferenceObjectData] d1feedb9-7f0b-49b5-b564-71a9f8a9171f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x2470b1fc</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Source>
+                <Target>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x04b939c4</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xc39f38fb</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Source>
+                <Target>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x2470b1fc</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xa02a8c03</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Source>
+                <Target>[EffectReferenceObjectData] d1feedb9-7f0b-49b5-b564-71a9f8a9171f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x04b939c4</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 2f5d3a05-a284-48b7-90ab-27718ac59966</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[EffectReferenceObjectData] d1feedb9-7f0b-49b5-b564-71a9f8a9171f</member>
+        <member Index="1">[LocatorEntityData] d9b94c06-3725-48eb-9fa1-4f78d7c47bae</member>
+    </Objects>
+</SpatialPrefabBlueprint>

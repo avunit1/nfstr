@@ -1,0 +1,540 @@
+<ChallengeManagerEntityData Guid="ad20db6a-a65b-4e5a-90c2-b42c9f2e09e3">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+</ChallengeManagerEntityData>
+<InterfaceDescriptorData Guid="92cec22d-975c-455e-b093-0377f71ac5a7">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="7">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xfbfa457a</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x80ab3f67</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x79124853</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="3">
+            <DynamicEvent>
+                <Id>0x5b1274aa</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="4">
+            <DynamicEvent>
+                <Id>0xab7137df</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="5">
+            <DynamicEvent>
+                <Id>0x0ced00b4</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="6">
+            <DynamicEvent>
+                <Id>OnFail [AA84CDC6]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="84d4f363-13c1-4764-a95b-d9a22bb42c87">
+    <Name>_c4/Sound/Music/RaceMusic/CareerMode_BasicRaceSong_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="20">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xfbfa457a</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] 8acc7ea8-48e0-4722-a20c-da67eec8dcd7</Source>
+                <Target>[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] 8acc7ea8-48e0-4722-a20c-da67eec8dcd7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] 5b575d49-c932-41ec-94ed-a6ec5dcbae6d</Source>
+                <Target>[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] 5b575d49-c932-41ec-94ed-a6ec5dcbae6d</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[ChallengeManagerEntityData] ad20db6a-a65b-4e5a-90c2-b42c9f2e09e3</Source>
+                <Target>[NFSGameModeToEventEntityData] 5b575d49-c932-41ec-94ed-a6ec5dcbae6d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnEnabled [9E88CA61]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[ChallengeManagerEntityData] ad20db6a-a65b-4e5a-90c2-b42c9f2e09e3</Source>
+                <Target>[NFSGameModeToEventEntityData] 8acc7ea8-48e0-4722-a20c-da67eec8dcd7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnEnabled [9E88CA61]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x79124853</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x79124853</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x80ab3f67</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x80ab3f67</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x5b1274aa</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x36f27cb6</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xab7137df</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xedf33939</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="13">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0ced00b4</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="14">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFail [AA84CDC6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="15">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0ced00b4</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x0b87ffd5</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="16">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFail [AA84CDC6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>N.QD [7C83EA90]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="17">
+            <EventConnection>
+                <Source>[ChallengeManagerEntityData] ad20db6a-a65b-4e5a-90c2-b42c9f2e09e3</Source>
+                <Target>[NFSGameModeToEventEntityData] 62fab0e1-ccf1-4ed0-83ec-53bd9cd35745</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnEnabled [9E88CA61]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="18">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] 62fab0e1-ccf1-4ed0-83ec-53bd9cd35745</Source>
+                <Target>[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="19">
+            <EventConnection>
+                <Source>[NFSGameModeToEventEntityData] 62fab0e1-ccf1-4ed0-83ec-53bd9cd35745</Source>
+                <Target>[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 92cec22d-975c-455e-b093-0377f71ac5a7</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[SoundEntityData] 448edad9-660f-40d5-a123-9465602e2808</member>
+        <member Index="1">[SoundEntityData] 36762daf-360c-4bed-8b21-e57052915830</member>
+        <member Index="2">[NFSGameModeToEventEntityData] 8acc7ea8-48e0-4722-a20c-da67eec8dcd7</member>
+        <member Index="3">[NFSGameModeToEventEntityData] 5b575d49-c932-41ec-94ed-a6ec5dcbae6d</member>
+        <member Index="4">[ChallengeManagerEntityData] ad20db6a-a65b-4e5a-90c2-b42c9f2e09e3</member>
+        <member Index="5">[NFSGameModeToEventEntityData] 62fab0e1-ccf1-4ed0-83ec-53bd9cd35745</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<NFSGameModeToEventEntityData Guid="8acc7ea8-48e0-4722-a20c-da67eec8dcd7">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <gameplayMode>GameModeCopy_StoryMode</gameplayMode>
+</NFSGameModeToEventEntityData>
+<NFSGameModeToEventEntityData Guid="5b575d49-c932-41ec-94ed-a6ec5dcbae6d">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <gameplayMode>GameModeCopy_CareerMode</gameplayMode>
+</NFSGameModeToEventEntityData>
+<NFSGameModeToEventEntityData Guid="62fab0e1-ccf1-4ed0-83ec-53bd9cd35745">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <gameplayMode>GameModeCopy_ChallengeMode</gameplayMode>
+</NFSGameModeToEventEntityData>
+<SoundEntityData Guid="448edad9-660f-40d5-a123-9465602e2808">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Sound>[Ebx] BadRef 661aa193-3afb-11e0-9574-e964a033c851/db3e4e12-2805-4f75-4c22-238fbbe06b9a</Sound>
+    <PlayOnCreation>False</PlayOnCreation>
+    <EnabledOnCreation>False</EnabledOnCreation>
+</SoundEntityData>
+<SoundEntityData Guid="36762daf-360c-4bed-8b21-e57052915830">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Sound>[Ebx] BadRef 56b1b234-fd99-11df-85a9-c4a76b031cfa/f65c1302-3cc7-9687-4bc1-2ae1825b3438</Sound>
+    <PlayOnCreation>False</PlayOnCreation>
+    <EnabledOnCreation>False</EnabledOnCreation>
+</SoundEntityData>

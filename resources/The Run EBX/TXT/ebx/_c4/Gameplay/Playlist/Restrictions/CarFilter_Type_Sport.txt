@@ -1,0 +1,59 @@
+BTFilterNode 6ad41482-d70e-4bd0-8971-85842a74a603
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 9d4494b9-59ae-4f88-b4e8-993f111278ce
+	Eval d72f33d9-79fd-4476-a184-afbb73e4a71c
+BTSelectorNode 2a6c8694-b8a8-4269-81b6-9cc089123f57
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 6ad41482-d70e-4bd0-8971-85842a74a603
+BTTaskNode 9d4494b9-59ae-4f88-b4e8-993f111278ce
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 60b7d3fd-5729-4267-940c-9dfe972d8459
+BehaviourTreeData 23f8e4fa-aa95-4b23-8b5a-0f36765ccfbd #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Playlist/Restrictions/CarFilter_Type_Sport
+	Root 2a6c8694-b8a8-4269-81b6-9cc089123f57
+	Description 
+VQ_Do 60b7d3fd-5729-4267-940c-9dfe972d8459
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter d72f33d9-79fd-4476-a184-afbb73e4a71c
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 1623348937
+			AttribType EBTAttribType_Enum
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 1
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 3817602228
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

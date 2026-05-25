@@ -1,0 +1,248 @@
+AntAnimatableComponentData 69091f8c-c92e-4a61-9880-93454df69a37
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	Realm Realm_ClientAndServer
+	AnimationData::AntAnimationHandlerData
+		Animatable::AntAnimatableData
+			Actor::AntRef
+				AssetId 50331676
+			ProceduralAwareness *nullGuid*
+			RightHandEffectorDisableOverride::AntRef
+				AssetId -1
+			LeftHandEffectorDisableOverride::AntRef
+				AssetId -1
+			MasterSkeletonAsset _c4/Characters/Camera/Camera_MasterSkeleton/3a12eaf0-c089-6a73-209d-274b6a5b184b
+		RootController::AntRef
+			AssetId 50331649
+		LodBinding::LodBinding
+			DisableControllerUpdate::AntRef
+				AssetId -1
+			DisablePoseUpdate::AntRef
+				AssetId -1
+			DistanceFromCamera::AntRef
+				AssetId -1
+		AntPackageData *nullArray*
+		ReportBackFromAnt True
+		EnableMasterSlaveCopy True
+		BonesToMirror::array
+			member(0)::GameplayBone
+				Name AITrajectory
+				Bone GameplayBones_RootBone
+		IsProp True
+	Mesh *nullGuid*
+	AutoActivate True
+	AnimationControlledFromStart False
+AntCameraBlueprint 5150eaa1-7eac-40b6-9c27-07fc7faca673 #primary instance
+	$::BasicControllableBlueprint
+		$::ObjectBlueprint
+			$::Blueprint
+				$::EntityBusData
+					$::DataBusData
+						$::Asset
+							$::DataContainer
+							Name _c4/ActionElements/_Common/Camera/NFSAntCamera_Noise_Med_1
+						PropertyConnections *nullArray*
+						LinkConnections::array
+							member(0)::LinkConnection
+								Source e466b6e0-ff6d-4644-8eee-72b085b52ba9
+								Target 69091f8c-c92e-4a61-9880-93454df69a37
+								SourceFieldId 1596222090
+								TargetFieldId 0
+					EventConnections::array
+						member(0)::EventConnection
+							Source 8d5c32b3-a8ea-4862-96e2-5b95f04cde2d
+							Target e466b6e0-ff6d-4644-8eee-72b085b52ba9
+							SourceEvent::EventSpec
+								Id 1738916615
+							TargetEvent::EventSpec
+								Id 1738916615
+							TargetType EventConnectionTargetType_Client
+						member(1)::EventConnection
+							Source e466b6e0-ff6d-4644-8eee-72b085b52ba9
+							Target 8d5c32b3-a8ea-4862-96e2-5b95f04cde2d
+							SourceEvent::EventSpec
+								Id -559281700
+							TargetEvent::EventSpec
+								Id -559281700
+							TargetType EventConnectionTargetType_Client
+						member(2)::EventConnection
+							Source e466b6e0-ff6d-4644-8eee-72b085b52ba9
+							Target 8d5c32b3-a8ea-4862-96e2-5b95f04cde2d
+							SourceEvent::EventSpec
+								Id 1928776733
+							TargetEvent::EventSpec
+								Id 1928776733
+							TargetType EventConnectionTargetType_Client
+						member(3)::EventConnection
+							Source 69091f8c-c92e-4a61-9880-93454df69a37
+							Target 8d5c32b3-a8ea-4862-96e2-5b95f04cde2d
+							SourceEvent::EventSpec
+								Id -427752080
+							TargetEvent::EventSpec
+								Id 1561468660
+							TargetType EventConnectionTargetType_ClientAndServer
+					Descriptor e466b6e0-ff6d-4644-8eee-72b085b52ba9
+					NeedNetworkId True
+					InterfaceHasConnections True
+					ForceCreateAsFull False
+			Object 8d5c32b3-a8ea-4862-96e2-5b95f04cde2d
+AntCameraData 8d5c32b3-a8ea-4862-96e2-5b95f04cde2d
+	$::BasicControllableEntityData
+		$::CharacterEntityData
+			$::ControllableEntityData
+				$::GamePhysicsEntityData
+					$::GameEntityData
+						$::SpatialEntityData
+							$::EntityData
+								$::GameObjectData
+									$::GameDataContainer
+										$::DataContainer
+									IsEventConnectionTarget 2
+									IsPropertyConnectionTarget 2
+									IndexInBlueprint 0
+							Transform::LinearTransform
+								right::Vec3
+									x 1.0
+									y 0.0
+									z 0.0
+								up::Vec3
+									x 0.0
+									y 1.0
+									z 0.0
+								forward::Vec3
+									x 0.0
+									y 0.0
+									z 1.0
+								trans::Vec3
+									x 0.0
+									y 0.0
+									z 0.0
+						Enabled True
+						Components::array
+							member(0) 1ea0ce66-39cf-4999-a502-b1ca7b62ed37
+							member(1) 69091f8c-c92e-4a61-9880-93454df69a37
+						RuntimeComponentCount 2
+					PhysicsData *nullGuid*
+				UsePrediction True
+				DefaultTeam TeamNeutral
+				ResetTeamOnLastPlayerExits True
+				Immortal False
+				FakeImmortal False
+				LowHealthThreshold 50.0
+				MaterialPair *nullGuid*
+			DefaultViewMode PersonViewMode_ThirdPerson
+			PlayerSpawnType PlayerSpawnType_HumanPlayer
+	AutoActivate True
+	Mode _c4/cameras/OOC/_global/modes/AntCameraMode_Noise_Med_1/0c6cf528-feb2-43d5-8e68-2bc5475033e5
+	PriorityOverride 0.0
+	EnablePriorityOverride False
+	CameraBlipFactorGameStateAsset::AntRef
+		AssetId 50332069
+InterfaceDescriptorData e466b6e0-ff6d-4644-8eee-72b085b52ba9
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -559281700
+		member(1)::DynamicEvent
+			Id 1928776733
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1738916615
+	InputLinks::array
+		member(0)::DynamicLink
+			Id 1596222090
+	OutputLinks *nullArray*
+PlayerEntryComponentData 1ea0ce66-39cf-4999-a502-b1ca7b62ed37
+	$::EntryComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 3
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 1
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			Components *nullArray*
+			Excluded False
+		EntryClass ecPrimary
+		AIData *nullGuid*
+		ForbiddenForHuman False
+		InputConceptDefinition Input/VeniceSoldierInputConcepts/d2b06e08-13a0-4e3b-bee5-c674f06f9d44
+		InputMapping Characters/Soldiers/DefaultSoldierInputMapping/115d78b4-d4ce-46e5-84dc-73f5c092b882
+		InputCurves *nullArray*
+		HudData::EntryComponentHudData
+			Index 0
+			Frustum False
+			Visible True
+			SeatType EST_Driver
+		EntryOrderNumber 0
+		RememberCamera False
+		EnterImpulse 2000.0
+		EntryRadius 1.0
+		IsAllowedToExitInAir True
+		IsShielded False
+		LockSoldierAimingToEntry True
+		ShowSoldierInEntry True
+		Show1pSoldierInEntry False
+		NumberOfStances 1
+		StancesEnabled False
+		EntrySpottingSettings ESSDefault
+		ShowSoldierWeaponInEntry False
+		ShowSoldierGearInEntry False
+		PoseConstraints::PoseConstraintsData
+			StandPose True
+			CrouchPose True
+			PronePose True
+		SoldierOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		EntryComponentSound *nullGuid*
+	AntEntryID 
+	AntEntryId AntEntryIdEnum_Humvee_Driver
+	AnimationAccelerationMultiplier::Vec3
+		x 0.10000000149011612
+		y 0.10000000149011612
+		z 0.10000000149011612

@@ -1,0 +1,499 @@
+<CinebotStateLogicEntityData Guid="bdae5f73-a101-4dda-b7ca-e66ba2175c73">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Mode>[Ebx] _c4/cameras/Core_Drive/Generic_Outros/Modes/Outro_Success_EndSequence_Shot4A_mode [881bda80-6ac9-479c-9f53-5cefcc85a467]</Mode>
+    <PriorityOverride>0</PriorityOverride>
+    <EnablePriorityOverride>False</EnablePriorityOverride>
+</CinebotStateLogicEntityData>
+<FloatPropertyTrackData Guid="63cc8190-23cd-408e-9b05-87ca4266155b">
+    <Id>0xb197759c</Id>
+    <Times Count="2">
+        <member Index="0">0x00000000</member>
+        <member Index="1">0x000000fa</member>
+    </Times>
+    <InterpolationType>InterpolationType_Linear</InterpolationType>
+    <Values Count="2">
+        <member Index="0">0,001</member>
+        <member Index="1">1</member>
+    </Values>
+</FloatPropertyTrackData>
+<FloatPropertyTrackData Guid="7b092179-fe3d-40b2-bcfd-5aba2d8fbc4c">
+    <Id>0x0b87b54a</Id>
+    <Times Count="3">
+        <member Index="0">0x00000000</member>
+        <member Index="1">0x000001f3</member>
+        <member Index="2">0x000005dc</member>
+    </Times>
+    <InterpolationType>InterpolationType_CatmullRom</InterpolationType>
+    <Values Count="3">
+        <member Index="0">1</member>
+        <member Index="1">1</member>
+        <member Index="2">0</member>
+    </Values>
+</FloatPropertyTrackData>
+<InterfaceDescriptorData Guid="0295728d-1704-4883-a8d7-068bfd0c8ebd">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Start [0DC0EFA5]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Stop [7C89BB7D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<MixerEntityData Guid="ce1ec4da-aef2-44e8-93b0-67c95baf8d57">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <MixerScalar>1</MixerScalar>
+    <Mixer>[Ebx] _c4/Sound/Mixing/RaceLogic/MIX_RaceFlow_PostRaceEnd_FadeOut [0f9fab11-0088-4ca9-6259-2063a501d1e6]</Mixer>
+    <ActivateOnCreation>False</ActivateOnCreation>
+</MixerEntityData>
+<PrefabBlueprint Guid="98fc0b0e-9331-4911-af4d-114388ff1ced">
+    <Name>_c4/cameras/Core_Drive/Generic_Outros/Outro_Success_EndSequence4_Prefab</Name>
+    <PropertyConnections Count="2">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[TimeDilationData] f9d66b2a-7c45-4c65-bbf8-51be121e96b4</Target>
+                <SourceFieldId>0xb197759c</SourceFieldId>
+                <TargetFieldId>0xfae6bb2f</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[ReferenceObjectData] 65ad249f-56df-4360-831a-4d14880424e4</Target>
+                <SourceFieldId>0x0b87b54a</SourceFieldId>
+                <TargetFieldId>0x94103ec9</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="13">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[CinebotStateLogicEntityData] bdae5f73-a101-4dda-b7ca-e66ba2175c73</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87a72a</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>End [0B87A32A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[CinebotStateLogicEntityData] bdae5f73-a101-4dda-b7ca-e66ba2175c73</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0dd01c36</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Begin [0C9380A2]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 0295728d-1704-4883-a8d7-068bfd0c8ebd</Source>
+                <Target>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[InterfaceDescriptorData] 0295728d-1704-4883-a8d7-068bfd0c8ebd</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87a72a</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 0295728d-1704-4883-a8d7-068bfd0c8ebd</Source>
+                <Target>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[TimeDilationData] f9d66b2a-7c45-4c65-bbf8-51be121e96b4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x91e3d868</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[TimeDilationData] f9d66b2a-7c45-4c65-bbf8-51be121e96b4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStopped [B9D8CE6D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[SoundEntityData] 39d64726-e0c4-4966-92bd-6c96b2fe7954</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87a72a</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[ReferenceObjectData] 65ad249f-56df-4360-831a-4d14880424e4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStopped [B9D8CE6D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xe6b26862</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[ReferenceObjectData] 65ad249f-56df-4360-831a-4d14880424e4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x91e3d868</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xe8db8d97</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[MixerEntityData] ce1ec4da-aef2-44e8-93b0-67c95baf8d57</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</Source>
+                <Target>[MixerEntityData] ce1ec4da-aef2-44e8-93b0-67c95baf8d57</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87a72a</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Deactivate [72F6CC1D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 0295728d-1704-4883-a8d7-068bfd0c8ebd</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[CinebotStateLogicEntityData] bdae5f73-a101-4dda-b7ca-e66ba2175c73</member>
+        <member Index="1">[SequenceEntityData] 624d9a3e-6781-4e87-a271-7a86fa8c5141</member>
+        <member Index="2">[TimeDilationData] f9d66b2a-7c45-4c65-bbf8-51be121e96b4</member>
+        <member Index="3">[ReferenceObjectData] 65ad249f-56df-4360-831a-4d14880424e4</member>
+        <member Index="4">[SoundEntityData] 39d64726-e0c4-4966-92bd-6c96b2fe7954</member>
+        <member Index="5">[MixerEntityData] ce1ec4da-aef2-44e8-93b0-67c95baf8d57</member>
+    </Objects>
+</PrefabBlueprint>
+<ReferenceObjectData Guid="65ad249f-56df-4360-831a-4d14880424e4">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>-0,005297959</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/cameras/postfx/cinematic_visenv [1fe010f0-11e3-49f6-be0f-6c9fcb1ccb57]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<SequenceEntityData Guid="624d9a3e-6781-4e87-a271-7a86fa8c5141">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="3">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>0x0dd01c36</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000000</Time>
+            </SequenceEventData>
+        </member>
+        <member Index="1">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>0x91e3d868</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000000</Time>
+            </SequenceEventData>
+        </member>
+        <member Index="2">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>0x0b87a72a</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000bb8</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00000bb8</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="2">
+        <member Index="0">[FloatPropertyTrackData] 63cc8190-23cd-408e-9b05-87ca4266155b</member>
+        <member Index="1">[FloatPropertyTrackData] 7b092179-fe3d-40b2-bcfd-5aba2d8fbc4c</member>
+    </PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PreSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SoundEntityData Guid="39d64726-e0c4-4966-92bd-6c96b2fe7954">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Sound>[Ebx] _c4/sound/sfx_moments/nis_transitions/nis_outros/nis_generic_postracefinish_patch [c8d4c30e-fbbc-4200-9ec1-739be31f1f64]</Sound>
+    <PlayOnCreation>False</PlayOnCreation>
+    <EnabledOnCreation>True</EnabledOnCreation>
+</SoundEntityData>
+<TimeDilationData Guid="f9d66b2a-7c45-4c65-bbf8-51be121e96b4">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <TimeScaleMax>2</TimeScaleMax>
+    <TimeScaleMin>0</TimeScaleMin>
+    <TimeScaleIn>0</TimeScaleIn>
+    <Autostart>False</Autostart>
+</TimeDilationData>

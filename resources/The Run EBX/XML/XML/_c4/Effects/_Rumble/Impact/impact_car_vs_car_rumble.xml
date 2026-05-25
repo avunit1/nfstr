@@ -1,0 +1,102 @@
+<BBMapToCurve Guid="f1b0a994-4ec7-45c9-9c89-6e3c3b331f5e">
+    <NumInputsRequired>0x00000001</NumInputsRequired>
+    <Curve>
+        <MultiPointLine>
+            <Points Count="4">
+                <member Index="0">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>0</x>
+                                <y>0</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+                <member Index="1">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>0</x>
+                                <y>1,236531E-08</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+                <member Index="2">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>4,705088</x>
+                                <y>1</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+                <member Index="3">
+                    <MultiPointLinePoint>
+                        <Point>
+                            <Vec2>
+                                <x>10</x>
+                                <y>1</y>
+                            </Vec2>
+                        </Point>
+                        <LineType>Linear</LineType>
+                    </MultiPointLinePoint>
+                </member>
+            </Points>
+        </MultiPointLine>
+    </Curve>
+    <ClampOutputMax>1</ClampOutputMax>
+    <ClampOutputMin>0</ClampOutputMin>
+    <OutputIsXTimesY>False</OutputIsXTimesY>
+    <ClampOutput>False</ClampOutput>
+</BBMapToCurve>
+<LevelBlackboardMap Guid="9f4cbc1a-5498-4fa7-8b81-d05e9b62de4a">
+    <BlackboardField1>LocalPlayerCollisionMagnitude</BlackboardField1>
+    <BlackboardField2></BlackboardField2>
+    <BlackboardMapping>[BBMapToCurve] f1b0a994-4ec7-45c9-9c89-6e3c3b331f5e</BlackboardMapping>
+</LevelBlackboardMap>
+<RumbleAsset Guid="74671639-57a9-7086-648f-c520bf10dad6">
+    <Name>_c4/Effects/_Rumble/Impact/Impact_Car_vs_Car_Rumble</Name>
+    <LowActuator Count="1">
+        <member Index="0">
+            <RumbleData>
+                <Frequency>1</Frequency>
+                <Offset>0</Offset>
+                <Base>0</Base>
+                <WaveKind>RWK_Constant</WaveKind>
+                <Blend>RBK_None</Blend>
+                <Duration>0,25</Duration>
+                <Delay>0</Delay>
+                <Amplitude>1</Amplitude>
+                <Enabled>True</Enabled>
+                <Invert>False</Invert>
+            </RumbleData>
+        </member>
+    </LowActuator>
+    <HighActuator Count="1">
+        <member Index="0">
+            <RumbleData>
+                <Frequency>1</Frequency>
+                <Offset>0</Offset>
+                <Base>0</Base>
+                <WaveKind>RWK_Constant</WaveKind>
+                <Blend>RBK_None</Blend>
+                <Duration>0,25</Duration>
+                <Delay>0</Delay>
+                <Amplitude>1</Amplitude>
+                <Enabled>True</Enabled>
+                <Invert>False</Invert>
+            </RumbleData>
+        </member>
+    </HighActuator>
+    <GlobalScalar>[LevelBlackboardMap] 9f4cbc1a-5498-4fa7-8b81-d05e9b62de4a</GlobalScalar>
+    <HighAmplitudeScalar>nullptr</HighAmplitudeScalar>
+    <HighFrequencyScalar>nullptr</HighFrequencyScalar>
+    <LowAmplitudeScalar>nullptr</LowAmplitudeScalar>
+    <LowFrequencyScalar>nullptr</LowFrequencyScalar>
+</RumbleAsset>

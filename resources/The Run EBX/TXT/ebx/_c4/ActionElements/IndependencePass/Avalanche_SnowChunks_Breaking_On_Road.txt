@@ -1,0 +1,143 @@
+EffectReferenceObjectData ce38a3fa-f344-4db3-a55d-71fbc04b396c
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint _c4/Effects/Destruction/Avalanche/Avalanche_SnowChunks_Breaking/8a1d4690-2abf-48e1-a514-bc237aec94da
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+InterfaceDescriptorData 7470467c-755c-40ea-b4a1-c52cd8647e57
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -1667293331
+				AccessType FieldAccessType_Source
+			member(1)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 2029076723
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1439738358
+		member(1)::DynamicEvent
+			Id -355555278
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1439738358
+		member(1)::DynamicEvent
+			Id -355555278
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LocatorEntityData f699f239-5500-45d4-a786-ea6e972d9ae2
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 3
+				IsPropertyConnectionTarget 2
+				IndexInBlueprint 1
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z -10.0
+	Realm Realm_ClientAndServer
+SpatialPrefabBlueprint 96215718-c2f1-43b9-adb3-2e06da4c2f11 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/ActionElements/IndependencePass/Avalanche_SnowChunks_Breaking_On_Road
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source f699f239-5500-45d4-a786-ea6e972d9ae2
+							Target 7470467c-755c-40ea-b4a1-c52cd8647e57
+							SourceFieldId 1925266716
+							TargetFieldId -1667293331
+						member(1)::PropertyConnection
+							Source 7470467c-755c-40ea-b4a1-c52cd8647e57
+							Target f699f239-5500-45d4-a786-ea6e972d9ae2
+							SourceFieldId 2029076723
+							TargetFieldId -2024647575
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 7470467c-755c-40ea-b4a1-c52cd8647e57
+						Target ce38a3fa-f344-4db3-a55d-71fbc04b396c
+						SourceEvent::EventSpec
+							Id -355555278
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 7470467c-755c-40ea-b4a1-c52cd8647e57
+						Target 7470467c-755c-40ea-b4a1-c52cd8647e57
+						SourceEvent::EventSpec
+							Id -1439738358
+						TargetEvent::EventSpec
+							Id -1439738358
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 7470467c-755c-40ea-b4a1-c52cd8647e57
+						Target 7470467c-755c-40ea-b4a1-c52cd8647e57
+						SourceEvent::EventSpec
+							Id -355555278
+						TargetEvent::EventSpec
+							Id -355555278
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 7470467c-755c-40ea-b4a1-c52cd8647e57
+						Target ce38a3fa-f344-4db3-a55d-71fbc04b396c
+						SourceEvent::EventSpec
+							Id -1439738358
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor 7470467c-755c-40ea-b4a1-c52cd8647e57
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) ce38a3fa-f344-4db3-a55d-71fbc04b396c
+			member(1) f699f239-5500-45d4-a786-ea6e972d9ae2

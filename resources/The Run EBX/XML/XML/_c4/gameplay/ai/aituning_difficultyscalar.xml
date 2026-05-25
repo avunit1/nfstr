@@ -1,0 +1,268 @@
+<InterfaceDescriptorData Guid="c851ce18-da3f-409b-bfcf-a5b273828a5b">
+    <Fields Count="5">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xb961137c</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+        <member Index="1">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xe670ccc4</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="2">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xe39eb458</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="3">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xe1be63d7</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="4">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0x12cf0047</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Check [0CAEAF43]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="1f8d5acd-1bcc-4580-9276-ff9535d67e7b">
+    <Name>_c4/Gameplay/AI/AITuning_DifficultyScalar</Name>
+    <PropertyConnections Count="5">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Source>
+                <Target>[InterfaceDescriptorData] c851ce18-da3f-409b-bfcf-a5b273828a5b</Target>
+                <SourceFieldId>0xb961137c</SourceFieldId>
+                <TargetFieldId>0xb961137c</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] c851ce18-da3f-409b-bfcf-a5b273828a5b</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceFieldId>0xe670ccc4</SourceFieldId>
+                <TargetFieldId>Easy [7C7BDC6B]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] c851ce18-da3f-409b-bfcf-a5b273828a5b</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceFieldId>0xe39eb458</SourceFieldId>
+                <TargetFieldId>Normal [A8837916]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] c851ce18-da3f-409b-bfcf-a5b273828a5b</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceFieldId>0xe1be63d7</SourceFieldId>
+                <TargetFieldId>Hard [7C8614BA]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="4">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] c851ce18-da3f-409b-bfcf-a5b273828a5b</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceFieldId>0x12cf0047</SourceFieldId>
+                <TargetFieldId>Expert [8C92DF4B]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="5">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] c851ce18-da3f-409b-bfcf-a5b273828a5b</Source>
+                <Target>[LogicReferenceObjectData] c15ec081-6651-4e48-994f-c17f6f96f318</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Check [0CAEAF43]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Check [0CAEAF43]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[LogicReferenceObjectData] c15ec081-6651-4e48-994f-c17f6f96f318</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x2a9f12a7</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x4c7d8903</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[LogicReferenceObjectData] c15ec081-6651-4e48-994f-c17f6f96f318</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x1d2bf2b4</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x4c7adc52</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[LogicReferenceObjectData] c15ec081-6651-4e48-994f-c17f6f96f318</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x89052c24</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x629506e3</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[LogicReferenceObjectData] c15ec081-6651-4e48-994f-c17f6f96f318</Source>
+                <Target>[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x8cb1ff3b</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SelectNormal [5B71A1BE]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] c851ce18-da3f-409b-bfcf-a5b273828a5b</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[LogicReferenceObjectData] c15ec081-6651-4e48-994f-c17f6f96f318</member>
+        <member Index="1">[SelectFloatEntityData] 02336ab9-b0be-4007-98e8-a65b5ccd5727</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<LogicReferenceObjectData Guid="c15ec081-6651-4e48-994f-c17f6f96f318">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/gameplay/flow/difficultytuner [560bb939-bcaa-4aff-8f66-3b0a1315f132]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</LogicReferenceObjectData>
+<SelectFloatEntityData Guid="02336ab9-b0be-4007-98e8-a65b5ccd5727">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="4">
+        <member Index="0">
+            <SelectFloatInput>
+                <Name>Easy</Name>
+                <DefaultValue>1</DefaultValue>
+            </SelectFloatInput>
+        </member>
+        <member Index="1">
+            <SelectFloatInput>
+                <Name>Normal</Name>
+                <DefaultValue>1</DefaultValue>
+            </SelectFloatInput>
+        </member>
+        <member Index="2">
+            <SelectFloatInput>
+                <Name>Hard</Name>
+                <DefaultValue>1</DefaultValue>
+            </SelectFloatInput>
+        </member>
+        <member Index="3">
+            <SelectFloatInput>
+                <Name>Expert</Name>
+                <DefaultValue>1</DefaultValue>
+            </SelectFloatInput>
+        </member>
+    </Events>
+</SelectFloatEntityData>

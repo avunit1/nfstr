@@ -1,0 +1,95 @@
+ClientEventIfGameStateSwitchEntityData db1800ed-4b72-48b7-bc92-4b9796d8d6ac
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	BoolGameStateAsset::AntRef
+		AssetId 50331690
+	SetGameStateFalseAtEnd True
+InterfaceDescriptorData cf57ccfb-dec6-4588-991e-fd897741d531
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1122339328
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1157191321
+		member(1)::DynamicEvent
+			Id -1434137146
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id -370691990
+LogicPrefabBlueprint 146a49d4-675f-471a-b70b-e7854d8448d6 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/ActionElements/_Common/CheckForSuccess
+					PropertyConnections *nullArray*
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source db1800ed-4b72-48b7-bc92-4b9796d8d6ac
+							Target cf57ccfb-dec6-4588-991e-fd897741d531
+							SourceFieldId -1530232091
+							TargetFieldId -370691990
+				EventConnections::array
+					member(0)::EventConnection
+						Source cf57ccfb-dec6-4588-991e-fd897741d531
+						Target db1800ed-4b72-48b7-bc92-4b9796d8d6ac
+						SourceEvent::EventSpec
+							Id 1122339328
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source db1800ed-4b72-48b7-bc92-4b9796d8d6ac
+						Target cf57ccfb-dec6-4588-991e-fd897741d531
+						SourceEvent::EventSpec
+							Id 1096887398
+						TargetEvent::EventSpec
+							Id -1157191321
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source db1800ed-4b72-48b7-bc92-4b9796d8d6ac
+						Target cf57ccfb-dec6-4588-991e-fd897741d531
+						SourceEvent::EventSpec
+							Id 1862973229
+						TargetEvent::EventSpec
+							Id -1434137146
+						TargetType EventConnectionTargetType_Client
+				Descriptor cf57ccfb-dec6-4588-991e-fd897741d531
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) db1800ed-4b72-48b7-bc92-4b9796d8d6ac

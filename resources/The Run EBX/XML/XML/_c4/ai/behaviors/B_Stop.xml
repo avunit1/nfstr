@@ -1,0 +1,65 @@
+<BTIfNode Guid="98d250c8-31c0-4a8d-9958-3c8376b9f132">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] e37a73d1-bf45-4c29-88d9-07cd13c8eb5c</member>
+    </Nodes>
+    <Eval>[BT_IsActorType] 02de8e7a-7271-48d8-b4c1-04db7badd72d</Eval>
+</BTIfNode>
+<BTSequenceNode Guid="f3346188-2240-47c8-a886-d411768fb869">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="3">
+        <member Index="0">[BTTaskNode] 5f9178a3-f52b-40df-a5e9-fd4d3def89c5</member>
+        <member Index="1">[BTTaskNode] c952465d-5ebd-43ee-a06a-a61985775d74</member>
+        <member Index="2">[BTIfNode] 98d250c8-31c0-4a8d-9958-3c8376b9f132</member>
+    </Nodes>
+</BTSequenceNode>
+<BTTaskNode Guid="c952465d-5ebd-43ee-a06a-a61985775d74">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 4faf824a-666f-47b3-8fcb-4bf7a27e987d</Task>
+</BTTaskNode>
+<BTTaskNode Guid="e37a73d1-bf45-4c29-88d9-07cd13c8eb5c">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoWriteFloatToBB] 02fe66c0-f7bc-4d7b-976c-f91610b80120</Task>
+</BTTaskNode>
+<BTTaskNode Guid="5f9178a3-f52b-40df-a5e9-fd4d3def89c5">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoNavigateRestore] 2399f244-b739-47a9-82aa-70d08861c104</Task>
+</BTTaskNode>
+<BT_DoBehavior Guid="4baf5dcd-a457-48f4-a24a-a678c689dbbe">
+    <FuncType>EFuncType_Task</FuncType>
+    <Behavior>[Ebx] _c4/AI/Behaviors/B_Traffic [869f0aa8-1a44-43ca-8887-47d5b648d455]</Behavior>
+</BT_DoBehavior>
+<BT_DoMoveStyle Guid="4faf824a-666f-47b3-8fcb-4bf7a27e987d">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoNavigateRestore Guid="2399f244-b739-47a9-82aa-70d08861c104">
+    <FuncType>EFuncType_Task</FuncType>
+</BT_DoNavigateRestore>
+<BT_DoWriteFloatToBB Guid="02fe66c0-f7bc-4d7b-976c-f91610b80120">
+    <FuncType>EFuncType_Task</FuncType>
+    <NameHash>0x92d941a6</NameHash>
+    <Value>0</Value>
+    <Scope>BlackboardScope_Level</Scope>
+</BT_DoWriteFloatToBB>
+<BT_IsActorType Guid="02de8e7a-7271-48d8-b4c1-04db7badd72d">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <ActorType>EActorType_Cop</ActorType>
+</BT_IsActorType>
+<BehaviourTreeData Guid="59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb">
+    <Name>_c4/AI/Behaviors/B_Stop</Name>
+    <Root>[BTSequenceNode] f3346188-2240-47c8-a886-d411768fb869</Root>
+    <Description></Description>
+</BehaviourTreeData>

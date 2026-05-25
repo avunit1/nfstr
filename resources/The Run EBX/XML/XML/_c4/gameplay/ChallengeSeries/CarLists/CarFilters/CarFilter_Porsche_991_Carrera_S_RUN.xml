@@ -1,0 +1,59 @@
+<BTFilterNode Guid="c1b6ce85-7bba-457a-8363-4397ffffe5f0">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] abafd8eb-6230-40c3-95f7-4a280ec3cc52</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] d3413112-3483-46db-918c-fe726aef9158</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="42af788a-c420-4d46-b06a-6e866c19a5eb">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] c1b6ce85-7bba-457a-8363-4397ffffe5f0</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="abafd8eb-6230-40c3-95f7-4a280ec3cc52">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[VQ_Do] 10cc990c-0493-4694-84e7-aa5b1c6d5437</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="7da2b620-9445-4e68-a73d-4e2f913be314">
+    <Name>_c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_Porsche_991_Carrera_S_RUN</Name>
+    <Root>[BTSelectorNode] 42af788a-c420-4d46-b06a-6e866c19a5eb</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<VQ_Do Guid="10cc990c-0493-4694-84e7-aa5b1c6d5437">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</VQ_Do>
+<zVehicleFilter Guid="d3413112-3483-46db-918c-fe726aef9158">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x366cf52a</AttribKey>
+            <AttribType>EBTAttribType_Text</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000002</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString>por_991_s_12_pp_run</RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000002</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>

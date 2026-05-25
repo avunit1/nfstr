@@ -1,0 +1,188 @@
+<CurveTransformEntityData Guid="f04f5ecb-b83a-430c-a84c-39e2cc73f864">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_ClientAndServer</Realm>
+    <ReactionCurve Count="5">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>1</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>30</x>
+                <y>1</y>
+                <z>3</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0,7</y>
+                <z>11,27756</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,3733333</x>
+                <y>1</y>
+                <z>-9,640578</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>1</x>
+                <y>0,4966667</y>
+                <z>8,665355</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <In>0</In>
+</CurveTransformEntityData>
+<InterfaceDescriptorData Guid="850cb051-bd10-4c64-adf9-09a958afc54c">
+    <Fields Count="2">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xcbfcfe10</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+        <member Index="1">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0xc707e914</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="0"></InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="8b92176a-e280-23a0-470f-5f0dfcb1217c">
+    <Name>_c4/Gameplay/Traffic_Wave_Generator</Name>
+    <PropertyConnections Count="4">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] 18e5a841-6e4b-4034-894a-af889312eb52</Source>
+                <Target>[CurveTransformEntityData] f04f5ecb-b83a-430c-a84c-39e2cc73f864</Target>
+                <SourceFieldId>CurrentTime [A4FABB19]</SourceFieldId>
+                <TargetFieldId>In [00597302]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[CurveTransformEntityData] f04f5ecb-b83a-430c-a84c-39e2cc73f864</Source>
+                <Target>[MathOpEntityData] 59ed2c7e-9c94-43af-82ff-e9a05feec2a7</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] 59ed2c7e-9c94-43af-82ff-e9a05feec2a7</Source>
+                <Target>[InterfaceDescriptorData] 850cb051-bd10-4c64-adf9-09a958afc54c</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>0xcbfcfe10</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 850cb051-bd10-4c64-adf9-09a958afc54c</Source>
+                <Target>[MathOpEntityData] 59ed2c7e-9c94-43af-82ff-e9a05feec2a7</Target>
+                <SourceFieldId>0xc707e914</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="2">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SequenceEntityData] 18e5a841-6e4b-4034-894a-af889312eb52</Source>
+                <Target>[RandomDelayEntityData] 31b39b82-acdc-4e0c-b6a6-861da4683877</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[RandomDelayEntityData] 31b39b82-acdc-4e0c-b6a6-861da4683877</Source>
+                <Target>[SequenceEntityData] 18e5a841-6e4b-4034-894a-af889312eb52</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 850cb051-bd10-4c64-adf9-09a958afc54c</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[SequenceEntityData] 18e5a841-6e4b-4034-894a-af889312eb52</member>
+        <member Index="1">[RandomDelayEntityData] 31b39b82-acdc-4e0c-b6a6-861da4683877</member>
+        <member Index="2">[CurveTransformEntityData] f04f5ecb-b83a-430c-a84c-39e2cc73f864</member>
+        <member Index="3">[MathOpEntityData] 59ed2c7e-9c94-43af-82ff-e9a05feec2a7</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<MathOpEntityData Guid="59ed2c7e-9c94-43af-82ff-e9a05feec2a7">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_ClientAndServer</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Multiply</member>
+    </Operators>
+</MathOpEntityData>
+<RandomDelayEntityData Guid="31b39b82-acdc-4e0c-b6a6-861da4683877">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <MinDelay>5</MinDelay>
+    <MaxDelay>10</MaxDelay>
+    <Realm>Realm_ClientAndServer</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+</RandomDelayEntityData>
+<SequenceEntityData Guid="18e5a841-6e4b-4034-894a-af889312eb52">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00007530</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_ClientAndServer</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>True</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>

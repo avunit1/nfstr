@@ -1,0 +1,154 @@
+<CinebotStateLogicEntityData Guid="e566805c-62a0-4ca3-9348-28a5c83dbcf2">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Mode>[Ebx] _c4/cameras/Prototypes/modes/AE_Camera_HelicopterIntro_MichAve_1_Mode [eec75f14-c887-437c-9ddd-c94ff6a360e4]</Mode>
+    <PriorityOverride>0</PriorityOverride>
+    <EnablePriorityOverride>False</EnablePriorityOverride>
+</CinebotStateLogicEntityData>
+<InterfaceDescriptorData Guid="8235926a-1896-4c51-b5cb-17a1a6c61420">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Start [0DC0EFA5]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Stop [7C89BB7D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<PrefabBlueprint Guid="24781fba-2245-4f9d-b765-b198f78d9d97">
+    <Name>_c4/cameras/Scripted_Moments/Chicago/Prefabs/Chicago_MichAve_HeliSeq_Cameras</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="5">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 8235926a-1896-4c51-b5cb-17a1a6c61420</Source>
+                <Target>[SequenceEntityData] ce3b374e-a972-4df3-9ea9-981c8c5590c7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 8235926a-1896-4c51-b5cb-17a1a6c61420</Source>
+                <Target>[SequenceEntityData] ce3b374e-a972-4df3-9ea9-981c8c5590c7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[SequenceEntityData] ce3b374e-a972-4df3-9ea9-981c8c5590c7</Source>
+                <Target>[CinebotStateLogicEntityData] e566805c-62a0-4ca3-9348-28a5c83dbcf2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xfe82c664</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Begin [0C9380A2]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SequenceEntityData] ce3b374e-a972-4df3-9ea9-981c8c5590c7</Source>
+                <Target>[CinebotStateLogicEntityData] e566805c-62a0-4ca3-9348-28a5c83dbcf2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>End [0B87A32A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 8235926a-1896-4c51-b5cb-17a1a6c61420</Source>
+                <Target>[CinebotStateLogicEntityData] e566805c-62a0-4ca3-9348-28a5c83dbcf2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>End [0B87A32A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClient</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 8235926a-1896-4c51-b5cb-17a1a6c61420</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[SequenceEntityData] ce3b374e-a972-4df3-9ea9-981c8c5590c7</member>
+        <member Index="1">[CinebotStateLogicEntityData] e566805c-62a0-4ca3-9348-28a5c83dbcf2</member>
+    </Objects>
+</PrefabBlueprint>
+<SequenceEntityData Guid="ce3b374e-a972-4df3-9ea9-981c8c5590c7">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="1">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>0xfe82c664</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000000</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00000dac</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>

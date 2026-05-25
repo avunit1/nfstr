@@ -1,0 +1,114 @@
+<InstanceInputNode Guid="1a3abdfa-5f40-443a-b17c-1fcc719e36b2">
+    <Name>In</Name>
+    <ParentGraph>[UIGraphAsset] dff8ec9b-9c39-f9b7-d842-cc534a87f9b1</ParentGraph>
+    <IsRootNode>True</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Out>[UINodePort] b32f4e08-c14b-4acb-acea-af7ee6726fb2</Out>
+</InstanceInputNode>
+<InstanceOutputNode Guid="2665a0b3-039a-4567-85b0-78f7e5f9dcf0">
+    <Name>Out</Name>
+    <ParentGraph>[UIGraphAsset] dff8ec9b-9c39-f9b7-d842-cc534a87f9b1</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] fcb7c75c-ff4a-41bb-90ec-b134379e5c1c</In>
+    <Id>Out [0B87DF4B]</Id>
+</InstanceOutputNode>
+<StateNode Guid="1b0d2559-ad8a-4505-9e6a-2fa5b0c9b796">
+    <Name>DemoRunDistance</Name>
+    <ParentGraph>[UIGraphAsset] dff8ec9b-9c39-f9b7-d842-cc534a87f9b1</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>[Ebx] _c4/UI/Flow/Screen/Demo/DemoRunDistance [0bfd9f71-15b3-2e8b-1b54-ed753d5d81ef]</Screen>
+    <In>[UINodePort] 688bcc9b-6c56-4d07-a349-53960af9ded2</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] 44ee0bc8-9a18-43a4-8bc2-3f450bd2d77d</member>
+    </Outputs>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<UIGraphAsset Guid="dff8ec9b-9c39-f9b7-d842-cc534a87f9b1">
+    <Name>_c4/UI/Flow/Graph/Demo/DemoRunDistanceGraph</Name>
+    <Nodes Count="3">
+        <member Index="0">[StateNode] 1b0d2559-ad8a-4505-9e6a-2fa5b0c9b796</member>
+        <member Index="1">[InstanceOutputNode] 2665a0b3-039a-4567-85b0-78f7e5f9dcf0</member>
+        <member Index="2">[InstanceInputNode] 1a3abdfa-5f40-443a-b17c-1fcc719e36b2</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="2">
+        <member Index="0">[UINodeConnection] 24bfdb9f-6d8f-4b76-a679-b1bb47fbeaee</member>
+        <member Index="1">[UINodeConnection] 38a36ec8-aac4-4b43-a000-3b538a277bba</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Graph/Demo/DemoRunDistanceGraph_ResourceBundle</BundleAssetName>
+    <AssetList Count="8">
+        <member Index="0">_c4/UI/Assets/DemoRunDistance</member>
+        <member Index="1">_c4/UI/Assets/Widget_LocationMileage</member>
+        <member Index="2">_c4/UI/Assets/Widget_LocationMileage/widget_locationmileage_i1.tga</member>
+        <member Index="3">_c4/UI/Assets/Widget_LocationMileage/widget_locationmileage_i22.tga</member>
+        <member Index="4">_c4/UI/Assets/Widget_LocationMileage/widget_locationmileage_i28.tga</member>
+        <member Index="5">_c4/UI/Assets/Widget_LocationMileage/widget_locationmileage_i4.tga</member>
+        <member Index="6">_c4/UI/Assets/Widget_LocationMileage/widget_locationmileage_i7.tga</member>
+        <member Index="7">_c4/UI/Assets/Widget_LocationMileage/widget_locationmileage_ia.tga</member>
+    </AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="1">
+        <member Index="0">[Ebx] _c4/UI/Flow/Event/GeneralEvents [4c447c69-9521-7658-0f0e-4cfdd387ac4a]</member>
+    </EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>False</SkipBundleLoading>
+</UIGraphAsset>
+<UINodeConnection Guid="24bfdb9f-6d8f-4b76-a679-b1bb47fbeaee">
+    <SourceNode>[StateNode] 1b0d2559-ad8a-4505-9e6a-2fa5b0c9b796</SourceNode>
+    <TargetNode>[InstanceOutputNode] 2665a0b3-039a-4567-85b0-78f7e5f9dcf0</TargetNode>
+    <SourcePort>[UINodePort] 44ee0bc8-9a18-43a4-8bc2-3f450bd2d77d</SourcePort>
+    <TargetPort>[UINodePort] fcb7c75c-ff4a-41bb-90ec-b134379e5c1c</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="38a36ec8-aac4-4b43-a000-3b538a277bba">
+    <SourceNode>[InstanceInputNode] 1a3abdfa-5f40-443a-b17c-1fcc719e36b2</SourceNode>
+    <TargetNode>[StateNode] 1b0d2559-ad8a-4505-9e6a-2fa5b0c9b796</TargetNode>
+    <SourcePort>[UINodePort] b32f4e08-c14b-4acb-acea-af7ee6726fb2</SourcePort>
+    <TargetPort>[UINodePort] 688bcc9b-6c56-4d07-a349-53960af9ded2</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="777aeec8-ca72-4f84-8efe-73d2804a5ad2">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="688bcc9b-6c56-4d07-a349-53960af9ded2">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="fcb7c75c-ff4a-41bb-90ec-b134379e5c1c">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="44ee0bc8-9a18-43a4-8bc2-3f450bd2d77d">
+    <Name>GraphExiting[General]</Name>
+    <InstanceName>GraphExiting</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="b32f4e08-c14b-4acb-acea-af7ee6726fb2">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>

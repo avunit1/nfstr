@@ -1,0 +1,84 @@
+MusicDataAsset afc1261f-be36-4b6b-8656-540554a698a9
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Score_Head
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Car_Select/MX_SC01_3A_Car_Select_1a_head_wave/49bb6144-cda2-7b4a-2824-818a33e5f53b
+MusicDataAsset 167205e1-7de8-4088-9ad7-ce4f381eed6d
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Score_Body
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Car_Select/MX_SC01_3A_Car_Select_1b_body_loop_wave/693c5b13-a6bc-1d23-1e77-62cf60a9a897
+MusicPhraseAsset 0a4b7bba-b004-467d-b6fd-8b0e22b6e35d
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Select_Car
+			Loop 2
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) afc1261f-be36-4b6b-8656-540554a698a9
+		member(1) 167205e1-7de8-4088-9ad7-ce4f381eed6d
+MusicSelectorAsset 59991517-d5f4-485e-8e9e-730ed5b6d570
+	$::DataContainer
+	Event _c4/Sound/Music/SanFrancisco/MX_SanFrancisco_1_3_SongInterface/3607e447-ea00-4ca5-bec7-6b668e570b33
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable 0a4b7bba-b004-467d-b6fd-8b0e22b6e35d
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset 3d3afdbf-9755-0821-91bc-ea522a61ab02 #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/SanFrancisco/MX_SanFrancisco_1_3_SongAsset
+	SongInterface _c4/Sound/Music/SanFrancisco/MX_SanFrancisco_1_3_SongInterface/c8009d38-b5da-11d8-29bf-8d8c84066f47
+	NameHash 2159363525
+	BPM 130
+	BeatsPerBar 4
+	Collection::array
+		member(0) 0a4b7bba-b004-467d-b6fd-8b0e22b6e35d
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 59991517-d5f4-485e-8e9e-730ed5b6d570
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

@@ -1,0 +1,252 @@
+<BoolEntityData Guid="ead7ee94-bf62-4695-a397-c23d86638258">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <DefaultValue>False</DefaultValue>
+</BoolEntityData>
+<BoolEntityData Guid="95691917-23e7-48ef-beb2-6708e3912c56">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <DefaultValue>False</DefaultValue>
+</BoolEntityData>
+<BoolToFloatEntityData Guid="8c766e16-2c25-4f0c-a19e-fb3fe40b48f4">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <In>False</In>
+</BoolToFloatEntityData>
+<BoolToFloatEntityData Guid="4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <In>False</In>
+</BoolToFloatEntityData>
+<FloatTriggerEntityData Guid="7eaaf49f-608b-491d-a5aa-2fd5967b1ae6">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <ExitOffset>0</ExitOffset>
+    <ClampedValue>0</ClampedValue>
+    <In>0</In>
+    <Min>-1</Min>
+    <Max>0,5</Max>
+    <CheckOnEnable>False</CheckOnEnable>
+    <Enable>True</Enable>
+    <UseClampedValue>False</UseClampedValue>
+</FloatTriggerEntityData>
+<InterfaceDescriptorData Guid="bac30deb-5943-4cbc-a90a-c4e87f0145b9">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="4">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x616d176e</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x9093bf25</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x63e76fcd</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="3">
+            <DynamicEvent>
+                <Id>0xe20fd326</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x64fe2217</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x1cb7c077</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="81d858ed-54c8-4ae3-cc29-f31febf03520">
+    <Name>_c4/Logic/MultiConditionTrigger</Name>
+    <PropertyConnections Count="5">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[BoolEntityData] ead7ee94-bf62-4695-a397-c23d86638258</Source>
+                <Target>[BoolToFloatEntityData] 4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867</Target>
+                <SourceFieldId>Value [0D6EF36E]</SourceFieldId>
+                <TargetFieldId>In [00597302]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[BoolEntityData] 95691917-23e7-48ef-beb2-6708e3912c56</Source>
+                <Target>[BoolToFloatEntityData] 8c766e16-2c25-4f0c-a19e-fb3fe40b48f4</Target>
+                <SourceFieldId>Value [0D6EF36E]</SourceFieldId>
+                <TargetFieldId>In [00597302]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[BoolToFloatEntityData] 4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867</Source>
+                <Target>[MathOpEntityData] 1cd5196e-6d19-43f2-af6f-e10ccfd1564f</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[BoolToFloatEntityData] 8c766e16-2c25-4f0c-a19e-fb3fe40b48f4</Source>
+                <Target>[MathOpEntityData] 1cd5196e-6d19-43f2-af6f-e10ccfd1564f</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="4">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] 1cd5196e-6d19-43f2-af6f-e10ccfd1564f</Source>
+                <Target>[FloatTriggerEntityData] 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In [00597302]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="6">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bac30deb-5943-4cbc-a90a-c4e87f0145b9</Source>
+                <Target>[BoolEntityData] 95691917-23e7-48ef-beb2-6708e3912c56</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x616d176e</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SetTrue [A4253151]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bac30deb-5943-4cbc-a90a-c4e87f0145b9</Source>
+                <Target>[BoolEntityData] 95691917-23e7-48ef-beb2-6708e3912c56</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x9093bf25</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SetFalse [27D4023A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bac30deb-5943-4cbc-a90a-c4e87f0145b9</Source>
+                <Target>[BoolEntityData] ead7ee94-bf62-4695-a397-c23d86638258</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x63e76fcd</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SetTrue [A4253151]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bac30deb-5943-4cbc-a90a-c4e87f0145b9</Source>
+                <Target>[BoolEntityData] ead7ee94-bf62-4695-a397-c23d86638258</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xe20fd326</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>SetFalse [27D4023A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[FloatTriggerEntityData] 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6</Source>
+                <Target>[InterfaceDescriptorData] bac30deb-5943-4cbc-a90a-c4e87f0145b9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x64fe2217</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x64fe2217</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[FloatTriggerEntityData] 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6</Source>
+                <Target>[InterfaceDescriptorData] bac30deb-5943-4cbc-a90a-c4e87f0145b9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x1cb7c077</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x1cb7c077</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] bac30deb-5943-4cbc-a90a-c4e87f0145b9</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[FloatTriggerEntityData] 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6</member>
+        <member Index="1">[MathOpEntityData] 1cd5196e-6d19-43f2-af6f-e10ccfd1564f</member>
+        <member Index="2">[BoolEntityData] ead7ee94-bf62-4695-a397-c23d86638258</member>
+        <member Index="3">[BoolToFloatEntityData] 8c766e16-2c25-4f0c-a19e-fb3fe40b48f4</member>
+        <member Index="4">[BoolEntityData] 95691917-23e7-48ef-beb2-6708e3912c56</member>
+        <member Index="5">[BoolToFloatEntityData] 4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<MathOpEntityData Guid="1cd5196e-6d19-43f2-af6f-e10ccfd1564f">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Add</member>
+    </Operators>
+</MathOpEntityData>

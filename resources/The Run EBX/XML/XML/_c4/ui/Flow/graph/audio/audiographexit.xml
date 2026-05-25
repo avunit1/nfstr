@@ -1,0 +1,180 @@
+<ActionNode Guid="37550e15-38ee-4068-a4b0-b3df8218985a">
+    <Name>Timer</Name>
+    <ParentGraph>[UIGraphAsset] 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <ActionKey>0x3000855d</ActionKey>
+    <Params Count="2">
+        <member Index="0">1.25</member>
+        <member Index="1">OnAudioFadeOut</member>
+    </Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] 198393e8-74c8-48b9-bf52-4207d92ad01a</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] 5f4a2098-cd03-46a3-8a79-081bbef9b548</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<EventNode Guid="e56fdf9d-6206-4fe4-96c2-ae91e3139a95">
+    <Name>FadeOut</Name>
+    <ParentGraph>[UIGraphAsset] 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 87303e29-d4db-48cf-a58b-c73a3885e34b</In>
+    <Out>[UINodePort] eb5eef4e-80e8-4ef1-9e25-bc4c80e4d117</Out>
+    <Id>FadeOut [54CD4BAD]</Id>
+    <DestroyGraph>False</DestroyGraph>
+</EventNode>
+<InstanceInputNode Guid="33431683-a1a2-412e-898d-d9f057778323">
+    <Name>In</Name>
+    <ParentGraph>[UIGraphAsset] 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24</ParentGraph>
+    <IsRootNode>True</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Out>[UINodePort] de3339ac-dc2e-4d98-8ee2-24afc400af87</Out>
+</InstanceInputNode>
+<InstanceOutputNode Guid="e163206e-bf0a-486a-ad89-9b584335ecfc">
+    <Name>out</Name>
+    <ParentGraph>[UIGraphAsset] 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 487b6a0c-7ca1-4f24-bf11-db3fd05e8e8a</In>
+    <Id>0x0b875f2b</Id>
+</InstanceOutputNode>
+<StateNode Guid="569a8df5-5ae5-4454-89ec-2fdffebd7526">
+    <Name>Wait...</Name>
+    <ParentGraph>[UIGraphAsset] 7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>nullptr</Screen>
+    <In>[UINodePort] 54ee68d0-258c-4b17-bed5-c51ee97f1f5d</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] e9b4c20d-9e76-4add-82fa-a11197ecc5b6</member>
+    </Outputs>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<UIGraphAsset Guid="7e5cd19c-d4dc-2e8b-9dbe-3bd9bf02cb24">
+    <Name>_c4/UI/Flow/Graph/Audio/AudioGraphExit</Name>
+    <Nodes Count="5">
+        <member Index="0">[InstanceInputNode] 33431683-a1a2-412e-898d-d9f057778323</member>
+        <member Index="1">[EventNode] e56fdf9d-6206-4fe4-96c2-ae91e3139a95</member>
+        <member Index="2">[ActionNode] 37550e15-38ee-4068-a4b0-b3df8218985a</member>
+        <member Index="3">[StateNode] 569a8df5-5ae5-4454-89ec-2fdffebd7526</member>
+        <member Index="4">[InstanceOutputNode] e163206e-bf0a-486a-ad89-9b584335ecfc</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="4">
+        <member Index="0">[UINodeConnection] 4bcca855-e43c-4d85-ad51-75b83dab97f9</member>
+        <member Index="1">[UINodeConnection] a2d377c2-28d3-4d05-bd49-385195bf37e9</member>
+        <member Index="2">[UINodeConnection] 0ebe719e-0565-4644-bb21-0d3c21c4050e</member>
+        <member Index="3">[UINodeConnection] f709c3f5-799b-4f5b-ae76-113eefca2837</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Graph/Audio/AudioGraphExit_ResourceBundle</BundleAssetName>
+    <AssetList Count="0"></AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="1">
+        <member Index="0">[Ebx] _c4/UI/Flow/Event/TimerEvents [b18007be-0a4e-dc52-6b61-86a08a9f4719]</member>
+    </EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>True</SkipBundleLoading>
+</UIGraphAsset>
+<UINodeConnection Guid="4bcca855-e43c-4d85-ad51-75b83dab97f9">
+    <SourceNode>[InstanceInputNode] 33431683-a1a2-412e-898d-d9f057778323</SourceNode>
+    <TargetNode>[EventNode] e56fdf9d-6206-4fe4-96c2-ae91e3139a95</TargetNode>
+    <SourcePort>[UINodePort] de3339ac-dc2e-4d98-8ee2-24afc400af87</SourcePort>
+    <TargetPort>[UINodePort] 87303e29-d4db-48cf-a58b-c73a3885e34b</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="a2d377c2-28d3-4d05-bd49-385195bf37e9">
+    <SourceNode>[EventNode] e56fdf9d-6206-4fe4-96c2-ae91e3139a95</SourceNode>
+    <TargetNode>[ActionNode] 37550e15-38ee-4068-a4b0-b3df8218985a</TargetNode>
+    <SourcePort>[UINodePort] eb5eef4e-80e8-4ef1-9e25-bc4c80e4d117</SourcePort>
+    <TargetPort>[UINodePort] 198393e8-74c8-48b9-bf52-4207d92ad01a</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="0ebe719e-0565-4644-bb21-0d3c21c4050e">
+    <SourceNode>[ActionNode] 37550e15-38ee-4068-a4b0-b3df8218985a</SourceNode>
+    <TargetNode>[StateNode] 569a8df5-5ae5-4454-89ec-2fdffebd7526</TargetNode>
+    <SourcePort>[UINodePort] 5f4a2098-cd03-46a3-8a79-081bbef9b548</SourcePort>
+    <TargetPort>[UINodePort] 54ee68d0-258c-4b17-bed5-c51ee97f1f5d</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="f709c3f5-799b-4f5b-ae76-113eefca2837">
+    <SourceNode>[StateNode] 569a8df5-5ae5-4454-89ec-2fdffebd7526</SourceNode>
+    <TargetNode>[InstanceOutputNode] e163206e-bf0a-486a-ad89-9b584335ecfc</TargetNode>
+    <SourcePort>[UINodePort] e9b4c20d-9e76-4add-82fa-a11197ecc5b6</SourcePort>
+    <TargetPort>[UINodePort] 487b6a0c-7ca1-4f24-bf11-db3fd05e8e8a</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="de3339ac-dc2e-4d98-8ee2-24afc400af87">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="87303e29-d4db-48cf-a58b-c73a3885e34b">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="eb5eef4e-80e8-4ef1-9e25-bc4c80e4d117">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="198393e8-74c8-48b9-bf52-4207d92ad01a">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="5f4a2098-cd03-46a3-8a79-081bbef9b548">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="54ee68d0-258c-4b17-bed5-c51ee97f1f5d">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="e9b4c20d-9e76-4add-82fa-a11197ecc5b6">
+    <Name>OnAudioFadeOut[Timer]</Name>
+    <InstanceName>OnAudioFadeOut</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="487b6a0c-7ca1-4f24-bf11-db3fd05e8e8a">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>

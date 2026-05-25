@@ -1,0 +1,48 @@
+<BTSequenceNode Guid="fbd1b610-81fb-4dd1-8886-c2ab8d966c16">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="3">
+        <member Index="0">[BTTaskNode] 8d02d634-100a-4011-ba80-109c718a3d0b</member>
+        <member Index="1">[BTTaskNode] 5a1a0423-e000-41e8-8f11-e06b0843ea6c</member>
+        <member Index="2">[BTTaskNode] 6045d50b-3b65-4c49-83f8-cccba11968ec</member>
+    </Nodes>
+</BTSequenceNode>
+<BTTaskNode Guid="8d02d634-100a-4011-ba80-109c718a3d0b">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 6377f944-383d-4607-9738-2764f839b5f1</Task>
+</BTTaskNode>
+<BTTaskNode Guid="5a1a0423-e000-41e8-8f11-e06b0843ea6c">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoWriteFloatToBB] f9862d61-913d-4054-b206-296ad8a876f8</Task>
+</BTTaskNode>
+<BTTaskNode Guid="6045d50b-3b65-4c49-83f8-cccba11968ec">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoOverrideLocomotion] 76504e2a-518b-438b-9c96-81c8cc9f4279</Task>
+</BTTaskNode>
+<BT_DoMoveStyle Guid="6377f944-383d-4607-9738-2764f839b5f1">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoOverrideLocomotion Guid="76504e2a-518b-438b-9c96-81c8cc9f4279">
+    <FuncType>EFuncType_Task</FuncType>
+    <LocomotionParam>ELocomotion_Handbrake</LocomotionParam>
+    <OverrideValue>1</OverrideValue>
+</BT_DoOverrideLocomotion>
+<BT_DoWriteFloatToBB Guid="f9862d61-913d-4054-b206-296ad8a876f8">
+    <FuncType>EFuncType_Task</FuncType>
+    <NameHash>0xcc85ee74</NameHash>
+    <Value>1</Value>
+    <Scope>BlackboardScope_Entity</Scope>
+</BT_DoWriteFloatToBB>
+<BehaviourTreeData Guid="29b32f16-d7c4-45cc-a88e-0d0bef294987">
+    <Name>_c4/AI/Behaviors/B_TrafficParked</Name>
+    <Root>[BTSequenceNode] fbd1b610-81fb-4dd1-8886-c2ab8d966c16</Root>
+    <Description></Description>
+</BehaviourTreeData>

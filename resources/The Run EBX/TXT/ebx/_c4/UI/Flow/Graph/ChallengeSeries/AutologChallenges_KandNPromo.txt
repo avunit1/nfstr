@@ -1,0 +1,160 @@
+InstanceInputNode 09f97c1b-aa61-42f6-ad42-42008173df9c
+	$::UINodeData
+		$::DataContainer
+		Name In
+		IsRootNode True
+		ParentGraph a524104b-6e06-530a-4388-f8f1dc551eb8
+		ParentIsScreen False
+	Out 0599f128-08d8-4734-82ee-f1712093e33f
+InstanceOutputNode 8ed3e85f-7e72-4e6b-bd02-c3fb28720d3e
+	$::UINodeData
+		$::DataContainer
+		Name Out
+		IsRootNode False
+		ParentGraph a524104b-6e06-530a-4388-f8f1dc551eb8
+		ParentIsScreen False
+	In 9b80a919-dd65-4b52-a0b9-e60596de236f
+	Id 193453899
+StateNode 2b9d6840-2a7b-491e-b7f3-2acc4e8525b0
+	$::UINodeData
+		$::DataContainer
+		Name PromoScreen
+		IsRootNode False
+		ParentGraph a524104b-6e06-530a-4388-f8f1dc551eb8
+		ParentIsScreen False
+	Screen _c4/UI/Flow/Screen/ChallengeSeries/AutologChallenges_KandNPromo/3a8f35ec-e579-74f9-cae0-4c6bfe34817e
+	In a3652dce-f9b3-4df9-8ff6-c9fa43df86ce
+	Inputs *nullArray*
+	Outputs::array
+		member(0) b5d8fc62-f00c-43f9-84af-aacd6f30571e
+		member(1) 68d8ab8b-8b73-4823-840e-f5df24b2bead
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_PopUp
+UIGraphAsset a524104b-6e06-530a-4388-f8f1dc551eb8 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/ChallengeSeries/AutologChallenges_KandNPromo
+	Nodes::array
+		member(0) 09f97c1b-aa61-42f6-ad42-42008173df9c
+		member(1) 8ed3e85f-7e72-4e6b-bd02-c3fb28720d3e
+		member(2) 2b9d6840-2a7b-491e-b7f3-2acc4e8525b0
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) 2888dc22-4174-4b1b-859b-3b86f8b71901
+		member(1) a8cddb58-ddb2-4cb2-8661-f9c88386bc0d
+		member(2) e7d878cf-604d-4018-a39d-df149af73c9d
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/ChallengeSeries/AutologChallenges_KandNPromo_ResourceBundle
+	AssetList::array
+		member(0) _c4/UI/Assets/AutologChallenges_KandNPromo
+		member(1) _c4/UI/Assets/Widget_popup
+		member(2) _c4/UI/Assets/Widget_popup/widget_popup_i1.tga
+		member(3) _c4/UI/Textures/AutologChallenges/KN_component
+	TextureList *nullArray*
+	EventList *nullArray*
+	HighPriority False
+	AdditionalAssets::array
+		member(0) _c4/UI/Textures/AutologChallenges/KN_component/67f1f0e7-d7e7-b9a5-585f-bc1dda5e60dd
+	SkipBundleLoading False
+UIInputEventNodePort b5d8fc62-f00c-43f9-84af-aacd6f30571e
+	$::UINodePort
+		$::DataContainer
+		Name OK [Input]
+		InstanceName OK
+		Query UIWidgetEventID_None
+		FlowAction Action_Input_A
+		AllowManualRemove True
+	InputEventType UIInputAction_OK
+UINodeConnection 2888dc22-4174-4b1b-859b-3b86f8b71901
+	$::DataContainer
+	SourceNode 2b9d6840-2a7b-491e-b7f3-2acc4e8525b0
+	TargetNode 8ed3e85f-7e72-4e6b-bd02-c3fb28720d3e
+	SourcePort b5d8fc62-f00c-43f9-84af-aacd6f30571e
+	TargetPort 9b80a919-dd65-4b52-a0b9-e60596de236f
+	NumScreensToPop 0
+	RemoveScreens::array
+		member(0) _c4/UI/Flow/Screen/ChallengeSeries/AutologChallenges_KandNPromo/3a8f35ec-e579-74f9-cae0-4c6bfe34817e
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection a8cddb58-ddb2-4cb2-8661-f9c88386bc0d
+	$::DataContainer
+	SourceNode 09f97c1b-aa61-42f6-ad42-42008173df9c
+	TargetNode 2b9d6840-2a7b-491e-b7f3-2acc4e8525b0
+	SourcePort 0599f128-08d8-4734-82ee-f1712093e33f
+	TargetPort a3652dce-f9b3-4df9-8ff6-c9fa43df86ce
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection e7d878cf-604d-4018-a39d-df149af73c9d
+	$::DataContainer
+	SourceNode 2b9d6840-2a7b-491e-b7f3-2acc4e8525b0
+	TargetNode 8ed3e85f-7e72-4e6b-bd02-c3fb28720d3e
+	SourcePort 68d8ab8b-8b73-4823-840e-f5df24b2bead
+	TargetPort 9b80a919-dd65-4b52-a0b9-e60596de236f
+	NumScreensToPop 0
+	RemoveScreens::array
+		member(0) _c4/UI/Flow/Screen/ChallengeSeries/AutologChallenges_KandNPromo/3a8f35ec-e579-74f9-cae0-4c6bfe34817e
+	ScreenLevel UIScreenLevel_Normal
+UINodePort 0599f128-08d8-4734-82ee-f1712093e33f
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 9b80a919-dd65-4b52-a0b9-e60596de236f
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort efd3638b-4e32-43e2-97a6-18efb2860eef
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 165dc1d0-9f25-4248-a7a2-de5adb8141e0
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 3370e1ea-2eeb-4e84-9223-b5b6cdd35878
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort d2f93d6c-1890-4c4f-ae0e-c86b821acb8e
+	$::DataContainer
+	Name True
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 9ba2bb3d-4fd2-4de4-95c2-11539aea8c4a
+	$::DataContainer
+	Name False
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort a3652dce-f9b3-4df9-8ff6-c9fa43df86ce
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 68d8ab8b-8b73-4823-840e-f5df24b2bead
+	$::DataContainer
+	Name OptionSelected [Widget_popup_01]
+	InstanceName Widget_popup_01
+	Query UIWidgetEventID_OnItemSelected
+	FlowAction Action_Select_Item
+	AllowManualRemove True

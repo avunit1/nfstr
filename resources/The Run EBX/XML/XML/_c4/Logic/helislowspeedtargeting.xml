@@ -1,0 +1,419 @@
+<CompareFloatEntityData Guid="53cda908-7fad-4c37-b6d4-40d33d20a0f4">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <A>0</A>
+    <B>10</B>
+</CompareFloatEntityData>
+<EventGateEntityData Guid="f2f1006e-71c4-43bb-8963-74d2232efb1a">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Default>False</Default>
+</EventGateEntityData>
+<InterfaceDescriptorData Guid="6be1cd89-53e0-461e-b5e3-f7aec2386630">
+    <Fields Count="3">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Transform [87525469]</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="1">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Out [0B87DF4B]</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+        <member Index="2">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>SlowSpeed [1D121345]</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="0"></InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="ad86202b-dc7d-9abd-70b8-3939bd387f81">
+    <Name>_c4/Logic/HeliSlowSpeedTargeting</Name>
+    <PropertyConnections Count="5">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[PlayerInfoEntityData] 2e6b31aa-46bb-4688-8f84-2a47abf0cb8a</Source>
+                <Target>[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</Target>
+                <SourceFieldId>Speed [0DC30E82]</SourceFieldId>
+                <TargetFieldId>A [0002B5E4]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 6be1cd89-53e0-461e-b5e3-f7aec2386630</Source>
+                <Target>[LogicReferenceObjectData] 85f431bf-78e9-4e5a-b8e7-5019cea93ca9</Target>
+                <SourceFieldId>Transform [87525469]</SourceFieldId>
+                <TargetFieldId>0x719ce1b8</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[LogicReferenceObjectData] 85f431bf-78e9-4e5a-b8e7-5019cea93ca9</Source>
+                <Target>[InterfaceDescriptorData] 6be1cd89-53e0-461e-b5e3-f7aec2386630</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>Out [0B87DF4B]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 6be1cd89-53e0-461e-b5e3-f7aec2386630</Source>
+                <Target>[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</Target>
+                <SourceFieldId>SlowSpeed [1D121345]</SourceFieldId>
+                <TargetFieldId>B [0002B5E7]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="4">
+            <PropertyConnection>
+                <Source>[PlayerInfoEntityData] 2e6b31aa-46bb-4688-8f84-2a47abf0cb8a</Source>
+                <Target>[LogicReferenceObjectData] 85f431bf-78e9-4e5a-b8e7-5019cea93ca9</Target>
+                <SourceFieldId>PlayerTransform [BCBF51BA]</SourceFieldId>
+                <TargetFieldId>0x719ce1bb</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="9">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SequenceEntityData] ffdf18d0-cdb6-492e-8906-22b4254fdae7</Source>
+                <Target>[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3bd198dd</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[SequenceEntityData] ffdf18d0-cdb6-492e-8906-22b4254fdae7</Source>
+                <Target>[SequenceEntityData] ffdf18d0-cdb6-492e-8906-22b4254fdae7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</Source>
+                <Target>[SequenceEntityData] 98f7c9b5-f7c4-44dc-9ac3-62a2792715b0</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>A>B [0B87BDD8]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SequenceEntityData] 98f7c9b5-f7c4-44dc-9ac3-62a2792715b0</Source>
+                <Target>[LogicReferenceObjectData] 85f431bf-78e9-4e5a-b8e7-5019cea93ca9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xe27db2f8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</Source>
+                <Target>[LogicReferenceObjectData] 85f431bf-78e9-4e5a-b8e7-5019cea93ca9</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>A>B [0B87BDD8]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xe27db2fb</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</Source>
+                <Target>[EventGateEntityData] f2f1006e-71c4-43bb-8963-74d2232efb1a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>A<=B [7C7F6A47]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[EventGateEntityData] f2f1006e-71c4-43bb-8963-74d2232efb1a</Source>
+                <Target>[SequenceEntityData] 98f7c9b5-f7c4-44dc-9ac3-62a2792715b0</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</Source>
+                <Target>[EventGateEntityData] f2f1006e-71c4-43bb-8963-74d2232efb1a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>A>B [0B87BDD8]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[EventGateEntityData] f2f1006e-71c4-43bb-8963-74d2232efb1a</Source>
+                <Target>[EventGateEntityData] f2f1006e-71c4-43bb-8963-74d2232efb1a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 6be1cd89-53e0-461e-b5e3-f7aec2386630</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[LogicReferenceObjectData] 85f431bf-78e9-4e5a-b8e7-5019cea93ca9</member>
+        <member Index="1">[CompareFloatEntityData] 53cda908-7fad-4c37-b6d4-40d33d20a0f4</member>
+        <member Index="2">[SequenceEntityData] ffdf18d0-cdb6-492e-8906-22b4254fdae7</member>
+        <member Index="3">[PlayerInfoEntityData] 2e6b31aa-46bb-4688-8f84-2a47abf0cb8a</member>
+        <member Index="4">[SequenceEntityData] 98f7c9b5-f7c4-44dc-9ac3-62a2792715b0</member>
+        <member Index="5">[EventGateEntityData] f2f1006e-71c4-43bb-8963-74d2232efb1a</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<LogicReferenceObjectData Guid="85f431bf-78e9-4e5a-b8e7-5019cea93ca9">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/logic/easytransformblender [bf981875-571d-48bf-b74e-02ffe84e844f]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</LogicReferenceObjectData>
+<PlayerInfoEntityData Guid="2e6b31aa-46bb-4688-8f84-2a47abf0cb8a">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <ClientControllableTransform_Generic>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </ClientControllableTransform_Generic>
+    <Realm>Realm_ClientAndServer</Realm>
+</PlayerInfoEntityData>
+<SequenceEntityData Guid="ffdf18d0-cdb6-492e-8906-22b4254fdae7">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="1">
+        <member Index="0">
+            <SequenceEventData>
+                <Event>
+                    <EventSpec>
+                        <Id>0x3bd198dd</Id>
+                    </EventSpec>
+                </Event>
+                <Time>0x00000239</Time>
+            </SequenceEventData>
+        </member>
+    </Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x000003e8</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PreSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>True</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SequenceEntityData Guid="98f7c9b5-f7c4-44dc-9ac3-62a2792715b0">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x000007d0</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="0"></PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>

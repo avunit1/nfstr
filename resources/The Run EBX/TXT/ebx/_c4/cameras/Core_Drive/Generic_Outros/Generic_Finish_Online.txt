@@ -1,0 +1,348 @@
+CinebotStateLogicEntityData eee486c7-3d54-4db5-9838-95bd487bad41
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Mode _c4/cameras/Core_Drive/Generic_Outros/Modes/Online_Finish_mode/3b458344-23c0-4508-8914-ee8b8aedf3e4
+	PriorityOverride 0.0
+	EnablePriorityOverride False
+CurveTransformEntityData 8fb35a71-3f7c-448f-b7bf-093f090bc7ad
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 7
+	Realm Realm_Client
+	ReactionCurve::array
+		member(0)::Vec3
+			x -1.0
+			y 0.0
+			z 1.0
+		member(1)::Vec3
+			x 2.0
+			y 1.0
+			z 4.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z -10.700154304504395
+		member(3)::Vec3
+			x 0.33000001311302185
+			y 0.0
+			z 21.40030860900879
+		member(4)::Vec3
+			x 0.6666666865348816
+			y 1.0
+			z -21.329448699951172
+		member(5)::Vec3
+			x 1.0
+			y 1.0
+			z 10.664724349975586
+	In 0.0
+FadeEntityData f99309c2-88ac-41fe-bf1e-38e505b901df
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	FadeScreen True
+	FadeUI False
+	FadeAudio False
+	FadeMovie False
+	FadeRumble False
+	FadeTime 0.25
+	WaitFadedWhileStreaming False
+	StartFaded False
+FadeEntityData 27552684-a05a-4d3b-a160-a56e59f53835
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	FadeScreen True
+	FadeUI False
+	FadeAudio False
+	FadeMovie False
+	FadeRumble False
+	FadeTime 0.5
+	WaitFadedWhileStreaming False
+	StartFaded True
+FadeEntityData 33053c9f-3c3f-41a9-bd67-7f1bc229536c
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	FadeScreen True
+	FadeUI False
+	FadeAudio False
+	FadeMovie False
+	FadeRumble False
+	FadeTime 0.0
+	WaitFadedWhileStreaming False
+	StartFaded False
+FloatPropertyTrackData 60ae6348-16db-4627-8c34-c16d2fd905c5
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id -1743642143
+			Times::array
+				member(0) 0
+		InterpolationType InterpolationType_Linear
+	Values::array
+		member(0) 0.0
+InterfaceDescriptorData 5ac92807-d78d-42f6-ad60-c92af0253562
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 230748069
+		member(1)::DynamicEvent
+			Id 2089401213
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicPrefabBlueprint bc10a55c-2dab-4bb4-b188-ef16252998f9 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/cameras/Core_Drive/Generic_Outros/Generic_Finish_Online
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 8fb35a71-3f7c-448f-b7bf-093f090bc7ad
+							Target 0baac44d-4197-48df-bc5a-57b4b1523f01
+							SourceFieldId 193453899
+							TargetFieldId 1708270083
+						member(1)::PropertyConnection
+							Source d101a930-4f59-4f9a-81b8-2611e9c3fd65
+							Target 8fb35a71-3f7c-448f-b7bf-093f090bc7ad
+							SourceFieldId -1743642143
+							TargetFieldId 5862146
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target f99309c2-88ac-41fe-bf1e-38e505b901df
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 1422740397
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target 33053c9f-3c3f-41a9-bd67-7f1bc229536c
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 1422740397
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source f99309c2-88ac-41fe-bf1e-38e505b901df
+						Target eee486c7-3d54-4db5-9838-95bd487bad41
+						SourceEvent::EventSpec
+							Id -1434059356
+						TargetEvent::EventSpec
+							Id 193438506
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 33053c9f-3c3f-41a9-bd67-7f1bc229536c
+						Target 27552684-a05a-4d3b-a160-a56e59f53835
+						SourceEvent::EventSpec
+							Id -1434059356
+						TargetEvent::EventSpec
+							Id -1778993948
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target bc2aba04-1c8b-4b84-9b56-0265629d5400
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id -559281700
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target bc2aba04-1c8b-4b84-9b56-0265629d5400
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 1928776733
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target 0c915b72-46d1-4706-ad3d-9141a5bd858c
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target eee486c7-3d54-4db5-9838-95bd487bad41
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 210993314
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source d101a930-4f59-4f9a-81b8-2611e9c3fd65
+						Target 0baac44d-4197-48df-bc5a-57b4b1523f01
+						SourceEvent::EventSpec
+							Id -1193365339
+						TargetEvent::EventSpec
+							Id -1952177180
+						TargetType EventConnectionTargetType_Client
+					member(9)::EventConnection
+						Source d101a930-4f59-4f9a-81b8-2611e9c3fd65
+						Target 0baac44d-4197-48df-bc5a-57b4b1523f01
+						SourceEvent::EventSpec
+							Id -1176973715
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_Client
+					member(10)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target d101a930-4f59-4f9a-81b8-2611e9c3fd65
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(11)::EventConnection
+						Source 5ac92807-d78d-42f6-ad60-c92af0253562
+						Target d101a930-4f59-4f9a-81b8-2611e9c3fd65
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+				Descriptor 5ac92807-d78d-42f6-ad60-c92af0253562
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) eee486c7-3d54-4db5-9838-95bd487bad41
+			member(1) f99309c2-88ac-41fe-bf1e-38e505b901df
+			member(2) 27552684-a05a-4d3b-a160-a56e59f53835
+			member(3) 33053c9f-3c3f-41a9-bd67-7f1bc229536c
+			member(4) 896c5018-c97e-4e06-827b-57cfd5d76dbe
+			member(5) 0c915b72-46d1-4706-ad3d-9141a5bd858c
+			member(6) bc2aba04-1c8b-4b84-9b56-0265629d5400
+			member(7) 8fb35a71-3f7c-448f-b7bf-093f090bc7ad
+			member(8) 0baac44d-4197-48df-bc5a-57b4b1523f01
+			member(9) d101a930-4f59-4f9a-81b8-2611e9c3fd65
+LogicVisualEnvironmentEntityData 0baac44d-4197-48df-bc5a-57b4b1523f01
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 8
+	VisualEnvironment _c4/cameras/Core_Drive/Generic_Outros/Generic_Outro_FX-1_VisEnv/69747fd8-5505-4fe4-aeed-14ff90aba747
+	Visibility 0.0
+MixerEntityData bc2aba04-1c8b-4b84-9b56-0265629d5400
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 6
+	ActivateOnCreation False
+	Mixer _c4/Sound/Mixing/RaceLogic/MIX_RaceFlow_RaceEnd_FadeOut/c4c88e12-c73d-2817-b2b8-13f35af136ed
+	MixerScalar 1.0
+SequenceEntityData d101a930-4f59-4f9a-81b8-2611e9c3fd65
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 9
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 10000
+	Looping True
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) 60ae6348-16db-4627-8c34-c16d2fd905c5
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PreSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+SoundEntityData 0c915b72-46d1-4706-ad3d-9141a5bd858c
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Sound _c4/Sound/Sfx_Moments/NIS_Transitions/NIS_Outros/NIS_Generic_Outro_A_Patch/5e1e51cd-d847-4bf7-a6f7-69a6aab1997b
+	PlayOnCreation False
+	EnabledOnCreation True
+TrackStreamGateEntityData 896c5018-c97e-4e06-827b-57cfd5d76dbe
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 4
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0

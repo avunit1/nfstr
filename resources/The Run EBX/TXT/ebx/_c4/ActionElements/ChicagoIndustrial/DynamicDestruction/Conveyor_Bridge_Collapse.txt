@@ -1,0 +1,254 @@
+EffectReferenceObjectData c8269609-f9f4-4fbe-8954-1187ae871bcb
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z -18.833982467651367
+		Blueprint _c4/Effects/Destruction/Props/Conveyor_BeltD/DST_Conveyor_BeltD_ImpactDust/b24ae3c7-6430-4611-8ae1-abdcbbda5802
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+InterfaceDescriptorData b120659c-00f8-4341-ba0e-a1437f156620
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -2134182364
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -101905807
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+ReferenceObjectData 2e679d21-25e2-4ce3-a124-98d131ee1691
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 0
+		IsPropertyConnectionTarget 0
+		IndexInBlueprint 0
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Blueprint _c4/WorldObjects/_Objects/Misc/Common/Conveyor_BeltD/1bcffaec-2cf7-d21d-9199-dc5617654c87
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	Excluded False
+SequenceEntityData 034eba9c-6488-4b39-9fb0-6e7eb7799196
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id 1187371397
+			Time 774
+	SequenceStartTime 0
+	SequenceLength 1800
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) 30665ad8-9154-4b3b-bf4f-6ff953601fd8
+		member(1) 09481cab-cd07-4724-917b-dbc22e85cfae
+		member(2) ce40c931-1518-4057-96b3-b26b5f01cd6d
+		member(3) 5c5dbda4-9992-47c6-a277-ef5d76a6e2de
+		member(4) 919278cd-9e2f-4423-8105-013c6dfb6e50
+		member(5) 26711965-ded4-4f96-bd0a-511523893166
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PreSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+SpatialPrefabBlueprint 8aa62e0c-3b44-9ce1-3329-1af8830ae415 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/ActionElements/ChicagoIndustrial/DynamicDestruction/Conveyor_Bridge_Collapse
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 034eba9c-6488-4b39-9fb0-6e7eb7799196
+							Target 2e679d21-25e2-4ce3-a124-98d131ee1691
+							SourceFieldId -325182684
+							TargetFieldId -409930682
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source b120659c-00f8-4341-ba0e-a1437f156620
+						Target 034eba9c-6488-4b39-9fb0-6e7eb7799196
+						SourceEvent::EventSpec
+							Id -2134182364
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 034eba9c-6488-4b39-9fb0-6e7eb7799196
+						Target b120659c-00f8-4341-ba0e-a1437f156620
+						SourceEvent::EventSpec
+							Id 1187371397
+						TargetEvent::EventSpec
+							Id -101905807
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 034eba9c-6488-4b39-9fb0-6e7eb7799196
+						Target 2e679d21-25e2-4ce3-a124-98d131ee1691
+						SourceEvent::EventSpec
+							Id -1193365339
+						TargetEvent::EventSpec
+							Id -494633638
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 034eba9c-6488-4b39-9fb0-6e7eb7799196
+						Target 2e679d21-25e2-4ce3-a124-98d131ee1691
+						SourceEvent::EventSpec
+							Id 1187371397
+						TargetEvent::EventSpec
+							Id -494633638
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 034eba9c-6488-4b39-9fb0-6e7eb7799196
+						Target c8269609-f9f4-4fbe-8954-1187ae871bcb
+						SourceEvent::EventSpec
+							Id 1187371397
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor b120659c-00f8-4341-ba0e-a1437f156620
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 2e679d21-25e2-4ce3-a124-98d131ee1691
+			member(1) 034eba9c-6488-4b39-9fb0-6e7eb7799196
+			member(2) c8269609-f9f4-4fbe-8954-1187ae871bcb
+TransformPartPropertyTrackData 30665ad8-9154-4b3b-bf4f-6ff953601fd8
+	$::PropertyTrackData
+		$::DataContainer
+		Id -325182684
+		Times *nullArray*
+	TransformPart TransformPart_TranslationX
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	ResourceName _c4/ActionElements/ChicagoIndustrial/DynamicDestruction/AnimTrackData/034EBA9C-6488-4B39-9FB0-6E7EB7799196_Bridge_Collapse_Anim_A
+	KeyStartIndex 0
+	KeyCount 3
+	IsStatic True
+	Weighted False
+TransformPartPropertyTrackData 09481cab-cd07-4724-917b-dbc22e85cfae
+	$::PropertyTrackData
+		$::DataContainer
+		Id -325182684
+		Times *nullArray*
+	TransformPart TransformPart_TranslationY
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	ResourceName _c4/ActionElements/ChicagoIndustrial/DynamicDestruction/AnimTrackData/034EBA9C-6488-4B39-9FB0-6E7EB7799196_Bridge_Collapse_Anim_A
+	KeyStartIndex 3
+	KeyCount 3
+	IsStatic True
+	Weighted False
+TransformPartPropertyTrackData ce40c931-1518-4057-96b3-b26b5f01cd6d
+	$::PropertyTrackData
+		$::DataContainer
+		Id -325182684
+		Times *nullArray*
+	TransformPart TransformPart_TranslationZ
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	ResourceName _c4/ActionElements/ChicagoIndustrial/DynamicDestruction/AnimTrackData/034EBA9C-6488-4B39-9FB0-6E7EB7799196_Bridge_Collapse_Anim_A
+	KeyStartIndex 6
+	KeyCount 3
+	IsStatic True
+	Weighted False
+TransformPartPropertyTrackData 5c5dbda4-9992-47c6-a277-ef5d76a6e2de
+	$::PropertyTrackData
+		$::DataContainer
+		Id -325182684
+		Times *nullArray*
+	TransformPart TransformPart_RotationX
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	ResourceName _c4/ActionElements/ChicagoIndustrial/DynamicDestruction/AnimTrackData/034EBA9C-6488-4B39-9FB0-6E7EB7799196_Bridge_Collapse_Anim_A
+	KeyStartIndex 9
+	KeyCount 3
+	IsStatic False
+	Weighted False
+TransformPartPropertyTrackData 919278cd-9e2f-4423-8105-013c6dfb6e50
+	$::PropertyTrackData
+		$::DataContainer
+		Id -325182684
+		Times *nullArray*
+	TransformPart TransformPart_RotationY
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	ResourceName _c4/ActionElements/ChicagoIndustrial/DynamicDestruction/AnimTrackData/034EBA9C-6488-4B39-9FB0-6E7EB7799196_Bridge_Collapse_Anim_A
+	KeyStartIndex 12
+	KeyCount 3
+	IsStatic False
+	Weighted False
+TransformPartPropertyTrackData 26711965-ded4-4f96-bd0a-511523893166
+	$::PropertyTrackData
+		$::DataContainer
+		Id -325182684
+		Times *nullArray*
+	TransformPart TransformPart_RotationZ
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	ResourceName _c4/ActionElements/ChicagoIndustrial/DynamicDestruction/AnimTrackData/034EBA9C-6488-4B39-9FB0-6E7EB7799196_Bridge_Collapse_Anim_A
+	KeyStartIndex 15
+	KeyCount 3
+	IsStatic False
+	Weighted False

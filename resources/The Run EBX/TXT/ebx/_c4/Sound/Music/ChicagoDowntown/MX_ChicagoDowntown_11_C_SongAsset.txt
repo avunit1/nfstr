@@ -1,0 +1,84 @@
+MusicDataAsset 2ed98218-7f41-49bc-a997-efffecfe3b83
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name score_head
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Car_Select/MX_SC11A_and_B_Car_Select_Screen_1a_head_bpm120_wave/ad4491e0-aa8c-6b85-8997-8873c446d921
+MusicDataAsset 6b8eeda3-e39a-4907-972a-95d57e01152e
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name score_loop
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Car_Select/MX_SC11A_and_B_Car_Select_Screen_1b_loop_bpm120_wave/61abc736-10e5-f3cd-ba23-9a0bac29055d
+MusicPhraseAsset c88bbfa8-4728-4b40-9718-1a2688423b52
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Select_Car
+			Loop 2
+			BPM 90
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 2ed98218-7f41-49bc-a997-efffecfe3b83
+		member(1) 6b8eeda3-e39a-4907-972a-95d57e01152e
+MusicSelectorAsset 3892157a-1ac8-46dc-9d24-c6310674b02c
+	$::DataContainer
+	Event _c4/Sound/Music/ChicagoDowntown/MX_ChicagoDowntown_11_C_SongInterface/e9b28e61-1a71-4b33-a2f2-e0bf5b34ed7c
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable c88bbfa8-4728-4b40-9718-1a2688423b52
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset b8e8815e-e516-446d-a0c1-9e08f25a62a2 #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/ChicagoDowntown/MX_ChicagoDowntown_11_C_SongAsset
+	SongInterface _c4/Sound/Music/ChicagoDowntown/MX_ChicagoDowntown_11_C_SongInterface/3e07dae7-cbdf-4a9d-8d75-ce4cd28650d1
+	NameHash 1951604878
+	BPM 90
+	BeatsPerBar 4
+	Collection::array
+		member(0) c88bbfa8-4728-4b40-9718-1a2688423b52
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 3892157a-1ac8-46dc-9d24-c6310674b02c
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

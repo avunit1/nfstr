@@ -1,0 +1,236 @@
+EffectReferenceObjectData c8fd9940-f9c9-4876-a944-e890bb6af181
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint _c4/Effects/Destruction/Avalanche/Avalanche_SnowChunks_Breaking_FinalTrench/fbbb7cf0-e069-4d06-8dec-d3d5e1b947c0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+EffectReferenceObjectData 139caa9d-8f98-4757-adab-b1cf5c96a3af
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 0.999863862991333
+				y 0.0
+				z 0.016503753140568733
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x -0.016503753140568733
+				y 0.0
+				z 0.999863862991333
+			trans::Vec3
+				x 10.373684883117676
+				y -0.11788463592529297
+				z 0.9778679609298706
+		Blueprint _c4/Effects/Destruction/Avalanche/Avalanche_SnowDebris_DC_Spawner/5a75bd31-07f7-1583-b394-2b0e7321bbd4
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+EffectReferenceObjectData 2f3e49fb-d804-4c17-9cef-3a7f8aebc77c
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 0.999863862991333
+				y 0.0
+				z 0.016503753140568733
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x -0.016503753140568733
+				y 0.0
+				z 0.999863862991333
+			trans::Vec3
+				x -9.904487609863281
+				y 0.024437904357910156
+				z -0.594884991645813
+		Blueprint _c4/Effects/Destruction/Avalanche/Avalanche_SnowDebris_DC_Spawner/5a75bd31-07f7-1583-b394-2b0e7321bbd4
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+InterfaceDescriptorData 940fdd2f-d493-472a-af8e-f4a3f07469e9
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1439738358
+		member(1)::DynamicEvent
+			Id -355555278
+		member(2)::DynamicEvent
+			Id 732937998
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1439738358
+		member(1)::DynamicEvent
+			Id -355555278
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+SequenceEntityData 73310926-90ad-40bc-bcbe-6f80d2861850
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id -385113260
+			Time 0
+		member(1)::SequenceEventData
+			Event::EventSpec
+				Id -385113257
+			Time 1197
+	SequenceStartTime 0
+	SequenceLength 2000
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks *nullArray*
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+SpatialPrefabBlueprint 101b30c3-609a-459e-bc51-6d5c4e33c42e #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/ActionElements/IndependencePass/Avalanche_SnowChunks_Breaking_FinalTrench
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						Target c8fd9940-f9c9-4876-a944-e890bb6af181
+						SourceEvent::EventSpec
+							Id -355555278
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						Target 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						SourceEvent::EventSpec
+							Id -1439738358
+						TargetEvent::EventSpec
+							Id -1439738358
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						Target 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						SourceEvent::EventSpec
+							Id -355555278
+						TargetEvent::EventSpec
+							Id -355555278
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						Target c8fd9940-f9c9-4876-a944-e890bb6af181
+						SourceEvent::EventSpec
+							Id -1439738358
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 73310926-90ad-40bc-bcbe-6f80d2861850
+						Target 139caa9d-8f98-4757-adab-b1cf5c96a3af
+						SourceEvent::EventSpec
+							Id -385113260
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 73310926-90ad-40bc-bcbe-6f80d2861850
+						Target 2f3e49fb-d804-4c17-9cef-3a7f8aebc77c
+						SourceEvent::EventSpec
+							Id -385113257
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 73310926-90ad-40bc-bcbe-6f80d2861850
+						Target 139caa9d-8f98-4757-adab-b1cf5c96a3af
+						SourceEvent::EventSpec
+							Id -1176973715
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source 73310926-90ad-40bc-bcbe-6f80d2861850
+						Target 2f3e49fb-d804-4c17-9cef-3a7f8aebc77c
+						SourceEvent::EventSpec
+							Id -1176973715
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						Target 73310926-90ad-40bc-bcbe-6f80d2861850
+						SourceEvent::EventSpec
+							Id 732937998
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(9)::EventConnection
+						Source 940fdd2f-d493-472a-af8e-f4a3f07469e9
+						Target 73310926-90ad-40bc-bcbe-6f80d2861850
+						SourceEvent::EventSpec
+							Id -1439738358
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor 940fdd2f-d493-472a-af8e-f4a3f07469e9
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) c8fd9940-f9c9-4876-a944-e890bb6af181
+			member(1) 139caa9d-8f98-4757-adab-b1cf5c96a3af
+			member(2) 2f3e49fb-d804-4c17-9cef-3a7f8aebc77c
+			member(3) 73310926-90ad-40bc-bcbe-6f80d2861850

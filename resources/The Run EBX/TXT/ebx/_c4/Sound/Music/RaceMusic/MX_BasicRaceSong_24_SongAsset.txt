@@ -1,0 +1,73 @@
+FadeAsset 889fdcc7-31a1-4a46-b7b8-94e5192fcfeb
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset ae6893c1-ad9c-43e1-87cc-4e2e2db6b9c4
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongData
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_BrianJonestownmassacre_TheWayItWas_wave/c8faaac1-96d3-c19d-61d0-d8d2259cf0e3
+MusicPhraseAsset 2cdf1e52-9395-444a-8580-d9490576cfad
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) ae6893c1-ad9c-43e1-87cc-4e2e2db6b9c4
+MusicSelectorAsset 26970e96-ea30-40d6-965e-2a3a0a32a6fd
+	$::DataContainer
+	Event _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/62c35696-fcb8-4884-b326-8ea80c9b2192
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable 2cdf1e52-9395-444a-8580-d9490576cfad
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset 049d4e5e-b23d-498d-8296-f398199518fa #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/RaceMusic/MX_BasicRaceSong_24_SongAsset
+	SongInterface _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/63946f3b-890a-0efc-d248-833ecffb5e41
+	NameHash 3672353590
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) 2cdf1e52-9395-444a-8580-d9490576cfad
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 26970e96-ea30-40d6-965e-2a3a0a32a6fd
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

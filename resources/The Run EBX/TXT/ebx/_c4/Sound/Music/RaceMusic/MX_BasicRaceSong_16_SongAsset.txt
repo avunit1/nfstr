@@ -1,0 +1,73 @@
+FadeAsset 3d7f5d76-05eb-4d33-97ce-d29b3d4a09a5
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset b0eb7b32-c202-4ec1-a22c-13f3ac6841aa
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongData
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_RedFang_PrehistoricDog_wave/f8387ee9-1f85-7347-525c-77031fd04127
+MusicPhraseAsset 89f25007-5ec5-4cac-bbbf-b9e781752920
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) b0eb7b32-c202-4ec1-a22c-13f3ac6841aa
+MusicSelectorAsset 98025954-d98e-4e5a-b8a6-fa46542bb1bd
+	$::DataContainer
+	Event _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/62c35696-fcb8-4884-b326-8ea80c9b2192
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable 89f25007-5ec5-4cac-bbbf-b9e781752920
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset c19af349-a8b8-4ffa-9e42-68b568b95587 #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/RaceMusic/MX_BasicRaceSong_16_SongAsset
+	SongInterface _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/63946f3b-890a-0efc-d248-833ecffb5e41
+	NameHash 3729477143
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) 89f25007-5ec5-4cac-bbbf-b9e781752920
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 98025954-d98e-4e5a-b8a6-fa46542bb1bd
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

@@ -1,0 +1,48 @@
+AdaptivePidSteeringData d7ed3ad4-df28-4753-a8ac-77c26da1072b
+	$::DataContainer
+	IntegralClamp 0.5
+	DerivativeClamp 10.0
+	MinValueForTermToTuneCoefficient 0.009999999776482582
+	AdaptiveMRACSlice 0.10000000149011612
+	AdaptationGainP 9.999999747378752e-06
+	AdaptationGainI 9.999999747378752e-06
+	AdaptationGainD 9.999999747378752e-06
+	MaxPCoefficient 1.0
+	MinPCoefficient 0.4000000059604645
+	MaxICoefficient 0.10000000149011612
+	MinICoefficient 0.009999999776482582
+	MaxDCoefficient 0.4000000059604645
+	MinDCoefficient 0.10000000149011612
+	MinSpeedForAdaptation 10.0
+AdaptivePidThrottleData b7cd3133-137f-4614-be96-1e247a19e11a
+	$::DataContainer
+	PsychoThrottleBrakeMinSpeedForAdaptation 10.0
+	PsychoThottleBrakePSeed -1.0
+	PsychoThottleBrakeISeed 0.0
+	PsychoThottleBrakeDSeed 0.0
+	AdaptiveMRACSlice 0.10000000149011612
+	MinValueForTermToTuneCoefficient 0.009999999776482582
+	AdaptationGainP 4.999999873689376e-06
+	AdaptationGainI 4.999999873689376e-06
+	AdaptationGainD 4.999999873689376e-06
+	MaxPCoefficient 0.0
+	MinPCoefficient -0.4000000059604645
+	MaxICoefficient 0.0
+	MinICoefficient -0.009999999776482582
+	MaxDCoefficient 0.0
+	MinDCoefficient -0.6000000238418579
+BasicPidThrottleData 1c71f34f-da35-4a3e-b2db-aef710d74776
+	$::DataContainer
+	ThrottleP 0.4000000059604645
+	ThrottleI 0.009999999776482582
+	ThrottleD 0.10000000149011612
+	IntegralClamp 5.0
+	DerivativeClamp 10.0
+VehiclePidData db421bbf-69df-c402-456f-a70c689d605c #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/ai/Locomotion/DefaultTrafficPid
+	AdaptiveGasBrake True
+	BasicPidThrottle 1c71f34f-da35-4a3e-b2db-aef710d74776
+	AdaptivePidThrottle b7cd3133-137f-4614-be96-1e247a19e11a
+	AdaptivePidSteering d7ed3ad4-df28-4753-a8ac-77c26da1072b

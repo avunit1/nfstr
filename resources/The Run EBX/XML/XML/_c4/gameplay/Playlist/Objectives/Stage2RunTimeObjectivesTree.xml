@@ -1,0 +1,53 @@
+<BTFilterNode Guid="32a6171a-4edb-47e0-914d-cb148762bf38">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] d524d4d3-94e0-458e-816b-29971e41e5a2</member>
+    </Nodes>
+    <Eval>[SE_ObjectiveStateEval] ad16d74e-1040-4516-8c2a-d728a7434e1e</Eval>
+</BTFilterNode>
+<BTFilterNode Guid="d524d4d3-94e0-458e-816b-29971e41e5a2">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 2486213c-2aed-4c83-99ff-8f39e50fc78b</member>
+    </Nodes>
+    <Eval>[SE_GeneralRunTimeEval] 6d1313dd-76df-4eca-9219-3b5285e5ebc4</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="eabe85db-7162-4a97-ad93-e7bb75ee2f8e">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] 32a6171a-4edb-47e0-914d-cb148762bf38</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="2486213c-2aed-4c83-99ff-8f39e50fc78b">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[SE_CompleteObjective] 83aa97be-5128-4c2e-887a-33c78b366a33</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="c876e8c8-e917-4868-b3d4-21e80d8c61f0">
+    <Name>_c4/Gameplay/Playlist/Objectives/Stage2RunTimeObjectivesTree</Name>
+    <Root>[BTSelectorNode] eabe85db-7162-4a97-ad93-e7bb75ee2f8e</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<SE_CompleteObjective Guid="83aa97be-5128-4c2e-887a-33c78b366a33">
+    <FuncType>EFuncType_Task</FuncType>
+</SE_CompleteObjective>
+<SE_GeneralRunTimeEval Guid="6d1313dd-76df-4eca-9219-3b5285e5ebc4">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Objective>EStatEvalRunTimeObj_PassedRacerThisFrame</Objective>
+    <X>0x00000002</X>
+    <Y>0x00000000</Y>
+</SE_GeneralRunTimeEval>
+<SE_ObjectiveStateEval Guid="ad16d74e-1040-4516-8c2a-d728a7434e1e">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <ObjectiveAsset>[Ebx] _c4/Gameplay/Playlist/Objectives/Debug/RunTimeTest [87ed336f-98a5-49b2-9474-bbd2caf14bfa]</ObjectiveAsset>
+    <IsInState>GameplayObjectiveState_Active</IsInState>
+</SE_ObjectiveStateEval>

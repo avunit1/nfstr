@@ -1,0 +1,83 @@
+DelayEntityData 1f6b6fba-f5d1-45c0-8a72-d20ae2660a17
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Delay 0.25
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+FadeEntityData 8a61a6f0-6efb-4655-bddd-1f9e47578816
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	FadeScreen True
+	FadeUI False
+	FadeAudio False
+	FadeMovie False
+	FadeRumble False
+	FadeTime 1.0
+	WaitFadedWhileStreaming False
+	StartFaded False
+InterfaceDescriptorData e53838c9-0b0b-4248-98ed-2d00af4cc64f
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -657436827
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 650265526
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+SpatialPrefabBlueprint 90a4891c-1ccd-475f-bf49-bc7819a17c23 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/Flow/ResetTreatment_PostBreadcrumb_Prefab
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 8a61a6f0-6efb-4655-bddd-1f9e47578816
+						Target e53838c9-0b0b-4248-98ed-2d00af4cc64f
+						SourceEvent::EventSpec
+							Id -1434059356
+						TargetEvent::EventSpec
+							Id 650265526
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source e53838c9-0b0b-4248-98ed-2d00af4cc64f
+						Target 1f6b6fba-f5d1-45c0-8a72-d20ae2660a17
+						SourceEvent::EventSpec
+							Id -657436827
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 1f6b6fba-f5d1-45c0-8a72-d20ae2660a17
+						Target 8a61a6f0-6efb-4655-bddd-1f9e47578816
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1778993948
+						TargetType EventConnectionTargetType_Client
+				Descriptor e53838c9-0b0b-4248-98ed-2d00af4cc64f
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 8a61a6f0-6efb-4655-bddd-1f9e47578816
+			member(1) 1f6b6fba-f5d1-45c0-8a72-d20ae2660a17

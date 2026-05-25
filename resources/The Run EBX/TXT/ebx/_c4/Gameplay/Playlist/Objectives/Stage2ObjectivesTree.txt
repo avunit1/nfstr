@@ -1,0 +1,64 @@
+BTFilterNode 39ed1160-8d45-4d98-b0db-6ffcd9285951
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) debcbc08-0623-40bf-82d5-e3010290b2fa
+	Eval 2ffac166-d91c-4a2b-ba47-3e369da517ea
+BTFilterNode 2be59fee-7fa0-47a2-84cc-096ae177e79b
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 5444f8cd-1405-4b16-90f6-51b48d692f43
+	Eval 4d6dda78-b552-44fb-bc80-815407c05712
+BTRefTreeNode debcbc08-0623-40bf-82d5-e3010290b2fa
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Reference
+	SubTree _c4/Gameplay/Playlist/Objectives/Stage2PostRaceObjectivesTree/cd7fe377-94d7-4e1d-a283-d1d3d26ff803
+BTRefTreeNode 5444f8cd-1405-4b16-90f6-51b48d692f43
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Reference
+	SubTree _c4/Gameplay/Playlist/Objectives/Stage2RunTimeObjectivesTree/c876e8c8-e917-4868-b3d4-21e80d8c61f0
+BTSelectorNode 05acdf5a-d853-4f93-b2ba-982bac6c8429
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 39ed1160-8d45-4d98-b0db-6ffcd9285951
+			member(1) 2be59fee-7fa0-47a2-84cc-096ae177e79b
+BehaviourTreeData 4e526bf8-51a1-4f62-9078-fec853b80608 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Playlist/Objectives/Stage2ObjectivesTree
+	Root 05acdf5a-d853-4f93-b2ba-982bac6c8429
+	Description 
+SE_IsPostRaceEval 2ffac166-d91c-4a2b-ba47-3e369da517ea
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	IsPostRace True
+SE_IsPostRaceEval 4d6dda78-b552-44fb-bc80-815407c05712
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	IsPostRace False

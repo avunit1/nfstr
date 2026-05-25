@@ -1,0 +1,59 @@
+BTFilterNode c1b6ce85-7bba-457a-8363-4397ffffe5f0
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) abafd8eb-6230-40c3-95f7-4a280ec3cc52
+	Eval d3413112-3483-46db-918c-fe726aef9158
+BTSelectorNode 42af788a-c420-4d46-b06a-6e866c19a5eb
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) c1b6ce85-7bba-457a-8363-4397ffffe5f0
+BTTaskNode abafd8eb-6230-40c3-95f7-4a280ec3cc52
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 10cc990c-0493-4694-84e7-aa5b1c6d5437
+BehaviourTreeData 7da2b620-9445-4e68-a73d-4e2f913be314 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_Porsche_991_Carrera_S_RUN
+	Root 42af788a-c420-4d46-b06a-6e866c19a5eb
+	Description 
+VQ_Do 10cc990c-0493-4694-84e7-aa5b1c6d5437
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter d3413112-3483-46db-918c-fe726aef9158
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 2
+		RValueFloat 0.0
+		RValueBool False
+		RValueString por_991_s_12_pp_run
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

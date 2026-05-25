@@ -1,0 +1,199 @@
+BasicControllerData 5344ee66-c0cf-4946-a874-8d3cec67972e
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer d8882118-5a7c-4502-be66-e450e8645f2e
+	Composer 7b31e331-39ec-4776-a3f5-61ffd5508d08
+	TimeScale 1.0
+BasicControllerData bbe7ab80-cd2b-42ac-aaa0-b4119aeb2461
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer a3118559-37a5-4ae4-acf3-4630ac188f5f
+	Composer bbc781b7-e44f-41a5-92eb-5a2f81ec37d3
+	TimeScale 1.0
+BlendControllerData f0b851e5-9514-4661-a65b-41d37b2fbacc
+	$::CinebotControllerData
+		$::DataContainer
+	FromController 5344ee66-c0cf-4946-a874-8d3cec67972e
+	ToController bbe7ab80-cd2b-42ac-aaa0-b4119aeb2461
+	Transition c7983fa5-91f5-4977-ad4a-467377022414
+	AdditionalBlendToControllers *nullArray*
+	BlackBoardVarName 
+CinebotControllerRigAsset bae34581-f2ea-4d16-8ce3-36efc95c623e #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Scripted_Moments/NewYork/rigs/Swordfish_finale_Rig
+	Controllers::array
+		member(0) f0b851e5-9514-4661-a65b-41d37b2fbacc
+		member(1) 245bde51-48cf-4d13-8a9b-21dad8796704
+	ForceAllInputTypesEnabled False
+CinebotTransitionData c7983fa5-91f5-4977-ad4a-467377022414
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 0.0
+		Time 7.0
+		EaseInControl 0.30000001192092896
+		EaseOutControl 0.5
+	Blend CINEBOT_BLEND_LINEAR
+	Clean False
+LocatorTransposerData d8882118-5a7c-4502-be66-e450e8645f2e
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName swordfish_finale_transposer
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 60.0
+		y 0.30000001192092896
+		z -3.0
+LocatorTransposerData a3118559-37a5-4ae4-acf3-4630ac188f5f
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName swordfish_finale_transposer
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+ReactionControllerData 245bde51-48cf-4d13-8a9b-21dad8796704
+	$::CinebotControllerData
+		$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_SPEED
+	BlackBoardVarName 
+	ReactionOutput CINEBOT_REACTION_OUTPUT_SHIFT_Y
+	OutputScale 1.0
+	InputScale 1.0
+	MirrorInput False
+	XMirrorInput False
+	UseAngleInterpolation False
+	DampTime 0.0
+	Conditions *nullArray*
+	XOR_Conditions False
+	ConditionsDampTime 0.0
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 1.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.2616666555404663
+			z -0.009999990463256836
+		member(3)::Vec3
+			x 1.0
+			y 0.25999999046325684
+			z 0.009999990463256836
+	ControllerInput EIANoInput
+	ControllerInputRaw *nullGuid*
+	Pivot 0.0
+	Delay 0.0
+	IsAdditive False
+ScreenSpaceComposerData bbc781b7-e44f-41a5-92eb-5a2f81ec37d3
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 3.0
+		MinimumNearBlur 0.30000001192092896
+	TargetPart 
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	MarkerType MARKER_UNKNOWN
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.5
+	SoftBottom 0.5
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 1.0
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.44999998807907104
+	SoftRight 0.44999998807907104
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 1.0
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 17.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene False
+	UseUpDamping False
+	UpDampingBlendTime 0.20000000298023224
+ScreenSpaceComposerData 7b31e331-39ec-4776-a3f5-61ffd5508d08
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 5.0
+		MinimumNearBlur 0.30000001192092896
+	TargetPart 
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	MarkerType CAMERA_DRIVER
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.4000000059604645
+	SoftBottom 0.4000000059604645
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 0.0
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.4000000059604645
+	SoftRight 0.4000000059604645
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 0.0
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 7.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene False
+	UseUpDamping False
+	UpDampingBlendTime 0.20000000298023224

@@ -1,0 +1,73 @@
+FadeAsset 9a58095d-70a6-4ac6-83d2-107ec0626516
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset 3a9b14c6-77db-44bf-9980-7438fa3f0d65
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name Donovan
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_Donovan_RikiTikiTavi_wave/a2262464-cd4e-125b-fba3-cd54db0cd0ac
+MusicPhraseAsset f4668653-8dae-4157-af87-e9ed3da66f93
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 3a9b14c6-77db-44bf-9980-7438fa3f0d65
+MusicSelectorAsset b3794cd4-3bf8-40b0-b94b-f144c46d0a6c
+	$::DataContainer
+	Event _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/c916b4d2-5986-4158-b826-4db9ae5094de
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable f4668653-8dae-4157-af87-e9ed3da66f93
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset f44f0fe2-3396-4292-8349-6c0fee1a6b0b #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_14_Credits_SongAsset
+	SongInterface _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/b7fb68ad-70c0-42f2-9dbb-9a776659602e
+	NameHash 3605194226
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) f4668653-8dae-4157-af87-e9ed3da66f93
+	Overlays *nullArray*
+	Selectors::array
+		member(0) b3794cd4-3bf8-40b0-b94b-f144c46d0a6c
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

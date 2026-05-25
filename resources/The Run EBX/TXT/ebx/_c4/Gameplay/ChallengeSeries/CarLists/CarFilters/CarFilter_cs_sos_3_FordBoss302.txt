@@ -1,0 +1,59 @@
+BTFilterNode bc4b0820-ebf2-4efb-b11b-38cab77052ba
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) f88a9b97-db56-46d8-9916-1bfea31e25f8
+	Eval 7759ca72-764f-49d7-a377-2991214ede0c
+BTSelectorNode 05fc261a-52da-4184-9274-767053b25f1d
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) bc4b0820-ebf2-4efb-b11b-38cab77052ba
+BTTaskNode f88a9b97-db56-46d8-9916-1bfea31e25f8
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 37f66767-88ba-4fe5-bdd0-9e4b41216750
+BehaviourTreeData 56779963-bc2b-4162-bda2-d490e1f1454d #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_cs_sos_3_FordBoss302
+	Root 05fc261a-52da-4184-9274-767053b25f1d
+	Description 
+VQ_Do 37f66767-88ba-4fe5-bdd0-9e4b41216750
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 7759ca72-764f-49d7-a377-2991214ede0c
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 0
+		RValueFloat 0.0
+		RValueBool False
+		RValueString for_mus_302_69_adsales_1
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 268766097

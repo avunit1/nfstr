@@ -1,0 +1,144 @@
+ActionNode a908502a-cf9f-4470-9ab8-fbd71c96cbcd
+	$::UINodeData
+		$::DataContainer
+		Name Fire OnGarageLoaded
+		IsRootNode False
+		ParentGraph 05f9d45c-1f33-d0ec-2469-75397921a9e8
+		ParentIsScreen False
+	ActionKey -568524291
+	Params::array
+		member(0) OnGarageLoaded
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 1809f598-6cdb-4eea-b757-bfec2182e646
+	DataInputs *nullArray*
+	Out a1315295-c521-4d4e-bdb6-3e84c9cfb505
+ActionNode a1ef198d-20a3-4954-b745-274e580329da
+	$::UINodeData
+		$::DataContainer
+		Name SetGarageLoaded
+		IsRootNode False
+		ParentGraph 05f9d45c-1f33-d0ec-2469-75397921a9e8
+		ParentIsScreen False
+	ActionKey 689818742
+	Params::array
+		member(0) true
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIVehicleComp/a2d6f925-46fe-b4de-27ce-6a0c3b2d4519
+		DataKey 1592803672
+	In 2a73932d-1d14-44bf-b418-9af2cb7d0d38
+	DataInputs *nullArray*
+	Out b51d75f7-3bbe-44cf-9bb3-da6cc7b90154
+InstanceInputNode 6d273bb5-34fc-4fee-90dd-0e9fa01f39ca
+	$::UINodeData
+		$::DataContainer
+		Name In
+		IsRootNode True
+		ParentGraph 05f9d45c-1f33-d0ec-2469-75397921a9e8
+		ParentIsScreen False
+	Out e4cedf72-9755-473f-928d-cf26a3e45c40
+InstanceOutputNode 8e1e5d95-aa45-4b09-9a92-d820fa954704
+	$::UINodeData
+		$::DataContainer
+		Name Out
+		IsRootNode False
+		ParentGraph 05f9d45c-1f33-d0ec-2469-75397921a9e8
+		ParentIsScreen False
+	In b230ad23-1725-4189-b1a1-173ad98b848c
+	Id 193453899
+UIGraphAsset 05f9d45c-1f33-d0ec-2469-75397921a9e8 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/Garage/GarageLoadedNotify
+	Nodes::array
+		member(0) 6d273bb5-34fc-4fee-90dd-0e9fa01f39ca
+		member(1) 8e1e5d95-aa45-4b09-9a92-d820fa954704
+		member(2) a908502a-cf9f-4470-9ab8-fbd71c96cbcd
+		member(3) a1ef198d-20a3-4954-b745-274e580329da
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) 5c72d6fe-cc4a-4b72-aaaf-297cf0d11e96
+		member(1) f4803a26-111b-43a0-910b-c39aa9a57c8d
+		member(2) 7c30a0a6-bde3-4ada-8031-b823f62c1e24
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/Garage/GarageLoadedNotify_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList *nullArray*
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading True
+UINodeConnection 5c72d6fe-cc4a-4b72-aaaf-297cf0d11e96
+	$::DataContainer
+	SourceNode 6d273bb5-34fc-4fee-90dd-0e9fa01f39ca
+	TargetNode a908502a-cf9f-4470-9ab8-fbd71c96cbcd
+	SourcePort e4cedf72-9755-473f-928d-cf26a3e45c40
+	TargetPort 1809f598-6cdb-4eea-b757-bfec2182e646
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection f4803a26-111b-43a0-910b-c39aa9a57c8d
+	$::DataContainer
+	SourceNode a908502a-cf9f-4470-9ab8-fbd71c96cbcd
+	TargetNode a1ef198d-20a3-4954-b745-274e580329da
+	SourcePort a1315295-c521-4d4e-bdb6-3e84c9cfb505
+	TargetPort 2a73932d-1d14-44bf-b418-9af2cb7d0d38
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 7c30a0a6-bde3-4ada-8031-b823f62c1e24
+	$::DataContainer
+	SourceNode a1ef198d-20a3-4954-b745-274e580329da
+	TargetNode 8e1e5d95-aa45-4b09-9a92-d820fa954704
+	SourcePort b51d75f7-3bbe-44cf-9bb3-da6cc7b90154
+	TargetPort b230ad23-1725-4189-b1a1-173ad98b848c
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort e4cedf72-9755-473f-928d-cf26a3e45c40
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort b230ad23-1725-4189-b1a1-173ad98b848c
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 1809f598-6cdb-4eea-b757-bfec2182e646
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort a1315295-c521-4d4e-bdb6-3e84c9cfb505
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 2a73932d-1d14-44bf-b418-9af2cb7d0d38
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort b51d75f7-3bbe-44cf-9bb3-da6cc7b90154
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True

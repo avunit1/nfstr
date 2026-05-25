@@ -1,0 +1,128 @@
+VoiceOverConstantIntegerValue a4019da4-ba2d-405e-9ac3-9fe609bce64e
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 10
+VoiceOverConstantNode 6fcae64c-b4ab-4e24-a0c0-e4f2371d21c2
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value c9c9e3e9-5fcc-4cbe-9329-9c70d10f0c08
+	Source a4019da4-ba2d-405e-9ac3-9fe609bce64e
+VoiceOverConversationNode 71287d7c-7e17-4787-841e-4d64a3f42492
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Groups::array
+		member(0) b717a9f1-510b-436d-8632-f4de03621d41
+	Condition::array
+		member(0) 931d25b1-7e83-4d07-a401-e38550fda9a9
+	Interval 57aea1cb-33b4-4b50-bf51-7360c411a66b
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Pronunciation *nullGuid*
+	InterruptMode VoiceOverConversationInterruptMode_Allow
+	InterrupterMode VoiceOverConversationInterrupterMode_Disallow
+	Priority 70
+	QueueMode VoiceOverConversationQueueMode_Always
+	Relevancy 3.0
+	DeadAirRequired 0.0
+	DeadAirEnforce 0.0
+	IgnoreDeadAir False
+	TrackCount 1
+	LastSequenceIndex 0
+VoiceOverDialogClip 89d5b11f-588e-42a3-b4b5-d1cf7adc215b
+	$::DataContainer
+	Offset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave _c4/Sound/Dialogue/ENGLISH/Unscripted/Cops/Arrest/Arrest_CopA/62c975b4-7e8c-e937-7480-71686176d271
+	OffsetReferences *nullArray*
+	SequenceIndex 0
+	Events *nullGuid*
+VoiceOverDialogGroup b717a9f1-510b-436d-8632-f4de03621d41
+	$::DataContainer
+	Sound _c4/Sound/Dialogue/VO_Sfx/VO_CopRadio/31a3362f-c13e-120f-bd78-11c1395d1f4f
+	Tracks::array
+		member(0) 66654bda-8657-4e3f-9443-d01780697d39
+VoiceOverDialogTrack 66654bda-8657-4e3f-9443-d01780697d39
+	$::DataContainer
+	Source *nullGuid*
+	TakeControl *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	Output *nullGuid*
+	SamplerNode _c4/Sound/Dialogue/VO_Sfx/VO_CopRadio/89507893-b4c2-465a-8e66-bbd4f22d8c90
+	QueueGroup _c4/Sound/Dialogue/Logic/VO_System/297f8a6d-708c-4500-a4ed-7280467a56ee
+	Clips::array
+		member(0) 89d5b11f-588e-42a3-b4b5-d1cf7adc215b
+VoiceOverEvent cabd25c9-b6d2-4d71-b144-0fac9e765fc3
+	$::DataContainer
+	Name 1-51_Arrest
+	Parameters *nullArray*
+	Owner f14889b8-f8a5-40d3-92c9-72e76788119f
+VoiceOverEventNode 2c35d186-8602-4146-805d-a9402ba19f10
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 71287d7c-7e17-4787-841e-4d64a3f42492
+	Redirects *nullArray*
+	Event cabd25c9-b6d2-4d71-b144-0fac9e765fc3
+VoiceOverGroup c0856cf7-39b0-483a-b5ba-07a11f630a4e
+	$::DataContainer
+	Name Default
+	Priority 0
+VoiceOverIntervalNode 57aea1cb-33b4-4b50-bf51-7360c411a66b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold 693981df-f9d3-43e1-8142-b26705e8aa44
+	Time aba7ed3e-3dbd-4e39-ad5c-d55a6d53caf6
+	False 665ad987-a115-40c3-996f-50aa5a85993a
+	True e1edc18d-65c4-4021-924d-c165fd72d1ff
+	Interval _c4/Sound/Dialogue/Logic/VO_System/a4a4f050-8749-4bc0-9804-61c8b999e209
+VoiceOverLogicAsset f14889b8-f8a5-40d3-92c9-72e76788119f #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Sound/Dialogue/Logic/Unscripted/VO_1-51_Arrest_Logic
+	Events::array
+		member(0) cabd25c9-b6d2-4d71-b144-0fac9e765fc3
+	Groups::array
+		member(0) c0856cf7-39b0-483a-b5ba-07a11f630a4e
+	Flows::array
+		member(0) c5802bd2-9cd9-43ba-b804-eb67b3b4ab74
+	System _c4/Sound/Dialogue/Logic/VO_System/53c4df8a-9a3f-81e0-cb02-90e064b6baf7
+VoiceOverLogicFlow c5802bd2-9cd9-43ba-b804-eb67b3b4ab74
+	$::DataContainer
+	Name 1-51_Arrest
+	Group c0856cf7-39b0-483a-b5ba-07a11f630a4e
+	Locals *nullArray*
+	Roots::array
+		member(0) 2c35d186-8602-4146-805d-a9402ba19f10
+VoiceOverValue c9c9e3e9-5fcc-4cbe-9329-9c70d10f0c08
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue aba7ed3e-3dbd-4e39-ad5c-d55a6d53caf6
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue 665ad987-a115-40c3-996f-50aa5a85993a
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue e1edc18d-65c4-4021-924d-c165fd72d1ff
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValueConnection 693981df-f9d3-43e1-8142-b26705e8aa44
+	$::DataContainer
+	TargetNode 6fcae64c-b4ab-4e24-a0c0-e4f2371d21c2
+	TargetValue c9c9e3e9-5fcc-4cbe-9329-9c70d10f0c08
+VoiceOverValueConnection 931d25b1-7e83-4d07-a401-e38550fda9a9
+	$::DataContainer
+	TargetNode 57aea1cb-33b4-4b50-bf51-7360c411a66b
+	TargetValue e1edc18d-65c4-4021-924d-c165fd72d1ff

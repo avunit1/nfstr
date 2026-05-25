@@ -1,0 +1,59 @@
+<BTFilterNode Guid="8c74a0e3-6e6c-42a5-9975-74417a65a482">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] c7d1bf52-c25c-4fd2-9726-cda7a6053393</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] fbee38a4-c0c6-47ff-8f48-e59543124302</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="728d043b-89a3-4052-a5a6-9c68cb1c15f8">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] 8c74a0e3-6e6c-42a5-9975-74417a65a482</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="c7d1bf52-c25c-4fd2-9726-cda7a6053393">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[VQ_Do] 8fcc2d6b-2525-46b8-a29e-4ba61e6eb942</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="e53765d8-8d1c-4469-a609-6362b6b6193c">
+    <Name>_c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_MostWanted_BMW_M3</Name>
+    <Root>[BTSelectorNode] 728d043b-89a3-4052-a5a6-9c68cb1c15f8</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<VQ_Do Guid="8fcc2d6b-2525-46b8-a29e-4ba61e6eb942">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</VQ_Do>
+<zVehicleFilter Guid="fbee38a4-c0c6-47ff-8f48-e59543124302">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0xa95cac15</AttribKey>
+            <AttribType>EBTAttribType_Text</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000002</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString>A1 BMW M3 GTS Presale</RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000002</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>

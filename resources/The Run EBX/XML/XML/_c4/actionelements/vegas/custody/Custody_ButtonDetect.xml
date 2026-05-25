@@ -1,0 +1,150 @@
+<ClientEventIfGameStateSwitchEntityData Guid="befd4dcc-1cac-44f9-9936-915682c1df04">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <BoolGameStateAsset>
+        <AntRef>
+            <AssetId>0x0300002a</AssetId>
+        </AntRef>
+    </BoolGameStateAsset>
+    <SetGameStateFalseAtEnd>True</SetGameStateFalseAtEnd>
+</ClientEventIfGameStateSwitchEntityData>
+<InterfaceDescriptorData Guid="c14de4df-fc2c-42e5-98fa-bac4e81413b4">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x42e58a00</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnSuccess [BB06A967]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>OnFail [AA84CDC6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>0xe9e7b06a</Id>
+            </DynamicLink>
+        </member>
+    </OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="a69815e6-cbc5-494f-052a-5aab7385d695">
+    <Name>_c4/ActionElements/Vegas/Custody/Custody_ButtonDetect</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="1">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[ClientEventIfGameStateSwitchEntityData] befd4dcc-1cac-44f9-9936-915682c1df04</Source>
+                <Target>[InterfaceDescriptorData] c14de4df-fc2c-42e5-98fa-bac4e81413b4</Target>
+                <SourceFieldId>0xa4ca82e5</SourceFieldId>
+                <TargetFieldId>0xe9e7b06a</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="3">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] c14de4df-fc2c-42e5-98fa-bac4e81413b4</Source>
+                <Target>[ClientEventIfGameStateSwitchEntityData] befd4dcc-1cac-44f9-9936-915682c1df04</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x42e58a00</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Impulse [66B8ED9E]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[ClientEventIfGameStateSwitchEntityData] befd4dcc-1cac-44f9-9936-915682c1df04</Source>
+                <Target>[InterfaceDescriptorData] c14de4df-fc2c-42e5-98fa-bac4e81413b4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x41612c66</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnSuccess [BB06A967]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[ClientEventIfGameStateSwitchEntityData] befd4dcc-1cac-44f9-9936-915682c1df04</Source>
+                <Target>[InterfaceDescriptorData] c14de4df-fc2c-42e5-98fa-bac4e81413b4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x6f0ab72d</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFail [AA84CDC6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] c14de4df-fc2c-42e5-98fa-bac4e81413b4</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="1">
+        <member Index="0">[ClientEventIfGameStateSwitchEntityData] befd4dcc-1cac-44f9-9936-915682c1df04</member>
+    </Objects>
+</LogicPrefabBlueprint>

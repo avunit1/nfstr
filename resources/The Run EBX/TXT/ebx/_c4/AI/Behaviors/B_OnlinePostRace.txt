@@ -1,0 +1,118 @@
+BTIfNode 9ce38061-76fe-4776-9a45-8c383ab31a47
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) cf9bfc9b-1b9d-41a2-9306-3977eb28a34f
+	Eval 17769bd4-c85a-4e84-88c2-4d2611df2749
+BTSelectorNode 5bf05776-0cfc-40f7-bb8e-6bb9362c8d1f
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 9ce38061-76fe-4776-9a45-8c383ab31a47
+			member(1) b93d4ed7-6813-4a18-a390-a02f0deeeac7
+BTSequenceNode e07ce071-b698-4520-9de4-973c6db5de2a
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) ab659aa9-19f2-4321-b316-3239617c6c31
+			member(1) 927f826d-ee48-4700-ac88-2219ccb07d1c
+			member(2) dc6bbecc-82d6-4688-9281-42675045c009
+			member(3) 5bf05776-0cfc-40f7-bb8e-6bb9362c8d1f
+BTTaskNode ab659aa9-19f2-4321-b316-3239617c6c31
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 0272aa37-22df-4aa6-ad72-dca7a2d6ee87
+BTTaskNode 927f826d-ee48-4700-ac88-2219ccb07d1c
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 7872d68f-b4ba-467a-8a68-0075fec75d10
+BTTaskNode cf9bfc9b-1b9d-41a2-9306-3977eb28a34f
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task f926f55f-8436-494e-a7f0-adade196ffe6
+BTTaskNode b93d4ed7-6813-4a18-a390-a02f0deeeac7
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task a573c3a9-e8c3-4de3-8899-22c569491a2b
+BTTaskNode dc6bbecc-82d6-4688-9281-42675045c009
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 26728c9b-3811-43e7-b37d-c9e018a2c680
+BT_DoDriveStyle 7872d68f-b4ba-467a-8a68-0075fec75d10
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	DriveStyle EDrive_RacingSpeed
+BT_DoMoveStyle 0272aa37-22df-4aa6-ad72-dca7a2d6ee87
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Drive
+BT_DoOverrideLocomotion f926f55f-8436-494e-a7f0-adade196ffe6
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Brake
+	OverrideValue 0.699999988079071
+BT_DoOverrideLocomotion 26728c9b-3811-43e7-b37d-c9e018a2c680
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Throttle
+	OverrideValue 0.0
+BT_DoVarModify a573c3a9-e8c3-4de3-8899-22c569491a2b
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Variable EModifiable_Speed
+	Modifier EModifier_Set
+	Value 1.0
+BT_IsVar 17769bd4-c85a-4e84-88c2-4d2611df2749
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_Speed
+	Context EContext_Self
+	Comparator Compare_MoreThan
+	Value 80.0
+BehaviourTreeData a3796a5a-e5bd-492f-994e-9419e05669a3 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_OnlinePostRace
+	Root e07ce071-b698-4520-9de4-973c6db5de2a
+	Description 

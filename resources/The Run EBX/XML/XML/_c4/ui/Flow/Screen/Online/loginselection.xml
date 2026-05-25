@@ -1,0 +1,411 @@
+<ActionNode Guid="ea90845d-3da8-4621-9af2-f12c88f23969">
+    <Name>ShowKeyboard (Email)</Name>
+    <ParentGraph>[UIScreenAsset] 0b5ceacb-30e1-d33d-234f-f46d9b39bbbf</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <ActionKey>0xc3a03ceb</ActionKey>
+    <Params Count="3">
+        <member Index="0">4</member>
+        <member Index="1">48</member>
+        <member Index="2">ID_ACCOUNT_EMAIL_VIRTUAL_KEYBOARD</member>
+    </Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] 973e97c1-fcad-4b68-a721-00c8097b3564</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0x1fcf7d42</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] df774e55-773b-492b-9ed7-3c1fedb02319</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<ActionNode Guid="53c05a72-7cd3-4513-a6b7-607bf39a5692">
+    <Name>ShowKeyboard (Password)</Name>
+    <ParentGraph>[UIScreenAsset] 0b5ceacb-30e1-d33d-234f-f46d9b39bbbf</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <ActionKey>0xc3a03ceb</ActionKey>
+    <Params Count="3">
+        <member Index="0">3</member>
+        <member Index="1">16</member>
+        <member Index="2">ID_ACCOUNT_PASSWORD_VIRTUAL_KEYBOARD</member>
+    </Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] a967ac36-abaa-48c2-89ae-82324f1afdc7</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0xaec59e51</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] b5aa788d-eb59-49ef-b671-46d84ca70e89</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<UIAccountManagementDataBinding Guid="4ebc4440-a972-46bd-8cfa-f143406dedcc">
+    <Message>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Message>
+    <Password>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0xaec59e51</DataKey>
+        </UIDataSourceInfo>
+    </Password>
+    <EAInsiderChecked>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </EAInsiderChecked>
+    <EAShareInfoChecked>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </EAShareInfoChecked>
+    <ErrorDescription>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ErrorDescription>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+</UIAccountManagementDataBinding>
+<UIAssociateAccountDataBinding Guid="eaefed59-2b6c-492c-90a0-36bfb71d9f4b">
+    <Email>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0x2c7d6c27</DataKey>
+        </UIDataSourceInfo>
+    </Email>
+    <Password>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0xaec59e51</DataKey>
+        </UIDataSourceInfo>
+    </Password>
+    <ErrorField>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0x71643e6a</DataKey>
+        </UIDataSourceInfo>
+    </ErrorField>
+    <ErrorMessage>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0x71195fb0</DataKey>
+        </UIDataSourceInfo>
+    </ErrorMessage>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+</UIAssociateAccountDataBinding>
+<UINodeConnection Guid="424fb2bc-61ab-43af-8fe7-c4708f29eb3d">
+    <SourceNode>[WidgetNode] 4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f</SourceNode>
+    <TargetNode>[ActionNode] ea90845d-3da8-4621-9af2-f12c88f23969</TargetNode>
+    <SourcePort>[UINodePort] 64606fd5-1310-4f28-8311-4ee1d077cbee</SourcePort>
+    <TargetPort>[UINodePort] 973e97c1-fcad-4b68-a721-00c8097b3564</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="17e19fe3-63fe-414f-8e56-0e806f7cd6d0">
+    <SourceNode>[WidgetNode] 4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f</SourceNode>
+    <TargetNode>[ActionNode] 53c05a72-7cd3-4513-a6b7-607bf39a5692</TargetNode>
+    <SourcePort>[UINodePort] e4c6e738-1a37-4460-985a-e04c70a0be94</SourcePort>
+    <TargetPort>[UINodePort] a967ac36-abaa-48c2-89ae-82324f1afdc7</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="973e97c1-fcad-4b68-a721-00c8097b3564">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="df774e55-773b-492b-9ed7-3c1fedb02319">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="a967ac36-abaa-48c2-89ae-82324f1afdc7">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="b5aa788d-eb59-49ef-b671-46d84ca70e89">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="64606fd5-1310-4f28-8311-4ee1d077cbee">
+    <Name>EmailButtonPressed [WidgetLoginForm_01]</Name>
+    <InstanceName>WidgetLoginForm_01</InstanceName>
+    <Query>UIWidgetEventID_OnItemSelected</Query>
+    <FlowAction>Action_Select_Item</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="e4c6e738-1a37-4460-985a-e04c70a0be94">
+    <Name>PasswordButtonPressed [WidgetLoginForm_01]</Name>
+    <InstanceName>WidgetLoginForm_01</InstanceName>
+    <Query>UIWidgetEventID_OnItemHighlighted</Query>
+    <FlowAction>Action_Select_Item</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UIScreenAsset Guid="0b5ceacb-30e1-d33d-234f-f46d9b39bbbf">
+    <Name>_c4/UI/Flow/Screen/Online/LoginSelection</Name>
+    <Nodes Count="3">
+        <member Index="0">[ActionNode] ea90845d-3da8-4621-9af2-f12c88f23969</member>
+        <member Index="1">[ActionNode] 53c05a72-7cd3-4513-a6b7-607bf39a5692</member>
+        <member Index="2">[WidgetNode] 4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="2">
+        <member Index="0">[UINodeConnection] 424fb2bc-61ab-43af-8fe7-c4708f29eb3d</member>
+        <member Index="1">[UINodeConnection] 17e19fe3-63fe-414f-8e56-0e806f7cd6d0</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Screen/Online/LoginSelection_ResourceBundle</BundleAssetName>
+    <AssetList Count="0"></AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="0"></EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>False</SkipBundleLoading>
+    <FocusChange>
+        <UIFocusChange>
+            <IncreaseFocusAction>UIInputAction_NavigateDown</IncreaseFocusAction>
+            <DecreaseFocusAction>UIInputAction_NavigateUp</DecreaseFocusAction>
+        </UIFocusChange>
+    </FocusChange>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <DefaultVisibility>True</DefaultVisibility>
+    <ExclusiveInput>True</ExclusiveInput>
+</UIScreenAsset>
+<UITextfieldBinding Guid="f28505eb-2ab7-428c-a4f1-fc5b3be2ee9d">
+    <Text>Login Selection</Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000020</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>False</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="a0d2dfba-bee6-4dc7-a69a-ce81bc094876">
+    <Text>Email:</Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000020</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>True</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="61d852e2-1c48-4897-aa58-d64004d62a49">
+    <Text>Password:</Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000020</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>True</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="355687f9-fc0f-4f46-846b-08e137e05e07">
+    <Text></Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0x1fcf7d42</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000012</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>False</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="fbda14e3-328c-473d-bfe0-af71e19b1551">
+    <Text></Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIOnlineComp [c444cff1-9c4c-82ae-4372-7107e958e798]</DataCategory>
+            <DataKey>0xaec59e51</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000012</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>True</IsPassword>
+    <IsSelectable>False</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="42c71891-e28f-4f04-9ad3-47883a47361c">
+    <Text>Forgot Password</Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000020</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>True</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="57508fc3-808e-4fd0-b280-9967b411663b">
+    <Text>Login</Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000020</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>True</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="1baea7a8-4490-46e6-9c07-f6d3c6a27f49">
+    <Text>Create Account</Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000020</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>True</IsSelectable>
+</UITextfieldBinding>
+<UITextfieldBinding Guid="95f05f35-c2d8-49d3-ae17-241e5536a8f2">
+    <Text>ID_SIGNIN_LOGIN_TO_EAACCOUNT</Text>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <Size>0x00000020</Size>
+    <Alignment>UITextFieldAlignment_Left</Alignment>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <IsPassword>False</IsPassword>
+    <IsSelectable>False</IsSelectable>
+</UITextfieldBinding>
+<WidgetNode Guid="4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f">
+    <Name>Login Form</Name>
+    <ParentGraph>[UIScreenAsset] 0b5ceacb-30e1-d33d-234f-f46d9b39bbbf</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <WidgetAsset>[Ebx] _c4/UI/Assets/WidgetLoginForm [5f8ba385-e671-583c-84f9-72374e666043]</WidgetAsset>
+    <FocusIndex>0x00000000</FocusIndex>
+    <InstanceName>WidgetLoginForm_01</InstanceName>
+    <VerticalAlign>WVA_Center</VerticalAlign>
+    <HorisontalAlign>WHA_Center</HorisontalAlign>
+    <ZDepthLevel>0x00000000</ZDepthLevel>
+    <DataBinding>[UIAssociateAccountDataBinding] eaefed59-2b6c-492c-90a0-36bfb71d9f4b</DataBinding>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <MoviePath>Widget/Online/WidgetLoginForm.fla</MoviePath>
+    <Inputs Count="0"></Inputs>
+    <WidgetProperties Count="0"></WidgetProperties>
+    <PrevWidgetAsset>[Ebx] _c4/UI/Assets/WidgetLoginForm [5f8ba385-e671-583c-84f9-72374e666043]</PrevWidgetAsset>
+    <Outputs Count="2">
+        <member Index="0">[UINodePort] 64606fd5-1310-4f28-8311-4ee1d077cbee</member>
+        <member Index="1">[UINodePort] e4c6e738-1a37-4460-985a-e04c70a0be94</member>
+    </Outputs>
+    <DefaultVisibility>True</DefaultVisibility>
+    <AlwaysInFocus>False</AlwaysInFocus>
+</WidgetNode>

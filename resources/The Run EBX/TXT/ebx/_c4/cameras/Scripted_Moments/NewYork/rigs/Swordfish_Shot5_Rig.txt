@@ -1,0 +1,186 @@
+BasicControllerData 34b79d25-f758-4932-8129-e23358994e6b
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer 4ac16a2d-055b-4d78-a43b-25b81058f081
+	Composer 085cdf39-78e3-4b96-ac03-64b2cc31e4b3
+	TimeScale 1.0
+BasicControllerData ec6cef3c-9b37-4e05-b261-c8a8f29a89fd
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer 9e511126-1f43-415f-afa9-cfbf687053d8
+	Composer 40ff9e3c-d135-46b7-b310-d6c3cb406de3
+	TimeScale 1.0
+BlendControllerData ad62ee84-5bae-403b-b8d4-7cf8118fdfc8
+	$::CinebotControllerData
+		$::DataContainer
+	FromController 34b79d25-f758-4932-8129-e23358994e6b
+	ToController ec6cef3c-9b37-4e05-b261-c8a8f29a89fd
+	Transition 9e4e2016-766f-4011-8383-0688cb1edad9
+	AdditionalBlendToControllers *nullArray*
+	BlackBoardVarName 
+CinebotControllerRigAsset faaa9506-93e1-41dd-80fd-ee46d6cbc770 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Scripted_Moments/NewYork/rigs/Swordfish_Shot5_Rig
+	Controllers::array
+		member(0) ad62ee84-5bae-403b-b8d4-7cf8118fdfc8
+	ForceAllInputTypesEnabled False
+CinebotTransitionData 9e4e2016-766f-4011-8383-0688cb1edad9
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 1.0
+		Time 0.800000011920929
+		EaseInControl 0.30000001192092896
+		EaseOutControl 0.6499999761581421
+	Blend CINEBOT_BLEND_EULER
+	Clean False
+LocatorComposerData 085cdf39-78e3-4b96-ac03-64b2cc31e4b3
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 1.0
+		MinimumNearBlur 0.30000001192092896
+	CinebotLocatorName Pullback_shot_composer
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 1.0
+	FOV 3.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+ScreenSpaceComposerData 40ff9e3c-d135-46b7-b310-d6c3cb406de3
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 22.0
+		MinimumNearBlur 0.30000001192092896
+	TargetPart NOSE
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.07000000029802322
+		y -0.07000000029802322
+		z 0.0
+	MarkerType MARKER_UNKNOWN
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.6499999761581421
+	SoftBottom 0.6499999761581421
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 0.0
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.699999988079071
+	SoftRight 0.699999988079071
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 0.0
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 8.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene True
+	UseUpDamping True
+	UpDampingBlendTime 0.10000000149011612
+TorusTransposerData 4ac16a2d-055b-4d78-a43b-25b81058f081
+	$::CinebotTransposerData
+		$::DataContainer
+	AnchorPart 
+	MarkerType MARKER_UNKNOWN
+	Offset::Vec3
+		x 0.10000000149011612
+		y 0.0
+		z 0.0
+	OffsetScale *nullGuid*
+	OffsetDampTime::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusHard 4.0
+	InnerRadiusSoft 5.0
+	OuterRadiusSoft 5.0
+	OuterRadiusHard 6.0
+	RadiusBlendTime 0.0
+	LowerHeightHard -0.5
+	LowerHeightSoft 1.5
+	UpperHeightSoft 1.5
+	UpperHeightHard 3.0
+	HeightBlendTime 0.0
+	LowerHeadingHard -180.0
+	LowerHeadingSoft 0.0
+	UpperHeadingSoft 0.0
+	UpperHeadingHard 180.0
+	HeadingBlendTime 0.0
+	HeadingBlendTimeCurve *nullGuid*
+	UseWorldHeading False
+	WorldHeading 0.0
+	UseVelocityBasedDirection False
+	UseFilteredVelocityBasedDirection False
+	VelocityBasedDirectionOffset 0.0
+	MakeVelocityBasedDirectionHorizontal False
+	CacheFirstFrameHeading False
+	UseSimpleHeadingDamping True
+	SimpleHeadingOffset 180.0
+	FollowTarget False
+TorusTransposerData 9e511126-1f43-415f-afa9-cfbf687053d8
+	$::CinebotTransposerData
+		$::DataContainer
+	AnchorPart 
+	MarkerType MARKER_EXHAUST_LEFT_00
+	Offset::Vec3
+		x 0.10000000149011612
+		y 0.019999999552965164
+		z 0.0
+	OffsetScale *nullGuid*
+	OffsetDampTime::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusHard 2.0
+	InnerRadiusSoft 3.0
+	OuterRadiusSoft 3.0
+	OuterRadiusHard 4.0
+	RadiusBlendTime 0.0
+	LowerHeightHard 0.800000011920929
+	LowerHeightSoft 0.8999999761581421
+	UpperHeightSoft 0.8999999761581421
+	UpperHeightHard 1.0
+	HeightBlendTime 0.5
+	LowerHeadingHard -180.0
+	LowerHeadingSoft 0.0
+	UpperHeadingSoft 0.0
+	UpperHeadingHard 180.0
+	HeadingBlendTime 0.0
+	HeadingBlendTimeCurve *nullGuid*
+	UseWorldHeading False
+	WorldHeading 0.0
+	UseVelocityBasedDirection False
+	UseFilteredVelocityBasedDirection False
+	VelocityBasedDirectionOffset 0.0
+	MakeVelocityBasedDirectionHorizontal False
+	CacheFirstFrameHeading False
+	UseSimpleHeadingDamping True
+	SimpleHeadingOffset 180.0
+	FollowTarget False

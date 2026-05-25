@@ -1,0 +1,59 @@
+<BTFilterNode Guid="e33062b6-19fd-41f7-81c6-2fec555b2270">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 09da9f0f-0293-4fda-b765-15d18fdf5a91</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] 4aa1c61d-8052-42af-9113-29541b00f153</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="e3859e53-fb4f-4ee2-a8c4-7bf94f5cec8a">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] e33062b6-19fd-41f7-81c6-2fec555b2270</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="09da9f0f-0293-4fda-b765-15d18fdf5a91">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[VQ_Do] a2b554d4-a020-4b9c-bb26-29c20bdfee43</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="cda391ba-888d-4964-85a7-121f29ab63a7">
+    <Name>_c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_cs_SAE_Nissan_370Z</Name>
+    <Root>[BTSelectorNode] e3859e53-fb4f-4ee2-a8c4-7bf94f5cec8a</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<VQ_Do Guid="a2b554d4-a020-4b9c-bb26-29c20bdfee43">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</VQ_Do>
+<zVehicleFilter Guid="4aa1c61d-8052-42af-9113-29541b00f153">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0xe2529f2c</AttribKey>
+            <AttribType>EBTAttribType_Ref</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000000</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString></RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x99cc4f56</ClassKey>
+            <CollectionKey>0x193c5f8f</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000000</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>

@@ -1,0 +1,90 @@
+BTFilterNode 81fff740-3b61-4542-bf98-598cb9ba3c33
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) dc22d274-c98d-4b0d-8e96-d66f9d20c271
+	Eval fb702c1e-4af4-414b-9f37-25fee989f67e
+BTFilterNode dc22d274-c98d-4b0d-8e96-d66f9d20c271
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) e49db6d2-9600-4760-b093-72f375c4303f
+	Eval b376a190-8036-4309-9267-6971c9eee044
+BTSelectorNode 618f8482-de53-4a50-a0fc-b08de2b98fbd
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 81fff740-3b61-4542-bf98-598cb9ba3c33
+BTTaskNode e49db6d2-9600-4760-b093-72f375c4303f
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 7625848c-1025-4a6b-9dd0-9273001a5018
+BehaviourTreeData 40078860-191a-f09f-56ba-c6d03d57fd4e #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Playlist/Restrictions/CarFilter_Tier_4_NoRightHandDrive
+	Root 618f8482-de53-4a50-a0fc-b08de2b98fbd
+	Description 
+VQ_Do 7625848c-1025-4a6b-9dd0-9273001a5018
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter fb702c1e-4af4-414b-9f37-25fee989f67e
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 1025780852
+			AttribType EBTAttribType_Int
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 4
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0
+zVehicleFilter b376a190-8036-4309-9267-6971c9eee044
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 913110314
+			AttribType EBTAttribType_Text
+		Comparator Compare_NotEqual
+		Comparison EBTSimpleComparison_NotEqual
+		RValueInt 4
+		RValueFloat 0.0
+		RValueBool False
+		RValueString nis_gtr_v_10_pp_stock_1
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 0
+			CollectionKey 0

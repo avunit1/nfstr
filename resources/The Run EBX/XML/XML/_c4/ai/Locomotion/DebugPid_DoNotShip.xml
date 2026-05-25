@@ -1,0 +1,47 @@
+<AdaptivePidSteeringData Guid="80a103df-627b-4d60-9c20-b09d6baae8e2">
+    <IntegralClamp>0,5</IntegralClamp>
+    <DerivativeClamp>10</DerivativeClamp>
+    <MinValueForTermToTuneCoefficient>0,01</MinValueForTermToTuneCoefficient>
+    <AdaptiveMRACSlice>0,1</AdaptiveMRACSlice>
+    <AdaptationGainP>1E-05</AdaptationGainP>
+    <AdaptationGainI>1E-05</AdaptationGainI>
+    <AdaptationGainD>1E-05</AdaptationGainD>
+    <MaxPCoefficient>1</MaxPCoefficient>
+    <MinPCoefficient>0,4</MinPCoefficient>
+    <MaxICoefficient>0,1</MaxICoefficient>
+    <MinICoefficient>0,01</MinICoefficient>
+    <MaxDCoefficient>0,4</MaxDCoefficient>
+    <MinDCoefficient>0,1</MinDCoefficient>
+    <MinSpeedForAdaptation>10</MinSpeedForAdaptation>
+</AdaptivePidSteeringData>
+<AdaptivePidThrottleData Guid="de20cf90-a898-4d92-bbcb-d869394cd102">
+    <PsychoThrottleBrakeMinSpeedForAdaptation>10</PsychoThrottleBrakeMinSpeedForAdaptation>
+    <PsychoThottleBrakePSeed>-1</PsychoThottleBrakePSeed>
+    <PsychoThottleBrakeISeed>0</PsychoThottleBrakeISeed>
+    <PsychoThottleBrakeDSeed>0</PsychoThottleBrakeDSeed>
+    <AdaptiveMRACSlice>0,1</AdaptiveMRACSlice>
+    <MinValueForTermToTuneCoefficient>0,01</MinValueForTermToTuneCoefficient>
+    <AdaptationGainP>5E-06</AdaptationGainP>
+    <AdaptationGainI>5E-06</AdaptationGainI>
+    <AdaptationGainD>5E-06</AdaptationGainD>
+    <MaxPCoefficient>0</MaxPCoefficient>
+    <MinPCoefficient>-0,4</MinPCoefficient>
+    <MaxICoefficient>0</MaxICoefficient>
+    <MinICoefficient>-0,01</MinICoefficient>
+    <MaxDCoefficient>0</MaxDCoefficient>
+    <MinDCoefficient>-0,6</MinDCoefficient>
+</AdaptivePidThrottleData>
+<BasicPidThrottleData Guid="211a7b4d-0c67-4b81-a408-47df303f4ce9">
+    <ThrottleP>0,4</ThrottleP>
+    <ThrottleI>0,01</ThrottleI>
+    <ThrottleD>0,1</ThrottleD>
+    <IntegralClamp>5</IntegralClamp>
+    <DerivativeClamp>10</DerivativeClamp>
+</BasicPidThrottleData>
+<VehiclePidData Guid="53838af8-ad79-481c-bfad-bef6bea6cd52">
+    <Name>_c4/AI/Locomotion/DebugPid_DoNotShip</Name>
+    <BasicPidThrottle>[BasicPidThrottleData] 211a7b4d-0c67-4b81-a408-47df303f4ce9</BasicPidThrottle>
+    <AdaptivePidSteering>[AdaptivePidSteeringData] 80a103df-627b-4d60-9c20-b09d6baae8e2</AdaptivePidSteering>
+    <AdaptivePidThrottle>[AdaptivePidThrottleData] de20cf90-a898-4d92-bbcb-d869394cd102</AdaptivePidThrottle>
+    <AdaptiveGasBrake>True</AdaptiveGasBrake>
+</VehiclePidData>

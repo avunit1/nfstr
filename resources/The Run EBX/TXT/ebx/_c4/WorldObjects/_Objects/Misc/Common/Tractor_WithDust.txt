@@ -1,0 +1,104 @@
+EffectReferenceObjectData 969860ee-2f4d-4f70-bd79-d052dea45fe5
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x -0.29462575912475586
+				y 0.7930028438568115
+				z -2.041482448577881
+		Blueprint _c4/Effects/Ambient/RuralFarms/AMB_Tractor_Dust/c770d617-f3af-4135-99bd-8edfceba20a9
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+InterfaceDescriptorData e5c08901-0c37-41a7-8d25-009c37a4bc39
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -735106818
+		member(1)::DynamicEvent
+			Id -1955619194
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+ReferenceObjectData e76f9f22-9b24-4edb-b046-b211f04af4c8
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 3
+		IsPropertyConnectionTarget 3
+		IndexInBlueprint 0
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x -0.1679169237613678
+			y -5.960464477539063e-08
+			z 0.4520924687385559
+	Blueprint _c4/WorldObjects/_Objects/Misc/Altamont/Tractor_FarmBlueA/e0712df3-51d2-6efb-e68c-73cded1c3ade
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	Excluded False
+SpatialPrefabBlueprint ca7530a6-1c39-0c41-82f1-50a2ea30f999 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/WorldObjects/_Objects/Misc/Common/Tractor_WithDust
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source e5c08901-0c37-41a7-8d25-009c37a4bc39
+						Target 969860ee-2f4d-4f70-bd79-d052dea45fe5
+						SourceEvent::EventSpec
+							Id -735106818
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source e5c08901-0c37-41a7-8d25-009c37a4bc39
+						Target 969860ee-2f4d-4f70-bd79-d052dea45fe5
+						SourceEvent::EventSpec
+							Id -1955619194
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+				Descriptor e5c08901-0c37-41a7-8d25-009c37a4bc39
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) e76f9f22-9b24-4edb-b046-b211f04af4c8
+			member(1) 969860ee-2f4d-4f70-bd79-d052dea45fe5

@@ -1,0 +1,331 @@
+<BookmarkStoreEntityData Guid="78fac81b-cd89-497f-b572-3a8eca1997de">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+</BookmarkStoreEntityData>
+<DelayEntityData Guid="ac36de23-2160-4052-a595-b69714c4f9e1">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>2</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>True</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<EventGateEntityData Guid="048f45c9-5032-4a23-9aa5-f2f109a57f31">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_ClientAndServer</Realm>
+    <Default>True</Default>
+</EventGateEntityData>
+<InterfaceDescriptorData Guid="48e6f419-f62a-4df4-bfe8-8c83cee402f8">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="3">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Activate [DEAA09DC]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x0b87d186</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>Disable [F90216B1]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xfc85c151</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>0x124efdbf</Id>
+            </DynamicLink>
+        </member>
+    </OutputLinks>
+</InterfaceDescriptorData>
+<PrintDebugTextEntityData Guid="4d6f7edb-930b-45ec-ac5d-fdfd85610b52">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>1</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <TextColor>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>1,401298E-45</z>
+        </Vec3>
+    </TextColor>
+    <Realm>Realm_Server</Realm>
+    <Text>Store</Text>
+    <Enabled>True</Enabled>
+</PrintDebugTextEntityData>
+<SpatialPrefabBlueprint Guid="7beefba0-9253-0486-8e5b-8a0043713e37">
+    <Name>_c4/Gameplay/Flow/Checkpoints_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="1">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[BookmarkStoreEntityData] 78fac81b-cd89-497f-b572-3a8eca1997de</Source>
+                <Target>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Target>
+                <SourceFieldId>0x591d026c</SourceFieldId>
+                <TargetFieldId>0x124efdbf</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="9">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Source>
+                <Target>[EventGateEntityData] 048f45c9-5032-4a23-9aa5-f2f109a57f31</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87d186</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Source>
+                <Target>[BookmarkStoreEntityData] 78fac81b-cd89-497f-b572-3a8eca1997de</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x0dc12b3a</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Source>
+                <Target>[EventGateEntityData] 048f45c9-5032-4a23-9aa5-f2f109a57f31</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Source>
+                <Target>[BookmarkStoreEntityData] 78fac81b-cd89-497f-b572-3a8eca1997de</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_NetworkedClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[BookmarkStoreEntityData] 78fac81b-cd89-497f-b572-3a8eca1997de</Source>
+                <Target>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x350487ac</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xfc85c151</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Source>
+                <Target>[PrintDebugTextEntityData] 4d6f7edb-930b-45ec-ac5d-fdfd85610b52</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Print [0DD32774]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[EventGateEntityData] 048f45c9-5032-4a23-9aa5-f2f109a57f31</Source>
+                <Target>[UIHUDVisibilityEntityData] f9bb8b40-de39-4c92-a00e-3eaf619e82c0</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x46bce0e7</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[EventGateEntityData] 048f45c9-5032-4a23-9aa5-f2f109a57f31</Source>
+                <Target>[DelayEntityData] ac36de23-2160-4052-a595-b69714c4f9e1</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[DelayEntityData] ac36de23-2160-4052-a595-b69714c4f9e1</Source>
+                <Target>[UIHUDVisibilityEntityData] f9bb8b40-de39-4c92-a00e-3eaf619e82c0</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xa608dee4</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 48e6f419-f62a-4df4-bfe8-8c83cee402f8</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="5">
+        <member Index="0">[BookmarkStoreEntityData] 78fac81b-cd89-497f-b572-3a8eca1997de</member>
+        <member Index="1">[EventGateEntityData] 048f45c9-5032-4a23-9aa5-f2f109a57f31</member>
+        <member Index="2">[PrintDebugTextEntityData] 4d6f7edb-930b-45ec-ac5d-fdfd85610b52</member>
+        <member Index="3">[UIHUDVisibilityEntityData] f9bb8b40-de39-4c92-a00e-3eaf619e82c0</member>
+        <member Index="4">[DelayEntityData] ac36de23-2160-4052-a595-b69714c4f9e1</member>
+    </Objects>
+</SpatialPrefabBlueprint>
+<UIHUDVisibilityEntityData Guid="f9bb8b40-de39-4c92-a00e-3eaf619e82c0">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <DistanceToFinishText></DistanceToFinishText>
+    <DistanceToGasStation>0</DistanceToGasStation>
+    <DistanceToFinish>0</DistanceToFinish>
+    <UseDynamicDistanceToFinish>False</UseDynamicDistanceToFinish>
+</UIHUDVisibilityEntityData>

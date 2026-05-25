@@ -1,0 +1,75 @@
+AIRoadBlockEntityData 4b81dfb8-e1af-4627-81b0-06e2866eb7f5
+	$::AIPursuitEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 2
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 11
+		Formation _c4/AI/Formations/Delta/4fc26cd5-9318-89a0-8a37-d442dcb03ec1
+		StopBehavior _c4/AI/Behaviors/B_Stop/59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb
+		FleeBehavior _c4/AI/Behaviors/B_Stop/59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb
+		PatrolBehavior _c4/AI/Behaviors/B_Pursuit/a6932616-3cd8-4f8f-639c-bdf9cb957d0c
+		PursueBehavior _c4/AI/Behaviors/B_Pursuit/a6932616-3cd8-4f8f-639c-bdf9cb957d0c
+		TargetLocalPlayer True
+		AutoPursuitStart True
+	PursueOnBreak True
+	PursueOnAvoid False
+	RoadBlockBehavior _c4/AI/Behaviors/B_Stop/59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb
+AITacticEntityData d8075709-e911-484e-88f0-d7bae40e8525
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 10
+	Tactic _c4/AI/Tactics/Tactic_SideRam_Fast/63b21249-e92f-493b-b321-805a880972ff
+	AutoEnable True
+AITacticEntityData 47777f9b-8d31-4727-b5b5-b53173344909
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 13
+	Tactic _c4/AI/Tactics/Tactic_BrakeCheck/a4497809-5c99-11df-6a3a-5e045137e436
+	AutoEnable True
+DelayEntityData 793f050d-68e9-4f4e-8609-32925c00198e
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 12
+	Delay 0.0
+	Realm Realm_Server
+	AutoStart True
+	RunOnce False
+	RemoveDuplicateEvents True
+WorldPartData 588a7318-f98f-4ae1-b570-5faf82e74653 #primary instance
+	$::SpatialPrefabBlueprint
+		$::PrefabBlueprint
+			$::Blueprint
+				$::EntityBusData
+					$::DataBusData
+						$::Asset
+							$::DataContainer
+							Name _c4/Levels/Level_3000_ChicagoDowntown/CS_S10_4_SEC3_Roadblock_Logic_Schematic
+						PropertyConnections *nullArray*
+						LinkConnections *nullArray*
+					EventConnections *nullArray*
+					Descriptor *nullGuid*
+					NeedNetworkId False
+					InterfaceHasConnections False
+					ForceCreateAsFull False
+			Objects::array
+				member(0) d8075709-e911-484e-88f0-d7bae40e8525
+				member(1) 4b81dfb8-e1af-4627-81b0-06e2866eb7f5
+				member(2) 793f050d-68e9-4f4e-8609-32925c00198e
+				member(3) 47777f9b-8d31-4727-b5b5-b53173344909
+	Enabled True
+	UseDeferredEntityCreation False

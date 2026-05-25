@@ -1,0 +1,484 @@
+<CinebotStateLogicEntityData Guid="eee486c7-3d54-4db5-9838-95bd487bad41">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Mode>[Ebx] _c4/cameras/Core_Drive/Generic_Outros/Modes/Online_Finish_mode [3b458344-23c0-4508-8914-ee8b8aedf3e4]</Mode>
+    <PriorityOverride>0</PriorityOverride>
+    <EnablePriorityOverride>False</EnablePriorityOverride>
+</CinebotStateLogicEntityData>
+<CurveTransformEntityData Guid="8fb35a71-3f7c-448f-b7bf-093f090bc7ad">
+    <IndexInBlueprint>0007</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <ReactionCurve Count="6">
+        <member Index="0">
+            <Vec3>
+                <x>-1</x>
+                <y>0</y>
+                <z>1</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>2</x>
+                <y>1</y>
+                <z>4</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>-10,70015</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>0,33</x>
+                <y>0</y>
+                <z>21,40031</z>
+            </Vec3>
+        </member>
+        <member Index="4">
+            <Vec3>
+                <x>0,6666667</x>
+                <y>1</y>
+                <z>-21,32945</z>
+            </Vec3>
+        </member>
+        <member Index="5">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>10,66472</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <In>0</In>
+</CurveTransformEntityData>
+<FadeEntityData Guid="f99309c2-88ac-41fe-bf1e-38e505b901df">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,25</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<FadeEntityData Guid="27552684-a05a-4d3b-a160-a56e59f53835">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,5</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>True</StartFaded>
+</FadeEntityData>
+<FadeEntityData Guid="33053c9f-3c3f-41a9-bd67-7f1bc229536c">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<FloatPropertyTrackData Guid="60ae6348-16db-4627-8c34-c16d2fd905c5">
+    <Id>0x981221e1</Id>
+    <Times Count="1">
+        <member Index="0">0x00000000</member>
+    </Times>
+    <InterpolationType>InterpolationType_Linear</InterpolationType>
+    <Values Count="1">
+        <member Index="0">0</member>
+    </Values>
+</FloatPropertyTrackData>
+<InterfaceDescriptorData Guid="5ac92807-d78d-42f6-ad60-c92af0253562">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Start [0DC0EFA5]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Stop [7C89BB7D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="bc10a55c-2dab-4bb4-b188-ef16252998f9">
+    <Name>_c4/cameras/Core_Drive/Generic_Outros/Generic_Finish_Online</Name>
+    <PropertyConnections Count="2">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[CurveTransformEntityData] 8fb35a71-3f7c-448f-b7bf-093f090bc7ad</Source>
+                <Target>[LogicVisualEnvironmentEntityData] 0baac44d-4197-48df-bc5a-57b4b1523f01</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>Visibility [65D22203]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] d101a930-4f59-4f9a-81b8-2611e9c3fd65</Source>
+                <Target>[CurveTransformEntityData] 8fb35a71-3f7c-448f-b7bf-093f090bc7ad</Target>
+                <SourceFieldId>0x981221e1</SourceFieldId>
+                <TargetFieldId>In [00597302]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="12">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[FadeEntityData] f99309c2-88ac-41fe-bf1e-38e505b901df</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[FadeEntityData] 33053c9f-3c3f-41a9-bd67-7f1bc229536c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[FadeEntityData] f99309c2-88ac-41fe-bf1e-38e505b901df</Source>
+                <Target>[CinebotStateLogicEntityData] eee486c7-3d54-4db5-9838-95bd487bad41</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>End [0B87A32A]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[FadeEntityData] 33053c9f-3c3f-41a9-bd67-7f1bc229536c</Source>
+                <Target>[FadeEntityData] 27552684-a05a-4d3b-a160-a56e59f53835</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeIn [95F6B4E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[MixerEntityData] bc2aba04-1c8b-4b84-9b56-0265629d5400</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[MixerEntityData] bc2aba04-1c8b-4b84-9b56-0265629d5400</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Deactivate [72F6CC1D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[SoundEntityData] 0c915b72-46d1-4706-ad3d-9141a5bd858c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[CinebotStateLogicEntityData] eee486c7-3d54-4db5-9838-95bd487bad41</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Begin [0C9380A2]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[SequenceEntityData] d101a930-4f59-4f9a-81b8-2611e9c3fd65</Source>
+                <Target>[LogicVisualEnvironmentEntityData] 0baac44d-4197-48df-bc5a-57b4b1523f01</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[SequenceEntityData] d101a930-4f59-4f9a-81b8-2611e9c3fd65</Source>
+                <Target>[LogicVisualEnvironmentEntityData] 0baac44d-4197-48df-bc5a-57b4b1523f01</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStopped [B9D8CE6D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[SequenceEntityData] d101a930-4f59-4f9a-81b8-2611e9c3fd65</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Source>
+                <Target>[SequenceEntityData] d101a930-4f59-4f9a-81b8-2611e9c3fd65</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 5ac92807-d78d-42f6-ad60-c92af0253562</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="10">
+        <member Index="0">[CinebotStateLogicEntityData] eee486c7-3d54-4db5-9838-95bd487bad41</member>
+        <member Index="1">[FadeEntityData] f99309c2-88ac-41fe-bf1e-38e505b901df</member>
+        <member Index="2">[FadeEntityData] 27552684-a05a-4d3b-a160-a56e59f53835</member>
+        <member Index="3">[FadeEntityData] 33053c9f-3c3f-41a9-bd67-7f1bc229536c</member>
+        <member Index="4">[TrackStreamGateEntityData] 896c5018-c97e-4e06-827b-57cfd5d76dbe</member>
+        <member Index="5">[SoundEntityData] 0c915b72-46d1-4706-ad3d-9141a5bd858c</member>
+        <member Index="6">[MixerEntityData] bc2aba04-1c8b-4b84-9b56-0265629d5400</member>
+        <member Index="7">[CurveTransformEntityData] 8fb35a71-3f7c-448f-b7bf-093f090bc7ad</member>
+        <member Index="8">[LogicVisualEnvironmentEntityData] 0baac44d-4197-48df-bc5a-57b4b1523f01</member>
+        <member Index="9">[SequenceEntityData] d101a930-4f59-4f9a-81b8-2611e9c3fd65</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<LogicVisualEnvironmentEntityData Guid="0baac44d-4197-48df-bc5a-57b4b1523f01">
+    <IndexInBlueprint>0008</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <VisualEnvironment>[Ebx] _c4/cameras/Core_Drive/Generic_Outros/Generic_Outro_FX-1_VisEnv [69747fd8-5505-4fe4-aeed-14ff90aba747]</VisualEnvironment>
+    <Visibility>0</Visibility>
+</LogicVisualEnvironmentEntityData>
+<MixerEntityData Guid="bc2aba04-1c8b-4b84-9b56-0265629d5400">
+    <IndexInBlueprint>0006</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <MixerScalar>1</MixerScalar>
+    <Mixer>[Ebx] _c4/Sound/Mixing/RaceLogic/MIX_RaceFlow_RaceEnd_FadeOut [c4c88e12-c73d-2817-b2b8-13f35af136ed]</Mixer>
+    <ActivateOnCreation>False</ActivateOnCreation>
+</MixerEntityData>
+<SequenceEntityData Guid="d101a930-4f59-4f9a-81b8-2611e9c3fd65">
+    <IndexInBlueprint>0009</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00002710</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="1">
+        <member Index="0">[FloatPropertyTrackData] 60ae6348-16db-4627-8c34-c16d2fd905c5</member>
+    </PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PreSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>True</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SoundEntityData Guid="0c915b72-46d1-4706-ad3d-9141a5bd858c">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Sound>[Ebx] BadRef 178220f9-d320-42f3-bd7a-6d9c6b51c31a/5e1e51cd-d847-4bf7-a6f7-69a6aab1997b</Sound>
+    <PlayOnCreation>False</PlayOnCreation>
+    <EnabledOnCreation>True</EnabledOnCreation>
+</SoundEntityData>
+<TrackStreamGateEntityData Guid="896c5018-c97e-4e06-827b-57cfd5d76dbe">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+</TrackStreamGateEntityData>

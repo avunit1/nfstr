@@ -1,0 +1,131 @@
+<BTFilterNode Guid="b99de728-b2ad-467e-8d57-35ca8e62dc71">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] bcf5871d-1774-48bb-80af-0db36d5530bf</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] 2076e60f-2bf8-48ec-88be-353037e03cf0</Eval>
+</BTFilterNode>
+<BTFilterNode Guid="bcf5871d-1774-48bb-80af-0db36d5530bf">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] 72caf287-2f6a-48a7-8cdd-96fc8913c4c7</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] 6110500f-50a1-4c1f-964c-0f9ba39f5104</Eval>
+</BTFilterNode>
+<BTFilterNode Guid="72caf287-2f6a-48a7-8cdd-96fc8913c4c7">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 3a067cc6-06ab-4293-8d5e-155d2a347a9b</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] 4d07bd0a-4c63-402c-a40c-654091cf02d7</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="70feb487-e885-49ac-a914-b1808cb4e72c">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] b99de728-b2ad-467e-8d57-35ca8e62dc71</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="3a067cc6-06ab-4293-8d5e-155d2a347a9b">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[VQ_Do] e601741b-a26e-49f8-acb1-ff1ded5ba5f3</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="14ab6d50-d38c-4f16-b0fc-8fd4fec2fadb">
+    <Name>_c4/Gameplay/Playlist/Restrictions/CarFilter_Tier_3</Name>
+    <Root>[BTSelectorNode] 70feb487-e885-49ac-a914-b1808cb4e72c</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<VQ_Do Guid="e601741b-a26e-49f8-acb1-ff1ded5ba5f3">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</VQ_Do>
+<zVehicleFilter Guid="2076e60f-2bf8-48ec-88be-353037e03cf0">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x3d242c74</AttribKey>
+            <AttribType>EBTAttribType_Int</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000003</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString></RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000000</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>
+<zVehicleFilter Guid="6110500f-50a1-4c1f-964c-0f9ba39f5104">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x366cf52a</AttribKey>
+            <AttribType>EBTAttribType_Text</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_NotEqual</Comparison>
+    <RValueInt>0x00000000</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString>for_pol_int_11</RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000000</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>
+<zVehicleFilter Guid="4d07bd0a-4c63-402c-a40c-654091cf02d7">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x366cf52a</AttribKey>
+            <AttribType>EBTAttribType_Text</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_NotEqual</Comparison>
+    <RValueInt>0x00000000</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString>trf_por_cay_08_mob_user</RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0x00000000</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>

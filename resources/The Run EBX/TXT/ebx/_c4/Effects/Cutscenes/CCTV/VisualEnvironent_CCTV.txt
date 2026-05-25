@@ -1,0 +1,172 @@
+ColorCorrectionComponentData c650145d-9156-4596-bfab-2c01546f3615
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	Realm Realm_Client
+	Enable True
+	Brightness::Vec3
+		x 1.2200000286102295
+		y 1.25
+		z 1.1859999895095825
+	Contrast::Vec3
+		x 0.9160000085830688
+		y 0.9160000085830688
+		z 0.9160000085830688
+	Saturation::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	Hue 0.0
+	ColorGradingEnable True
+	ColorGradingTexture _c4/VisEnv/Textures/Common/Photomode/Photomode_BW3200_CC/c3237050-200a-a568-45b2-81253546e6ea
+FilmGrainComponentData e83220db-26b3-4ea2-a321-42023778cf51
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	Realm Realm_Client
+	Enable True
+	TextureScale::Vec2
+		x 1.0
+		y 1.0
+	ColorScale::Vec3
+		x 0.10000000149011612
+		y 0.10000000149011612
+		z 0.10000000149011612
+	LinearFilteringEnable True
+	Texture Systems/PostProcess/FilmGrainNoise/fa9f620d-dec7-4b88-88ac-84b3e0a07bdc
+ScreenEffectComponentData 504768d2-3846-436f-88ee-9eaba61a8145
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	Realm Realm_Client
+	FrameType ScreenEffectFrameType_FullFrame
+	Shader _c4/Effects/_Textures/LensEffects/CCTV_Shader/655cf102-db4f-44fc-a109-16464e510778
+	FrameWidth 1.0
+	OuterFrameOpacity 1.0
+	InnerFrameOpacity 1.0
+	Angle 0.0
+	ScreenEffectParams::Vec4
+		x 0.0
+		y 0.0
+		z 0.0
+		w 0.0
+VisualEnvironmentBlueprint 45ad70cc-5bdf-4514-abcf-65761e15bf97 #primary instance
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Cutscenes/CCTV/VisualEnvironent_CCTV
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections *nullArray*
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Object 120f1ce3-f2c2-4bef-bb27-8aea4576ce89
+VisualEnvironmentEntityData 120f1ce3-f2c2-4bef-bb27-8aea4576ce89
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 0
+					IndexInBlueprint 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components::array
+			member(0) e83220db-26b3-4ea2-a321-42023778cf51
+			member(1) c650145d-9156-4596-bfab-2c01546f3615
+			member(2) 504768d2-3846-436f-88ee-9eaba61a8145
+		RuntimeComponentCount 3
+	Visibility 0.0
+	Priority 0

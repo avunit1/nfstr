@@ -1,0 +1,128 @@
+<ActionNode Guid="3816571e-d9c3-46c4-9334-38a7d2ccaed0">
+    <Name>Show Keyboard</Name>
+    <ParentGraph>[UIScreenAsset] 3cd66a4b-b3ed-6210-e4f9-630697d1aa1e</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <ActionKey>0xc3a03ceb</ActionKey>
+    <Params Count="3">
+        <member Index="0">5</member>
+        <member Index="1">16</member>
+        <member Index="2">ID_OPTIONS_EXTRAS_ENTER_CHEAT_CODE_PROMPT</member>
+    </Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] 7f537e08-e045-4ffc-8493-8b7db494cdc5</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef af54e7a9-9915-11df-868b-a5432b9e5e89/edf562da-dce2-967c-3bdb-33f7f06d4c74</DataCategory>
+            <DataKey>0xd68e3650</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] b7054c83-cd05-4f07-aa19-c2491e14a8a6</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<UINodeConnection Guid="58f3fb8a-fa93-4637-af0d-ed72e1c6c8ab">
+    <SourceNode>[WidgetNode] c6a9f1cd-84ef-47ab-a648-3d3c156af121</SourceNode>
+    <TargetNode>[ActionNode] 3816571e-d9c3-46c4-9334-38a7d2ccaed0</TargetNode>
+    <SourcePort>[UINodePort] 220ad7d5-de30-42e6-b90f-9f3355a38287</SourcePort>
+    <TargetPort>[UINodePort] 7f537e08-e045-4ffc-8493-8b7db494cdc5</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="7f537e08-e045-4ffc-8493-8b7db494cdc5">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="b7054c83-cd05-4f07-aa19-c2491e14a8a6">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="220ad7d5-de30-42e6-b90f-9f3355a38287">
+    <Name>CheatCodeSelected [Widget_Settings_cheatCode_01]</Name>
+    <InstanceName>Widget_Settings_cheatCode_01</InstanceName>
+    <Query>UIWidgetEventID_OnItemSelected</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UIScreenAsset Guid="3cd66a4b-b3ed-6210-e4f9-630697d1aa1e">
+    <Name>_c4/UI/Flow/Screen/Options/CheatCode</Name>
+    <Nodes Count="2">
+        <member Index="0">[WidgetNode] c6a9f1cd-84ef-47ab-a648-3d3c156af121</member>
+        <member Index="1">[ActionNode] 3816571e-d9c3-46c4-9334-38a7d2ccaed0</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="1">
+        <member Index="0">[UINodeConnection] 58f3fb8a-fa93-4637-af0d-ed72e1c6c8ab</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Screen/Options/CheatCode_ResourceBundle</BundleAssetName>
+    <AssetList Count="0"></AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="0"></EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>False</SkipBundleLoading>
+    <FocusChange>
+        <UIFocusChange>
+            <IncreaseFocusAction>UIInputAction_NavigateUp</IncreaseFocusAction>
+            <DecreaseFocusAction>UIInputAction_NavigateDown</DecreaseFocusAction>
+        </UIFocusChange>
+    </FocusChange>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <DefaultVisibility>True</DefaultVisibility>
+    <ExclusiveInput>True</ExclusiveInput>
+</UIScreenAsset>
+<UISettingsCheatCodeDataBinding Guid="dcfc95d9-070e-4c13-a38d-d915057b384f">
+    <CheatCode>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef af54e7a9-9915-11df-868b-a5432b9e5e89/edf562da-dce2-967c-3bdb-33f7f06d4c74</DataCategory>
+            <DataKey>0xd68e3650</DataKey>
+        </UIDataSourceInfo>
+    </CheatCode>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+</UISettingsCheatCodeDataBinding>
+<WidgetNode Guid="c6a9f1cd-84ef-47ab-a648-3d3c156af121">
+    <Name>WidgetNode</Name>
+    <ParentGraph>[UIScreenAsset] 3cd66a4b-b3ed-6210-e4f9-630697d1aa1e</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <WidgetAsset>[Ebx] _c4/UI/Assets/Widget_Settings_cheatCode [581009f2-f6ad-b3d4-00c1-42eb0247828b]</WidgetAsset>
+    <FocusIndex>0x00000000</FocusIndex>
+    <InstanceName>Widget_Settings_cheatCode_01</InstanceName>
+    <VerticalAlign>WVA_Center</VerticalAlign>
+    <HorisontalAlign>WHA_Center</HorisontalAlign>
+    <ZDepthLevel>0x00000000</ZDepthLevel>
+    <DataBinding>[UISettingsCheatCodeDataBinding] dcfc95d9-070e-4c13-a38d-d915057b384f</DataBinding>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <MoviePath>Widget/Widget_Settings_cheatCode.fla</MoviePath>
+    <Inputs Count="0"></Inputs>
+    <WidgetProperties Count="0"></WidgetProperties>
+    <PrevWidgetAsset>[Ebx] _c4/UI/Assets/Widget_Settings_cheatCode [581009f2-f6ad-b3d4-00c1-42eb0247828b]</PrevWidgetAsset>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] 220ad7d5-de30-42e6-b90f-9f3355a38287</member>
+    </Outputs>
+    <DefaultVisibility>True</DefaultVisibility>
+    <AlwaysInFocus>False</AlwaysInFocus>
+</WidgetNode>

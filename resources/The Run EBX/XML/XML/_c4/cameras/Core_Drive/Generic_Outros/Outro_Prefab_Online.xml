@@ -1,0 +1,548 @@
+<EventSplitterEntityData Guid="1dcbf8c8-fcfd-460c-af47-140d73d21f94">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <RunOnce>False</RunOnce>
+</EventSplitterEntityData>
+<InterfaceDescriptorData Guid="586ec9a3-5af4-4073-b294-22357c8155a2">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="3">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Start [0DC0EFA5]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x11d59e3d</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x4c8043af</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="5">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x5df7295c</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x0ced00b4</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="3">
+            <DynamicEvent>
+                <Id>OnFail [AA84CDC6]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="4">
+            <DynamicEvent>
+                <Id>0x01c07eb4</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<PrefabBlueprint Guid="922f4b44-3b4f-44a9-a549-12302baed821">
+    <Name>_c4/cameras/Core_Drive/Generic_Outros/Outro_Prefab_Online</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="17">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Source>
+                <Target>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Source>
+                <Target>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x11d59e3d</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x11d59e3d</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Source>
+                <Target>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x4c8043af</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x4c8043af</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[EventSplitterEntityData] 1dcbf8c8-fcfd-460c-af47-140d73d21f94</Source>
+                <Target>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnImpulse [F7CE107F]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x4c8043af</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[ReferenceObjectData] 4c90dbcc-cf1e-47d1-9812-f9c46bcb581a</Source>
+                <Target>[UIGraphEntityData] 8f997312-bb6a-49c4-b0d5-b8f73ed9f216</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd6472660</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xde11e65d</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Source>
+                <Target>[ReferenceObjectData] 4c90dbcc-cf1e-47d1-9812-f9c46bcb581a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87ffd5</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Source>
+                <Target>[ReferenceObjectData] 3eb7c7f7-9a85-45e5-8920-6d1fb4233cd1</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Fail [7C7E7707]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[ReferenceObjectData] 3eb7c7f7-9a85-45e5-8920-6d1fb4233cd1</Source>
+                <Target>[UIGraphEntityData] cd96e14f-d20e-458c-b8a4-4017e7aa0223</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd6472660</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xde11e65d</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[ReferenceObjectData] 4c90dbcc-cf1e-47d1-9812-f9c46bcb581a</Source>
+                <Target>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xe3539f60</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[ReferenceObjectData] 4c90dbcc-cf1e-47d1-9812-f9c46bcb581a</Source>
+                <Target>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x9bd9a6af</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x5df7295c</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Source>
+                <Target>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Fail [7C7E7707]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFail [AA84CDC6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Source>
+                <Target>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87ffd5</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x0ced00b4</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[UIGraphEntityData] cd96e14f-d20e-458c-b8a4-4017e7aa0223</Source>
+                <Target>[ReferenceObjectData] 3eb7c7f7-9a85-45e5-8920-6d1fb4233cd1</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xfb542cb2</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="13">
+            <EventConnection>
+                <Source>[UIGraphEntityData] cd96e14f-d20e-458c-b8a4-4017e7aa0223</Source>
+                <Target>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xfb542cb2</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x01c07eb4</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="14">
+            <EventConnection>
+                <Source>[UIGraphEntityData] 8f997312-bb6a-49c4-b0d5-b8f73ed9f216</Source>
+                <Target>[ReferenceObjectData] 4c90dbcc-cf1e-47d1-9812-f9c46bcb581a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xfb542cb2</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="15">
+            <EventConnection>
+                <Source>[UIGraphEntityData] 8f997312-bb6a-49c4-b0d5-b8f73ed9f216</Source>
+                <Target>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xfb542cb2</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="16">
+            <EventConnection>
+                <Source>[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</Source>
+                <Target>[EventSplitterEntityData] 1dcbf8c8-fcfd-460c-af47-140d73d21f94</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0b87ffd5</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Impulse [66B8ED9E]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 586ec9a3-5af4-4073-b294-22357c8155a2</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[SelectEventEntityData] 885cf42f-4c6c-4d8f-96ad-feb64583198a</member>
+        <member Index="1">[UIGraphEntityData] cd96e14f-d20e-458c-b8a4-4017e7aa0223</member>
+        <member Index="2">[UIGraphEntityData] 8f997312-bb6a-49c4-b0d5-b8f73ed9f216</member>
+        <member Index="3">[ReferenceObjectData] 4c90dbcc-cf1e-47d1-9812-f9c46bcb581a</member>
+        <member Index="4">[ReferenceObjectData] 3eb7c7f7-9a85-45e5-8920-6d1fb4233cd1</member>
+        <member Index="5">[EventSplitterEntityData] 1dcbf8c8-fcfd-460c-af47-140d73d21f94</member>
+    </Objects>
+</PrefabBlueprint>
+<ReferenceObjectData Guid="4c90dbcc-cf1e-47d1-9812-f9c46bcb581a">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0,7935677</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/cameras/core_drive/generic_outros/outro_success_treatment_online [1d0ef2d3-2408-4efe-95ad-c990b9a450d2]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<ReferenceObjectData Guid="3eb7c7f7-9a85-45e5-8920-6d1fb4233cd1">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>-2,142011</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>-1,401298E-45</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/cameras/Core_Drive/Generic_Outros/Outro_Fail_Treatment_Online [a8a1d7ad-437b-4796-ae4b-47b9fa36baa0]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<SelectEventEntityData Guid="885cf42f-4c6c-4d8f-96ad-feb64583198a">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="2">
+        <member Index="0">Fail</member>
+        <member Index="1">Win</member>
+    </Events>
+</SelectEventEntityData>
+<UIGraphEntityData Guid="cd96e14f-d20e-458c-b8a4-4017e7aa0223">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Events Count="0"></Events>
+    <GraphAsset>[Ebx] _c4/ui/flow/graph/postrace/raceoutrograph [f5eeb9d9-1fd4-da28-15c5-5ec608014084]</GraphAsset>
+    <InputNodeName></InputNodeName>
+    <GraphPriority>UIGraphPriority_Normal</GraphPriority>
+    <State>UIState_Playing</State>
+    <PopPreviousGraph>True</PopPreviousGraph>
+</UIGraphEntityData>
+<UIGraphEntityData Guid="8f997312-bb6a-49c4-b0d5-b8f73ed9f216">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Events Count="0"></Events>
+    <GraphAsset>[Ebx] _c4/ui/flow/graph/postrace/raceoutrograph [f5eeb9d9-1fd4-da28-15c5-5ec608014084]</GraphAsset>
+    <InputNodeName></InputNodeName>
+    <GraphPriority>UIGraphPriority_Normal</GraphPriority>
+    <State>UIState_Playing</State>
+    <PopPreviousGraph>True</PopPreviousGraph>
+</UIGraphEntityData>

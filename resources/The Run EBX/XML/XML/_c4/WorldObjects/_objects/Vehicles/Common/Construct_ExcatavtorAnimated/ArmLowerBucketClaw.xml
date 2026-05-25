@@ -1,0 +1,208 @@
+<InterfaceDescriptorData Guid="911ef854-6abe-4ebb-bb3f-d518ebda2fbf">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x9cbf9bc7</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<ReferenceObjectData Guid="4cca689b-fefd-4ffb-ac9b-aaba19a80762">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/ArmLower [d99796ff-6e1f-f6f5-8ca9-f794b8a21a9b]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</ReferenceObjectData>
+<SequenceEntityData Guid="a7f498da-c2f4-4bfe-8a28-46144946c768">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00005b25</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="6">
+        <member Index="0">[TransformPartPropertyTrackData] 49fce36f-9e0a-4a94-a13e-e8b7b92c66b8</member>
+        <member Index="1">[TransformPartPropertyTrackData] d9ad5eb8-a6fe-42ce-8935-bbda94a2d620</member>
+        <member Index="2">[TransformPartPropertyTrackData] e50a7b60-45d0-4b1d-b3fb-b3da8e8a02c5</member>
+        <member Index="3">[TransformPartPropertyTrackData] 074270ea-0f14-4ad3-80c2-db184c25f449</member>
+        <member Index="4">[TransformPartPropertyTrackData] 1197f1cb-4293-46fa-87ac-145aa13503b5</member>
+        <member Index="5">[TransformPartPropertyTrackData] ff532a85-6e99-4010-b008-91aa9487f67a</member>
+    </PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>True</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SpatialPrefabBlueprint Guid="f6c9f7a3-a89b-70b5-c995-6a57288f328e">
+    <Name>_c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/ArmLowerBucketClaw</Name>
+    <PropertyConnections Count="1">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] a7f498da-c2f4-4bfe-8a28-46144946c768</Source>
+                <Target>[ReferenceObjectData] 4cca689b-fefd-4ffb-ac9b-aaba19a80762</Target>
+                <SourceFieldId>0xdcbc0e8c</SourceFieldId>
+                <TargetFieldId>BlueprintTransform [E790F446]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="2">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SequenceEntityData] a7f498da-c2f4-4bfe-8a28-46144946c768</Source>
+                <Target>[ReferenceObjectData] 4cca689b-fefd-4ffb-ac9b-aaba19a80762</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xe82c334d</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 911ef854-6abe-4ebb-bb3f-d518ebda2fbf</Source>
+                <Target>[SequenceEntityData] a7f498da-c2f4-4bfe-8a28-46144946c768</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x9cbf9bc7</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 911ef854-6abe-4ebb-bb3f-d518ebda2fbf</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[ReferenceObjectData] 4cca689b-fefd-4ffb-ac9b-aaba19a80762</member>
+        <member Index="1">[SequenceEntityData] a7f498da-c2f4-4bfe-8a28-46144946c768</member>
+    </Objects>
+</SpatialPrefabBlueprint>
+<TransformPartPropertyTrackData Guid="49fce36f-9e0a-4a94-a13e-e8b7b92c66b8">
+    <Id>0xdcbc0e8c</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationX</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/AnimTrackData/A7F498DA-C2F4-4BFE-8A28-46144946C768_ArmLower_anim</ResourceName>
+    <KeyStartIndex>0x00000000</KeyStartIndex>
+    <KeyCount>0x00000006</KeyCount>
+    <IsStatic>True</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="d9ad5eb8-a6fe-42ce-8935-bbda94a2d620">
+    <Id>0xdcbc0e8c</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationY</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/AnimTrackData/A7F498DA-C2F4-4BFE-8A28-46144946C768_ArmLower_anim</ResourceName>
+    <KeyStartIndex>0x00000006</KeyStartIndex>
+    <KeyCount>0x00000006</KeyCount>
+    <IsStatic>True</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="e50a7b60-45d0-4b1d-b3fb-b3da8e8a02c5">
+    <Id>0xdcbc0e8c</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationZ</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/AnimTrackData/A7F498DA-C2F4-4BFE-8A28-46144946C768_ArmLower_anim</ResourceName>
+    <KeyStartIndex>0x0000000c</KeyStartIndex>
+    <KeyCount>0x00000006</KeyCount>
+    <IsStatic>True</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="074270ea-0f14-4ad3-80c2-db184c25f449">
+    <Id>0xdcbc0e8c</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationX</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/AnimTrackData/A7F498DA-C2F4-4BFE-8A28-46144946C768_ArmLower_anim</ResourceName>
+    <KeyStartIndex>0x00000012</KeyStartIndex>
+    <KeyCount>0x00000006</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="1197f1cb-4293-46fa-87ac-145aa13503b5">
+    <Id>0xdcbc0e8c</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationY</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/AnimTrackData/A7F498DA-C2F4-4BFE-8A28-46144946C768_ArmLower_anim</ResourceName>
+    <KeyStartIndex>0x00000018</KeyStartIndex>
+    <KeyCount>0x00000006</KeyCount>
+    <IsStatic>True</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="ff532a85-6e99-4010-b008-91aa9487f67a">
+    <Id>0xdcbc0e8c</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationZ</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/WorldObjects/_Objects/Vehicles/Common/Construct_ExcatavtorAnimated/AnimTrackData/A7F498DA-C2F4-4BFE-8A28-46144946C768_ArmLower_anim</ResourceName>
+    <KeyStartIndex>0x0000001e</KeyStartIndex>
+    <KeyCount>0x00000006</KeyCount>
+    <IsStatic>True</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>

@@ -1,0 +1,430 @@
+CinebotControllerRigAsset 733f4b5d-dbb2-4ae6-a407-c4f5b81de5ff #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/Noise/Template/impulse_hood
+	Controllers::array
+		member(0) ddc87851-3b8f-4c87-9633-8a12ba057a8c
+	ForceAllInputTypesEnabled False
+CurveData 8ff6a6b7-b268-44de-880c-62c19189e8f9
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_WORLD_COLLISION
+	BlackBoardVarName 
+	OutputScale 0.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 20.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z 6.0
+		member(3)::Vec3
+			x 1.0
+			y 1.0
+			z -6.0
+CurveData 55610ba0-0ca1-4bce-b573-8df83da10b28
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_WORLD_COLLISION
+	BlackBoardVarName 
+	OutputScale 0.0
+	InputScale 1.0
+	MirrorInput True
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 25.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z 6.0
+		member(3)::Vec3
+			x 1.0
+			y 1.0
+			z -6.0
+CurveData 210bf1c3-deb5-436c-bf2e-9ed9a22babdf
+	$::DataContainer
+	ReactionInput CINEBOT_REACTION_INPUT_WORLD_COLLISION
+	BlackBoardVarName 
+	OutputScale -1.0
+	InputScale 1.0
+	MirrorInput False
+	Conditions *nullArray*
+	XOR_Conditions False
+	ReactionCurve::array
+		member(0)::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		member(1)::Vec3
+			x 10.0
+			y 1.0
+			z 2.0
+		member(2)::Vec3
+			x 0.0
+			y 0.0
+			z 6.0
+		member(3)::Vec3
+			x 1.0
+			y 1.0
+			z -6.0
+ImpulseControllerData ddc87851-3b8f-4c87-9633-8a12ba057a8c
+	$::CinebotControllerData
+		$::DataContainer
+	MaxReactions 2
+	Responses::array
+		member(0) 7086e770-656c-4c12-ad36-f22758444417
+		member(1) 4d366f08-1473-4855-823e-de0e217ce6b1
+	Inertia::ImpulseControllerInertia
+		Linear::Vec3
+			x 3.0
+			y 3.0
+			z 1.0
+		Angular::Vec3
+			x 2.0
+			y 2.0
+			z 2.0
+		FOV 2.0
+	Limit::ImpulseControllerLimit
+		Linear::Vec3
+			x 0.10000000149011612
+			y 0.019999999552965164
+			z 0.10000000149011612
+		Angular::Vec3
+			x 20.0
+			y 10.0
+			z 10.0
+		FOV 90.0
+ImpulseControllerResponse 7086e770-656c-4c12-ad36-f22758444417
+	$::DataContainer
+	Filters::ImpulseControllerResponseFilters
+		Keys::array
+			member(0) WorldImpact
+	X::ImpulseControllerChannel
+		Speed 600.0
+		Reactions::array
+			member(0)::ImpulseControllerReaction
+				Impulse::ImpulseControllerPair
+					Min 0.0
+					Max 30.0
+				DelayTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				RampTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Duration::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.20000000298023224
+				FadeTime::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.20000000298023224
+				Compression::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Wave::ImpulseControllerWavePair
+					Min::CinebotWaveformData
+						Amplitude 0.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+					Max::CinebotWaveformData
+						Amplitude 1.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+	Y::ImpulseControllerChannel
+		Speed 0.0
+		Reactions::array
+			member(0)::ImpulseControllerReaction
+				Impulse::ImpulseControllerPair
+					Min 0.0
+					Max 30.0
+				DelayTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				RampTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Duration::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.20000000298023224
+				FadeTime::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.20000000298023224
+				Compression::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Wave::ImpulseControllerWavePair
+					Min::CinebotWaveformData
+						Amplitude 0.0
+						Base 1.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+					Max::CinebotWaveformData
+						Amplitude 1.0
+						Base 1.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+	Z::ImpulseControllerChannel
+		Speed 10.0
+		Reactions::array
+			member(0)::ImpulseControllerReaction
+				Impulse::ImpulseControllerPair
+					Min 0.0
+					Max 30.0
+				DelayTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				RampTime::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.25
+				Duration::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.15000000596046448
+				FadeTime::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.15000000596046448
+				Compression::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Wave::ImpulseControllerWavePair
+					Min::CinebotWaveformData
+						Amplitude 0.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert True
+					Max::CinebotWaveformData
+						Amplitude 1.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert True
+	Pitch::ImpulseControllerChannel
+		Speed 0.0
+		Reactions::array
+			member(0)::ImpulseControllerReaction
+				Impulse::ImpulseControllerPair
+					Min 0.0
+					Max 20.0
+				DelayTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				RampTime::ImpulseControllerPair
+					Min 0.10000000149011612
+					Max 0.009999999776482582
+				Duration::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.30000001192092896
+				FadeTime::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.05000000074505806
+				Compression::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Wave::ImpulseControllerWavePair
+					Min::CinebotWaveformData
+						Amplitude 0.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+					Max::CinebotWaveformData
+						Amplitude 1.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+	Roll::ImpulseControllerChannel
+		Speed 300.0
+		Reactions::array
+			member(0)::ImpulseControllerReaction
+				Impulse::ImpulseControllerPair
+					Min 0.0
+					Max 30.0
+				DelayTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				RampTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Duration::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 0.4000000059604645
+				FadeTime::ImpulseControllerPair
+					Min 0.10000000149011612
+					Max 0.4000000059604645
+				Compression::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Wave::ImpulseControllerWavePair
+					Min::CinebotWaveformData
+						Amplitude 0.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+					Max::CinebotWaveformData
+						Amplitude 1.0
+						Base 0.0
+						Offset 0.0
+						Frequency 3.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+	Yaw::ImpulseControllerChannel
+		Speed 5.0
+		Reactions *nullArray*
+	FOV::ImpulseControllerChannel
+		Speed 5.0
+		Reactions *nullArray*
+ImpulseControllerResponse 4d366f08-1473-4855-823e-de0e217ce6b1
+	$::DataContainer
+	Filters::ImpulseControllerResponseFilters
+		Keys::array
+			member(0) Car_jump_landing
+	X::ImpulseControllerChannel
+		Speed 500.0
+		Reactions *nullArray*
+	Y::ImpulseControllerChannel
+		Speed 10.0
+		Reactions::array
+			member(0)::ImpulseControllerReaction
+				Impulse::ImpulseControllerPair
+					Min 0.0
+					Max 30.0
+				DelayTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				RampTime::ImpulseControllerPair
+					Min 0.10000000149011612
+					Max 0.800000011920929
+				Duration::ImpulseControllerPair
+					Min 0.10000000149011612
+					Max 1.0
+				FadeTime::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 1.0
+				Compression::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Wave::ImpulseControllerWavePair
+					Min::CinebotWaveformData
+						Amplitude 0.0
+						Base 1.0
+						Offset 0.0
+						Frequency 5.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+					Max::CinebotWaveformData
+						Amplitude 1.0
+						Base 1.0
+						Offset 0.0
+						Frequency 5.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+	Z::ImpulseControllerChannel
+		Speed 5.0
+		Reactions *nullArray*
+	Pitch::ImpulseControllerChannel
+		Speed 0.0
+		Reactions::array
+			member(0)::ImpulseControllerReaction
+				Impulse::ImpulseControllerPair
+					Min 0.0
+					Max 12.0
+				DelayTime::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				RampTime::ImpulseControllerPair
+					Min 0.10000000149011612
+					Max 0.800000011920929
+				Duration::ImpulseControllerPair
+					Min 0.10000000149011612
+					Max 1.0
+				FadeTime::ImpulseControllerPair
+					Min 0.009999999776482582
+					Max 1.0
+				Compression::ImpulseControllerPair
+					Min 0.0
+					Max 0.0
+				Wave::ImpulseControllerWavePair
+					Min::CinebotWaveformData
+						Amplitude 0.0
+						Base 1.0
+						Offset 0.0
+						Frequency 5.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+					Max::CinebotWaveformData
+						Amplitude 1.0
+						Base 1.0
+						Offset 0.0
+						Frequency 5.0
+						Function CWF_Sine
+						LPF -1.0
+						HPF 1.0
+						Invert False
+	Roll::ImpulseControllerChannel
+		Speed 5.0
+		Reactions *nullArray*
+	Yaw::ImpulseControllerChannel
+		Speed 5.0
+		Reactions *nullArray*
+	FOV::ImpulseControllerChannel
+		Speed 5.0
+		Reactions *nullArray*

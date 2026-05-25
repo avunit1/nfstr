@@ -1,0 +1,108 @@
+HUDFlasherEntityData 8edb435a-1e79-4e09-99cd-0d4eef6d4dc4
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Text ID_COMMON_WRONG_WAY
+	SubText1 
+	SubText2 
+	DisplayTime -1.0
+	IsObjective False
+	IsPositiveMessage False
+	IsWarningMessage False
+	UseUpperPosition False
+	Button HUDFlasherButton_None
+	Action ButtonAction_Press
+	ButtonText 
+	ButtonPositionX 0.0
+	ButtonPositionY 0.0
+	IsStaticButton True
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	UseASLogic True
+	ButtonScale 100.0
+InterfaceDescriptorData d1afef17-1e3c-4509-b4e1-09cc464540f7
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 2089152613
+		member(1)::DynamicEvent
+			Id 2089430886
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicPrefabBlueprint a0f31d9c-e79c-8f5e-8a1a-13ea9102de88 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/OutOfBoundsWarning_LogicPrefab
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source d1afef17-1e3c-4509-b4e1-09cc464540f7
+						Target 8edb435a-1e79-4e09-99cd-0d4eef6d4dc4
+						SourceEvent::EventSpec
+							Id 2089430886
+						TargetEvent::EventSpec
+							Id 2089430886
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source d1afef17-1e3c-4509-b4e1-09cc464540f7
+						Target 8edb435a-1e79-4e09-99cd-0d4eef6d4dc4
+						SourceEvent::EventSpec
+							Id 2089152613
+						TargetEvent::EventSpec
+							Id 2089152613
+						TargetType EventConnectionTargetType_Client
+				Descriptor d1afef17-1e3c-4509-b4e1-09cc464540f7
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 8edb435a-1e79-4e09-99cd-0d4eef6d4dc4

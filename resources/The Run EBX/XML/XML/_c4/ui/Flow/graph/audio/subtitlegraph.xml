@@ -1,0 +1,131 @@
+<GlobalNode Guid="72686fe8-33aa-4657-a352-ef578c0be310">
+    <Name>GlobalNode</Name>
+    <ParentGraph>[UIGraphAsset] 176aa434-3e60-ac23-ffa6-985a74bbc675</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] ad5c26ba-acb9-427e-a556-66fa62b2291f</member>
+    </Outputs>
+</GlobalNode>
+<InstanceInputNode Guid="321839da-702e-4095-8e2f-3823e4276641">
+    <Name>in</Name>
+    <ParentGraph>[UIGraphAsset] 176aa434-3e60-ac23-ffa6-985a74bbc675</ParentGraph>
+    <IsRootNode>True</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Out>[UINodePort] ddbe8468-4efb-4553-a041-69e4859a0c73</Out>
+</InstanceInputNode>
+<StateNode Guid="3b051a9f-d1b9-4706-ba61-19a527f63be8">
+    <Name>SubtitleScreen</Name>
+    <ParentGraph>[UIGraphAsset] 176aa434-3e60-ac23-ffa6-985a74bbc675</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>[Ebx] _c4/UI/Flow/Screen/Audio/SubtitleScreen [7cdd9584-e57d-6c70-b12c-7a70e7061d3b]</Screen>
+    <In>[UINodePort] 6ae27dbb-41bb-40fb-a04e-1df3b7e29f98</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] 770e76cb-fa22-40b8-9b0b-a203818507af</member>
+    </Outputs>
+    <ScreenLevel>UIScreenLevel_AboveNormal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<StateNode Guid="7ffc293e-b91e-4435-9f2d-14069717606f">
+    <Name>Empty</Name>
+    <ParentGraph>[UIGraphAsset] 176aa434-3e60-ac23-ffa6-985a74bbc675</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>nullptr</Screen>
+    <In>[UINodePort] 8752c490-cdbd-4822-945e-17aee3fa149a</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="0"></Outputs>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<UIGraphAsset Guid="176aa434-3e60-ac23-ffa6-985a74bbc675">
+    <Name>_c4/UI/Flow/Graph/Audio/SubtitleGraph</Name>
+    <Nodes Count="4">
+        <member Index="0">[InstanceInputNode] 321839da-702e-4095-8e2f-3823e4276641</member>
+        <member Index="1">[StateNode] 3b051a9f-d1b9-4706-ba61-19a527f63be8</member>
+        <member Index="2">[StateNode] 7ffc293e-b91e-4435-9f2d-14069717606f</member>
+        <member Index="3">[GlobalNode] 72686fe8-33aa-4657-a352-ef578c0be310</member>
+    </Nodes>
+    <GlobalNode>[GlobalNode] 72686fe8-33aa-4657-a352-ef578c0be310</GlobalNode>
+    <Connections Count="3">
+        <member Index="0">[UINodeConnection] 60abc1e0-055c-4483-9ba8-ed73892d9dee</member>
+        <member Index="1">[UINodeConnection] 62944093-1dc7-45be-b6bb-ecb83b0adf01</member>
+        <member Index="2">[UINodeConnection] 461f6a74-6db3-4125-81b9-d3b20d3c2ded</member>
+    </Connections>
+    <AudioEventMappings>[Ebx] _c4/UI/Assets/DefaultUIAudioEventMappings [14c8ed54-0f20-1a09-0a36-55c34e6fe2cf]</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Graph/Audio/SubtitleGraph_ResourceBundle</BundleAssetName>
+    <AssetList Count="1">
+        <member Index="0">_c4/UI/Assets/SubtitleScreen</member>
+    </AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="1">
+        <member Index="0">[Ebx] _c4/UI/Flow/Event/LoadingEvents [3c582433-3d1e-ac3e-c363-953d1e9d5655]</member>
+    </EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>True</SkipBundleLoading>
+</UIGraphAsset>
+<UINodeConnection Guid="60abc1e0-055c-4483-9ba8-ed73892d9dee">
+    <SourceNode>[InstanceInputNode] 321839da-702e-4095-8e2f-3823e4276641</SourceNode>
+    <TargetNode>[StateNode] 3b051a9f-d1b9-4706-ba61-19a527f63be8</TargetNode>
+    <SourcePort>[UINodePort] ddbe8468-4efb-4553-a041-69e4859a0c73</SourcePort>
+    <TargetPort>[UINodePort] 6ae27dbb-41bb-40fb-a04e-1df3b7e29f98</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="62944093-1dc7-45be-b6bb-ecb83b0adf01">
+    <SourceNode>[StateNode] 3b051a9f-d1b9-4706-ba61-19a527f63be8</SourceNode>
+    <TargetNode>[StateNode] 7ffc293e-b91e-4435-9f2d-14069717606f</TargetNode>
+    <SourcePort>[UINodePort] 770e76cb-fa22-40b8-9b0b-a203818507af</SourcePort>
+    <TargetPort>[UINodePort] 8752c490-cdbd-4822-945e-17aee3fa149a</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="461f6a74-6db3-4125-81b9-d3b20d3c2ded">
+    <SourceNode>[GlobalNode] 72686fe8-33aa-4657-a352-ef578c0be310</SourceNode>
+    <TargetNode>[StateNode] 3b051a9f-d1b9-4706-ba61-19a527f63be8</TargetNode>
+    <SourcePort>[UINodePort] ad5c26ba-acb9-427e-a556-66fa62b2291f</SourcePort>
+    <TargetPort>[UINodePort] 6ae27dbb-41bb-40fb-a04e-1df3b7e29f98</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="ddbe8468-4efb-4553-a041-69e4859a0c73">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="6ae27dbb-41bb-40fb-a04e-1df3b7e29f98">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="770e76cb-fa22-40b8-9b0b-a203818507af">
+    <Name>ScreenInitialized [Screen]</Name>
+    <InstanceName>ScreenInitialized</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="8752c490-cdbd-4822-945e-17aee3fa149a">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="ad5c26ba-acb9-427e-a556-66fa62b2291f">
+    <Name>OnScaleformInitialized[Loading]</Name>
+    <InstanceName>OnScaleformInitialized</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>

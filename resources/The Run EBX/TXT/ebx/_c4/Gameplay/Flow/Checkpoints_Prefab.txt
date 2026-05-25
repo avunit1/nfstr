@@ -1,0 +1,218 @@
+BookmarkStoreEntityData 78fac81b-cd89-497f-b572-3a8eca1997de
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 2
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+DelayEntityData ac36de23-2160-4052-a595-b69714c4f9e1
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	Delay 2.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce True
+	RemoveDuplicateEvents True
+EventGateEntityData 048f45c9-5032-4a23-9aa5-f2f109a57f31
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Default True
+	Realm Realm_ClientAndServer
+InterfaceDescriptorData 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -559281700
+		member(1)::DynamicEvent
+			Id 193450374
+		member(2)::DynamicEvent
+			Id -117303631
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -58343087
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 307166655
+PrintDebugTextEntityData 4d6f7edb-930b-45ec-ac5d-fdfd85610b52
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Realm Realm_Server
+	Text Store
+	TextColor::Vec3
+		x 1.0
+		y 1.0
+		z 0.0
+	Enabled True
+SpatialPrefabBlueprint 7beefba0-9253-0486-8e5b-8a0043713e37 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Gameplay/Flow/Checkpoints_Prefab
+					PropertyConnections *nullArray*
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source 78fac81b-cd89-497f-b572-3a8eca1997de
+							Target 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+							SourceFieldId 1495073388
+							TargetFieldId 307166655
+				EventConnections::array
+					member(0)::EventConnection
+						Source 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+						Target 048f45c9-5032-4a23-9aa5-f2f109a57f31
+						SourceEvent::EventSpec
+							Id 193450374
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(1)::EventConnection
+						Source 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+						Target 78fac81b-cd89-497f-b572-3a8eca1997de
+						SourceEvent::EventSpec
+							Id -559281700
+						TargetEvent::EventSpec
+							Id 230763322
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+						Target 048f45c9-5032-4a23-9aa5-f2f109a57f31
+						SourceEvent::EventSpec
+							Id -559281700
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(3)::EventConnection
+						Source 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+						Target 78fac81b-cd89-497f-b572-3a8eca1997de
+						SourceEvent::EventSpec
+							Id -117303631
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(4)::EventConnection
+						Source 78fac81b-cd89-497f-b572-3a8eca1997de
+						Target 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+						SourceEvent::EventSpec
+							Id 889489324
+						TargetEvent::EventSpec
+							Id -58343087
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+						Target 4d6f7edb-930b-45ec-ac5d-fdfd85610b52
+						SourceEvent::EventSpec
+							Id -559281700
+						TargetEvent::EventSpec
+							Id 231942004
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source 048f45c9-5032-4a23-9aa5-f2f109a57f31
+						Target f9bb8b40-de39-4c92-a00e-3eaf619e82c0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 1186783463
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source 048f45c9-5032-4a23-9aa5-f2f109a57f31
+						Target ac36de23-2160-4052-a595-b69714c4f9e1
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source ac36de23-2160-4052-a595-b69714c4f9e1
+						Target f9bb8b40-de39-4c92-a00e-3eaf619e82c0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1509368092
+						TargetType EventConnectionTargetType_Client
+				Descriptor 48e6f419-f62a-4df4-bfe8-8c83cee402f8
+				NeedNetworkId True
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 78fac81b-cd89-497f-b572-3a8eca1997de
+			member(1) 048f45c9-5032-4a23-9aa5-f2f109a57f31
+			member(2) 4d6f7edb-930b-45ec-ac5d-fdfd85610b52
+			member(3) f9bb8b40-de39-4c92-a00e-3eaf619e82c0
+			member(4) ac36de23-2160-4052-a595-b69714c4f9e1
+UIHUDVisibilityEntityData f9bb8b40-de39-4c92-a00e-3eaf619e82c0
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 3
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	UseDynamicDistanceToFinish False
+	DistanceToFinishText 
+	DistanceToGasStation 0.0
+	DistanceToFinish 0.0

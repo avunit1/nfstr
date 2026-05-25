@@ -1,0 +1,62 @@
+DriftingXPBonus dd15c6ed-8c4d-40a1-846d-1d07a750bb67
+	$::XPBonus
+		$::DataContainer
+		Name Drifting
+		Description Every 5 Meters Drifting
+		AwardDisplay ID_XP_DRIFTING
+		XPCategory _c4/Gameplay/NFSXPInfo/77464613-c1dd-4534-822e-4f4fa7bfd1a4
+		XPAward 5
+		AwardInGameplay True
+		AwardPostGameplay False
+		AvailableInSP True
+		AvailableInMP True
+	MultiplierXPAward 5
+	AwardEveryMeters 5.0
+DriverSkillExtraXP f68d5f26-56b0-03e2-91ed-a5967252b333 #primary instance
+	$::DriverSkill
+		$::Unlockable
+			$::Asset
+				$::DataContainer
+				Name _c4/Gameplay/DriverSkills/ExtraXPBonus
+			IsUnlocked False
+			IsRunTimeUnlocked True
+			DisplayString ID_DRIVERSKILL_EXTRAXPBONUS
+			Icon _c4/ui/textures/career/driverability/Abilities_Icons_Extra_XP_bonus
+			HideHowTo False
+			IsHiddenUnlock False
+			IsPromoContent False
+		Title ID_DRIVERSKILL_UNLOCK_EXTRAXPBONUS_NAME
+		Description ID_DRIVERSKILL_UNLOCK_EXTRAXPBONUS_DESC
+		Title_Add ID_DRIVERSKILL_EXTRAXPBONUS
+		Description_Add ID_DRIVERSKILL_EXTRAXPBONUS_REQ
+		UnlockOrder 2
+	Bonuses::array
+		member(0) a9b8be59-6255-4a91-904b-4dc5280ee530
+		member(1) 33c86e4a-6839-44d4-a257-d5c0f9984ec6
+		member(2) dd15c6ed-8c4d-40a1-846d-1d07a750bb67
+JumpXPBonus a9b8be59-6255-4a91-904b-4dc5280ee530
+	$::XPBonus
+		$::DataContainer
+		Name Jump Bonus
+		Description Get Air for over 1 second
+		AwardDisplay ID_XP_JUMPBONUS
+		XPCategory _c4/Gameplay/NFSXPInfo/77464613-c1dd-4534-822e-4f4fa7bfd1a4
+		XPAward 100
+		AwardInGameplay True
+		AwardPostGameplay False
+		AvailableInSP True
+		AvailableInMP True
+	AwardTime 1.0
+TopSpeedXPBonus 33c86e4a-6839-44d4-a257-d5c0f9984ec6
+	$::XPBonus
+		$::DataContainer
+		Name Top Speed
+		Description Every 5 Seconds at Top Speed
+		AwardDisplay ID_XP_TOPSPEED
+		XPCategory _c4/Gameplay/NFSXPInfo/77464613-c1dd-4534-822e-4f4fa7bfd1a4
+		XPAward 10
+		AwardInGameplay True
+		AwardPostGameplay False
+		AvailableInSP True
+		AvailableInMP True
+	AwardEverySeconds 5.0

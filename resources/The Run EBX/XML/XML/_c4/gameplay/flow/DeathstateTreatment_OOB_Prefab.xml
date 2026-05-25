@@ -1,0 +1,333 @@
+<DelayEntityData Guid="dbed9775-fd80-4aed-a15e-f251236d96a3">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,2</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<DelayEntityData Guid="1fa6f1e3-80a1-44ab-82e5-b267c77431ce">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,25</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<FadeEntityData Guid="bd23de7a-54f6-416a-898f-2f0e4bd54985">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <FadeTime>0,5</FadeTime>
+    <FadeScreen>True</FadeScreen>
+    <FadeAudio>False</FadeAudio>
+    <FadeUI>False</FadeUI>
+    <FadeRumble>False</FadeRumble>
+    <FadeMovie>False</FadeMovie>
+    <WaitFadedWhileStreaming>False</WaitFadedWhileStreaming>
+    <StartFaded>False</StartFaded>
+</FadeEntityData>
+<FloatPropertyTrackData Guid="157eef63-068a-4933-9186-e1fd3d18050e">
+    <Id>TimeDilation [3FDD39CC]</Id>
+    <Times Count="2">
+        <member Index="0">0x00000000</member>
+        <member Index="1">0x000002bc</member>
+    </Times>
+    <InterpolationType>InterpolationType_Linear</InterpolationType>
+    <Values Count="2">
+        <member Index="0">1</member>
+        <member Index="1">0,2</member>
+    </Values>
+</FloatPropertyTrackData>
+<InterfaceDescriptorData Guid="bccf5957-4543-4311-b5c9-32a7223bf16a">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xd8d04f65</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<MixerEntityData Guid="7050bbf6-bccc-4ca2-898a-6a4d32fa2049">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <MixerScalar>1</MixerScalar>
+    <Mixer>[Ebx] _c4/Sound/Mixing/DeathStates/MIX_DeathState_OOBFadeOut [eccbc9d0-db34-b077-de8a-18e4807bff6b]</Mixer>
+    <ActivateOnCreation>False</ActivateOnCreation>
+</MixerEntityData>
+<SequenceEntityData Guid="4d6eec04-d664-4e58-b887-753d234b82fd">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x000002bc</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="1">
+        <member Index="0">[FloatPropertyTrackData] 157eef63-068a-4933-9186-e1fd3d18050e</member>
+    </PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PreSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>True</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SpatialPrefabBlueprint Guid="09170e67-5d42-4800-9ea1-5fc6efe8d82f">
+    <Name>_c4/Gameplay/Flow/DeathstateTreatment_OOB_Prefab</Name>
+    <PropertyConnections Count="1">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] 4d6eec04-d664-4e58-b887-753d234b82fd</Source>
+                <Target>[TimeDilationData] 3d3391b6-377f-4017-b3fd-58c5184266ca</Target>
+                <SourceFieldId>TimeDilation [3FDD39CC]</SourceFieldId>
+                <TargetFieldId>0xfae6bb2f</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="10">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bccf5957-4543-4311-b5c9-32a7223bf16a</Source>
+                <Target>[DelayEntityData] dbed9775-fd80-4aed-a15e-f251236d96a3</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[DelayEntityData] dbed9775-fd80-4aed-a15e-f251236d96a3</Source>
+                <Target>[FadeEntityData] bd23de7a-54f6-416a-898f-2f0e4bd54985</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>FadeOut [54CD4BAD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bccf5957-4543-4311-b5c9-32a7223bf16a</Source>
+                <Target>[TimeDilationData] 3d3391b6-377f-4017-b3fd-58c5184266ca</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[FadeEntityData] bd23de7a-54f6-416a-898f-2f0e4bd54985</Source>
+                <Target>[TimeDilationData] 3d3391b6-377f-4017-b3fd-58c5184266ca</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[FadeEntityData] bd23de7a-54f6-416a-898f-2f0e4bd54985</Source>
+                <Target>[SequenceEntityData] 4d6eec04-d664-4e58-b887-753d234b82fd</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] bccf5957-4543-4311-b5c9-32a7223bf16a</Source>
+                <Target>[SequenceEntityData] 4d6eec04-d664-4e58-b887-753d234b82fd</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xd8d04f65</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[FadeEntityData] bd23de7a-54f6-416a-898f-2f0e4bd54985</Source>
+                <Target>[DelayEntityData] 1fa6f1e3-80a1-44ab-82e5-b267c77431ce</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnDone [AA85FDA4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[DelayEntityData] 1fa6f1e3-80a1-44ab-82e5-b267c77431ce</Source>
+                <Target>[InterfaceDescriptorData] bccf5957-4543-4311-b5c9-32a7223bf16a</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[DelayEntityData] dbed9775-fd80-4aed-a15e-f251236d96a3</Source>
+                <Target>[MixerEntityData] 7050bbf6-bccc-4ca2-898a-6a4d32fa2049</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[DelayEntityData] 1fa6f1e3-80a1-44ab-82e5-b267c77431ce</Source>
+                <Target>[MixerEntityData] 7050bbf6-bccc-4ca2-898a-6a4d32fa2049</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Deactivate [72F6CC1D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] bccf5957-4543-4311-b5c9-32a7223bf16a</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[DelayEntityData] dbed9775-fd80-4aed-a15e-f251236d96a3</member>
+        <member Index="1">[FadeEntityData] bd23de7a-54f6-416a-898f-2f0e4bd54985</member>
+        <member Index="2">[TimeDilationData] 3d3391b6-377f-4017-b3fd-58c5184266ca</member>
+        <member Index="3">[SequenceEntityData] 4d6eec04-d664-4e58-b887-753d234b82fd</member>
+        <member Index="4">[DelayEntityData] 1fa6f1e3-80a1-44ab-82e5-b267c77431ce</member>
+        <member Index="5">[MixerEntityData] 7050bbf6-bccc-4ca2-898a-6a4d32fa2049</member>
+    </Objects>
+</SpatialPrefabBlueprint>
+<TimeDilationData Guid="3d3391b6-377f-4017-b3fd-58c5184266ca">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1,401298E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <TimeScaleMax>2</TimeScaleMax>
+    <TimeScaleMin>0,2</TimeScaleMin>
+    <TimeScaleIn>0</TimeScaleIn>
+    <Autostart>False</Autostart>
+</TimeDilationData>

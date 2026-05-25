@@ -1,0 +1,815 @@
+<BoolToEventEntityData Guid="fc292611-a4f6-4efb-81cd-235baf57711c">
+    <IndexInBlueprint>0008</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Value>True</Value>
+    <InitalEvent>True</InitalEvent>
+</BoolToEventEntityData>
+<DelayEntityData Guid="c26e0846-cca0-4587-9061-81c1d0b43bee">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,02</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<InterfaceDescriptorData Guid="dea72d53-809a-47e0-a03d-b3d09c1835ec">
+    <Fields Count="1">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Visible [35BC69AB]</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="3">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Split [0DC333D7]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>StartTimer [A3F94DC2]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>Reset [0DB4B330]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="fc7aaf4b-de52-8554-0a3c-a3854e3e8fd1">
+    <Name>_c4/ActionElements/Debug/DEBUG_SplitTimer</Name>
+    <PropertyConnections Count="6">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[NfsTimerEntityData] 0f6c5b8c-6ba7-45e8-908f-26b539085427</Source>
+                <Target>[PropertyGateEntityData] 1869ecbc-b832-4030-adcf-a4d73af8010f</Target>
+                <SourceFieldId>Time [7C8865D0]</SourceFieldId>
+                <TargetFieldId>FloatIn [7F39A652]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[PropertyGateEntityData] 1869ecbc-b832-4030-adcf-a4d73af8010f</Source>
+                <Target>[PropertyDebugEntityData] 36d57288-bb98-4d9f-8560-13d448a66b62</Target>
+                <SourceFieldId>FloatOut [666E571B]</SourceFieldId>
+                <TargetFieldId>FloatValue [BA31493E]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[NfsTimerEntityData] 0f6c5b8c-6ba7-45e8-908f-26b539085427</Source>
+                <Target>[PropertyDebugEntityData] 0f381bf7-b94c-4311-9415-52e0035dfe53</Target>
+                <SourceFieldId>Time [7C8865D0]</SourceFieldId>
+                <TargetFieldId>FloatValue [BA31493E]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[PlayerInfoEntityData] 6ba21994-c36b-40a3-8297-56a91fb6c62b</Source>
+                <Target>[PropertyGateEntityData] 6b00fff8-45cb-41fb-92fc-dbe906743fbc</Target>
+                <SourceFieldId>Speed [0DC30E82]</SourceFieldId>
+                <TargetFieldId>FloatIn [7F39A652]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="4">
+            <PropertyConnection>
+                <Source>[PropertyGateEntityData] 6b00fff8-45cb-41fb-92fc-dbe906743fbc</Source>
+                <Target>[PropertyDebugEntityData] 1f9c0fb2-7d72-446c-9e9b-67d68e023e0b</Target>
+                <SourceFieldId>FloatOut [666E571B]</SourceFieldId>
+                <TargetFieldId>FloatValue [BA31493E]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="5">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] dea72d53-809a-47e0-a03d-b3d09c1835ec</Source>
+                <Target>[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</Target>
+                <SourceFieldId>Visible [35BC69AB]</SourceFieldId>
+                <TargetFieldId>Value [0D6EF36E]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="14">
+        <member Index="0">
+            <EventConnection>
+                <Source>[DelayEntityData] c26e0846-cca0-4587-9061-81c1d0b43bee</Source>
+                <Target>[PropertyGateEntityData] 1869ecbc-b832-4030-adcf-a4d73af8010f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[DelayEntityData] c26e0846-cca0-4587-9061-81c1d0b43bee</Source>
+                <Target>[NfsTimerEntityData] 0f6c5b8c-6ba7-45e8-908f-26b539085427</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] dea72d53-809a-47e0-a03d-b3d09c1835ec</Source>
+                <Target>[PropertyGateEntityData] 1869ecbc-b832-4030-adcf-a4d73af8010f</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Split [0DC333D7]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] dea72d53-809a-47e0-a03d-b3d09c1835ec</Source>
+                <Target>[DelayEntityData] c26e0846-cca0-4587-9061-81c1d0b43bee</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Split [0DC333D7]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] dea72d53-809a-47e0-a03d-b3d09c1835ec</Source>
+                <Target>[NfsTimerEntityData] 0f6c5b8c-6ba7-45e8-908f-26b539085427</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>StartTimer [A3F94DC2]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xdbabc143</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] dea72d53-809a-47e0-a03d-b3d09c1835ec</Source>
+                <Target>[NfsTimerEntityData] 0f6c5b8c-6ba7-45e8-908f-26b539085427</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] dea72d53-809a-47e0-a03d-b3d09c1835ec</Source>
+                <Target>[PropertyGateEntityData] 6b00fff8-45cb-41fb-92fc-dbe906743fbc</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Split [0DC333D7]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[DelayEntityData] c26e0846-cca0-4587-9061-81c1d0b43bee</Source>
+                <Target>[PropertyGateEntityData] 6b00fff8-45cb-41fb-92fc-dbe906743fbc</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</Source>
+                <Target>[PropertyDebugEntityData] 1f9c0fb2-7d72-446c-9e9b-67d68e023e0b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Show [7C8A2F66]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</Source>
+                <Target>[PropertyDebugEntityData] 36d57288-bb98-4d9f-8560-13d448a66b62</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Show [7C8A2F66]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</Source>
+                <Target>[PropertyDebugEntityData] 0f381bf7-b94c-4311-9415-52e0035dfe53</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnTrue [AA8E5552]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Show [7C8A2F66]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</Source>
+                <Target>[PropertyDebugEntityData] 1f9c0fb2-7d72-446c-9e9b-67d68e023e0b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFalse [FB1E95D9]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Hide [7C85F065]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</Source>
+                <Target>[PropertyDebugEntityData] 36d57288-bb98-4d9f-8560-13d448a66b62</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFalse [FB1E95D9]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Hide [7C85F065]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="13">
+            <EventConnection>
+                <Source>[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</Source>
+                <Target>[PropertyDebugEntityData] 0f381bf7-b94c-4311-9415-52e0035dfe53</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFalse [FB1E95D9]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Hide [7C85F065]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] dea72d53-809a-47e0-a03d-b3d09c1835ec</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="9">
+        <member Index="0">[DelayEntityData] c26e0846-cca0-4587-9061-81c1d0b43bee</member>
+        <member Index="1">[PropertyDebugEntityData] 36d57288-bb98-4d9f-8560-13d448a66b62</member>
+        <member Index="2">[NfsTimerEntityData] 0f6c5b8c-6ba7-45e8-908f-26b539085427</member>
+        <member Index="3">[PropertyGateEntityData] 1869ecbc-b832-4030-adcf-a4d73af8010f</member>
+        <member Index="4">[PropertyDebugEntityData] 0f381bf7-b94c-4311-9415-52e0035dfe53</member>
+        <member Index="5">[PropertyDebugEntityData] 1f9c0fb2-7d72-446c-9e9b-67d68e023e0b</member>
+        <member Index="6">[PropertyGateEntityData] 6b00fff8-45cb-41fb-92fc-dbe906743fbc</member>
+        <member Index="7">[PlayerInfoEntityData] 6ba21994-c36b-40a3-8297-56a91fb6c62b</member>
+        <member Index="8">[BoolToEventEntityData] fc292611-a4f6-4efb-81cd-235baf57711c</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<NfsTimerEntityData Guid="0f6c5b8c-6ba7-45e8-908f-26b539085427">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Realm>Realm_Client</Realm>
+    <Duration>100000</Duration>
+    <CountDown>False</CountDown>
+    <isLooping>False</isLooping>
+</NfsTimerEntityData>
+<PlayerInfoEntityData Guid="6ba21994-c36b-40a3-8297-56a91fb6c62b">
+    <IndexInBlueprint>0007</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <ClientControllableTransform_Generic>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </ClientControllableTransform_Generic>
+    <Realm>Realm_ClientAndServer</Realm>
+</PlayerInfoEntityData>
+<PropertyDebugEntityData Guid="36d57288-bb98-4d9f-8560-13d448a66b62">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <TransformValue>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </TransformValue>
+    <TextColor>
+        <Vec3>
+            <x>0,521</x>
+            <y>1</y>
+            <z>0</z>
+        </Vec3>
+    </TextColor>
+    <ScreenPosition>
+        <Vec2>
+            <x>575</x>
+            <y>175</y>
+        </Vec2>
+    </ScreenPosition>
+    <Vec2Value>
+        <Vec2>
+            <x>0</x>
+            <y>0</y>
+        </Vec2>
+    </Vec2Value>
+    <Vec3Value>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Vec3Value>
+    <DecimalPlaces>0x00000002</DecimalPlaces>
+    <ValuePrefix>Split Time</ValuePrefix>
+    <Realm>Realm_Client</Realm>
+    <TextScale>1</TextScale>
+    <Scope></Scope>
+    <FloatValue>0</FloatValue>
+    <IntValue>0x00000000</IntValue>
+    <StringValue></StringValue>
+    <Enabled>True</Enabled>
+    <Multiline>True</Multiline>
+    <BoolValue>False</BoolValue>
+    <DefaultVisible>True</DefaultVisible>
+</PropertyDebugEntityData>
+<PropertyDebugEntityData Guid="0f381bf7-b94c-4311-9415-52e0035dfe53">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <TransformValue>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </TransformValue>
+    <TextColor>
+        <Vec3>
+            <x>0,431</x>
+            <y>0,208</y>
+            <z>0</z>
+        </Vec3>
+    </TextColor>
+    <ScreenPosition>
+        <Vec2>
+            <x>575</x>
+            <y>195</y>
+        </Vec2>
+    </ScreenPosition>
+    <Vec2Value>
+        <Vec2>
+            <x>0</x>
+            <y>0</y>
+        </Vec2>
+    </Vec2Value>
+    <Vec3Value>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Vec3Value>
+    <DecimalPlaces>0x00000002</DecimalPlaces>
+    <ValuePrefix>Time</ValuePrefix>
+    <Realm>Realm_Client</Realm>
+    <TextScale>1</TextScale>
+    <Scope></Scope>
+    <FloatValue>0</FloatValue>
+    <IntValue>0x00000000</IntValue>
+    <StringValue></StringValue>
+    <Enabled>True</Enabled>
+    <Multiline>True</Multiline>
+    <BoolValue>False</BoolValue>
+    <DefaultVisible>True</DefaultVisible>
+</PropertyDebugEntityData>
+<PropertyDebugEntityData Guid="1f9c0fb2-7d72-446c-9e9b-67d68e023e0b">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <TransformValue>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </TransformValue>
+    <TextColor>
+        <Vec3>
+            <x>0,521</x>
+            <y>1</y>
+            <z>0</z>
+        </Vec3>
+    </TextColor>
+    <ScreenPosition>
+        <Vec2>
+            <x>750</x>
+            <y>175</y>
+        </Vec2>
+    </ScreenPosition>
+    <Vec2Value>
+        <Vec2>
+            <x>0</x>
+            <y>0</y>
+        </Vec2>
+    </Vec2Value>
+    <Vec3Value>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Vec3Value>
+    <DecimalPlaces>0x00000000</DecimalPlaces>
+    <ValuePrefix>Speed</ValuePrefix>
+    <Realm>Realm_Client</Realm>
+    <TextScale>1</TextScale>
+    <Scope></Scope>
+    <FloatValue>0</FloatValue>
+    <IntValue>0x00000000</IntValue>
+    <StringValue></StringValue>
+    <Enabled>True</Enabled>
+    <Multiline>True</Multiline>
+    <BoolValue>False</BoolValue>
+    <DefaultVisible>True</DefaultVisible>
+</PropertyDebugEntityData>
+<PropertyGateEntityData Guid="1869ecbc-b832-4030-adcf-a4d73af8010f">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <TransformIn>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </TransformIn>
+    <Vec4In>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>1</w>
+        </Vec4>
+    </Vec4In>
+    <Vec3In>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Vec3In>
+    <Realm>Realm_Client</Realm>
+    <FloatIn>0</FloatIn>
+    <IntIn>0x00000000</IntIn>
+    <BoolIn>False</BoolIn>
+    <Default>False</Default>
+</PropertyGateEntityData>
+<PropertyGateEntityData Guid="6b00fff8-45cb-41fb-92fc-dbe906743fbc">
+    <IndexInBlueprint>0006</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <TransformIn>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </TransformIn>
+    <Vec4In>
+        <Vec4>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+            <w>1</w>
+        </Vec4>
+    </Vec4In>
+    <Vec3In>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Vec3In>
+    <Realm>Realm_Client</Realm>
+    <FloatIn>0</FloatIn>
+    <IntIn>0x00000000</IntIn>
+    <BoolIn>False</BoolIn>
+    <Default>False</Default>
+</PropertyGateEntityData>

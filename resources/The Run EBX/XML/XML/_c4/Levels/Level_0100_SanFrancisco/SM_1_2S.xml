@@ -1,0 +1,376 @@
+<DynamicEnlightenEntityData Guid="77149119-0e69-4af2-bc13-d80f8ecbda14">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Priority>0x000007d0</Priority>
+    <Realm>Realm_Client</Realm>
+    <Enable>True</Enable>
+    <EnlightenData>[Ebx] _c4/Levels/Level_0100_SanFrancisco/Lighting/SanFrancisco_ChineseRestaurant_Dynamic [12d91c44-eb3e-31a1-f08a-477016fc63fe]</EnlightenData>
+</DynamicEnlightenEntityData>
+<InterfaceDescriptorData Guid="445662f5-4b0b-1e0e-9941-68cd79941faa">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x6eb6060a</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xb9280931</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="4">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xafc5952a</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xeca22fc2</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x8c5321ef</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="3">
+            <DynamicEvent>
+                <Id>0xeedac260</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>0x855727c5</Id>
+            </DynamicLink>
+        </member>
+    </OutputLinks>
+</InterfaceDescriptorData>
+<RegistryContainer Guid="26bf738c-fcbc-9828-1283-531f77bac835">
+    <EntityRegistry Count="1">
+        <member Index="0">[Ebx] _c4/levels/level_0100_sanfrancisco/sm_1_2s/layer0_sm_1_2s_interface_schematic [ed4d9377-4f2b-4667-911f-1fea470a1065]</member>
+    </EntityRegistry>
+    <AssetRegistry Count="0"></AssetRegistry>
+    <BlueprintRegistry Count="2">
+        <member Index="0">[SubWorldData] 25ff9051-91b6-4832-a5db-0c88c3dcf876</member>
+        <member Index="1">[Ebx] _c4/levels/level_0100_sanfrancisco/sm_1_2s/layer0_sm_1_2s_interface_schematic [e7b25eae-aae7-46da-ab79-e263320dc319]</member>
+    </BlueprintRegistry>
+    <ReferenceObjectRegistry Count="2">
+        <member Index="0">[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</member>
+        <member Index="1">[WorldPartReferenceObjectData] 2ec338c3-0471-4022-9d4e-9fb7e3b9dabf</member>
+    </ReferenceObjectRegistry>
+</RegistryContainer>
+<StaticEnlightenEntityData Guid="16c772ae-a235-40fc-a003-26f63b1c78c3">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Priority>0x000003e8</Priority>
+    <Realm>Realm_Client</Realm>
+    <Enable>True</Enable>
+    <EnlightenData>[Ebx] _c4/Levels/Level_0100_SanFrancisco/Lighting/SanFrancisco_ChineseRestaurant_Static [79e77765-6418-cca0-a3b1-8d3f306522ce]</EnlightenData>
+    <DynamicEnlightenData>[Ebx] _c4/Levels/Level_0100_SanFrancisco/Lighting/SanFrancisco_ChineseRestaurant_Dynamic [12d91c44-eb3e-31a1-f08a-477016fc63fe]</DynamicEnlightenData>
+</StaticEnlightenEntityData>
+<SubWorldData Guid="25ff9051-91b6-4832-a5db-0c88c3dcf876">
+    <Name>_c4/Levels/Level_0100_SanFrancisco/SM_1_2S</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="2">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Source>
+                <Target>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Target>
+                <SourceFieldId>0x855727c5</SourceFieldId>
+                <TargetFieldId>0x855727c5</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="1">
+            <LinkConnection>
+                <Source>nullptr</Source>
+                <Target>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Target>
+                <SourceFieldId>0x00000000</SourceFieldId>
+                <TargetFieldId>0x00000000</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="10">
+        <member Index="0">
+            <EventConnection>
+                <Source>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Source>
+                <Target>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStreamedIn [263CB49E]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xafc5952a</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Source>
+                <Target>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xeca22fc2</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Source>
+                <Target>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x6eb6060a</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>StreamIn [D27BC17E]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Source>
+                <Target>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb9280931</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Init [7C8238FF]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Source>
+                <Target>[Ebx] _c4/levels/level_0100_sanfrancisco/sm_1_2s/layer0_sm_1_2s_interface_schematic [ed4d9377-4f2b-4667-911f-1fea470a1065]</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Client [A23A0E7C]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Source>
+                <Target>[Ebx] _c4/levels/level_0100_sanfrancisco/sm_1_2s/layer0_sm_1_2s_interface_schematic [051ca98b-7b0e-4061-ae96-375373ebcfe6]</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb9280931</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x86b62f81</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Source>
+                <Target>[Ebx] _c4/levels/level_0100_sanfrancisco/sm_1_2s/layer0_sm_1_2s_interface_schematic [b2c78d44-b46a-4d51-9ae0-588624a028b6]</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x86b62f81</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[Ebx] _c4/levels/level_0100_sanfrancisco/sm_1_2s/layer0_sm_1_2s_interface_schematic [ed4d9377-4f2b-4667-911f-1fea470a1065]</Source>
+                <Target>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>StreamOut [21F3F677]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Server</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Source>
+                <Target>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x8c5321ef</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x8c5321ef</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</Source>
+                <Target>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xeedac260</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xeedac260</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 445662f5-4b0b-1e0e-9941-68cd79941faa</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[SubWorldReferenceObjectData] 38ec4d00-98c5-4a4a-91ac-9ff4509c0b86</member>
+        <member Index="1">[WorldPartReferenceObjectData] 2ec338c3-0471-4022-9d4e-9fb7e3b9dabf</member>
+        <member Index="2">[StaticEnlightenEntityData] 16c772ae-a235-40fc-a003-26f63b1c78c3</member>
+        <member Index="3">[DynamicEnlightenEntityData] 77149119-0e69-4af2-bc13-d80f8ecbda14</member>
+    </Objects>
+    <RegistryContainer>[RegistryContainer] 26bf738c-fcbc-9828-1283-531f77bac835</RegistryContainer>
+    <IsWin32SubLevel>True</IsWin32SubLevel>
+    <IsXenonSubLevel>True</IsXenonSubLevel>
+    <IsPs3SubLevel>True</IsPs3SubLevel>
+    <IsBookmarked>True</IsBookmarked>
+</SubWorldData>
+<SubWorldReferenceObjectData Guid="38ec4d00-98c5-4a4a-91ac-9ff4509c0b86">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>nullptr</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_Both</StreamRealm>
+    <Excluded>False</Excluded>
+    <BundleName>_c4/Levels/Level_0100_SanFrancisco/SM_1_2S_NIS_RESTAURANT</BundleName>
+    <InclusionSettings>nullptr</InclusionSettings>
+    <AutoLoad>False</AutoLoad>
+    <IsWin32SubLevel>True</IsWin32SubLevel>
+    <IsXenonSubLevel>True</IsXenonSubLevel>
+    <IsPs3SubLevel>True</IsPs3SubLevel>
+    <IsBookmarked>False</IsBookmarked>
+</SubWorldReferenceObjectData>
+<WorldPartReferenceObjectData Guid="2ec338c3-0471-4022-9d4e-9fb7e3b9dabf">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>-2,802597E-45</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/levels/level_0100_sanfrancisco/sm_1_2s/layer0_sm_1_2s_interface_schematic [e7b25eae-aae7-46da-ab79-e263320dc319]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+</WorldPartReferenceObjectData>

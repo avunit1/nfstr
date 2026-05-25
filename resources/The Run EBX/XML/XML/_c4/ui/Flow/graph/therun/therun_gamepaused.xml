@@ -1,0 +1,81 @@
+<InstanceOutputNode Guid="bb34ffbb-ee0a-435e-b4f2-e9c0f7ca9311">
+    <Name>Out</Name>
+    <ParentGraph>[UIGraphAsset] f28e5837-62ba-4123-541c-789a17b47cc0</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <In>[UINodePort] 2eae5fa8-5d33-4406-b855-6f54724d19ff</In>
+    <Id>Out [0B87DF4B]</Id>
+</InstanceOutputNode>
+<StateNode Guid="85427e02-8d66-4e94-b658-4f7bcddf5cdc">
+    <Name>TheRun_GamePaused</Name>
+    <ParentGraph>[UIGraphAsset] f28e5837-62ba-4123-541c-789a17b47cc0</ParentGraph>
+    <IsRootNode>True</IsRootNode>
+    <ParentIsScreen>False</ParentIsScreen>
+    <Screen>[Ebx] _c4/UI/Flow/Screen/TheRun/TheRun_GamePaused [d69927fe-84fc-020a-d87d-288ce98f15e9]</Screen>
+    <In>[UINodePort] fb9cc57a-8c97-41a8-8a1c-e7cbfab45bbb</In>
+    <Inputs Count="0"></Inputs>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] 5af551f6-a2aa-4266-913b-cfc866293758</member>
+    </Outputs>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+    <RenderToTexture>False</RenderToTexture>
+</StateNode>
+<UIGraphAsset Guid="f28e5837-62ba-4123-541c-789a17b47cc0">
+    <Name>_c4/UI/Flow/Graph/TheRun/TheRun_GamePaused</Name>
+    <Nodes Count="2">
+        <member Index="0">[StateNode] 85427e02-8d66-4e94-b658-4f7bcddf5cdc</member>
+        <member Index="1">[InstanceOutputNode] bb34ffbb-ee0a-435e-b4f2-e9c0f7ca9311</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="1">
+        <member Index="0">[UINodeConnection] 0d888d01-11b5-4f42-889f-62daeaab9b42</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Graph/TheRun/TheRun_GamePaused_ResourceBundle</BundleAssetName>
+    <AssetList Count="5">
+        <member Index="0">_c4/UI/Assets/TheRun_GamePaused</member>
+        <member Index="1">_c4/UI/Assets/TheRun_GamePaused/therun_gamepaused_i1.tga</member>
+        <member Index="2">_c4/UI/Assets/TheRun_GamePaused/therun_gamepaused_i5.tga</member>
+        <member Index="3">_c4/UI/Assets/Widget_crashOverlay</member>
+        <member Index="4">_c4/UI/Assets/Widget_crashOverlay/widget_crashoverlay_i5.tga</member>
+    </AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="1">
+        <member Index="0">[Ebx] _c4/UI/Flow/Event/GeneralEvents [4c447c69-9521-7658-0f0e-4cfdd387ac4a]</member>
+    </EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>False</SkipBundleLoading>
+</UIGraphAsset>
+<UINodeConnection Guid="0d888d01-11b5-4f42-889f-62daeaab9b42">
+    <SourceNode>[StateNode] 85427e02-8d66-4e94-b658-4f7bcddf5cdc</SourceNode>
+    <TargetNode>[InstanceOutputNode] bb34ffbb-ee0a-435e-b4f2-e9c0f7ca9311</TargetNode>
+    <SourcePort>[UINodePort] 5af551f6-a2aa-4266-913b-cfc866293758</SourcePort>
+    <TargetPort>[UINodePort] 2eae5fa8-5d33-4406-b855-6f54724d19ff</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="1">
+        <member Index="0">[Ebx] _c4/UI/Flow/Screen/TheRun/TheRun_GamePaused [d69927fe-84fc-020a-d87d-288ce98f15e9]</member>
+    </RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="fb9cc57a-8c97-41a8-8a1c-e7cbfab45bbb">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="5af551f6-a2aa-4266-913b-cfc866293758">
+    <Name>GraphExiting[General]</Name>
+    <InstanceName>GraphExiting</InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="2eae5fa8-5d33-4406-b855-6f54724d19ff">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>

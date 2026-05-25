@@ -1,0 +1,131 @@
+FadeAsset c933365c-3624-44df-9b17-12d5bfb5cf9a
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+FadeAsset a05860c3-83b1-42dd-895f-ccf7453e6e4c
+	$::DataContainer
+	FadeType Marker_ASAP
+	FadeOutTime 0.25
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset 3f7dc5d3-54a3-4c1d-a58d-ff8e9ccedfd0
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name GirlSchool_Head
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_Girlschool_CmonLetsGo_1a_head_wave/1568a90f-683a-036b-2d65-3e8323b1a453
+MusicDataAsset 2a62fde3-9d1c-4473-b2bb-2a1903b5872b
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name GirlSchool_Body
+			Loop 0
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_Girlschool_CmonLetsGo_1b_body_loop_wave/3f95d62c-f49e-8f11-4d22-65b6cd2bb361
+MusicPhraseAsset 07cc25a6-3f36-4adc-968f-00e12bb871e8
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name MX_GirlSchool_Head
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 3f7dc5d3-54a3-4c1d-a58d-ff8e9ccedfd0
+MusicPhraseAsset a4c29768-5a2d-463a-bcdc-27155b35aad4
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name MX_GirlSchool_Body
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 2a62fde3-9d1c-4473-b2bb-2a1903b5872b
+MusicSelectorAsset 11686bf1-c830-405c-b977-455711f87ab5
+	$::DataContainer
+	Event _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/c916b4d2-5986-4158-b826-4db9ae5094de
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable 07cc25a6-3f36-4adc-968f-00e12bb871e8
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+MusicSelectorAsset ccfd4d3a-ac9a-4019-b92c-eed4891bed93
+	$::DataContainer
+	Event _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/f5169554-f858-4db9-ba88-91ae3830ce4b
+	TriggerType EventTriggerType_Fade
+	Fade a05860c3-83b1-42dd-895f-ccf7453e6e4c
+	Playable a4c29768-5a2d-463a-bcdc-27155b35aad4
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset 2fb070eb-02b3-4a17-aae3-155c8cf974b3 #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_3_41A_SongAsset
+	SongInterface _c4/Sound/Music/Race/ScriptedLicensedRaces/MX_LicensedLevelSong_SongInterface/b7fb68ad-70c0-42f2-9dbb-9a776659602e
+	NameHash 2814447646
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) 07cc25a6-3f36-4adc-968f-00e12bb871e8
+		member(1) a4c29768-5a2d-463a-bcdc-27155b35aad4
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 11686bf1-c830-405c-b977-455711f87ab5
+		member(1) ccfd4d3a-ac9a-4019-b92c-eed4891bed93
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

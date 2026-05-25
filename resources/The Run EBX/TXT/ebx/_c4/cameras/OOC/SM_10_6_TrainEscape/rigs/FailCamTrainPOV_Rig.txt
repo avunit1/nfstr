@@ -1,0 +1,180 @@
+BasicControllerData 127f70e9-e4ef-43bb-b353-af681d1eb3ed
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer f2e990aa-891e-4c53-a029-e51484047099
+	Composer a3217a21-0597-4f3c-a070-e634e0734ca2
+	TimeScale 1.0
+BasicControllerData 94454e40-e073-464e-b3b8-a930345872c2
+	$::CinebotControllerData
+		$::DataContainer
+	Transposer 9ca49ec5-9dac-4c29-91ac-0ae9821c81b5
+	Composer 6f928022-02f0-4fe4-93a1-9be2bfb5c6c6
+	TimeScale 1.0
+BlendControllerData 3b4dd0e2-2d47-4512-8475-8726fbec4eb4
+	$::CinebotControllerData
+		$::DataContainer
+	FromController 127f70e9-e4ef-43bb-b353-af681d1eb3ed
+	ToController 94454e40-e073-464e-b3b8-a930345872c2
+	Transition 1c4163c5-0248-45e2-a672-3e8e1a589b02
+	AdditionalBlendToControllers *nullArray*
+	BlackBoardVarName 
+CinebotControllerRigAsset 467e93dd-fd78-7535-2504-c887461e8519 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/cameras/OOC/SM_10_6_TrainEscape/rigs/FailCamTrainPOV_Rig
+	Controllers::array
+		member(0) 3b4dd0e2-2d47-4512-8475-8726fbec4eb4
+	ForceAllInputTypesEnabled False
+CinebotTransitionData 1c4163c5-0248-45e2-a672-3e8e1a589b02
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 3.0
+		Time 0.6000000238418579
+		EaseInControl 0.0
+		EaseOutControl 0.0
+	Blend CINEBOT_BLEND_EULER
+	Clean False
+LocatorComposerData a3217a21-0597-4f3c-a070-e634e0734ca2
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	CinebotLocatorName FailCam_Locator
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 2.0
+		y 0.5
+		z -12.0
+	FOV 45.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+LocatorComposerData 6f928022-02f0-4fe4-93a1-9be2bfb5c6c6
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	CinebotLocatorName FailCam_Locator
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 1.7000000476837158
+		y 0.0
+		z -20.0
+	FOV 40.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+LocatorTransposerData f2e990aa-891e-4c53-a029-e51484047099
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName FailCamPOV_Locator
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.0
+		y -0.30000001192092896
+		z -10.0
+LocatorTransposerData 9ca49ec5-9dac-4c29-91ac-0ae9821c81b5
+	$::CinebotTransposerData
+		$::DataContainer
+	CinebotLocatorName FailCamPOV_Locator
+	CinebotLocatorIdentifier *nullGuid*
+	Offset::Vec3
+		x 0.6000000238418579
+		y 0.0
+		z -22.0
+ScreenSpaceComposerData b9f1a4a1-3cb0-4386-b4f4-ed2059fb298d
+	$::CinebotComposerData
+		$::DataContainer
+		FocalPlaneOffset 0.0
+		FStop 100.0
+		MinimumNearBlur 0.30000001192092896
+	TargetPart 
+	Secondary::ScreenSpaceComposerTarget
+		Enabled False
+		TargetPart 
+		Offset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MaxAngleSoft 45.0
+		MaxAngleHard 90.0
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	MarkerType MARKER_UNKNOWN
+	OffsetScale *nullGuid*
+	HardTop 0.10000000149011612
+	SoftTop 0.44999998807907104
+	SoftBottom 0.550000011920929
+	HardBottom 0.8999999761581421
+	VerticalBlendTime 0.30000001192092896
+	VerticalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	HardLeft 0.10000000149011612
+	SoftLeft 0.4000000059604645
+	SoftRight 0.6000000238418579
+	HardRight 0.8999999761581421
+	HorizontalBlendTime 0.30000001192092896
+	HorizontalBlendControl::ScreenSpaceComposerBlendControl
+		Enabled False
+		Scale 1.0
+		InputThreshold 0.0
+		Delay 0.0
+		RateIn 0.0
+		RateOut 0.0
+	FOV 45.0
+	Roll 0.0
+	NearPlane -1.0
+	FarPlane -1.0
+	UseUpFromScene False
+	UseUpDamping False
+	UpDampingBlendTime 0.20000000298023224
+TorusTransposerData a74d3009-f4d0-4cde-9221-990a35cf048a
+	$::CinebotTransposerData
+		$::DataContainer
+	AnchorPart 
+	MarkerType MARKER_UNKNOWN
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	OffsetScale *nullGuid*
+	OffsetDampTime::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusHard 4.0
+	InnerRadiusSoft 5.0
+	OuterRadiusSoft 5.0
+	OuterRadiusHard 6.0
+	RadiusBlendTime 1.0
+	LowerHeightHard -5.0
+	LowerHeightSoft 0.0
+	UpperHeightSoft 0.0
+	UpperHeightHard 5.0
+	HeightBlendTime 1.0
+	LowerHeadingHard -180.0
+	LowerHeadingSoft 0.0
+	UpperHeadingSoft 0.0
+	UpperHeadingHard 180.0
+	HeadingBlendTime 0.20000000298023224
+	HeadingBlendTimeCurve *nullGuid*
+	UseWorldHeading False
+	WorldHeading 0.0
+	UseVelocityBasedDirection False
+	UseFilteredVelocityBasedDirection False
+	VelocityBasedDirectionOffset 0.0
+	MakeVelocityBasedDirectionHorizontal False
+	CacheFirstFrameHeading False
+	UseSimpleHeadingDamping False
+	SimpleHeadingOffset 0.0
+	FollowTarget False

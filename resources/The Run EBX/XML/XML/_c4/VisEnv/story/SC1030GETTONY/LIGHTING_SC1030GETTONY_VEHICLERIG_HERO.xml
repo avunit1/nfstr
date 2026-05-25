@@ -1,0 +1,413 @@
+<InterfaceDescriptorData Guid="777fe98c-fe55-4a74-bb48-8324a8a3225d">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Enable [8BA423E4]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Disable [F90216B1]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<PointLightEntityData Guid="bb324363-0d1d-48b8-988f-f3cafc9c5936">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0,7139367</x>
+                    <y>0,3894815</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Color>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>0</z>
+        </Vec3>
+    </Color>
+    <EnlightenColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>0</z>
+        </Vec3>
+    </EnlightenColorScale>
+    <ParticleColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>0</z>
+        </Vec3>
+    </ParticleColorScale>
+    <Radius>10</Radius>
+    <AttenuationOffset>0,01</AttenuationOffset>
+    <Intensity>0</Intensity>
+    <VisibleAtSunset>True</VisibleAtSunset>
+    <ArtOptimized>True</ArtOptimized>
+    <SpecularEnable>False</SpecularEnable>
+    <EnlightenEnable>False</EnlightenEnable>
+    <VisibleAtDay>True</VisibleAtDay>
+    <Visible>True</Visible>
+    <VisibleAtNight>True</VisibleAtNight>
+    <Width>0</Width>
+    <TranslucencyAmbient>0</TranslucencyAmbient>
+    <TranslucencyScale>0</TranslucencyScale>
+    <TranslucencyPower>0x00000008</TranslucencyPower>
+    <TranslucencyDistortion>0,1</TranslucencyDistortion>
+</PointLightEntityData>
+<SpatialPrefabBlueprint Guid="6a0accdb-09ec-4f62-bc5c-22b874a11741">
+    <Name>_c4/VisEnv/Story/SC1030GETTONY/LIGHTING_SC1030GETTONY_VEHICLERIG_HERO</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 777fe98c-fe55-4a74-bb48-8324a8a3225d</Source>
+                <Target>[SpotLightEntityData] f1edf481-3a90-4cb0-8655-5e325de63e3c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 777fe98c-fe55-4a74-bb48-8324a8a3225d</Source>
+                <Target>[SpotLightEntityData] f1edf481-3a90-4cb0-8655-5e325de63e3c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 777fe98c-fe55-4a74-bb48-8324a8a3225d</Source>
+                <Target>[PointLightEntityData] bb324363-0d1d-48b8-988f-f3cafc9c5936</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Enable [8BA423E4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 777fe98c-fe55-4a74-bb48-8324a8a3225d</Source>
+                <Target>[PointLightEntityData] bb324363-0d1d-48b8-988f-f3cafc9c5936</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Disable [F90216B1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 777fe98c-fe55-4a74-bb48-8324a8a3225d</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="4">
+        <member Index="0">[SpotLightEntityData] f1edf481-3a90-4cb0-8655-5e325de63e3c</member>
+        <member Index="1">[PointLightEntityData] bb324363-0d1d-48b8-988f-f3cafc9c5936</member>
+        <member Index="2">[SpotLightEntityData] 20e69041-c4d6-4197-bf28-13e33f6a0a06</member>
+        <member Index="3">[SpotLightEntityData] 6b586452-201b-4efb-bf7f-3b8a0ddc8afa</member>
+    </Objects>
+</SpatialPrefabBlueprint>
+<SpotLightEntityData Guid="f1edf481-3a90-4cb0-8655-5e325de63e3c">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0,9262068</x>
+                    <y>0,04279143</y>
+                    <z>0,3745795</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>-0,04531662</x>
+                    <y>0,9989703</y>
+                    <z>-0,002068399</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>-0,3742824</x>
+                    <y>-0,01505888</y>
+                    <z>0,9271924</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>-0,0937244</x>
+                    <y>1,119262</y>
+                    <z>0,8448527</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Color>
+        <Vec3>
+            <x>0,218</x>
+            <y>0,199</y>
+            <z>0,173</z>
+        </Vec3>
+    </Color>
+    <EnlightenColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </EnlightenColorScale>
+    <ParticleColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </ParticleColorScale>
+    <Radius>2</Radius>
+    <AttenuationOffset>0,01</AttenuationOffset>
+    <Intensity>30</Intensity>
+    <VisibleAtSunset>True</VisibleAtSunset>
+    <ArtOptimized>True</ArtOptimized>
+    <SpecularEnable>True</SpecularEnable>
+    <EnlightenEnable>False</EnlightenEnable>
+    <VisibleAtDay>True</VisibleAtDay>
+    <Visible>True</Visible>
+    <VisibleAtNight>True</VisibleAtNight>
+    <Shape>SpotLightShape_Cone</Shape>
+    <ConeInnerAngle>0</ConeInnerAngle>
+    <ConeOuterAngle>80,937</ConeOuterAngle>
+    <FrustumFov>40</FrustumFov>
+    <FrustumAspect>1</FrustumAspect>
+    <OrthoWidth>5</OrthoWidth>
+    <OrthoHeight>5</OrthoHeight>
+    <Texture>nullptr</Texture>
+    <NearPlane>0,1</NearPlane>
+    <ShadowBias>0</ShadowBias>
+    <CastShadowsEnable>False</CastShadowsEnable>
+</SpotLightEntityData>
+<SpotLightEntityData Guid="20e69041-c4d6-4197-bf28-13e33f6a0a06">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>-0,8119704</x>
+                    <y>5,032818E-10</y>
+                    <z>0,5836989</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>-4,656842E-17</x>
+                    <y>1</y>
+                    <z>-8,622288E-10</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>-0,5836987</x>
+                    <y>-7,001041E-10</y>
+                    <z>-0,8119702</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>-0,3231893</x>
+                    <y>1,183085</y>
+                    <z>-0,3109986</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Color>
+        <Vec3>
+            <x>0,612</x>
+            <y>0,8</y>
+            <z>1</z>
+        </Vec3>
+    </Color>
+    <EnlightenColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </EnlightenColorScale>
+    <ParticleColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </ParticleColorScale>
+    <Radius>1,5</Radius>
+    <AttenuationOffset>0,01</AttenuationOffset>
+    <Intensity>45</Intensity>
+    <VisibleAtSunset>True</VisibleAtSunset>
+    <ArtOptimized>True</ArtOptimized>
+    <SpecularEnable>True</SpecularEnable>
+    <EnlightenEnable>False</EnlightenEnable>
+    <VisibleAtDay>True</VisibleAtDay>
+    <Visible>True</Visible>
+    <VisibleAtNight>True</VisibleAtNight>
+    <Shape>SpotLightShape_Cone</Shape>
+    <ConeInnerAngle>0</ConeInnerAngle>
+    <ConeOuterAngle>119,123</ConeOuterAngle>
+    <FrustumFov>40</FrustumFov>
+    <FrustumAspect>1</FrustumAspect>
+    <OrthoWidth>5</OrthoWidth>
+    <OrthoHeight>5</OrthoHeight>
+    <Texture>nullptr</Texture>
+    <NearPlane>0,1</NearPlane>
+    <ShadowBias>0</ShadowBias>
+    <CastShadowsEnable>False</CastShadowsEnable>
+</SpotLightEntityData>
+<SpotLightEntityData Guid="6b586452-201b-4efb-bf7f-3b8a0ddc8afa">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0,9470123</y>
+                    <z>0,3211973</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>-0,3211973</y>
+                    <z>0,9470123</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0,5085731</x>
+                    <y>0,2705852</y>
+                    <z>2,00381</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Color>
+        <Vec3>
+            <x>1</x>
+            <y>0,194</y>
+            <z>0,047</z>
+        </Vec3>
+    </Color>
+    <EnlightenColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </EnlightenColorScale>
+    <ParticleColorScale>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </ParticleColorScale>
+    <Radius>2</Radius>
+    <AttenuationOffset>0,01</AttenuationOffset>
+    <Intensity>0</Intensity>
+    <VisibleAtSunset>True</VisibleAtSunset>
+    <ArtOptimized>True</ArtOptimized>
+    <SpecularEnable>True</SpecularEnable>
+    <EnlightenEnable>False</EnlightenEnable>
+    <VisibleAtDay>True</VisibleAtDay>
+    <Visible>True</Visible>
+    <VisibleAtNight>True</VisibleAtNight>
+    <Shape>SpotLightShape_Cone</Shape>
+    <ConeInnerAngle>0</ConeInnerAngle>
+    <ConeOuterAngle>95</ConeOuterAngle>
+    <FrustumFov>40</FrustumFov>
+    <FrustumAspect>1</FrustumAspect>
+    <OrthoWidth>5</OrthoWidth>
+    <OrthoHeight>5</OrthoHeight>
+    <Texture>nullptr</Texture>
+    <NearPlane>0,1</NearPlane>
+    <ShadowBias>0</ShadowBias>
+    <CastShadowsEnable>False</CastShadowsEnable>
+</SpotLightEntityData>

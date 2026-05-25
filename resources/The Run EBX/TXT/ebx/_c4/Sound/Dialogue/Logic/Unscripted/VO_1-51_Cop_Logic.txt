@@ -1,0 +1,210 @@
+VoiceOverCompareNode 90d4c9b2-83d9-4a06-a735-25f090a73047
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A 8e1245a8-9e1f-409e-856d-878eaef6ef6c
+	B 9f9d0aa9-4b36-4e0a-8db2-53dbe325a056
+	False 3b53b3aa-73cb-4035-b80b-7d6d74f2a19d
+	True b7fe7141-bbe8-48c1-8111-3af2b19cccfe
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConstantIntegerValue 349e2e33-2cd8-4dc1-ae17-3b540f2efc2f
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 20
+VoiceOverConstantIntegerValue 2ea4ea0a-4582-4b41-98a8-edb9ca64e0ee
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 1
+VoiceOverConstantNode 09481f13-768b-4762-96cd-583134c2fb15
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value d1f6f241-75a8-4fff-a979-c4ed0a105a94
+	Source 349e2e33-2cd8-4dc1-ae17-3b540f2efc2f
+VoiceOverConstantNode 43299d27-dfd6-4136-b0b1-29963069f373
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value 8617ed24-ebfd-4fba-b12c-e2d6c0e622d8
+	Source 2ea4ea0a-4582-4b41-98a8-edb9ca64e0ee
+VoiceOverConversationNode 9424f2dc-7ae4-4909-828f-b62c3f5cac99
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Groups::array
+		member(0) 83911cf0-d58f-4eae-9ad2-0dd86609d9f6
+	Condition::array
+		member(0) c1576398-9caa-4be0-a3eb-776028512bfb
+		member(1) b14e8aa6-e2ef-4a51-a26d-717f1fd03955
+	Interval 3a829b77-bdc4-4fd8-a6e3-6faaad05d266
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Pronunciation *nullGuid*
+	InterruptMode VoiceOverConversationInterruptMode_Disallow
+	InterrupterMode VoiceOverConversationInterrupterMode_Allow
+	Priority 70
+	QueueMode VoiceOverConversationQueueMode_Always
+	Relevancy 1.5
+	DeadAirRequired 0.0
+	DeadAirEnforce 0.0
+	IgnoreDeadAir True
+	TrackCount 1
+	LastSequenceIndex 0
+VoiceOverDialogClip a7aad48a-ed5e-4c81-8139-5213e270ee4d
+	$::DataContainer
+	Offset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave _c4/Sound/Dialogue/ENGLISH/Unscripted/Cops/CopDisabledSelf/CopDisabledSelf_CopA/c07cbbd3-472a-1b56-99d9-7dcd58cedf1e
+	OffsetReferences *nullArray*
+	SequenceIndex 0
+	Events *nullGuid*
+VoiceOverDialogGroup 83911cf0-d58f-4eae-9ad2-0dd86609d9f6
+	$::DataContainer
+	Sound _c4/Sound/Dialogue/VO_Sfx/VO_CopRadio/31a3362f-c13e-120f-bd78-11c1395d1f4f
+	Tracks::array
+		member(0) e2f5cbf0-76ba-4eb3-bcc1-4fc82c09e17a
+VoiceOverDialogTrack e2f5cbf0-76ba-4eb3-bcc1-4fc82c09e17a
+	$::DataContainer
+	Source *nullGuid*
+	TakeControl *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	Output *nullGuid*
+	SamplerNode _c4/Sound/Dialogue/VO_Sfx/VO_CopRadio/89507893-b4c2-465a-8e66-bbd4f22d8c90
+	QueueGroup _c4/Sound/Dialogue/Logic/VO_System/603f0fb5-7835-4280-a702-d631219df3bb
+	Clips::array
+		member(0) a7aad48a-ed5e-4c81-8139-5213e270ee4d
+VoiceOverEvent 3e0738d6-72c3-4185-be8c-ac73340ae1f1
+	$::DataContainer
+	Name 1-51_CopDisabledSelf
+	Parameters::array
+		member(0) 4ea64ff9-247e-4bc1-82a0-14a41e307297
+	Owner 7018ed43-bb1d-423b-bd0e-d6d25d521246
+VoiceOverEventNode a273ad5e-d166-43e8-b2c8-e9b48433b82a
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 9424f2dc-7ae4-4909-828f-b62c3f5cac99
+	Redirects::array
+		member(0) 69a67955-e5e5-4bb4-92ed-de0e6ebc0a8d
+	Event 3e0738d6-72c3-4185-be8c-ac73340ae1f1
+VoiceOverGroup 9e822376-b13b-4b07-b312-299b3772f7f4
+	$::DataContainer
+	Name Default
+	Priority 0
+VoiceOverInfoNode cadd634b-8226-4e39-b3ec-66ad327f8539
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Object 25c6c33a-574d-4958-a480-b0031be66dfc
+	Value e0d5d2d0-c92b-4be6-b456-7c220dcd0419
+	Field _c4/Sound/Dialogue/Logic/VO_System/0fe1cb90-e9d0-4b47-8a2e-9c0825de401a
+	ExpectedType _c4/Sound/Dialogue/Logic/VO_System/d72477a4-aabc-4ae6-bdcb-ee6344b1a8dc
+VoiceOverIntervalNode 3a829b77-bdc4-4fd8-a6e3-6faaad05d266
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold addc4db4-2ff6-4420-a3d0-a54d18b43c83
+	Time 44455fb6-9aa4-42b4-a15e-95dcf51b8ab8
+	False 3615b73f-96fa-4bcf-a8b1-0b6d6fc1b848
+	True dd53afdb-2384-4d60-a743-a7aa4a8c6ca7
+	Interval _c4/Sound/Dialogue/Logic/VO_System/c892ca51-11c1-440d-8812-405708bfbccc
+VoiceOverLogicAsset 7018ed43-bb1d-423b-bd0e-d6d25d521246 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Sound/Dialogue/Logic/Unscripted/VO_1-51_Cop_Logic
+	Events::array
+		member(0) 3e0738d6-72c3-4185-be8c-ac73340ae1f1
+	Groups::array
+		member(0) 9e822376-b13b-4b07-b312-299b3772f7f4
+	Flows::array
+		member(0) 09e26fdc-e5c0-48b2-b998-f1924eaf22f4
+	System _c4/Sound/Dialogue/Logic/VO_System/53c4df8a-9a3f-81e0-cb02-90e064b6baf7
+VoiceOverLogicFlow 09e26fdc-e5c0-48b2-b998-f1924eaf22f4
+	$::DataContainer
+	Name CopDisabledSelf
+	Group 9e822376-b13b-4b07-b312-299b3772f7f4
+	Locals::array
+		member(0) 94351fc5-a221-413d-b3c0-34d3d2cf98a4
+	Roots::array
+		member(0) a273ad5e-d166-43e8-b2c8-e9b48433b82a
+VoiceOverNamedValue 4ea64ff9-247e-4bc1-82a0-14a41e307297
+	$::VoiceOverValue
+		$::DataContainer
+		ValueType VoiceOverValueType_Object
+	Name Speaker
+VoiceOverNamedValue 94351fc5-a221-413d-b3c0-34d3d2cf98a4
+	$::VoiceOverValue
+		$::DataContainer
+		ValueType VoiceOverValueType_Object
+	Name Speaker_Map
+VoiceOverValue d1f6f241-75a8-4fff-a979-c4ed0a105a94
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue 7910dc46-815c-4b85-8a5b-1d95b3bbe5ce
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue 44455fb6-9aa4-42b4-a15e-95dcf51b8ab8
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue 3615b73f-96fa-4bcf-a8b1-0b6d6fc1b848
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue dd53afdb-2384-4d60-a743-a7aa4a8c6ca7
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue 3b53b3aa-73cb-4035-b80b-7d6d74f2a19d
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue b7fe7141-bbe8-48c1-8111-3af2b19cccfe
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue 8617ed24-ebfd-4fba-b12c-e2d6c0e622d8
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValue e0d5d2d0-c92b-4be6-b456-7c220dcd0419
+	$::DataContainer
+	ValueType VoiceOverValueType_Boolean
+VoiceOverValueConnection addc4db4-2ff6-4420-a3d0-a54d18b43c83
+	$::DataContainer
+	TargetNode 09481f13-768b-4762-96cd-583134c2fb15
+	TargetValue d1f6f241-75a8-4fff-a979-c4ed0a105a94
+VoiceOverValueConnection c1576398-9caa-4be0-a3eb-776028512bfb
+	$::DataContainer
+	TargetNode 3a829b77-bdc4-4fd8-a6e3-6faaad05d266
+	TargetValue dd53afdb-2384-4d60-a743-a7aa4a8c6ca7
+VoiceOverValueConnection 8e1245a8-9e1f-409e-856d-878eaef6ef6c
+	$::DataContainer
+	TargetNode cadd634b-8226-4e39-b3ec-66ad327f8539
+	TargetValue e0d5d2d0-c92b-4be6-b456-7c220dcd0419
+VoiceOverValueConnection 9f9d0aa9-4b36-4e0a-8db2-53dbe325a056
+	$::DataContainer
+	TargetNode 43299d27-dfd6-4136-b0b1-29963069f373
+	TargetValue 8617ed24-ebfd-4fba-b12c-e2d6c0e622d8
+VoiceOverValueConnection 25c6c33a-574d-4958-a480-b0031be66dfc
+	$::DataContainer
+	TargetNode d30869ae-dabe-4af4-9f07-132c548b132b
+	TargetValue 7910dc46-815c-4b85-8a5b-1d95b3bbe5ce
+VoiceOverValueConnection b14e8aa6-e2ef-4a51-a26d-717f1fd03955
+	$::DataContainer
+	TargetNode 90d4c9b2-83d9-4a06-a735-25f090a73047
+	TargetValue b7fe7141-bbe8-48c1-8111-3af2b19cccfe
+VoiceOverValueRedirect 69a67955-e5e5-4bb4-92ed-de0e6ebc0a8d
+	$::DataContainer
+	Source 4ea64ff9-247e-4bc1-82a0-14a41e307297
+	Target 94351fc5-a221-413d-b3c0-34d3d2cf98a4
+VoiceOverVariableNode d30869ae-dabe-4af4-9f07-132c548b132b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value 7910dc46-815c-4b85-8a5b-1d95b3bbe5ce
+	Source 94351fc5-a221-413d-b3c0-34d3d2cf98a4

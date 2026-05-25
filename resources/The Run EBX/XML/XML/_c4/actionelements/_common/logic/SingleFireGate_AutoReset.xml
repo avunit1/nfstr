@@ -1,0 +1,166 @@
+<DelayEntityData Guid="5258eb81-05d4-4aba-a8b2-dc6ea747f1ce">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>True</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>True</RemoveDuplicateEvents>
+</DelayEntityData>
+<EventGateEntityData Guid="2d12f6bf-a963-4bc5-beaa-a8dc176643eb">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Default>True</Default>
+</EventGateEntityData>
+<EventSplitterEntityData Guid="da264f3e-6817-4551-99cf-246a11a81e18">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <RunOnce>False</RunOnce>
+</EventSplitterEntityData>
+<InterfaceDescriptorData Guid="439a2e7a-2063-4176-b607-21f3e51a5585">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>FireOnce [7730579A]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Reset [0DB4B330]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Out [0B87DF4B]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="5d59d767-62d0-482e-866b-e7426ee6879b">
+    <Name>_c4/ActionElements/_Common/Logic/SingleFireGate_AutoReset</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="6">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 439a2e7a-2063-4176-b607-21f3e51a5585</Source>
+                <Target>[EventGateEntityData] 2d12f6bf-a963-4bc5-beaa-a8dc176643eb</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>FireOnce [7730579A]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[EventGateEntityData] 2d12f6bf-a963-4bc5-beaa-a8dc176643eb</Source>
+                <Target>[EventSplitterEntityData] da264f3e-6817-4551-99cf-246a11a81e18</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Impulse [66B8ED9E]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[EventSplitterEntityData] da264f3e-6817-4551-99cf-246a11a81e18</Source>
+                <Target>[InterfaceDescriptorData] 439a2e7a-2063-4176-b607-21f3e51a5585</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnImpulse [F7CE107F]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[EventSplitterEntityData] da264f3e-6817-4551-99cf-246a11a81e18</Source>
+                <Target>[EventGateEntityData] 2d12f6bf-a963-4bc5-beaa-a8dc176643eb</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnImpulse [F7CE107F]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 439a2e7a-2063-4176-b607-21f3e51a5585</Source>
+                <Target>[EventGateEntityData] 2d12f6bf-a963-4bc5-beaa-a8dc176643eb</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Reset [0DB4B330]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[DelayEntityData] 5258eb81-05d4-4aba-a8b2-dc6ea747f1ce</Source>
+                <Target>[EventGateEntityData] 2d12f6bf-a963-4bc5-beaa-a8dc176643eb</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 439a2e7a-2063-4176-b607-21f3e51a5585</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="3">
+        <member Index="0">[EventGateEntityData] 2d12f6bf-a963-4bc5-beaa-a8dc176643eb</member>
+        <member Index="1">[EventSplitterEntityData] da264f3e-6817-4551-99cf-246a11a81e18</member>
+        <member Index="2">[DelayEntityData] 5258eb81-05d4-4aba-a8b2-dc6ea747f1ce</member>
+    </Objects>
+</LogicPrefabBlueprint>

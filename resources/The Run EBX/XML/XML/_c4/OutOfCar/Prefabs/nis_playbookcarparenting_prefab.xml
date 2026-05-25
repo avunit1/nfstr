@@ -1,0 +1,173 @@
+<AnimationParentingEntityData Guid="6f193a3e-7b9b-4017-96d4-6b44e4f9e51c">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <ChildOffset>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>2,33309E-07</x>
+                    <y>-0,9659257</y>
+                    <z>-0,2588189</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>-0,03489951</x>
+                    <y>0,2586613</y>
+                    <z>-0,9653373</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0,9993907</x>
+                    <y>0,009032804</y>
+                    <z>-0,03371021</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0,03</y>
+                    <z>-0,03</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </ChildOffset>
+    <ChildBoneName>Interaction</ChildBoneName>
+    <ParentBoneName>AITrajectory</ParentBoneName>
+    <ParentMarkerType>BONE_DASHBOARD</ParentMarkerType>
+    <Blend>1</Blend>
+    <AdditionalChildRotationBlend>0</AdditionalChildRotationBlend>
+    <AdditionalChildTranslationBlend>0</AdditionalChildTranslationBlend>
+    <LockAdditionalParentingOperationOnActivate>True</LockAdditionalParentingOperationOnActivate>
+</AnimationParentingEntityData>
+<InterfaceDescriptorData Guid="f26de609-0d48-46d8-b50d-a0e6dbd0e0e1">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Activate [DEAA09DC]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Deactivate [72F6CC1D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="2">
+        <member Index="0">
+            <DynamicLink>
+                <Id>0x7f1061d8</Id>
+            </DynamicLink>
+        </member>
+        <member Index="1">
+            <DynamicLink>
+                <Id>0xe6ccb4a9</Id>
+            </DynamicLink>
+        </member>
+    </OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="a7cb3195-d336-35f8-a8e3-0922b5c61e6b">
+    <Name>_c4/OutOfCar/Prefabs/NIS_PlaybookCarParenting_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="2">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[AnimationParentingEntityData] 6f193a3e-7b9b-4017-96d4-6b44e4f9e51c</Source>
+                <Target>[InterfaceDescriptorData] f26de609-0d48-46d8-b50d-a0e6dbd0e0e1</Target>
+                <SourceFieldId>0x47081d0f</SourceFieldId>
+                <TargetFieldId>0x7f1061d8</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="1">
+            <LinkConnection>
+                <Source>[AnimationParentingEntityData] 6f193a3e-7b9b-4017-96d4-6b44e4f9e51c</Source>
+                <Target>[InterfaceDescriptorData] f26de609-0d48-46d8-b50d-a0e6dbd0e0e1</Target>
+                <SourceFieldId>0xf3164cc1</SourceFieldId>
+                <TargetFieldId>0xe6ccb4a9</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="2">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] f26de609-0d48-46d8-b50d-a0e6dbd0e0e1</Source>
+                <Target>[AnimationParentingEntityData] 6f193a3e-7b9b-4017-96d4-6b44e4f9e51c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] f26de609-0d48-46d8-b50d-a0e6dbd0e0e1</Source>
+                <Target>[AnimationParentingEntityData] 6f193a3e-7b9b-4017-96d4-6b44e4f9e51c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Deactivate [72F6CC1D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Deactivate [72F6CC1D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] f26de609-0d48-46d8-b50d-a0e6dbd0e0e1</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="1">
+        <member Index="0">[AnimationParentingEntityData] 6f193a3e-7b9b-4017-96d4-6b44e4f9e51c</member>
+    </Objects>
+</LogicPrefabBlueprint>

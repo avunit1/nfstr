@@ -1,0 +1,74 @@
+<CinebotConditionData Guid="d710e5f9-2cfb-4bce-abbf-4285aaa9b1bb">
+    <ConditionInput>CINEBOT_CONDITION_INPUT_BLACKBOARD</ConditionInput>
+    <BlackBoardVarName>Exploded</BlackBoardVarName>
+    <ConditionMin>0</ConditionMin>
+    <ConditionMax>1</ConditionMax>
+</CinebotConditionData>
+<CinebotControllerRigAsset Guid="61805b34-3a89-4b91-b975-35b151cd339d">
+    <Name>_c4/cameras/Core_Drive/Crashes/rigs/deathstate_bulletdeath_exploded_noise</Name>
+    <Controllers Count="1">
+        <member Index="0">[NoiseControllerData] 20e8d6f5-3506-4fce-be5e-c745cedb166e</member>
+    </Controllers>
+    <ForceAllInputTypesEnabled>False</ForceAllInputTypesEnabled>
+</CinebotControllerRigAsset>
+<CurveData Guid="bb8c4ece-5224-4911-914b-9c0035a89878">
+    <ReactionInput>CINEBOT_REACTION_INPUT_SPEED</ReactionInput>
+    <BlackBoardVarName></BlackBoardVarName>
+    <OutputScale>1</OutputScale>
+    <InputScale>1</InputScale>
+    <Conditions Count="1">
+        <member Index="0">[CinebotConditionData] d710e5f9-2cfb-4bce-abbf-4285aaa9b1bb</member>
+    </Conditions>
+    <ReactionCurve Count="4">
+        <member Index="0">
+            <Vec3>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="1">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>2</z>
+            </Vec3>
+        </member>
+        <member Index="2">
+            <Vec3>
+                <x>0</x>
+                <y>1</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+        <member Index="3">
+            <Vec3>
+                <x>1</x>
+                <y>1</y>
+                <z>0</z>
+            </Vec3>
+        </member>
+    </ReactionCurve>
+    <XOR_Conditions>False</XOR_Conditions>
+    <MirrorInput>False</MirrorInput>
+</CurveData>
+<NoiseControllerData Guid="20e8d6f5-3506-4fce-be5e-c745cedb166e">
+    <Magnitude>
+        <Vec3>
+            <x>0</x>
+            <y>3</y>
+            <z>0,5</z>
+        </Vec3>
+    </Magnitude>
+    <Parameter>CINEBOT_NOISE_PARAM_TARGET</Parameter>
+    <Frequency>3</Frequency>
+    <Roughness>0,5</Roughness>
+    <Octaves>0x00000003</Octaves>
+    <Delay>0</Delay>
+    <RampIn>0,1</RampIn>
+    <Duration>0,4</Duration>
+    <RampOut>0,4</RampOut>
+    <CurveParams>[CurveData] bb8c4ece-5224-4911-914b-9c0035a89878</CurveParams>
+    <CurveDampingTime>0</CurveDampingTime>
+    <ConditionGoesFalseBehavior>CinebotConditionGoesFalseBehavior_Ignore</ConditionGoesFalseBehavior>
+</NoiseControllerData>

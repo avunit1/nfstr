@@ -1,0 +1,139 @@
+<InterfaceDescriptorData Guid="3a061d0a-a1c1-4185-85a8-43ddab17db84">
+    <Fields Count="4">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>BlendValue [0E1E616F]</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="1">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Max [0B87C3D1]</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="2">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Min [0B87C2CF]</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="3">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Out [0B87DF4B]</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="0"></InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="265fd63e-a249-f320-1ed1-55619d042f84">
+    <Name>_c4/Logic/FloatBlender</Name>
+    <PropertyConnections Count="7">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] 25d8883e-0ca0-4887-9136-1dd393a41b78</Source>
+                <Target>[MathOpEntityData] cf59e0c5-cef9-4e76-97d3-eba9620abccf</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] cf59e0c5-cef9-4e76-97d3-eba9620abccf</Source>
+                <Target>[MathOpEntityData] 67051557-2ff2-418c-a57c-70e8a5df6188</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 3a061d0a-a1c1-4185-85a8-43ddab17db84</Source>
+                <Target>[MathOpEntityData] cf59e0c5-cef9-4e76-97d3-eba9620abccf</Target>
+                <SourceFieldId>BlendValue [0E1E616F]</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 3a061d0a-a1c1-4185-85a8-43ddab17db84</Source>
+                <Target>[MathOpEntityData] 25d8883e-0ca0-4887-9136-1dd393a41b78</Target>
+                <SourceFieldId>Max [0B87C3D1]</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="4">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 3a061d0a-a1c1-4185-85a8-43ddab17db84</Source>
+                <Target>[MathOpEntityData] 25d8883e-0ca0-4887-9136-1dd393a41b78</Target>
+                <SourceFieldId>Min [0B87C2CF]</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="5">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 3a061d0a-a1c1-4185-85a8-43ddab17db84</Source>
+                <Target>[MathOpEntityData] 67051557-2ff2-418c-a57c-70e8a5df6188</Target>
+                <SourceFieldId>Min [0B87C2CF]</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="6">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] 67051557-2ff2-418c-a57c-70e8a5df6188</Source>
+                <Target>[InterfaceDescriptorData] 3a061d0a-a1c1-4185-85a8-43ddab17db84</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>Out [0B87DF4B]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="0"></EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 3a061d0a-a1c1-4185-85a8-43ddab17db84</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="3">
+        <member Index="0">[MathOpEntityData] cf59e0c5-cef9-4e76-97d3-eba9620abccf</member>
+        <member Index="1">[MathOpEntityData] 25d8883e-0ca0-4887-9136-1dd393a41b78</member>
+        <member Index="2">[MathOpEntityData] 67051557-2ff2-418c-a57c-70e8a5df6188</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<MathOpEntityData Guid="cf59e0c5-cef9-4e76-97d3-eba9620abccf">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Multiply</member>
+    </Operators>
+</MathOpEntityData>
+<MathOpEntityData Guid="25d8883e-0ca0-4887-9136-1dd393a41b78">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Subtract</member>
+    </Operators>
+</MathOpEntityData>
+<MathOpEntityData Guid="67051557-2ff2-418c-a57c-70e8a5df6188">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Add</member>
+    </Operators>
+</MathOpEntityData>

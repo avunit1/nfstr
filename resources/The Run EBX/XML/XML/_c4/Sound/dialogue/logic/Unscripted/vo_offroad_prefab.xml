@@ -1,0 +1,260 @@
+<BlackboardReceiveParamEntityData Guid="b1b364e0-b85f-4e04-b937-d58b692e5a70">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Param>BBPL_PlayerOffroad</Param>
+</BlackboardReceiveParamEntityData>
+<DelayEntityData Guid="20a248bb-ee95-4357-9e4e-b829414f1c0d">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,033</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>False</RemoveDuplicateEvents>
+</DelayEntityData>
+<DelayEntityData Guid="83c676cb-9070-41dc-a728-e99c5ad46f43">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,033</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>False</RemoveDuplicateEvents>
+</DelayEntityData>
+<InterfaceDescriptorData Guid="ef30902e-43ff-498f-904e-659169b5d358">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x3d06ca93</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x19719c9b</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>Cop [0B87CB99]</Id>
+            </DynamicLink>
+        </member>
+    </OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="c3bfeb68-f3d8-1806-1aa2-fe4c85432c93">
+    <Name>_c4/Sound/Dialogue/Logic/Unscripted/VO_Offroad_Prefab</Name>
+    <PropertyConnections Count="1">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[BlackboardReceiveParamEntityData] b1b364e0-b85f-4e04-b937-d58b692e5a70</Source>
+                <Target>[PropertyDebugEntityData] 3b3e04fd-d9c7-44be-97e0-671d8737e918</Target>
+                <SourceFieldId>Output [AC996E7A]</SourceFieldId>
+                <TargetFieldId>FloatValue [BA31493E]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="2">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[VoiceOverEventEntityData] 02fdff10-a2fa-4148-9a02-35280f922f74</Source>
+                <Target>[InterfaceDescriptorData] ef30902e-43ff-498f-904e-659169b5d358</Target>
+                <SourceFieldId>Speaker [8ABEB8BE]</SourceFieldId>
+                <TargetFieldId>Cop [0B87CB99]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="1">
+            <LinkConnection>
+                <Source>[VoiceOverEventEntityData] e02b650c-fd8a-4223-82e4-283ab4c35fe4</Source>
+                <Target>[InterfaceDescriptorData] ef30902e-43ff-498f-904e-659169b5d358</Target>
+                <SourceFieldId>Speaker [8ABEB8BE]</SourceFieldId>
+                <TargetFieldId>Cop [0B87CB99]</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[DelayEntityData] 20a248bb-ee95-4357-9e4e-b829414f1c0d</Source>
+                <Target>[VoiceOverEventEntityData] e02b650c-fd8a-4223-82e4-283ab4c35fe4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[DelayEntityData] 83c676cb-9070-41dc-a728-e99c5ad46f43</Source>
+                <Target>[VoiceOverEventEntityData] 02fdff10-a2fa-4148-9a02-35280f922f74</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] ef30902e-43ff-498f-904e-659169b5d358</Source>
+                <Target>[DelayEntityData] 83c676cb-9070-41dc-a728-e99c5ad46f43</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x19719c9b</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] ef30902e-43ff-498f-904e-659169b5d358</Source>
+                <Target>[DelayEntityData] 20a248bb-ee95-4357-9e4e-b829414f1c0d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x3d06ca93</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] ef30902e-43ff-498f-904e-659169b5d358</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[VoiceOverEventEntityData] 02fdff10-a2fa-4148-9a02-35280f922f74</member>
+        <member Index="1">[VoiceOverEventEntityData] e02b650c-fd8a-4223-82e4-283ab4c35fe4</member>
+        <member Index="2">[DelayEntityData] 20a248bb-ee95-4357-9e4e-b829414f1c0d</member>
+        <member Index="3">[DelayEntityData] 83c676cb-9070-41dc-a728-e99c5ad46f43</member>
+        <member Index="4">[BlackboardReceiveParamEntityData] b1b364e0-b85f-4e04-b937-d58b692e5a70</member>
+        <member Index="5">[PropertyDebugEntityData] 3b3e04fd-d9c7-44be-97e0-671d8737e918</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<PropertyDebugEntityData Guid="3b3e04fd-d9c7-44be-97e0-671d8737e918">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <TransformValue>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </TransformValue>
+    <TextColor>
+        <Vec3>
+            <x>1</x>
+            <y>1</y>
+            <z>1</z>
+        </Vec3>
+    </TextColor>
+    <ScreenPosition>
+        <Vec2>
+            <x>300</x>
+            <y>600</y>
+        </Vec2>
+    </ScreenPosition>
+    <Vec2Value>
+        <Vec2>
+            <x>0</x>
+            <y>0</y>
+        </Vec2>
+    </Vec2Value>
+    <Vec3Value>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </Vec3Value>
+    <DecimalPlaces>0x00000001</DecimalPlaces>
+    <ValuePrefix>BBPL_PlayerOffroad</ValuePrefix>
+    <Realm>Realm_Client</Realm>
+    <TextScale>2</TextScale>
+    <Scope>speech</Scope>
+    <FloatValue>0</FloatValue>
+    <IntValue>0x00000000</IntValue>
+    <StringValue></StringValue>
+    <Enabled>False</Enabled>
+    <Multiline>True</Multiline>
+    <BoolValue>False</BoolValue>
+    <DefaultVisible>True</DefaultVisible>
+</PropertyDebugEntityData>
+<VoiceOverEventEntityData Guid="02fdff10-a2fa-4148-9a02-35280f922f74">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <VoEvent>[Ebx] _c4/sound/dialogue/logic/unscripted/vo_offroad_logic [9401e456-4017-41d0-a6db-70f2a2e6488b]</VoEvent>
+    <EventPlayer>nullptr</EventPlayer>
+    <ExtraEventPlayer>nullptr</ExtraEventPlayer>
+    <TriggerDelay>0</TriggerDelay>
+    <FinishedDelay>0</FinishedDelay>
+    <RunOnce>False</RunOnce>
+</VoiceOverEventEntityData>
+<VoiceOverEventEntityData Guid="e02b650c-fd8a-4223-82e4-283ab4c35fe4">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <VoEvent>[Ebx] _c4/sound/dialogue/logic/unscripted/vo_offroad_logic [005ca58f-b94d-4f84-8380-a024cd4e3c58]</VoEvent>
+    <EventPlayer>nullptr</EventPlayer>
+    <ExtraEventPlayer>nullptr</ExtraEventPlayer>
+    <TriggerDelay>0</TriggerDelay>
+    <FinishedDelay>0</FinishedDelay>
+    <RunOnce>False</RunOnce>
+</VoiceOverEventEntityData>

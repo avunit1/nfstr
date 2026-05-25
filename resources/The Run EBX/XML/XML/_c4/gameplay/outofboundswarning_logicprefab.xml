@@ -1,0 +1,122 @@
+<HUDFlasherEntityData Guid="8edb435a-1e79-4e09-99cd-0d4eef6d4dc4">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Text>ID_COMMON_WRONG_WAY</Text>
+    <SubText1></SubText1>
+    <DisplayTime>-1</DisplayTime>
+    <SubText2></SubText2>
+    <Button>HUDFlasherButton_None</Button>
+    <ButtonPositionX>0</ButtonPositionX>
+    <ButtonScale>100</ButtonScale>
+    <ButtonPositionY>0</ButtonPositionY>
+    <Action>ButtonAction_Press</Action>
+    <ButtonText></ButtonText>
+    <UseUpperPosition>False</UseUpperPosition>
+    <IsPositiveMessage>False</IsPositiveMessage>
+    <IsStaticButton>True</IsStaticButton>
+    <IsObjective>False</IsObjective>
+    <UseASLogic>True</UseASLogic>
+    <IsWarningMessage>False</IsWarningMessage>
+</HUDFlasherEntityData>
+<InterfaceDescriptorData Guid="d1afef17-1e3c-4509-b4e1-09cc464540f7">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Hide [7C85F065]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Show [7C8A2F66]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="a0f31d9c-e79c-8f5e-8a1a-13ea9102de88">
+    <Name>_c4/Gameplay/OutOfBoundsWarning_LogicPrefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="2">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] d1afef17-1e3c-4509-b4e1-09cc464540f7</Source>
+                <Target>[HUDFlasherEntityData] 8edb435a-1e79-4e09-99cd-0d4eef6d4dc4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Show [7C8A2F66]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Show [7C8A2F66]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] d1afef17-1e3c-4509-b4e1-09cc464540f7</Source>
+                <Target>[HUDFlasherEntityData] 8edb435a-1e79-4e09-99cd-0d4eef6d4dc4</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Hide [7C85F065]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Hide [7C85F065]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] d1afef17-1e3c-4509-b4e1-09cc464540f7</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="1">
+        <member Index="0">[HUDFlasherEntityData] 8edb435a-1e79-4e09-99cd-0d4eef6d4dc4</member>
+    </Objects>
+</LogicPrefabBlueprint>

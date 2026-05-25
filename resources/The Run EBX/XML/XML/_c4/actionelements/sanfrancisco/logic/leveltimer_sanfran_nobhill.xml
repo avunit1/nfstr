@@ -1,0 +1,468 @@
+<AIDifficultyEventSwitchEntityData Guid="ec7a47f7-02a4-4700-bc45-849c69463ded">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+</AIDifficultyEventSwitchEntityData>
+<AIDifficultyEventSwitchEntityData Guid="d70d5344-bf9c-45fb-b71f-f65f96f72a4d">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+</AIDifficultyEventSwitchEntityData>
+<InterfaceDescriptorData Guid="105300f5-a06a-432f-b0c9-17e9b5639269">
+    <Fields Count="1">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Time [7C8865D0]</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>CountDown [75995CD4]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Stop [7C89BB7D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x5f7a2f17</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="c31bfc94-fa7a-e64d-ef44-0e773e6697c9">
+    <Name>_c4/ActionElements/SanFrancisco/Logic/LevelTimer_SanFran_NobHill</Name>
+    <PropertyConnections Count="3">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[NfsTimerEntityData] 8e572329-284b-4489-a70b-ea5e32652df8</Source>
+                <Target>[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</Target>
+                <SourceFieldId>Time [7C8865D0]</SourceFieldId>
+                <TargetFieldId>0x3f047e34</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[NfsTimerEntityData] dccb8b51-2fee-4629-b3b2-77a401aac563</Source>
+                <Target>[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</Target>
+                <SourceFieldId>Time [7C8865D0]</SourceFieldId>
+                <TargetFieldId>0x45175fb8</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</Source>
+                <Target>[InterfaceDescriptorData] 105300f5-a06a-432f-b0c9-17e9b5639269</Target>
+                <SourceFieldId>0xb961137c</SourceFieldId>
+                <TargetFieldId>Time [7C8865D0]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="16">
+        <member Index="0">
+            <EventConnection>
+                <Source>[NfsTimerEntityData] 8e572329-284b-4489-a70b-ea5e32652df8</Source>
+                <Target>[InterfaceDescriptorData] 105300f5-a06a-432f-b0c9-17e9b5639269</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x5f7a2f17</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x5f7a2f17</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[NfsTimerEntityData] dccb8b51-2fee-4629-b3b2-77a401aac563</Source>
+                <Target>[InterfaceDescriptorData] 105300f5-a06a-432f-b0c9-17e9b5639269</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x5f7a2f17</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x5f7a2f17</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[NfsTimerEntityData] dccb8b51-2fee-4629-b3b2-77a401aac563</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Easy [7C7BDC6B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>CountDown [75995CD4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[NfsTimerEntityData] dccb8b51-2fee-4629-b3b2-77a401aac563</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Normal [A8837916]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>CountDown [75995CD4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[NfsTimerEntityData] 8e572329-284b-4489-a70b-ea5e32652df8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Hard [7C8614BA]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>CountDown [75995CD4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[NfsTimerEntityData] 8e572329-284b-4489-a70b-ea5e32652df8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Expert [8C92DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>CountDown [75995CD4]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] d70d5344-bf9c-45fb-b71f-f65f96f72a4d</Source>
+                <Target>[NfsTimerEntityData] dccb8b51-2fee-4629-b3b2-77a401aac563</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Easy [7C7BDC6B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] d70d5344-bf9c-45fb-b71f-f65f96f72a4d</Source>
+                <Target>[NfsTimerEntityData] dccb8b51-2fee-4629-b3b2-77a401aac563</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Normal [A8837916]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] d70d5344-bf9c-45fb-b71f-f65f96f72a4d</Source>
+                <Target>[NfsTimerEntityData] 8e572329-284b-4489-a70b-ea5e32652df8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Hard [7C8614BA]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] d70d5344-bf9c-45fb-b71f-f65f96f72a4d</Source>
+                <Target>[NfsTimerEntityData] 8e572329-284b-4489-a70b-ea5e32652df8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Expert [8C92DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 105300f5-a06a-432f-b0c9-17e9b5639269</Source>
+                <Target>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>CountDown [75995CD4]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 105300f5-a06a-432f-b0c9-17e9b5639269</Source>
+                <Target>[AIDifficultyEventSwitchEntityData] d70d5344-bf9c-45fb-b71f-f65f96f72a4d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Easy [7C7BDC6B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x46833410</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="13">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Normal [A8837916]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x46833410</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="14">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Hard [7C8614BA]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9718601c</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="15">
+            <EventConnection>
+                <Source>[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</Source>
+                <Target>[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Expert [8C92DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x9718601c</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 105300f5-a06a-432f-b0c9-17e9b5639269</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="5">
+        <member Index="0">[NfsTimerEntityData] 8e572329-284b-4489-a70b-ea5e32652df8</member>
+        <member Index="1">[NfsTimerEntityData] dccb8b51-2fee-4629-b3b2-77a401aac563</member>
+        <member Index="2">[AIDifficultyEventSwitchEntityData] ec7a47f7-02a4-4700-bc45-849c69463ded</member>
+        <member Index="3">[AIDifficultyEventSwitchEntityData] d70d5344-bf9c-45fb-b71f-f65f96f72a4d</member>
+        <member Index="4">[SelectFloatEntityData] aa980f8a-0dfa-4b93-b26e-731bbd901d3c</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<NfsTimerEntityData Guid="8e572329-284b-4489-a70b-ea5e32652df8">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Realm>Realm_Client</Realm>
+    <Duration>105</Duration>
+    <CountDown>True</CountDown>
+    <isLooping>False</isLooping>
+</NfsTimerEntityData>
+<NfsTimerEntityData Guid="dccb8b51-2fee-4629-b3b2-77a401aac563">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <Realm>Realm_Client</Realm>
+    <Duration>150</Duration>
+    <CountDown>True</CountDown>
+    <isLooping>False</isLooping>
+</NfsTimerEntityData>
+<SelectFloatEntityData Guid="aa980f8a-0dfa-4b93-b26e-731bbd901d3c">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="2">
+        <member Index="0">
+            <SelectFloatInput>
+                <Name>EasyNormal</Name>
+                <DefaultValue>0</DefaultValue>
+            </SelectFloatInput>
+        </member>
+        <member Index="1">
+            <SelectFloatInput>
+                <Name>HardExpert</Name>
+                <DefaultValue>0</DefaultValue>
+            </SelectFloatInput>
+        </member>
+    </Events>
+</SelectFloatEntityData>

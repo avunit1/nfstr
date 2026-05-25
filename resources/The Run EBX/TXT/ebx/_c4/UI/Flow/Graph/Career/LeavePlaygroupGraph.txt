@@ -1,0 +1,159 @@
+ActionNode d18c97cc-80aa-4405-8def-b5d2d1d2fa27
+	$::UINodeData
+		$::DataContainer
+		Name Leave Playgroup
+		IsRootNode False
+		ParentGraph aeda3009-299e-341e-80db-ef0a48bdba8c
+		ParentIsScreen False
+	ActionKey -1515650939
+	Params *nullArray*
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 94b363ac-38e9-4c12-8d96-169d7ce0b172
+	DataInputs *nullArray*
+	Out eb335d51-0aac-4070-a342-07e7e2a31b2a
+InstanceInputNode 09f21391-cf3a-4845-9e64-1e5893336e5b
+	$::UINodeData
+		$::DataContainer
+		Name In
+		IsRootNode True
+		ParentGraph aeda3009-299e-341e-80db-ef0a48bdba8c
+		ParentIsScreen False
+	Out 0206d965-0eb1-4488-8395-f5d4e6948292
+InstanceOutputNode f22d0711-69c3-4aea-a689-1937d108f692
+	$::UINodeData
+		$::DataContainer
+		Name Out
+		IsRootNode False
+		ParentGraph aeda3009-299e-341e-80db-ef0a48bdba8c
+		ParentIsScreen False
+	In 1b60fa8c-16f8-4627-86b3-9471a76980b3
+	Id 193453899
+StateNode ae76141c-6c4c-4d91-9df0-bd5c3445e5cd
+	$::UINodeData
+		$::DataContainer
+		Name Wait For Leave
+		IsRootNode False
+		ParentGraph aeda3009-299e-341e-80db-ef0a48bdba8c
+		ParentIsScreen False
+	Screen *nullGuid*
+	In 78791461-2817-49ec-87a6-1caf4ecd88b0
+	Inputs *nullArray*
+	Outputs::array
+		member(0) e16ce53e-d816-4bc0-b619-70892c82151d
+		member(1) f35cf877-05eb-46d4-b222-4696fdc21fe7
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+UIGraphAsset aeda3009-299e-341e-80db-ef0a48bdba8c #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/Career/LeavePlaygroupGraph
+	Nodes::array
+		member(0) 09f21391-cf3a-4845-9e64-1e5893336e5b
+		member(1) f22d0711-69c3-4aea-a689-1937d108f692
+		member(2) d18c97cc-80aa-4405-8def-b5d2d1d2fa27
+		member(3) ae76141c-6c4c-4d91-9df0-bd5c3445e5cd
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) eb927221-5f1a-45bf-88df-c09615ee0317
+		member(1) f3381e47-d6ca-4b97-9330-34027b1128cb
+		member(2) c8310950-d859-4f11-a1ee-51ea60339eca
+		member(3) c8644814-7efa-4ccc-8895-77dc21f56639
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/Career/LeavePlaygroupGraph_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList::array
+		member(0) _c4/UI/Flow/Event/OnlineEvents/18875a4c-2ce8-e52d-4754-8eb2a67c3fd1
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading False
+UINodeConnection eb927221-5f1a-45bf-88df-c09615ee0317
+	$::DataContainer
+	SourceNode 09f21391-cf3a-4845-9e64-1e5893336e5b
+	TargetNode d18c97cc-80aa-4405-8def-b5d2d1d2fa27
+	SourcePort 0206d965-0eb1-4488-8395-f5d4e6948292
+	TargetPort 94b363ac-38e9-4c12-8d96-169d7ce0b172
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection f3381e47-d6ca-4b97-9330-34027b1128cb
+	$::DataContainer
+	SourceNode d18c97cc-80aa-4405-8def-b5d2d1d2fa27
+	TargetNode ae76141c-6c4c-4d91-9df0-bd5c3445e5cd
+	SourcePort eb335d51-0aac-4070-a342-07e7e2a31b2a
+	TargetPort 78791461-2817-49ec-87a6-1caf4ecd88b0
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection c8310950-d859-4f11-a1ee-51ea60339eca
+	$::DataContainer
+	SourceNode ae76141c-6c4c-4d91-9df0-bd5c3445e5cd
+	TargetNode f22d0711-69c3-4aea-a689-1937d108f692
+	SourcePort e16ce53e-d816-4bc0-b619-70892c82151d
+	TargetPort 1b60fa8c-16f8-4627-86b3-9471a76980b3
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection c8644814-7efa-4ccc-8895-77dc21f56639
+	$::DataContainer
+	SourceNode ae76141c-6c4c-4d91-9df0-bd5c3445e5cd
+	TargetNode f22d0711-69c3-4aea-a689-1937d108f692
+	SourcePort f35cf877-05eb-46d4-b222-4696fdc21fe7
+	TargetPort 1b60fa8c-16f8-4627-86b3-9471a76980b3
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort 0206d965-0eb1-4488-8395-f5d4e6948292
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 1b60fa8c-16f8-4627-86b3-9471a76980b3
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 94b363ac-38e9-4c12-8d96-169d7ce0b172
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort eb335d51-0aac-4070-a342-07e7e2a31b2a
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 78791461-2817-49ec-87a6-1caf4ecd88b0
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort e16ce53e-d816-4bc0-b619-70892c82151d
+	$::DataContainer
+	Name OnLeavePlaygroupSuccess [Online]
+	InstanceName OnLeavePlaygroupSuccess
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort f35cf877-05eb-46d4-b222-4696fdc21fe7
+	$::DataContainer
+	Name OnLeavePlaygroupFail [Online]
+	InstanceName OnLeavePlaygroupFail
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True

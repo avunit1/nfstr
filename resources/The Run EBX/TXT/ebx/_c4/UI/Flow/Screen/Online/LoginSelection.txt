@@ -1,0 +1,320 @@
+ActionNode ea90845d-3da8-4621-9af2-f12c88f23969
+	$::UINodeData
+		$::DataContainer
+		Name ShowKeyboard (Email)
+		IsRootNode False
+		ParentGraph 0b5ceacb-30e1-d33d-234f-f46d9b39bbbf
+		ParentIsScreen True
+	ActionKey -1012908821
+	Params::array
+		member(0) 4
+		member(1) 48
+		member(2) ID_ACCOUNT_EMAIL_VIRTUAL_KEYBOARD
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey 533691714
+	In 973e97c1-fcad-4b68-a721-00c8097b3564
+	DataInputs *nullArray*
+	Out df774e55-773b-492b-9ed7-3c1fedb02319
+ActionNode 53c05a72-7cd3-4513-a6b7-607bf39a5692
+	$::UINodeData
+		$::DataContainer
+		Name ShowKeyboard (Password)
+		IsRootNode False
+		ParentGraph 0b5ceacb-30e1-d33d-234f-f46d9b39bbbf
+		ParentIsScreen True
+	ActionKey -1012908821
+	Params::array
+		member(0) 3
+		member(1) 16
+		member(2) ID_ACCOUNT_PASSWORD_VIRTUAL_KEYBOARD
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey -1362780591
+	In a967ac36-abaa-48c2-89ae-82324f1afdc7
+	DataInputs *nullArray*
+	Out b5aa788d-eb59-49ef-b671-46d84ca70e89
+UIAccountManagementDataBinding 4ebc4440-a972-46bd-8cfa-f143406dedcc
+	$::UIDataBinding
+		$::DataContainer
+	Message::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Password::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey -1362780591
+	EAInsiderChecked::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	EAShareInfoChecked::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	ErrorDescription::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UIAssociateAccountDataBinding eaefed59-2b6c-492c-90a0-36bfb71d9f4b
+	$::UIDataBinding
+		$::DataContainer
+	Email::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey 746417191
+	Password::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey -1362780591
+	ErrorField::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey 1902394986
+	ErrorMessage::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey 1897488304
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UINodeConnection 424fb2bc-61ab-43af-8fe7-c4708f29eb3d
+	$::DataContainer
+	SourceNode 4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f
+	TargetNode ea90845d-3da8-4621-9af2-f12c88f23969
+	SourcePort 64606fd5-1310-4f28-8311-4ee1d077cbee
+	TargetPort 973e97c1-fcad-4b68-a721-00c8097b3564
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 17e19fe3-63fe-414f-8e56-0e806f7cd6d0
+	$::DataContainer
+	SourceNode 4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f
+	TargetNode 53c05a72-7cd3-4513-a6b7-607bf39a5692
+	SourcePort e4c6e738-1a37-4460-985a-e04c70a0be94
+	TargetPort a967ac36-abaa-48c2-89ae-82324f1afdc7
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort 973e97c1-fcad-4b68-a721-00c8097b3564
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort df774e55-773b-492b-9ed7-3c1fedb02319
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort a967ac36-abaa-48c2-89ae-82324f1afdc7
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort b5aa788d-eb59-49ef-b671-46d84ca70e89
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 64606fd5-1310-4f28-8311-4ee1d077cbee
+	$::DataContainer
+	Name EmailButtonPressed [WidgetLoginForm_01]
+	InstanceName WidgetLoginForm_01
+	Query UIWidgetEventID_OnItemSelected
+	FlowAction Action_Select_Item
+	AllowManualRemove True
+UINodePort e4c6e738-1a37-4460-985a-e04c70a0be94
+	$::DataContainer
+	Name PasswordButtonPressed [WidgetLoginForm_01]
+	InstanceName WidgetLoginForm_01
+	Query UIWidgetEventID_OnItemHighlighted
+	FlowAction Action_Select_Item
+	AllowManualRemove True
+UIScreenAsset 0b5ceacb-30e1-d33d-234f-f46d9b39bbbf #primary instance
+	$::UIGraphAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/UI/Flow/Screen/Online/LoginSelection
+		Nodes::array
+			member(0) ea90845d-3da8-4621-9af2-f12c88f23969
+			member(1) 53c05a72-7cd3-4513-a6b7-607bf39a5692
+			member(2) 4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f
+		GlobalNode *nullGuid*
+		Connections::array
+			member(0) 424fb2bc-61ab-43af-8fe7-c4708f29eb3d
+			member(1) 17e19fe3-63fe-414f-8e56-0e806f7cd6d0
+		AudioEventMappings *nullGuid*
+		BundleAssetName _c4/UI/Flow/Screen/Online/LoginSelection_ResourceBundle
+		AssetList *nullArray*
+		TextureList *nullArray*
+		EventList *nullArray*
+		HighPriority False
+		AdditionalAssets *nullArray*
+		SkipBundleLoading False
+	FocusChange::UIFocusChange
+		IncreaseFocusAction UIInputAction_NavigateDown
+		DecreaseFocusAction UIInputAction_NavigateUp
+	Visibility::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	DefaultVisibility True
+	ExclusiveInput True
+UITextfieldBinding f28505eb-2ab7-428c-a4f1-fc5b3be2ee9d
+	$::UIDataBinding
+		$::DataContainer
+	Text Login Selection
+	Query::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Size 32
+	Alignment UITextFieldAlignment_Left
+	IsSelectable False
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding a0d2dfba-bee6-4dc7-a69a-ce81bc094876
+	$::UIDataBinding
+		$::DataContainer
+	Text Email:
+	Query::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Size 32
+	Alignment UITextFieldAlignment_Left
+	IsSelectable True
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding 61d852e2-1c48-4897-aa58-d64004d62a49
+	$::UIDataBinding
+		$::DataContainer
+	Text Password:
+	Query::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Size 32
+	Alignment UITextFieldAlignment_Left
+	IsSelectable True
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding 355687f9-fc0f-4f46-846b-08e137e05e07
+	$::UIDataBinding
+		$::DataContainer
+	Text 
+	Query::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey 533691714
+	Size 18
+	Alignment UITextFieldAlignment_Left
+	IsSelectable False
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding fbda14e3-328c-473d-bfe0-af71e19b1551
+	$::UIDataBinding
+		$::DataContainer
+	Text 
+	Query::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey -1362780591
+	Size 18
+	Alignment UITextFieldAlignment_Left
+	IsSelectable False
+	IsPassword True
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding 42c71891-e28f-4f04-9ad3-47883a47361c
+	$::UIDataBinding
+		$::DataContainer
+	Text Forgot Password
+	Query::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Size 32
+	Alignment UITextFieldAlignment_Left
+	IsSelectable True
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding 57508fc3-808e-4fd0-b280-9967b411663b
+	$::UIDataBinding
+		$::DataContainer
+	Text Login
+	Query::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Size 32
+	Alignment UITextFieldAlignment_Left
+	IsSelectable True
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding 1baea7a8-4490-46e6-9c07-f6d3c6a27f49
+	$::UIDataBinding
+		$::DataContainer
+	Text Create Account
+	Query::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Size 32
+	Alignment UITextFieldAlignment_Left
+	IsSelectable True
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+UITextfieldBinding 95f05f35-c2d8-49d3-ae17-241e5536a8f2
+	$::UIDataBinding
+		$::DataContainer
+	Text ID_SIGNIN_LOGIN_TO_EAACCOUNT
+	Query::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	Size 32
+	Alignment UITextFieldAlignment_Left
+	IsSelectable False
+	IsPassword False
+	Refresh::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+WidgetNode 4b6ac0dd-bb6e-4a6b-b8bc-1ee1ee39c42f
+	$::UINodeData
+		$::DataContainer
+		Name Login Form
+		IsRootNode False
+		ParentGraph 0b5ceacb-30e1-d33d-234f-f46d9b39bbbf
+		ParentIsScreen True
+	WidgetAsset _c4/UI/Assets/WidgetLoginForm/5f8ba385-e671-583c-84f9-72374e666043
+	FocusIndex 0
+	AlwaysInFocus False
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding eaefed59-2b6c-492c-90a0-36bfb71d9f4b
+	InstanceName WidgetLoginForm_01
+	Visibility::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	DefaultVisibility True
+	WidgetProperties *nullArray*
+	MoviePath Widget/Online/WidgetLoginForm.fla
+	PrevWidgetAsset _c4/UI/Assets/WidgetLoginForm/5f8ba385-e671-583c-84f9-72374e666043
+	Outputs::array
+		member(0) 64606fd5-1310-4f28-8311-4ee1d077cbee
+		member(1) e4c6e738-1a37-4460-985a-e04c70a0be94
+	Inputs *nullArray*

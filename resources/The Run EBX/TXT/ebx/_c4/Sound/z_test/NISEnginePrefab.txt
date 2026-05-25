@@ -1,0 +1,296 @@
+BlackboardParamEntityData e86774dc-89a0-4a3b-bdc6-371f5a7ddcbc
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 1
+	Value 0.0
+	Param BBPL_NISThrottle
+BlackboardParamEntityData 914d70da-4bf4-44a3-9322-5fb58b43f464
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 3
+	Value 0.0
+	Param BBPL_NISRPMRatio
+BlackboardParamEntityData f4dd05c0-f7a0-4cf5-9bec-a3eeba845c36
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 4
+	Value 0.0
+	Param BBPL_NISShiftUp
+BlackboardParamEntityData 4a830138-025f-4357-bd04-9c010f76a3f7
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 8
+	Value 0.0
+	Param BBPL_IsNIS
+BlackboardParamEntityData 2d4b3171-1855-4572-8f8e-bbf58269f3c2
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 10
+	Value 0.0
+	Param BBPL_NISThrottleFade
+DelayEntityData 8efbd8d9-953d-4d25-a8fa-01041a81adc7
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+	Delay 0.10000000149011612
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+InterfaceDescriptorData 2db67826-7f28-4b22-a657-c6e8d13448a4
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -2086054773
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1343512439
+		member(1)::DynamicEvent
+			Id -216055304
+		member(2)::DynamicEvent
+			Id 1815559872
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicPrefabBlueprint e772fe02-e607-e3a4-c704-d04422e731a3 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Sound/z_test/NISEnginePrefab
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source cb613cc5-eaff-422d-9def-df7461984a19
+							Target e1520bf2-289f-4deb-8600-98b6c83837de
+							SourceFieldId 227190399
+							TargetFieldId 2089241862
+						member(1)::PropertyConnection
+							Source e1520bf2-289f-4deb-8600-98b6c83837de
+							Target 914d70da-4bf4-44a3-9322-5fb58b43f464
+							SourceFieldId 177661
+							TargetFieldId 225375086
+						member(2)::PropertyConnection
+							Source e1520bf2-289f-4deb-8600-98b6c83837de
+							Target e86774dc-89a0-4a3b-bdc6-371f5a7ddcbc
+							SourceFieldId 177660
+							TargetFieldId 225375086
+						member(3)::PropertyConnection
+							Source a833fbaa-7be1-4fd1-97cf-3cb2dacaa0ca
+							Target f4dd05c0-f7a0-4cf5-9bec-a3eeba845c36
+							SourceFieldId -1184820356
+							TargetFieldId 225375086
+						member(4)::PropertyConnection
+							Source 359e8a97-a201-4058-8b48-bb9a7ee74386
+							Target 4a830138-025f-4357-bd04-9c010f76a3f7
+							SourceFieldId -1184820356
+							TargetFieldId 225375086
+						member(5)::PropertyConnection
+							Source 2db67826-7f28-4b22-a657-c6e8d13448a4
+							Target cb613cc5-eaff-422d-9def-df7461984a19
+							SourceFieldId -2086054773
+							TargetFieldId -2024647575
+						member(6)::PropertyConnection
+							Source e1520bf2-289f-4deb-8600-98b6c83837de
+							Target 2d4b3171-1855-4572-8f8e-bbf58269f3c2
+							SourceFieldId 177663
+							TargetFieldId 225375086
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 8efbd8d9-953d-4d25-a8fa-01041a81adc7
+						Target a833fbaa-7be1-4fd1-97cf-3cb2dacaa0ca
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1958656348
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 94cb0ec4-dd1f-4346-9aca-e9c10c41ff2b
+						Target 94cb0ec4-dd1f-4346-9aca-e9c10c41ff2b
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 2db67826-7f28-4b22-a657-c6e8d13448a4
+						Target 359e8a97-a201-4058-8b48-bb9a7ee74386
+						SourceEvent::EventSpec
+							Id -216055304
+						TargetEvent::EventSpec
+							Id -400521063
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 2db67826-7f28-4b22-a657-c6e8d13448a4
+						Target 359e8a97-a201-4058-8b48-bb9a7ee74386
+						SourceEvent::EventSpec
+							Id 1815559872
+						TargetEvent::EventSpec
+							Id 378313985
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 2db67826-7f28-4b22-a657-c6e8d13448a4
+						Target 8efbd8d9-953d-4d25-a8fa-01041a81adc7
+						SourceEvent::EventSpec
+							Id -1343512439
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 2db67826-7f28-4b22-a657-c6e8d13448a4
+						Target a833fbaa-7be1-4fd1-97cf-3cb2dacaa0ca
+						SourceEvent::EventSpec
+							Id -1343512439
+						TargetEvent::EventSpec
+							Id -211139428
+						TargetType EventConnectionTargetType_Client
+				Descriptor 2db67826-7f28-4b22-a657-c6e8d13448a4
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 359e8a97-a201-4058-8b48-bb9a7ee74386
+			member(1) e86774dc-89a0-4a3b-bdc6-371f5a7ddcbc
+			member(2) cb613cc5-eaff-422d-9def-df7461984a19
+			member(3) 914d70da-4bf4-44a3-9322-5fb58b43f464
+			member(4) f4dd05c0-f7a0-4cf5-9bec-a3eeba845c36
+			member(5) 8efbd8d9-953d-4d25-a8fa-01041a81adc7
+			member(6) a833fbaa-7be1-4fd1-97cf-3cb2dacaa0ca
+			member(7) e1520bf2-289f-4deb-8600-98b6c83837de
+			member(8) 4a830138-025f-4357-bd04-9c010f76a3f7
+			member(9) 94cb0ec4-dd1f-4346-9aca-e9c10c41ff2b
+			member(10) 2d4b3171-1855-4572-8f8e-bbf58269f3c2
+SelectFloatEntityData 359e8a97-a201-4058-8b48-bb9a7ee74386
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Realm Realm_Client
+	Events::array
+		member(0)::SelectFloatInput
+			Name NISStop
+			DefaultValue 0.0
+		member(1)::SelectFloatInput
+			Name NISStart
+			DefaultValue 1.0
+SelectFloatEntityData a833fbaa-7be1-4fd1-97cf-3cb2dacaa0ca
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 6
+	Realm Realm_Client
+	Events::array
+		member(0)::SelectFloatInput
+			Name NISShiftUpStart
+			DefaultValue 1.0
+		member(1)::SelectFloatInput
+			Name NISShiftUpStop
+			DefaultValue 0.0
+SequenceEntityData 94cb0ec4-dd1f-4346-9aca-e9c10c41ff2b
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 9
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id -1032840096
+			Time 0
+		member(1)::SequenceEventData
+			Event::EventSpec
+				Id -1032840096
+			Time 1628
+	SequenceStartTime 0
+	SequenceLength 5000
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	Realm Realm_Client
+	PropertyTracks *nullArray*
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostSim
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+TransformSplitterEntityData cb613cc5-eaff-422d-9def-df7461984a19
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 2
+	Realm Realm_Client
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+VecSplitterEntityData e1520bf2-289f-4deb-8600-98b6c83837de
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 7
+	Realm Realm_Client
+	Vec3::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	Vec4::Vec4
+		x 0.0
+		y 0.0
+		z 0.0
+		w 0.0

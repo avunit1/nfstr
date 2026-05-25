@@ -1,0 +1,356 @@
+ActionNode 69c13561-89aa-4f3d-be30-6c77a9114038
+	$::UINodeData
+		$::DataContainer
+		Name CheckOnlinePass
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	ActionKey -1527659063
+	Params *nullArray*
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 3a36e2a5-2495-4f5c-9d97-4a55931fdecf
+	DataInputs *nullArray*
+	Out 337a2bfe-6871-4371-8bbc-2e861319dd6e
+ComparisonLogicNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	$::UINodeData
+		$::DataContainer
+		Name Check OnlinePassStatus
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	In 12f96223-0a77-4792-bd8a-1ca8fe49b84d
+	Outputs::array
+		member(0) 10140dfa-ecac-4597-a582-7e7f9c058614
+		member(1) 8fb2d047-4e7c-4136-95aa-2cf6065d0622
+		member(2) 2e80041b-b68c-4d7c-adde-fec4369f7479
+		member(3) 21f7d289-a10d-4b26-8993-c78547ee475a
+		member(4) 571eccc2-8998-4da4-b52c-3015d0f880e9
+		member(5) 61e386ee-f822-4639-8612-8263bd94e64d
+	DataSourceInfo::UIDataSourceInfo
+		DataCategory _c4/UI/UIComponents/NFSUIOnlineComp/c444cff1-9c4c-82ae-4372-7107e958e798
+		DataKey -1728579028
+InstanceInputNode d9882fe3-02e3-42a2-ae1c-235563b6f586
+	$::UINodeData
+		$::DataContainer
+		Name In
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	Out d5bba8db-48e9-4b9f-9bb6-4d3300834e84
+InstanceOutputNode 8afb9cdb-fa2d-4b8e-b31b-6d27047f7411
+	$::UINodeData
+		$::DataContainer
+		Name Full Pass
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	In a706a016-d565-435f-a456-bc0096a049c8
+	Id 685337031
+InstanceOutputNode 5d9cdad9-f830-41eb-a3a4-a6db82a452e8
+	$::UINodeData
+		$::DataContainer
+		Name No Pass
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	In be390eae-4f61-47e6-a332-60d3abdeef64
+	Id -1290056299
+InstanceOutputNode a763238b-9480-4ff6-a9c4-6198785da0e0
+	$::UINodeData
+		$::DataContainer
+		Name Trial Pass
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	In ee00f375-0f1d-4411-803a-a3521f0f7b72
+	Id 705111638
+InstanceOutputNode d36e05cc-6806-4c78-9886-6437a286c6f4
+	$::UINodeData
+		$::DataContainer
+		Name Redownload Pass
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	In 276a737e-718e-4f1a-9463-02a54feb838f
+	Id -265256105
+StateNode 2e2d38e4-16aa-4bb5-a34a-10b37c992b98
+	$::UINodeData
+		$::DataContainer
+		Name Waitting on OnlinePass Check
+		IsRootNode False
+		ParentGraph 008b4590-b839-409d-4e99-c917cc2dc506
+		ParentIsScreen False
+	Screen *nullGuid*
+	In f7b386b8-de6e-445e-872f-5497538f5db9
+	Inputs *nullArray*
+	Outputs::array
+		member(0) 2f015814-3b00-4fe3-be4f-a45379c11926
+		member(1) 52d392b1-2e7a-41e9-9f10-892237dff7ff
+		member(2) ad59e52c-0c19-4599-b59e-8a048e8ed39d
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+UIGraphAsset 008b4590-b839-409d-4e99-c917cc2dc506 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/Online/OnlinePassCheckStatusFullFlow
+	Nodes::array
+		member(0) d9882fe3-02e3-42a2-ae1c-235563b6f586
+		member(1) 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+		member(2) 8afb9cdb-fa2d-4b8e-b31b-6d27047f7411
+		member(3) 5d9cdad9-f830-41eb-a3a4-a6db82a452e8
+		member(4) a763238b-9480-4ff6-a9c4-6198785da0e0
+		member(5) 69c13561-89aa-4f3d-be30-6c77a9114038
+		member(6) 2e2d38e4-16aa-4bb5-a34a-10b37c992b98
+		member(7) d36e05cc-6806-4c78-9886-6437a286c6f4
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) 90d4246d-4858-41df-8c97-1d3621040d4b
+		member(1) 7dc91a7f-5382-45ee-84fc-966e1b2fab72
+		member(2) 42a10d95-6cf6-40c1-9432-5984c5d50016
+		member(3) cff834f4-0c3f-4e76-b5a7-c82a9561dae5
+		member(4) e2631cd6-beac-4bae-b2ed-87f054bc3faf
+		member(5) b9510121-dbbe-40c7-b108-8097633529c9
+		member(6) 2d033d7a-6f27-4d9c-806a-a34506eea04b
+		member(7) beb1596c-1e1d-4305-a484-90f96b3b21fc
+		member(8) 3a7b7cd5-c2ec-43e2-83a4-0c0131492619
+		member(9) b72d60a3-3a16-4c89-a80a-5c9a625f4e04
+		member(10) 287af69d-cf44-469d-8c09-1c4d6e3ab41d
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/Online/OnlinePassCheckStatusFullFlow_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList::array
+		member(0) _c4/UI/Flow/Event/OnlineEvents/18875a4c-2ce8-e52d-4754-8eb2a67c3fd1
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading False
+UINodeConnection 90d4246d-4858-41df-8c97-1d3621040d4b
+	$::DataContainer
+	SourceNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	TargetNode a763238b-9480-4ff6-a9c4-6198785da0e0
+	SourcePort 10140dfa-ecac-4597-a582-7e7f9c058614
+	TargetPort ee00f375-0f1d-4411-803a-a3521f0f7b72
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 7dc91a7f-5382-45ee-84fc-966e1b2fab72
+	$::DataContainer
+	SourceNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	TargetNode 5d9cdad9-f830-41eb-a3a4-a6db82a452e8
+	SourcePort 2e80041b-b68c-4d7c-adde-fec4369f7479
+	TargetPort be390eae-4f61-47e6-a332-60d3abdeef64
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 42a10d95-6cf6-40c1-9432-5984c5d50016
+	$::DataContainer
+	SourceNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	TargetNode 8afb9cdb-fa2d-4b8e-b31b-6d27047f7411
+	SourcePort 21f7d289-a10d-4b26-8993-c78547ee475a
+	TargetPort a706a016-d565-435f-a456-bc0096a049c8
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection cff834f4-0c3f-4e76-b5a7-c82a9561dae5
+	$::DataContainer
+	SourceNode d9882fe3-02e3-42a2-ae1c-235563b6f586
+	TargetNode 69c13561-89aa-4f3d-be30-6c77a9114038
+	SourcePort d5bba8db-48e9-4b9f-9bb6-4d3300834e84
+	TargetPort 3a36e2a5-2495-4f5c-9d97-4a55931fdecf
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection e2631cd6-beac-4bae-b2ed-87f054bc3faf
+	$::DataContainer
+	SourceNode 69c13561-89aa-4f3d-be30-6c77a9114038
+	TargetNode 2e2d38e4-16aa-4bb5-a34a-10b37c992b98
+	SourcePort 337a2bfe-6871-4371-8bbc-2e861319dd6e
+	TargetPort f7b386b8-de6e-445e-872f-5497538f5db9
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection b9510121-dbbe-40c7-b108-8097633529c9
+	$::DataContainer
+	SourceNode 2e2d38e4-16aa-4bb5-a34a-10b37c992b98
+	TargetNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	SourcePort 2f015814-3b00-4fe3-be4f-a45379c11926
+	TargetPort 12f96223-0a77-4792-bd8a-1ca8fe49b84d
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 2d033d7a-6f27-4d9c-806a-a34506eea04b
+	$::DataContainer
+	SourceNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	TargetNode d36e05cc-6806-4c78-9886-6437a286c6f4
+	SourcePort 571eccc2-8998-4da4-b52c-3015d0f880e9
+	TargetPort 276a737e-718e-4f1a-9463-02a54feb838f
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection beb1596c-1e1d-4305-a484-90f96b3b21fc
+	$::DataContainer
+	SourceNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	TargetNode 5d9cdad9-f830-41eb-a3a4-a6db82a452e8
+	SourcePort 61e386ee-f822-4639-8612-8263bd94e64d
+	TargetPort be390eae-4f61-47e6-a332-60d3abdeef64
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 3a7b7cd5-c2ec-43e2-83a4-0c0131492619
+	$::DataContainer
+	SourceNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	TargetNode 5d9cdad9-f830-41eb-a3a4-a6db82a452e8
+	SourcePort 8fb2d047-4e7c-4136-95aa-2cf6065d0622
+	TargetPort be390eae-4f61-47e6-a332-60d3abdeef64
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection b72d60a3-3a16-4c89-a80a-5c9a625f4e04
+	$::DataContainer
+	SourceNode 2e2d38e4-16aa-4bb5-a34a-10b37c992b98
+	TargetNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	SourcePort 52d392b1-2e7a-41e9-9f10-892237dff7ff
+	TargetPort 12f96223-0a77-4792-bd8a-1ca8fe49b84d
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 287af69d-cf44-469d-8c09-1c4d6e3ab41d
+	$::DataContainer
+	SourceNode 2e2d38e4-16aa-4bb5-a34a-10b37c992b98
+	TargetNode 77b81c99-7154-4ad7-be2a-3f93aec04e7e
+	SourcePort ad59e52c-0c19-4599-b59e-8a048e8ed39d
+	TargetPort 12f96223-0a77-4792-bd8a-1ca8fe49b84d
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort d5bba8db-48e9-4b9f-9bb6-4d3300834e84
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 12f96223-0a77-4792-bd8a-1ca8fe49b84d
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 10140dfa-ecac-4597-a582-7e7f9c058614
+	$::DataContainer
+	Name OnlinePassTrialValid
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 8fb2d047-4e7c-4136-95aa-2cf6065d0622
+	$::DataContainer
+	Name OnlinePassTrialExpired
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 2e80041b-b68c-4d7c-adde-fec4369f7479
+	$::DataContainer
+	Name NoOnlinePass
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 21f7d289-a10d-4b26-8993-c78547ee475a
+	$::DataContainer
+	Name OnlinePassFull
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort a706a016-d565-435f-a456-bc0096a049c8
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort be390eae-4f61-47e6-a332-60d3abdeef64
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort ee00f375-0f1d-4411-803a-a3521f0f7b72
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 571eccc2-8998-4da4-b52c-3015d0f880e9
+	$::DataContainer
+	Name OnlinePassFullRedownload
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 61e386ee-f822-4639-8612-8263bd94e64d
+	$::DataContainer
+	Name OnlinePassSkip
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 3a36e2a5-2495-4f5c-9d97-4a55931fdecf
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 337a2bfe-6871-4371-8bbc-2e861319dd6e
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort f7b386b8-de6e-445e-872f-5497538f5db9
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 2f015814-3b00-4fe3-be4f-a45379c11926
+	$::DataContainer
+	Name OnOnlinePassStatusChecked[Online]
+	InstanceName OnOnlinePassStatusChecked
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort 276a737e-718e-4f1a-9463-02a54feb838f
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 52d392b1-2e7a-41e9-9f10-892237dff7ff
+	$::DataContainer
+	Name OnLicensesFetched[Online]
+	InstanceName OnLicensesFetched
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort ad59e52c-0c19-4599-b59e-8a048e8ed39d
+	$::DataContainer
+	Name OnLicensesFetchFailed[Online]
+	InstanceName OnLicensesFetchFailed
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True

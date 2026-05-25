@@ -1,0 +1,62 @@
+<MusicDataAsset Guid="7c626a95-e0d3-4d5b-b760-7fc30599927e">
+    <Name>Select_Car_Temp_Licensed_Music</Name>
+    <Loop>0x00000000</Loop>
+    <BPM>0x00000078</BPM>
+    <BeatsPerBar>0x00000004</BeatsPerBar>
+    <Gain>0</Gain>
+    <Pitch>1</Pitch>
+    <RangeValue>0</RangeValue>
+    <Weight>0x00000000</Weight>
+    <MarkerFileData>nullptr</MarkerFileData>
+    <FollowUpPlayable>nullptr</FollowUpPlayable>
+    <AllowRangeFade>True</AllowRangeFade>
+    <FollowUpCurrent>False</FollowUpCurrent>
+    <LoadMarkerFile>False</LoadMarkerFile>
+    <WaveData>[Ebx] _c4/Sound/Music/Songs/Car_Select/MX_BT_car_select_12_c_uri_garage_loop_bpm120_wave [0a8e9050-a34d-3603-f597-e7d668eec815]</WaveData>
+</MusicDataAsset>
+<MusicPhraseAsset Guid="c845ffb7-3d4a-4171-bc4b-4927825e5426">
+    <Name>Select_Car</Name>
+    <Loop>0x00000001</Loop>
+    <BPM>0x00000082</BPM>
+    <BeatsPerBar>0x00000004</BeatsPerBar>
+    <Gain>0</Gain>
+    <Pitch>1</Pitch>
+    <RangeValue>0</RangeValue>
+    <Weight>0x00000000</Weight>
+    <MarkerFileData>nullptr</MarkerFileData>
+    <FollowUpPlayable>[MusicDataAsset] 7c626a95-e0d3-4d5b-b760-7fc30599927e</FollowUpPlayable>
+    <AllowRangeFade>True</AllowRangeFade>
+    <FollowUpCurrent>False</FollowUpCurrent>
+    <LoadMarkerFile>False</LoadMarkerFile>
+    <SelectionType>PhraseSelectionType_Sequential</SelectionType>
+    <SelectionParameter>nullptr</SelectionParameter>
+    <RangeFade>nullptr</RangeFade>
+    <Collection Count="1">
+        <member Index="0">[MusicDataAsset] 7c626a95-e0d3-4d5b-b760-7fc30599927e</member>
+    </Collection>
+</MusicPhraseAsset>
+<MusicSelectorAsset Guid="ca3569f7-346a-433d-ac49-afe30bfc1569">
+    <Event>[Ebx] _c4/sound/music/chicagoindustrial/mx_chicagoindustrial_12_c_songinterface [bfe813f4-a912-4765-9ba4-36a8eafb02c5]</Event>
+    <TriggerType>EventTriggerType_Interrupt</TriggerType>
+    <Fade>nullptr</Fade>
+    <Playable>[MusicPhraseAsset] c845ffb7-3d4a-4171-bc4b-4927825e5426</Playable>
+    <OverlayCtrl>nullptr</OverlayCtrl>
+    <Transitions Count="0"></Transitions>
+</MusicSelectorAsset>
+<SongAsset Guid="35b05e44-0155-4daa-b2c1-460f9178d8dd">
+    <Name>_c4/Sound/Music/ChicagoIndustrial/MX_ChicagoIndustrial_12_C_SongAsset</Name>
+    <SongInterface>[Ebx] _c4/sound/music/chicagoindustrial/mx_chicagoindustrial_12_c_songinterface [3347bb16-3c95-418f-b97c-54218db462f1]</SongInterface>
+    <NameHash>0x85c2af9a</NameHash>
+    <BPM>0x00000082</BPM>
+    <BeatsPerBar>0x00000004</BeatsPerBar>
+    <Collection Count="1">
+        <member Index="0">[MusicPhraseAsset] c845ffb7-3d4a-4171-bc4b-4927825e5426</member>
+    </Collection>
+    <Overlays Count="0"></Overlays>
+    <Selectors Count="1">
+        <member Index="0">[MusicSelectorAsset] ca3569f7-346a-433d-ac49-afe30bfc1569</member>
+    </Selectors>
+    <GenericTransitions Count="0"></GenericTransitions>
+    <ChannelCount>2</ChannelCount>
+    <OverlayChannelCount>0</OverlayChannelCount>
+</SongAsset>

@@ -1,0 +1,125 @@
+BBMapToCurve ebe1a3ed-ad77-40bd-b147-b4020846ea8c
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x -90.0
+					y 1.0
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x -37.2044563293457
+					y 1.0
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x 0.38730746507644653
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 36.08049774169922
+					y 1.0
+				LineType Linear
+			member(4)::MultiPointLinePoint
+				Point::Vec2
+					x 90.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+BBMapToCurve 148135a8-499b-47e9-84a0-849c117d3a0e
+	$::BBMap
+		$::DataContainer
+		NumInputsRequired 1
+	Curve::MultiPointLine
+		Points::array
+			member(0)::MultiPointLinePoint
+				Point::Vec2
+					x -90.0
+					y 1.0
+				LineType Linear
+			member(1)::MultiPointLinePoint
+				Point::Vec2
+					x -36.44502639770508
+					y 1.0
+				LineType Linear
+			member(2)::MultiPointLinePoint
+				Point::Vec2
+					x -0.751836895942688
+					y 1.2365307000550274e-08
+				LineType Linear
+			member(3)::MultiPointLinePoint
+				Point::Vec2
+					x 36.08049774169922
+					y 1.0
+				LineType Linear
+			member(4)::MultiPointLinePoint
+				Point::Vec2
+					x 90.0
+					y 1.0
+				LineType Linear
+	OutputIsXTimesY False
+	ClampOutput False
+	ClampOutputMin 0.0
+	ClampOutputMax 1.0
+LevelBlackboardMap 4cbb94a2-addc-41ae-a4f0-edd398a8008f
+	$::DataContainer
+	BlackboardField1 LocalPlayerLatSlip
+	BlackboardField2 
+	BlackboardMapping ebe1a3ed-ad77-40bd-b147-b4020846ea8c
+LevelBlackboardMap c7db21d6-2738-4886-8954-65b18000f4cc
+	$::DataContainer
+	BlackboardField1 LocalPlayerLatSlip
+	BlackboardField2 
+	BlackboardMapping 148135a8-499b-47e9-84a0-849c117d3a0e
+RumbleAsset aad1f15d-9a04-42d3-8ba0-21f305526595 #primary instance
+	$::ControllerEffectAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Effects/_Rumble/Surfaces/Default_Slip_Rumble
+	LowActuator::array
+		member(0)::RumbleData
+			Amplitude 0.22829581797122955
+			Frequency 1.0
+			Offset 0.0
+			Base 0.022508040070533752
+			WaveKind RWK_Sine
+			Blend RBK_Add
+			Invert False
+			Delay 0.0
+			Duration 0.0
+			Enabled True
+		member(1)::RumbleData
+			Amplitude 0.1639871448278427
+			Frequency 1.0
+			Offset 2.522782564163208
+			Base 0.012861732393503189
+			WaveKind RWK_Triangle
+			Blend RBK_Add
+			Invert False
+			Delay 0.0
+			Duration 0.0
+			Enabled True
+	HighActuator::array
+		member(0)::RumbleData
+			Amplitude 0.24115756154060364
+			Frequency 2.659808874130249
+			Offset 0.0
+			Base 0.03858520835638046
+			WaveKind RWK_Sine
+			Blend RBK_None
+			Invert False
+			Delay 0.0
+			Duration 0.0
+			Enabled True
+	GlobalScalar *nullGuid*
+	HighAmplitudeScalar c7db21d6-2738-4886-8954-65b18000f4cc
+	HighFrequencyScalar *nullGuid*
+	LowAmplitudeScalar 4cbb94a2-addc-41ae-a4f0-edd398a8008f
+	LowFrequencyScalar *nullGuid*

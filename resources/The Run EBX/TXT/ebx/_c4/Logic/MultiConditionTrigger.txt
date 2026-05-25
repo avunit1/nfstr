@@ -1,0 +1,183 @@
+BoolEntityData ead7ee94-bf62-4695-a397-c23d86638258
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Realm Realm_Client
+	DefaultValue False
+BoolEntityData 95691917-23e7-48ef-beb2-6708e3912c56
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	Realm Realm_Client
+	DefaultValue False
+BoolToFloatEntityData 8c766e16-2c25-4f0c-a19e-fb3fe40b48f4
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 3
+	Realm Realm_Client
+	In False
+BoolToFloatEntityData 4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 5
+	Realm Realm_Client
+	In False
+FloatTriggerEntityData 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 0
+	Realm Realm_Client
+	ExitOffset 0.0
+	CheckOnEnable False
+	UseClampedValue False
+	ClampedValue 0.0
+	Enable True
+	Min -1.0
+	Max 0.5
+	In 0.0
+InterfaceDescriptorData bac30deb-5943-4cbc-a90a-c4e87f0145b9
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1634539374
+		member(1)::DynamicEvent
+			Id -1869365467
+		member(2)::DynamicEvent
+			Id 1676111821
+		member(3)::DynamicEvent
+			Id -502279386
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1694376471
+		member(1)::DynamicEvent
+			Id 481804407
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicPrefabBlueprint 81d858ed-54c8-4ae3-cc29-f31febf03520 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Logic/MultiConditionTrigger
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source ead7ee94-bf62-4695-a397-c23d86638258
+							Target 4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867
+							SourceFieldId 225375086
+							TargetFieldId 5862146
+						member(1)::PropertyConnection
+							Source 95691917-23e7-48ef-beb2-6708e3912c56
+							Target 8c766e16-2c25-4f0c-a19e-fb3fe40b48f4
+							SourceFieldId 225375086
+							TargetFieldId 5862146
+						member(2)::PropertyConnection
+							Source 4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867
+							Target 1cd5196e-6d19-43f2-af6f-e10ccfd1564f
+							SourceFieldId 193453899
+							TargetFieldId 193450867
+						member(3)::PropertyConnection
+							Source 8c766e16-2c25-4f0c-a19e-fb3fe40b48f4
+							Target 1cd5196e-6d19-43f2-af6f-e10ccfd1564f
+							SourceFieldId 193453899
+							TargetFieldId 193450866
+						member(4)::PropertyConnection
+							Source 1cd5196e-6d19-43f2-af6f-e10ccfd1564f
+							Target 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6
+							SourceFieldId 193453899
+							TargetFieldId 5862146
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source bac30deb-5943-4cbc-a90a-c4e87f0145b9
+						Target 95691917-23e7-48ef-beb2-6708e3912c56
+						SourceEvent::EventSpec
+							Id 1634539374
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source bac30deb-5943-4cbc-a90a-c4e87f0145b9
+						Target 95691917-23e7-48ef-beb2-6708e3912c56
+						SourceEvent::EventSpec
+							Id -1869365467
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source bac30deb-5943-4cbc-a90a-c4e87f0145b9
+						Target ead7ee94-bf62-4695-a397-c23d86638258
+						SourceEvent::EventSpec
+							Id 1676111821
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source bac30deb-5943-4cbc-a90a-c4e87f0145b9
+						Target ead7ee94-bf62-4695-a397-c23d86638258
+						SourceEvent::EventSpec
+							Id -502279386
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6
+						Target bac30deb-5943-4cbc-a90a-c4e87f0145b9
+						SourceEvent::EventSpec
+							Id 1694376471
+						TargetEvent::EventSpec
+							Id 1694376471
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6
+						Target bac30deb-5943-4cbc-a90a-c4e87f0145b9
+						SourceEvent::EventSpec
+							Id 481804407
+						TargetEvent::EventSpec
+							Id 481804407
+						TargetType EventConnectionTargetType_Client
+				Descriptor bac30deb-5943-4cbc-a90a-c4e87f0145b9
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 7eaaf49f-608b-491d-a5aa-2fd5967b1ae6
+			member(1) 1cd5196e-6d19-43f2-af6f-e10ccfd1564f
+			member(2) ead7ee94-bf62-4695-a397-c23d86638258
+			member(3) 8c766e16-2c25-4f0c-a19e-fb3fe40b48f4
+			member(4) 95691917-23e7-48ef-beb2-6708e3912c56
+			member(5) 4e7d9ff5-c9c8-4b5a-86b4-150d5be4e867
+MathOpEntityData 1cd5196e-6d19-43f2-af6f-e10ccfd1564f
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 1
+	Realm Realm_Client
+	Operators::array
+		member(0) *nullEnum*

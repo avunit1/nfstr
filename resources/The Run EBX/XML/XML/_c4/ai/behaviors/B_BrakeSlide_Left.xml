@@ -1,0 +1,124 @@
+<BTIfNode Guid="698d92e8-834e-4a98-ac59-74933c33a5fa">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] 07718560-1a78-492a-958e-0a52a523b430</member>
+    </Nodes>
+    <Eval>[BT_IsVar] 9c0a225c-c536-4dbd-8502-51acd328467d</Eval>
+</BTIfNode>
+<BTIfNode Guid="1a0779a3-e4a7-47b8-8387-6632878f4ed2">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] c65e46e5-ae94-4b5a-af08-561acdb2cd08</member>
+    </Nodes>
+    <Eval>[BT_IsVar] abc827a4-e7fd-41c6-8bb4-f43e669ae494</Eval>
+</BTIfNode>
+<BTSelectorNode Guid="053fb344-b5a0-489d-b0e2-b48ddc31a4c3">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTIfNode] 698d92e8-834e-4a98-ac59-74933c33a5fa</member>
+        <member Index="1">[BTSequenceNode] 14efb242-16a3-46a8-b639-277d9d7db1ed</member>
+    </Nodes>
+</BTSelectorNode>
+<BTSequenceNode Guid="14efb242-16a3-46a8-b639-277d9d7db1ed">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="4">
+        <member Index="0">[BTTaskNode] ca52183a-e405-48c4-ac72-621bb07df012</member>
+        <member Index="1">[BTWrapperNode] d79d8bcd-2c74-4084-a7b1-580930f8a957</member>
+        <member Index="2">[BTTaskNode] c27a5e51-1774-422e-be84-ea6412ceed22</member>
+        <member Index="3">[BTTaskNode] df61874f-f525-4209-a345-272761a26b70</member>
+    </Nodes>
+</BTSequenceNode>
+<BTTaskNode Guid="c27a5e51-1774-422e-be84-ea6412ceed22">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoOverrideLocomotion] d1abcb7f-28d6-46a1-8a61-5dca44e1c040</Task>
+</BTTaskNode>
+<BTTaskNode Guid="df61874f-f525-4209-a345-272761a26b70">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoOverrideLocomotion] 066155d0-6239-4b2f-9b76-4b71f825cae2</Task>
+</BTTaskNode>
+<BTTaskNode Guid="ca52183a-e405-48c4-ac72-621bb07df012">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoOverrideLocomotion] f0d17d77-671e-4f17-9f7b-305429b54932</Task>
+</BTTaskNode>
+<BTTaskNode Guid="c65e46e5-ae94-4b5a-af08-561acdb2cd08">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoOverrideLocomotion] b10cb348-c9ff-4aad-bc82-a69db5a6aa17</Task>
+</BTTaskNode>
+<BTTaskNode Guid="07718560-1a78-492a-958e-0a52a523b430">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 2b7f80fe-dc3c-49d4-b88f-94efec435b17</Task>
+</BTTaskNode>
+<BTWrapperNode Guid="d79d8bcd-2c74-4084-a7b1-580930f8a957">
+    <NodeType>ENodeType_Wrapper</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTIfNode] 1a0779a3-e4a7-47b8-8387-6632878f4ed2</member>
+    </Nodes>
+    <ReturnTrue>True</ReturnTrue>
+</BTWrapperNode>
+<BT_DoMoveStyle Guid="2b7f80fe-dc3c-49d4-b88f-94efec435b17">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoOverrideLocomotion Guid="d1abcb7f-28d6-46a1-8a61-5dca44e1c040">
+    <FuncType>EFuncType_Task</FuncType>
+    <LocomotionParam>ELocomotion_Handbrake</LocomotionParam>
+    <OverrideValue>1</OverrideValue>
+</BT_DoOverrideLocomotion>
+<BT_DoOverrideLocomotion Guid="066155d0-6239-4b2f-9b76-4b71f825cae2">
+    <FuncType>EFuncType_Task</FuncType>
+    <LocomotionParam>ELocomotion_Steering</LocomotionParam>
+    <OverrideValue>-1</OverrideValue>
+</BT_DoOverrideLocomotion>
+<BT_DoOverrideLocomotion Guid="f0d17d77-671e-4f17-9f7b-305429b54932">
+    <FuncType>EFuncType_Task</FuncType>
+    <LocomotionParam>ELocomotion_Throttle</LocomotionParam>
+    <OverrideValue>0</OverrideValue>
+</BT_DoOverrideLocomotion>
+<BT_DoOverrideLocomotion Guid="b10cb348-c9ff-4aad-bc82-a69db5a6aa17">
+    <FuncType>EFuncType_Task</FuncType>
+    <LocomotionParam>ELocomotion_Brake</LocomotionParam>
+    <OverrideValue>1</OverrideValue>
+</BT_DoOverrideLocomotion>
+<BT_IsVar Guid="9c0a225c-c536-4dbd-8502-51acd328467d">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <Variable>EVar_Speed</Variable>
+    <Value>1</Value>
+    <Comparator>Compare_LessThan</Comparator>
+    <Absolute>True</Absolute>
+</BT_IsVar>
+<BT_IsVar Guid="abc827a4-e7fd-41c6-8bb4-f43e669ae494">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Self</Context>
+    <Variable>EVar_Speed</Variable>
+    <Value>5</Value>
+    <Comparator>Compare_MoreThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BehaviourTreeData Guid="b9e33f90-00fb-4706-9939-7fb7172f80ee">
+    <Name>_c4/AI/Behaviors/B_BrakeSlide_Left</Name>
+    <Root>[BTSelectorNode] 053fb344-b5a0-489d-b0e2-b48ddc31a4c3</Root>
+    <Description></Description>
+</BehaviourTreeData>

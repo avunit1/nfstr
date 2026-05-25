@@ -1,0 +1,424 @@
+<ActionNode Guid="cb0cdc11-00e8-456b-a9d9-524dd769a081">
+    <Name>Frontend Set Playlist</Name>
+    <ParentGraph>[UIScreenAsset] 43559d1d-b3cb-ba88-3589-135fe7ea8390</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <ActionKey>0xb3072ab0</ActionKey>
+    <Params Count="0"></Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] fb6957c9-0f47-4780-915c-9762029d8cb2</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] 197b1a51-7351-4205-83a7-6373063b42c0</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<ActionNode Guid="d38f7006-1181-429f-bccc-7116a62e2708">
+    <Name>Update Playlist Desc</Name>
+    <ParentGraph>[UIScreenAsset] 43559d1d-b3cb-ba88-3589-135fe7ea8390</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <ActionKey>0x71c84254</ActionKey>
+    <Params Count="0"></Params>
+    <ActionAsset>nullptr</ActionAsset>
+    <In>[UINodePort] a0c02668-eb47-4c73-899e-7b5710ac7df4</In>
+    <ActionDataSource>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ActionDataSource>
+    <Out>[UINodePort] c51ac97c-b56d-4c54-9515-15caab869ccb</Out>
+    <DataInputs Count="0"></DataInputs>
+    <AppendIncomingParams>False</AppendIncomingParams>
+</ActionNode>
+<UICarouselDataBinding Guid="d6956cfb-a2ff-4229-b227-0de03f733e5e">
+    <CarouselType>CarouselType_Playlist</CarouselType>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0xd936a16b</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <DataUpdate>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0xd5c71cfd</DataKey>
+        </UIDataSourceInfo>
+    </DataUpdate>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <SelectedIndex>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0xa0d3deec</DataKey>
+        </UIDataSourceInfo>
+    </SelectedIndex>
+</UICarouselDataBinding>
+<UINodeConnection Guid="30e22670-423d-4e25-88d6-cd76f8e9d042">
+    <SourceNode>[WidgetNode] c57a901f-bd99-4b62-b386-e5c92ab6d6d6</SourceNode>
+    <TargetNode>[ActionNode] cb0cdc11-00e8-456b-a9d9-524dd769a081</TargetNode>
+    <SourcePort>[UINodePort] b6a02843-9ba9-43a1-a5c8-07d405f302fe</SourcePort>
+    <TargetPort>[UINodePort] fb6957c9-0f47-4780-915c-9762029d8cb2</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodeConnection Guid="b4af0eaf-0e06-46bf-a67c-c9ac6cb33e73">
+    <SourceNode>[WidgetNode] c57a901f-bd99-4b62-b386-e5c92ab6d6d6</SourceNode>
+    <TargetNode>[ActionNode] d38f7006-1181-429f-bccc-7116a62e2708</TargetNode>
+    <SourcePort>[UINodePort] b6a02843-9ba9-43a1-a5c8-07d405f302fe</SourcePort>
+    <TargetPort>[UINodePort] a0c02668-eb47-4c73-899e-7b5710ac7df4</TargetPort>
+    <NumScreensToPop>0x00000000</NumScreensToPop>
+    <RemoveScreens Count="0"></RemoveScreens>
+    <ScreenLevel>UIScreenLevel_Normal</ScreenLevel>
+</UINodeConnection>
+<UINodePort Guid="fb6957c9-0f47-4780-915c-9762029d8cb2">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="197b1a51-7351-4205-83a7-6373063b42c0">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="b6a02843-9ba9-43a1-a5c8-07d405f302fe">
+    <Name>OptionHighlighted [Widget_Carousel_01]</Name>
+    <InstanceName>Widget_Carousel_01</InstanceName>
+    <Query>UIWidgetEventID_OnItemHighlighted</Query>
+    <FlowAction>Action_Wait_Infinite</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="a0c02668-eb47-4c73-899e-7b5710ac7df4">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UINodePort Guid="c51ac97c-b56d-4c54-9515-15caab869ccb">
+    <Name></Name>
+    <InstanceName></InstanceName>
+    <Query>UIWidgetEventID_None</Query>
+    <FlowAction>Action_Input_A</FlowAction>
+    <AllowManualRemove>True</AllowManualRemove>
+</UINodePort>
+<UIRaceInfoDataBinding Guid="00d61d74-4bc8-4e86-896a-aaf664c1f379">
+    <RaceInfoType>UIRaceInfoType_Playlist</RaceInfoType>
+    <ChallengeHeader>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeHeader>
+    <ChallengeMeadalsEarnedText>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeMeadalsEarnedText>
+    <ChallengeBronzeMedals>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeBronzeMedals>
+    <ChallengeSilverMedals>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeSilverMedals>
+    <ChallengeGoldMedals>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeGoldMedals>
+    <ChallengePlatinumMedals>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengePlatinumMedals>
+    <ChallengeRecommendsLongText>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeRecommendsLongText>
+    <ChallengeRecommendsLongTextIsHighlighted>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeRecommendsLongTextIsHighlighted>
+    <ChallengeSelect_ChallengeInfo>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </ChallengeSelect_ChallengeInfo>
+    <PlaylistTitle>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0x9d61ca22</DataKey>
+        </UIDataSourceInfo>
+    </PlaylistTitle>
+    <PlaylistUserCount>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0x51c3ba9a</DataKey>
+        </UIDataSourceInfo>
+    </PlaylistUserCount>
+    <PlaylistDescription>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0x17ccd344</DataKey>
+        </UIDataSourceInfo>
+    </PlaylistDescription>
+    <ObjectiveProgression>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIPlaylistComp [110617f4-813c-0559-584e-5b4bd0e69b90]</DataCategory>
+            <DataKey>0x99378013</DataKey>
+        </UIDataSourceInfo>
+    </ObjectiveProgression>
+    <RewardInfo>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] _c4/UI/UIComponents/NFSUIPlaylistComp [110617f4-813c-0559-584e-5b4bd0e69b90]</DataCategory>
+            <DataKey>0x0f54c68f</DataKey>
+        </UIDataSourceInfo>
+    </RewardInfo>
+    <IsLocked>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0x2e40a072</DataKey>
+        </UIDataSourceInfo>
+    </IsLocked>
+    <HowToUnlock>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0xfcf9c0b9</DataKey>
+        </UIDataSourceInfo>
+    </HowToUnlock>
+    <SessionTitle>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </SessionTitle>
+    <SessionTier>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </SessionTier>
+    <SessionBonusDescription>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </SessionBonusDescription>
+    <SessionBonusXP>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </SessionBonusXP>
+    <SessionBonusIcon>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </SessionBonusIcon>
+    <SessionRaceList>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </SessionRaceList>
+    <SessionImage>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </SessionImage>
+    <ToggleTitle></ToggleTitle>
+    <OnToggleChange>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </OnToggleChange>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0x655bdaf0</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+</UIRaceInfoDataBinding>
+<UIScreenAsset Guid="43559d1d-b3cb-ba88-3589-135fe7ea8390">
+    <Name>_c4/UI/Flow/Screen/Playlist/PlaylistSelect</Name>
+    <Nodes Count="5">
+        <member Index="0">[WidgetNode] c57a901f-bd99-4b62-b386-e5c92ab6d6d6</member>
+        <member Index="1">[WidgetNode] 77b185c8-5668-418d-94b9-89ce274a76f5</member>
+        <member Index="2">[ActionNode] cb0cdc11-00e8-456b-a9d9-524dd769a081</member>
+        <member Index="3">[ActionNode] d38f7006-1181-429f-bccc-7116a62e2708</member>
+        <member Index="4">[WidgetNode] 3c538f6a-5e47-4124-8818-37ec7c86c7ff</member>
+    </Nodes>
+    <GlobalNode>nullptr</GlobalNode>
+    <Connections Count="2">
+        <member Index="0">[UINodeConnection] 30e22670-423d-4e25-88d6-cd76f8e9d042</member>
+        <member Index="1">[UINodeConnection] b4af0eaf-0e06-46bf-a67c-c9ac6cb33e73</member>
+    </Connections>
+    <AudioEventMappings>nullptr</AudioEventMappings>
+    <BundleAssetName>_c4/UI/Flow/Screen/Playlist/PlaylistSelect_ResourceBundle</BundleAssetName>
+    <AssetList Count="0"></AssetList>
+    <TextureList Count="0"></TextureList>
+    <EventList Count="0"></EventList>
+    <AdditionalAssets Count="0"></AdditionalAssets>
+    <HighPriority>False</HighPriority>
+    <SkipBundleLoading>False</SkipBundleLoading>
+    <FocusChange>
+        <UIFocusChange>
+            <IncreaseFocusAction>UIInputAction_None</IncreaseFocusAction>
+            <DecreaseFocusAction>UIInputAction_None</DecreaseFocusAction>
+        </UIFocusChange>
+    </FocusChange>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <DefaultVisibility>True</DefaultVisibility>
+    <ExclusiveInput>True</ExclusiveInput>
+</UIScreenAsset>
+<UIWidgetListDataBinding Guid="4854eaae-26f3-4fed-9fec-e52135367d6b">
+    <StaticNType>0x00000003</StaticNType>
+    <DynamicNType>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </DynamicNType>
+    <Query>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0xd90060f8</DataKey>
+        </UIDataSourceInfo>
+    </Query>
+    <OnToggleChange>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </OnToggleChange>
+    <DataUpdate>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0xd070f046</DataKey>
+        </UIDataSourceInfo>
+    </DataUpdate>
+    <Refresh>
+        <UIDataSourceInfo>
+            <DataCategory>[Ebx] BadRef 7424da82-d664-11df-bec9-948ded9c1923/e2121a86-03fb-f912-c50d-2ea599ce5933</DataCategory>
+            <DataKey>0xd90060f8</DataKey>
+        </UIDataSourceInfo>
+    </Refresh>
+    <ToggleTitle></ToggleTitle>
+    <HandleInComponent>False</HandleInComponent>
+</UIWidgetListDataBinding>
+<WidgetNode Guid="c57a901f-bd99-4b62-b386-e5c92ab6d6d6">
+    <Name>Carousel</Name>
+    <ParentGraph>[UIScreenAsset] 43559d1d-b3cb-ba88-3589-135fe7ea8390</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <WidgetAsset>[Ebx] _c4/UI/Assets/Widget_Carousel [3acac666-efa0-3995-9f7a-f46b9d23afdd]</WidgetAsset>
+    <FocusIndex>0x00000000</FocusIndex>
+    <InstanceName>Widget_Carousel_01</InstanceName>
+    <VerticalAlign>WVA_Center</VerticalAlign>
+    <HorisontalAlign>WHA_Center</HorisontalAlign>
+    <ZDepthLevel>0x00000000</ZDepthLevel>
+    <DataBinding>[UICarouselDataBinding] d6956cfb-a2ff-4229-b227-0de03f733e5e</DataBinding>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <MoviePath>Widget/Widget_Carousel.fla</MoviePath>
+    <Inputs Count="0"></Inputs>
+    <WidgetProperties Count="0"></WidgetProperties>
+    <PrevWidgetAsset>[Ebx] _c4/UI/Assets/Widget_Carousel [3acac666-efa0-3995-9f7a-f46b9d23afdd]</PrevWidgetAsset>
+    <Outputs Count="1">
+        <member Index="0">[UINodePort] b6a02843-9ba9-43a1-a5c8-07d405f302fe</member>
+    </Outputs>
+    <DefaultVisibility>True</DefaultVisibility>
+    <AlwaysInFocus>False</AlwaysInFocus>
+</WidgetNode>
+<WidgetNode Guid="77b185c8-5668-418d-94b9-89ce274a76f5">
+    <Name>Playgroup Members</Name>
+    <ParentGraph>[UIScreenAsset] 43559d1d-b3cb-ba88-3589-135fe7ea8390</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <WidgetAsset>[Ebx] _c4/UI/Assets/Widget_List [b40660aa-cc3d-6c51-708b-ba12f0a8a419]</WidgetAsset>
+    <FocusIndex>0x00000000</FocusIndex>
+    <InstanceName>Widget_List_01</InstanceName>
+    <VerticalAlign>WVA_Center</VerticalAlign>
+    <HorisontalAlign>WHA_Center</HorisontalAlign>
+    <ZDepthLevel>0x00000000</ZDepthLevel>
+    <DataBinding>[UIWidgetListDataBinding] 4854eaae-26f3-4fed-9fec-e52135367d6b</DataBinding>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <MoviePath>Widget/Widget_List.fla</MoviePath>
+    <Inputs Count="0"></Inputs>
+    <WidgetProperties Count="0"></WidgetProperties>
+    <PrevWidgetAsset>[Ebx] _c4/UI/Assets/Widget_List [b40660aa-cc3d-6c51-708b-ba12f0a8a419]</PrevWidgetAsset>
+    <Outputs Count="0"></Outputs>
+    <DefaultVisibility>True</DefaultVisibility>
+    <AlwaysInFocus>False</AlwaysInFocus>
+</WidgetNode>
+<WidgetNode Guid="3c538f6a-5e47-4124-8818-37ec7c86c7ff">
+    <Name>Race Info</Name>
+    <ParentGraph>[UIScreenAsset] 43559d1d-b3cb-ba88-3589-135fe7ea8390</ParentGraph>
+    <IsRootNode>False</IsRootNode>
+    <ParentIsScreen>True</ParentIsScreen>
+    <WidgetAsset>[Ebx] _c4/UI/Assets/Widget_Race_Info [10ec5d80-f472-5188-0ad4-57ce831e3c68]</WidgetAsset>
+    <FocusIndex>0x00000000</FocusIndex>
+    <InstanceName>Widget_Race_Info_01</InstanceName>
+    <VerticalAlign>WVA_Center</VerticalAlign>
+    <HorisontalAlign>WHA_Center</HorisontalAlign>
+    <ZDepthLevel>0x00000000</ZDepthLevel>
+    <DataBinding>[UIRaceInfoDataBinding] 00d61d74-4bc8-4e86-896a-aaf664c1f379</DataBinding>
+    <Visibility>
+        <UIDataSourceInfo>
+            <DataCategory>nullptr</DataCategory>
+            <DataKey>0x00000000</DataKey>
+        </UIDataSourceInfo>
+    </Visibility>
+    <MoviePath>Widget/Widget_Race_Info.fla</MoviePath>
+    <Inputs Count="0"></Inputs>
+    <WidgetProperties Count="0"></WidgetProperties>
+    <PrevWidgetAsset>[Ebx] _c4/UI/Assets/Widget_Race_Info [10ec5d80-f472-5188-0ad4-57ce831e3c68]</PrevWidgetAsset>
+    <Outputs Count="0"></Outputs>
+    <DefaultVisibility>True</DefaultVisibility>
+    <AlwaysInFocus>False</AlwaysInFocus>
+</WidgetNode>

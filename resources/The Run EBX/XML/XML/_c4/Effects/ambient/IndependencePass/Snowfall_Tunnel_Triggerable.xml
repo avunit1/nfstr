@@ -1,0 +1,122 @@
+<ClientAreaTriggerEntityData Guid="e70a8f8c-3bd6-42a6-a211-dbbb3dc71df9">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>-0,2655449</x>
+                    <y>0,2851477</y>
+                    <z>0,1284733</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>0</RuntimeComponentCount>
+    <GeometryScale>
+        <Vec3>
+            <x>200</x>
+            <y>200</y>
+            <z>200</z>
+        </Vec3>
+    </GeometryScale>
+    <GeometryType>SimpleAreaTriggerGeometryType_Sphere</GeometryType>
+</ClientAreaTriggerEntityData>
+<EffectReferenceObjectData Guid="0582ee96-4928-4f20-b68d-50277fcb4c8d">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Ambient/IndependencePass/AMB_Snowfall_Tunnel_Entrance [0771fab2-c57b-919f-3096-1eeb36985abf]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>True</AutoStart>
+</EffectReferenceObjectData>
+<SpatialPrefabBlueprint Guid="e24f710b-077f-4615-a83f-f95531cf9f79">
+    <Name>_c4/Effects/Ambient/IndependencePass/Snowfall_Tunnel_Triggerable</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="1">
+        <member Index="0">
+            <EventConnection>
+                <Source>[ClientAreaTriggerEntityData] e70a8f8c-3bd6-42a6-a211-dbbb3dc71df9</Source>
+                <Target>[EffectReferenceObjectData] 0582ee96-4928-4f20-b68d-50277fcb4c8d</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnEnter [FB35AD6C]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>nullptr</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>False</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[ClientAreaTriggerEntityData] e70a8f8c-3bd6-42a6-a211-dbbb3dc71df9</member>
+        <member Index="1">[EffectReferenceObjectData] 0582ee96-4928-4f20-b68d-50277fcb4c8d</member>
+    </Objects>
+</SpatialPrefabBlueprint>

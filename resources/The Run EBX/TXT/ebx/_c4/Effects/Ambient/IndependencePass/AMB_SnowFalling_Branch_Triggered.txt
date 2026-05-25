@@ -1,0 +1,122 @@
+ClientAreaTriggerEntityData 9b9b7d44-4967-41db-bc5c-a263beb8ec0b
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 2
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	GeometryType SimpleAreaTriggerGeometryType_Sphere
+	GeometryScale::Vec3
+		x 250.0
+		y 250.0
+		z 250.0
+EffectReferenceObjectData d39a62d8-1d06-466e-84eb-b9f429bce83a
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint _c4/Effects/Ambient/IndependencePass/AMB_SnowFalling_Branch/2b5be075-cd13-4162-9020-2f4ee6429fe7
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+EffectReferenceObjectData 30af2cae-7ef9-4aea-8427-a7ddba3f98cd
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.496978759765625
+				y 0.0
+				z -0.5489284992218018
+		Blueprint _c4/Effects/Gameplay/Checkpoint_Marker_Smoke/e685a42c-23b3-e884-c281-7eb5e83a9b1e
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+SpatialPrefabBlueprint cc54d487-872e-5a78-5e63-372e1e9fd0d9 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Ambient/IndependencePass/AMB_SnowFalling_Branch_Triggered
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 9b9b7d44-4967-41db-bc5c-a263beb8ec0b
+						Target d39a62d8-1d06-466e-84eb-b9f429bce83a
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Objects::array
+			member(0) d39a62d8-1d06-466e-84eb-b9f429bce83a
+			member(1) 30af2cae-7ef9-4aea-8427-a7ddba3f98cd
+			member(2) 9b9b7d44-4967-41db-bc5c-a263beb8ec0b

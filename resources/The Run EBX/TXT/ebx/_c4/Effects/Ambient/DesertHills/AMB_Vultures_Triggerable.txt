@@ -1,0 +1,173 @@
+ClientAreaTriggerEntityData aaac097c-36ff-4b78-8bb8-e3f2d0fde1a9
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 3
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -0.2655448913574219
+					y 0.28514766693115234
+					z 0.12847328186035156
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	GeometryType SimpleAreaTriggerGeometryType_Sphere
+	GeometryScale::Vec3
+		x 700.0
+		y 700.0
+		z 700.0
+EffectReferenceObjectData 11118887-80e4-496b-b2de-11e9827b428a
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.06583499908447266
+				y 0.012392878532409668
+				z 0.045824527740478516
+		Blueprint _c4/Effects/Ambient/DesertHills/AMB_Vultures_Startled/49306f9c-b1cb-48ec-9e99-45ef9a60fe92
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+	AutoStart False
+EventGateEntityData 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Default True
+	Realm Realm_Client
+EventSplitterEntityData af7115df-da5d-4993-9c51-f3f9cbb32a5d
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	RunOnce False
+	Realm Realm_Client
+InterfaceDescriptorData 2a04efc9-38ee-4779-aaee-50618567309c
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 229946160
+		member(1)::DynamicEvent
+			Id -1188524344
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+SpatialPrefabBlueprint a2f8437a-b144-4fbe-841e-025da450b1f5 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/Effects/Ambient/DesertHills/AMB_Vultures_Triggerable
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 2a04efc9-38ee-4779-aaee-50618567309c
+						Target 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7
+						SourceEvent::EventSpec
+							Id 229946160
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source af7115df-da5d-4993-9c51-f3f9cbb32a5d
+						Target 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source af7115df-da5d-4993-9c51-f3f9cbb32a5d
+						Target 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 2a04efc9-38ee-4779-aaee-50618567309c
+						Target af7115df-da5d-4993-9c51-f3f9cbb32a5d
+						SourceEvent::EventSpec
+							Id -1188524344
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 2a04efc9-38ee-4779-aaee-50618567309c
+						Target 11118887-80e4-496b-b2de-11e9827b428a
+						SourceEvent::EventSpec
+							Id 229946160
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source aaac097c-36ff-4b78-8bb8-e3f2d0fde1a9
+						Target af7115df-da5d-4993-9c51-f3f9cbb32a5d
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7
+						Target 11118887-80e4-496b-b2de-11e9827b428a
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+				Descriptor 2a04efc9-38ee-4779-aaee-50618567309c
+				NeedNetworkId False
+				InterfaceHasConnections True
+				ForceCreateAsFull False
+		Objects::array
+			member(0) 9e4e6c86-6bd3-4daa-928f-0f3e493b17f7
+			member(1) af7115df-da5d-4993-9c51-f3f9cbb32a5d
+			member(2) 11118887-80e4-496b-b2de-11e9827b428a
+			member(3) aaac097c-36ff-4b78-8bb8-e3f2d0fde1a9

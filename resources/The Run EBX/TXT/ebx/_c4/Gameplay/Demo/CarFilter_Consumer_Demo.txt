@@ -1,0 +1,104 @@
+BTFilterNode 7cd3e004-2a7d-4dd3-92ca-f8914e70e557
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) 4166f2c3-e098-459e-882d-dc7f8cef73e8
+	Eval a56f6e6a-30ef-4247-b8cb-4a90cc0f8b58
+BTFilterNode 3f82c554-f5a3-4c62-857d-895d4762196d
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) ba470b07-1562-4557-8f7c-44663809a9dc
+	Eval 7f9c6f46-6fd5-4420-ab64-7f0d04375b03
+BTSelectorNode 91585343-8307-475b-8824-69a77fa479b0
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 7cd3e004-2a7d-4dd3-92ca-f8914e70e557
+			member(1) 3f82c554-f5a3-4c62-857d-895d4762196d
+BTTaskNode 4166f2c3-e098-459e-882d-dc7f8cef73e8
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 6b359430-e1ab-4a77-a659-c043d754b4b7
+BTTaskNode ba470b07-1562-4557-8f7c-44663809a9dc
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task cb80aa5e-51d7-40de-81c2-ecd1e1c28ec7
+BehaviourTreeData b1a20e14-941e-45d4-b8a2-e381f629ab60 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/Demo/CarFilter_Consumer_Demo
+	Root 91585343-8307-475b-8824-69a77fa479b0
+	Description 
+VQ_Do 6b359430-e1ab-4a77-a659-c043d754b4b7
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+VQ_Do cb80aa5e-51d7-40de-81c2-ecd1e1c28ec7
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter a56f6e6a-30ef-4247-b8cb-4a90cc0f8b58
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 0
+			AttribType EBTAttribType_This
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 1
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 1726178714
+zVehicleFilter 7f9c6f46-6fd5-4420-ab64-7f0d04375b03
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 0
+			AttribType EBTAttribType_This
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 0
+		RValueFloat 0.0
+		RValueBool False
+		RValueString 
+		RValueEnum::MDEnumValue
+			EnumValue 0
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 366437687

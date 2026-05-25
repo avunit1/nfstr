@@ -1,0 +1,149 @@
+BTIfNode 6f49f7e8-1069-457c-9945-8e1020d4284a
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 9164e58a-603d-42cd-bdfe-8b1b71aed6fc
+	Eval b6bcc210-0b57-4e6b-9242-2ba05fe912e0
+BTIfNode c2328c60-b8fd-48b2-9ebb-ea98991fe0c5
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_If
+		Nodes::array
+			member(0) 18715c62-9510-4c53-a64c-93bdc2a1c416
+	Eval b468c102-ad49-4e84-948a-c43bb06f7976
+BTSelectorNode fdbd6cc2-4168-4f6c-8566-f449cf9eedfa
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 6f49f7e8-1069-457c-9945-8e1020d4284a
+			member(1) cac7b86b-f153-4a78-a4e8-04a516d5cfc1
+BTSequenceNode cac7b86b-f153-4a78-a4e8-04a516d5cfc1
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Sequence
+		Nodes::array
+			member(0) d6ed443b-4c79-4cdd-9b75-614c0bfda43c
+			member(1) 99ddb079-cb21-4de5-bd71-2365eab78287
+			member(2) cd3cf2c7-beff-4d0c-ae59-96fd391f9185
+			member(3) 2ec42638-3f8e-46ba-bd69-11acd1a2df1f
+BTTaskNode cd3cf2c7-beff-4d0c-ae59-96fd391f9185
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 20147c14-2e2b-48ad-8b5a-2f5ac9c7819f
+BTTaskNode 2ec42638-3f8e-46ba-bd69-11acd1a2df1f
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 5c2c02f6-956a-4b7b-aa10-e788174ee17a
+BTTaskNode d6ed443b-4c79-4cdd-9b75-614c0bfda43c
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task cd271f3c-08cd-4dd1-b1c2-68af2780026d
+BTTaskNode 18715c62-9510-4c53-a64c-93bdc2a1c416
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task c20c01f9-c237-4210-a6f0-413688148c4c
+BTTaskNode 9164e58a-603d-42cd-bdfe-8b1b71aed6fc
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 83eb5d97-b1ca-4a93-b131-1066f70c645f
+BTWrapperNode 99ddb079-cb21-4de5-bd71-2365eab78287
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Wrapper
+		Nodes::array
+			member(0) c2328c60-b8fd-48b2-9ebb-ea98991fe0c5
+	ReturnTrue True
+BT_DoMoveStyle 83eb5d97-b1ca-4a93-b131-1066f70c645f
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	MoveStyle EMove_Stop
+BT_DoOverrideLocomotion 20147c14-2e2b-48ad-8b5a-2f5ac9c7819f
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Handbrake
+	OverrideValue 1.0
+BT_DoOverrideLocomotion 5c2c02f6-956a-4b7b-aa10-e788174ee17a
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Steering
+	OverrideValue 1.0
+BT_DoOverrideLocomotion cd271f3c-08cd-4dd1-b1c2-68af2780026d
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Throttle
+	OverrideValue 0.0
+BT_DoOverrideLocomotion c20c01f9-c237-4210-a6f0-413688148c4c
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	LocomotionParam ELocomotion_Brake
+	OverrideValue 1.0
+BT_IsVar b6bcc210-0b57-4e6b-9242-2ba05fe912e0
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute True
+	Variable EVar_Speed
+	Context EContext_Self
+	Comparator Compare_LessThan
+	Value 1.0
+BT_IsVar b468c102-ad49-4e84-948a-c43bb06f7976
+	$::BTEvalFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Eval
+		Inverted False
+	Absolute False
+	Variable EVar_Speed
+	Context EContext_Self
+	Comparator Compare_MoreThan
+	Value 5.0
+BehaviourTreeData 309b291d-e3ab-480a-82e3-bbb722feeade #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/AI/Behaviors/B_BrakeSlide_Right
+	Root fdbd6cc2-4168-4f6c-8566-f449cf9eedfa
+	Description 

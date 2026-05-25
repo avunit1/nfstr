@@ -1,0 +1,475 @@
+<DelayEntityData Guid="73c3a1e7-cfd5-40e8-9304-7c8ff3fedf87">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,033</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>False</RemoveDuplicateEvents>
+</DelayEntityData>
+<DelayEntityData Guid="3a04cbc5-1ea2-4aa5-bf52-a4cc292979ae">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,033</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>False</RemoveDuplicateEvents>
+</DelayEntityData>
+<DelayEntityData Guid="6a639806-7303-458b-9f08-7d0af1df10ad">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Delay>0,033</Delay>
+    <Realm>Realm_Client</Realm>
+    <AutoStart>False</AutoStart>
+    <RunOnce>False</RunOnce>
+    <RemoveDuplicateEvents>False</RemoveDuplicateEvents>
+</DelayEntityData>
+<InterfaceDescriptorData Guid="c3858fe0-dcbe-4e4d-8827-9299ded8dd68">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="3">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x06e4c6f3</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0x455023e9</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x0de05caa</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="3">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xd825a849</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xd7494bf8</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="2">
+            <DynamicEvent>
+                <Id>0x0f712fb1</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>Cop [0B87CB99]</Id>
+            </DynamicLink>
+        </member>
+    </OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="6c6c3c37-84c6-4bb0-9f96-ee2c79e40e77">
+    <Name>_c4/Sound/Dialogue/Logic/Unscripted/VO_Pursuit_LocationApproach_Prefab</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="3">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceFieldId>Speaker [8ABEB8BE]</SourceFieldId>
+                <TargetFieldId>Cop [0B87CB99]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="1">
+            <LinkConnection>
+                <Source>[VoiceOverEventEntityData] 979def50-a82d-4475-9a56-f038ddd62da3</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceFieldId>Speaker [8ABEB8BE]</SourceFieldId>
+                <TargetFieldId>Cop [0B87CB99]</TargetFieldId>
+            </LinkConnection>
+        </member>
+        <member Index="2">
+            <LinkConnection>
+                <Source>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceFieldId>Speaker [8ABEB8BE]</SourceFieldId>
+                <TargetFieldId>Cop [0B87CB99]</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="19">
+        <member Index="0">
+            <EventConnection>
+                <Source>[DelayEntityData] 6a639806-7303-458b-9f08-7d0af1df10ad</Source>
+                <Target>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[DelayEntityData] 3a04cbc5-1ea2-4aa5-bf52-a4cc292979ae</Source>
+                <Target>[VoiceOverEventEntityData] 979def50-a82d-4475-9a56-f038ddd62da3</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[DelayEntityData] 73c3a1e7-cfd5-40e8-9304-7c8ff3fedf87</Source>
+                <Target>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Trigger [9B59CEBD]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Source>
+                <Target>[DelayEntityData] 6a639806-7303-458b-9f08-7d0af1df10ad</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x0de05caa</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Source>
+                <Target>[DelayEntityData] 3a04cbc5-1ea2-4aa5-bf52-a4cc292979ae</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x455023e9</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Source>
+                <Target>[DelayEntityData] 73c3a1e7-cfd5-40e8-9304-7c8ff3fedf87</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x06e4c6f3</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Finished [48F12F37]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd825a849</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Finished [48F12F37]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd825a849</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb0f8c00d</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x23efbe8f</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x73f4c94e</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xe6e765c8</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x2e6c5f09</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="13">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x2e6c5f09</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="14">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xe6e765c8</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="15">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x23efbe8f</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="16">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x73f4c94e</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="17">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xb0f8c00d</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0xd7494bf8</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="18">
+            <EventConnection>
+                <Source>[VoiceOverEventEntityData] 979def50-a82d-4475-9a56-f038ddd62da3</Source>
+                <Target>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Finished [48F12F37]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x0f712fb1</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] c3858fe0-dcbe-4e4d-8827-9299ded8dd68</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="6">
+        <member Index="0">[VoiceOverEventEntityData] 979def50-a82d-4475-9a56-f038ddd62da3</member>
+        <member Index="1">[VoiceOverEventEntityData] 4b602a61-e432-416f-8322-12875924b2d6</member>
+        <member Index="2">[VoiceOverEventEntityData] 9b87a17f-68fe-4e92-bb73-71eeec1715ae</member>
+        <member Index="3">[DelayEntityData] 73c3a1e7-cfd5-40e8-9304-7c8ff3fedf87</member>
+        <member Index="4">[DelayEntityData] 3a04cbc5-1ea2-4aa5-bf52-a4cc292979ae</member>
+        <member Index="5">[DelayEntityData] 6a639806-7303-458b-9f08-7d0af1df10ad</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<VoiceOverEventEntityData Guid="979def50-a82d-4475-9a56-f038ddd62da3">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <VoEvent>[Ebx] _c4/sound/dialogue/logic/unscripted/vo_location_logic [a04001ab-3453-4b18-b186-b4f0359a136a]</VoEvent>
+    <EventPlayer>nullptr</EventPlayer>
+    <ExtraEventPlayer>nullptr</ExtraEventPlayer>
+    <TriggerDelay>0</TriggerDelay>
+    <FinishedDelay>0</FinishedDelay>
+    <RunOnce>False</RunOnce>
+</VoiceOverEventEntityData>
+<VoiceOverEventEntityData Guid="4b602a61-e432-416f-8322-12875924b2d6">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <VoEvent>[Ebx] _c4/sound/dialogue/logic/unscripted/vo_location_logic [d0294ec2-444d-4982-99ca-7390a43d2223]</VoEvent>
+    <EventPlayer>nullptr</EventPlayer>
+    <ExtraEventPlayer>nullptr</ExtraEventPlayer>
+    <TriggerDelay>0</TriggerDelay>
+    <FinishedDelay>0</FinishedDelay>
+    <RunOnce>False</RunOnce>
+</VoiceOverEventEntityData>
+<VoiceOverEventEntityData Guid="9b87a17f-68fe-4e92-bb73-71eeec1715ae">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <VoEvent>[Ebx] _c4/sound/dialogue/logic/unscripted/vo_location_logic [4dacc73c-9b46-4304-816d-2b9107d5fd7d]</VoEvent>
+    <EventPlayer>nullptr</EventPlayer>
+    <ExtraEventPlayer>nullptr</ExtraEventPlayer>
+    <TriggerDelay>0</TriggerDelay>
+    <FinishedDelay>0</FinishedDelay>
+    <RunOnce>False</RunOnce>
+</VoiceOverEventEntityData>

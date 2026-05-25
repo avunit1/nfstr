@@ -1,0 +1,119 @@
+AIPursuitEntityData 330f9b7e-bf6e-4182-a1c0-8996614998b4
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 37
+	Formation _c4/AI/Formations/Solo/b7d2c549-1230-426e-b4ba-3ec701ea5241
+	StopBehavior _c4/AI/Behaviors/B_Stop/59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb
+	FleeBehavior _c4/AI/Behaviors/B_Stop/59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb
+	PatrolBehavior _c4/AI/Behaviors/B_Stop/59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb
+	PursueBehavior _c4/AI/Behaviors/B_Pursuit/a6932616-3cd8-4f8f-639c-bdf9cb957d0c
+	TargetLocalPlayer True
+	AutoPursuitStart False
+AIRoadBlockEntityData 8cdc1f89-8d8a-43f0-8bed-9d825ca2ddad
+	$::AIPursuitEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 2
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 39
+		Formation _c4/AI/Formations/Wing/613e13b1-6485-4625-b6c4-8d2ccffc4fbb
+		StopBehavior *nullGuid*
+		FleeBehavior *nullGuid*
+		PatrolBehavior *nullGuid*
+		PursueBehavior _c4/AI/Behaviors/B_Pursuit/a6932616-3cd8-4f8f-639c-bdf9cb957d0c
+		TargetLocalPlayer True
+		AutoPursuitStart False
+	PursueOnBreak False
+	PursueOnAvoid False
+	RoadBlockBehavior _c4/AI/Behaviors/B_Stop/59fc5bca-dd19-34f1-6d9e-3bb74d1d53bb
+AITacticEntityData 6625501a-7b57-4fde-b7bb-4fbe4d1760f8
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 38
+	Tactic _c4/AI/Tactics/Tactic_BrakeCheck/a4497809-5c99-11df-6a3a-5e045137e436
+	AutoEnable True
+AITacticEntityData 99191e9a-b11b-4b6d-8498-b4ed445a6bc6
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 40
+	Tactic _c4/AI/Tactics/Tactic_SideRam/fde308fe-dbd4-46a9-8b9c-aae2326c1453
+	AutoEnable True
+FloatEntityData 91e99180-b5ad-43e5-83f2-800c832d26bf
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 41
+	Realm Realm_ClientAndServer
+	DefaultValue 80.0
+	IncDecValue 1.0
+LogicReferenceObjectData f9d7a2a2-7d77-4428-b168-be7a5bdf4bcf
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 36
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint _c4/ActionElements/_Common/Cops/BustedLogic_Prefab/18614504-7751-1a52-923d-d496189b3386
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		Excluded False
+WorldPartData 0820cff6-091c-41b7-a9c4-5e241db2b286 #primary instance
+	$::SpatialPrefabBlueprint
+		$::PrefabBlueprint
+			$::Blueprint
+				$::EntityBusData
+					$::DataBusData
+						$::Asset
+							$::DataContainer
+							Name _c4/Levels/Level_3000_ChicagoDowntown/CS_S10_4_Actors_Schematic
+						PropertyConnections *nullArray*
+						LinkConnections *nullArray*
+					EventConnections *nullArray*
+					Descriptor *nullGuid*
+					NeedNetworkId False
+					InterfaceHasConnections False
+					ForceCreateAsFull False
+			Objects::array
+				member(0) f9d7a2a2-7d77-4428-b168-be7a5bdf4bcf
+				member(1) 330f9b7e-bf6e-4182-a1c0-8996614998b4
+				member(2) 6625501a-7b57-4fde-b7bb-4fbe4d1760f8
+				member(3) 8cdc1f89-8d8a-43f0-8bed-9d825ca2ddad
+				member(4) 99191e9a-b11b-4b6d-8498-b4ed445a6bc6
+				member(5) 91e99180-b5ad-43e5-83f2-800c832d26bf
+	Enabled True
+	UseDeferredEntityCreation False

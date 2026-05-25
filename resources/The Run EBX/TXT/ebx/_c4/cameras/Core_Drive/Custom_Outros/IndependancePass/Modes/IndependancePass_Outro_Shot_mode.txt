@@ -1,0 +1,45 @@
+CinebotModeData ff3ba711-e5af-4ed2-8d26-60d721b50ba4 #primary instance
+	$::CameraModeAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/cameras/Core_Drive/Custom_Outros/IndependancePass/Modes/IndependancePass_Outro_Shot_mode
+	Priority 2.0
+	Rigs::array
+		member(0) _c4/cameras/Core_Drive/Core/Rigs/hoodRig/62e5cdc7-608c-41b0-ab9b-d394b3a4b3ad
+		member(1) _c4/cameras/Core_Drive/Core/Rigs/noise_hood/2e95d64d-04de-41f6-bf69-c4455f16f6a0
+		member(2) _c4/cameras/Core_Drive/Custom_Outros/IndependancePass/Rigs/IndependancePass_Outro_Shot_rig/5c2be45d-91e4-4fe4-aa00-306f2e913668
+		member(3) _c4/cameras/Noise/avalancheNoise_Rig/c1457469-0a10-4411-9daa-e6c0ea9661bc
+	DefaultTransition e0fc8b3d-0478-11e1-bf96-f011f8debded
+	Scene _c4/cameras/_Cinebot/Scenes/globalScene/a2afbff5-beb1-43e2-a6cd-df3196b43896
+	IsRealTime True
+	CleanStack False
+	IsInsertShot False
+	InGame True
+	IsTargetVisible True
+	UserData *nullArray*
+	Basis _c4/cameras/Core_Drive/Core/Modes/hoodMode_helper/4a707823-a8cf-4ef7-ad0c-052d3339a90a
+	InheritPriority False
+	InheritControllers False
+	InheritDefaultTransition False
+	PointOfView CINEBOT_POINTOFVIEW_THIRD_PERSON
+	CameraLocation CINEBOT_CAMERALOCATION_EXTERIOR
+CinebotTransitionData ad7df800-a460-480f-9976-9222e5369a01
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 0.0
+		Time 6.0
+		EaseInControl 0.30000001192092896
+		EaseOutControl 0.5
+	Blend CINEBOT_BLEND_LINEAR
+	Clean False
+CinebotTransitionData e0fc8b3d-0478-11e1-bf96-f011f8debded
+	$::CinebotBlendData
+		$::CameraTransition
+			$::DataContainer
+		TimeToDelay 0.0
+		Time 0.0
+		EaseInControl 0.0
+		EaseOutControl 0.0
+	Blend CINEBOT_BLEND_LINEAR
+	Clean False

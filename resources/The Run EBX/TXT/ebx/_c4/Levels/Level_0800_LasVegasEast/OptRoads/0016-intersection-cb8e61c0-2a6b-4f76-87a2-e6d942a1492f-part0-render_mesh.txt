@@ -1,0 +1,68 @@
+MeshMaterial eec389fe-64d1-d4fe-868d-3192e726851e
+	$::DataContainer
+	ShaderInstance *nullGuid*
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader _c4/Roads/Shaders/Vegas/road_wet/2ad9a218-b00d-42bd-8431-c5d6638de3ff
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+MeshMaterial 361aee6a-5a0c-5bc5-e2ff-616ae858015e
+	$::DataContainer
+	ShaderInstance *nullGuid*
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader _c4/Roads/Shaders/Vegas/road_IntersectionCurb_wet/3c299d7d-f0b3-4331-82fe-acb922f72154
+		BoolParameters *nullArray*
+		VectorParameters::array
+			member(0)::VectorShaderParameter
+				ParameterName Tile_UV_Ratio
+				ParameterType ShaderParameterType_Scalar
+				Value::Vec4
+					x 1.0
+					y 0.0
+					z 0.0
+					w 0.0
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+MeshMaterial cecceb94-6b17-9ed3-e615-14ca36a17444
+	$::DataContainer
+	ShaderInstance *nullGuid*
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader _c4/Roads/Shaders/Vegas/road_wet/2ad9a218-b00d-42bd-8431-c5d6638de3ff
+		BoolParameters *nullArray*
+		VectorParameters::array
+			member(0)::VectorShaderParameter
+				ParameterName Smoothness_Scale
+				ParameterType ShaderParameterType_Scalar
+				Value::Vec4
+					x 1.5
+					y 0.0
+					z 0.0
+					w 0.0
+			member(1)::VectorShaderParameter
+				ParameterName Specular_Scale
+				ParameterType ShaderParameterType_Scalar
+				Value::Vec4
+					x 0.05000000074505806
+					y 0.0
+					z 0.0
+					w 0.0
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+RigidMeshAsset 2abd3119-237a-82ad-8ebb-23d49c7063d3 #primary instance
+	$::MeshAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/levels/level_0800_lasvegaseast/optroads/0016-intersection-cb8e61c0-2a6b-4f76-87a2-e6d942a1492f-part0-render_mesh
+		LodGroup _c4/WorldObjects/__LodSettings/Road/421586f9-2a59-9387-46a9-bc9560d5333a
+		LodScale 1.0
+		CullScale 1.0
+		StreamingEnable True
+		OccluderMeshEnable False
+		OccluderHighPriority False
+		EnlightenType EnlightenType_Static
+		Materials::array
+			member(0) eec389fe-64d1-d4fe-868d-3192e726851e
+			member(1) 361aee6a-5a0c-5bc5-e2ff-616ae858015e
+			member(2) cecceb94-6b17-9ed3-e615-14ca36a17444
+		NameHash 697383685

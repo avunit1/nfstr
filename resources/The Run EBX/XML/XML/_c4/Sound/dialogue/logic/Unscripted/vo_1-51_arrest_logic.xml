@@ -1,0 +1,131 @@
+<VoiceOverConstantIntegerValue Guid="a4019da4-ba2d-405e-9ac3-9fe609bce64e">
+    <Value>0x0000000a</Value>
+</VoiceOverConstantIntegerValue>
+<VoiceOverConstantNode Guid="6fcae64c-b4ab-4e24-a0c0-e4f2371d21c2">
+    <Value>[VoiceOverValue] c9c9e3e9-5fcc-4cbe-9329-9c70d10f0c08</Value>
+    <Source>[VoiceOverConstantIntegerValue] a4019da4-ba2d-405e-9ac3-9fe609bce64e</Source>
+</VoiceOverConstantNode>
+<VoiceOverConversationNode Guid="71287d7c-7e17-4787-841e-4d64a3f42492">
+    <FlowMode>VoiceOverLogicFlowMode_One</FlowMode>
+    <Groups Count="1">
+        <member Index="0">[VoiceOverDialogGroup] b717a9f1-510b-436d-8632-f4de03621d41</member>
+    </Groups>
+    <Condition Count="1">
+        <member Index="0">[VoiceOverValueConnection] 931d25b1-7e83-4d07-a401-e38550fda9a9</member>
+    </Condition>
+    <Interval>[VoiceOverIntervalNode] 57aea1cb-33b4-4b50-bf51-7360c411a66b</Interval>
+    <FinishedRelationship Count="0"></FinishedRelationship>
+    <BlockedRelationship Count="0"></BlockedRelationship>
+    <ConditionMode>VoiceOverContainerConditionMode_All</ConditionMode>
+    <Probability>100</Probability>
+    <Pronunciation>nullptr</Pronunciation>
+    <InterruptMode>VoiceOverConversationInterruptMode_Allow</InterruptMode>
+    <InterrupterMode>VoiceOverConversationInterrupterMode_Disallow</InterrupterMode>
+    <Priority>0x00000046</Priority>
+    <QueueMode>VoiceOverConversationQueueMode_Always</QueueMode>
+    <Relevancy>3</Relevancy>
+    <DeadAirRequired>0</DeadAirRequired>
+    <DeadAirEnforce>0</DeadAirEnforce>
+    <IgnoreDeadAir>False</IgnoreDeadAir>
+    <TrackCount>1</TrackCount>
+    <LastSequenceIndex>0</LastSequenceIndex>
+</VoiceOverConversationNode>
+<VoiceOverDialogClip Guid="89d5b11f-588e-42a3-b4b5-d1cf7adc215b">
+    <Offset>0</Offset>
+    <Takes Count="1">
+        <member Index="0">
+            <VoiceOverDialogTake>
+                <Wave>[Ebx] _c4/Sound/Dialogue/ENGLISH/Unscripted/Cops/Arrest/Arrest_CopA [62c975b4-7e8c-e937-7480-71686176d271]</Wave>
+            </VoiceOverDialogTake>
+        </member>
+    </Takes>
+    <OffsetReferences Count="0"></OffsetReferences>
+    <Events>nullptr</Events>
+    <SequenceIndex>0</SequenceIndex>
+</VoiceOverDialogClip>
+<VoiceOverDialogGroup Guid="b717a9f1-510b-436d-8632-f4de03621d41">
+    <Sound>[Ebx] BadRef 002cb282-30ab-11e0-8077-f7c01fb2035a/31a3362f-c13e-120f-bd78-11c1395d1f4f</Sound>
+    <Tracks Count="1">
+        <member Index="0">[VoiceOverDialogTrack] 66654bda-8657-4e3f-9443-d01780697d39</member>
+    </Tracks>
+</VoiceOverDialogGroup>
+<VoiceOverDialogTrack Guid="66654bda-8657-4e3f-9443-d01780697d39">
+    <Source>nullptr</Source>
+    <TakeControl>nullptr</TakeControl>
+    <TakeIndexMapping Count="0"></TakeIndexMapping>
+    <TakeSwitching>VoiceOverDialogTakeBehavior_Start</TakeSwitching>
+    <Clips Count="1">
+        <member Index="0">[VoiceOverDialogClip] 89d5b11f-588e-42a3-b4b5-d1cf7adc215b</member>
+    </Clips>
+    <SamplerNode>[Ebx] BadRef 002cb282-30ab-11e0-8077-f7c01fb2035a/89507893-b4c2-465a-8e66-bbd4f22d8c90</SamplerNode>
+    <Output>nullptr</Output>
+    <QueueGroup>[Ebx] _c4/sound/dialogue/logic/vo_system [297f8a6d-708c-4500-a4ed-7280467a56ee]</QueueGroup>
+    <ParentTrackIndex>0</ParentTrackIndex>
+    <TakeSwitchingOnResume>False</TakeSwitchingOnResume>
+</VoiceOverDialogTrack>
+<VoiceOverEvent Guid="cabd25c9-b6d2-4d71-b144-0fac9e765fc3">
+    <Name>1-51_Arrest</Name>
+    <Parameters Count="0"></Parameters>
+    <Owner>[VoiceOverLogicAsset] f14889b8-f8a5-40d3-92c9-72e76788119f</Owner>
+</VoiceOverEvent>
+<VoiceOverEventNode Guid="2c35d186-8602-4146-805d-a9402ba19f10">
+    <FlowMode>VoiceOverLogicFlowMode_All</FlowMode>
+    <Interval>nullptr</Interval>
+    <Relationship Count="1">
+        <member Index="0">[VoiceOverConversationNode] 71287d7c-7e17-4787-841e-4d64a3f42492</member>
+    </Relationship>
+    <Redirects Count="0"></Redirects>
+    <Event>[VoiceOverEvent] cabd25c9-b6d2-4d71-b144-0fac9e765fc3</Event>
+</VoiceOverEventNode>
+<VoiceOverGroup Guid="c0856cf7-39b0-483a-b5ba-07a11f630a4e">
+    <Name>Default</Name>
+    <Priority>0x00000000</Priority>
+</VoiceOverGroup>
+<VoiceOverIntervalNode Guid="57aea1cb-33b4-4b50-bf51-7360c411a66b">
+    <Threshold>[VoiceOverValueConnection] 693981df-f9d3-43e1-8142-b26705e8aa44</Threshold>
+    <Time>[VoiceOverValue] aba7ed3e-3dbd-4e39-ad5c-d55a6d53caf6</Time>
+    <False>[VoiceOverValue] 665ad987-a115-40c3-996f-50aa5a85993a</False>
+    <True>[VoiceOverValue] e1edc18d-65c4-4021-924d-c165fd72d1ff</True>
+    <Interval>[Ebx] _c4/sound/dialogue/logic/vo_system [a4a4f050-8749-4bc0-9804-61c8b999e209]</Interval>
+</VoiceOverIntervalNode>
+<VoiceOverLogicAsset Guid="f14889b8-f8a5-40d3-92c9-72e76788119f">
+    <Name>_c4/Sound/Dialogue/Logic/Unscripted/VO_1-51_Arrest_Logic</Name>
+    <Events Count="1">
+        <member Index="0">[VoiceOverEvent] cabd25c9-b6d2-4d71-b144-0fac9e765fc3</member>
+    </Events>
+    <Groups Count="1">
+        <member Index="0">[VoiceOverGroup] c0856cf7-39b0-483a-b5ba-07a11f630a4e</member>
+    </Groups>
+    <Flows Count="1">
+        <member Index="0">[VoiceOverLogicFlow] c5802bd2-9cd9-43ba-b804-eb67b3b4ab74</member>
+    </Flows>
+    <System>[Ebx] _c4/sound/dialogue/logic/vo_system [53c4df8a-9a3f-81e0-cb02-90e064b6baf7]</System>
+</VoiceOverLogicAsset>
+<VoiceOverLogicFlow Guid="c5802bd2-9cd9-43ba-b804-eb67b3b4ab74">
+    <Name>1-51_Arrest</Name>
+    <Group>[VoiceOverGroup] c0856cf7-39b0-483a-b5ba-07a11f630a4e</Group>
+    <Locals Count="0"></Locals>
+    <Roots Count="1">
+        <member Index="0">[VoiceOverEventNode] 2c35d186-8602-4146-805d-a9402ba19f10</member>
+    </Roots>
+</VoiceOverLogicFlow>
+<VoiceOverValue Guid="c9c9e3e9-5fcc-4cbe-9329-9c70d10f0c08">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="aba7ed3e-3dbd-4e39-ad5c-d55a6d53caf6">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="665ad987-a115-40c3-996f-50aa5a85993a">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValue Guid="e1edc18d-65c4-4021-924d-c165fd72d1ff">
+    <ValueType>VoiceOverValueType_Boolean</ValueType>
+</VoiceOverValue>
+<VoiceOverValueConnection Guid="693981df-f9d3-43e1-8142-b26705e8aa44">
+    <TargetNode>[VoiceOverConstantNode] 6fcae64c-b4ab-4e24-a0c0-e4f2371d21c2</TargetNode>
+    <TargetValue>[VoiceOverValue] c9c9e3e9-5fcc-4cbe-9329-9c70d10f0c08</TargetValue>
+</VoiceOverValueConnection>
+<VoiceOverValueConnection Guid="931d25b1-7e83-4d07-a401-e38550fda9a9">
+    <TargetNode>[VoiceOverIntervalNode] 57aea1cb-33b4-4b50-bf51-7360c411a66b</TargetNode>
+    <TargetValue>[VoiceOverValue] e1edc18d-65c4-4021-924d-c165fd72d1ff</TargetValue>
+</VoiceOverValueConnection>

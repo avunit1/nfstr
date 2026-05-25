@@ -1,0 +1,122 @@
+<BTIfNode Guid="e547ad9e-a29c-4d06-8fd4-262c4e587ad8">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="0"></Nodes>
+    <Eval>[BT_IsNavState] 0cbc620a-55a2-42f1-ba96-ab9d71871a82</Eval>
+</BTIfNode>
+<BTIfNode Guid="9044db55-375d-43f9-a032-831693001bb9">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] eb2cb714-6783-4229-9e10-95ecb3869d42</member>
+    </Nodes>
+    <Eval>[BT_IsVar] bcd96911-4280-453c-b787-22cd5e486b1e</Eval>
+</BTIfNode>
+<BTIfNode Guid="832cd1b0-734d-48c6-a3f7-6611c8fb2a54">
+    <NodeType>ENodeType_If</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="0"></Nodes>
+    <Eval>[BT_IsVarRange] 05f7ef25-f2a7-4cf7-9616-ae7bdcb94873</Eval>
+</BTIfNode>
+<BTSelectorNode Guid="085e60f0-6ab1-452a-b35e-ed862ea81722">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="2">
+        <member Index="0">[BTIfNode] 9044db55-375d-43f9-a032-831693001bb9</member>
+        <member Index="1">[BTSequenceNode] b1aa35b6-9075-43ff-853b-900347819e66</member>
+    </Nodes>
+</BTSelectorNode>
+<BTSequenceNode Guid="fe7685ce-aa17-480e-ad5a-48c33ffcd5a6">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="3">
+        <member Index="0">[BTIfNode] e547ad9e-a29c-4d06-8fd4-262c4e587ad8</member>
+        <member Index="1">[BTIfNode] 832cd1b0-734d-48c6-a3f7-6611c8fb2a54</member>
+        <member Index="2">[BTSelectorNode] 085e60f0-6ab1-452a-b35e-ed862ea81722</member>
+    </Nodes>
+</BTSequenceNode>
+<BTSequenceNode Guid="b1aa35b6-9075-43ff-853b-900347819e66">
+    <NodeType>ENodeType_Sequence</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="3">
+        <member Index="0">[BTTaskNode] 9423ad1d-9d68-48b9-800d-89ff8c02c26d</member>
+        <member Index="1">[BTTaskNode] 637b5f8b-6726-4f7c-9b8a-d0081c797709</member>
+        <member Index="2">[BTTaskNode] 26d5a809-5ce7-4550-8c89-b5b53f125293</member>
+    </Nodes>
+</BTSequenceNode>
+<BTTaskNode Guid="26d5a809-5ce7-4550-8c89-b5b53f125293">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoDriveStyle] 45c6314e-bbdf-4193-80d2-c57b8fa9233d</Task>
+</BTTaskNode>
+<BTTaskNode Guid="9423ad1d-9d68-48b9-800d-89ff8c02c26d">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] 88a4d1ed-bdcc-4f6b-a982-3f6330ad8ca3</Task>
+</BTTaskNode>
+<BTTaskNode Guid="637b5f8b-6726-4f7c-9b8a-d0081c797709">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoStrategy] ed87769e-f6c2-44eb-9e3b-95f81285cf81</Task>
+</BTTaskNode>
+<BTTaskNode Guid="eb2cb714-6783-4229-9e10-95ecb3869d42">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[BT_DoMoveStyle] e8a77c48-ac00-4bd8-a567-be16a871fa05</Task>
+</BTTaskNode>
+<BT_DoDriveStyle Guid="45c6314e-bbdf-4193-80d2-c57b8fa9233d">
+    <FuncType>EFuncType_Task</FuncType>
+    <DriveStyle>EDrive_RacingSpeed</DriveStyle>
+</BT_DoDriveStyle>
+<BT_DoMoveStyle Guid="88a4d1ed-bdcc-4f6b-a982-3f6330ad8ca3">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Drive</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoMoveStyle Guid="e8a77c48-ac00-4bd8-a567-be16a871fa05">
+    <FuncType>EFuncType_Task</FuncType>
+    <MoveStyle>EMove_Stop</MoveStyle>
+</BT_DoMoveStyle>
+<BT_DoStrategy Guid="ed87769e-f6c2-44eb-9e3b-95f81285cf81">
+    <FuncType>EFuncType_Task</FuncType>
+    <Strategy>EStrategy_Approach</Strategy>
+    <Context>EContext_Blocked</Context>
+</BT_DoStrategy>
+<BT_IsNavState Guid="0cbc620a-55a2-42f1-ba96-ab9d71871a82">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <State>ENav_Blocked</State>
+</BT_IsNavState>
+<BT_IsVar Guid="bcd96911-4280-453c-b787-22cd5e486b1e">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Blocked</Context>
+    <Variable>EVar_InterceptTime</Variable>
+    <Value>0,3</Value>
+    <Comparator>Compare_LessThan</Comparator>
+    <Absolute>False</Absolute>
+</BT_IsVar>
+<BT_IsVarRange Guid="05f7ef25-f2a7-4cf7-9616-ae7bdcb94873">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <Context>EContext_Blocked</Context>
+    <Variable>EVar_InterceptTime</Variable>
+    <ValueMax>1,5</ValueMax>
+    <Comparator>ECompare_Inside</Comparator>
+    <ValueMin>0</ValueMin>
+    <Absolute>False</Absolute>
+</BT_IsVarRange>
+<BehaviourTreeData Guid="ee3311a7-ddb9-41d7-a98f-b76d25e8546f">
+    <Name>_c4/AI/Behaviors/B_RaceBlocked</Name>
+    <Root>[BTSequenceNode] fe7685ce-aa17-480e-ad5a-48c33ffcd5a6</Root>
+    <Description></Description>
+</BehaviourTreeData>

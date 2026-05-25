@@ -1,0 +1,99 @@
+ClientEventAdapterEntityData be4f88f6-f904-4cd3-b1d5-db99e30bba3d
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+ReferenceObjectData b93d59ef-493e-4182-9362-c1cf317407e1
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 3
+		IsPropertyConnectionTarget 3
+		IndexInBlueprint 0
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Blueprint _c4/WorldObjects/_Objects/Lights/Common/StreetLightA/d4fb9310-d30a-e8b2-a313-e7950896dd90
+	ObjectVariation _c4/WorldObjects/_Objects/Lights/Lakeshore/StreetLightA_Lakeshore/faf1d918-47ba-67dc-8273-346d2f63000c
+	StreamRealm StreamRealm_None
+	Excluded False
+ReferenceObjectData 85f3a17d-0a76-48d5-8d64-330ff95f633e
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 2
+		IsPropertyConnectionTarget 3
+		IndexInBlueprint 1
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 0.017841074615716934
+			y 0.0
+			z 0.49968159198760986
+		up::Vec3
+			x 0.0
+			y 0.5
+			z 0.0
+		forward::Vec3
+			x -0.49968159198760986
+			y 0.0
+			z 0.017841074615716934
+		trans::Vec3
+			x 0.003923036158084869
+			y 10.650314331054688
+			z 3.9541592597961426
+	Blueprint _c4/Effects/_LightEffects/LightConeWithCap_60/0b761fda-3a35-8573-1130-c084dba8219d
+	ObjectVariation _c4/Effects/_LightEffects/LightConeWithCap_60_LakeShore/b9264f66-44ad-ba84-7fc3-100b44aa74ab
+	StreamRealm StreamRealm_None
+	Excluded False
+SpatialPrefabBlueprint 857524de-7376-46f7-8abf-67bedd8fafdd #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name _c4/WorldObjects/_Objects/Lights/Lakeshore/Traffic_Street_LightA_lighting_background
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source b93d59ef-493e-4182-9362-c1cf317407e1
+						Target be4f88f6-f904-4cd3-b1d5-db99e30bba3d
+						SourceEvent::EventSpec
+							Id -2041264642
+						TargetEvent::EventSpec
+							Id -1573253508
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source be4f88f6-f904-4cd3-b1d5-db99e30bba3d
+						Target 85f3a17d-0a76-48d5-8d64-330ff95f633e
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_ClientAndServer
+				Descriptor *nullGuid*
+				NeedNetworkId False
+				InterfaceHasConnections False
+				ForceCreateAsFull False
+		Objects::array
+			member(0) b93d59ef-493e-4182-9362-c1cf317407e1
+			member(1) 85f3a17d-0a76-48d5-8d64-330ff95f633e
+			member(2) be4f88f6-f904-4cd3-b1d5-db99e30bba3d

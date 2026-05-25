@@ -1,0 +1,73 @@
+FadeAsset 0464c639-50ab-4282-a8c2-c96c59a6bbed
+	$::DataContainer
+	FadeType Marker_OnBeat
+	FadeOutTime 2.0
+	FadeOutType FadeTime_Seconds
+	FadeInTime 0.0
+	FadeInType FadeTime_Seconds
+	EqualPower True
+MusicDataAsset 86d75167-83c9-4f66-8fb0-4fb8cf0888a1
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongData
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	WaveData _c4/Sound/Music/Songs/Licensed_Music/MX_Licensed_MonstrO_Solar_wave/4672e751-8625-b1b9-bb87-1a5228f0f127
+MusicPhraseAsset a2b4a50f-1551-4515-a56b-61846a73efe7
+	$::MusicStreamableAsset
+		$::MusicPlayableAsset
+			$::DataContainer
+			Name LicensedSongPhrase
+			Loop 1
+			BPM 120
+			BeatsPerBar 4
+			Gain 0.0
+			Pitch 1.0
+		RangeValue 0.0
+		AllowRangeFade True
+		Weight 0
+		FollowUpCurrent False
+		FollowUpPlayable *nullGuid*
+		MarkerFileData *nullGuid*
+		LoadMarkerFile False
+	SelectionType PhraseSelectionType_Sequential
+	SelectionParameter *nullGuid*
+	RangeFade *nullGuid*
+	Collection::array
+		member(0) 86d75167-83c9-4f66-8fb0-4fb8cf0888a1
+MusicSelectorAsset 8bbc9afc-8422-4674-b737-6e26bd734f3b
+	$::DataContainer
+	Event _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/62c35696-fcb8-4884-b326-8ea80c9b2192
+	TriggerType EventTriggerType_Interrupt
+	Fade *nullGuid*
+	Playable a2b4a50f-1551-4515-a56b-61846a73efe7
+	OverlayCtrl *nullGuid*
+	Transitions *nullArray*
+SongAsset e9729db8-0bb5-4f7e-a02c-756b7e2f8cce #primary instance
+	$::MusicAsset
+		$::Asset
+			$::DataContainer
+			Name _c4/Sound/Music/RaceMusic/MX_BasicRaceSong_5_SongAsset
+	SongInterface _c4/Sound/Music/RaceMusic/MX_BasicRaceSongs_SongInterface/63946f3b-890a-0efc-d248-833ecffb5e41
+	NameHash 659202245
+	BPM 120
+	BeatsPerBar 4
+	Collection::array
+		member(0) a2b4a50f-1551-4515-a56b-61846a73efe7
+	Overlays *nullArray*
+	Selectors::array
+		member(0) 8bbc9afc-8422-4674-b737-6e26bd734f3b
+	GenericTransitions *nullArray*
+	ChannelCount 2
+	OverlayChannelCount 0

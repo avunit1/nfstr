@@ -1,0 +1,533 @@
+<EventGateEntityData Guid="d21be773-1928-463c-821d-911b02a8fdea">
+    <IndexInBlueprint>0006</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Default>False</Default>
+</EventGateEntityData>
+<EventGateEntityData Guid="4708c729-cd0f-42e0-b73e-78eb4170aed8">
+    <IndexInBlueprint>0007</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Default>True</Default>
+</EventGateEntityData>
+<FloatPropertyTrackData Guid="2f336215-f73d-4e01-a815-5e13bf2beaab">
+    <Id>0xb7f2d6c8</Id>
+    <Times Count="2">
+        <member Index="0">0x00000000</member>
+        <member Index="1">0x000003e8</member>
+    </Times>
+    <InterpolationType>InterpolationType_Linear</InterpolationType>
+    <Values Count="2">
+        <member Index="0">0</member>
+        <member Index="1">1</member>
+    </Values>
+</FloatPropertyTrackData>
+<InterfaceDescriptorData Guid="9f128c41-ca77-46c0-a368-135fda0847ea">
+    <Fields Count="3">
+        <member Index="0">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0x719ce1bb</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="1">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>0x719ce1b8</Id>
+                <AccessType>FieldAccessType_Target</AccessType>
+            </DataField>
+        </member>
+        <member Index="2">
+            <DataField>
+                <Value></Value>
+                <ValueRef>nullptr</ValueRef>
+                <Id>Out [0B87DF4B]</Id>
+                <AccessType>FieldAccessType_Source</AccessType>
+            </DataField>
+        </member>
+    </Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0xe27db2fb</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>0xe27db2f8</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>OnFinished [26C243B6]</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<LogicPrefabBlueprint Guid="bf981875-571d-48bf-b74e-02ffe84e844f">
+    <Name>_c4/Logic/EasyTransformBlender</Name>
+    <PropertyConnections Count="8">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] a61e54e4-122e-4cf1-a4ce-f6b83aab6a91</Source>
+                <Target>[MathOpEntityData] 8c21cbe0-8927-406f-aa3b-7797a4d9cb28</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="1">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] 84a07d39-f0fe-40b6-8395-be5e74989f60</Source>
+                <Target>[MathOpEntityData] a61e54e4-122e-4cf1-a4ce-f6b83aab6a91</Target>
+                <SourceFieldId>0xb7f2d6c8</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="2">
+            <PropertyConnection>
+                <Source>[SelectFloatEntityData] 9ba0b19c-20f2-4e02-b2ae-bb62f6f51d5c</Source>
+                <Target>[MathOpEntityData] a61e54e4-122e-4cf1-a4ce-f6b83aab6a91</Target>
+                <SourceFieldId>0xb961137c</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="3">
+            <PropertyConnection>
+                <Source>[SelectFloatEntityData] c9ebb4aa-b455-47fb-8686-86db830c0870</Source>
+                <Target>[MathOpEntityData] 8c21cbe0-8927-406f-aa3b-7797a4d9cb28</Target>
+                <SourceFieldId>0xb961137c</SourceFieldId>
+                <TargetFieldId>In0 [0B87D372]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="4">
+            <PropertyConnection>
+                <Source>[MathOpEntityData] 8c21cbe0-8927-406f-aa3b-7797a4d9cb28</Source>
+                <Target>[TransformBlendEntityData] b8e1c06c-2aaf-4079-8ca1-a66bac702531</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>BlendValue [0E1E616F]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="5">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 9f128c41-ca77-46c0-a368-135fda0847ea</Source>
+                <Target>[TransformBlendEntityData] b8e1c06c-2aaf-4079-8ca1-a66bac702531</Target>
+                <SourceFieldId>0x719ce1bb</SourceFieldId>
+                <TargetFieldId>In2 [0B87D370]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="6">
+            <PropertyConnection>
+                <Source>[InterfaceDescriptorData] 9f128c41-ca77-46c0-a368-135fda0847ea</Source>
+                <Target>[TransformBlendEntityData] b8e1c06c-2aaf-4079-8ca1-a66bac702531</Target>
+                <SourceFieldId>0x719ce1b8</SourceFieldId>
+                <TargetFieldId>In1 [0B87D373]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+        <member Index="7">
+            <PropertyConnection>
+                <Source>[TransformBlendEntityData] b8e1c06c-2aaf-4079-8ca1-a66bac702531</Source>
+                <Target>[InterfaceDescriptorData] 9f128c41-ca77-46c0-a368-135fda0847ea</Target>
+                <SourceFieldId>Out [0B87DF4B]</SourceFieldId>
+                <TargetFieldId>Out [0B87DF4B]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="13">
+        <member Index="0">
+            <EventConnection>
+                <Source>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Source>
+                <Target>[SelectFloatEntityData] c9ebb4aa-b455-47fb-8686-86db830c0870</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x8387a96b</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Source>
+                <Target>[SelectFloatEntityData] 9ba0b19c-20f2-4e02-b2ae-bb62f6f51d5c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x8387a96b</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Source>
+                <Target>[SelectFloatEntityData] c9ebb4aa-b455-47fb-8686-86db830c0870</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x840b61fc</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Source>
+                <Target>[SelectFloatEntityData] 9ba0b19c-20f2-4e02-b2ae-bb62f6f51d5c</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x840b61fc</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="4">
+            <EventConnection>
+                <Source>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Source>
+                <Target>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="5">
+            <EventConnection>
+                <Source>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Source>
+                <Target>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Close [0CAC8853]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="6">
+            <EventConnection>
+                <Source>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Source>
+                <Target>[SequenceEntityData] 84a07d39-f0fe-40b6-8395-be5e74989f60</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="7">
+            <EventConnection>
+                <Source>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Source>
+                <Target>[SequenceEntityData] 84a07d39-f0fe-40b6-8395-be5e74989f60</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="8">
+            <EventConnection>
+                <Source>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Source>
+                <Target>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="9">
+            <EventConnection>
+                <Source>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Source>
+                <Target>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Out [0B87DF4B]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Open [7C83BEB1]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="10">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 9f128c41-ca77-46c0-a368-135fda0847ea</Source>
+                <Target>[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xe27db2fb</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="11">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 9f128c41-ca77-46c0-a368-135fda0847ea</Source>
+                <Target>[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0xe27db2f8</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>In [00597302]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="12">
+            <EventConnection>
+                <Source>[SequenceEntityData] 84a07d39-f0fe-40b6-8395-be5e74989f60</Source>
+                <Target>[InterfaceDescriptorData] 9f128c41-ca77-46c0-a368-135fda0847ea</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>OnFinished [26C243B6]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 9f128c41-ca77-46c0-a368-135fda0847ea</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="8">
+        <member Index="0">[MathOpEntityData] 8c21cbe0-8927-406f-aa3b-7797a4d9cb28</member>
+        <member Index="1">[MathOpEntityData] a61e54e4-122e-4cf1-a4ce-f6b83aab6a91</member>
+        <member Index="2">[SelectFloatEntityData] c9ebb4aa-b455-47fb-8686-86db830c0870</member>
+        <member Index="3">[SelectFloatEntityData] 9ba0b19c-20f2-4e02-b2ae-bb62f6f51d5c</member>
+        <member Index="4">[TransformBlendEntityData] b8e1c06c-2aaf-4079-8ca1-a66bac702531</member>
+        <member Index="5">[SequenceEntityData] 84a07d39-f0fe-40b6-8395-be5e74989f60</member>
+        <member Index="6">[EventGateEntityData] d21be773-1928-463c-821d-911b02a8fdea</member>
+        <member Index="7">[EventGateEntityData] 4708c729-cd0f-42e0-b73e-78eb4170aed8</member>
+    </Objects>
+</LogicPrefabBlueprint>
+<MathOpEntityData Guid="8c21cbe0-8927-406f-aa3b-7797a4d9cb28">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Add</member>
+    </Operators>
+</MathOpEntityData>
+<MathOpEntityData Guid="a61e54e4-122e-4cf1-a4ce-f6b83aab6a91">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Operators Count="1">
+        <member Index="0">MathOp_Multiply</member>
+    </Operators>
+</MathOpEntityData>
+<SelectFloatEntityData Guid="c9ebb4aa-b455-47fb-8686-86db830c0870">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="2">
+        <member Index="0">
+            <SelectFloatInput>
+                <Name>CountUp</Name>
+                <DefaultValue>0</DefaultValue>
+            </SelectFloatInput>
+        </member>
+        <member Index="1">
+            <SelectFloatInput>
+                <Name>CountDown</Name>
+                <DefaultValue>1</DefaultValue>
+            </SelectFloatInput>
+        </member>
+    </Events>
+</SelectFloatEntityData>
+<SelectFloatEntityData Guid="9ba0b19c-20f2-4e02-b2ae-bb62f6f51d5c">
+    <IndexInBlueprint>0003</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Realm>Realm_Client</Realm>
+    <Events Count="2">
+        <member Index="0">
+            <SelectFloatInput>
+                <Name>CountUp</Name>
+                <DefaultValue>1</DefaultValue>
+            </SelectFloatInput>
+        </member>
+        <member Index="1">
+            <SelectFloatInput>
+                <Name>CountDown</Name>
+                <DefaultValue>-1</DefaultValue>
+            </SelectFloatInput>
+        </member>
+    </Events>
+</SelectFloatEntityData>
+<SequenceEntityData Guid="84a07d39-f0fe-40b6-8395-be5e74989f60">
+    <IndexInBlueprint>0005</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x000003e8</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="1">
+        <member Index="0">[FloatPropertyTrackData] 2f336215-f73d-4e01-a815-5e13bf2beaab</member>
+    </PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>False</Looping>
+    <AutoStart>False</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<TransformBlendEntityData Guid="b8e1c06c-2aaf-4079-8ca1-a66bac702531">
+    <IndexInBlueprint>0004</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <In2>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </In2>
+    <In1>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </In1>
+    <BlendValue>0</BlendValue>
+    <BlendValue2>0</BlendValue2>
+    <Realm>Realm_Client</Realm>
+    <BlendTranslation>True</BlendTranslation>
+    <BlendRotation>True</BlendRotation>
+</TransformBlendEntityData>

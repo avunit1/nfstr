@@ -1,0 +1,376 @@
+<AntAnimatableComponentData Guid="3ce1b3a2-c0d2-437a-9e6e-7aca77a668c2">
+    <IndexInBlueprint>0002</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Excluded>False</Excluded>
+    <Realm>Realm_ClientAndServer</Realm>
+    <AnimationData>
+        <AntAnimationHandlerData>
+            <Animatable>
+                <AntAnimatableData>
+                    <Actor>
+                        <AntRef>
+                            <AssetId>0x0300001c</AssetId>
+                        </AntRef>
+                    </Actor>
+                    <ProceduralAwareness>nullptr</ProceduralAwareness>
+                    <RightHandEffectorDisableOverride>
+                        <AntRef>
+                            <AssetId>0xffffffff</AssetId>
+                        </AntRef>
+                    </RightHandEffectorDisableOverride>
+                    <LeftHandEffectorDisableOverride>
+                        <AntRef>
+                            <AssetId>0xffffffff</AssetId>
+                        </AntRef>
+                    </LeftHandEffectorDisableOverride>
+                    <MasterSkeletonAsset>[Ebx] _c4/Characters/Camera/Camera_MasterSkeleton [3a12eaf0-c089-6a73-209d-274b6a5b184b]</MasterSkeletonAsset>
+                </AntAnimatableData>
+            </Animatable>
+            <RootController>
+                <AntRef>
+                    <AssetId>0x03000001</AssetId>
+                </AntRef>
+            </RootController>
+            <LodBinding>
+                <LodBinding>
+                    <DisableControllerUpdate>
+                        <AntRef>
+                            <AssetId>0xffffffff</AssetId>
+                        </AntRef>
+                    </DisableControllerUpdate>
+                    <DisablePoseUpdate>
+                        <AntRef>
+                            <AssetId>0xffffffff</AssetId>
+                        </AntRef>
+                    </DisablePoseUpdate>
+                    <DistanceFromCamera>
+                        <AntRef>
+                            <AssetId>0xffffffff</AssetId>
+                        </AntRef>
+                    </DistanceFromCamera>
+                </LodBinding>
+            </LodBinding>
+            <AntPackageData Count="0"></AntPackageData>
+            <BonesToMirror Count="1">
+                <member Index="0">
+                    <GameplayBone>
+                        <Name>AITrajectory</Name>
+                        <Bone>GameplayBones_RootBone</Bone>
+                    </GameplayBone>
+                </member>
+            </BonesToMirror>
+            <ReportBackFromAnt>True</ReportBackFromAnt>
+            <EnableMasterSlaveCopy>True</EnableMasterSlaveCopy>
+            <IsProp>True</IsProp>
+        </AntAnimationHandlerData>
+    </AnimationData>
+    <Mesh>nullptr</Mesh>
+    <AutoActivate>True</AutoActivate>
+    <AnimationControlledFromStart>False</AnimationControlledFromStart>
+</AntAnimatableComponentData>
+<AntCameraBlueprint Guid="a9c0b67f-90c7-47b8-904a-023a386b5c11">
+    <Name>_c4/ActionElements/_Common/Camera/NFSAntCamera_Trans_2s</Name>
+    <PropertyConnections Count="0"></PropertyConnections>
+    <LinkConnections Count="1">
+        <member Index="0">
+            <LinkConnection>
+                <Source>[InterfaceDescriptorData] 0b3d21aa-3f9f-4a7f-abc6-3561b0279165</Source>
+                <Target>[AntAnimatableComponentData] 3ce1b3a2-c0d2-437a-9e6e-7aca77a668c2</Target>
+                <SourceFieldId>AntAnimatable [5F246A8A]</SourceFieldId>
+                <TargetFieldId>0x00000000</TargetFieldId>
+            </LinkConnection>
+        </member>
+    </LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[AntCameraData] d3e6cfa0-1f32-466c-9544-30d714df79b7</Source>
+                <Target>[InterfaceDescriptorData] 0b3d21aa-3f9f-4a7f-abc6-3561b0279165</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>0x67a5c307</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x67a5c307</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 0b3d21aa-3f9f-4a7f-abc6-3561b0279165</Source>
+                <Target>[AntCameraData] d3e6cfa0-1f32-466c-9544-30d714df79b7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Activate [DEAA09DC]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 0b3d21aa-3f9f-4a7f-abc6-3561b0279165</Source>
+                <Target>[AntCameraData] d3e6cfa0-1f32-466c-9544-30d714df79b7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Deactivate [72F6CC1D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Deactivate [72F6CC1D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[AntAnimatableComponentData] 3ce1b3a2-c0d2-437a-9e6e-7aca77a668c2</Source>
+                <Target>[AntCameraData] d3e6cfa0-1f32-466c-9544-30d714df79b7</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnAnimatableCreated [E6810570]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>0x5d121ef4</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_ClientAndServer</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 0b3d21aa-3f9f-4a7f-abc6-3561b0279165</Descriptor>
+    <NeedNetworkId>True</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Object>[AntCameraData] d3e6cfa0-1f32-466c-9544-30d714df79b7</Object>
+</AntCameraBlueprint>
+<AntCameraData Guid="d3e6cfa0-1f32-466c-9544-30d714df79b7">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>2</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>2</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="2">
+        <member Index="0">[PlayerEntryComponentData] 6c959f8c-ac60-4280-9910-06e4d63bb5ba</member>
+        <member Index="1">[AntAnimatableComponentData] 3ce1b3a2-c0d2-437a-9e6e-7aca77a668c2</member>
+    </Components>
+    <Enabled>True</Enabled>
+    <RuntimeComponentCount>2</RuntimeComponentCount>
+    <PhysicsData>nullptr</PhysicsData>
+    <MaterialPair>nullptr</MaterialPair>
+    <DefaultTeam>TeamNeutral</DefaultTeam>
+    <LowHealthThreshold>50</LowHealthThreshold>
+    <ResetTeamOnLastPlayerExits>True</ResetTeamOnLastPlayerExits>
+    <FakeImmortal>False</FakeImmortal>
+    <Immortal>False</Immortal>
+    <UsePrediction>True</UsePrediction>
+    <PlayerSpawnType>PlayerSpawnType_HumanPlayer</PlayerSpawnType>
+    <DefaultViewMode>PersonViewMode_ThirdPerson</DefaultViewMode>
+    <Mode>[Ebx] _c4/cameras/OOC/_global/modes/AntCameraMode_Trans_2s [2c628560-fb48-4694-9f0a-0ea2e726826d]</Mode>
+    <CameraBlipFactorGameStateAsset>
+        <AntRef>
+            <AssetId>0x030001a5</AssetId>
+        </AntRef>
+    </CameraBlipFactorGameStateAsset>
+    <PriorityOverride>0</PriorityOverride>
+    <AutoActivate>True</AutoActivate>
+    <EnablePriorityOverride>False</EnablePriorityOverride>
+</AntCameraData>
+<InterfaceDescriptorData Guid="0b3d21aa-3f9f-4a7f-abc6-3561b0279165">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Activate [DEAA09DC]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Deactivate [72F6CC1D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="1">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>0x67a5c307</Id>
+            </DynamicEvent>
+        </member>
+    </OutputEvents>
+    <InputLinks Count="1">
+        <member Index="0">
+            <DynamicLink>
+                <Id>AntAnimatable [5F246A8A]</Id>
+            </DynamicLink>
+        </member>
+    </InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<PlayerEntryComponentData Guid="6c959f8c-ac60-4280-9910-06e4d63bb5ba">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>3</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Transform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </Transform>
+    <Components Count="0"></Components>
+    <Excluded>False</Excluded>
+    <SoldierOffset>
+        <Vec3>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </SoldierOffset>
+    <EntryClass>ecPrimary</EntryClass>
+    <AIData>nullptr</AIData>
+    <InputConceptDefinition>[Ebx] Input/VeniceSoldierInputConcepts [d2b06e08-13a0-4e3b-bee5-c674f06f9d44]</InputConceptDefinition>
+    <InputMapping>[Ebx] Characters/Soldiers/DefaultSoldierInputMapping [115d78b4-d4ce-46e5-84dc-73f5c092b882]</InputMapping>
+    <InputCurves Count="0"></InputCurves>
+    <HudData>
+        <EntryComponentHudData>
+            <Index>0x00000000</Index>
+            <SeatType>EST_Driver</SeatType>
+            <Visible>True</Visible>
+            <Frustum>False</Frustum>
+        </EntryComponentHudData>
+    </HudData>
+    <EntryOrderNumber>0x00000000</EntryOrderNumber>
+    <EntryComponentSound>nullptr</EntryComponentSound>
+    <EnterImpulse>2000</EnterImpulse>
+    <EntryRadius>1</EntryRadius>
+    <NumberOfStances>0x00000001</NumberOfStances>
+    <PoseConstraints>
+        <PoseConstraintsData>
+            <StandPose>True</StandPose>
+            <CrouchPose>True</CrouchPose>
+            <PronePose>True</PronePose>
+        </PoseConstraintsData>
+    </PoseConstraints>
+    <EntrySpottingSettings>ESSDefault</EntrySpottingSettings>
+    <LockSoldierAimingToEntry>True</LockSoldierAimingToEntry>
+    <Show1pSoldierInEntry>False</Show1pSoldierInEntry>
+    <ShowSoldierInEntry>True</ShowSoldierInEntry>
+    <IsShielded>False</IsShielded>
+    <RememberCamera>False</RememberCamera>
+    <ShowSoldierWeaponInEntry>False</ShowSoldierWeaponInEntry>
+    <ShowSoldierGearInEntry>False</ShowSoldierGearInEntry>
+    <StancesEnabled>False</StancesEnabled>
+    <ForbiddenForHuman>False</ForbiddenForHuman>
+    <IsAllowedToExitInAir>True</IsAllowedToExitInAir>
+    <AnimationAccelerationMultiplier>
+        <Vec3>
+            <x>0,1</x>
+            <y>0</y>
+            <z>0</z>
+        </Vec3>
+    </AnimationAccelerationMultiplier>
+    <AntEntryId>AntEntryIdEnum_Humvee_Driver</AntEntryId>
+    <AntEntryID></AntEntryID>
+</PlayerEntryComponentData>

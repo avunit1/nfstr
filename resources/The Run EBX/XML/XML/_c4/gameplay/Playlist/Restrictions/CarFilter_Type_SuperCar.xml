@@ -1,0 +1,59 @@
+<BTFilterNode Guid="c6a039ab-8c68-4da4-9107-8c80a173eed8">
+    <NodeType>ENodeType_Filter</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTTaskNode] df5a1932-0ea3-4ec3-97de-699555171123</member>
+    </Nodes>
+    <Eval>[zVehicleFilter] 30e0b5af-48bc-4046-b0eb-a95dc352799c</Eval>
+</BTFilterNode>
+<BTSelectorNode Guid="baf9739c-48ea-471e-aa26-69058da423c4">
+    <NodeType>ENodeType_Selector</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Nodes Count="1">
+        <member Index="0">[BTFilterNode] c6a039ab-8c68-4da4-9107-8c80a173eed8</member>
+    </Nodes>
+</BTSelectorNode>
+<BTTaskNode Guid="df5a1932-0ea3-4ec3-97de-699555171123">
+    <NodeType>ENodeType_Task</NodeType>
+    <DisabledResult>False</DisabledResult>
+    <Enabled>True</Enabled>
+    <Task>[VQ_Do] 8c74fdf7-ab2e-4b8f-848f-984d20080eb8</Task>
+</BTTaskNode>
+<BehaviourTreeData Guid="16ad8424-b661-4a81-b006-d29be349cab8">
+    <Name>_c4/Gameplay/Playlist/Restrictions/CarFilter_Type_SuperCar</Name>
+    <Root>[BTSelectorNode] baf9739c-48ea-471e-aa26-69058da423c4</Root>
+    <Description></Description>
+</BehaviourTreeData>
+<VQ_Do Guid="8c74fdf7-ab2e-4b8f-848f-984d20080eb8">
+    <FuncType>EFuncType_Task</FuncType>
+    <Result>True</Result>
+</VQ_Do>
+<zVehicleFilter Guid="30e0b5af-48bc-4046-b0eb-a95dc352799c">
+    <FuncType>EFuncType_Eval</FuncType>
+    <Inverted>False</Inverted>
+    <LValue>
+        <MDLValue>
+            <AttribKey>0x60c256c9</AttribKey>
+            <AttribType>EBTAttribType_Enum</AttribType>
+        </MDLValue>
+    </LValue>
+    <Comparator>Compare_Equal</Comparator>
+    <Comparison>EBTSimpleComparison_Equal</Comparison>
+    <RValueInt>0x00000001</RValueInt>
+    <RValueFloat>0</RValueFloat>
+    <RValueString></RValueString>
+    <RValueRef>
+        <AttribSysCollection>
+            <ClassKey>0x00000000</ClassKey>
+            <CollectionKey>0x00000000</CollectionKey>
+        </AttribSysCollection>
+    </RValueRef>
+    <RValueEnum>
+        <MDEnumValue>
+            <EnumValue>0xf3b8e8f6</EnumValue>
+        </MDEnumValue>
+    </RValueEnum>
+    <RValueBool>False</RValueBool>
+</zVehicleFilter>

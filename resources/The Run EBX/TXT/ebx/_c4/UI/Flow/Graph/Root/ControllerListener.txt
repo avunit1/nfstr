@@ -1,0 +1,179 @@
+ActionNode a3518cce-e46b-4f0a-9c2a-86af478c8c1e
+	$::UINodeData
+		$::DataContainer
+		Name Unpause
+		IsRootNode False
+		ParentGraph b068b8d3-6058-9ec0-a371-55ce4145f008
+		ParentIsScreen False
+	ActionKey -1886328163
+	Params *nullArray*
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	ActionDataSource::UIDataSourceInfo
+		DataCategory *nullGuid*
+		DataKey 0
+	In 31ccd6c3-d8d5-4bf4-8f0f-42f9ab240718
+	DataInputs *nullArray*
+	Out 5a6c7162-e767-4408-9024-d05cb4e475a7
+GlobalNode cc755121-98bb-4b5f-9afa-30807e1138c3
+	$::UINodeData
+		$::DataContainer
+		Name GlobalNode
+		IsRootNode False
+		ParentGraph b068b8d3-6058-9ec0-a371-55ce4145f008
+		ParentIsScreen False
+	Outputs::array
+		member(0) cd3d2842-a564-4419-bde5-d1e33bff3fbd
+		member(1) ae189c35-3f1c-4425-b0f2-5c598b8e4e9c
+InstanceInputNode 4cf4bdc3-3aca-4418-8780-994bd2be6d4e
+	$::UINodeData
+		$::DataContainer
+		Name in
+		IsRootNode True
+		ParentGraph b068b8d3-6058-9ec0-a371-55ce4145f008
+		ParentIsScreen False
+	Out d8081086-ef40-4ac8-89cd-2ac63cc970c7
+InstanceNode c1ccd9c9-fa47-402a-99f4-a5a75befc0fc
+	$::UINodeData
+		$::DataContainer
+		Name Controller Pull
+		IsRootNode False
+		ParentGraph b068b8d3-6058-9ec0-a371-55ce4145f008
+		ParentIsScreen False
+	UIGraph _c4/UI/Flow/Graph/Error/ControllerPull/0d1a6e93-6418-0829-db51-e05322832931
+	Inputs::array
+		member(0) e6e1ff24-63f1-4263-9b4c-ba4832a504cc
+	Outputs::array
+		member(0) 779f302a-199d-478f-8653-a09c81b0fd61
+	BundleWithParent False
+StateNode fca9612e-1902-418d-a43c-4dbd18fc98a9
+	$::UINodeData
+		$::DataContainer
+		Name Listening
+		IsRootNode False
+		ParentGraph b068b8d3-6058-9ec0-a371-55ce4145f008
+		ParentIsScreen False
+	Screen *nullGuid*
+	In 409e9f38-f14c-4751-ba3b-661fff399a23
+	Inputs *nullArray*
+	Outputs *nullArray*
+	RenderToTexture False
+	IsTestable False
+	ScreenLevel UIScreenLevel_Normal
+UIGraphAsset b068b8d3-6058-9ec0-a371-55ce4145f008 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/UI/Flow/Graph/Root/ControllerListener
+	Nodes::array
+		member(0) 4cf4bdc3-3aca-4418-8780-994bd2be6d4e
+		member(1) fca9612e-1902-418d-a43c-4dbd18fc98a9
+		member(2) cc755121-98bb-4b5f-9afa-30807e1138c3
+		member(3) a3518cce-e46b-4f0a-9c2a-86af478c8c1e
+		member(4) c1ccd9c9-fa47-402a-99f4-a5a75befc0fc
+	GlobalNode cc755121-98bb-4b5f-9afa-30807e1138c3
+	Connections::array
+		member(0) d4ec3787-dbe9-4659-8f3d-cb9f1e81a5bf
+		member(1) 8f7c611c-6130-480e-9eb5-fc1b5547f9cb
+		member(2) a52d287f-4830-4b69-901a-f2e164d6c2d8
+		member(3) 257d4b8a-8f83-4c1e-a960-d63a22280034
+	AudioEventMappings *nullGuid*
+	BundleAssetName _c4/UI/Flow/Graph/Root/ControllerListener_ResourceBundle
+	AssetList *nullArray*
+	TextureList *nullArray*
+	EventList::array
+		member(0) _c4/UI/Flow/Event/GeneralEvents/4c447c69-9521-7658-0f0e-4cfdd387ac4a
+	HighPriority False
+	AdditionalAssets *nullArray*
+	SkipBundleLoading True
+UINodeConnection d4ec3787-dbe9-4659-8f3d-cb9f1e81a5bf
+	$::DataContainer
+	SourceNode 4cf4bdc3-3aca-4418-8780-994bd2be6d4e
+	TargetNode fca9612e-1902-418d-a43c-4dbd18fc98a9
+	SourcePort d8081086-ef40-4ac8-89cd-2ac63cc970c7
+	TargetPort 409e9f38-f14c-4751-ba3b-661fff399a23
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 8f7c611c-6130-480e-9eb5-fc1b5547f9cb
+	$::DataContainer
+	SourceNode cc755121-98bb-4b5f-9afa-30807e1138c3
+	TargetNode a3518cce-e46b-4f0a-9c2a-86af478c8c1e
+	SourcePort ae189c35-3f1c-4425-b0f2-5c598b8e4e9c
+	TargetPort 31ccd6c3-d8d5-4bf4-8f0f-42f9ab240718
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection a52d287f-4830-4b69-901a-f2e164d6c2d8
+	$::DataContainer
+	SourceNode cc755121-98bb-4b5f-9afa-30807e1138c3
+	TargetNode c1ccd9c9-fa47-402a-99f4-a5a75befc0fc
+	SourcePort cd3d2842-a564-4419-bde5-d1e33bff3fbd
+	TargetPort e6e1ff24-63f1-4263-9b4c-ba4832a504cc
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodeConnection 257d4b8a-8f83-4c1e-a960-d63a22280034
+	$::DataContainer
+	SourceNode c1ccd9c9-fa47-402a-99f4-a5a75befc0fc
+	TargetNode fca9612e-1902-418d-a43c-4dbd18fc98a9
+	SourcePort 779f302a-199d-478f-8653-a09c81b0fd61
+	TargetPort 409e9f38-f14c-4751-ba3b-661fff399a23
+	NumScreensToPop 0
+	RemoveScreens *nullArray*
+	ScreenLevel UIScreenLevel_Normal
+UINodePort d8081086-ef40-4ac8-89cd-2ac63cc970c7
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 409e9f38-f14c-4751-ba3b-661fff399a23
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort cd3d2842-a564-4419-bde5-d1e33bff3fbd
+	$::DataContainer
+	Name OnControllerPulled[General]
+	InstanceName OnControllerPulled
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort ae189c35-3f1c-4425-b0f2-5c598b8e4e9c
+	$::DataContainer
+	Name OnControllerPullFlowDone[General]
+	InstanceName OnControllerPullFlowDone
+	Query UIWidgetEventID_None
+	FlowAction Action_Wait_Infinite
+	AllowManualRemove True
+UINodePort 31ccd6c3-d8d5-4bf4-8f0f-42f9ab240718
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 5a6c7162-e767-4408-9024-d05cb4e475a7
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort e6e1ff24-63f1-4263-9b4c-ba4832a504cc
+	$::DataContainer
+	Name in
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True
+UINodePort 779f302a-199d-478f-8653-a09c81b0fd61
+	$::DataContainer
+	Name out
+	InstanceName 
+	Query UIWidgetEventID_None
+	FlowAction Action_Input_A
+	AllowManualRemove True

@@ -1,0 +1,59 @@
+BTFilterNode 0ea09920-f030-41ff-9e20-d75057a37671
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Filter
+		Nodes::array
+			member(0) a3c9218a-43ce-4837-98fd-cff1bbab3d0b
+	Eval 6785ff35-1ae7-45c3-b9ea-6df687393e63
+BTSelectorNode 104956aa-b31a-48f2-ac5f-d9f142b5cae3
+	$::BTNodeDataWithChildren
+		$::BTNodeData
+			$::DataContainer
+			Enabled True
+			DisabledResult False
+			NodeType ENodeType_Selector
+		Nodes::array
+			member(0) 0ea09920-f030-41ff-9e20-d75057a37671
+BTTaskNode a3c9218a-43ce-4837-98fd-cff1bbab3d0b
+	$::BTNodeData
+		$::DataContainer
+		Enabled True
+		DisabledResult False
+		NodeType ENodeType_Task
+	Task 498d03c4-a05c-4a8c-aa5b-6e56f9c909a4
+BehaviourTreeData 158669a4-4aba-4e9e-bb1d-4584ab0c0875 #primary instance
+	$::Asset
+		$::DataContainer
+		Name _c4/Gameplay/ChallengeSeries/CarLists/CarFilters/CarFilter_cs_sug_Nissan370Classic
+	Root 104956aa-b31a-48f2-ac5f-d9f142b5cae3
+	Description 
+VQ_Do 498d03c4-a05c-4a8c-aa5b-6e56f9c909a4
+	$::BTTaskFunc
+		$::BTFunc
+			$::DataContainer
+			FuncType EFuncType_Task
+	Result True
+zVehicleFilter 6785ff35-1ae7-45c3-b9ea-6df687393e63
+	$::MetaDataFilter
+		$::BTEvalFunc
+			$::BTFunc
+				$::DataContainer
+				FuncType EFuncType_Eval
+			Inverted False
+		LValue::MDLValue
+			AttribKey 3797065516
+			AttribType EBTAttribType_Ref
+		Comparator Compare_Equal
+		Comparison EBTSimpleComparison_Equal
+		RValueInt 2
+		RValueFloat 0.0
+		RValueBool False
+		RValueString One 77
+		RValueEnum::MDEnumValue
+			EnumValue 2
+		RValueRef::AttribSysCollection
+			ClassKey 2580303702
+			CollectionKey 1460344908

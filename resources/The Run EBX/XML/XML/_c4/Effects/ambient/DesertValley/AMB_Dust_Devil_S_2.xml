@@ -1,0 +1,248 @@
+<EffectReferenceObjectData Guid="234e00b3-0a4a-434b-8f5f-5f3a6720cc3e">
+    <IndexInBlueprint>0001</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>0</IsPropertyConnectionTarget>
+    <BlueprintTransform>
+        <LinearTransform>
+            <right>
+                <Vec3>
+                    <x>1</x>
+                    <y>0</y>
+                    <z>0</z>
+                </Vec3>
+            </right>
+            <up>
+                <Vec3>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+                </Vec3>
+            </up>
+            <forward>
+                <Vec3>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>1</z>
+                </Vec3>
+            </forward>
+            <trans>
+                <Vec3>
+                    <x>-0,03927893</x>
+                    <y>8,73568E-08</y>
+                    <z>-0,0653377</z>
+                </Vec3>
+            </trans>
+        </LinearTransform>
+    </BlueprintTransform>
+    <Blueprint>[Ebx] _c4/Effects/Ambient/DesertValley/AMB_DustDevil_Lite [9e4d9fd8-b77a-4639-a8f9-44e9729c2195]</Blueprint>
+    <ObjectVariation>nullptr</ObjectVariation>
+    <StreamRealm>StreamRealm_None</StreamRealm>
+    <Excluded>False</Excluded>
+    <AutoStart>False</AutoStart>
+</EffectReferenceObjectData>
+<InterfaceDescriptorData Guid="4fd1eace-6cda-4ce8-9101-079a2086a15a">
+    <Fields Count="0"></Fields>
+    <InputEvents Count="2">
+        <member Index="0">
+            <DynamicEvent>
+                <Id>Start [0DC0EFA5]</Id>
+            </DynamicEvent>
+        </member>
+        <member Index="1">
+            <DynamicEvent>
+                <Id>Stop [7C89BB7D]</Id>
+            </DynamicEvent>
+        </member>
+    </InputEvents>
+    <OutputEvents Count="0"></OutputEvents>
+    <InputLinks Count="0"></InputLinks>
+    <OutputLinks Count="0"></OutputLinks>
+</InterfaceDescriptorData>
+<SequenceEntityData Guid="ada2f14f-46c0-4abd-9562-8bfb0e35124b">
+    <IndexInBlueprint>0000</IndexInBlueprint>
+    <IsEventConnectionTarget>0</IsEventConnectionTarget>
+    <IsPropertyConnectionTarget>3</IsPropertyConnectionTarget>
+    <Events Count="0"></Events>
+    <SequenceStartTime>0x00000000</SequenceStartTime>
+    <SequenceLength>0x00007530</SequenceLength>
+    <ExternalTime>0</ExternalTime>
+    <PropertyTracks Count="6">
+        <member Index="0">[TransformPartPropertyTrackData] e46cc252-7fa0-49a4-926a-3a6ae8d27a17</member>
+        <member Index="1">[TransformPartPropertyTrackData] ad8dd801-7116-41e0-beec-be129bfb6565</member>
+        <member Index="2">[TransformPartPropertyTrackData] 9f9c6cb0-32ad-475d-860f-ebf0511f6586</member>
+        <member Index="3">[TransformPartPropertyTrackData] c91eb0df-c184-48b6-9b71-35166e20be9e</member>
+        <member Index="4">[TransformPartPropertyTrackData] 441a1911-ac1d-4b00-8208-60b06fcf7834</member>
+        <member Index="5">[TransformPartPropertyTrackData] ade6a6fb-ba6b-4f9e-b1f1-28e649083439</member>
+    </PropertyTracks>
+    <Realm>Realm_Client</Realm>
+    <ServerUpdatePass>UpdatePass_PreSim</ServerUpdatePass>
+    <ClientUpdatePass>UpdatePass_PostSim</ClientUpdatePass>
+    <CustomSequenceTracks Count="0"></CustomSequenceTracks>
+    <Looping>True</Looping>
+    <AutoStart>True</AutoStart>
+    <AutoPlayFirstFrame>False</AutoPlayFirstFrame>
+</SequenceEntityData>
+<SpatialPrefabBlueprint Guid="35627f1a-2565-4972-a3c3-1f7c9d995795">
+    <Name>_c4/Effects/Ambient/DesertValley/AMB_Dust_Devil_S_2</Name>
+    <PropertyConnections Count="1">
+        <member Index="0">
+            <PropertyConnection>
+                <Source>[SequenceEntityData] ada2f14f-46c0-4abd-9562-8bfb0e35124b</Source>
+                <Target>[EffectReferenceObjectData] 234e00b3-0a4a-434b-8f5f-5f3a6720cc3e</Target>
+                <SourceFieldId>0x602ec6f6</SourceFieldId>
+                <TargetFieldId>BlueprintTransform [E790F446]</TargetFieldId>
+            </PropertyConnection>
+        </member>
+    </PropertyConnections>
+    <LinkConnections Count="0"></LinkConnections>
+    <EventConnections Count="4">
+        <member Index="0">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 4fd1eace-6cda-4ce8-9101-079a2086a15a</Source>
+                <Target>[SequenceEntityData] ada2f14f-46c0-4abd-9562-8bfb0e35124b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="1">
+            <EventConnection>
+                <Source>[InterfaceDescriptorData] 4fd1eace-6cda-4ce8-9101-079a2086a15a</Source>
+                <Target>[SequenceEntityData] ada2f14f-46c0-4abd-9562-8bfb0e35124b</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="2">
+            <EventConnection>
+                <Source>[SequenceEntityData] ada2f14f-46c0-4abd-9562-8bfb0e35124b</Source>
+                <Target>[EffectReferenceObjectData] 234e00b3-0a4a-434b-8f5f-5f3a6720cc3e</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStarted [B8DEB0A5]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Start [0DC0EFA5]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+        <member Index="3">
+            <EventConnection>
+                <Source>[SequenceEntityData] ada2f14f-46c0-4abd-9562-8bfb0e35124b</Source>
+                <Target>[EffectReferenceObjectData] 234e00b3-0a4a-434b-8f5f-5f3a6720cc3e</Target>
+                <SourceEvent>
+                    <EventSpec>
+                        <Id>OnStopped [B9D8CE6D]</Id>
+                    </EventSpec>
+                </SourceEvent>
+                <TargetEvent>
+                    <EventSpec>
+                        <Id>Stop [7C89BB7D]</Id>
+                    </EventSpec>
+                </TargetEvent>
+                <TargetType>EventConnectionTargetType_Client</TargetType>
+            </EventConnection>
+        </member>
+    </EventConnections>
+    <Descriptor>[InterfaceDescriptorData] 4fd1eace-6cda-4ce8-9101-079a2086a15a</Descriptor>
+    <NeedNetworkId>False</NeedNetworkId>
+    <InterfaceHasConnections>True</InterfaceHasConnections>
+    <ForceCreateAsFull>False</ForceCreateAsFull>
+    <Objects Count="2">
+        <member Index="0">[SequenceEntityData] ada2f14f-46c0-4abd-9562-8bfb0e35124b</member>
+        <member Index="1">[EffectReferenceObjectData] 234e00b3-0a4a-434b-8f5f-5f3a6720cc3e</member>
+    </Objects>
+</SpatialPrefabBlueprint>
+<TransformPartPropertyTrackData Guid="e46cc252-7fa0-49a4-926a-3a6ae8d27a17">
+    <Id>0x602ec6f6</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationX</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/Effects/Ambient/DesertValley/AnimTrackData/ADA2F14F-46C0-4ABD-9562-8BFB0E35124B_Moving_X</ResourceName>
+    <KeyStartIndex>0x00000000</KeyStartIndex>
+    <KeyCount>0x00000003</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="ad8dd801-7116-41e0-beec-be129bfb6565">
+    <Id>0x602ec6f6</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationY</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName></ResourceName>
+    <KeyStartIndex>0x00000000</KeyStartIndex>
+    <KeyCount>0x00000000</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="9f9c6cb0-32ad-475d-860f-ebf0511f6586">
+    <Id>0x602ec6f6</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_TranslationZ</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/Effects/Ambient/DesertValley/AnimTrackData/ADA2F14F-46C0-4ABD-9562-8BFB0E35124B_Moving_X</ResourceName>
+    <KeyStartIndex>0x00000003</KeyStartIndex>
+    <KeyCount>0x00000004</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="c91eb0df-c184-48b6-9b71-35166e20be9e">
+    <Id>0x602ec6f6</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationX</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName></ResourceName>
+    <KeyStartIndex>0x00000000</KeyStartIndex>
+    <KeyCount>0x00000000</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="441a1911-ac1d-4b00-8208-60b06fcf7834">
+    <Id>0x602ec6f6</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationY</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName>_c4/Effects/Ambient/DesertValley/AnimTrackData/ADA2F14F-46C0-4ABD-9562-8BFB0E35124B_Moving_X</ResourceName>
+    <KeyStartIndex>0x00000007</KeyStartIndex>
+    <KeyCount>0x00000002</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
+<TransformPartPropertyTrackData Guid="ade6a6fb-ba6b-4f9e-b1f1-28e649083439">
+    <Id>0x602ec6f6</Id>
+    <Times Count="0"></Times>
+    <TransformPart>TransformPart_RotationZ</TransformPart>
+    <PreInfinity>CurveInfinityType_Constant</PreInfinity>
+    <PostInfinity>CurveInfinityType_Constant</PostInfinity>
+    <ResourceName></ResourceName>
+    <KeyStartIndex>0x00000000</KeyStartIndex>
+    <KeyCount>0x00000000</KeyCount>
+    <IsStatic>False</IsStatic>
+    <Weighted>False</Weighted>
+</TransformPartPropertyTrackData>
