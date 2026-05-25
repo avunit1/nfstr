@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏎️ NFS The Run — Advanced Mod Suite
+# 🏎️ NFSTR
 
 **A feature-rich Python mod suite for *Need for Speed: The Run* with a full GUI, loadless speedrun timer, vehicle customizer, visual tweaks, and live memory patching.**
 
