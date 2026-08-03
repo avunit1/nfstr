@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/avunit1/nfstr/actions/workflows/build.yml"><img alt="Build status" src="https://github.com/avunit1/NFSTR/actions/workflows/build.yml/badge.svg"></a>
-  <a href="https://github.com/avunit1/nfstr/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/avunit1/NFSTR?style=flat"></a>
-  <a href="https://github.com/avunit1/nfstr/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/avunit1/NFSTR?style=flat"></a>
-  <a href="https://github.com/avunit1/nfstr/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/avunit1/NFSTR"></a>
+  <a href="https://github.com/avunit1/nfstr/actions/workflows/build.yml"><img alt="Build status" src="https://github.com/avunit1/nfstr/actions/workflows/build.yml/badge.svg"></a>
+  <a href="https://github.com/avunit1/nfstr/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/avunit1/nfstr?style=flat"></a>
+  <a href="https://github.com/avunit1/nfstr/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/avunit1/nfstr?style=flat"></a>
+  <a href="https://github.com/avunit1/nfstr/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/avunit1/nfstr"></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/avunit1/nfstr"></a>
 </p>
 
@@ -85,7 +85,7 @@ This is a single-player, offline tool. It is not built for and should not be use
 
 ### Option A — download the latest release (recommended for most people)
 
-1. Go to the [Releases page](https://github.com/avunit1/NFSTR/releases/latest) and download `nfstr-v{version}.exe`.
+1. Go to the [Releases page](https://github.com/avunit1/nfstr/releases/latest) and download `nfstr-v{version}.exe`.
 2. Put it anywhere you like — it's a single portable file.
 3. Launch **Need for Speed: The Run** first, then run `nfstr-v{version}.exe`.
 4. The exe will prompt for Administrator privileges automatically (this is required — reading another process's memory needs it). Accept the prompt.
@@ -96,8 +96,8 @@ This is a single-player, offline tool. It is not built for and should not be use
 Requirements: Windows, Python 3.11+.
 
 ```bash
-git clone https://github.com/avunit1/NFSTR.git
-cd NFSTR
+git clone https://github.com/avunit1/nfstr.git
+cd nfstr
 pip install -r requirements.txt
 python main.py
 ```
