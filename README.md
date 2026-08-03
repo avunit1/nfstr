@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/avunit1/NFSTR/actions/workflows/build.yml"><img alt="Build status" src="https://github.com/avunit1/NFSTR/actions/workflows/build.yml/badge.svg"></a>
-  <a href="https://github.com/avunit1/NFSTR/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/avunit1/NFSTR?style=flat"></a>
-  <a href="https://github.com/avunit1/NFSTR/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/avunit1/NFSTR?style=flat"></a>
-  <a href="https://github.com/avunit1/NFSTR/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/avunit1/NFSTR"></a>
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/avunit1/NFSTR"></a>
+  <a href="https://github.com/avunit1/nfstr/actions/workflows/build.yml"><img alt="Build status" src="https://github.com/avunit1/NFSTR/actions/workflows/build.yml/badge.svg"></a>
+  <a href="https://github.com/avunit1/nfstr/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/avunit1/NFSTR?style=flat"></a>
+  <a href="https://github.com/avunit1/nfstr/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/avunit1/NFSTR?style=flat"></a>
+  <a href="https://github.com/avunit1/nfstr/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/avunit1/NFSTR"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/avunit1/nfstr"></a>
 </p>
 
 ## What is this?
